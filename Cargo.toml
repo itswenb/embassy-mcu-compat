@@ -1,0 +1,20 @@
+[package]
+name = "mcu-compat-gen"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "为 Embassy STM32 生成厂商无关的 MCU 兼容数据"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+roxmltree = "0.20"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+tempfile = "3"
+toml = "0.9"
+walkdir = "2"
+stm32-data-serde = { git = "https://github.com/embassy-rs/stm32-data", rev = "87c539515764df442bc50b6235bad891950ba3c4" }
+stm32-metapac-gen = { git = "https://github.com/embassy-rs/stm32-data", rev = "87c539515764df442bc50b6235bad891950ba3c4" }
+
