@@ -14,6 +14,8 @@ fn source_lock_round_trip_is_stable() {
 
     assert_eq!(first, second);
     assert_eq!(lock, parsed);
+    assert!(first.ends_with('\n'));
+    assert!(!first.ends_with("\n\n"));
 }
 
 #[test]

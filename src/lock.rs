@@ -86,7 +86,9 @@ impl SourceLock {
         lock.normalize();
         lock.validate()?;
         let mut contents = toml::to_string_pretty(&lock).context("编码来源锁 TOML 失败")?;
-        contents.push('\n');
+        if !contents.ends_with('\n') {
+            contents.push('\n');
+        }
         Ok(contents)
     }
 

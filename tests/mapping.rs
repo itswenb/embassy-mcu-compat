@@ -2,8 +2,10 @@ use std::collections::BTreeMap;
 use std::fs;
 
 use mcu_compat_gen::hash::sha256_file;
-use mcu_compat_gen::lock::SourceLock;
-use mcu_compat_gen::mapping::{Evidence, Mapping, REQUIRED_EVIDENCE, Scope, audit_mapping};
+use mcu_compat_gen::lock::{PackLock, SourceLock};
+use mcu_compat_gen::mapping::{
+    Evidence, Mapping, REQUIRED_EVIDENCE, Scope, audit_mapping, load_mappings,
+};
 use mcu_compat_gen::merge_patch::apply_merge_patch;
 use mcu_compat_gen::target_db::{Device, Processor};
 use serde_json::json;
@@ -187,4 +189,78 @@ fn evidence_paths_cannot_escape_an_evidence_root() {
         )
         .is_err()
     );
+}
+
+#[test]
+fn loaded_release_mapping_must_reference_pdsc_header_and_svd_facts() {
+    let temp = tempfile::tempdir().unwrap();
+    let compat = temp.path().join("compat");
+    let cmsis = temp.path().join("cmsis");
+    let install = cmsis.join("GigaDevice/GD32F10x_DFP/2.0.3");
+    let pdsc_relative = "GigaDevice/GD32F10x_DFP/2.0.3/GigaDevice.GD32F10x_DFP.pdsc";
+    let header_relative = "GigaDevice/GD32F10x_DFP/2.0.3/Device/Include/device.h";
+    let svd_relative = "GigaDevice/GD32F10x_DFP/2.0.3/SVD/mapped.svd";
+    fs::create_dir_all(install.join("Device/Include")).unwrap();
+    fs::create_dir_all(install.join("SVD")).unwrap();
+    fs::create_dir_all(&compat).unwrap();
+    fs::copy(
+        "tests/fixtures/pdsc/mapped-device.pdsc",
+        cmsis.join(pdsc_relative),
+    )
+    .unwrap();
+    fs::write(cmsis.join(header_relative), "fixture header\n").unwrap();
+    fs::write(cmsis.join(svd_relative), "fixture svd\n").unwrap();
+
+    let evidence = |path: &str| Evidence {
+        path: path.into(),
+        sha256: sha256_file(&cmsis.join(path)).unwrap(),
+        locator: "fixture".into(),
+        result: "通过".into(),
+    };
+    let mut mapping = test_mapping();
+    mapping.scope = Scope::Release;
+    mapping.evidence = REQUIRED_EVIDENCE
+        .iter()
+        .map(|category| ((*category).to_owned(), evidence(pdsc_relative)))
+        .collect();
+    let mapping_path = compat.join("gd32f103c8.json");
+    fs::write(&mapping_path, serde_json::to_vec_pretty(&mapping).unwrap()).unwrap();
+
+    let mut lock = source_lock();
+    lock.packs = vec![PackLock {
+        vendor: "GigaDevice".into(),
+        name: "GD32F10x_DFP".into(),
+        version: "2.0.3".into(),
+        url: "https://example.invalid/pack".into(),
+        archive: ".Download/GigaDevice.GD32F10x_DFP.2.0.3.pack".into(),
+        archive_sha256: "0".repeat(64),
+        tree_sha256: "0".repeat(64),
+        pdsc: pdsc_relative.into(),
+    }];
+
+    let blocked = load_mappings(&compat, &lock, &[cmsis.as_path()]).unwrap();
+    assert!(
+        blocked["gd32f103c8"]
+            .audit
+            .blockers
+            .iter()
+            .any(|reason| reason.contains("header"))
+    );
+    assert!(
+        blocked["gd32f103c8"]
+            .audit
+            .blockers
+            .iter()
+            .any(|reason| reason.contains("SVD"))
+    );
+
+    mapping
+        .evidence
+        .insert("cpu".into(), evidence(header_relative));
+    mapping
+        .evidence
+        .insert("registers".into(), evidence(svd_relative));
+    fs::write(mapping_path, serde_json::to_vec_pretty(&mapping).unwrap()).unwrap();
+    let ready = load_mappings(&compat, &lock, &[cmsis.as_path()]).unwrap();
+    assert!(ready["gd32f103c8"].ready());
 }

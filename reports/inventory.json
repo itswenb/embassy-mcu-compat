@@ -1,0 +1,7775 @@
+{
+  "schema": 1,
+  "source_index_sha256": "136ec2208d31b5d0e8697a806e40d5647799c8c097ae283f28712079dc7b2e81",
+  "target_db_revision": "947e8a96d462801e827ed76408c8d8457326f6a1",
+  "summary": {
+    "packs": 12,
+    "devices": 388,
+    "ready": 0,
+    "blocked": 1,
+    "unmapped": 387,
+    "not_applicable": 0
+  },
+  "devices": [
+    {
+      "chip": "gd32c103cb",
+      "original_name": "GD32C103CB",
+      "pack": "GigaDevice.GD32C10x_DFP@1.0.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32c103rb",
+      "original_name": "GD32C103RB",
+      "pack": "GigaDevice.GD32C10x_DFP@1.0.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32c103tb",
+      "original_name": "GD32C103TB",
+      "pack": "GigaDevice.GD32C10x_DFP@1.0.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32c103vb",
+      "original_name": "GD32C103VB",
+      "pack": "GigaDevice.GD32C10x_DFP@1.0.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e103c8",
+      "original_name": "GD32E103C8",
+      "pack": "GigaDevice.GD32E10x_DFP@1.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e103cb",
+      "original_name": "GD32E103CB",
+      "pack": "GigaDevice.GD32E10x_DFP@1.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e103r8",
+      "original_name": "GD32E103R8",
+      "pack": "GigaDevice.GD32E10x_DFP@1.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e103rb",
+      "original_name": "GD32E103RB",
+      "pack": "GigaDevice.GD32E10x_DFP@1.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e103t8",
+      "original_name": "GD32E103T8",
+      "pack": "GigaDevice.GD32E10x_DFP@1.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e103tb",
+      "original_name": "GD32E103TB",
+      "pack": "GigaDevice.GD32E10x_DFP@1.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e103v8",
+      "original_name": "GD32E103V8",
+      "pack": "GigaDevice.GD32E10x_DFP@1.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e103vb",
+      "original_name": "GD32E103VB",
+      "pack": "GigaDevice.GD32E10x_DFP@1.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230c4",
+      "original_name": "GD32E230C4",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230c6",
+      "original_name": "GD32E230C6",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230c8",
+      "original_name": "GD32E230C8",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230f4",
+      "original_name": "GD32E230F4",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230f6",
+      "original_name": "GD32E230F6",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230f8",
+      "original_name": "GD32E230F8",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230g4",
+      "original_name": "GD32E230G4",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230g6",
+      "original_name": "GD32E230G6",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230g8",
+      "original_name": "GD32E230G8",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230k4",
+      "original_name": "GD32E230K4",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230k6",
+      "original_name": "GD32E230K6",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e230k8",
+      "original_name": "GD32E230K8",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e231c4",
+      "original_name": "GD32E231C4",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e231c6",
+      "original_name": "GD32E231C6",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e231c8",
+      "original_name": "GD32E231C8",
+      "pack": "GigaDevice.GD32E23x_DFP@1.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e503cc",
+      "original_name": "GD32E503CC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e503ce",
+      "original_name": "GD32E503CE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e503rc",
+      "original_name": "GD32E503RC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e503re",
+      "original_name": "GD32E503RE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e503vc",
+      "original_name": "GD32E503VC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e503ve",
+      "original_name": "GD32E503VE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e503zc",
+      "original_name": "GD32E503ZC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e503ze",
+      "original_name": "GD32E503ZE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e505rb",
+      "original_name": "GD32E505RB",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e505rc",
+      "original_name": "GD32E505RC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e505re",
+      "original_name": "GD32E505RE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e505vc",
+      "original_name": "GD32E505VC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e505ve",
+      "original_name": "GD32E505VE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e505zc",
+      "original_name": "GD32E505ZC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e505ze",
+      "original_name": "GD32E505ZE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e507rc",
+      "original_name": "GD32E507RC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e507re",
+      "original_name": "GD32E507RE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e507vc",
+      "original_name": "GD32E507VC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e507ve",
+      "original_name": "GD32E507VE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e507zc",
+      "original_name": "GD32E507ZC",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e507ze",
+      "original_name": "GD32E507ZE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e508re",
+      "original_name": "GD32E508RE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e508ve",
+      "original_name": "GD32E508VE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32e508ze",
+      "original_name": "GD32E508ZE",
+      "pack": "GigaDevice.GD32E50x_DFP@1.3.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101c4",
+      "original_name": "GD32F101C4",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101c6",
+      "original_name": "GD32F101C6",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101c8",
+      "original_name": "GD32F101C8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101cb",
+      "original_name": "GD32F101CB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101r4",
+      "original_name": "GD32F101R4",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101r6",
+      "original_name": "GD32F101R6",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101r8",
+      "original_name": "GD32F101R8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101rb",
+      "original_name": "GD32F101RB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101rc",
+      "original_name": "GD32F101RC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101rd",
+      "original_name": "GD32F101RD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101re",
+      "original_name": "GD32F101RE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101rf",
+      "original_name": "GD32F101RF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101rg",
+      "original_name": "GD32F101RG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101ri",
+      "original_name": "GD32F101RI",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101rk",
+      "original_name": "GD32F101RK",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101t4",
+      "original_name": "GD32F101T4",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101t6",
+      "original_name": "GD32F101T6",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101t8",
+      "original_name": "GD32F101T8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101tb",
+      "original_name": "GD32F101TB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101v8",
+      "original_name": "GD32F101V8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101vb",
+      "original_name": "GD32F101VB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101vc",
+      "original_name": "GD32F101VC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101vd",
+      "original_name": "GD32F101VD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101ve",
+      "original_name": "GD32F101VE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101vf",
+      "original_name": "GD32F101VF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101vg",
+      "original_name": "GD32F101VG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101vi",
+      "original_name": "GD32F101VI",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101vk",
+      "original_name": "GD32F101VK",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101zc",
+      "original_name": "GD32F101ZC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101zd",
+      "original_name": "GD32F101ZD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101ze",
+      "original_name": "GD32F101ZE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101zf",
+      "original_name": "GD32F101ZF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101zg",
+      "original_name": "GD32F101ZG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101zi",
+      "original_name": "GD32F101ZI",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f101zk",
+      "original_name": "GD32F101ZK",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103c4",
+      "original_name": "GD32F103C4",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103c6",
+      "original_name": "GD32F103C6",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103c8",
+      "original_name": "GD32F103C8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "blocked",
+      "alias": "stm32f103c8",
+      "scope": "test",
+      "reasons": [
+        "test-only 映射不能进入发布生成物"
+      ]
+    },
+    {
+      "chip": "gd32f103cb",
+      "original_name": "GD32F103CB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103r4",
+      "original_name": "GD32F103R4",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103r6",
+      "original_name": "GD32F103R6",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103r8",
+      "original_name": "GD32F103R8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103rb",
+      "original_name": "GD32F103RB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103rc",
+      "original_name": "GD32F103RC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103rd",
+      "original_name": "GD32F103RD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103re",
+      "original_name": "GD32F103RE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103rf",
+      "original_name": "GD32F103RF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103rg",
+      "original_name": "GD32F103RG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103ri",
+      "original_name": "GD32F103RI",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103rk",
+      "original_name": "GD32F103RK",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103t4",
+      "original_name": "GD32F103T4",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103t6",
+      "original_name": "GD32F103T6",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103t8",
+      "original_name": "GD32F103T8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103tb",
+      "original_name": "GD32F103TB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103v8",
+      "original_name": "GD32F103V8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103vb",
+      "original_name": "GD32F103VB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103vc",
+      "original_name": "GD32F103VC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103vd",
+      "original_name": "GD32F103VD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103ve",
+      "original_name": "GD32F103VE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103vf",
+      "original_name": "GD32F103VF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103vg",
+      "original_name": "GD32F103VG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103vi",
+      "original_name": "GD32F103VI",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103vk",
+      "original_name": "GD32F103VK",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103zc",
+      "original_name": "GD32F103ZC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103zd",
+      "original_name": "GD32F103ZD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103ze",
+      "original_name": "GD32F103ZE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103zf",
+      "original_name": "GD32F103ZF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103zg",
+      "original_name": "GD32F103ZG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103zi",
+      "original_name": "GD32F103ZI",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f103zk",
+      "original_name": "GD32F103ZK",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105r8",
+      "original_name": "GD32F105R8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105rb",
+      "original_name": "GD32F105RB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105rc",
+      "original_name": "GD32F105RC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105rd",
+      "original_name": "GD32F105RD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105re",
+      "original_name": "GD32F105RE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105rf",
+      "original_name": "GD32F105RF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105rg",
+      "original_name": "GD32F105RG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105v8",
+      "original_name": "GD32F105V8",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105vb",
+      "original_name": "GD32F105VB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105vc",
+      "original_name": "GD32F105VC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105vd",
+      "original_name": "GD32F105VD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105ve",
+      "original_name": "GD32F105VE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105vf",
+      "original_name": "GD32F105VF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105vg",
+      "original_name": "GD32F105VG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105zc",
+      "original_name": "GD32F105ZC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105zd",
+      "original_name": "GD32F105ZD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105ze",
+      "original_name": "GD32F105ZE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105zf",
+      "original_name": "GD32F105ZF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f105zg",
+      "original_name": "GD32F105ZG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107rb",
+      "original_name": "GD32F107RB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107rc",
+      "original_name": "GD32F107RC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107rd",
+      "original_name": "GD32F107RD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107re",
+      "original_name": "GD32F107RE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107rf",
+      "original_name": "GD32F107RF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107rg",
+      "original_name": "GD32F107RG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107vb",
+      "original_name": "GD32F107VB",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107vc",
+      "original_name": "GD32F107VC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107vd",
+      "original_name": "GD32F107VD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107ve",
+      "original_name": "GD32F107VE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107vf",
+      "original_name": "GD32F107VF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107vg",
+      "original_name": "GD32F107VG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107zc",
+      "original_name": "GD32F107ZC",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107zd",
+      "original_name": "GD32F107ZD",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107ze",
+      "original_name": "GD32F107ZE",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107zf",
+      "original_name": "GD32F107ZF",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f107zg",
+      "original_name": "GD32F107ZG",
+      "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130c4",
+      "original_name": "GD32F130C4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130c6",
+      "original_name": "GD32F130C6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130c8",
+      "original_name": "GD32F130C8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130f4",
+      "original_name": "GD32F130F4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130f6",
+      "original_name": "GD32F130F6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130f8",
+      "original_name": "GD32F130F8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130g4",
+      "original_name": "GD32F130G4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130g6",
+      "original_name": "GD32F130G6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130g8",
+      "original_name": "GD32F130G8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130k4",
+      "original_name": "GD32F130K4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130k6",
+      "original_name": "GD32F130K6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130k8",
+      "original_name": "GD32F130K8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f130r8",
+      "original_name": "GD32F130R8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150c4",
+      "original_name": "GD32F150C4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150c6",
+      "original_name": "GD32F150C6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150c8",
+      "original_name": "GD32F150C8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150g4",
+      "original_name": "GD32F150G4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150g6",
+      "original_name": "GD32F150G6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150g8",
+      "original_name": "GD32F150G8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150k4",
+      "original_name": "GD32F150K4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150k6",
+      "original_name": "GD32F150K6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150k8",
+      "original_name": "GD32F150K8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150r4",
+      "original_name": "GD32F150R4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150r6",
+      "original_name": "GD32F150R6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f150r8",
+      "original_name": "GD32F150R8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f170c4",
+      "original_name": "GD32F170C4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f170c6",
+      "original_name": "GD32F170C6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f170c8",
+      "original_name": "GD32F170C8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f170r8",
+      "original_name": "GD32F170R8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f170t4",
+      "original_name": "GD32F170T4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f170t6",
+      "original_name": "GD32F170T6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f170t8",
+      "original_name": "GD32F170T8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f190c4",
+      "original_name": "GD32F190C4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f190c6",
+      "original_name": "GD32F190C6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f190c8",
+      "original_name": "GD32F190C8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f190r4",
+      "original_name": "GD32F190R4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f190r6",
+      "original_name": "GD32F190R6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f190r8",
+      "original_name": "GD32F190R8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f190t4",
+      "original_name": "GD32F190T4",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f190t6",
+      "original_name": "GD32F190T6",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f190t8",
+      "original_name": "GD32F190T8",
+      "pack": "GigaDevice.GD32F1x0_DFP@3.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205rc",
+      "original_name": "GD32F205RC",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205re",
+      "original_name": "GD32F205RE",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205rg",
+      "original_name": "GD32F205RG",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205rk",
+      "original_name": "GD32F205RK",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205vc",
+      "original_name": "GD32F205VC",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205ve",
+      "original_name": "GD32F205VE",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205vg",
+      "original_name": "GD32F205VG",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205vk",
+      "original_name": "GD32F205VK",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205zc",
+      "original_name": "GD32F205ZC",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205ze",
+      "original_name": "GD32F205ZE",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205zg",
+      "original_name": "GD32F205ZG",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f205zk",
+      "original_name": "GD32F205ZK",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207ie",
+      "original_name": "GD32F207IE",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207ig",
+      "original_name": "GD32F207IG",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207ik",
+      "original_name": "GD32F207IK",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207rc",
+      "original_name": "GD32F207RC",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207re",
+      "original_name": "GD32F207RE",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207rg",
+      "original_name": "GD32F207RG",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207rk",
+      "original_name": "GD32F207RK",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207vc",
+      "original_name": "GD32F207VC",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207ve",
+      "original_name": "GD32F207VE",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207vg",
+      "original_name": "GD32F207VG",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207vk",
+      "original_name": "GD32F207VK",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207zc",
+      "original_name": "GD32F207ZC",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207ze",
+      "original_name": "GD32F207ZE",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207zg",
+      "original_name": "GD32F207ZG",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f207zk",
+      "original_name": "GD32F207ZK",
+      "pack": "GigaDevice.GD32F20x_DFP@2.2.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M3",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7m-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303cb",
+      "original_name": "GD32F303CB",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303cc",
+      "original_name": "GD32F303CC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303ce",
+      "original_name": "GD32F303CE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303cg",
+      "original_name": "GD32F303CG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303rb",
+      "original_name": "GD32F303RB",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303rc",
+      "original_name": "GD32F303RC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303re",
+      "original_name": "GD32F303RE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303rg",
+      "original_name": "GD32F303RG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303ri",
+      "original_name": "GD32F303RI",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303rk",
+      "original_name": "GD32F303RK",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303vb",
+      "original_name": "GD32F303VB",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303vc",
+      "original_name": "GD32F303VC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303ve",
+      "original_name": "GD32F303VE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303vg",
+      "original_name": "GD32F303VG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303vi",
+      "original_name": "GD32F303VI",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303vk",
+      "original_name": "GD32F303VK",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303zc",
+      "original_name": "GD32F303ZC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303ze",
+      "original_name": "GD32F303ZE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303zg",
+      "original_name": "GD32F303ZG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303zi",
+      "original_name": "GD32F303ZI",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f303zk",
+      "original_name": "GD32F303ZK",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305rb",
+      "original_name": "GD32F305RB",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305rc",
+      "original_name": "GD32F305RC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305re",
+      "original_name": "GD32F305RE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305rg",
+      "original_name": "GD32F305RG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305vc",
+      "original_name": "GD32F305VC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305ve",
+      "original_name": "GD32F305VE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305vg",
+      "original_name": "GD32F305VG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305zc",
+      "original_name": "GD32F305ZC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305ze",
+      "original_name": "GD32F305ZE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f305zg",
+      "original_name": "GD32F305ZG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f307rc",
+      "original_name": "GD32F307RC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f307re",
+      "original_name": "GD32F307RE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f307rg",
+      "original_name": "GD32F307RG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f307vc",
+      "original_name": "GD32F307VC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f307ve",
+      "original_name": "GD32F307VE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f307vg",
+      "original_name": "GD32F307VG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f307zc",
+      "original_name": "GD32F307ZC",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f307ze",
+      "original_name": "GD32F307ZE",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f307zg",
+      "original_name": "GD32F307ZG",
+      "pack": "GigaDevice.GD32F30x_DFP@2.2.1",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f310c8",
+      "original_name": "GD32F310C8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f310f4",
+      "original_name": "GD32F310F4",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f310f6",
+      "original_name": "GD32F310F6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f310f8",
+      "original_name": "GD32F310F8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f310g8",
+      "original_name": "GD32F310G8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f310k6",
+      "original_name": "GD32F310K6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f310k8",
+      "original_name": "GD32F310K8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330c4",
+      "original_name": "GD32F330C4",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330c6",
+      "original_name": "GD32F330C6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330c8",
+      "original_name": "GD32F330C8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330cb",
+      "original_name": "GD32F330CB",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330f4",
+      "original_name": "GD32F330F4",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330f6",
+      "original_name": "GD32F330F6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330f8",
+      "original_name": "GD32F330F8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330g4",
+      "original_name": "GD32F330G4",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330g6",
+      "original_name": "GD32F330G6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330g8",
+      "original_name": "GD32F330G8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330k4",
+      "original_name": "GD32F330K4",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330k6",
+      "original_name": "GD32F330K6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330k8",
+      "original_name": "GD32F330K8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330r8",
+      "original_name": "GD32F330R8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f330rb",
+      "original_name": "GD32F330RB",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350c4",
+      "original_name": "GD32F350C4",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350c6",
+      "original_name": "GD32F350C6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350c8",
+      "original_name": "GD32F350C8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350cb",
+      "original_name": "GD32F350CB",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350g4",
+      "original_name": "GD32F350G4",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350g6",
+      "original_name": "GD32F350G6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350g8",
+      "original_name": "GD32F350G8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350k4",
+      "original_name": "GD32F350K4",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350k6",
+      "original_name": "GD32F350K6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350k8",
+      "original_name": "GD32F350K8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350r4",
+      "original_name": "GD32F350R4",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350r6",
+      "original_name": "GD32F350R6",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350r8",
+      "original_name": "GD32F350R8",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f350rb",
+      "original_name": "GD32F350RB",
+      "pack": "GigaDevice.GD32F3x0_DFP@3.0.2",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403rc",
+      "original_name": "GD32F403RC",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403re",
+      "original_name": "GD32F403RE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403rg",
+      "original_name": "GD32F403RG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403ri",
+      "original_name": "GD32F403RI",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403rk",
+      "original_name": "GD32F403RK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403vc",
+      "original_name": "GD32F403VC",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403ve",
+      "original_name": "GD32F403VE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403vg",
+      "original_name": "GD32F403VG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403vi",
+      "original_name": "GD32F403VI",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403vk",
+      "original_name": "GD32F403VK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403zc",
+      "original_name": "GD32F403ZC",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403ze",
+      "original_name": "GD32F403ZE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403zg",
+      "original_name": "GD32F403ZG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403zi",
+      "original_name": "GD32F403ZI",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f403zk",
+      "original_name": "GD32F403ZK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f405re",
+      "original_name": "GD32F405RE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f405rg",
+      "original_name": "GD32F405RG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f405rk",
+      "original_name": "GD32F405RK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f405vg",
+      "original_name": "GD32F405VG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f405vk",
+      "original_name": "GD32F405VK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f405zg",
+      "original_name": "GD32F405ZG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f405zk",
+      "original_name": "GD32F405ZK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407ie",
+      "original_name": "GD32F407IE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407ig",
+      "original_name": "GD32F407IG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407ik",
+      "original_name": "GD32F407IK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407re",
+      "original_name": "GD32F407RE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407rg",
+      "original_name": "GD32F407RG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407rk",
+      "original_name": "GD32F407RK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407ve",
+      "original_name": "GD32F407VE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407vg",
+      "original_name": "GD32F407VG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407vk",
+      "original_name": "GD32F407VK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407ze",
+      "original_name": "GD32F407ZE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407zg",
+      "original_name": "GD32F407ZG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f407zk",
+      "original_name": "GD32F407ZK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f425re",
+      "original_name": "GD32F425RE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f425rg",
+      "original_name": "GD32F425RG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f425rk",
+      "original_name": "GD32F425RK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f425vg",
+      "original_name": "GD32F425VG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f425vk",
+      "original_name": "GD32F425VK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f425zg",
+      "original_name": "GD32F425ZG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f425zk",
+      "original_name": "GD32F425ZK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427ie",
+      "original_name": "GD32F427IE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427ig",
+      "original_name": "GD32F427IG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427ik",
+      "original_name": "GD32F427IK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427re",
+      "original_name": "GD32F427RE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427rg",
+      "original_name": "GD32F427RG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427rk",
+      "original_name": "GD32F427RK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427ve",
+      "original_name": "GD32F427VE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427vg",
+      "original_name": "GD32F427VG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427vk",
+      "original_name": "GD32F427VK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427ze",
+      "original_name": "GD32F427ZE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427zg",
+      "original_name": "GD32F427ZG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f427zk",
+      "original_name": "GD32F427ZK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450ig",
+      "original_name": "GD32F450IG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450ii",
+      "original_name": "GD32F450II",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450ik",
+      "original_name": "GD32F450IK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450ve",
+      "original_name": "GD32F450VE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450vg",
+      "original_name": "GD32F450VG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450vi",
+      "original_name": "GD32F450VI",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450vk",
+      "original_name": "GD32F450VK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450ze",
+      "original_name": "GD32F450ZE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450zg",
+      "original_name": "GD32F450ZG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450zi",
+      "original_name": "GD32F450ZI",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f450zk",
+      "original_name": "GD32F450ZK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470ig",
+      "original_name": "GD32F470IG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470ii",
+      "original_name": "GD32F470II",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470ik",
+      "original_name": "GD32F470IK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470ve",
+      "original_name": "GD32F470VE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470vg",
+      "original_name": "GD32F470VG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470vi",
+      "original_name": "GD32F470VI",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470vk",
+      "original_name": "GD32F470VK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470ze",
+      "original_name": "GD32F470ZE",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470zg",
+      "original_name": "GD32F470ZG",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470zi",
+      "original_name": "GD32F470ZI",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32f470zk",
+      "original_name": "GD32F470ZK",
+      "pack": "GigaDevice.GD32F4xx_DFP@3.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M4",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv7em-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32l233c8",
+      "original_name": "GD32L233C8",
+      "pack": "GigaDevice.GD32L23x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32l233cb",
+      "original_name": "GD32L233CB",
+      "pack": "GigaDevice.GD32L23x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32l233cc",
+      "original_name": "GD32L233CC",
+      "pack": "GigaDevice.GD32L23x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32l233k8",
+      "original_name": "GD32L233K8",
+      "pack": "GigaDevice.GD32L23x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32l233kb",
+      "original_name": "GD32L233KB",
+      "pack": "GigaDevice.GD32L23x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32l233r8",
+      "original_name": "GD32L233R8",
+      "pack": "GigaDevice.GD32L23x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32l233rb",
+      "original_name": "GD32L233RB",
+      "pack": "GigaDevice.GD32L23x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32l233rc",
+      "original_name": "GD32L233RC",
+      "pack": "GigaDevice.GD32L23x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M23",
+          "fpu": "NO_FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.base-none-eabi"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32w515p0q6",
+      "original_name": "GD32W515P0Q6",
+      "pack": "GigaDevice.GD32W51x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32w515piq6",
+      "original_name": "GD32W515PIQ6",
+      "pack": "GigaDevice.GD32W51x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32w515tgq6",
+      "original_name": "GD32W515TGQ6",
+      "pack": "GigaDevice.GD32W51x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    },
+    {
+      "chip": "gd32w515tiq6",
+      "original_name": "GD32W515TIQ6",
+      "pack": "GigaDevice.GD32W51x_DFP@1.0.3",
+      "processors": [
+        {
+          "name": null,
+          "core": "Cortex-M33",
+          "fpu": "FPU",
+          "endian": "Little-endian",
+          "rust_target": "thumbv8m.main-none-eabihf"
+        }
+      ],
+      "status": "unmapped",
+      "alias": null,
+      "scope": null,
+      "reasons": [
+        "未声明兼容映射"
+      ]
+    }
+  ]
+}

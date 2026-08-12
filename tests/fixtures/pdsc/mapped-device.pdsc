@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+  <devices>
+    <family Dfamily="Fixture Family">
+      <memory id="IRAM1" start="0x20000000" size="0x00001000"/>
+      <compile header="Device\Include\family.h"/>
+      <subFamily DsubFamily="Fixture Subfamily">
+        <memory name="CCMRAM" start="268435456" size="4096"/>
+        <debug svd="SVD\family.svd"/>
+        <device Dname="FIXTURE_BASE">
+          <memory id="IRAM1" start="0x20000000" size="0x00008000"/>
+          <compile header="Device/Include/device.h"/>
+          <variant Dvariant="GD32F103C8">
+            <memory id="IROM1" start="0x08000000" size="0x00020000"/>
+            <debug svd="SVD/mapped.svd"/>
+          </variant>
+        </device>
+        <device Dname="FIXTURE_OTHER">
+          <memory id="OTHER" start="0x60000000" size="0x1000"/>
+        </device>
+      </subFamily>
+    </family>
+  </devices>
+</package>

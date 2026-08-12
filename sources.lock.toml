@@ -2,7 +2,7 @@ schema = 1
 
 [index]
 url = "https://www.keil.com/pack/index.pidx"
-timestamp = "2026-08-08T04:00:41.4855875+00:00"
+timestamp = "2026-08-12T04:05:17.3114066+00:00"
 sha256 = "136ec2208d31b5d0e8697a806e40d5647799c8c097ae283f28712079dc7b2e81"
 
 [target_db]
@@ -27,3 +27,5942 @@ stm32_data = "87c539515764df442bc50b6235bad891950ba3c4"
 stm32_data_generated = "12ec4cd38c7825c1ff8592de1bdefaae445bb3a6"
 chiptool = "be1bff3e9e1b27b090e69bd9ac753c66fdcce678"
 stm32_metapac_version = "21.0.0"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32C10x_DFP"
+version = "1.0.1"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32C10x_DFP.1.0.1.pack"
+archive = ".Download/GigaDevice.GD32C10x_DFP.1.0.1.pack"
+archive_sha256 = "87d4b170dde9bd3e4b2cc6078a3e13e5c6e0a286da402c1831d59b3792ccb888"
+tree_sha256 = "5be5212702b64e92e8320e9025a0e956b9a96906e6776af6ddc11207a449fd30"
+pdsc = "GigaDevice/GD32C10x_DFP/1.0.1/GigaDevice.GD32C10x_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32E10x_DFP"
+version = "1.2.1"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32E10x_DFP.1.2.1.pack"
+archive = ".Download/GigaDevice.GD32E10x_DFP.1.2.1.pack"
+archive_sha256 = "013f8af90be584db343a64a2e3d650c89da762b4ecee31352322c88ae7af3952"
+tree_sha256 = "d3b065091fe4d1ed46502e1848e866d16168e518e911dc5ea3702cd275cae2f0"
+pdsc = "GigaDevice/GD32E10x_DFP/1.2.1/GigaDevice.GD32E10x_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32E23x_DFP"
+version = "1.0.2"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32E23x_DFP.1.0.2.pack"
+archive = ".Download/GigaDevice.GD32E23x_DFP.1.0.2.pack"
+archive_sha256 = "95f6db1f0b0669ee910ea2d28ad8d340a80502b352b9d94ec0f561d56c574330"
+tree_sha256 = "e1ad71e1abce856a33b8d4eff91676fd6b2e39000e49dc5a87721780fee3eb51"
+pdsc = "GigaDevice/GD32E23x_DFP/1.0.2/GigaDevice.GD32E23x_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32E50x_DFP"
+version = "1.3.2"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32E50x_DFP.1.3.2.pack"
+archive = ".Download/GigaDevice.GD32E50x_DFP.1.3.2.pack"
+archive_sha256 = "f3ded2cc12001054467fd957f48687091e6576d97b0c6f6296d1b4cdb29dc512"
+tree_sha256 = "d646a80f2f1101853db2cb3b63d688f9aa9e7eea0f8dffd2f2365de9d3f17b4f"
+pdsc = "GigaDevice/GD32E50x_DFP/1.3.2/GigaDevice.GD32E50x_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32F10x_DFP"
+version = "2.0.3"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F10x_DFP.2.0.3.pack"
+archive = ".Download/GigaDevice.GD32F10x_DFP.2.0.3.pack"
+archive_sha256 = "c10224e9bf59f1fbe0a2cf067d65a061eb51ed489e043b99e1c115617e664633"
+tree_sha256 = "00bc860af76465266842e5aa7a10a58304cf4e65fbd7ab036476f7fbdc6b6203"
+pdsc = "GigaDevice/GD32F10x_DFP/2.0.3/GigaDevice.GD32F10x_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32F1x0_DFP"
+version = "3.2.1"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F1x0_DFP.3.2.1.pack"
+archive = ".Download/GigaDevice.GD32F1x0_DFP.3.2.1.pack"
+archive_sha256 = "45c21938884bfa3ae23f3e01f2f71da0b87edf48aabbb5c1962eebf04d25e77a"
+tree_sha256 = "2c272207bfb185ccf4483810cedadda84dd97f9fa9035e0c19143ea768b47d72"
+pdsc = "GigaDevice/GD32F1x0_DFP/3.2.1/GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32F20x_DFP"
+version = "2.2.3"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F20x_DFP.2.2.3.pack"
+archive = ".Download/GigaDevice.GD32F20x_DFP.2.2.3.pack"
+archive_sha256 = "f9ed72f0840059bb566c95e9d6b942f02f637e10dda3f2b869bbe6c1468e3672"
+tree_sha256 = "86703a6fe2b397d070d002782318e5e7e04adc37a0d179bebf9657442618dee0"
+pdsc = "GigaDevice/GD32F20x_DFP/2.2.3/GigaDevice.GD32F20x_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32F30x_DFP"
+version = "2.2.1"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F30x_DFP.2.2.1.pack"
+archive = ".Download/GigaDevice.GD32F30x_DFP.2.2.1.pack"
+archive_sha256 = "640b4867d3c6e7e799c89cb78935ec1412021e00b210e5ed73d0a030ace7f9d5"
+tree_sha256 = "3adffa56be26c0ec495cd50dc12484065bafaaeab1b9c3149973d0375c7ff878"
+pdsc = "GigaDevice/GD32F30x_DFP/2.2.1/GigaDevice.GD32F30x_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32F3x0_DFP"
+version = "3.0.2"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F3x0_DFP.3.0.2.pack"
+archive = ".Download/GigaDevice.GD32F3x0_DFP.3.0.2.pack"
+archive_sha256 = "24346c31eeaa15a8cee5906678276d24793da0673c4663a698961ccb6baa3f20"
+tree_sha256 = "b98dd63f15c85cb942bbaafa14d950cdf7a8f7c1e47317d46a83d4101f7d27cb"
+pdsc = "GigaDevice/GD32F3x0_DFP/3.0.2/GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32F4xx_DFP"
+version = "3.0.3"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F4xx_DFP.3.0.3.pack"
+archive = ".Download/GigaDevice.GD32F4xx_DFP.3.0.3.pack"
+archive_sha256 = "f569a6acfdd04bdbb6eaa98a5ec575abe517c53f54a306dc41007c31d4ba52f0"
+tree_sha256 = "b726e98e7863a039667fc8fbd2595bbe9b60f2519420a6262adf09d1638304b7"
+pdsc = "GigaDevice/GD32F4xx_DFP/3.0.3/GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32L23x_DFP"
+version = "1.0.3"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32L23x_DFP.1.0.3.pack"
+archive = ".Download/GigaDevice.GD32L23x_DFP.1.0.3.pack"
+archive_sha256 = "de8c3c3b2d037ebd5458f86644315108ff52cc93bb665c775deb42783364c8a7"
+tree_sha256 = "c6692ef408959642858f1aa3ee6e8766e125d4f73cb9cea275bb818bc0cb0440"
+pdsc = "GigaDevice/GD32L23x_DFP/1.0.3/GigaDevice.GD32L23x_DFP.pdsc"
+
+[[packs]]
+vendor = "GigaDevice"
+name = "GD32W51x_DFP"
+version = "1.0.3"
+url = "https://gd32mcu.com/data/documents/pack/GigaDevice.GD32W51x_DFP.1.0.3.pack"
+archive = ".Download/GigaDevice.GD32W51x_DFP.1.0.3.pack"
+archive_sha256 = "217510a14cab38d5b18fe75953a24e5cc0c49e2effb57b88b70bfa161e76ef77"
+tree_sha256 = "7d10cecf2702b8a2b3509554fe2a7671a66e25c54941a872c8c4329aebbc8078"
+pdsc = "GigaDevice/GD32W51x_DFP/1.0.3/GigaDevice.GD32W51x_DFP.pdsc"
+
+[[devices]]
+chip = "gd32c103cb"
+original_name = "GD32C103CB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32C10x_DFP"
+pack_version = "1.0.1"
+source_pdsc = "GigaDevice.GD32C10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32c103rb"
+original_name = "GD32C103RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32C10x_DFP"
+pack_version = "1.0.1"
+source_pdsc = "GigaDevice.GD32C10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32c103tb"
+original_name = "GD32C103TB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32C10x_DFP"
+pack_version = "1.0.1"
+source_pdsc = "GigaDevice.GD32C10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32c103vb"
+original_name = "GD32C103VB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32C10x_DFP"
+pack_version = "1.0.1"
+source_pdsc = "GigaDevice.GD32C10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32e103c8"
+original_name = "GD32E103C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E10x_DFP"
+pack_version = "1.2.1"
+source_pdsc = "GigaDevice.GD32E10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32e103cb"
+original_name = "GD32E103CB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E10x_DFP"
+pack_version = "1.2.1"
+source_pdsc = "GigaDevice.GD32E10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32e103r8"
+original_name = "GD32E103R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E10x_DFP"
+pack_version = "1.2.1"
+source_pdsc = "GigaDevice.GD32E10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32e103rb"
+original_name = "GD32E103RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E10x_DFP"
+pack_version = "1.2.1"
+source_pdsc = "GigaDevice.GD32E10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32e103t8"
+original_name = "GD32E103T8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E10x_DFP"
+pack_version = "1.2.1"
+source_pdsc = "GigaDevice.GD32E10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32e103tb"
+original_name = "GD32E103TB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E10x_DFP"
+pack_version = "1.2.1"
+source_pdsc = "GigaDevice.GD32E10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32e103v8"
+original_name = "GD32E103V8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E10x_DFP"
+pack_version = "1.2.1"
+source_pdsc = "GigaDevice.GD32E10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32e103vb"
+original_name = "GD32E103VB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E10x_DFP"
+pack_version = "1.2.1"
+source_pdsc = "GigaDevice.GD32E10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32e230c4"
+original_name = "GD32E230C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230c6"
+original_name = "GD32E230C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230c8"
+original_name = "GD32E230C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230f4"
+original_name = "GD32E230F4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230f6"
+original_name = "GD32E230F6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230f8"
+original_name = "GD32E230F8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230g4"
+original_name = "GD32E230G4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230g6"
+original_name = "GD32E230G6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230g8"
+original_name = "GD32E230G8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230k4"
+original_name = "GD32E230K4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230k6"
+original_name = "GD32E230K6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e230k8"
+original_name = "GD32E230K8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e231c4"
+original_name = "GD32E231C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e231c6"
+original_name = "GD32E231C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e231c8"
+original_name = "GD32E231C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E23x_DFP"
+pack_version = "1.0.2"
+source_pdsc = "GigaDevice.GD32E23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32e503cc"
+original_name = "GD32E503CC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+[[devices]]
+chip = "gd32e503ce"
+original_name = "GD32E503CE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e503rc"
+original_name = "GD32E503RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e503re"
+original_name = "GD32E503RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e503vc"
+original_name = "GD32E503VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e503ve"
+original_name = "GD32E503VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e503zc"
+original_name = "GD32E503ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e503ze"
+original_name = "GD32E503ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e505rb"
+original_name = "GD32E505RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e505rc"
+original_name = "GD32E505RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e505re"
+original_name = "GD32E505RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e505vc"
+original_name = "GD32E505VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e505ve"
+original_name = "GD32E505VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e505zc"
+original_name = "GD32E505ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e505ze"
+original_name = "GD32E505ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e507rc"
+original_name = "GD32E507RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e507re"
+original_name = "GD32E507RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e507vc"
+original_name = "GD32E507VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e507ve"
+original_name = "GD32E507VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e507zc"
+original_name = "GD32E507ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e507ze"
+original_name = "GD32E507ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e508re"
+original_name = "GD32E508RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e508ve"
+original_name = "GD32E508VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32e508ze"
+original_name = "GD32E508ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32E50x_DFP"
+pack_version = "1.3.2"
+source_pdsc = "GigaDevice.GD32E50x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32f101c4"
+original_name = "GD32F101C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101c6"
+original_name = "GD32F101C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101c8"
+original_name = "GD32F101C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101cb"
+original_name = "GD32F101CB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101r4"
+original_name = "GD32F101R4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101r6"
+original_name = "GD32F101R6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101r8"
+original_name = "GD32F101R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101rb"
+original_name = "GD32F101RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101rc"
+original_name = "GD32F101RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101rd"
+original_name = "GD32F101RD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101re"
+original_name = "GD32F101RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101rf"
+original_name = "GD32F101RF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101rg"
+original_name = "GD32F101RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101ri"
+original_name = "GD32F101RI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101rk"
+original_name = "GD32F101RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101t4"
+original_name = "GD32F101T4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101t6"
+original_name = "GD32F101T6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101t8"
+original_name = "GD32F101T8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101tb"
+original_name = "GD32F101TB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101v8"
+original_name = "GD32F101V8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101vb"
+original_name = "GD32F101VB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101vc"
+original_name = "GD32F101VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101vd"
+original_name = "GD32F101VD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101ve"
+original_name = "GD32F101VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101vf"
+original_name = "GD32F101VF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101vg"
+original_name = "GD32F101VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101vi"
+original_name = "GD32F101VI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101vk"
+original_name = "GD32F101VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101zc"
+original_name = "GD32F101ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101zd"
+original_name = "GD32F101ZD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101ze"
+original_name = "GD32F101ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101zf"
+original_name = "GD32F101ZF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101zg"
+original_name = "GD32F101ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101zi"
+original_name = "GD32F101ZI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f101zk"
+original_name = "GD32F101ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103c4"
+original_name = "GD32F103C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103c6"
+original_name = "GD32F103C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103c8"
+original_name = "GD32F103C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103cb"
+original_name = "GD32F103CB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103r4"
+original_name = "GD32F103R4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103r6"
+original_name = "GD32F103R6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103r8"
+original_name = "GD32F103R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103rb"
+original_name = "GD32F103RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103rc"
+original_name = "GD32F103RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103rd"
+original_name = "GD32F103RD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103re"
+original_name = "GD32F103RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103rf"
+original_name = "GD32F103RF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103rg"
+original_name = "GD32F103RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103ri"
+original_name = "GD32F103RI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103rk"
+original_name = "GD32F103RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103t4"
+original_name = "GD32F103T4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103t6"
+original_name = "GD32F103T6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103t8"
+original_name = "GD32F103T8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103tb"
+original_name = "GD32F103TB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103v8"
+original_name = "GD32F103V8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103vb"
+original_name = "GD32F103VB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103vc"
+original_name = "GD32F103VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103vd"
+original_name = "GD32F103VD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103ve"
+original_name = "GD32F103VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103vf"
+original_name = "GD32F103VF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103vg"
+original_name = "GD32F103VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103vi"
+original_name = "GD32F103VI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103vk"
+original_name = "GD32F103VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103zc"
+original_name = "GD32F103ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103zd"
+original_name = "GD32F103ZD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103ze"
+original_name = "GD32F103ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103zf"
+original_name = "GD32F103ZF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103zg"
+original_name = "GD32F103ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103zi"
+original_name = "GD32F103ZI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f103zk"
+original_name = "GD32F103ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105r8"
+original_name = "GD32F105R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105rb"
+original_name = "GD32F105RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105rc"
+original_name = "GD32F105RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105rd"
+original_name = "GD32F105RD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105re"
+original_name = "GD32F105RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105rf"
+original_name = "GD32F105RF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105rg"
+original_name = "GD32F105RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105v8"
+original_name = "GD32F105V8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105vb"
+original_name = "GD32F105VB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105vc"
+original_name = "GD32F105VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105vd"
+original_name = "GD32F105VD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105ve"
+original_name = "GD32F105VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105vf"
+original_name = "GD32F105VF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105vg"
+original_name = "GD32F105VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105zc"
+original_name = "GD32F105ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105zd"
+original_name = "GD32F105ZD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105ze"
+original_name = "GD32F105ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105zf"
+original_name = "GD32F105ZF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f105zg"
+original_name = "GD32F105ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107rb"
+original_name = "GD32F107RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107rc"
+original_name = "GD32F107RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107rd"
+original_name = "GD32F107RD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107re"
+original_name = "GD32F107RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107rf"
+original_name = "GD32F107RF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107rg"
+original_name = "GD32F107RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107vb"
+original_name = "GD32F107VB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107vc"
+original_name = "GD32F107VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107vd"
+original_name = "GD32F107VD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107ve"
+original_name = "GD32F107VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107vf"
+original_name = "GD32F107VF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107vg"
+original_name = "GD32F107VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107zc"
+original_name = "GD32F107ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107zd"
+original_name = "GD32F107ZD"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107ze"
+original_name = "GD32F107ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107zf"
+original_name = "GD32F107ZF"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f107zg"
+original_name = "GD32F107ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F10x_DFP"
+pack_version = "2.0.3"
+source_pdsc = "GigaDevice.GD32F10x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130c4"
+original_name = "GD32F130C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130c6"
+original_name = "GD32F130C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130c8"
+original_name = "GD32F130C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130f4"
+original_name = "GD32F130F4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130f6"
+original_name = "GD32F130F6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130f8"
+original_name = "GD32F130F8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130g4"
+original_name = "GD32F130G4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130g6"
+original_name = "GD32F130G6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130g8"
+original_name = "GD32F130G8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130k4"
+original_name = "GD32F130K4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130k6"
+original_name = "GD32F130K6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130k8"
+original_name = "GD32F130K8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f130r8"
+original_name = "GD32F130R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150c4"
+original_name = "GD32F150C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150c6"
+original_name = "GD32F150C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150c8"
+original_name = "GD32F150C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150g4"
+original_name = "GD32F150G4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150g6"
+original_name = "GD32F150G6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150g8"
+original_name = "GD32F150G8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150k4"
+original_name = "GD32F150K4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150k6"
+original_name = "GD32F150K6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150k8"
+original_name = "GD32F150K8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150r4"
+original_name = "GD32F150R4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150r6"
+original_name = "GD32F150R6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f150r8"
+original_name = "GD32F150R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f170c4"
+original_name = "GD32F170C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f170c6"
+original_name = "GD32F170C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f170c8"
+original_name = "GD32F170C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f170r8"
+original_name = "GD32F170R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f170t4"
+original_name = "GD32F170T4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f170t6"
+original_name = "GD32F170T6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f170t8"
+original_name = "GD32F170T8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f190c4"
+original_name = "GD32F190C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f190c6"
+original_name = "GD32F190C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f190c8"
+original_name = "GD32F190C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f190r4"
+original_name = "GD32F190R4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f190r6"
+original_name = "GD32F190R6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f190r8"
+original_name = "GD32F190R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f190t4"
+original_name = "GD32F190T4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f190t6"
+original_name = "GD32F190T6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f190t8"
+original_name = "GD32F190T8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F1x0_DFP"
+pack_version = "3.2.1"
+source_pdsc = "GigaDevice.GD32F1x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205rc"
+original_name = "GD32F205RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205re"
+original_name = "GD32F205RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205rg"
+original_name = "GD32F205RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205rk"
+original_name = "GD32F205RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205vc"
+original_name = "GD32F205VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205ve"
+original_name = "GD32F205VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205vg"
+original_name = "GD32F205VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205vk"
+original_name = "GD32F205VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205zc"
+original_name = "GD32F205ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205ze"
+original_name = "GD32F205ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205zg"
+original_name = "GD32F205ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f205zk"
+original_name = "GD32F205ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207ie"
+original_name = "GD32F207IE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207ig"
+original_name = "GD32F207IG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207ik"
+original_name = "GD32F207IK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207rc"
+original_name = "GD32F207RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207re"
+original_name = "GD32F207RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207rg"
+original_name = "GD32F207RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207rk"
+original_name = "GD32F207RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207vc"
+original_name = "GD32F207VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207ve"
+original_name = "GD32F207VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207vg"
+original_name = "GD32F207VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207vk"
+original_name = "GD32F207VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207zc"
+original_name = "GD32F207ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207ze"
+original_name = "GD32F207ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207zg"
+original_name = "GD32F207ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f207zk"
+original_name = "GD32F207ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F20x_DFP"
+pack_version = "2.2.3"
+source_pdsc = "GigaDevice.GD32F20x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M3"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv7m-none-eabi"
+
+[[devices]]
+chip = "gd32f303cb"
+original_name = "GD32F303CB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303cc"
+original_name = "GD32F303CC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303ce"
+original_name = "GD32F303CE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303cg"
+original_name = "GD32F303CG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303rb"
+original_name = "GD32F303RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303rc"
+original_name = "GD32F303RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303re"
+original_name = "GD32F303RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303rg"
+original_name = "GD32F303RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303ri"
+original_name = "GD32F303RI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303rk"
+original_name = "GD32F303RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303vb"
+original_name = "GD32F303VB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303vc"
+original_name = "GD32F303VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303ve"
+original_name = "GD32F303VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303vg"
+original_name = "GD32F303VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303vi"
+original_name = "GD32F303VI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303vk"
+original_name = "GD32F303VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303zc"
+original_name = "GD32F303ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303ze"
+original_name = "GD32F303ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303zg"
+original_name = "GD32F303ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303zi"
+original_name = "GD32F303ZI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f303zk"
+original_name = "GD32F303ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305rb"
+original_name = "GD32F305RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305rc"
+original_name = "GD32F305RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305re"
+original_name = "GD32F305RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305rg"
+original_name = "GD32F305RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305vc"
+original_name = "GD32F305VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305ve"
+original_name = "GD32F305VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305vg"
+original_name = "GD32F305VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305zc"
+original_name = "GD32F305ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305ze"
+original_name = "GD32F305ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f305zg"
+original_name = "GD32F305ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f307rc"
+original_name = "GD32F307RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f307re"
+original_name = "GD32F307RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f307rg"
+original_name = "GD32F307RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f307vc"
+original_name = "GD32F307VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f307ve"
+original_name = "GD32F307VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f307vg"
+original_name = "GD32F307VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f307zc"
+original_name = "GD32F307ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f307ze"
+original_name = "GD32F307ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f307zg"
+original_name = "GD32F307ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F30x_DFP"
+pack_version = "2.2.1"
+source_pdsc = "GigaDevice.GD32F30x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f310c8"
+original_name = "GD32F310C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f310f4"
+original_name = "GD32F310F4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f310f6"
+original_name = "GD32F310F6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f310f8"
+original_name = "GD32F310F8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f310g8"
+original_name = "GD32F310G8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f310k6"
+original_name = "GD32F310K6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f310k8"
+original_name = "GD32F310K8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330c4"
+original_name = "GD32F330C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330c6"
+original_name = "GD32F330C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330c8"
+original_name = "GD32F330C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330cb"
+original_name = "GD32F330CB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330f4"
+original_name = "GD32F330F4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330f6"
+original_name = "GD32F330F6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330f8"
+original_name = "GD32F330F8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330g4"
+original_name = "GD32F330G4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330g6"
+original_name = "GD32F330G6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330g8"
+original_name = "GD32F330G8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330k4"
+original_name = "GD32F330K4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330k6"
+original_name = "GD32F330K6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330k8"
+original_name = "GD32F330K8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330r8"
+original_name = "GD32F330R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f330rb"
+original_name = "GD32F330RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350c4"
+original_name = "GD32F350C4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350c6"
+original_name = "GD32F350C6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350c8"
+original_name = "GD32F350C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350cb"
+original_name = "GD32F350CB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350g4"
+original_name = "GD32F350G4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350g6"
+original_name = "GD32F350G6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350g8"
+original_name = "GD32F350G8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350k4"
+original_name = "GD32F350K4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350k6"
+original_name = "GD32F350K6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350k8"
+original_name = "GD32F350K8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350r4"
+original_name = "GD32F350R4"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350r6"
+original_name = "GD32F350R6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350r8"
+original_name = "GD32F350R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f350rb"
+original_name = "GD32F350RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F3x0_DFP"
+pack_version = "3.0.2"
+source_pdsc = "GigaDevice.GD32F3x0_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403rc"
+original_name = "GD32F403RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403re"
+original_name = "GD32F403RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403rg"
+original_name = "GD32F403RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403ri"
+original_name = "GD32F403RI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403rk"
+original_name = "GD32F403RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403vc"
+original_name = "GD32F403VC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403ve"
+original_name = "GD32F403VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403vg"
+original_name = "GD32F403VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403vi"
+original_name = "GD32F403VI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403vk"
+original_name = "GD32F403VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403zc"
+original_name = "GD32F403ZC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403ze"
+original_name = "GD32F403ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403zg"
+original_name = "GD32F403ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403zi"
+original_name = "GD32F403ZI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f403zk"
+original_name = "GD32F403ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f405re"
+original_name = "GD32F405RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f405rg"
+original_name = "GD32F405RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f405rk"
+original_name = "GD32F405RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f405vg"
+original_name = "GD32F405VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f405vk"
+original_name = "GD32F405VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f405zg"
+original_name = "GD32F405ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f405zk"
+original_name = "GD32F405ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407ie"
+original_name = "GD32F407IE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407ig"
+original_name = "GD32F407IG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407ik"
+original_name = "GD32F407IK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407re"
+original_name = "GD32F407RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407rg"
+original_name = "GD32F407RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407rk"
+original_name = "GD32F407RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407ve"
+original_name = "GD32F407VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407vg"
+original_name = "GD32F407VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407vk"
+original_name = "GD32F407VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407ze"
+original_name = "GD32F407ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407zg"
+original_name = "GD32F407ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f407zk"
+original_name = "GD32F407ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f425re"
+original_name = "GD32F425RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f425rg"
+original_name = "GD32F425RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f425rk"
+original_name = "GD32F425RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f425vg"
+original_name = "GD32F425VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f425vk"
+original_name = "GD32F425VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f425zg"
+original_name = "GD32F425ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f425zk"
+original_name = "GD32F425ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427ie"
+original_name = "GD32F427IE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427ig"
+original_name = "GD32F427IG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427ik"
+original_name = "GD32F427IK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427re"
+original_name = "GD32F427RE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427rg"
+original_name = "GD32F427RG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427rk"
+original_name = "GD32F427RK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427ve"
+original_name = "GD32F427VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427vg"
+original_name = "GD32F427VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427vk"
+original_name = "GD32F427VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427ze"
+original_name = "GD32F427ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427zg"
+original_name = "GD32F427ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f427zk"
+original_name = "GD32F427ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450ig"
+original_name = "GD32F450IG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450ii"
+original_name = "GD32F450II"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450ik"
+original_name = "GD32F450IK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450ve"
+original_name = "GD32F450VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450vg"
+original_name = "GD32F450VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450vi"
+original_name = "GD32F450VI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450vk"
+original_name = "GD32F450VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450ze"
+original_name = "GD32F450ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450zg"
+original_name = "GD32F450ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450zi"
+original_name = "GD32F450ZI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f450zk"
+original_name = "GD32F450ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470ig"
+original_name = "GD32F470IG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470ii"
+original_name = "GD32F470II"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470ik"
+original_name = "GD32F470IK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470ve"
+original_name = "GD32F470VE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470vg"
+original_name = "GD32F470VG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470vi"
+original_name = "GD32F470VI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470vk"
+original_name = "GD32F470VK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470ze"
+original_name = "GD32F470ZE"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470zg"
+original_name = "GD32F470ZG"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470zi"
+original_name = "GD32F470ZI"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32f470zk"
+original_name = "GD32F470ZK"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32F4xx_DFP"
+pack_version = "3.0.3"
+source_pdsc = "GigaDevice.GD32F4xx_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M4"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv7em-none-eabihf"
+
+[[devices]]
+chip = "gd32l233c8"
+original_name = "GD32L233C8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32L23x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32L23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32l233cb"
+original_name = "GD32L233CB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32L23x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32L23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32l233cc"
+original_name = "GD32L233CC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32L23x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32L23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32l233k8"
+original_name = "GD32L233K8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32L23x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32L23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32l233kb"
+original_name = "GD32L233KB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32L23x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32L23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32l233r8"
+original_name = "GD32L233R8"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32L23x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32L23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32l233rb"
+original_name = "GD32L233RB"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32L23x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32L23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32l233rc"
+original_name = "GD32L233RC"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32L23x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32L23x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M23"
+fpu = "NO_FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.base-none-eabi"
+
+[[devices]]
+chip = "gd32w515p0q6"
+original_name = "GD32W515P0Q6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32W51x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32W51x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32w515piq6"
+original_name = "GD32W515PIQ6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32W51x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32W51x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32w515tgq6"
+original_name = "GD32W515TGQ6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32W51x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32W51x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"
+
+[[devices]]
+chip = "gd32w515tiq6"
+original_name = "GD32W515TIQ6"
+device_kind = "device"
+pack_vendor = "GigaDevice"
+pack_name = "GD32W51x_DFP"
+pack_version = "1.0.3"
+source_pdsc = "GigaDevice.GD32W51x_DFP.pdsc"
+
+[[devices.processors]]
+core = "Cortex-M33"
+fpu = "FPU"
+endian = "Little-endian"
+rust_target = "thumbv8m.main-none-eabihf"

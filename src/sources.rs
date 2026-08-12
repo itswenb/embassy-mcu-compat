@@ -64,6 +64,98 @@ pub fn update_sources(lock_path: &Path, cache_dir: &Path) -> Result<()> {
     lock.save(lock_path)
 }
 
+pub fn verify_sources(lock: &SourceLock, cache_dir: &Path) -> Result<()> {
+    lock.validate()?;
+
+    let target_data = cache_dir.join("cmsis-rust-target-db/data");
+    verify_file(
+        &target_data.join("devices.jsonl"),
+        &lock.target_db.devices_sha256,
+    )?;
+    verify_file(
+        &target_data.join("metadata.json"),
+        &lock.target_db.metadata_sha256,
+    )?;
+
+    let pack_root = cache_dir.join("cmsis");
+    let index = pack_root.join(".Web/index.pidx");
+    verify_file(&index, &lock.index.sha256)?;
+    let timestamp = index_timestamp(&index)?;
+    if timestamp != lock.index.timestamp {
+        bail!(
+            "Pack Index timestamp 不匹配：期望 {}，实际 {timestamp}",
+            lock.index.timestamp
+        );
+    }
+
+    let devices = load_inventory(&target_data, &lock.index.sha256, &lock.selectors)?;
+    if devices != lock.devices {
+        bail!("目标数据库器件闭包与来源锁不一致；请运行 sources update");
+    }
+    let selected_packs = group_packs(&devices)?;
+    if selected_packs.len() != lock.packs.len() {
+        bail!(
+            "Pack 闭包与来源锁不一致：目标数据库需要 {} 个，锁定了 {} 个",
+            selected_packs.len(),
+            lock.packs.len()
+        );
+    }
+
+    for pack in &lock.packs {
+        for component in [&pack.vendor, &pack.name, &pack.version] {
+            validate_pack_coordinate(component)?;
+        }
+        let key = (pack.vendor.clone(), pack.name.clone(), pack.version.clone());
+        let device = selected_packs.get(&key).ok_or_else(|| {
+            anyhow::anyhow!(
+                "来源锁包含目标数据库未选择的 Pack：{}.{}@{}",
+                pack.vendor,
+                pack.name,
+                pack.version
+            )
+        })?;
+
+        let archive = safe_join(&pack_root, &pack.archive)?;
+        let expected_archive =
+            pack_archive_path(&pack_root, &pack.vendor, &pack.name, &pack.version);
+        if archive != expected_archive {
+            bail!(
+                "Pack {} 的归档路径不符合 CMSIS 布局",
+                pack_id(&pack.vendor, &pack.name, &pack.version)
+            );
+        }
+        verify_file(&archive, &pack.archive_sha256)?;
+
+        let installed = pack_install_path(&pack_root, &pack.vendor, &pack.name, &pack.version);
+        let actual_tree = sha256_tree(&installed)?;
+        if actual_tree != pack.tree_sha256 {
+            bail!(
+                "{} 的目录 SHA-256 不匹配：期望 {}，实际 {actual_tree}",
+                installed.display(),
+                pack.tree_sha256
+            );
+        }
+
+        let pdsc = safe_join(&pack_root, &pack.pdsc)?;
+        let expected_pdsc = safe_join(&installed, &device.source_pdsc)?;
+        if pdsc != expected_pdsc {
+            bail!(
+                "Pack {} 的 PDSC 路径与目标数据库不一致",
+                pack_id(&pack.vendor, &pack.name, &pack.version)
+            );
+        }
+        let actual_url = pack_url(&pdsc, &pack.version)?;
+        if actual_url != pack.url {
+            bail!(
+                "Pack {} 的下载 URL 与 PDSC 不一致",
+                pack_id(&pack.vendor, &pack.name, &pack.version)
+            );
+        }
+    }
+
+    Ok(())
+}
+
 pub fn cpackget_init_args(pack_root: &Path, index_url: &str) -> Vec<OsString> {
     [
         OsString::from("-C"),

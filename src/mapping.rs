@@ -5,9 +5,12 @@ use std::path::{Component, Path};
 use anyhow::{Context, Result, bail};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
+use walkdir::WalkDir;
 
 use crate::hash::verify_file;
 use crate::lock::SourceLock;
+use crate::pdsc::read_device_facts;
+use crate::sources::pack_install_path;
 
 pub const REQUIRED_EVIDENCE: [&str; 11] = [
     "cpu",
@@ -75,6 +78,12 @@ pub struct MappingAudit {
     pub blockers: Vec<String>,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct CheckedMapping {
+    pub mapping: Mapping,
+    pub audit: MappingAudit,
+}
+
 impl Mapping {
     pub fn read(path: impl AsRef<Path>) -> Result<Self> {
         let path = path.as_ref();
@@ -89,6 +98,121 @@ impl MappingAudit {
     pub fn ready(&self) -> bool {
         self.blockers.is_empty()
     }
+}
+
+impl CheckedMapping {
+    pub fn ready(&self) -> bool {
+        self.mapping.scope == Scope::Release && self.audit.ready()
+    }
+}
+
+pub fn load_mappings(
+    directory: &Path,
+    lock: &SourceLock,
+    evidence_roots: &[&Path],
+) -> Result<BTreeMap<String, CheckedMapping>> {
+    let mut paths = Vec::new();
+    for entry in WalkDir::new(directory).follow_links(false) {
+        let entry =
+            entry.with_context(|| format!("遍历兼容映射目录 {} 失败", directory.display()))?;
+        if entry.file_type().is_symlink() {
+            bail!("兼容映射目录不接受符号链接：{}", entry.path().display());
+        }
+        if entry.file_type().is_file()
+            && entry
+                .path()
+                .extension()
+                .and_then(|extension| extension.to_str())
+                .is_some_and(|extension| extension.eq_ignore_ascii_case("json"))
+        {
+            paths.push(entry.into_path());
+        }
+    }
+    paths.sort();
+
+    let mut mappings = BTreeMap::new();
+    for path in paths {
+        let stem = path
+            .file_stem()
+            .and_then(|stem| stem.to_str())
+            .ok_or_else(|| anyhow::anyhow!("映射文件名不是 UTF-8：{}", path.display()))?;
+        let mapping = Mapping::read(&path)?;
+        let mut audit = audit_mapping(&mapping, stem, lock, evidence_roots)?;
+        audit_pdsc_facts(&mapping, lock, evidence_roots, &mut audit.blockers)?;
+        let chip = mapping.chip.clone();
+        if mappings
+            .insert(chip.clone(), CheckedMapping { mapping, audit })
+            .is_some()
+        {
+            bail!("兼容映射目录包含重复型号：{chip}");
+        }
+    }
+    Ok(mappings)
+}
+
+fn audit_pdsc_facts(
+    mapping: &Mapping,
+    lock: &SourceLock,
+    roots: &[&Path],
+    blockers: &mut Vec<String>,
+) -> Result<()> {
+    let device = lock
+        .devices
+        .iter()
+        .find(|device| device.chip == mapping.chip)
+        .ok_or_else(|| anyhow::anyhow!("来源锁中不存在器件 {}", mapping.chip))?;
+    let pack = lock
+        .packs
+        .iter()
+        .find(|pack| {
+            pack.vendor == device.pack_vendor
+                && pack.name == device.pack_name
+                && pack.version == device.pack_version
+        })
+        .ok_or_else(|| anyhow::anyhow!("来源锁中不存在映射 {} 的 Pack", mapping.chip))?;
+    let matches: Vec<_> = roots
+        .iter()
+        .filter(|root| root.join(&pack.pdsc).is_file())
+        .collect();
+    let root = match matches.as_slice() {
+        [] => bail!("映射 {} 的锁定 PDSC 不存在：{}", mapping.chip, pack.pdsc),
+        [root] => **root,
+        _ => bail!("映射 {} 的锁定 PDSC 在多个根中存在", mapping.chip),
+    };
+    let installed = pack_install_path(root, &pack.vendor, &pack.name, &pack.version);
+    let facts = read_device_facts(&root.join(&pack.pdsc), &installed, &mapping.source.device)?;
+
+    if mapping.scope == Scope::Test {
+        return Ok(());
+    }
+    if facts.memories.is_empty() {
+        blockers.push("PDSC 未提供 memory 事实".to_owned());
+    }
+    if mapping
+        .evidence
+        .get("memory")
+        .map(|evidence| evidence.path.as_str())
+        != Some(pack.pdsc.as_str())
+    {
+        blockers.push(format!("memory 证据必须引用锁定 PDSC：{}", pack.pdsc));
+    }
+
+    let prefix = format!("{}/{}/{}/", pack.vendor, pack.name, pack.version);
+    for (label, path) in [("header", facts.header), ("SVD", facts.svd)] {
+        let Some(path) = path else {
+            blockers.push(format!("PDSC 未解析到 {label} 路径"));
+            continue;
+        };
+        let relative = format!("{prefix}{path}");
+        if !mapping
+            .evidence
+            .values()
+            .any(|evidence| evidence.path == relative)
+        {
+            blockers.push(format!("没有证据引用 PDSC 解析的 {label}：{relative}"));
+        }
+    }
+    Ok(())
 }
 
 pub fn audit_mapping(

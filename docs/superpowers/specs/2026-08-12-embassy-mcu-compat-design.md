@@ -38,7 +38,7 @@ CMSIS-Toolbox 的 `cpackget` 负责获取、缓存和解包 Pack，不承担 Emb
 首版锁定 Keil 公共 Pack 索引快照：
 
 - URL：`https://www.keil.com/pack/index.pidx`
-- 索引时间戳：`2026-08-08T04:00:41.4855875+00:00`
+- 索引时间戳：`2026-08-12T04:05:17.3114066+00:00`
 - SHA-256：`136ec2208d31b5d0e8697a806e40d5647799c8c097ae283f28712079dc7b2e81`
 
 该快照中 `vendor="GigaDevice"` 的全部 12 个 DFP 为：
