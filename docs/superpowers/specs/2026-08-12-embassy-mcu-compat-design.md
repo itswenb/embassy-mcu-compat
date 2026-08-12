@@ -1,7 +1,7 @@
 # `embassy-mcu-compat` 设计规格
 
 - 日期：2026-08-12
-- 状态：待书面复核
+- 状态：已批准；已纳入 `cmsis-rust-target-db` 数据源
 - 首个厂商：GigaDevice（兆易创新）
 
 ## 1. 目标
@@ -24,11 +24,12 @@
 
 方案可行，但 CMSIS Device Family Pack 只能提供生成链的一部分事实：
 
-- PDSC 可以提供器件层次、CPU、内存、头文件和 SVD 路径。
+- [`cmsis-rust-target-db`](https://github.com/itswenb/cmsis-rust-target-db) 已经把 PDSC 的器件层次、处理器继承和 Rust target 归一化为可复现 JSONL，可直接承担全量型号发现和 CPU/ABI 初筛。
+- 原始 PDSC 仍用于已映射器件的内存、头文件和 SVD 路径验证。
 - SVD 和厂商头文件可以提供寄存器结构、外设基址及中断编号。
 - DFP 通常不能完整表达 Embassy 所需的 pinmux、DMA 请求、RCC 时钟树、Flash 操作语义和 HAL 分支兼容性。
 
-因此不能直接把 DFP 转成完整 `stm32-data`。正确路径是：以一个显式 STM32 alias 的 `stm32-data-serde::Chip` 为基线，用厂商 Pack 和手册验证并修正真实差异，再复用上游 `stm32-metapac-gen` 生成真实芯片目录。
+因此不能直接把 `cmsis-rust-target-db` 或 DFP 转成完整 `stm32-data`。正确路径是：以前者作为厂商无关的器件清单与 CPU 事实来源，以一个显式 STM32 alias 的 `stm32-data-serde::Chip` 为基线，用厂商 Pack 和手册验证并修正真实差异，再复用上游 `stm32-metapac-gen` 生成真实芯片目录。
 
 CMSIS-Toolbox 的 `cpackget` 负责获取、缓存和解包 Pack，不承担 Embassy metadata 转换。普通审计和生成均离线运行，只有显式的来源更新命令访问网络。
 
@@ -64,6 +65,16 @@ CMSIS-Toolbox 的 `cpackget` 负责获取、缓存和解包 Pack，不承担 Emb
 - 后者提交信息明确记录由前者生成。
 - `chiptool`：由该 `stm32-data` revision 固定的 `be1bff3e9e1b27b090e69bd9ac753c66fdcce678`。
 
+首版同时锁定现有 `cmsis-rust-target-db` 生成快照：
+
+- revision：`947e8a96d462801e827ed76408c8d8457326f6a1`；
+- `data/devices.jsonl` SHA-256：`114e695810217c84943b9d61ab385e3fe10f850cc914f96aac280a509c650c88`；
+- `data/metadata.json` SHA-256：`aa9b6fc936b1fd615c07fdcd9dddafe2a902b5a923ac50125decc4927693233f`；
+- schema 版本 `1`，共 `14,436` 条记录、`1,477` 个 PDSC，记录的索引 SHA-256 与本节锁定索引完全一致；
+- 其中 GigaDevice 恰好覆盖上述 12 个 DFP 的 `388` 个器件记录，全部具有可解析 Rust target。
+
+该仓库只作为固定 revision 的只读生成数据来源；首版不修改它、不把它变成库依赖，也不重复实现它已经完成的处理器继承和 target 推导。
+
 上述值写入 `sources.lock.toml`。更新来源时必须整体更新并重新验证配对关系，不能单独漂移其中一个 revision。
 
 ## 4. 仓库边界
@@ -79,6 +90,8 @@ CMSIS-Toolbox 的 `cpackget` 负责获取、缓存和解包 Pack，不承担 Emb
 - `compat/<vendor>/<chip>.json` 显式兼容映射；
 - `reports/inventory.json` 全量审计结果；
 - 测试 fixture、example 和设计文档。
+
+它读取固定 revision 的 `cmsis-rust-target-db/data/*.json*`，但不复制或分叉其生成器代码。
 
 首版不创建 workspace、vendor plugin、独立 metadata crate、自定义 patch DSL 或数据库。
 
@@ -102,11 +115,12 @@ CLI 只提供三个顶层动作：
 这是唯一联网动作：
 
 1. 使用 `cpackget` 更新指定公共索引。
-2. 从索引选出来源登记匹配的全部 Pack，而不是维护手写系列名单。来源登记由通用的 `--vendor` 和 `--pack-pattern` 参数写入锁文件。
-3. 下载并解包精确版本的 Pack。
-4. 计算索引、Pack、PDSC、SVD、相关头文件和许可证文件的 SHA-256。
-5. 展开 PDSC 的 `family/subFamily/device/variant` 继承，枚举全部叶子器件。
-6. 更新 `sources.lock.toml`。
+2. 读取固定 revision 的 `cmsis-rust-target-db` 数据和元数据；其 `source_index_sha256` 必须等于本次索引哈希，否则立即失败，禁止混用不同快照。
+3. 从规范化数据中选出来源登记匹配的全部 Pack 和器件，而不是维护手写系列名单。来源登记由通用的 `--vendor` 和 `--pack-pattern` 参数写入锁文件。
+4. 下载并解包精确版本的 Pack。
+5. 计算索引、数据快照、Pack、PDSC、SVD、相关头文件和许可证文件的 SHA-256。
+6. 将 JSONL 记录规范化为审计器件：有 variant 的父 device 不单独计数，variant 和无 variant 的 device 保留；同一 Pack、同一器件的多处理器记录合并为一个器件及处理器列表。
+7. 更新 `sources.lock.toml`。
 
 初始登记等价于 `--vendor GigaDevice --pack-pattern '*_DFP'`；以后接入其他厂商只增加来源登记和兼容数据，不修改解析或生成代码。后续更新默认复用锁文件中的登记条件。
 
@@ -117,9 +131,9 @@ CLI 只提供三个顶层动作：
 这是离线动作：
 
 1. 校验本地 Pack 与锁文件哈希。
-2. 解析全部锁定 PDSC 和所引用数据。
+2. 校验 `cmsis-rust-target-db` 数据文件哈希、schema、索引哈希及锁定 Pack/器件闭包；只为存在兼容映射的器件解析 PDSC 所引用的内存和文件路径。
 3. 校验兼容映射及证据。
-4. 计算每个叶子器件的唯一审计状态。
+4. 计算每个规范化审计器件的唯一审计状态。
 5. 确定性生成 `reports/inventory.json`。
 
 `--frozen` 下任何来源漂移都会失败。`unmapped` 本身不是程序错误，因为它是有效审计结果。
@@ -149,7 +163,8 @@ CLI 只提供三个顶层动作：
 - 已登记的 Pack vendor；
 - 每个 Pack 的 ID、版本、URL 和哈希；
 - Pack 内 PDSC、SVD、头文件和许可证入口的路径及哈希；
-- 全部叶子器件原始名称；
+- 全部规范化审计器件及其原始名称；
+- `cmsis-rust-target-db` revision、schema、文件哈希和记录筛选规则；
 - `embassy`、`stm32-data`、`stm32-data-generated` 和 `chiptool` revision；
 - `stm32-metapac` 包版本。
 
@@ -194,7 +209,7 @@ CLI 只提供三个顶层动作：
 
 ## 7. 审计状态与生成门槛
 
-每个锁定叶子器件必须且只能拥有以下一个状态：
+每个锁定审计器件必须且只能拥有以下一个状态：
 
 - `unmapped`：没有 release 兼容映射。
 - `blocked`：存在映射，但证据、许可证、验证或生成条件不完整；test-only 映射也属于此状态并注明原因。
@@ -253,7 +268,8 @@ EMBASSY_MCU_COMPAT_CHIP = { value = "gd32f103c8", force = true }
 
 ## 9. PDSC、SVD 与许可证处理
 
-- PDSC 使用轻量 XML 树解析，只实现设备审计需要的层级继承、processor、memory、compile/debug、SVD/header 路径，不复制完整 CMSIS schema。
+- 全量器件层次、processor 继承和 Rust target 直接消费固定的 `cmsis-rust-target-db` 数据，不在本仓库重复解析。
+- PDSC 使用轻量 XML 树解析，只实现已映射器件验证需要的 `memory`、`compile/debug`、SVD/header 路径继承，不复制完整 CMSIS schema。
 - SVD 解析和规范化复用固定 revision 的 `chiptool`/`svd-parser`，不编写第二套寄存器 IR。
 - pinmux、DMA、RCC 和 Flash 语义没有可靠 Pack 来源时必须依赖显式证据和 patch。
 - 原始 Pack 仅存在于忽略的本地缓存，不进入两个 Git 仓库。
@@ -266,7 +282,7 @@ EMBASSY_MCU_COMPAT_CHIP = { value = "gd32f103c8", force = true }
 以下情况返回非零状态，且不得留下可发布的部分输出：
 
 - 索引、Pack 或内部文件哈希不匹配；
-- PDSC/SVD 解析失败、设备继承不完整或叶子器件重复；
+- 数据快照/PDSC/SVD 解析失败、设备继承不完整或审计器件重复；
 - 映射引用不存在的 Pack、device、alias 或寄存器版本；
 - patch 后不能反序列化为上游 `Chip`；
 - alias 与环境选择不一致；
@@ -282,14 +298,15 @@ EMBASSY_MCU_COMPAT_CHIP = { value = "gd32f103c8", force = true }
 
 ### 11.1 最小单元测试
 
-1. PDSC fixture 覆盖 `family -> subFamily -> device -> variant` 继承与覆盖。
-2. RFC 7396 patch 覆盖对象合并、数组整体替换和 `null` 删除。
-3. inventory 保证每个叶子器件恰好一个状态且无重复。
-4. build 选择逻辑覆盖：无环境变量、正确映射、未知型号、alias 不匹配、零个和多个 STM32 feature。
+1. `cmsis-rust-target-db` fixture 覆盖 variant 去父项、多处理器合并、Pack/version 筛选和索引哈希不一致失败。
+2. PDSC fixture 只覆盖已映射器件的 memory 与 SVD/header 路径继承。
+3. RFC 7396 patch 覆盖对象合并、数组整体替换和 `null` 删除。
+4. inventory 保证每个审计器件恰好一个状态且无重复。
+5. build 选择逻辑覆盖：无环境变量、正确映射、未知型号、alias 不匹配、零个和多个 STM32 feature。
 
 ### 11.2 集成测试
 
-1. 固定索引 fixture 必须得到上述 12 个 GigaDevice DFP，并枚举它们的全部叶子器件。
+1. 固定 `cmsis-rust-target-db` 快照必须得到上述 12 个 GigaDevice DFP 和全部 `388` 个审计器件。
 2. `audit --frozen` 在同一输入上生成字节一致的报告。
 3. 仅官方 STM32 基线时，除允许替换的 `build.rs`、兼容表、生成清单和包描述外，其余文件与官方生成物字节一致。
 4. 每个真实芯片临时生成的共享 peripheral/register 文件与官方基线字节一致。
@@ -309,7 +326,7 @@ EMBASSY_MCU_COMPAT_CHIP = { value = "gd32f103c8", force = true }
 1. 新源仓库和新生成仓库可从空目录确定性构建。
 2. `embassy-stm32`、`stm32-data` 和官方 `stm32-data-generated` 均无任何提交或工作树修改。
 3. 锁文件包含官方快照中的全部 12 个 GigaDevice DFP。
-4. 审计报告包含这些 Pack 内的全部叶子器件，且每个器件恰好一个状态和明确原因。
+4. 审计报告包含这些 Pack 内全部 `388` 个器件，且每个器件恰好一个状态和明确原因。
 5. 架构、schema、CLI 和生成路径接入下一厂商时不需要修改厂商分支代码。
 6. 原生 STM32 无环境变量路径通过回归测试。
 7. test/example 中的 `GD32F103C8 -> STM32F103C8` 完整通过 Cargo patch、metadata、PAC 和 `embassy-stm32` 编译链。
@@ -319,6 +336,7 @@ EMBASSY_MCU_COMPAT_CHIP = { value = "gd32f103c8", force = true }
 
 - [Open-CMSIS-Pack PDSC 设备族规范](https://open-cmsis-pack.github.io/Open-CMSIS-Pack-Spec/main/html/pdsc_family_pg.html)
 - [CMSIS-Toolbox `cpackget`](https://open-cmsis-pack.github.io/devtools/buildmgr/latest/cpackget.html)
+- [`itswenb/cmsis-rust-target-db`](https://github.com/itswenb/cmsis-rust-target-db)
 - [`embassy-rs/stm32-data`](https://github.com/embassy-rs/stm32-data)
 - [`embassy-rs/stm32-data-generated`](https://github.com/embassy-rs/stm32-data-generated)
 - [`embassy-rs/chiptool`](https://github.com/embassy-rs/chiptool)
