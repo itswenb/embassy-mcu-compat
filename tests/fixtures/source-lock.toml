@@ -1,0 +1,29 @@
+schema = 1
+
+[index]
+url = "https://www.keil.com/pack/index.pidx"
+timestamp = "2026-08-08T04:00:41.4855875+00:00"
+sha256 = "fixture-index"
+
+[target_db]
+url = "https://github.com/itswenb/cmsis-rust-target-db"
+revision = "947e8a96d462801e827ed76408c8d8457326f6a1"
+schema = 1
+source_index_sha256 = "fixture-index"
+devices_sha256 = "fixture-devices"
+metadata_sha256 = "fixture-metadata"
+
+[[selectors]]
+vendor = "GigaDevice"
+pack_pattern = "*_DFP"
+
+[tools]
+cmsis_toolbox = "2.14.1"
+cpackget = "2.2.1"
+
+[upstream]
+embassy = "98d847be57f3ea022ce05fe9b95ab3639a1e0a93"
+stm32_data = "87c539515764df442bc50b6235bad891950ba3c4"
+stm32_data_generated = "12ec4cd38c7825c1ff8592de1bdefaae445bb3a6"
+chiptool = "be1bff3e9e1b27b090e69bd9ac753c66fdcce678"
+stm32_metapac_version = "21.0.0"

@@ -25,3 +25,21 @@ fn sources_exposes_only_update() {
     assert!(output.status.success());
     assert!(stdout.contains("update"));
 }
+
+#[test]
+fn sources_update_enters_the_source_pipeline() {
+    let output = Command::new(env!("CARGO_BIN_EXE_mcu-compat-gen"))
+        .args([
+            "sources",
+            "update",
+            "--lock",
+            "tests/fixtures/does-not-exist.toml",
+        ])
+        .output()
+        .unwrap();
+    let stderr = String::from_utf8(output.stderr).unwrap();
+
+    assert!(!output.status.success());
+    assert!(stderr.contains("读取来源锁"), "{stderr}");
+    assert!(!stderr.contains("尚未实现"), "{stderr}");
+}
