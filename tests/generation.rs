@@ -1,8 +1,10 @@
+use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
 use std::path::Path;
 use std::process::Command;
 
 use mcu_compat_gen::generate::{GenerateRequest, generate_repository};
+use mcu_compat_gen::lock::SourceLock;
 use mcu_compat_gen::mapping::Mapping;
 use serde_json::json;
 use stm32_metapac_gen::{Gen, Options};
@@ -64,7 +66,7 @@ fn format_rust(root: &Path) {
     }
 }
 
-fn official_fixture() -> (tempfile::TempDir, String) {
+fn official_fixture() -> (tempfile::TempDir, SourceLock) {
     let temp = tempfile::tempdir().unwrap();
     let data = temp.path().join("data");
     fs::create_dir_all(data.join("chips")).unwrap();
@@ -93,31 +95,35 @@ fn official_fixture() -> (tempfile::TempDir, String) {
     run("git", &["add", "."], temp.path());
     run("git", &["commit", "-q", "-m", "fixture"], temp.path());
     let revision = run("git", &["rev-parse", "HEAD"], temp.path());
-    (temp, revision)
+    let mut lock = SourceLock::read("tests/fixtures/source-lock.toml").unwrap();
+    lock.upstream.stm32_data_generated = revision;
+    (temp, lock)
 }
 
 fn request<'a>(
     official: &'a Path,
     output: &'a Path,
     mappings: &'a [Mapping],
-    revision: &'a str,
+    source_lock: &'a SourceLock,
 ) -> GenerateRequest<'a> {
     GenerateRequest {
         official_generated: official,
         output,
         mappings,
-        expected_revision: revision,
+        source_lock,
+        source_lock_sha256: "0000000000000000000000000000000000000000000000000000000000000000",
+        include_test: true,
     }
 }
 
 #[test]
 fn generates_real_private_chip_from_an_official_alias() {
-    let (official, revision) = official_fixture();
+    let (official, lock) = official_fixture();
     let target = tempfile::tempdir().unwrap();
     let output = target.path().join("generated");
     let mappings = [mapping()];
 
-    generate_repository(request(official.path(), &output, &mappings, &revision)).unwrap();
+    generate_repository(request(official.path(), &output, &mappings, &lock)).unwrap();
 
     let chip = output.join("src/chips/gd32f103c8");
     assert!(chip.join("pac.rs").is_file());
@@ -130,18 +136,14 @@ fn generates_real_private_chip_from_an_official_alias() {
 
 #[test]
 fn rejects_revision_mismatch_without_publishing_output() {
-    let (official, _) = official_fixture();
+    let (official, mut lock) = official_fixture();
     let target = tempfile::tempdir().unwrap();
     let output = target.path().join("generated");
     let mappings = [mapping()];
 
-    let error = generate_repository(request(
-        official.path(),
-        &output,
-        &mappings,
-        &"0".repeat(40),
-    ))
-    .unwrap_err();
+    lock.upstream.stm32_data_generated = "0".repeat(40);
+    let error =
+        generate_repository(request(official.path(), &output, &mappings, &lock)).unwrap_err();
 
     assert!(error.to_string().contains("revision"), "{error:#}");
     assert!(!output.exists());
@@ -154,12 +156,13 @@ fn refuses_nonempty_output_without_changing_it() {
     fs::create_dir(&output).unwrap();
     fs::write(output.join("keep"), b"untouched").unwrap();
     let mappings = [mapping()];
+    let lock = SourceLock::read("tests/fixtures/source-lock.toml").unwrap();
 
     let error = generate_repository(request(
         Path::new("does-not-exist"),
         &output,
         &mappings,
-        "missing",
+        &lock,
     ))
     .unwrap_err();
 
@@ -169,7 +172,7 @@ fn refuses_nonempty_output_without_changing_it() {
 
 #[test]
 fn rejects_invalid_chip_patch_before_publishing() {
-    let (official, revision) = official_fixture();
+    let (official, lock) = official_fixture();
     let target = tempfile::tempdir().unwrap();
     let output = target.path().join("generated");
     let mut invalid = mapping();
@@ -177,7 +180,7 @@ fn rejects_invalid_chip_patch_before_publishing() {
     let mappings = [invalid];
 
     let error =
-        generate_repository(request(official.path(), &output, &mappings, &revision)).unwrap_err();
+        generate_repository(request(official.path(), &output, &mappings, &lock)).unwrap_err();
 
     assert!(error.to_string().contains("Chip"), "{error:#}");
     assert!(!output.exists());
@@ -185,14 +188,14 @@ fn rejects_invalid_chip_patch_before_publishing() {
 
 #[test]
 fn real_name_cannot_be_overridden_by_the_patch() {
-    let (official, revision) = official_fixture();
+    let (official, lock) = official_fixture();
     let target = tempfile::tempdir().unwrap();
     let output = target.path().join("generated");
     let mut renamed = mapping();
     renamed.patch = json!({"name": "STM32F103C8"});
     let mappings = [renamed];
 
-    generate_repository(request(official.path(), &output, &mappings, &revision)).unwrap();
+    generate_repository(request(official.path(), &output, &mappings, &lock)).unwrap();
 
     let metadata = fs::read_to_string(output.join("src/chips/gd32f103c8/metadata.rs")).unwrap();
     assert!(metadata.contains("name: \"GD32F103C8\""));
@@ -200,7 +203,7 @@ fn real_name_cannot_be_overridden_by_the_patch() {
 
 #[test]
 fn rejects_missing_register_input_before_publishing() {
-    let (official, revision) = official_fixture();
+    let (official, lock) = official_fixture();
     let target = tempfile::tempdir().unwrap();
     let output = target.path().join("generated");
     let mut missing = mapping();
@@ -221,8 +224,181 @@ fn rejects_missing_register_input_before_publishing() {
     let mappings = [missing];
 
     let error =
-        generate_repository(request(official.path(), &output, &mappings, &revision)).unwrap_err();
+        generate_repository(request(official.path(), &output, &mappings, &lock)).unwrap_err();
 
     assert!(error.to_string().contains("missing_v1.json"), "{error:#}");
     assert!(!output.exists());
+}
+
+#[test]
+fn generated_build_script_matches_the_tested_contract() {
+    let (official, lock) = official_fixture();
+    let target = tempfile::tempdir().unwrap();
+    let output = target.path().join("generated");
+    let mappings = [mapping()];
+
+    generate_repository(request(official.path(), &output, &mappings, &lock)).unwrap();
+
+    assert_eq!(
+        fs::read(output.join("build.rs")).unwrap(),
+        fs::read("tests/fixtures/metapac/build.rs").unwrap()
+    );
+    assert_eq!(
+        fs::read(output.join("src/compat.rs")).unwrap(),
+        fs::read("tests/fixtures/metapac/src/compat.rs").unwrap()
+    );
+
+    let executable = target.path().join("build-script-tests");
+    let source = output.join("build.rs");
+    run(
+        "rustc",
+        &[
+            "--test",
+            "--edition=2024",
+            source.to_str().unwrap(),
+            "-o",
+            executable.to_str().unwrap(),
+        ],
+        target.path(),
+    );
+    run(executable.to_str().unwrap(), &[], target.path());
+}
+
+#[test]
+fn test_mapping_requires_explicit_opt_in() {
+    let (official, lock) = official_fixture();
+    let target = tempfile::tempdir().unwrap();
+    let output = target.path().join("generated");
+    let mappings = [mapping()];
+    let mut request = request(official.path(), &output, &mappings, &lock);
+    request.include_test = false;
+
+    let error = generate_repository(request).unwrap_err();
+
+    assert!(error.to_string().contains("--include-test"), "{error:#}");
+    assert!(!output.exists());
+}
+
+#[test]
+fn native_generation_has_no_test_chip_or_feature() {
+    let (official, lock) = official_fixture();
+    let target = tempfile::tempdir().unwrap();
+    let output = target.path().join("generated");
+    let mut request = request(official.path(), &output, &[], &lock);
+    request.include_test = false;
+
+    generate_repository(request).unwrap();
+
+    assert!(!output.join("src/chips/gd32f103c8").exists());
+    assert_eq!(
+        fs::read_to_string(output.join("src/compat.rs")).unwrap(),
+        "const COMPATIBLE_CHIPS: &[(&str, &str)] = &[];\n"
+    );
+    let cargo = fs::read_to_string(output.join("Cargo.toml")).unwrap();
+    assert!(!cargo.contains("gd32f103c8"));
+    let all_chips = fs::read_to_string(output.join("src/all_chips.rs")).unwrap();
+    assert!(!all_chips.contains("gd32f103c8"));
+    let manifest: serde_json::Value =
+        serde_json::from_slice(&fs::read(output.join("generation.json")).unwrap()).unwrap();
+    assert_eq!(manifest["include_test"], false);
+    assert_eq!(manifest["chips"], serde_json::json!([]));
+}
+
+#[test]
+fn generation_manifest_records_locked_inputs_and_real_chips() {
+    let (official, lock) = official_fixture();
+    let target = tempfile::tempdir().unwrap();
+    let output = target.path().join("generated");
+    let mappings = [mapping()];
+
+    generate_repository(request(official.path(), &output, &mappings, &lock)).unwrap();
+
+    let manifest: serde_json::Value =
+        serde_json::from_slice(&fs::read(output.join("generation.json")).unwrap()).unwrap();
+    assert_eq!(manifest["schema"], 1);
+    assert_eq!(
+        manifest["source_lock_sha256"],
+        "0000000000000000000000000000000000000000000000000000000000000000"
+    );
+    assert_eq!(
+        manifest["upstream"]["stm32_data_generated"],
+        lock.upstream.stm32_data_generated
+    );
+    assert_eq!(manifest["target_db"]["revision"], lock.target_db.revision);
+    assert_eq!(manifest["include_test"], true);
+    assert_eq!(manifest["chips"][0]["chip"], "gd32f103c8");
+    assert_eq!(manifest["chips"][0]["alias"], "stm32f103c8");
+    assert_eq!(
+        manifest["chips"][0]["mapping_sha256"]
+            .as_str()
+            .unwrap()
+            .len(),
+        64
+    );
+}
+
+#[test]
+fn generated_repository_diff_is_limited_to_the_whitelist() {
+    let (official, lock) = official_fixture();
+    let target = tempfile::tempdir().unwrap();
+    let output = target.path().join("generated");
+    let mappings = [mapping()];
+
+    generate_repository(request(official.path(), &output, &mappings, &lock)).unwrap();
+
+    let baseline = file_tree(&official.path().join("stm32-metapac"));
+    let generated = file_tree(&output);
+    let paths: BTreeSet<_> = baseline.keys().chain(generated.keys()).collect();
+    let mut unexpected = Vec::new();
+    for path in paths {
+        if baseline.get(path) == generated.get(path) {
+            continue;
+        }
+        let allowed = matches!(
+            path.as_str(),
+            "build.rs" | "Cargo.toml" | "src/compat.rs" | "generation.json"
+        ) || path.starts_with("src/chips/gd32")
+            || path.starts_with("src/chips/compat_metadata_");
+        if !allowed {
+            unexpected.push(path.clone());
+        }
+    }
+    assert!(unexpected.is_empty(), "出现白名单外差异：{unexpected:?}");
+
+    let official_cargo =
+        fs::read_to_string(official.path().join("stm32-metapac/Cargo.toml")).unwrap();
+    let generated_cargo = fs::read_to_string(output.join("Cargo.toml")).unwrap();
+    let retain_semantic_lines = |contents: &str| {
+        contents
+            .lines()
+            .filter(|line| {
+                !line.starts_with("repository = ") && !line.starts_with("description = ")
+            })
+            .collect::<Vec<_>>()
+            .join("\n")
+    };
+    assert_eq!(
+        retain_semantic_lines(&official_cargo),
+        retain_semantic_lines(&generated_cargo)
+    );
+    assert!(
+        generated_cargo
+            .contains("repository = \"https://github.com/itswenb/embassy-mcu-compat-generated\"")
+    );
+    assert!(generated_cargo.contains("description = \"支持厂商兼容 MCU 的 STM32 外设访问包。\""));
+}
+
+fn file_tree(root: &Path) -> BTreeMap<String, Vec<u8>> {
+    WalkDir::new(root)
+        .into_iter()
+        .map(Result::unwrap)
+        .filter(|entry| entry.file_type().is_file())
+        .map(|entry| {
+            let relative = entry.path().strip_prefix(root).unwrap();
+            (
+                relative.to_string_lossy().replace('\\', "/"),
+                fs::read(entry.path()).unwrap(),
+            )
+        })
+        .collect()
 }

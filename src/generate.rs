@@ -6,20 +6,28 @@ use std::process::Command;
 
 use anyhow::{Context, Result, bail};
 use serde_json::Value;
+use sha2::{Digest, Sha256};
 use stm32_data_serde::Chip;
 use stm32_metapac_gen::{Gen, Options};
 use walkdir::WalkDir;
 
+use crate::hash::sha256_file;
 use crate::lock::SourceLock;
 use crate::mapping::{Mapping, Scope, load_mappings};
 use crate::merge_patch::apply_merge_patch;
 use crate::sources::verify_sources;
 
+const COMPAT_BUILD_RS: &str = include_str!("../tests/fixtures/metapac/build.rs");
+const GENERATED_REPOSITORY: &str = "https://github.com/itswenb/embassy-mcu-compat-generated";
+const GENERATED_DESCRIPTION: &str = "支持厂商兼容 MCU 的 STM32 外设访问包。";
+
 pub struct GenerateRequest<'a> {
     pub official_generated: &'a Path,
     pub output: &'a Path,
     pub mappings: &'a [Mapping],
-    pub expected_revision: &'a str,
+    pub source_lock: &'a SourceLock,
+    pub source_lock_sha256: &'a str,
+    pub include_test: bool,
 }
 
 pub fn run_generate(
@@ -31,6 +39,7 @@ pub fn run_generate(
     include_test: bool,
 ) -> Result<()> {
     let lock = SourceLock::read(lock_path)?;
+    let source_lock_sha256 = sha256_file(lock_path)?;
     verify_sources(&lock, cache_dir)?;
     let project_root = lock_path
         .parent()
@@ -47,13 +56,26 @@ pub fn run_generate(
         official_generated,
         output,
         mappings: &selected,
-        expected_revision: &lock.upstream.stm32_data_generated,
+        source_lock: &lock,
+        source_lock_sha256: &source_lock_sha256,
+        include_test,
     })
 }
 
 pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
     validate_output(request.output)?;
-    verify_official_checkout(request.official_generated, request.expected_revision)?;
+    if !request.include_test
+        && request
+            .mappings
+            .iter()
+            .any(|mapping| mapping.scope == Scope::Test)
+    {
+        bail!("未启用 --include-test，拒绝生成 test 映射");
+    }
+    verify_official_checkout(
+        request.official_generated,
+        &request.source_lock.upstream.stm32_data_generated,
+    )?;
 
     let parent = request
         .output
@@ -91,6 +113,11 @@ pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
     if !request.mappings.is_empty() {
         merge_private_chips(&generated_dir, &publication_dir, request.mappings)?;
     }
+    write_compat_table(&publication_dir, request.mappings)?;
+    fs::write(publication_dir.join("build.rs"), COMPAT_BUILD_RS)
+        .context("写入兼容 build.rs 失败")?;
+    rewrite_package_manifest(&publication_dir.join("Cargo.toml"))?;
+    write_generation_manifest(&publication_dir, &request)?;
     publish(&publication_dir, request.output)
 }
 
@@ -334,6 +361,80 @@ fn merge_private_chips(generated: &Path, publication: &Path, mappings: &[Mapping
         }
     }
     Ok(())
+}
+
+fn write_compat_table(publication: &Path, mappings: &[Mapping]) -> Result<()> {
+    let mut entries: Vec<_> = mappings
+        .iter()
+        .map(|mapping| (&mapping.chip, &mapping.alias))
+        .collect();
+    entries.sort();
+
+    let mut contents = String::from("const COMPATIBLE_CHIPS: &[(&str, &str)] = &[");
+    if entries.is_empty() {
+        contents.push_str("];\n");
+    } else {
+        contents.push('\n');
+        for (chip, alias) in entries {
+            contents.push_str("    (");
+            contents.push_str(&serde_json::to_string(chip).context("编码兼容芯片名失败")?);
+            contents.push_str(", ");
+            contents.push_str(&serde_json::to_string(alias).context("编码兼容 alias 失败")?);
+            contents.push_str("),\n");
+        }
+        contents.push_str("];\n");
+    }
+    fs::write(publication.join("src/compat.rs"), contents).context("写入静态兼容芯片表失败")
+}
+
+fn rewrite_package_manifest(path: &Path) -> Result<()> {
+    let mut contents = fs::read_to_string(path)
+        .with_context(|| format!("读取生成包清单 {} 失败", path.display()))?;
+    for (original, replacement) in [
+        (
+            "repository = \"https://github.com/embassy-rs/stm32-data\"",
+            format!("repository = {GENERATED_REPOSITORY:?}"),
+        ),
+        (
+            "description = \"Peripheral Access Crate (PAC) for all STM32 chips, including metadata.\"",
+            format!("description = {GENERATED_DESCRIPTION:?}"),
+        ),
+    ] {
+        if contents.matches(original).count() != 1 {
+            bail!("官方 Cargo.toml 描述字段不再唯一匹配：{original}");
+        }
+        contents = contents.replacen(original, &replacement, 1);
+    }
+    fs::write(path, contents).with_context(|| format!("写入生成包清单 {} 失败", path.display()))
+}
+
+fn write_generation_manifest(publication: &Path, request: &GenerateRequest<'_>) -> Result<()> {
+    let mut chips = Vec::new();
+    for mapping in request.mappings {
+        let bytes = serde_json::to_vec(mapping)
+            .with_context(|| format!("编码映射 {} 失败", mapping.chip))?;
+        chips.push(serde_json::json!({
+            "chip": mapping.chip,
+            "alias": mapping.alias,
+            "mapping_sha256": format!("{:x}", Sha256::digest(bytes)),
+        }));
+    }
+    chips.sort_by(|left, right| left["chip"].as_str().cmp(&right["chip"].as_str()));
+
+    let manifest = serde_json::json!({
+        "schema": 1,
+        "source_lock_sha256": request.source_lock_sha256,
+        "index": &request.source_lock.index,
+        "target_db": &request.source_lock.target_db,
+        "tools": &request.source_lock.tools,
+        "upstream": &request.source_lock.upstream,
+        "packs": &request.source_lock.packs,
+        "include_test": request.include_test,
+        "chips": chips,
+    });
+    let mut contents = serde_json::to_vec_pretty(&manifest).context("编码生成清单失败")?;
+    contents.push(b'\n');
+    fs::write(publication.join("generation.json"), contents).context("写入 generation.json 失败")
 }
 
 fn rewrite_metadata_include(contents: &str) -> Result<(String, String)> {
