@@ -60,6 +60,7 @@ CMSIS-Toolbox 的 `cpackget` 负责获取、缓存和解包 Pack，不承担 Emb
 
 初始上游配对为：
 
+- `embassy`：`98d847be57f3ea022ce05fe9b95ab3639a1e0a93`
 - `stm32-data`：`87c539515764df442bc50b6235bad891950ba3c4`
 - `stm32-data-generated`：`12ec4cd38c7825c1ff8592de1bdefaae445bb3a6`
 - 后者提交信息明确记录由前者生成。
