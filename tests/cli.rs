@@ -61,3 +61,24 @@ fn audit_enters_the_offline_audit_pipeline() {
     assert!(stderr.contains("读取来源锁"), "{stderr}");
     assert!(!stderr.contains("尚未实现"), "{stderr}");
 }
+
+#[test]
+fn generate_enters_the_verified_generation_pipeline() {
+    let temp = tempfile::tempdir().unwrap();
+    let output = Command::new(env!("CARGO_BIN_EXE_mcu-compat-gen"))
+        .args([
+            "generate",
+            "--official-generated",
+            "tests/fixtures/does-not-exist",
+            "--output",
+        ])
+        .arg(temp.path().join("generated"))
+        .args(["--lock", "tests/fixtures/does-not-exist.toml"])
+        .output()
+        .unwrap();
+    let stderr = String::from_utf8(output.stderr).unwrap();
+
+    assert!(!output.status.success());
+    assert!(stderr.contains("读取来源锁"), "{stderr}");
+    assert!(!stderr.contains("尚未实现"), "{stderr}");
+}

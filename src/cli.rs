@@ -69,6 +69,15 @@ pub struct GenerateArgs {
     /// 必须不存在或为空的输出目录。
     #[arg(long)]
     pub output: PathBuf,
+    /// 下载与解包缓存目录。
+    #[arg(long, default_value = ".cache/sources")]
+    pub cache_dir: PathBuf,
+    /// 来源锁文件。
+    #[arg(long, default_value = "sources.lock.toml")]
+    pub lock: PathBuf,
+    /// 兼容映射目录。
+    #[arg(long, default_value = "compat")]
+    pub compat_dir: PathBuf,
     /// 仅用于端到端测试时包含 test 映射。
     #[arg(long)]
     pub include_test: bool,

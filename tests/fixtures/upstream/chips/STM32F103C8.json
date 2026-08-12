@@ -1,0 +1,45 @@
+{
+  "name": "STM32F103C8",
+  "family": "STM32F1",
+  "line": "STM32F103",
+  "die": "FIXTURE",
+  "device_id": 1040,
+  "packages": [],
+  "memory": [
+    [
+      {
+        "name": "BANK_1",
+        "kind": "flash",
+        "address": 134217728,
+        "size": 65536
+      },
+      {
+        "name": "SRAM",
+        "kind": "ram",
+        "address": 536870912,
+        "size": 20480
+      }
+    ]
+  ],
+  "docs": [],
+  "cores": [
+    {
+      "name": "cm3",
+      "peripherals": [
+        {
+          "name": "CRC",
+          "address": 1073885184,
+          "registers": {
+            "kind": "crc",
+            "version": "v1",
+            "block": "CRC"
+          }
+        }
+      ],
+      "nvic_priority_bits": 4,
+      "interrupts": [],
+      "dma_channels": [],
+      "pins": []
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 mod cli;
 
-use anyhow::{Result, bail};
+use anyhow::Result;
 use clap::Parser;
 use cli::{Cli, Command, SourcesCommand};
+use mcu_compat_gen::generate::run_generate;
 use mcu_compat_gen::report::run_audit;
 use mcu_compat_gen::sources::update_sources;
 
@@ -32,6 +33,13 @@ fn main() -> Result<()> {
             );
             Ok(())
         }
-        Command::Generate(_) => bail!("generate 尚未实现"),
+        Command::Generate(args) => run_generate(
+            &args.official_generated,
+            &args.output,
+            &args.lock,
+            &args.cache_dir,
+            &args.compat_dir,
+            args.include_test,
+        ),
     }
 }

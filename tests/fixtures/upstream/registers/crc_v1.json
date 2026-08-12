@@ -1,0 +1,29 @@
+{
+  "block/CRC": {
+    "description": "循环冗余校验单元",
+    "items": [
+      {
+        "name": "DR",
+        "description": "数据寄存器",
+        "byte_offset": 0
+      },
+      {
+        "name": "CR",
+        "description": "控制寄存器",
+        "byte_offset": 8,
+        "fieldset": "CR"
+      }
+    ]
+  },
+  "fieldset/CR": {
+    "description": "控制寄存器",
+    "fields": [
+      {
+        "name": "RESET",
+        "description": "复位位",
+        "bit_offset": 0,
+        "bit_size": 1
+      }
+    ]
+  }
+}

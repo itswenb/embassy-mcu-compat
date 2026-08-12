@@ -1,3 +1,4 @@
+pub mod generate;
 pub mod hash;
 pub mod lock;
 pub mod mapping;
