@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "chip": "gd32f103c8",
+  "alias": "stm32f103c8",
+  "rust_target": "thumbv7m-none-eabi",
+  "scope": "test",
+  "source": {
+    "pack": "GigaDevice.GD32F10x_DFP@2.0.3",
+    "device": "GD32F103C8"
+  },
+  "names": {
+    "peripherals": {},
+    "interrupts": {},
+    "signals": {}
+  },
+  "evidence": {},
+  "patch": {}
+}
+
