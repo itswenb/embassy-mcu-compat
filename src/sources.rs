@@ -9,19 +9,35 @@ use roxmltree::Document;
 
 use crate::hash::{sha256_file, sha256_tree, verify_file};
 use crate::lock::{PackLock, SourceLock};
-use crate::target_db::{Device, load_inventory};
+use crate::target_db::{Device, load_inventory, source_index_sha256};
 
-pub fn update_sources(lock_path: &Path, cache_dir: &Path) -> Result<()> {
+pub fn update_sources(
+    lock_path: &Path,
+    cache_dir: &Path,
+    target_db_revision: Option<&str>,
+) -> Result<()> {
     let mut lock = SourceLock::read(lock_path)?;
     fs::create_dir_all(cache_dir)
         .with_context(|| format!("创建来源缓存 {} 失败", cache_dir.display()))?;
 
     let target_db = cache_dir.join("cmsis-rust-target-db");
-    checkout_repository(&lock.target_db.url, &lock.target_db.revision, &target_db)?;
-    let devices_path = target_db.join("data/devices.jsonl");
-    let metadata_path = target_db.join("data/metadata.json");
-    verify_file(&devices_path, &lock.target_db.devices_sha256)?;
-    verify_file(&metadata_path, &lock.target_db.metadata_sha256)?;
+    let revision = target_db_revision
+        .map(str::to_owned)
+        .unwrap_or_else(|| lock.target_db.revision.clone());
+    checkout_repository(&lock.target_db.url, &revision, &target_db)?;
+    let target_data = target_db.join("data");
+    if target_db_revision.is_some() {
+        refresh_target_db_lock(&mut lock, &revision, &target_data)?;
+    } else {
+        verify_file(
+            &target_data.join("devices.jsonl"),
+            &lock.target_db.devices_sha256,
+        )?;
+        verify_file(
+            &target_data.join("metadata.json"),
+            &lock.target_db.metadata_sha256,
+        )?;
+    }
 
     verify_cpackget_version(&lock.tools.cpackget)?;
     let pack_root = cache_dir.join("cmsis");
@@ -32,7 +48,7 @@ pub fn update_sources(lock_path: &Path, cache_dir: &Path) -> Result<()> {
     let index_path = pack_root.join(".Web/index.pidx");
     verify_file(&index_path, &lock.index.sha256)?;
     lock.index.timestamp = index_timestamp(&index_path)?;
-    let devices = load_inventory(&target_db.join("data"), &lock.index.sha256, &lock.selectors)?;
+    let devices = load_inventory(&target_data, &lock.index.sha256, &lock.selectors)?;
     let pack_devices = group_packs(&devices)?;
 
     let mut packs = Vec::new();
@@ -62,6 +78,23 @@ pub fn update_sources(lock_path: &Path, cache_dir: &Path) -> Result<()> {
     lock.packs = packs;
     lock.devices = devices;
     lock.save(lock_path)
+}
+
+pub fn refresh_target_db_lock(
+    lock: &mut SourceLock,
+    revision: &str,
+    data_root: &Path,
+) -> Result<()> {
+    if revision.len() != 40 || !revision.bytes().all(|byte| byte.is_ascii_hexdigit()) {
+        bail!("目标数据库 revision 必须是 40 位 Git commit：{revision:?}");
+    }
+    let index_sha256 = source_index_sha256(data_root)?;
+    lock.target_db.revision = revision.to_owned();
+    lock.target_db.devices_sha256 = sha256_file(&data_root.join("devices.jsonl"))?;
+    lock.target_db.metadata_sha256 = sha256_file(&data_root.join("metadata.json"))?;
+    lock.target_db.source_index_sha256.clone_from(&index_sha256);
+    lock.index.sha256 = index_sha256;
+    Ok(())
 }
 
 pub fn verify_sources(lock: &SourceLock, cache_dir: &Path) -> Result<()> {

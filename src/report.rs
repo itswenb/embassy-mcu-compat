@@ -58,9 +58,6 @@ pub fn run_audit(
     output: &Path,
     frozen: bool,
 ) -> Result<InventorySummary> {
-    if !frozen {
-        bail!("审计必须使用 --frozen，来源更新只能通过 sources update 完成");
-    }
     let lock = SourceLock::read(lock_path)?;
     verify_sources(&lock, cache_dir)?;
 
@@ -71,7 +68,7 @@ pub fn run_audit(
     let pack_root = cache_dir.join("cmsis");
     let mappings = load_mappings(compat_dir, &lock, &[project_root, &pack_root])?;
     let report = build_report(&lock, &mappings)?;
-    write_report(output, &report, true)?;
+    write_report(output, &report, frozen)?;
     Ok(report.summary)
 }
 

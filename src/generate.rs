@@ -26,7 +26,7 @@ pub struct GenerateRequest<'a> {
     pub output: &'a Path,
     pub mappings: &'a [Mapping],
     pub source_lock: &'a SourceLock,
-    pub source_lock_sha256: &'a str,
+    pub source_lock_sha256: String,
     pub include_test: bool,
 }
 
@@ -57,13 +57,14 @@ pub fn run_generate(
         output,
         mappings: &selected,
         source_lock: &lock,
-        source_lock_sha256: &source_lock_sha256,
+        source_lock_sha256,
         include_test,
     })
 }
 
 pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
     validate_output(request.output)?;
+    verify_source_lock_hash(request.source_lock, &request.source_lock_sha256)?;
     if !request.include_test
         && request
             .mappings
@@ -119,6 +120,15 @@ pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
     rewrite_package_manifest(&publication_dir.join("Cargo.toml"))?;
     write_generation_manifest(&publication_dir, &request)?;
     publish(&publication_dir, request.output)
+}
+
+fn verify_source_lock_hash(lock: &SourceLock, actual: &str) -> Result<()> {
+    let contents = lock.to_toml()?;
+    let expected = format!("{:x}", Sha256::digest(contents.as_bytes()));
+    if actual != expected {
+        bail!("来源锁 SHA-256 不匹配：期望 {expected}，实际 {actual}");
+    }
+    Ok(())
 }
 
 pub fn prepare_staging_data(
@@ -423,7 +433,7 @@ fn write_generation_manifest(publication: &Path, request: &GenerateRequest<'_>) 
 
     let manifest = serde_json::json!({
         "schema": 1,
-        "source_lock_sha256": request.source_lock_sha256,
+        "source_lock_sha256": &request.source_lock_sha256,
         "index": &request.source_lock.index,
         "target_db": &request.source_lock.target_db,
         "tools": &request.source_lock.tools,

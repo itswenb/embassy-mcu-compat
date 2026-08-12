@@ -83,3 +83,26 @@ fn atomic_save_refuses_an_invalid_lock() {
 fn checked_in_source_lock_is_valid() {
     SourceLock::read("sources.lock.toml").unwrap();
 }
+
+#[test]
+fn checked_in_source_lock_uses_canonical_serialization() {
+    let actual = fs::read_to_string("sources.lock.toml").unwrap();
+    let expected = SourceLock::read("sources.lock.toml")
+        .unwrap()
+        .to_toml()
+        .unwrap();
+    let difference = actual
+        .lines()
+        .zip(expected.lines())
+        .enumerate()
+        .find(|(_, (actual, expected))| actual != expected);
+
+    assert!(
+        difference.is_none(),
+        "首个差异：{:?}；实际/规范行数：{}/{}",
+        difference.map(|(index, lines)| (index + 1, lines)),
+        actual.lines().count(),
+        expected.lines().count()
+    );
+    assert_eq!(actual.len(), expected.len());
+}

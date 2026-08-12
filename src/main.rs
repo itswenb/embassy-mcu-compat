@@ -12,7 +12,11 @@ fn main() -> Result<()> {
 
     match cli.command {
         Command::Sources(args) => match args.command {
-            SourcesCommand::Update(args) => update_sources(&args.lock, &args.cache_dir),
+            SourcesCommand::Update(args) => update_sources(
+                &args.lock,
+                &args.cache_dir,
+                args.target_db_revision.as_deref(),
+            ),
         },
         Command::Audit(args) => {
             let summary = run_audit(

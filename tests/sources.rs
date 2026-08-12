@@ -6,7 +6,7 @@ use mcu_compat_gen::hash::{sha256_file, sha256_tree};
 use mcu_compat_gen::lock::{PackLock, SourceLock};
 use mcu_compat_gen::sources::{
     cpackget_add_args, cpackget_init_args, index_timestamp, pack_archive_path, pack_id,
-    pack_install_path, pack_url, validate_pack_coordinate, verify_sources,
+    pack_install_path, pack_url, refresh_target_db_lock, validate_pack_coordinate, verify_sources,
 };
 use mcu_compat_gen::target_db::{Selector, load_inventory};
 
@@ -82,6 +82,39 @@ fn rejects_pack_coordinates_that_can_escape_the_pack_root() {
     }
     assert!(validate_pack_coordinate("GD32F10x_DFP").is_ok());
     assert!(validate_pack_coordinate("2.0.3-rc.1+build").is_ok());
+}
+
+#[test]
+fn refreshes_target_database_revision_and_hashes_as_one_unit() {
+    let temp = tempfile::tempdir().unwrap();
+    let data = temp.path().join("data");
+    fs::create_dir(&data).unwrap();
+    fs::copy(
+        "tests/fixtures/target-db/devices.jsonl",
+        data.join("devices.jsonl"),
+    )
+    .unwrap();
+    fs::copy(
+        "tests/fixtures/target-db/metadata.json",
+        data.join("metadata.json"),
+    )
+    .unwrap();
+    let mut lock = SourceLock::read("tests/fixtures/source-lock.toml").unwrap();
+
+    let revision = "a".repeat(40);
+    refresh_target_db_lock(&mut lock, &revision, &data).unwrap();
+
+    assert_eq!(lock.target_db.revision, revision);
+    assert_eq!(
+        lock.target_db.devices_sha256,
+        sha256_file(&data.join("devices.jsonl")).unwrap()
+    );
+    assert_eq!(
+        lock.target_db.metadata_sha256,
+        sha256_file(&data.join("metadata.json")).unwrap()
+    );
+    assert_eq!(lock.target_db.source_index_sha256, "fixture-index");
+    assert_eq!(lock.index.sha256, "fixture-index");
 }
 
 #[test]

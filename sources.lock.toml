@@ -567,6 +567,7 @@ core = "Cortex-M33"
 fpu = "FPU"
 endian = "Little-endian"
 rust_target = "thumbv8m.main-none-eabihf"
+
 [[devices]]
 chip = "gd32e503ce"
 original_name = "GD32E503CE"

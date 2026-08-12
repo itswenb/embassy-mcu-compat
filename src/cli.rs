@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use clap::{Args, Parser, Subcommand};
+use clap::{ArgGroup, Args, Parser, Subcommand};
 
 #[derive(Debug, Parser)]
 #[command(name = "mcu-compat-gen")]
@@ -40,13 +40,25 @@ pub struct SourceUpdateArgs {
     /// 来源锁文件。
     #[arg(long, default_value = "sources.lock.toml")]
     pub lock: PathBuf,
+    /// 原子更新到指定的 cmsis-rust-target-db commit。
+    #[arg(long)]
+    pub target_db_revision: Option<String>,
 }
 
 #[derive(Debug, Args)]
+#[command(group(
+    ArgGroup::new("audit_mode")
+        .required(true)
+        .multiple(false)
+        .args(["frozen", "update_derived"])
+))]
 pub struct AuditArgs {
     /// 禁止接受任何来源漂移。
     #[arg(long)]
     pub frozen: bool,
+    /// 仅在来源维护流程中更新派生审计报告。
+    #[arg(long)]
+    pub update_derived: bool,
     /// 下载与解包缓存目录。
     #[arg(long, default_value = ".cache/sources")]
     pub cache_dir: PathBuf,

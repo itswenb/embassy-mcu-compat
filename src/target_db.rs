@@ -61,21 +61,9 @@ pub fn load_inventory(
     index_sha256: &str,
     selectors: &[Selector],
 ) -> Result<Vec<Device>> {
-    let metadata_path = root.join("metadata.json");
-    let metadata: Metadata = serde_json::from_reader(
-        File::open(&metadata_path)
-            .with_context(|| format!("读取 {} 失败", metadata_path.display()))?,
-    )
-    .with_context(|| format!("解析 {} 失败", metadata_path.display()))?;
-
-    if metadata.schema_version != 1 {
-        bail!("不支持的目标数据库 schema：{}", metadata.schema_version);
-    }
-    if metadata.source_index_sha256.as_deref() != Some(index_sha256) {
-        bail!(
-            "目标数据库索引 SHA-256 不匹配：期望 {index_sha256}，实际 {:?}",
-            metadata.source_index_sha256
-        );
+    let actual_index_sha256 = source_index_sha256(root)?;
+    if actual_index_sha256 != index_sha256 {
+        bail!("目标数据库索引 SHA-256 不匹配：期望 {index_sha256}，实际 {actual_index_sha256}");
     }
 
     let records_path = root.join("devices.jsonl");
@@ -101,6 +89,25 @@ pub fn load_inventory(
     }
 
     normalize(selected)
+}
+
+pub fn source_index_sha256(root: &Path) -> Result<String> {
+    let metadata_path = root.join("metadata.json");
+    let metadata: Metadata = serde_json::from_reader(
+        File::open(&metadata_path)
+            .with_context(|| format!("读取 {} 失败", metadata_path.display()))?,
+    )
+    .with_context(|| format!("解析 {} 失败", metadata_path.display()))?;
+
+    if metadata.schema_version != 1 {
+        bail!("不支持的目标数据库 schema：{}", metadata.schema_version);
+    }
+    metadata.source_index_sha256.ok_or_else(|| {
+        anyhow::anyhow!(
+            "目标数据库 {} 缺少来源索引 SHA-256",
+            metadata_path.display()
+        )
+    })
 }
 
 pub fn wildcard_match(pattern: &str, value: &str) -> bool {

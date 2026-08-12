@@ -221,3 +221,18 @@ fn frozen_report_never_overwrites_drift() {
     assert!(error.to_string().contains("candidate"));
     assert_eq!(fs::read(path).unwrap(), original);
 }
+
+#[test]
+fn derived_update_replaces_the_report_before_it_is_frozen_again() {
+    let (lock, mappings) = report_fixture();
+    let mut report = build_report(&lock, &mappings).unwrap();
+    let temp = tempfile::tempdir().unwrap();
+    let path = temp.path().join("inventory.json");
+    write_report(&path, &report, false).unwrap();
+
+    report.devices[0].reasons.push("来源已更新".into());
+    write_report(&path, &report, false).unwrap();
+
+    assert_eq!(fs::read(&path).unwrap(), render_report(&report).unwrap());
+    write_report(&path, &report, true).unwrap();
+}

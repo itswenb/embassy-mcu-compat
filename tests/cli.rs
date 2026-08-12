@@ -45,6 +45,18 @@ fn sources_update_enters_the_source_pipeline() {
 }
 
 #[test]
+fn sources_update_accepts_an_explicit_target_database_revision() {
+    let output = Command::new(env!("CARGO_BIN_EXE_mcu-compat-gen"))
+        .args(["sources", "update", "--help"])
+        .output()
+        .unwrap();
+    let stdout = String::from_utf8(output.stdout).unwrap();
+
+    assert!(output.status.success());
+    assert!(stdout.contains("--target-db-revision"), "{stdout}");
+}
+
+#[test]
 fn audit_enters_the_offline_audit_pipeline() {
     let output = Command::new(env!("CARGO_BIN_EXE_mcu-compat-gen"))
         .args([
@@ -60,6 +72,20 @@ fn audit_enters_the_offline_audit_pipeline() {
     assert!(!output.status.success());
     assert!(stderr.contains("读取来源锁"), "{stderr}");
     assert!(!stderr.contains("尚未实现"), "{stderr}");
+}
+
+#[test]
+fn audit_requires_an_explicit_report_mode() {
+    let output = Command::new(env!("CARGO_BIN_EXE_mcu-compat-gen"))
+        .args(["audit", "--lock", "tests/fixtures/does-not-exist.toml"])
+        .output()
+        .unwrap();
+    let stderr = String::from_utf8(output.stderr).unwrap();
+
+    assert!(!output.status.success());
+    assert!(stderr.contains("--frozen"), "{stderr}");
+    assert!(stderr.contains("--update-derived"), "{stderr}");
+    assert!(!stderr.contains("读取来源锁"), "{stderr}");
 }
 
 #[test]

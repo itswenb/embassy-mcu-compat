@@ -4,9 +4,11 @@ use std::path::Path;
 use std::process::Command;
 
 use mcu_compat_gen::generate::{GenerateRequest, generate_repository};
+use mcu_compat_gen::hash::sha256_tree;
 use mcu_compat_gen::lock::SourceLock;
 use mcu_compat_gen::mapping::Mapping;
 use serde_json::json;
+use sha2::{Digest, Sha256};
 use stm32_metapac_gen::{Gen, Options};
 use walkdir::WalkDir;
 
@@ -111,7 +113,10 @@ fn request<'a>(
         output,
         mappings,
         source_lock,
-        source_lock_sha256: "0000000000000000000000000000000000000000000000000000000000000000",
+        source_lock_sha256: format!(
+            "{:x}",
+            Sha256::digest(source_lock.to_toml().unwrap().as_bytes())
+        ),
         include_test: true,
     }
 }
@@ -318,7 +323,7 @@ fn generation_manifest_records_locked_inputs_and_real_chips() {
     assert_eq!(manifest["schema"], 1);
     assert_eq!(
         manifest["source_lock_sha256"],
-        "0000000000000000000000000000000000000000000000000000000000000000"
+        format!("{:x}", Sha256::digest(lock.to_toml().unwrap().as_bytes()))
     );
     assert_eq!(
         manifest["upstream"]["stm32_data_generated"],
@@ -386,6 +391,91 @@ fn generated_repository_diff_is_limited_to_the_whitelist() {
             .contains("repository = \"https://github.com/itswenb/embassy-mcu-compat-generated\"")
     );
     assert!(generated_cargo.contains("description = \"支持厂商兼容 MCU 的 STM32 外设访问包。\""));
+}
+
+#[test]
+fn repeated_generation_has_the_same_tree_hash() {
+    let (official, lock) = official_fixture();
+    let first_root = tempfile::tempdir().unwrap();
+    let second_root = tempfile::tempdir().unwrap();
+    let first = first_root.path().join("generated");
+    let second = second_root.path().join("generated");
+    let mappings = [mapping()];
+
+    generate_repository(request(official.path(), &first, &mappings, &lock)).unwrap();
+    generate_repository(request(official.path(), &second, &mappings, &lock)).unwrap();
+
+    assert_eq!(sha256_tree(&first).unwrap(), sha256_tree(&second).unwrap());
+}
+
+#[test]
+fn source_lock_hash_drift_fails_before_publication() {
+    let (official, lock) = official_fixture();
+    let target = tempfile::tempdir().unwrap();
+    let output = target.path().join("generated");
+    let mappings = [mapping()];
+    let mut request = request(official.path(), &output, &mappings, &lock);
+    request.source_lock_sha256 =
+        "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff".into();
+
+    let error = generate_repository(request).unwrap_err();
+
+    assert!(error.to_string().contains("来源锁 SHA-256"), "{error:#}");
+    assert!(!output.exists());
+}
+
+#[test]
+fn cargo_reports_unknown_chip_and_alias_mismatch() {
+    let unknown = build_script_failure("unknown32", "stm32f103c8");
+    assert!(unknown.contains("EMBASSY_MCU_COMPAT_CHIP"), "{unknown}");
+    assert!(unknown.contains("unknown32"), "{unknown}");
+    assert!(unknown.contains("gd32f103c8"), "{unknown}");
+
+    let mismatch = build_script_failure("gd32f103c8", "stm32f103cb");
+    assert!(mismatch.contains("EMBASSY_MCU_COMPAT_CHIP"), "{mismatch}");
+    assert!(mismatch.contains("gd32f103c8"), "{mismatch}");
+    assert!(mismatch.contains("stm32f103c8"), "{mismatch}");
+    assert!(mismatch.contains("stm32f103cb"), "{mismatch}");
+}
+
+fn build_script_failure(chip: &str, feature: &str) -> String {
+    let temp = tempfile::tempdir().unwrap();
+    fs::create_dir_all(temp.path().join("src")).unwrap();
+    fs::copy(
+        "tests/fixtures/metapac/build.rs",
+        temp.path().join("build.rs"),
+    )
+    .unwrap();
+    fs::copy(
+        "tests/fixtures/metapac/src/compat.rs",
+        temp.path().join("src/compat.rs"),
+    )
+    .unwrap();
+    fs::write(temp.path().join("src/lib.rs"), "#![no_std]\n").unwrap();
+    fs::write(
+        temp.path().join("Cargo.toml"),
+        concat!(
+            "[package]\n",
+            "name = \"build-selection-check\"\n",
+            "version = \"0.0.0\"\n",
+            "edition = \"2024\"\n",
+            "\n",
+            "[features]\n",
+            "stm32f103c8 = []\n",
+            "stm32f103cb = []\n",
+        ),
+    )
+    .unwrap();
+
+    let output = Command::new("cargo")
+        .args(["check", "--offline", "--quiet", "--features", feature])
+        .env("EMBASSY_MCU_COMPAT_CHIP", chip)
+        .env("CARGO_TARGET_DIR", temp.path().join("target"))
+        .current_dir(temp.path())
+        .output()
+        .unwrap();
+    assert!(!output.status.success(), "错误路径意外编译成功");
+    String::from_utf8(output.stderr).unwrap()
 }
 
 fn file_tree(root: &Path) -> BTreeMap<String, Vec<u8>> {
