@@ -1,0 +1,11 @@
+[package]
+name = "stm32f103c8-native-example"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+embassy-stm32 = { git = "https://github.com/embassy-rs/embassy.git", rev = "98d847be57f3ea022ce05fe9b95ab3639a1e0a93", default-features = false, features = ["stm32f103c8"] }
+
+[patch."https://github.com/embassy-rs/stm32-data-generated"]
+stm32-metapac = { path = "../../../embassy-mcu-compat-generated" }

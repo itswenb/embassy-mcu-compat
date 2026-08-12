@@ -1,4 +1,5 @@
 /target/
 /.cache/
+/examples/*/target/
+/examples/*/Cargo.lock
 .DS_Store
-

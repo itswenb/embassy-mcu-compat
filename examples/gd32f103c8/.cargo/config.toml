@@ -1,0 +1,2 @@
+[env]
+EMBASSY_MCU_COMPAT_CHIP = { value = "gd32f103c8", force = true }
