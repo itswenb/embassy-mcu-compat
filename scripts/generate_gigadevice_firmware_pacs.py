@@ -353,12 +353,12 @@ def generate(
         compile_status = "missing"
         compile_details = None
         if generate_status != "failed":
-            output = (
-                generated_cache
-                / f"n{svd_audit.NORMALIZATION_VERSION}-{svd_sha256[:16]}-{revision[:12]}"
+            lib, _ = pac_compile._find_generated(
+                generated_cache,
+                {"sha256": svd_sha256, "generated": marker},
             )
             compile_status, compile_details = pac_compile._compile(
-                output / "lib.rs", rustc_version, compile_cache
+                lib, rustc_version, compile_cache
             )
         results.append(
             {

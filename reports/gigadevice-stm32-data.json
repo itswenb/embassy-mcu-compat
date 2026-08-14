@@ -1,12 +1,17 @@
 {
   "chips": 632,
   "chips_with_memory": 610,
+  "firmware_fallback_chips": 55,
   "memory_regions": 1508,
   "memory_sha256": "a1748c231f25411a6a1f766737831c228f45042d5a673c9e4fd2e7744955b035",
   "models_sha256": "8181922b6aef25903330d6e3c7c1544650dd60108fd18aa535903468ffe9f550",
   "output": ".cache/generated/gigadevice-stm32-data-v1",
-  "output_tree_sha256": "58b669c5f3431596518ba89f153180919ee6531343fb3f0f40f5075e0432368c",
-  "register_files": 545,
-  "schema_version": 1,
+  "output_tree_sha256": "42be0d9fb540a0cc35b4ca35b0a682bfb9e26d2eca98094b0d826c2b181a2254",
+  "register_files": 1324,
+  "resources_sha256": "26c76bdee8c353d96588b6f95b2c1037b29e8bec7c0ca5e21a54ce3d4dee9d2f",
+  "schema_version": 2,
+  "svd_chips": 577,
+  "svd_ir_sha256": "283298556456f0dbc4a9de5487bc1a885f34aeb38667cec78f2eaea5ad288cd5",
+  "svd_ir_tree_sha256": "351ca7b1d053e79b52ddb2b80b0c8ce2967c33d0c6f6e73c4157a9d42e8d2320",
   "variants_sha256": "0b091312471229dd053dbb9fb84f3599ac1edd8e67443e836fe5e5c1cba1eee4"
 }

@@ -22,6 +22,11 @@ class EmbassyNamesTests(unittest.TestCase):
             "USART0": ("USART1", "indexed"),
             "UART3": ("UART4", "indexed"),
             "DMA0": ("DMA1", "indexed"),
+            "DMA": ("DMA1", "semantic"),
+            "ADC": ("ADC1", "semantic"),
+            "DAC": ("DAC1", "semantic"),
+            "CAN0": ("CAN1", "indexed"),
+            "DAC0": ("DAC1", "indexed"),
             "I2C0": ("I2C1", "indexed"),
             "RCU": ("RCC", "semantic"),
             "FMC": ("FLASH", "semantic"),
@@ -35,7 +40,7 @@ class EmbassyNamesTests(unittest.TestCase):
                 self.assertEqual(MODULE.embassy_instance_name(native), result)
 
         self.assertIsNone(MODULE.embassy_instance_name("EDIM_AFMT"))
-        for family_specific in ("CAN0", "DAC0", "OSPI0", "SDIO0"):
+        for family_specific in ("OSPI0", "SDIO0"):
             with self.subTest(family_specific=family_specific):
                 self.assertIsNone(MODULE.embassy_instance_name(family_specific))
 

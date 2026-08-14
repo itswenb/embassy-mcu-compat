@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import shutil
@@ -35,6 +36,108 @@ def _register_identity(layout: dict[str, object]) -> tuple[str, str, str]:
         raise ValueError(f"布局 ID 缺少 16 位摘要：{layout['id']}")
     kind = "gd" + re.sub(r"[^a-z0-9]", "", block.lower()) + digest[:8]
     return kind, "v1", block
+
+
+def _svd_register_identity(
+    root: str, ir: dict[str, object]
+) -> tuple[str, str, str]:
+    preferred = f"block/{root}::{root}"
+    blocks = sorted(key for key in ir if key.startswith("block/"))
+    if preferred in ir:
+        block = preferred.removeprefix("block/")
+    elif len(blocks) == 1:
+        block = blocks[0].removeprefix("block/")
+    else:
+        raise ValueError(f"SVD IR 无法确定根 block：{root}:{blocks}")
+    digest = hashlib.sha256(
+        json.dumps(ir, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()
+    compact = re.sub(r"[^a-z0-9]", "", root.lower())
+    if not compact:
+        raise ValueError(f"SVD register root 不是合法标识符：{root}")
+    return f"gd{compact}{digest[:8]}", "v1", block
+
+
+def _svd_device_facts(
+    models: list[dict[str, object]],
+    resources: dict[str, object] | None,
+    svd_ir: dict[str, object] | None,
+    cache_dir: Path | None,
+) -> tuple[dict[str, dict[str, object]], dict[str, dict[str, object]]]:
+    if resources is None or svd_ir is None or cache_dir is None:
+        return {}, {}
+    raw_resources = resources.get("devices")
+    raw_svds = svd_ir.get("svds")
+    if not isinstance(raw_resources, list) or not isinstance(raw_svds, list):
+        raise ValueError("Pack 资源或 SVD IR 报告格式无效")
+    resources_by_device = {
+        str(row["device"]): row for row in raw_resources if isinstance(row, dict)
+    }
+    svds_by_sha = {
+        str(row["svd_sha256"]): row for row in raw_svds if isinstance(row, dict)
+    }
+    register_sets = {}
+    register_files = {}
+    devices = {}
+    for model in models:
+        device = str(model["id"])
+        candidates = [
+            resources_by_device[name]
+            for name in map(str, model.get("cmsis_devices", []))
+            if name in resources_by_device and resources_by_device[name].get("debug")
+        ]
+        if not candidates:
+            continue
+        shas = {
+            str(debug["file"]["sha256"])
+            for candidate in candidates
+            for debug in candidate["debug"]
+            if isinstance(debug, dict) and isinstance(debug.get("file"), dict)
+        }
+        if len(shas) != 1:
+            raise ValueError(f"型号对应多个或无 SVD：{device}:{sorted(shas)}")
+        sha256 = next(iter(shas))
+        facts = svds_by_sha.get(sha256)
+        if facts is None:
+            raise ValueError(f"型号引用未提取的 SVD：{device}:{sha256}")
+        if sha256 not in register_sets:
+            roots = {}
+            json_dir = cache_dir / sha256 / "json"
+            for path in sorted(json_dir.rglob("*.json")):
+                root = path.stem.split("::", 1)[0]
+                ir = json.loads(path.read_text(encoding="utf-8"))
+                if not isinstance(ir, dict):
+                    raise ValueError(f"SVD register IR 格式无效：{path}")
+                identity = _svd_register_identity(root, ir)
+                key = f"{identity[0]}_{identity[1]}"
+                if root in roots or (key in register_files and register_files[key] != ir):
+                    raise ValueError(f"SVD register IR 身份冲突：{sha256}:{root}")
+                roots[root] = identity
+                register_files[key] = ir
+            if not roots:
+                raise ValueError(f"SVD 缓存没有 register IR：{sha256}")
+            register_sets[sha256] = roots
+        roots = register_sets[sha256]
+        peripherals = []
+        for peripheral in facts.get("register_roots", []):
+            if not isinstance(peripheral, dict) or peripheral.get("name") == "NVIC":
+                continue
+            root = str(peripheral["register_root"])
+            if root not in roots:
+                raise ValueError(f"SVD 外设引用未知 register root：{device}:{root}")
+            kind, version, block = roots[root]
+            peripherals.append(
+                {
+                    "name": str(peripheral["name"]),
+                    "address": int(peripheral["address"]),
+                    "registers": {"kind": kind, "version": version, "block": block},
+                }
+            )
+        interrupts = facts.get("interrupt_vectors")
+        if not isinstance(interrupts, list):
+            raise ValueError(f"SVD 缺少中断向量：{device}")
+        devices[device] = {"peripherals": peripherals, "interrupts": interrupts}
+    return devices, register_files
 
 
 def register_ir(layout: dict[str, object]) -> dict[str, object]:
@@ -135,23 +238,31 @@ def _chip(
     variant: dict[str, object],
     layouts: dict[str, tuple[str, str, str]],
     memory: list[list[dict[str, object]]],
+    svd: dict[str, object] | None = None,
 ) -> dict[str, object]:
     core = CORE_NAMES.get(str(model.get("core")), "unknown")
-    peripherals = []
-    for instance in sorted(
-        variant["instances"], key=lambda row: (str(row["name"]), int(row["address"]))
-    ):
-        layout_id = str(instance["layout"])
-        if layout_id not in layouts:
-            raise ValueError(f"外设实例引用未知布局：{variant['id']}:{layout_id}")
-        kind, version, block = layouts[layout_id]
-        peripherals.append(
-            {
-                "name": str(instance["name"]),
-                "address": int(instance["address"]),
-                "registers": {"kind": kind, "version": version, "block": block},
-            }
+    if svd is None:
+        peripherals = []
+        for instance in sorted(
+            variant["instances"], key=lambda row: (str(row["name"]), int(row["address"]))
+        ):
+            layout_id = str(instance["layout"])
+            if layout_id not in layouts:
+                raise ValueError(f"外设实例引用未知布局：{variant['id']}:{layout_id}")
+            kind, version, block = layouts[layout_id]
+            peripherals.append(
+                {
+                    "name": str(instance["name"]),
+                    "address": int(instance["address"]),
+                    "registers": {"kind": kind, "version": version, "block": block},
+                }
+            )
+        interrupts = variant["interrupts"]
+    else:
+        peripherals = sorted(
+            svd["peripherals"], key=lambda row: (str(row["name"]), int(row["address"]))
         )
+        interrupts = svd["interrupts"]
     return {
         "name": str(model["id"]),
         "family": "GD32",
@@ -168,8 +279,7 @@ def _chip(
                 "interrupts": [
                     {"name": str(row["name"]), "number": int(row["value"])}
                     for row in sorted(
-                        variant["interrupts"],
-                        key=lambda row: (int(row["value"]), str(row["name"])),
+                        interrupts, key=lambda row: (int(row["value"]), str(row["name"]))
                     )
                 ],
                 "dma_channels": [],
@@ -180,18 +290,26 @@ def _chip(
 
 
 def build_staging(
-    models: dict[str, object], variants: dict[str, object], memory: dict[str, object]
-) -> dict[str, dict[str, object]]:
+    models: dict[str, object],
+    variants: dict[str, object],
+    memory: dict[str, object],
+    resources: dict[str, object] | None = None,
+    svd_ir: dict[str, object] | None = None,
+    svd_ir_cache: Path | None = None,
+) -> dict[str, object]:
     raw_models = models.get("devices")
     raw_variants = variants.get("variants")
     if not isinstance(raw_models, list) or not isinstance(raw_variants, list):
         raise ValueError("型号或变体报告格式无效")
     models_by_id = {str(model["id"]): model for model in raw_models}
+    svd_devices, svd_register_files = _svd_device_facts(
+        raw_models, resources, svd_ir, svd_ir_cache
+    )
     memory_by_id = _memory_configurations(memory)
     if set(models_by_id) - set(memory_by_id):
         raise ValueError("内存报告未覆盖全部规范化型号")
     chips = {}
-    register_files = {}
+    register_files = dict(svd_register_files)
     layout_identities = {}
     for variant in sorted(raw_variants, key=lambda row: str(row["id"])):
         local_layouts = {}
@@ -213,8 +331,18 @@ def build_staging(
                 raise ValueError(f"变体引用未知型号：{device}")
             if device in chips:
                 raise ValueError(f"型号同时属于多个变体：{device}")
-            chips[device] = _chip(model, variant, local_layouts, memory_by_id[device])
-    return {"chips": chips, "registers": register_files}
+            chips[device] = _chip(
+                model,
+                variant,
+                local_layouts,
+                memory_by_id[device],
+                svd_devices.get(device),
+            )
+    return {
+        "chips": chips,
+        "registers": register_files,
+        "svd_chips": sorted(svd_devices),
+    }
 
 
 def _write_staging(output: Path, staging: dict[str, dict[str, object]], manifest: dict[str, object]) -> None:
@@ -262,6 +390,21 @@ def main() -> int:
         default=root / ".cache/normalized/gigadevice-memory.json",
     )
     parser.add_argument(
+        "--resources",
+        type=Path,
+        default=root / "reports/gigadevice-pack-resources.json",
+    )
+    parser.add_argument(
+        "--svd-ir",
+        type=Path,
+        default=root / "reports/gigadevice-svd-ir.json",
+    )
+    parser.add_argument(
+        "--svd-ir-cache",
+        type=Path,
+        default=root / ".cache/research/gigadevice/svd-ir-v1",
+    )
+    parser.add_argument(
         "--output",
         type=Path,
         default=root / ".cache/generated/gigadevice-stm32-data-v1",
@@ -277,14 +420,22 @@ def main() -> int:
         json.loads(args.models.read_text(encoding="utf-8")),
         variants,
         json.loads(args.memory.read_text(encoding="utf-8")),
+        json.loads(args.resources.read_text(encoding="utf-8")),
+        json.loads(args.svd_ir.read_text(encoding="utf-8")),
+        args.svd_ir_cache,
     )
     manifest = {
-        "schema_version": 1,
+        "schema_version": 2,
         "models_sha256": common._sha256(args.models),
         "variants_sha256": common._sha256(args.variants),
         "memory_sha256": common._sha256(args.memory),
+        "resources_sha256": common._sha256(args.resources),
+        "svd_ir_sha256": common._sha256(args.svd_ir),
+        "svd_ir_tree_sha256": common.tree_sha256(args.svd_ir_cache),
         "chips": len(staging["chips"]),
         "register_files": len(staging["registers"]),
+        "svd_chips": len(staging["svd_chips"]),
+        "firmware_fallback_chips": len(staging["chips"]) - len(staging["svd_chips"]),
         "chips_with_memory": sum(bool(chip["memory"]) for chip in staging["chips"].values()),
         "memory_regions": sum(
             len(configuration)

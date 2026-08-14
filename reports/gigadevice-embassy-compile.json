@@ -1,0 +1,3162 @@
+{
+  "cargo": "cargo 1.94.0-nightly (2c283a9a5 2025-12-04)",
+  "checks": [
+    {
+      "chip": "gd32f303cb",
+      "features": [
+        "stm32f103rc",
+        "time-driver-tim5"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32a103cb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32a103rb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32a103tb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32a103vb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32a490ii",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32a490ik",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32a490zi",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32a490zk",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c103cb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c103cbxxa",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c103rb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c103rbxxa",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c103tb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c103tbxxa",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c103vb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c113cb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c113rb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c113tb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32c113vb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e103c8",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e103cb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e103r8",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e103rb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e103t8",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e103tb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e103v8",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e103vb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e113c8",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e113cb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e113r8",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e113rb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e113t8",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e113tb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e113v8",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e113vb",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230c4",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230c6",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230c8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230e8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230f4",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230f6",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230f8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230g4",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230g6",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230g8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230k4",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230k6",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e230k8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e231k8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e231t8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e235c8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e235cb",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e235eb",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e235f8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e235fb",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e235g8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e235gb",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e235k8",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32e235kb",
+      "features": [
+        "stm32f030c8"
+      ],
+      "profile": "stm32f030c8",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101c4",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101c6",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101c8",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101cb",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101r4",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101r6",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101r8",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101rb",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101rc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101rd",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101re",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101rf",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101rg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101ri",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101rk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101t4",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101t6",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101t8",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101tb",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101v8",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101vb",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101vc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101vd",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101ve",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101vf",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101vg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101vi",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101vk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101zc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101zd",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101ze",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101zf",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101zg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101zi",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f101zk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103c4",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103c6",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103c8",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103cb",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103r4",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103r6",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103r8",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103rb",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103rc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103rd",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103re",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103rf",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103rg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103ri",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103rk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103t4",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103t6",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103t8",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103tb",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103v8",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103vb",
+      "features": [
+        "stm32f103c8"
+      ],
+      "profile": "stm32f103c8",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103vc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103vd",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103ve",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103vf",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103vg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103vi",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103vk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103zc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103zd",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103ze",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103zf",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103zg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103zi",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f103zk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105r8",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105rb",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105rc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105rd",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105re",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105rf",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105rg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105v8",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105vb",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105vc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105vd",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105ve",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105vf",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105vg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105zc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105zd",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105ze",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105zf",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f105zg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107rb",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107rc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107rd",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107re",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107rf",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107rg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107vb",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107vc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107vd",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107ve",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107vf",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107vg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107zc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107zd",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107ze",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107zf",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f107zg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205rc",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205re",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205rg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205rk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205vc",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205ve",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205vg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205vk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205zc",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205ze",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205zg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f205zk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207ie",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207ig",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207ik",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207rc",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207re",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207rg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207rk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207vc",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207ve",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207vg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207vk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207zc",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207ze",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207zg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f207zk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303cc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303ce",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303cg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303rb",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303rc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303re",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303rg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303ri",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303rk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303vb",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303vc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303ve",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303vg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303vi",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303vk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303zc",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303ze",
+      "features": [
+        "stm32f103rc"
+      ],
+      "profile": "stm32f103rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303zg",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303zi",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f303zk",
+      "features": [
+        "stm32f103rf"
+      ],
+      "profile": "stm32f103rf",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305rb",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305rc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305re",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305rg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305vc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305ve",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305vg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305zc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305ze",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f305zg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f307rc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f307re",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f307rg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f307vc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f307ve",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f307vg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f307zc",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f307ze",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f307zg",
+      "features": [
+        "stm32f101rc"
+      ],
+      "profile": "stm32f101rc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f310c8",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f310cb",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f310f4",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f310f6",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f310f8",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f310g8",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f310k6",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f310k8",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330c4",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330c6",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330c8",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330cb",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330f4",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330f6",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330f8",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330g4",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330g6",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330g8",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330k4",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330k6",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330k8",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330r8",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f330rb",
+      "features": [
+        "stm32f378cc"
+      ],
+      "profile": "stm32f378cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f405re",
+      "features": [
+        "stm32f405rg"
+      ],
+      "profile": "stm32f405rg",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f405rg",
+      "features": [
+        "stm32f405rg"
+      ],
+      "profile": "stm32f405rg",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f405rk",
+      "features": [
+        "stm32f405rg"
+      ],
+      "profile": "stm32f405rg",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f405vg",
+      "features": [
+        "stm32f405rg"
+      ],
+      "profile": "stm32f405rg",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f405vk",
+      "features": [
+        "stm32f405rg"
+      ],
+      "profile": "stm32f405rg",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f405zg",
+      "features": [
+        "stm32f405rg"
+      ],
+      "profile": "stm32f405rg",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f405zk",
+      "features": [
+        "stm32f405rg"
+      ],
+      "profile": "stm32f405rg",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407ie",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407ig",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407ik",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407re",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407rg",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407rk",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407ve",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407vg",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407vk",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407ze",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407zg",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f407zk",
+      "features": [
+        "stm32f407ie"
+      ],
+      "profile": "stm32f407ie",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f425re",
+      "features": [
+        "stm32f205rb"
+      ],
+      "profile": "stm32f205rb",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f425rg",
+      "features": [
+        "stm32f205rb"
+      ],
+      "profile": "stm32f205rb",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f425rk",
+      "features": [
+        "stm32f205rb"
+      ],
+      "profile": "stm32f205rb",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f425vg",
+      "features": [
+        "stm32f205rb"
+      ],
+      "profile": "stm32f205rb",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f425vk",
+      "features": [
+        "stm32f205rb"
+      ],
+      "profile": "stm32f205rb",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f425zg",
+      "features": [
+        "stm32f205rb"
+      ],
+      "profile": "stm32f205rb",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f425zk",
+      "features": [
+        "stm32f205rb"
+      ],
+      "profile": "stm32f205rb",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427ie",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427ig",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427ik",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427re",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427rg",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427rk",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427ve",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427vg",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427vk",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427ze",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427zg",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f427zk",
+      "features": [
+        "stm32f207ic"
+      ],
+      "profile": "stm32f207ic",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450ig",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450ii",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450ik",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450ve",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450vg",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450vi",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450vk",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450ze",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450zg",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450zi",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f450zk",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470ig",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470ii",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470ik",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470ve",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470vg",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470vi",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470vk",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470ze",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470zg",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470zi",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32f470zk",
+      "features": [
+        "stm32f429be"
+      ],
+      "profile": "stm32f429be",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h737ig",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h737ii",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h737im",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h737vg",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h737vi",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h737vm",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h737zg",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h737zi",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h737zm",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h757vg",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h757vi",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h757vm",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h757zg",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h757zi",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h757zm",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h759ig",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h759ii",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32h759im",
+      "features": [
+        "stm32f411cc"
+      ],
+      "profile": "stm32f411cc",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l233c8",
+      "features": [
+        "stm32g050c6"
+      ],
+      "profile": "stm32g050c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l233cb",
+      "features": [
+        "stm32g050c6"
+      ],
+      "profile": "stm32g050c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l233cc",
+      "features": [
+        "stm32g050c6"
+      ],
+      "profile": "stm32g050c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l233k8",
+      "features": [
+        "stm32g050c6"
+      ],
+      "profile": "stm32g050c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l233kb",
+      "features": [
+        "stm32g050c6"
+      ],
+      "profile": "stm32g050c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l233r8",
+      "features": [
+        "stm32g050c6"
+      ],
+      "profile": "stm32g050c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l233rb",
+      "features": [
+        "stm32g050c6"
+      ],
+      "profile": "stm32g050c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l233rc",
+      "features": [
+        "stm32g050c6"
+      ],
+      "profile": "stm32g050c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l235c8",
+      "features": [
+        "stm32g041c6"
+      ],
+      "profile": "stm32g041c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l235cb",
+      "features": [
+        "stm32g041c6"
+      ],
+      "profile": "stm32g041c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l235e8",
+      "features": [
+        "stm32g041c6"
+      ],
+      "profile": "stm32g041c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l235eb",
+      "features": [
+        "stm32g041c6"
+      ],
+      "profile": "stm32g041c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l235k8",
+      "features": [
+        "stm32g041c6"
+      ],
+      "profile": "stm32g041c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l235kb",
+      "features": [
+        "stm32g041c6"
+      ],
+      "profile": "stm32g041c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l235r8",
+      "features": [
+        "stm32g041c6"
+      ],
+      "profile": "stm32g041c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    },
+    {
+      "chip": "gd32l235rb",
+      "features": [
+        "stm32g041c6"
+      ],
+      "profile": "stm32g041c6",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "passed"
+    }
+  ],
+  "embassy_stm32": "0.6.0",
+  "provenance": {
+    "cargo_toml_sha256": "3994ab96ddbd9efe80e1b66c0faa6c0555d091f20337b00ce1322739c827ec46",
+    "checker_sha256": "544531d58dc910045e394639d4d25765c7d9e4c8d22bf81e6c47bc261502fc18",
+    "compat_sha256": "d1218575c43929bcb4111d1cfd3ad9863ab317633e925088cadff404b4820103",
+    "generation_sha256": "c8514f58196d0c7ee3ebc3ca4d4217b14f438c0a8eaec825ac2b02eba639ec2c"
+  },
+  "rustc": "rustc 1.94.0-nightly (f52090008 2025-12-10)\nbinary: rustc\ncommit-hash: f5209000832c9d3bc29c91f4daef4ca9f28dc797\ncommit-date: 2025-12-10\nhost: aarch64-apple-darwin\nrelease: 1.94.0-nightly\nLLVM version: 21.1.5",
+  "schema_version": 1,
+  "summary": {
+    "compiled": 349,
+    "failed": 0,
+    "projections": 349,
+    "tim5_regressions": 1
+  }
+}

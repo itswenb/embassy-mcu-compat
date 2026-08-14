@@ -608,8 +608,10 @@
       "exact_candidates": [
         {
           "block": "CEC",
+          "fields": 40,
           "kind": "cec",
           "path": "cec_v2.json",
+          "registers": 6,
           "version": "v2"
         }
       ],
@@ -620,8 +622,10 @@
       "subset_candidates": [
         {
           "block": "CEC",
+          "fields": 40,
           "kind": "cec",
           "path": "cec_v2.json",
+          "registers": 6,
           "version": "v2"
         }
       ]
@@ -780,8 +784,10 @@
       "subset_candidates": [
         {
           "block": "CRC",
+          "fields": 1,
           "kind": "crc",
           "path": "crc_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -796,8 +802,10 @@
       "subset_candidates": [
         {
           "block": "CRC",
+          "fields": 1,
           "kind": "crc",
           "path": "crc_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -812,8 +820,10 @@
       "subset_candidates": [
         {
           "block": "CRC",
+          "fields": 1,
           "kind": "crc",
           "path": "crc_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -828,8 +838,10 @@
       "subset_candidates": [
         {
           "block": "CRC",
+          "fields": 1,
           "kind": "crc",
           "path": "crc_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -839,8 +851,10 @@
       "exact_candidates": [
         {
           "block": "CRS",
+          "fields": 26,
           "kind": "crs",
           "path": "crs_v1.json",
+          "registers": 4,
           "version": "v1"
         }
       ],
@@ -851,8 +865,10 @@
       "subset_candidates": [
         {
           "block": "CRS",
+          "fields": 26,
           "kind": "crs",
           "path": "crs_v1.json",
+          "registers": 4,
           "version": "v1"
         }
       ]
@@ -1839,8 +1855,10 @@
       "subset_candidates": [
         {
           "block": "FSMC",
+          "fields": 108,
           "kind": "fsmc",
           "path": "fsmc_v1x0.json",
+          "registers": 12,
           "version": "v1x0"
         }
       ]
@@ -1864,14 +1882,18 @@
       "subset_candidates": [
         {
           "block": "FSMC",
+          "fields": 108,
           "kind": "fsmc",
           "path": "fsmc_v1x0.json",
+          "registers": 12,
           "version": "v1x0"
         },
         {
           "block": "FSMC",
+          "fields": 183,
           "kind": "fsmc",
           "path": "fsmc_v1x3.json",
+          "registers": 27,
           "version": "v1x3"
         }
       ]
@@ -1886,20 +1908,26 @@
       "subset_candidates": [
         {
           "block": "FSMC",
+          "fields": 108,
           "kind": "fsmc",
           "path": "fsmc_v1x0.json",
+          "registers": 12,
           "version": "v1x0"
         },
         {
           "block": "FSMC",
+          "fields": 183,
           "kind": "fsmc",
           "path": "fsmc_v1x3.json",
+          "registers": 27,
           "version": "v1x3"
         },
         {
           "block": "FSMC",
+          "fields": 176,
           "kind": "fsmc",
           "path": "fsmc_v2x3.json",
+          "registers": 27,
           "version": "v2x3"
         }
       ]
@@ -1932,20 +1960,26 @@
       "subset_candidates": [
         {
           "block": "FSMC",
+          "fields": 108,
           "kind": "fsmc",
           "path": "fsmc_v1x0.json",
+          "registers": 12,
           "version": "v1x0"
         },
         {
           "block": "FSMC",
+          "fields": 183,
           "kind": "fsmc",
           "path": "fsmc_v1x3.json",
+          "registers": 27,
           "version": "v1x3"
         },
         {
           "block": "FSMC",
+          "fields": 176,
           "kind": "fsmc",
           "path": "fsmc_v2x3.json",
+          "registers": 27,
           "version": "v2x3"
         }
       ]
@@ -1969,8 +2003,10 @@
       "subset_candidates": [
         {
           "block": "CPU",
+          "fields": 128,
           "kind": "exti",
           "path": "exti_w.json",
+          "registers": 4,
           "version": "w"
         }
       ]
@@ -2048,8 +2084,10 @@
       "subset_candidates": [
         {
           "block": "CPU",
+          "fields": 128,
           "kind": "exti",
           "path": "exti_w.json",
+          "registers": 4,
           "version": "w"
         }
       ]
@@ -2370,8 +2408,10 @@
       "subset_candidates": [
         {
           "block": "IWDG",
+          "fields": 5,
           "kind": "iwdg",
           "path": "iwdg_v1.json",
+          "registers": 4,
           "version": "v1"
         }
       ]
@@ -2381,8 +2421,10 @@
       "exact_candidates": [
         {
           "block": "IWDG",
+          "fields": 5,
           "kind": "iwdg",
           "path": "iwdg_v1.json",
+          "registers": 4,
           "version": "v1"
         }
       ],
@@ -2393,8 +2435,10 @@
       "subset_candidates": [
         {
           "block": "IWDG",
+          "fields": 5,
           "kind": "iwdg",
           "path": "iwdg_v1.json",
+          "registers": 4,
           "version": "v1"
         }
       ]
@@ -2409,14 +2453,18 @@
       "subset_candidates": [
         {
           "block": "IWDG",
+          "fields": 5,
           "kind": "iwdg",
           "path": "iwdg_v1.json",
+          "registers": 4,
           "version": "v1"
         },
         {
           "block": "IWDG",
+          "fields": 7,
           "kind": "iwdg",
           "path": "iwdg_v2.json",
+          "registers": 5,
           "version": "v2"
         }
       ]
@@ -2426,8 +2474,10 @@
       "exact_candidates": [
         {
           "block": "IWDG",
+          "fields": 7,
           "kind": "iwdg",
           "path": "iwdg_v2.json",
+          "registers": 5,
           "version": "v2"
         }
       ],
@@ -2438,14 +2488,18 @@
       "subset_candidates": [
         {
           "block": "IWDG",
+          "fields": 5,
           "kind": "iwdg",
           "path": "iwdg_v1.json",
+          "registers": 4,
           "version": "v1"
         },
         {
           "block": "IWDG",
+          "fields": 7,
           "kind": "iwdg",
           "path": "iwdg_v2.json",
+          "registers": 5,
           "version": "v2"
         }
       ]
@@ -2469,8 +2523,10 @@
       "subset_candidates": [
         {
           "block": "GPIO",
+          "fields": 145,
           "kind": "gpio",
           "path": "gpio_v1.json",
+          "registers": 7,
           "version": "v1"
         }
       ]
@@ -2485,14 +2541,18 @@
       "subset_candidates": [
         {
           "block": "GPIO",
+          "fields": 161,
           "kind": "gpio",
           "path": "gpio_v2.json",
+          "registers": 10,
           "version": "v2"
         },
         {
           "block": "GPIO",
+          "fields": 177,
           "kind": "gpio",
           "path": "gpio_v2_l478.json",
+          "registers": 11,
           "version": "v2_l478"
         }
       ]
@@ -2507,14 +2567,18 @@
       "subset_candidates": [
         {
           "block": "GPIO",
+          "fields": 161,
           "kind": "gpio",
           "path": "gpio_v2.json",
+          "registers": 10,
           "version": "v2"
         },
         {
           "block": "GPIO",
+          "fields": 177,
           "kind": "gpio",
           "path": "gpio_v2_l478.json",
+          "registers": 11,
           "version": "v2_l478"
         }
       ]
@@ -2529,14 +2593,18 @@
       "subset_candidates": [
         {
           "block": "GPIO",
+          "fields": 161,
           "kind": "gpio",
           "path": "gpio_v2.json",
+          "registers": 10,
           "version": "v2"
         },
         {
           "block": "GPIO",
+          "fields": 177,
           "kind": "gpio",
           "path": "gpio_v2_l478.json",
+          "registers": 11,
           "version": "v2_l478"
         }
       ]
@@ -2560,14 +2628,18 @@
       "subset_candidates": [
         {
           "block": "GPIO",
+          "fields": 161,
           "kind": "gpio",
           "path": "gpio_v2.json",
+          "registers": 10,
           "version": "v2"
         },
         {
           "block": "GPIO",
+          "fields": 177,
           "kind": "gpio",
           "path": "gpio_v2_l478.json",
+          "registers": 11,
           "version": "v2_l478"
         }
       ]
@@ -2582,8 +2654,10 @@
       "subset_candidates": [
         {
           "block": "GPIO",
+          "fields": 161,
           "kind": "gpio",
           "path": "gpio_v2.json",
+          "registers": 10,
           "version": "v2"
         }
       ]
@@ -2598,8 +2672,10 @@
       "subset_candidates": [
         {
           "block": "GPIO",
+          "fields": 145,
           "kind": "gpio",
           "path": "gpio_v1.json",
+          "registers": 7,
           "version": "v1"
         }
       ]
@@ -2623,14 +2699,18 @@
       "subset_candidates": [
         {
           "block": "GPIO",
+          "fields": 161,
           "kind": "gpio",
           "path": "gpio_v2.json",
+          "registers": 10,
           "version": "v2"
         },
         {
           "block": "GPIO",
+          "fields": 177,
           "kind": "gpio",
           "path": "gpio_v2_l478.json",
+          "registers": 11,
           "version": "v2_l478"
         }
       ]
@@ -2699,8 +2779,10 @@
       "subset_candidates": [
         {
           "block": "HASH",
+          "fields": 16,
           "kind": "hash",
           "path": "hash_v1.json",
+          "registers": 61,
           "version": "v1"
         }
       ]
@@ -2724,8 +2806,10 @@
       "subset_candidates": [
         {
           "block": "HASH",
+          "fields": 16,
           "kind": "hash",
           "path": "hash_v1.json",
+          "registers": 61,
           "version": "v1"
         }
       ]
@@ -2776,14 +2860,18 @@
       "subset_candidates": [
         {
           "block": "HSEM",
+          "fields": 323,
           "kind": "hsem",
           "path": "hsem_v2.json",
+          "registers": 70,
           "version": "v2"
         },
         {
           "block": "HSEM",
+          "fields": 163,
           "kind": "hsem",
           "path": "hsem_v4.json",
+          "registers": 38,
           "version": "v4"
         }
       ]
@@ -2960,8 +3048,10 @@
       "subset_candidates": [
         {
           "block": "ICACHE",
+          "fields": 15,
           "kind": "icache",
           "path": "icache_v1_0crr.json",
+          "registers": 6,
           "version": "v1_0crr"
         }
       ]
@@ -2976,8 +3066,10 @@
       "subset_candidates": [
         {
           "block": "ICACHE",
+          "fields": 15,
           "kind": "icache",
           "path": "icache_v1_0crr.json",
+          "registers": 6,
           "version": "v1_0crr"
         }
       ]
@@ -3055,20 +3147,26 @@
       "subset_candidates": [
         {
           "block": "LPTIM",
+          "fields": 40,
           "kind": "lptim",
           "path": "lptim_v1.json",
+          "registers": 8,
           "version": "v1"
         },
         {
           "block": "LPTIM",
+          "fields": 40,
           "kind": "lptim",
           "path": "lptim_v1a.json",
+          "registers": 9,
           "version": "v1a"
         },
         {
           "block": "LPTIM",
+          "fields": 42,
           "kind": "lptim",
           "path": "lptim_v1b.json",
+          "registers": 9,
           "version": "v1b"
         }
       ]
@@ -3083,14 +3181,18 @@
       "subset_candidates": [
         {
           "block": "LPTIM",
+          "fields": 40,
           "kind": "lptim",
           "path": "lptim_v1.json",
+          "registers": 8,
           "version": "v1"
         },
         {
           "block": "LPTIM",
+          "fields": 40,
           "kind": "lptim",
           "path": "lptim_v1a.json",
+          "registers": 9,
           "version": "v1a"
         }
       ]
@@ -3128,8 +3230,17 @@
       "fields": 73,
       "id": "mdma-7993bd096a25567b",
       "registers": 14,
-      "status": "missing",
-      "subset_candidates": []
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "MDMA",
+          "fields": 912,
+          "kind": "mdma",
+          "path": "mdma_v1.json",
+          "registers": 209,
+          "version": "v1"
+        }
+      ]
     },
     {
       "block": "MFCOM",
@@ -3366,8 +3477,10 @@
       "subset_candidates": [
         {
           "block": "OCTOSPIM",
+          "fields": 22,
           "kind": "octospim",
           "path": "octospim_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -3427,8 +3540,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3443,8 +3558,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3477,8 +3594,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3493,8 +3612,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3509,14 +3630,18 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         },
         {
           "block": "PWR",
+          "fields": 14,
           "kind": "pwr",
           "path": "pwr_f2.json",
+          "registers": 2,
           "version": "f2"
         }
       ]
@@ -3531,8 +3656,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3542,8 +3669,10 @@
       "exact_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ],
@@ -3554,8 +3683,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3570,8 +3701,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3586,8 +3719,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3602,20 +3737,26 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         },
         {
           "block": "PWR",
+          "fields": 14,
           "kind": "pwr",
           "path": "pwr_f2.json",
+          "registers": 2,
           "version": "f2"
         },
         {
           "block": "PWR",
+          "fields": 16,
           "kind": "pwr",
           "path": "pwr_f3.json",
+          "registers": 2,
           "version": "f3"
         }
       ]
@@ -3630,8 +3771,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3655,20 +3798,26 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         },
         {
           "block": "PWR",
+          "fields": 14,
           "kind": "pwr",
           "path": "pwr_f2.json",
+          "registers": 2,
           "version": "f2"
         },
         {
           "block": "PWR",
+          "fields": 16,
           "kind": "pwr",
           "path": "pwr_f3.json",
+          "registers": 2,
           "version": "f3"
         }
       ]
@@ -3683,8 +3832,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3699,8 +3850,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3724,8 +3877,10 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         }
       ]
@@ -3740,20 +3895,26 @@
       "subset_candidates": [
         {
           "block": "PWR",
+          "fields": 11,
           "kind": "pwr",
           "path": "pwr_f1.json",
+          "registers": 2,
           "version": "f1"
         },
         {
           "block": "PWR",
+          "fields": 14,
           "kind": "pwr",
           "path": "pwr_f2.json",
+          "registers": 2,
           "version": "f2"
         },
         {
           "block": "PWR",
+          "fields": 16,
           "kind": "pwr",
           "path": "pwr_f3.json",
+          "registers": 2,
           "version": "f3"
         }
       ]
@@ -3993,8 +4154,10 @@
       "subset_candidates": [
         {
           "block": "RCC",
+          "fields": 249,
           "kind": "rcc",
           "path": "rcc_f2.json",
+          "registers": 23,
           "version": "f2"
         }
       ]
@@ -4189,20 +4352,18 @@
       "subset_candidates": [
         {
           "block": "SPDIFRX",
+          "fields": 55,
           "kind": "spdifrx",
           "path": "spdifrx_h7.json",
+          "registers": 9,
           "version": "h7"
         },
         {
           "block": "SPDIFRX",
-          "kind": "spdifrx",
-          "path": "spdifrx_n6.json",
-          "version": "n6"
-        },
-        {
-          "block": "SPDIFRX",
+          "fields": 45,
           "kind": "spdifrx",
           "path": "spdifrx_v1.json",
+          "registers": 7,
           "version": "v1"
         }
       ]
@@ -4217,20 +4378,18 @@
       "subset_candidates": [
         {
           "block": "SPDIFRX",
+          "fields": 55,
           "kind": "spdifrx",
           "path": "spdifrx_h7.json",
+          "registers": 9,
           "version": "h7"
         },
         {
           "block": "SPDIFRX",
-          "kind": "spdifrx",
-          "path": "spdifrx_n6.json",
-          "version": "n6"
-        },
-        {
-          "block": "SPDIFRX",
+          "fields": 45,
           "kind": "spdifrx",
           "path": "spdifrx_v1.json",
+          "registers": 7,
           "version": "v1"
         }
       ]
@@ -4249,8 +4408,10 @@
       "exact_candidates": [
         {
           "block": "RTC",
+          "fields": 17,
           "kind": "rtc",
           "path": "rtc_v1.json",
+          "registers": 10,
           "version": "v1"
         }
       ],
@@ -4261,8 +4422,10 @@
       "subset_candidates": [
         {
           "block": "RTC",
+          "fields": 17,
           "kind": "rtc",
           "path": "rtc_v1.json",
+          "registers": 10,
           "version": "v1"
         }
       ]
@@ -4354,8 +4517,25 @@
       "fields": 67,
       "id": "sai-81edec522a7d7d7b",
       "registers": 27,
-      "status": "missing",
-      "subset_candidates": []
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SAI",
+          "fields": 118,
+          "kind": "sai",
+          "path": "sai_v3_2pdm.json",
+          "registers": 19,
+          "version": "v3_2pdm"
+        },
+        {
+          "block": "SAI",
+          "fields": 120,
+          "kind": "sai",
+          "path": "sai_v4_2pdm.json",
+          "registers": 19,
+          "version": "v4_2pdm"
+        }
+      ]
     },
     {
       "block": "SAI",
@@ -4421,14 +4601,18 @@
       "subset_candidates": [
         {
           "block": "RAM_COM",
+          "fields": 0,
           "kind": "lcd",
           "path": "lcd_v1.json",
+          "registers": 2,
           "version": "v1"
         },
         {
           "block": "RAM_COM",
+          "fields": 0,
           "kind": "lcd",
           "path": "lcd_v2.json",
+          "registers": 2,
           "version": "v2"
         }
       ]
@@ -4443,14 +4627,18 @@
       "subset_candidates": [
         {
           "block": "RAM_COM",
+          "fields": 0,
           "kind": "lcd",
           "path": "lcd_v1.json",
+          "registers": 2,
           "version": "v1"
         },
         {
           "block": "RAM_COM",
+          "fields": 0,
           "kind": "lcd",
           "path": "lcd_v2.json",
+          "registers": 2,
           "version": "v2"
         }
       ]
@@ -4465,8 +4653,18 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "registers": 7,
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         }
       ]
@@ -4481,21 +4679,35 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "fields": 45,
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "registers": 9,
+          "version": "v2_i2s"
         }
       ]
     },
@@ -4509,21 +4721,35 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "fields": 45,
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "registers": 9,
+          "version": "v2_i2s"
         }
       ]
     },
@@ -4537,21 +4763,35 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "fields": 45,
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "registers": 9,
+          "version": "v2_i2s"
         }
       ]
     },
@@ -4574,26 +4814,34 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
         },
         {
           "block": "SPI",
+          "fields": 45,
           "kind": "spi",
           "path": "spi_v2_i2s.json",
+          "registers": 9,
           "version": "v2_i2s"
         }
       ]
@@ -4603,8 +4851,10 @@
       "exact_candidates": [
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         }
       ],
@@ -4615,8 +4865,18 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "registers": 7,
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         }
       ]
@@ -4640,21 +4900,35 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "fields": 45,
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "registers": 9,
+          "version": "v2_i2s"
         }
       ]
     },
@@ -4668,21 +4942,35 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "fields": 45,
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "registers": 9,
+          "version": "v2_i2s"
         }
       ]
     },
@@ -4705,21 +4993,35 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "fields": 45,
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "registers": 9,
+          "version": "v2_i2s"
         }
       ]
     },
@@ -4733,21 +5035,35 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "fields": 45,
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "registers": 9,
+          "version": "v2_i2s"
         }
       ]
     },
@@ -4761,26 +5077,34 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
         },
         {
           "block": "SPI",
+          "fields": 45,
           "kind": "spi",
           "path": "spi_v2_i2s.json",
+          "registers": 9,
           "version": "v2_i2s"
         }
       ]
@@ -4795,21 +5119,35 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
           "kind": "spi",
           "path": "spi_v1.json",
+          "registers": 7,
           "version": "v1"
         },
         {
           "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         },
         {
           "block": "SPI",
+          "fields": 34,
           "kind": "spi",
           "path": "spi_v2.json",
+          "registers": 7,
           "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "fields": 45,
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "registers": 9,
+          "version": "v2_i2s"
         }
       ]
     },
@@ -4832,8 +5170,18 @@
       "subset_candidates": [
         {
           "block": "SPI",
+          "fields": 32,
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "registers": 7,
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "fields": 43,
           "kind": "spi",
           "path": "spi_v1_i2s.json",
+          "registers": 9,
           "version": "v1_i2s"
         }
       ]
@@ -5042,63 +5390,8 @@
       "fields": 267,
       "id": "timer-07d7f7668a231972",
       "registers": 45,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5106,45 +5399,8 @@
       "fields": 219,
       "id": "timer-0a6eba78c80f9222",
       "registers": 37,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5152,63 +5408,8 @@
       "fields": 125,
       "id": "timer-1f39641a479c4657",
       "registers": 22,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5216,63 +5417,8 @@
       "fields": 99,
       "id": "timer-3aab94f3b86ca478",
       "registers": 20,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5280,63 +5426,8 @@
       "fields": 145,
       "id": "timer-4659897434819bcd",
       "registers": 26,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5344,63 +5435,8 @@
       "fields": 123,
       "id": "timer-50c14f09de6e3455",
       "registers": 22,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5408,63 +5444,8 @@
       "fields": 133,
       "id": "timer-5833082961971b05",
       "registers": 22,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5472,63 +5453,8 @@
       "fields": 248,
       "id": "timer-5e574d75914ffa54",
       "registers": 39,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5536,63 +5462,8 @@
       "fields": 131,
       "id": "timer-5e62b6e601ae8e77",
       "registers": 22,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5600,63 +5471,8 @@
       "fields": 127,
       "id": "timer-7ebd44eb72e082f9",
       "registers": 22,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5664,63 +5480,8 @@
       "fields": 131,
       "id": "timer-7fc294ac42589405",
       "registers": 22,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5728,63 +5489,8 @@
       "fields": 132,
       "id": "timer-894282e923b0f35e",
       "registers": 21,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5792,63 +5498,8 @@
       "fields": 131,
       "id": "timer-8c4a32fcbf64fbac",
       "registers": 22,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5856,63 +5507,8 @@
       "fields": 131,
       "id": "timer-9000ea7171a1432b",
       "registers": 21,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5920,63 +5516,8 @@
       "fields": 158,
       "id": "timer-94a0e296cd6f076b",
       "registers": 27,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -5984,63 +5525,8 @@
       "fields": 257,
       "id": "timer-9c3b27bca9e01ca9",
       "registers": 43,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -6048,63 +5534,8 @@
       "fields": 132,
       "id": "timer-a05861d696546767",
       "registers": 22,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -6112,63 +5543,8 @@
       "fields": 125,
       "id": "timer-a084f39ce003ea79",
       "registers": 21,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -6176,63 +5552,8 @@
       "fields": 123,
       "id": "timer-b17b3660c35920ed",
       "registers": 20,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -6240,45 +5561,8 @@
       "fields": 336,
       "id": "timer-d311b1a244fbe3ef",
       "registers": 45,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TIMER",
@@ -6286,45 +5570,8 @@
       "fields": 306,
       "id": "timer-eb2fc3751083ecad",
       "registers": 48,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_l0.json",
-          "version": "l0"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v2.json",
-          "version": "v2"
-        },
-        {
-          "block": "TIM_BASIC_NO_CR2",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        },
-        {
-          "block": "TIM_GP32",
-          "kind": "timer",
-          "path": "timer_v3.json",
-          "version": "v3"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "TLI",
@@ -6444,8 +5691,10 @@
       "subset_candidates": [
         {
           "block": "RNG",
+          "fields": 8,
           "kind": "rng",
           "path": "rng_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -6505,8 +5754,10 @@
       "subset_candidates": [
         {
           "block": "RNG",
+          "fields": 8,
           "kind": "rng",
           "path": "rng_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -6521,8 +5772,10 @@
       "subset_candidates": [
         {
           "block": "RNG",
+          "fields": 8,
           "kind": "rng",
           "path": "rng_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -6668,15 +5921,8 @@
       "fields": 62,
       "id": "usart-464fea75f0590d1f",
       "registers": 10,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "USART",
-          "kind": "usart",
-          "path": "usart_v1.json",
-          "version": "v1"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "USART",
@@ -6693,15 +5939,8 @@
       "fields": 64,
       "id": "usart-7382b2aa16f3f565",
       "registers": 11,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "USART",
-          "kind": "usart",
-          "path": "usart_v1.json",
-          "version": "v1"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "USART",
@@ -6745,15 +5984,8 @@
       "fields": 49,
       "id": "usart-d2819c585b25dd9d",
       "registers": 7,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "USART",
-          "kind": "usart",
-          "path": "usart_v1.json",
-          "version": "v1"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "USART",
@@ -6761,21 +5993,8 @@
       "fields": 68,
       "id": "usart-d5126b39c3531ed0",
       "registers": 11,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "USART",
-          "kind": "usart",
-          "path": "usart_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "USART",
-          "kind": "usart",
-          "path": "usart_v2.json",
-          "version": "v2"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "USART",
@@ -6783,21 +6002,8 @@
       "fields": 68,
       "id": "usart-d892c3f9c0b1906a",
       "registers": 11,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "USART",
-          "kind": "usart",
-          "path": "usart_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "USART",
-          "kind": "usart",
-          "path": "usart_v2.json",
-          "version": "v2"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "USART",
@@ -6823,21 +6029,8 @@
       "fields": 67,
       "id": "usart-f581e00c92b2838c",
       "registers": 11,
-      "status": "subset",
-      "subset_candidates": [
-        {
-          "block": "USART",
-          "kind": "usart",
-          "path": "usart_v1.json",
-          "version": "v1"
-        },
-        {
-          "block": "USART",
-          "kind": "usart",
-          "path": "usart_v2.json",
-          "version": "v2"
-        }
-      ]
+      "status": "missing",
+      "subset_candidates": []
     },
     {
       "block": "USART5",
@@ -6853,8 +6046,10 @@
       "exact_candidates": [
         {
           "block": "VREFBUF",
+          "fields": 5,
           "kind": "vrefbuf",
           "path": "vrefbuf_v2b.json",
+          "registers": 2,
           "version": "v2b"
         }
       ],
@@ -6865,8 +6060,10 @@
       "subset_candidates": [
         {
           "block": "VREFBUF",
+          "fields": 5,
           "kind": "vrefbuf",
           "path": "vrefbuf_v2b.json",
+          "registers": 2,
           "version": "v2b"
         }
       ]
@@ -6876,8 +6073,10 @@
       "exact_candidates": [
         {
           "block": "VREFBUF",
+          "fields": 5,
           "kind": "vrefbuf",
           "path": "vrefbuf_v1.json",
+          "registers": 2,
           "version": "v1"
         }
       ],
@@ -6888,8 +6087,10 @@
       "subset_candidates": [
         {
           "block": "VREFBUF",
+          "fields": 5,
           "kind": "vrefbuf",
           "path": "vrefbuf_v1.json",
+          "registers": 2,
           "version": "v1"
         }
       ]
@@ -6908,8 +6109,10 @@
       "exact_candidates": [
         {
           "block": "WWDG",
+          "fields": 6,
           "kind": "wwdg",
           "path": "wwdg_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ],
@@ -6920,8 +6123,10 @@
       "subset_candidates": [
         {
           "block": "WWDG",
+          "fields": 6,
           "kind": "wwdg",
           "path": "wwdg_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -6954,8 +6159,10 @@
       "subset_candidates": [
         {
           "block": "WWDG",
+          "fields": 6,
           "kind": "wwdg",
           "path": "wwdg_v1.json",
+          "registers": 3,
           "version": "v1"
         }
       ]
@@ -6964,7 +6171,7 @@
   "provenance": {
     "stm32_registers": {
       "path": ".cache/research/repos/stm32-data-generated/data/registers",
-      "tree_sha256": "565696ad4595903c00c420e6ba2562a336586a2c0b7923292bd0702df18c7d0c"
+      "tree_sha256": "174b3ee800da789129bdb3b63a0c915f4d1c86bca626af86b902ec8ea21249cd"
     },
     "variants": {
       "path": "gigadevice-merged-firmware-variants.json",
@@ -6973,11 +6180,11 @@
   },
   "schema_version": 1,
   "summary": {
-    "ambiguous": 55,
+    "ambiguous": 35,
     "exact": 10,
     "layouts": 545,
-    "missing": 444,
-    "subset": 91,
-    "unique": 46
+    "missing": 469,
+    "subset": 66,
+    "unique": 41
   }
 }

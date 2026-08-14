@@ -93,6 +93,12 @@ pub struct GenerateArgs {
     /// 由规范化 GD 事实生成的 Embassy 投影清单。
     #[arg(long)]
     pub projection_manifest: Option<PathBuf>,
+    /// 投影引用的厂商原生 chip/register 数据目录。
+    #[arg(long)]
+    pub native_data: Option<PathBuf>,
+    /// 投影生成的 Embassy 兼容 register 数据目录。
+    #[arg(long)]
+    pub projection_data: Option<PathBuf>,
     /// 仅用于端到端测试时包含 test 映射。
     #[arg(long)]
     pub include_test: bool,

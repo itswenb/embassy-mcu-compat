@@ -1,5 +1,7 @@
 import importlib.util
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -16,6 +18,91 @@ SPEC.loader.exec_module(MODULE)
 
 
 class Stm32DataTests(unittest.TestCase):
+    def test_SVD逐实例拓扑优先于Firmware系列并集(self):
+        models = {
+            "devices": [
+                {
+                    "id": "GD32TEST",
+                    "core": "Cortex-M4",
+                    "cmsis_devices": ["GD32TEST"],
+                }
+            ]
+        }
+        variants = {
+            "variants": [
+                {
+                    "id": "firmware-union",
+                    "series": "GD32TEST",
+                    "devices": ["GD32TEST"],
+                    "layouts": [
+                        {
+                            "id": "timer-0123456789abcdef",
+                            "block": "TIMER",
+                            "registers": [{"name": "EXTRA", "offset": 0, "width": 32}],
+                            "fields": [],
+                        }
+                    ],
+                    "instances": [
+                        {
+                            "name": "TIMER_UNION_ONLY",
+                            "address": 0x5000,
+                            "layout": "timer-0123456789abcdef",
+                        }
+                    ],
+                    "interrupts": [{"name": "UNION_IRQ", "value": 9}],
+                }
+            ]
+        }
+        memory = {
+            "devices": [{"id": "GD32TEST", "memory_status": "missing", "profiles": []}],
+            "profiles": [],
+        }
+        resources = {
+            "devices": [
+                {
+                    "device": "GD32TEST",
+                    "debug": [{"file": {"sha256": "a" * 64}}],
+                }
+            ]
+        }
+        svd_ir = {
+            "svds": [
+                {
+                    "svd_sha256": "a" * 64,
+                    "register_roots": [
+                        {"name": "TIMER4", "address": 0x40000C00, "register_root": "TIMER1"},
+                        {"name": "NVIC", "address": 0xE000E100, "register_root": "NVIC"},
+                    ],
+                    "interrupt_vectors": [{"name": "TIMER4", "value": 50}],
+                }
+            ]
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            json_dir = cache / ("a" * 64) / "json"
+            json_dir.mkdir(parents=True)
+            (json_dir / "TIMER1::TIMER1.json").write_text(
+                json.dumps(
+                    {
+                        "block/TIMER1::TIMER1": {
+                            "items": [{"name": "CNT", "byte_offset": 36}]
+                        }
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            staging = MODULE.build_staging(
+                models, variants, memory, resources, svd_ir, cache
+            )
+
+        chip = staging["chips"]["GD32TEST"]["cores"][0]
+        self.assertEqual([row["name"] for row in chip["peripherals"]], ["TIMER4"])
+        self.assertEqual(chip["interrupts"], [{"name": "TIMER4", "number": 50}])
+        registers = chip["peripherals"][0]["registers"]
+        ir = staging["registers"][f"{registers['kind']}_{registers['version']}"]
+        self.assertIn(f"block/{registers['block']}", ir)
+
     def test_RISCV核心名称保留ISA而不是降级为unknown(self):
         variant = {
             "id": "gd32riscv-v1",

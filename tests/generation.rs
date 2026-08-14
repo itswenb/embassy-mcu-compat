@@ -119,6 +119,8 @@ fn request<'a>(
         ),
         include_test: true,
         projection_manifest: None,
+        native_data: None,
+        projection_data: None,
     }
 }
 
@@ -297,9 +299,11 @@ fn projection_manifest_generates_real_chip_and_records_its_hash() {
         .unwrap(),
     )
     .unwrap();
+    let native_data = official.path().join("data");
     let mut request = request(official.path(), &output, &[], &lock);
     request.include_test = false;
     request.projection_manifest = Some(&manifest_path);
+    request.native_data = Some(&native_data);
 
     generate_repository(request).unwrap();
 

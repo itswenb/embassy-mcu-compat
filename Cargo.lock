@@ -97,12 +97,12 @@ checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 [[package]]
 name = "chiptool"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/chiptool?rev=be1bff3e9e1b27b090e69bd9ac753c66fdcce678#be1bff3e9e1b27b090e69bd9ac753c66fdcce678"
+source = "git+https://github.com/embassy-rs/chiptool?rev=030394157b9dd30c48c0e592a52149f501e3c3d4#030394157b9dd30c48c0e592a52149f501e3c3d4"
 dependencies = [
  "anyhow",
  "clap",
- "convert_case",
  "env_logger",
+ "inflections",
  "log",
  "proc-macro2",
  "quote",
@@ -157,15 +157,6 @@ name = "colorchoice"
 version = "1.0.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1d07550c9036bf2ae0c684c4297d503f838287c83c53686d05370d0e139ae570"
-
-[[package]]
-name = "convert_case"
-version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "affbf0190ed2caf063e3def54ff444b449371d55c58e513a95ab98eca50adb49"
-dependencies = [
- "unicode-segmentation",
-]
 
 [[package]]
 name = "cpufeatures"
@@ -316,6 +307,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "inflections"
+version = "1.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a257582fdcde896fd96463bf2d40eefea0580021c0712a0e2b028b60b47a837a"
+
+[[package]]
 name = "is_terminal_polyfill"
 version = "1.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -390,6 +387,7 @@ dependencies = [
  "roxmltree",
  "serde",
  "serde_json",
+ "serde_yaml",
  "sha2",
  "stm32-data-serde",
  "stm32-metapac-gen",
@@ -603,17 +601,17 @@ dependencies = [
 [[package]]
 name = "stm32-data-macros"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/stm32-data?rev=87c539515764df442bc50b6235bad891950ba3c4#87c539515764df442bc50b6235bad891950ba3c4"
+source = "git+https://github.com/embassy-rs/stm32-data?rev=c05b9691035f8978090af617e20869b7302b069b#c05b9691035f8978090af617e20869b7302b069b"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.119",
+ "syn 1.0.109",
 ]
 
 [[package]]
 name = "stm32-data-serde"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/stm32-data?rev=87c539515764df442bc50b6235bad891950ba3c4#87c539515764df442bc50b6235bad891950ba3c4"
+source = "git+https://github.com/embassy-rs/stm32-data?rev=c05b9691035f8978090af617e20869b7302b069b#c05b9691035f8978090af617e20869b7302b069b"
 dependencies = [
  "ref_thread_local",
  "regex",
@@ -623,7 +621,7 @@ dependencies = [
 [[package]]
 name = "stm32-metapac-gen"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/stm32-data?rev=87c539515764df442bc50b6235bad891950ba3c4#87c539515764df442bc50b6235bad891950ba3c4"
+source = "git+https://github.com/embassy-rs/stm32-data?rev=c05b9691035f8978090af617e20869b7302b069b#c05b9691035f8978090af617e20869b7302b069b"
 dependencies = [
  "chiptool",
  "proc-macro2",
@@ -641,8 +639,8 @@ checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
 
 [[package]]
 name = "svd-parser"
-version = "0.14.9"
-source = "git+https://github.com/embassy-rs/svd.git?rev=f4f192d083946fc6227db7ac17eba8aa58bb9d4c#f4f192d083946fc6227db7ac17eba8aa58bb9d4c"
+version = "0.14.7"
+source = "git+https://github.com/Dirbaio/svd.git?rev=8426f3bb40dd2391e26cd087a0d6510fe21fdcbc#8426f3bb40dd2391e26cd087a0d6510fe21fdcbc"
 dependencies = [
  "anyhow",
  "roxmltree",
@@ -652,12 +650,23 @@ dependencies = [
 
 [[package]]
 name = "svd-rs"
-version = "0.14.12"
-source = "git+https://github.com/embassy-rs/svd.git?rev=f4f192d083946fc6227db7ac17eba8aa58bb9d4c#f4f192d083946fc6227db7ac17eba8aa58bb9d4c"
+version = "0.14.9"
+source = "git+https://github.com/Dirbaio/svd.git?rev=8426f3bb40dd2391e26cd087a0d6510fe21fdcbc#8426f3bb40dd2391e26cd087a0d6510fe21fdcbc"
 dependencies = [
  "once_cell",
  "regex",
  "thiserror 1.0.69",
+]
+
+[[package]]
+name = "syn"
+version = "1.0.109"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "unicode-ident",
 ]
 
 [[package]]
@@ -785,12 +794,6 @@ name = "unicode-ident"
 version = "1.0.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6e4313cd5fcd3dad5cafa179702e2b244f760991f45397d14d4ebf38247da75"
-
-[[package]]
-name = "unicode-segmentation"
-version = "1.13.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c6f5d3c3b1bf09027a88a6bc961fc00497d651009560b5463668dc81b0fa87a8"
 
 [[package]]
 name = "unsafe-libyaml"

@@ -15,6 +15,8 @@ import gigadevice_sources as common
 
 INDEXED_PREFIXES = {
     "ADC": "ADC",
+    "CAN": "CAN",
+    "DAC": "DAC",
     "DMA": "DMA",
     "I2C": "I2C",
     "LPTIMER": "LPTIM",
@@ -27,9 +29,12 @@ INDEXED_PREFIXES = {
 }
 
 SEMANTIC_NAMES = {
+    "ADC": "ADC1",
     "CTC": "CRS",
+    "DAC": "DAC1",
     "DBG": "DBGMCU",
     "DCI": "DCMI",
+    "DMA": "DMA1",
     "DMAMUX": "DMAMUX1",
     "ENET": "ETH",
     "EXMC": "FMC",
@@ -54,6 +59,7 @@ IDENTITY_NAMES = {
     "RCC",
     "RTC",
     "SYSCFG",
+    "SDIO",
 }
 
 

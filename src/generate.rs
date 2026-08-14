@@ -12,7 +12,7 @@ use stm32_data_serde::Chip;
 use stm32_metapac_gen::{Gen, Options};
 use walkdir::WalkDir;
 
-use crate::hash::sha256_file;
+use crate::hash::{sha256_file, sha256_tree};
 use crate::lock::SourceLock;
 use crate::mapping::{Mapping, Scope, load_mappings};
 use crate::merge_patch::apply_merge_patch;
@@ -58,8 +58,11 @@ pub struct GenerateRequest<'a> {
     pub source_lock_sha256: String,
     pub include_test: bool,
     pub projection_manifest: Option<&'a Path>,
+    pub native_data: Option<&'a Path>,
+    pub projection_data: Option<&'a Path>,
 }
 
+#[allow(clippy::too_many_arguments)] // 命令行边界按原参数转发，避免再维护一份重复配置。
 pub fn run_generate(
     official_generated: &Path,
     output: &Path,
@@ -67,6 +70,8 @@ pub fn run_generate(
     cache_dir: &Path,
     compat_dir: &Path,
     projection_manifest: Option<&Path>,
+    native_data: Option<&Path>,
+    projection_data: Option<&Path>,
     include_test: bool,
 ) -> Result<()> {
     let lock = SourceLock::read(lock_path)?;
@@ -98,6 +103,8 @@ pub fn run_generate(
         source_lock_sha256,
         include_test,
         projection_manifest,
+        native_data,
+        projection_data,
     })
 }
 
@@ -118,6 +125,9 @@ pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
     )?;
     if request.projection_manifest.is_some() && !request.mappings.is_empty() {
         bail!("投影 manifest 与旧兼容映射不能同时生成");
+    }
+    if request.projection_manifest.is_some() && request.native_data.is_none() {
+        bail!("Embassy 投影生成必须提供 --native-data");
     }
     let projections = match request.projection_manifest {
         Some(path) => load_projection_manifest(path)?,
@@ -141,16 +151,14 @@ pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
 
     let chip_names = prepare_staging_data(
         &request.official_generated.join("data"),
+        request.native_data,
+        request.projection_data,
         &data_dir,
         &projections,
     )?;
     if !chip_names.is_empty() {
         run_generator(&data_dir, &generated_dir, chip_names)?;
-        format_rust_tree(&generated_dir)?;
-        verify_shared_modules(
-            &generated_dir,
-            &request.official_generated.join("stm32-metapac"),
-        )?;
+        format_rust_tree(&generated_dir.join("src/chips"))?;
     }
 
     copy_tree(
@@ -158,6 +166,7 @@ pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
         &publication_dir,
     )?;
     if !projections.is_empty() {
+        merge_shared_peripherals(&generated_dir, &publication_dir)?;
         merge_private_chips(&generated_dir, &publication_dir, &projections)?;
     }
     write_compat_table(&publication_dir, &projections)?;
@@ -269,6 +278,8 @@ fn is_canonical_name(value: &str) -> bool {
 
 fn prepare_staging_data(
     official_data: &Path,
+    native_data: Option<&Path>,
+    projection_data: Option<&Path>,
     staging_data: &Path,
     projections: &[Projection],
 ) -> Result<Vec<String>> {
@@ -333,14 +344,36 @@ fn prepare_staging_data(
 
     for (kind, version) in registers {
         let filename = format!("{kind}_{version}.json");
-        let source = official_data.join("registers").join(&filename);
-        if !source.is_file() {
-            bail!("官方数据缺少映射引用的 register：{filename}");
-        }
+        let source = register_source(official_data, native_data, projection_data, &filename)?;
         fs::copy(&source, staging_data.join("registers").join(&filename))
             .with_context(|| format!("复制 register {} 失败", source.display()))?;
     }
     Ok(chip_names)
+}
+
+fn register_source(
+    official_data: &Path,
+    native_data: Option<&Path>,
+    projection_data: Option<&Path>,
+    filename: &str,
+) -> Result<std::path::PathBuf> {
+    let official = official_data.join("registers").join(filename);
+    if official.is_file() {
+        return Ok(official);
+    }
+    if let Some(projection) = projection_data {
+        let projection = projection.join("registers").join(filename);
+        if projection.is_file() {
+            return Ok(projection);
+        }
+    }
+    if let Some(native) = native_data {
+        let native = native.join("registers").join(filename);
+        if native.is_file() {
+            return Ok(native);
+        }
+    }
+    bail!("官方与原生数据均缺少投影引用的 register：{filename}")
 }
 
 fn validate_output(output: &Path) -> Result<()> {
@@ -450,29 +483,6 @@ fn format_rust_tree(root: &Path) -> Result<()> {
     Ok(())
 }
 
-fn verify_shared_modules(generated: &Path, official_metapac: &Path) -> Result<()> {
-    for directory in ["peripherals", "registers"] {
-        let generated_root = generated.join("src").join(directory);
-        for path in files_with_extension(&generated_root, "rs")? {
-            let relative = path
-                .strip_prefix(generated)
-                .with_context(|| format!("{} 不在 staging 输出中", path.display()))?;
-            let official = official_metapac.join(relative);
-            if !official.is_file() {
-                bail!("官方 metapac 缺少共享模块：{}", relative.display());
-            }
-            let actual =
-                fs::read(&path).with_context(|| format!("读取生成模块 {} 失败", path.display()))?;
-            let expected = fs::read(&official)
-                .with_context(|| format!("读取官方模块 {} 失败", official.display()))?;
-            if actual != expected {
-                bail!("生成共享模块与官方基线不同：{}", relative.display());
-            }
-        }
-    }
-    Ok(())
-}
-
 fn merge_private_chips(
     generated: &Path,
     publication: &Path,
@@ -508,6 +518,24 @@ fn merge_private_chips(
             ));
             fs::copy(&source, &destination)
                 .with_context(|| format!("复制 metadata 去重文件 {} 失败", source.display()))?;
+        }
+    }
+    Ok(())
+}
+
+fn merge_shared_peripherals(generated: &Path, publication: &Path) -> Result<()> {
+    for directory in ["peripherals", "registers"] {
+        let source = generated.join("src").join(directory);
+        let destination = publication.join("src").join(directory);
+        for path in files_with_extension(&source, "rs")? {
+            let filename = path
+                .file_name()
+                .ok_or_else(|| anyhow::anyhow!("寄存器模块缺少文件名：{}", path.display()))?;
+            let target = destination.join(filename);
+            if !target.is_file() {
+                fs::copy(&path, &target)
+                    .with_context(|| format!("复制原生寄存器模块 {} 失败", path.display()))?;
+            }
         }
     }
     Ok(())
@@ -572,6 +600,8 @@ fn write_generation_manifest(
     }
     chips.sort_by(|left, right| left["chip"].as_str().cmp(&right["chip"].as_str()));
     let projection_manifest_sha256 = request.projection_manifest.map(sha256_file).transpose()?;
+    let native_data_tree_sha256 = request.native_data.map(sha256_tree).transpose()?;
+    let projection_data_tree_sha256 = request.projection_data.map(sha256_tree).transpose()?;
 
     let manifest = serde_json::json!({
         "schema": 1,
@@ -583,6 +613,8 @@ fn write_generation_manifest(
         "packs": &request.source_lock.packs,
         "include_test": request.include_test,
         "projection_manifest_sha256": projection_manifest_sha256,
+        "native_data_tree_sha256": native_data_tree_sha256,
+        "projection_data_tree_sha256": projection_data_tree_sha256,
         "chips": chips,
     });
     let mut contents = serde_json::to_vec_pretty(&manifest).context("编码生成清单失败")?;
@@ -691,7 +723,7 @@ fn validate_component(value: &str, label: &str) -> Result<()> {
 mod tests {
     use std::fs;
 
-    use super::format_rust_tree;
+    use super::{format_rust_tree, merge_shared_peripherals, register_source};
 
     #[test]
     fn formatting_matches_the_upstream_width_contract() {
@@ -714,6 +746,109 @@ mod tests {
                 r#"    f.debug_struct("Crcpr").field("crcpoly", &value.crcpoly()).finish()"#
             ),
             "实际格式化结果：\n{formatted}"
+        );
+    }
+
+    #[test]
+    fn formatting_private_chips_does_not_touch_shared_modules() {
+        let temp = tempfile::tempdir().unwrap();
+        let generated = temp.path().join("generated");
+        fs::create_dir_all(generated.join("src/peripherals")).unwrap();
+        fs::write(
+            generated.join("src/peripherals/sample.rs"),
+            "pub fn value() -> u32\n{\n1\n}\n",
+        )
+        .unwrap();
+        fs::create_dir_all(generated.join("src/chips/test")).unwrap();
+        fs::write(
+            generated.join("src/chips/test/pac.rs"),
+            "pub fn chip()->u32{1}\n",
+        )
+        .unwrap();
+
+        format_rust_tree(&generated.join("src/chips")).unwrap();
+
+        assert_eq!(
+            fs::read_to_string(generated.join("src/peripherals/sample.rs")).unwrap(),
+            "pub fn value() -> u32\n{\n1\n}\n"
+        );
+        assert_eq!(
+            fs::read_to_string(generated.join("src/chips/test/pac.rs")).unwrap(),
+            "pub fn chip() -> u32 {\n    1\n}\n"
+        );
+    }
+
+    #[test]
+    fn register_source_按官方兼容原生顺序查找() {
+        let temp = tempfile::tempdir().unwrap();
+        let official = temp.path().join("official");
+        let native = temp.path().join("native");
+        let projection = temp.path().join("projection");
+        fs::create_dir_all(official.join("registers")).unwrap();
+        fs::create_dir_all(native.join("registers")).unwrap();
+        fs::create_dir_all(projection.join("registers")).unwrap();
+        fs::write(official.join("registers/adc_v1.json"), "official").unwrap();
+        fs::write(native.join("registers/gdadc_v1.json"), "native").unwrap();
+        fs::write(projection.join("registers/dmamux_gd.json"), "projection").unwrap();
+
+        assert_eq!(
+            register_source(&official, Some(&native), Some(&projection), "adc_v1.json").unwrap(),
+            official.join("registers/adc_v1.json")
+        );
+        assert_eq!(
+            register_source(&official, Some(&native), Some(&projection), "gdadc_v1.json").unwrap(),
+            native.join("registers/gdadc_v1.json")
+        );
+        assert_eq!(
+            register_source(
+                &official,
+                Some(&native),
+                Some(&projection),
+                "dmamux_gd.json"
+            )
+            .unwrap(),
+            projection.join("registers/dmamux_gd.json")
+        );
+        assert!(
+            register_source(
+                &official,
+                Some(&native),
+                Some(&projection),
+                "missing_v1.json"
+            )
+            .unwrap_err()
+            .to_string()
+            .contains("缺少投影引用的 register")
+        );
+    }
+
+    #[test]
+    fn generated_native_peripheral_modules_only_fill_missing_official_modules() {
+        let temp = tempfile::tempdir().unwrap();
+        let generated = temp.path().join("generated");
+        let publication = temp.path().join("publication");
+        fs::create_dir_all(generated.join("src/peripherals")).unwrap();
+        fs::create_dir_all(publication.join("src/peripherals")).unwrap();
+        fs::create_dir_all(generated.join("src/registers")).unwrap();
+        fs::create_dir_all(publication.join("src/registers")).unwrap();
+        fs::write(generated.join("src/peripherals/gdcan_v1.rs"), "native").unwrap();
+        fs::write(generated.join("src/registers/gdcan_v1.rs"), "metadata").unwrap();
+        fs::write(generated.join("src/peripherals/can_v1.rs"), "generated").unwrap();
+        fs::write(publication.join("src/peripherals/can_v1.rs"), "official").unwrap();
+
+        merge_shared_peripherals(&generated, &publication).unwrap();
+
+        assert_eq!(
+            fs::read_to_string(publication.join("src/peripherals/gdcan_v1.rs")).unwrap(),
+            "native"
+        );
+        assert_eq!(
+            fs::read_to_string(publication.join("src/registers/gdcan_v1.rs")).unwrap(),
+            "metadata"
+        );
+        assert_eq!(
+            fs::read_to_string(publication.join("src/peripherals/can_v1.rs")).unwrap(),
+            "official"
         );
     }
 }

@@ -1,4 +1,5 @@
 import importlib.util
+import stat
 import sys
 import tempfile
 import unittest
@@ -37,6 +38,29 @@ RCU_SVD = """<device><name>TEST_RCU</name><peripherals>
 
 
 class SvdAuditTests(unittest.TestCase):
+    def test_锁定chiptool在工作目录生成PAC并复用缓存(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            svd = root / "test.svd"
+            svd.write_text(SVD, encoding="utf-8")
+            chiptool = root / "chiptool"
+            chiptool.write_text(
+                "#!/bin/sh\nprintf 'pub struct Pac;\\n' > lib.rs\nprintf 'PROVIDE(TEST = DefaultHandler);\\n' > device.x\n",
+                encoding="utf-8",
+            )
+            chiptool.chmod(chiptool.stat().st_mode | stat.S_IXUSR)
+            digest = MODULE.common._sha256(svd)
+
+            first = MODULE._generate(
+                chiptool, svd, digest, digest, "a" * 40, root / "cache"
+            )
+            second = MODULE._generate(
+                chiptool, svd, digest, digest, "a" * 40, root / "cache"
+            )
+
+        self.assertEqual(first[0], "generated")
+        self.assertEqual(second[0], "cached")
+
     def test_支持IAR报告中的直接SVD相对路径(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -60,7 +84,12 @@ class SvdAuditTests(unittest.TestCase):
         self.assertEqual(stats["device_name"], "TEST123")
         self.assertEqual(stats["peripherals"], 1)
         self.assertEqual(stats["peripheral_names"], ["GPIOA"])
+        self.assertEqual(
+            stats["peripheral_register_roots"],
+            [{"address": 0x40010800, "name": "GPIOA", "register_root": "GPIOA"}],
+        )
         self.assertEqual(stats["interrupts"], 1)
+        self.assertEqual(stats["interrupt_vectors"], [{"name": "EXTI0", "value": 6}])
         self.assertEqual(stats["registers"], 1)
         self.assertEqual(stats["fields"], 1)
 
@@ -142,6 +171,26 @@ class SvdAuditTests(unittest.TestCase):
 
         self.assertIn(b'<peripheral derivedFrom="GPIOA"><name>GPIOC</name>', data)
         self.assertIn("flatten-peripheral-derived-from:1", transformations)
+
+    def test_记录派生外设的真实地址与寄存器根(self):
+        xml = b"""<device><name>TEST</name><peripherals>
+          <peripheral><name>TIMER1</name><baseAddress>0x40000000</baseAddress>
+            <registers><register><name>CTL</name><addressOffset>0</addressOffset></register></registers>
+          </peripheral>
+          <peripheral derivedFrom="TIMER1"><name>TIMER4</name><baseAddress>0x40000c00</baseAddress></peripheral>
+        </peripherals></device>"""
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "derived.svd"
+            path.write_bytes(xml)
+            stats = MODULE.svd_stats(path)
+
+        self.assertEqual(
+            stats["peripheral_register_roots"],
+            [
+                {"address": 0x40000000, "name": "TIMER1", "register_root": "TIMER1"},
+                {"address": 0x40000C00, "name": "TIMER4", "register_root": "TIMER1"},
+            ],
+        )
 
 
 if __name__ == "__main__":

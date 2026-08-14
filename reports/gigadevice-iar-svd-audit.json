@@ -1,7 +1,7 @@
 {
   "chiptool": {
     "repository": "https://github.com/embassy-rs/chiptool",
-    "revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678"
+    "revision": "030394157b9dd30c48c0e592a52149f501e3c3d4"
   },
   "schema_version": 1,
   "summary": {
@@ -27,7 +27,8 @@
       ],
       "fields": 23065,
       "generated": {
-        "chiptool_revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678",
+        "cache_key": "g2-n4-a8fd14f05cc899b2-030394157b9d",
+        "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
         "normalization_version": 4,
         "normalized_svd_sha256": "c84d266e69a0fa80c3c82e7ce42b5c89b42dd0feb9e50a0c3d26b9748aae0ae0",
         "outputs": {
@@ -36,13 +37,911 @@
             "size": 9385
           },
           "lib.rs": {
-            "sha256": "e91edb52c906f5bd215f1d08855466cdc3ede647f899b6ff0c2ed66abb6aa9ce",
-            "size": 12185843
+            "sha256": "64deec7db26873753f75197aa2401fcf8b69dd4aaabc1066627378016f285d88",
+            "size": 11646975
           }
         },
-        "schema_version": 1,
+        "schema_version": 2,
         "svd_sha256": "a8fd14f05cc899b284765b58544ce59f3b33fed2b69329db6fe04eb67f970d15"
       },
+      "interrupt_vectors": [
+        {
+          "name": "WWDGT0",
+          "value": 0
+        },
+        {
+          "name": "LVD_HVD_FROM_EXTI_Line16",
+          "value": 1
+        },
+        {
+          "name": "RTC_ALARM_FROM_EXTI_Line17",
+          "value": 2
+        },
+        {
+          "name": "RTC_GLOBAL",
+          "value": 3
+        },
+        {
+          "name": "FMC_GLOBAL",
+          "value": 4
+        },
+        {
+          "name": "RCU_CK_READY",
+          "value": 5
+        },
+        {
+          "name": "EXTI_Line0",
+          "value": 6
+        },
+        {
+          "name": "EXTI_Line1",
+          "value": 7
+        },
+        {
+          "name": "EXTI_Line2",
+          "value": 8
+        },
+        {
+          "name": "EXTI_Line3",
+          "value": 9
+        },
+        {
+          "name": "EXTI_Line4",
+          "value": 10
+        },
+        {
+          "name": "DMA0_Channel0",
+          "value": 11
+        },
+        {
+          "name": "DMA0_Channel1",
+          "value": 12
+        },
+        {
+          "name": "DMA0_Channel2",
+          "value": 13
+        },
+        {
+          "name": "DMA0_Channel3",
+          "value": 14
+        },
+        {
+          "name": "DMA0_Channel4",
+          "value": 15
+        },
+        {
+          "name": "DMA0_Channel5",
+          "value": 16
+        },
+        {
+          "name": "DMA0_Channel6",
+          "value": 17
+        },
+        {
+          "name": "ADC0",
+          "value": 18
+        },
+        {
+          "name": "CAN0_MSG_BUF",
+          "value": 19
+        },
+        {
+          "name": "CAN0",
+          "value": 20
+        },
+        {
+          "name": "CPU_TO_CPU_INT0",
+          "value": 21
+        },
+        {
+          "name": "CPU_TO_CPU_INT1",
+          "value": 22
+        },
+        {
+          "name": "CPU_TO_CPU_INT2",
+          "value": 23
+        },
+        {
+          "name": "CPU_TO_CPU_INT3",
+          "value": 24
+        },
+        {
+          "name": "CAN0_WAKEUP_FROM_EXTI_Line18",
+          "value": 25
+        },
+        {
+          "name": "TIMER0_BRK_UP_TRG_CM_DEC",
+          "value": 26
+        },
+        {
+          "name": "TIMER2_UP_TRG_CM_DEC",
+          "value": 27
+        },
+        {
+          "name": "TIMER1_UP_TRG_CM_DEC",
+          "value": 28
+        },
+        {
+          "name": "TIMER19_BRK_UP_TRG_CM_DEC",
+          "value": 29
+        },
+        {
+          "name": "JTAG_INT_TO_HOST",
+          "value": 30
+        },
+        {
+          "name": "I2C0_EV",
+          "value": 31
+        },
+        {
+          "name": "I2C0_ER",
+          "value": 32
+        },
+        {
+          "name": "I2C1_EV",
+          "value": 33
+        },
+        {
+          "name": "I2C1_ER",
+          "value": 34
+        },
+        {
+          "name": "SPI0",
+          "value": 35
+        },
+        {
+          "name": "SPI1",
+          "value": 36
+        },
+        {
+          "name": "USART0",
+          "value": 37
+        },
+        {
+          "name": "USART1",
+          "value": 38
+        },
+        {
+          "name": "USART2",
+          "value": 39
+        },
+        {
+          "name": "EXTI_Line15_10",
+          "value": 40
+        },
+        {
+          "name": "EXTI_Line9_5",
+          "value": 41
+        },
+        {
+          "name": "Tamper",
+          "value": 42
+        },
+        {
+          "name": "TIMER20_BRK_UP_TRG_CM_DEC",
+          "value": 43
+        },
+        {
+          "name": "EXTI_Line101_42",
+          "value": 44
+        },
+        {
+          "name": "TIMER7_BRK_UP_TRG_CM_DEC",
+          "value": 45
+        },
+        {
+          "name": "PLL_LOL_DST_RESET",
+          "value": 46
+        },
+        {
+          "name": "DMAMUX",
+          "value": 47
+        },
+        {
+          "name": "CPU_FPU_OR_WRITE_ABORT",
+          "value": 48
+        },
+        {
+          "name": "EXTI_FROM_EXTI_Line26",
+          "value": 49
+        },
+        {
+          "name": "EXTI_FROM_EXTI_Line27",
+          "value": 50
+        },
+        {
+          "name": "FMU_INIT_TIMEOUT",
+          "value": 51
+        },
+        {
+          "name": "ADC1",
+          "value": 52
+        },
+        {
+          "name": "ADC2",
+          "value": 53
+        },
+        {
+          "name": "DAC0",
+          "value": 54
+        },
+        {
+          "name": "STCM_ILLEGAL_TRG",
+          "value": 55
+        },
+        {
+          "name": "DMA1_Channel0",
+          "value": 56
+        },
+        {
+          "name": "DMA2_Channel1",
+          "value": 57
+        },
+        {
+          "name": "DMA1_Channel2",
+          "value": 58
+        },
+        {
+          "name": "DMA1_Channel3",
+          "value": 59
+        },
+        {
+          "name": "DMA1_Channel4",
+          "value": 60
+        },
+        {
+          "name": "WWDGT1",
+          "value": 61
+        },
+        {
+          "name": "CAN1_WAKEUP_FROM_EXTI_Line19",
+          "value": 62
+        },
+        {
+          "name": "CAN1_MSG_BUF",
+          "value": 63
+        },
+        {
+          "name": "CAN1",
+          "value": 64
+        },
+        {
+          "name": "CTI_INT0",
+          "value": 65
+        },
+        {
+          "name": "CTI_INT1",
+          "value": 66
+        },
+        {
+          "name": "CAN0_ECCERR",
+          "value": 67
+        },
+        {
+          "name": "CAN1_ECCERR",
+          "value": 68
+        },
+        {
+          "name": "CAN2_ECCERR",
+          "value": 69
+        },
+        {
+          "name": "MFCOM",
+          "value": 70
+        },
+        {
+          "name": "CMP0",
+          "value": 71
+        },
+        {
+          "name": "CMP1",
+          "value": 72
+        },
+        {
+          "name": "BUS",
+          "value": 73
+        },
+        {
+          "name": "SENT",
+          "value": 74
+        },
+        {
+          "name": "HWSEM",
+          "value": 75
+        },
+        {
+          "name": "CAN3_ECCERR",
+          "value": 76
+        },
+        {
+          "name": "CAN4_ECCERR",
+          "value": 77
+        },
+        {
+          "name": "DAC1",
+          "value": 78
+        },
+        {
+          "name": "HSM_CM_INT0",
+          "value": 79
+        },
+        {
+          "name": "HSM_CM_INT1",
+          "value": 80
+        },
+        {
+          "name": "FMU_CATION_STATE",
+          "value": 81
+        },
+        {
+          "name": "RCTL",
+          "value": 82
+        },
+        {
+          "name": "IOC",
+          "value": 83
+        },
+        {
+          "name": "SPI2",
+          "value": 84
+        },
+        {
+          "name": "SPI3",
+          "value": 85
+        },
+        {
+          "name": "SPI4",
+          "value": 86
+        },
+        {
+          "name": "SPI5",
+          "value": 87
+        },
+        {
+          "name": "SPI6",
+          "value": 88
+        },
+        {
+          "name": "SPI7",
+          "value": 89
+        },
+        {
+          "name": "QSPI",
+          "value": 90
+        },
+        {
+          "name": "USART3",
+          "value": 91
+        },
+        {
+          "name": "USART4",
+          "value": 92
+        },
+        {
+          "name": "USART5",
+          "value": 93
+        },
+        {
+          "name": "CAN2_WAKEUP_FROM_EXTI_Line20",
+          "value": 94
+        },
+        {
+          "name": "CAN3_WAKEUP_FROM_EXTI_Line21",
+          "value": 95
+        },
+        {
+          "name": "CAN4_WAKEUP_FROM_EXTI_Line22",
+          "value": 96
+        },
+        {
+          "name": "CAN5_WAKEUP_FROM_EXTI_Line23",
+          "value": 97
+        },
+        {
+          "name": "CAN6_WAKEUP_FROM_EXTI_Line24",
+          "value": 98
+        },
+        {
+          "name": "CAN7_WAKEUP_FROM_EXTI_Line25",
+          "value": 99
+        },
+        {
+          "name": "CAN2_MSG_BUF",
+          "value": 100
+        },
+        {
+          "name": "CAN2",
+          "value": 101
+        },
+        {
+          "name": "CAN3_MSG_BUF",
+          "value": 102
+        },
+        {
+          "name": "CAN3",
+          "value": 103
+        },
+        {
+          "name": "CAN4_MSG_BUF",
+          "value": 104
+        },
+        {
+          "name": "CAN4",
+          "value": 105
+        },
+        {
+          "name": "CAN5_MSG_BUF",
+          "value": 106
+        },
+        {
+          "name": "CAN5",
+          "value": 107
+        },
+        {
+          "name": "CAN6_MSG_BUF",
+          "value": 108
+        },
+        {
+          "name": "CAN6",
+          "value": 109
+        },
+        {
+          "name": "CAN7_MSG_BUF",
+          "value": 110
+        },
+        {
+          "name": "CAN7",
+          "value": 111
+        },
+        {
+          "name": "TIMER19_CC_CH0_MCH0",
+          "value": 112
+        },
+        {
+          "name": "TIMER19_CC_CH1_MCH1",
+          "value": 113
+        },
+        {
+          "name": "TIMER19_CC_CH2_MCH2",
+          "value": 114
+        },
+        {
+          "name": "TIMER19_CC_CH3_MCH3",
+          "value": 115
+        },
+        {
+          "name": "TIMER20_CC_CH0_MCH0",
+          "value": 116
+        },
+        {
+          "name": "TIMER20_CC_CH1_MCH1",
+          "value": 117
+        },
+        {
+          "name": "TIMER20_CC_CH2_MCH2",
+          "value": 118
+        },
+        {
+          "name": "TIMER20_CC_CH3_MCH3",
+          "value": 119
+        },
+        {
+          "name": "TIMER60_CC_CH0_MCH0",
+          "value": 120
+        },
+        {
+          "name": "TIMER60_CC_CH1_MCH1",
+          "value": 121
+        },
+        {
+          "name": "TIMER60_CC_CH2_MCH2",
+          "value": 122
+        },
+        {
+          "name": "TIMER60_CC_CH3_MCH3",
+          "value": 123
+        },
+        {
+          "name": "TIMER61_CC_CH0_MCH0",
+          "value": 124
+        },
+        {
+          "name": "TIMER61_CC_CH1_MCH1",
+          "value": 125
+        },
+        {
+          "name": "TIMER61_CC_CH2_MCH2",
+          "value": 126
+        },
+        {
+          "name": "TIMER61_CC_CH3_MCH3",
+          "value": 127
+        },
+        {
+          "name": "TIMER62_CC_CH0_MCH0",
+          "value": 128
+        },
+        {
+          "name": "TIMER62_CC_CH1_MCH1",
+          "value": 129
+        },
+        {
+          "name": "TIMER62_CC_CH2_MCH2",
+          "value": 130
+        },
+        {
+          "name": "TIMER62_CC_CH3_MCH3",
+          "value": 131
+        },
+        {
+          "name": "TIMER63_CC_CH0_MCH0",
+          "value": 132
+        },
+        {
+          "name": "TIMER64_CC_CH1_MCH1",
+          "value": 133
+        },
+        {
+          "name": "TIMER65_CC_CH2_MCH2",
+          "value": 134
+        },
+        {
+          "name": "TIMER66_CC_CH3_MCH3",
+          "value": 135
+        },
+        {
+          "name": "DMA0_Channel7",
+          "value": 136
+        },
+        {
+          "name": "DMA0_Channel8",
+          "value": 137
+        },
+        {
+          "name": "DMA0_Channel9",
+          "value": 138
+        },
+        {
+          "name": "DMA0_Channel10",
+          "value": 139
+        },
+        {
+          "name": "DMA0_Channel11",
+          "value": 140
+        },
+        {
+          "name": "DMA0_Channel12",
+          "value": 141
+        },
+        {
+          "name": "DMA0_Channel13",
+          "value": 142
+        },
+        {
+          "name": "DMA0_Channel14",
+          "value": 143
+        },
+        {
+          "name": "DMA0_Channel15",
+          "value": 144
+        },
+        {
+          "name": "DMA1_Channel5",
+          "value": 145
+        },
+        {
+          "name": "DMA2_Channel6",
+          "value": 146
+        },
+        {
+          "name": "DMA1_Channel7",
+          "value": 147
+        },
+        {
+          "name": "DMA1_Channel8",
+          "value": 148
+        },
+        {
+          "name": "DMA1_Channel9",
+          "value": 149
+        },
+        {
+          "name": "DMA1_Channel10",
+          "value": 150
+        },
+        {
+          "name": "DMA2_Channel11",
+          "value": 151
+        },
+        {
+          "name": "DMA1_Channel12",
+          "value": 152
+        },
+        {
+          "name": "DMA1_Channel13",
+          "value": 153
+        },
+        {
+          "name": "DMA1_Channel14",
+          "value": 154
+        },
+        {
+          "name": "DMA1_Channel15",
+          "value": 155
+        },
+        {
+          "name": "MCMUA_RX_FULL",
+          "value": 156
+        },
+        {
+          "name": "MCMUA_TX_EMPTY",
+          "value": 157
+        },
+        {
+          "name": "MCMUA_GENERAL_PURPOSE",
+          "value": 158
+        },
+        {
+          "name": "MCMUB_RX_FULL",
+          "value": 159
+        },
+        {
+          "name": "MCMUB_TX_EMPTY",
+          "value": 160
+        },
+        {
+          "name": "MCMUB_GENERAL_PURPOSE",
+          "value": 161
+        },
+        {
+          "name": "LIN0",
+          "value": 162
+        },
+        {
+          "name": "LIN1",
+          "value": 163
+        },
+        {
+          "name": "LIN2",
+          "value": 164
+        },
+        {
+          "name": "LIN3",
+          "value": 165
+        },
+        {
+          "name": "LIN4",
+          "value": 166
+        },
+        {
+          "name": "LIN5",
+          "value": 167
+        },
+        {
+          "name": "LIN6",
+          "value": 168
+        },
+        {
+          "name": "LIN7",
+          "value": 169
+        },
+        {
+          "name": "LIN8",
+          "value": 170
+        },
+        {
+          "name": "LIN9",
+          "value": 171
+        },
+        {
+          "name": "LIN10",
+          "value": 172
+        },
+        {
+          "name": "LIN11",
+          "value": 173
+        },
+        {
+          "name": "TIMER0_CC_CH0_MCH0",
+          "value": 174
+        },
+        {
+          "name": "TIMER0_CC_CH1_MCH1",
+          "value": 175
+        },
+        {
+          "name": "TIMER0_CC_CH2_MCH2",
+          "value": 176
+        },
+        {
+          "name": "TIMER0_CC_CH3_MCH3",
+          "value": 177
+        },
+        {
+          "name": "TIMER7_CC_CH0_MCH0",
+          "value": 178
+        },
+        {
+          "name": "TIMER7_CC_CH1_MCH1",
+          "value": 179
+        },
+        {
+          "name": "TIMER7_CC_CH2_MCH2",
+          "value": 180
+        },
+        {
+          "name": "TIMER7_CC_CH3_MCH3",
+          "value": 181
+        },
+        {
+          "name": "TIMER1_CC_CH0",
+          "value": 182
+        },
+        {
+          "name": "TIMER1_CC_CH1",
+          "value": 183
+        },
+        {
+          "name": "TIMER1_CC_CH2",
+          "value": 184
+        },
+        {
+          "name": "TIMER1_CC_CH3",
+          "value": 185
+        },
+        {
+          "name": "TIMER2_CC_CH0",
+          "value": 186
+        },
+        {
+          "name": "TIMER2_CC_CH1",
+          "value": 187
+        },
+        {
+          "name": "TIMER2_CC_CH2",
+          "value": 188
+        },
+        {
+          "name": "TIMER2_CC_CH3",
+          "value": 189
+        },
+        {
+          "name": "FWDGT_RST_FROM_EXTI_Line40",
+          "value": 190
+        },
+        {
+          "name": "ENET_GLOBAL_INT",
+          "value": 191
+        },
+        {
+          "name": "ENET_WKUP_LPI_INT",
+          "value": 192
+        },
+        {
+          "name": "ENET_TX0_TX1_INT",
+          "value": 193
+        },
+        {
+          "name": "ENET_RX0_RX1_INT",
+          "value": 194
+        },
+        {
+          "name": "ENET_SAFE_COR_UNCOR_INT",
+          "value": 195
+        },
+        {
+          "name": "RCU_CK_FAIL",
+          "value": 196
+        },
+        {
+          "name": "CAN5_ECCERR",
+          "value": 197
+        },
+        {
+          "name": "LIN0_WAKEUP_FROM_EXTI_Line28",
+          "value": 198
+        },
+        {
+          "name": "LIN1_WAKEUP_FROM_EXTI_Line29",
+          "value": 199
+        },
+        {
+          "name": "LI2_WAKEUP_FROM_EXTI_Line30",
+          "value": 200
+        },
+        {
+          "name": "LIN3_WAKEUP_FROM_EXTI_Line31",
+          "value": 201
+        },
+        {
+          "name": "LIN4_WAKEUP_FROM_EXTI_Line32",
+          "value": 202
+        },
+        {
+          "name": "LIN5_WAKEUP_FROM_EXTI_Line33",
+          "value": 203
+        },
+        {
+          "name": "LIN6_WAKEUP_FROM_EXTI_Line34",
+          "value": 204
+        },
+        {
+          "name": "LIN7_WAKEUP_FROM_EXTI_Line35",
+          "value": 205
+        },
+        {
+          "name": "LIN8_WAKEUP_FROM_EXTI_Line36",
+          "value": 206
+        },
+        {
+          "name": "LIN9_WAKEUP_FROM_EXTI_Line37",
+          "value": 207
+        },
+        {
+          "name": "LIN10_WAKEUP_FROM_EXTI_Line38",
+          "value": 208
+        },
+        {
+          "name": "LIN11_WAKEUP_FROM_EXTI_Line39",
+          "value": 209
+        },
+        {
+          "name": "TIMER60_BRK_UP_TRG_CM_DEC",
+          "value": 210
+        },
+        {
+          "name": "TIMER61_BRK_UP_TRG_CM_DEC",
+          "value": 211
+        },
+        {
+          "name": "TIMER62_BRK_UP_TRG_CM_DEC",
+          "value": 212
+        },
+        {
+          "name": "TIMER63_BRK_UP_TRG_CM_DEC",
+          "value": 213
+        },
+        {
+          "name": "TIMER5_CH0_UP",
+          "value": 214
+        },
+        {
+          "name": "TIMER5_CH1_UP",
+          "value": 215
+        },
+        {
+          "name": "TIMER5_CH2_UP",
+          "value": 216
+        },
+        {
+          "name": "TIMER5_CH3_UP",
+          "value": 217
+        },
+        {
+          "name": "TIMER6_CH0_UP",
+          "value": 218
+        },
+        {
+          "name": "TIMER6_CH1_UP",
+          "value": 219
+        },
+        {
+          "name": "TIMER6_CH2_UP",
+          "value": 220
+        },
+        {
+          "name": "TIMER6_CH3_UP",
+          "value": 221
+        },
+        {
+          "name": "CAN6_ECCERR",
+          "value": 238
+        },
+        {
+          "name": "CAN7_ECCERR",
+          "value": 239
+        }
+      ],
       "interrupts": 224,
       "normalizations": [
         "identifier-whitespace:1"
@@ -164,6 +1063,578 @@
         "USART5",
         "WWDGT0",
         "WWDGT1"
+      ],
+      "peripheral_register_roots": [
+        {
+          "address": 1073803264,
+          "name": "ADC0",
+          "register_root": "ADC0"
+        },
+        {
+          "address": 1073805312,
+          "name": "ADC1",
+          "register_root": "ADC0"
+        },
+        {
+          "address": 1073816576,
+          "name": "ADC2",
+          "register_root": "ADC0"
+        },
+        {
+          "address": 1073769472,
+          "name": "BKP",
+          "register_root": "BKP"
+        },
+        {
+          "address": 1224773632,
+          "name": "BUSIM",
+          "register_root": "BUSIM"
+        },
+        {
+          "address": 1073840128,
+          "name": "CAN0",
+          "register_root": "CAN0"
+        },
+        {
+          "address": 1073844224,
+          "name": "CAN1",
+          "register_root": "CAN0"
+        },
+        {
+          "address": 1073848320,
+          "name": "CAN2",
+          "register_root": "CAN0"
+        },
+        {
+          "address": 1073852416,
+          "name": "CAN3",
+          "register_root": "CAN3"
+        },
+        {
+          "address": 1073856512,
+          "name": "CAN4",
+          "register_root": "CAN3"
+        },
+        {
+          "address": 1073860608,
+          "name": "CAN5",
+          "register_root": "CAN3"
+        },
+        {
+          "address": 1073864704,
+          "name": "CAN6",
+          "register_root": "CAN6"
+        },
+        {
+          "address": 1073868800,
+          "name": "CAN7",
+          "register_root": "CAN6"
+        },
+        {
+          "address": 1224740864,
+          "name": "CCTL",
+          "register_root": "CCTL"
+        },
+        {
+          "address": 1073751040,
+          "name": "CLTCFG",
+          "register_root": "CLTCFG"
+        },
+        {
+          "address": 1073839104,
+          "name": "CMP0",
+          "register_root": "CMP0"
+        },
+        {
+          "address": 1073835008,
+          "name": "CMP1",
+          "register_root": "CMP1"
+        },
+        {
+          "address": 1224742912,
+          "name": "CPDM",
+          "register_root": "CPDM"
+        },
+        {
+          "address": 1224749056,
+          "name": "CRC",
+          "register_root": "CRC"
+        },
+        {
+          "address": 1073771520,
+          "name": "DAC0",
+          "register_root": "DAC0"
+        },
+        {
+          "address": 1073794048,
+          "name": "DAC1",
+          "register_root": "DAC0"
+        },
+        {
+          "address": 3759017984,
+          "name": "DBG",
+          "register_root": "DBG"
+        },
+        {
+          "address": 1224736768,
+          "name": "DMA0",
+          "register_root": "DMA0"
+        },
+        {
+          "address": 1224737792,
+          "name": "DMA1",
+          "register_root": "DMA0"
+        },
+        {
+          "address": 1224738816,
+          "name": "DMAMUX",
+          "register_root": "DMAMUX"
+        },
+        {
+          "address": 1073786880,
+          "name": "ENET_DMA",
+          "register_root": "ENET_DMA"
+        },
+        {
+          "address": 1073782784,
+          "name": "ENET_MAC",
+          "register_root": "ENET_MAC"
+        },
+        {
+          "address": 1073784576,
+          "name": "ENET_MMC",
+          "register_root": "ENET_MMC"
+        },
+        {
+          "address": 1073785856,
+          "name": "ENET_MTL",
+          "register_root": "ENET_MTL"
+        },
+        {
+          "address": 1073808384,
+          "name": "EXTI",
+          "register_root": "EXTI"
+        },
+        {
+          "address": 1224777728,
+          "name": "EXTMPU",
+          "register_root": "EXTMPU"
+        },
+        {
+          "address": 1224744960,
+          "name": "FMC",
+          "register_root": "FMC"
+        },
+        {
+          "address": 1073886208,
+          "name": "FMU",
+          "register_root": "FMU"
+        },
+        {
+          "address": 1073754112,
+          "name": "FWDGT0",
+          "register_root": "FWDGT0"
+        },
+        {
+          "address": 1073799168,
+          "name": "FWDGT1",
+          "register_root": "FWDGT0"
+        },
+        {
+          "address": 1076167680,
+          "name": "GD_AP",
+          "register_root": "GD_AP"
+        },
+        {
+          "address": 1207959552,
+          "name": "GPIOA",
+          "register_root": "GPIOA"
+        },
+        {
+          "address": 1207960576,
+          "name": "GPIOB",
+          "register_root": "GPIOB"
+        },
+        {
+          "address": 1207961600,
+          "name": "GPIOC",
+          "register_root": "GPIOC"
+        },
+        {
+          "address": 1207962624,
+          "name": "GPIOD",
+          "register_root": "GPIOD"
+        },
+        {
+          "address": 1207963648,
+          "name": "GPIOE",
+          "register_root": "GPIOE"
+        },
+        {
+          "address": 1207964672,
+          "name": "GPIOF",
+          "register_root": "GPIOF"
+        },
+        {
+          "address": 1207965696,
+          "name": "GPIOG",
+          "register_root": "GPIOG"
+        },
+        {
+          "address": 1207966720,
+          "name": "GPIOH",
+          "register_root": "GPIOH"
+        },
+        {
+          "address": 1207967744,
+          "name": "GPIOI",
+          "register_root": "GPIOI"
+        },
+        {
+          "address": 1207968768,
+          "name": "GPIOJ",
+          "register_root": "GPIOJ"
+        },
+        {
+          "address": 1207969792,
+          "name": "GPIOK",
+          "register_root": "GPIOK"
+        },
+        {
+          "address": 1207970816,
+          "name": "GPIOL",
+          "register_root": "GPIOL"
+        },
+        {
+          "address": 1207971840,
+          "name": "GPIOM",
+          "register_root": "GPIOM"
+        },
+        {
+          "address": 1207972864,
+          "name": "GPION",
+          "register_root": "GPION"
+        },
+        {
+          "address": 1224772608,
+          "name": "HSMIF",
+          "register_root": "HSMIF"
+        },
+        {
+          "address": 1224771584,
+          "name": "HWSEM",
+          "register_root": "HWSEM"
+        },
+        {
+          "address": 1073763328,
+          "name": "I2C0",
+          "register_root": "I2C0"
+        },
+        {
+          "address": 1073764352,
+          "name": "I2C1",
+          "register_root": "I2C0"
+        },
+        {
+          "address": 1224774656,
+          "name": "IMICU_BM1",
+          "register_root": "IMICU_BM1"
+        },
+        {
+          "address": 1224775680,
+          "name": "IMICU_BM2",
+          "register_root": "IMICU_BM1"
+        },
+        {
+          "address": 1073888256,
+          "name": "IOC",
+          "register_root": "IOC"
+        },
+        {
+          "address": 1073887232,
+          "name": "IRM",
+          "register_root": "IRM"
+        },
+        {
+          "address": 1073802240,
+          "name": "JDC",
+          "register_root": "JDC"
+        },
+        {
+          "address": 1073809408,
+          "name": "LIN0",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073810432,
+          "name": "LIN1",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073780736,
+          "name": "LIN10",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073781760,
+          "name": "LIN11",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073811456,
+          "name": "LIN2",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073812480,
+          "name": "LIN3",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073813504,
+          "name": "LIN4",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073814528,
+          "name": "LIN5",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073776640,
+          "name": "LIN6",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073777664,
+          "name": "LIN7",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073778688,
+          "name": "LIN8",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073779712,
+          "name": "LIN9",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1224769536,
+          "name": "MCMUA",
+          "register_root": "MCMUA"
+        },
+        {
+          "address": 1224770560,
+          "name": "MCMUB",
+          "register_root": "MCMUB"
+        },
+        {
+          "address": 1224750080,
+          "name": "MFCOM",
+          "register_root": "MFCOM"
+        },
+        {
+          "address": 1073890304,
+          "name": "MTC",
+          "register_root": "MTC"
+        },
+        {
+          "address": 1073770496,
+          "name": "PMU",
+          "register_root": "PMU"
+        },
+        {
+          "address": 1073971200,
+          "name": "PRPU",
+          "register_root": "PRPU"
+        },
+        {
+          "address": 1224741888,
+          "name": "QSPI",
+          "register_root": "QSPI"
+        },
+        {
+          "address": 1224752128,
+          "name": "RCTL",
+          "register_root": "RCTL"
+        },
+        {
+          "address": 1073752064,
+          "name": "RTC",
+          "register_root": "RTC"
+        },
+        {
+          "address": 1073766400,
+          "name": "SENT",
+          "register_root": "SENT"
+        },
+        {
+          "address": 1073819648,
+          "name": "SPI0",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073838080,
+          "name": "SPI1",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073800192,
+          "name": "SPI2",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073801216,
+          "name": "SPI3",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073824768,
+          "name": "SPI4",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073825792,
+          "name": "SPI5",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073756160,
+          "name": "SPI6",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073757184,
+          "name": "SPI7",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1224739840,
+          "name": "SRAM",
+          "register_root": "SRAM"
+        },
+        {
+          "address": 1073893376,
+          "name": "STCM",
+          "register_root": "STCM"
+        },
+        {
+          "address": 1073807360,
+          "name": "SYSCFG",
+          "register_root": "SYSCFG"
+        },
+        {
+          "address": 1224753152,
+          "name": "TCM",
+          "register_root": "TCM"
+        },
+        {
+          "address": 1073818624,
+          "name": "TIMER0",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073830912,
+          "name": "TIMER1",
+          "register_root": "TIMER1"
+        },
+        {
+          "address": 1073827840,
+          "name": "TIMER19",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073742848,
+          "name": "TIMER2",
+          "register_root": "TIMER1"
+        },
+        {
+          "address": 1073741824,
+          "name": "TIMER20",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073831936,
+          "name": "TIMER5",
+          "register_root": "TIMER5"
+        },
+        {
+          "address": 1073746944,
+          "name": "TIMER6",
+          "register_root": "TIMER5"
+        },
+        {
+          "address": 1073745920,
+          "name": "TIMER60",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073795072,
+          "name": "TIMER61",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073832960,
+          "name": "TIMER62",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073796096,
+          "name": "TIMER63",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073820672,
+          "name": "TIMER7",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073815552,
+          "name": "TRIGSEL",
+          "register_root": "TRIGSEL"
+        },
+        {
+          "address": 1073821696,
+          "name": "USART0",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073822720,
+          "name": "USART1",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073823744,
+          "name": "USART2",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073759232,
+          "name": "USART3",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073760256,
+          "name": "USART4",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073836032,
+          "name": "USART5",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073753088,
+          "name": "WWDGT0",
+          "register_root": "WWDGT0"
+        },
+        {
+          "address": 1073798144,
+          "name": "WWDGT1",
+          "register_root": "WWDGT0"
+        }
       ],
       "peripherals": 114,
       "rcu_gates": [
@@ -1979,7 +3450,8 @@
       ],
       "fields": 14098,
       "generated": {
-        "chiptool_revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678",
+        "cache_key": "g2-n4-26fca717b9fe0438-030394157b9d",
+        "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
         "normalization_version": 4,
         "normalized_svd_sha256": "26fca717b9fe0438d8d8060d94dbefa125869c469193029242e82817babde923",
         "outputs": {
@@ -1988,13 +3460,531 @@
             "size": 5385
           },
           "lib.rs": {
-            "sha256": "b6292cf278fbf0f3fe2c855d85c93a5118d51030010f295f61178107d6fc5c0d",
-            "size": 7304324
+            "sha256": "61d25dc5a805e73ea85ab6b2184f678d65dcd64346c53c04e88304cfa1ccada0",
+            "size": 6982630
           }
         },
-        "schema_version": 1,
+        "schema_version": 2,
         "svd_sha256": "26fca717b9fe0438d8d8060d94dbefa125869c469193029242e82817babde923"
       },
+      "interrupt_vectors": [
+        {
+          "name": "WWDGT0",
+          "value": 0
+        },
+        {
+          "name": "HVD_LVD",
+          "value": 1
+        },
+        {
+          "name": "RTC_ALARM",
+          "value": 2
+        },
+        {
+          "name": "RTC",
+          "value": 3
+        },
+        {
+          "name": "FMC",
+          "value": 4
+        },
+        {
+          "name": "RCU_CK_READY",
+          "value": 5
+        },
+        {
+          "name": "EXTI_Line0",
+          "value": 6
+        },
+        {
+          "name": "EXTI_Line1",
+          "value": 7
+        },
+        {
+          "name": "EXTI_Line2",
+          "value": 8
+        },
+        {
+          "name": "EXTI_Line3",
+          "value": 9
+        },
+        {
+          "name": "EXTI_Line4",
+          "value": 10
+        },
+        {
+          "name": "DMA0_Channel0",
+          "value": 11
+        },
+        {
+          "name": "DMA0_Channel1",
+          "value": 12
+        },
+        {
+          "name": "DMA0_Channel2",
+          "value": 13
+        },
+        {
+          "name": "DMA0_Channel3",
+          "value": 14
+        },
+        {
+          "name": "DMA0_Channel4",
+          "value": 15
+        },
+        {
+          "name": "DMA0_Channel5",
+          "value": 16
+        },
+        {
+          "name": "DMA0_Channel6",
+          "value": 17
+        },
+        {
+          "name": "ADC0",
+          "value": 18
+        },
+        {
+          "name": "CPU_TO_CPU_INT0",
+          "value": 21
+        },
+        {
+          "name": "CPU_TO_CPU_INT1",
+          "value": 22
+        },
+        {
+          "name": "CPU_TO_CPU_INT2",
+          "value": 23
+        },
+        {
+          "name": "CPU_TO_CPU_INT3",
+          "value": 24
+        },
+        {
+          "name": "TIMER0_BRK_UP_TRG_CM_DEC",
+          "value": 26
+        },
+        {
+          "name": "TIMER2_UP_TRG_CM_DEC",
+          "value": 27
+        },
+        {
+          "name": "TIMER1_UP_TRG_CM_DEC",
+          "value": 28
+        },
+        {
+          "name": "TIMER19_BRK_UP_TRG_CM_DEC",
+          "value": 29
+        },
+        {
+          "name": "JTAG_INT_TO_HOST",
+          "value": 30
+        },
+        {
+          "name": "I2C0_EV",
+          "value": 31
+        },
+        {
+          "name": "I2C0_ER",
+          "value": 32
+        },
+        {
+          "name": "I2C1_EV",
+          "value": 33
+        },
+        {
+          "name": "I2C1_ER",
+          "value": 34
+        },
+        {
+          "name": "SPI0",
+          "value": 35
+        },
+        {
+          "name": "SPI1",
+          "value": 36
+        },
+        {
+          "name": "EXTI_Line15_10",
+          "value": 40
+        },
+        {
+          "name": "EXTI_Line9_5",
+          "value": 41
+        },
+        {
+          "name": "Tamper",
+          "value": 42
+        },
+        {
+          "name": "TIMER20_BRK_UP_TRG_CM_DEC",
+          "value": 43
+        },
+        {
+          "name": "EXTI_Line101_42",
+          "value": 44
+        },
+        {
+          "name": "TIMER7_BRK_UP_TRG_CM_DEC",
+          "value": 45
+        },
+        {
+          "name": "PLL_LOL_DST_RESET",
+          "value": 46
+        },
+        {
+          "name": "DMAMUX",
+          "value": 47
+        },
+        {
+          "name": "CPU_FPU_OR_WRITE_ABORT",
+          "value": 48
+        },
+        {
+          "name": "EXTI_FROM_EXTI_Line26",
+          "value": 49
+        },
+        {
+          "name": "EXTI_FROM_EXTI_Line27",
+          "value": 50
+        },
+        {
+          "name": "FMU_INIT_TIMEOUT",
+          "value": 51
+        },
+        {
+          "name": "ADC1",
+          "value": 52
+        },
+        {
+          "name": "DAC0",
+          "value": 54
+        },
+        {
+          "name": "STCM_ILLEGAL_TRG",
+          "value": 55
+        },
+        {
+          "name": "DMA1_Channel0",
+          "value": 56
+        },
+        {
+          "name": "DMA2_Channel1",
+          "value": 57
+        },
+        {
+          "name": "DMA1_Channel2",
+          "value": 58
+        },
+        {
+          "name": "DMA1_Channel3",
+          "value": 59
+        },
+        {
+          "name": "DMA1_Channel4",
+          "value": 60
+        },
+        {
+          "name": "CTI_INT0",
+          "value": 65
+        },
+        {
+          "name": "CTI_INT1",
+          "value": 66
+        },
+        {
+          "name": "CMP0",
+          "value": 71
+        },
+        {
+          "name": "CMP1",
+          "value": 72
+        },
+        {
+          "name": "BUS",
+          "value": 73
+        },
+        {
+          "name": "SENT",
+          "value": 74
+        },
+        {
+          "name": "HWSEM",
+          "value": 75
+        },
+        {
+          "name": "DAC1",
+          "value": 78
+        },
+        {
+          "name": "HSM_CM_INT0",
+          "value": 79
+        },
+        {
+          "name": "HSM_CM_INT1",
+          "value": 80
+        },
+        {
+          "name": "FMU_CATION_STATE",
+          "value": 81
+        },
+        {
+          "name": "RCTL",
+          "value": 82
+        },
+        {
+          "name": "SPI2",
+          "value": 84
+        },
+        {
+          "name": "SPI3",
+          "value": 85
+        },
+        {
+          "name": "SPI4",
+          "value": 86
+        },
+        {
+          "name": "SPI5",
+          "value": 87
+        },
+        {
+          "name": "QSPI",
+          "value": 90
+        },
+        {
+          "name": "TIMER19_CC_CH0_MCH0",
+          "value": 112
+        },
+        {
+          "name": "TIMER19_CC_CH1_MCH1",
+          "value": 113
+        },
+        {
+          "name": "TIMER19_CC_CH2_MCH2",
+          "value": 114
+        },
+        {
+          "name": "TIMER19_CC_CH3_MCH3",
+          "value": 115
+        },
+        {
+          "name": "TIMER20_CC_CH0_MCH0",
+          "value": 116
+        },
+        {
+          "name": "TIMER20_CC_CH1_MCH1",
+          "value": 117
+        },
+        {
+          "name": "TIMER20_CC_CH2_MCH2",
+          "value": 118
+        },
+        {
+          "name": "TIMER20_CC_CH3_MCH3",
+          "value": 119
+        },
+        {
+          "name": "TIMER60_CC_CH0_MCH0",
+          "value": 120
+        },
+        {
+          "name": "TIMER60_CC_CH1_MCH1",
+          "value": 121
+        },
+        {
+          "name": "TIMER60_CC_CH2_MCH2",
+          "value": 122
+        },
+        {
+          "name": "TIMER60_CC_CH3_MCH3",
+          "value": 123
+        },
+        {
+          "name": "TIMER61_CC_CH0_MCH0",
+          "value": 124
+        },
+        {
+          "name": "TIMER61_CC_CH1_MCH1",
+          "value": 125
+        },
+        {
+          "name": "TIMER61_CC_CH2_MCH2",
+          "value": 126
+        },
+        {
+          "name": "TIMER61_CC_CH3_MCH3",
+          "value": 127
+        },
+        {
+          "name": "TIMER62_CC_CH0_MCH0",
+          "value": 128
+        },
+        {
+          "name": "TIMER62_CC_CH1_MCH1",
+          "value": 129
+        },
+        {
+          "name": "TIMER62_CC_CH2_MCH2",
+          "value": 130
+        },
+        {
+          "name": "TIMER62_CC_CH3_MCH3",
+          "value": 131
+        },
+        {
+          "name": "TIMER63_CC_CH0_MCH0",
+          "value": 132
+        },
+        {
+          "name": "TIMER64_CC_CH1_MCH1",
+          "value": 133
+        },
+        {
+          "name": "TIMER65_CC_CH2_MCH2",
+          "value": 134
+        },
+        {
+          "name": "TIMER66_CC_CH3_MCH3",
+          "value": 135
+        },
+        {
+          "name": "DMA0_Channel7",
+          "value": 136
+        },
+        {
+          "name": "DMA1_Channel5",
+          "value": 145
+        },
+        {
+          "name": "DMA2_Channel6",
+          "value": 146
+        },
+        {
+          "name": "DMA1_Channel7",
+          "value": 147
+        },
+        {
+          "name": "TIMER0_CC_CH0_MCH0",
+          "value": 174
+        },
+        {
+          "name": "TIMER0_CC_CH1_MCH1",
+          "value": 175
+        },
+        {
+          "name": "TIMER0_CC_CH2_MCH2",
+          "value": 176
+        },
+        {
+          "name": "TIMER0_CC_CH3_MCH3",
+          "value": 177
+        },
+        {
+          "name": "TIMER7_CC_CH0_MCH0",
+          "value": 178
+        },
+        {
+          "name": "TIMER7_CC_CH1_MCH1",
+          "value": 179
+        },
+        {
+          "name": "TIMER7_CC_CH2_MCH2",
+          "value": 180
+        },
+        {
+          "name": "TIMER7_CC_CH3_MCH3",
+          "value": 181
+        },
+        {
+          "name": "TIMER1_CC_CH0",
+          "value": 182
+        },
+        {
+          "name": "TIMER1_CC_CH1",
+          "value": 183
+        },
+        {
+          "name": "TIMER1_CC_CH2",
+          "value": 184
+        },
+        {
+          "name": "TIMER1_CC_CH3",
+          "value": 185
+        },
+        {
+          "name": "TIMER2_CC_CH0",
+          "value": 186
+        },
+        {
+          "name": "TIMER2_CC_CH1",
+          "value": 187
+        },
+        {
+          "name": "TIMER2_CC_CH2",
+          "value": 188
+        },
+        {
+          "name": "TIMER2_CC_CH3",
+          "value": 189
+        },
+        {
+          "name": "FWDGT_RST_FROM_EXTI_Line40",
+          "value": 190
+        },
+        {
+          "name": "RCU_CK_FAIL",
+          "value": 196
+        },
+        {
+          "name": "TIMER60_BRK_UP_TRG_CM_DEC",
+          "value": 210
+        },
+        {
+          "name": "TIMER61_BRK_UP_TRG_CM_DEC",
+          "value": 211
+        },
+        {
+          "name": "TIMER62_BRK_UP_TRG_CM_DEC",
+          "value": 212
+        },
+        {
+          "name": "TIMER63_BRK_UP_TRG_CM_DEC",
+          "value": 213
+        },
+        {
+          "name": "TIMER5_CH0_UP",
+          "value": 214
+        },
+        {
+          "name": "TIMER5_CH1_UP",
+          "value": 215
+        },
+        {
+          "name": "TIMER5_CH2_UP",
+          "value": 216
+        },
+        {
+          "name": "TIMER5_CH3_UP",
+          "value": 217
+        },
+        {
+          "name": "TIMER6_CH0_UP",
+          "value": 218
+        },
+        {
+          "name": "TIMER6_CH1_UP",
+          "value": 219
+        },
+        {
+          "name": "TIMER6_CH2_UP",
+          "value": 220
+        },
+        {
+          "name": "TIMER6_CH3_UP",
+          "value": 221
+        }
+      ],
       "interrupts": 129,
       "normalizations": [],
       "normalized_sha256": "26fca717b9fe0438d8d8060d94dbefa125869c469193029242e82817babde923",
@@ -2092,6 +4082,468 @@
         "TIMER7",
         "TRIGSEL",
         "WWDGT0"
+      ],
+      "peripheral_register_roots": [
+        {
+          "address": 1073803264,
+          "name": "ADC0",
+          "register_root": "ADC0"
+        },
+        {
+          "address": 1073805312,
+          "name": "ADC1",
+          "register_root": "ADC0"
+        },
+        {
+          "address": 1073769472,
+          "name": "BKP",
+          "register_root": "BKP"
+        },
+        {
+          "address": 1224773632,
+          "name": "BUSIM",
+          "register_root": "BUSIM"
+        },
+        {
+          "address": 1073840128,
+          "name": "CAN0_SYSCFG",
+          "register_root": "CAN0_SYSCFG"
+        },
+        {
+          "address": 1073856512,
+          "name": "CAN1_SYSCFG",
+          "register_root": "CAN0_SYSCFG"
+        },
+        {
+          "address": 1073905664,
+          "name": "CAN2_SYSCFG",
+          "register_root": "CAN0_SYSCFG"
+        },
+        {
+          "address": 1224740864,
+          "name": "CCTL",
+          "register_root": "CCTL"
+        },
+        {
+          "address": 1073751040,
+          "name": "CLTCFG",
+          "register_root": "CLTCFG"
+        },
+        {
+          "address": 1073839104,
+          "name": "CMP0",
+          "register_root": "CMP0"
+        },
+        {
+          "address": 1073835008,
+          "name": "CMP1",
+          "register_root": "CMP1"
+        },
+        {
+          "address": 1224742912,
+          "name": "CPDM",
+          "register_root": "CPDM"
+        },
+        {
+          "address": 1224749056,
+          "name": "CRC",
+          "register_root": "CRC"
+        },
+        {
+          "address": 1073771520,
+          "name": "DAC0",
+          "register_root": "DAC0"
+        },
+        {
+          "address": 1073794048,
+          "name": "DAC1",
+          "register_root": "DAC0"
+        },
+        {
+          "address": 3759017984,
+          "name": "DBG",
+          "register_root": "DBG"
+        },
+        {
+          "address": 1224736768,
+          "name": "DMA0",
+          "register_root": "DMA0"
+        },
+        {
+          "address": 1224737792,
+          "name": "DMA1",
+          "register_root": "DMA0"
+        },
+        {
+          "address": 1224738816,
+          "name": "DMAMUX",
+          "register_root": "DMAMUX"
+        },
+        {
+          "address": 1073848320,
+          "name": "DTM_CAN0",
+          "register_root": "DTM_CAN0"
+        },
+        {
+          "address": 1073850368,
+          "name": "DTM_CAN1",
+          "register_root": "DTM_CAN0"
+        },
+        {
+          "address": 1073864704,
+          "name": "DTM_CAN2",
+          "register_root": "DTM_CAN0"
+        },
+        {
+          "address": 1073866752,
+          "name": "DTM_CAN3",
+          "register_root": "DTM_CAN0"
+        },
+        {
+          "address": 1073868800,
+          "name": "DTM_CAN4",
+          "register_root": "DTM_CAN0"
+        },
+        {
+          "address": 1073913856,
+          "name": "DTM_CAN5",
+          "register_root": "DTM_CAN0"
+        },
+        {
+          "address": 1073915904,
+          "name": "DTM_CAN6",
+          "register_root": "DTM_CAN0"
+        },
+        {
+          "address": 1073917952,
+          "name": "DTM_CAN7",
+          "register_root": "DTM_CAN0"
+        },
+        {
+          "address": 1073808384,
+          "name": "EXTI",
+          "register_root": "EXTI"
+        },
+        {
+          "address": 1224777728,
+          "name": "EXTMPU",
+          "register_root": "EXTMPU"
+        },
+        {
+          "address": 1224744960,
+          "name": "FMC",
+          "register_root": "FMC"
+        },
+        {
+          "address": 1073886208,
+          "name": "FMU",
+          "register_root": "FMU"
+        },
+        {
+          "address": 1073754112,
+          "name": "FWDGT0",
+          "register_root": "FWDGT0"
+        },
+        {
+          "address": 1076167680,
+          "name": "GD_AP",
+          "register_root": "GD_AP"
+        },
+        {
+          "address": 1207959552,
+          "name": "GPIOA",
+          "register_root": "GPIOA"
+        },
+        {
+          "address": 1207960576,
+          "name": "GPIOB",
+          "register_root": "GPIOB"
+        },
+        {
+          "address": 1207961600,
+          "name": "GPIOC",
+          "register_root": "GPIOC"
+        },
+        {
+          "address": 1207962624,
+          "name": "GPIOD",
+          "register_root": "GPIOD"
+        },
+        {
+          "address": 1207963648,
+          "name": "GPIOE",
+          "register_root": "GPIOE"
+        },
+        {
+          "address": 1207964672,
+          "name": "GPIOF",
+          "register_root": "GPIOF"
+        },
+        {
+          "address": 1207965696,
+          "name": "GPIOG",
+          "register_root": "GPIOG"
+        },
+        {
+          "address": 1207966720,
+          "name": "GPIOH",
+          "register_root": "GPIOH"
+        },
+        {
+          "address": 1207967744,
+          "name": "GPIOI",
+          "register_root": "GPIOI"
+        },
+        {
+          "address": 1207968768,
+          "name": "GPIOJ",
+          "register_root": "GPIOJ"
+        },
+        {
+          "address": 1207969792,
+          "name": "GPIOK",
+          "register_root": "GPIOK"
+        },
+        {
+          "address": 1207970816,
+          "name": "GPIOL",
+          "register_root": "GPIOL"
+        },
+        {
+          "address": 1207971840,
+          "name": "GPIOM",
+          "register_root": "GPIOM"
+        },
+        {
+          "address": 1207972864,
+          "name": "GPION",
+          "register_root": "GPION"
+        },
+        {
+          "address": 1224772608,
+          "name": "HSMIF",
+          "register_root": "HSMIF"
+        },
+        {
+          "address": 1224771584,
+          "name": "HWSEM",
+          "register_root": "HWSEM"
+        },
+        {
+          "address": 1073763328,
+          "name": "I2C0",
+          "register_root": "I2C0"
+        },
+        {
+          "address": 1073764352,
+          "name": "I2C1",
+          "register_root": "I2C0"
+        },
+        {
+          "address": 1224774656,
+          "name": "IMICU_BM1",
+          "register_root": "IMICU_BM1"
+        },
+        {
+          "address": 1224775680,
+          "name": "IMICU_BM2",
+          "register_root": "IMICU_BM1"
+        },
+        {
+          "address": 1073887232,
+          "name": "IRM",
+          "register_root": "IRM"
+        },
+        {
+          "address": 1073802240,
+          "name": "JDC",
+          "register_root": "JDC"
+        },
+        {
+          "address": 1073809408,
+          "name": "LINFlexD0",
+          "register_root": "LINFlexD0"
+        },
+        {
+          "address": 1073810432,
+          "name": "LINFlexD1",
+          "register_root": "LINFlexD0"
+        },
+        {
+          "address": 1073811456,
+          "name": "LINFlexD2",
+          "register_root": "LINFlexD0"
+        },
+        {
+          "address": 1073812480,
+          "name": "LINFlexD3",
+          "register_root": "LINFlexD0"
+        },
+        {
+          "address": 1073813504,
+          "name": "LINFlexD4",
+          "register_root": "LINFlexD0"
+        },
+        {
+          "address": 1073814528,
+          "name": "LINFlexD5",
+          "register_root": "LINFlexD0"
+        },
+        {
+          "address": 1073890304,
+          "name": "MTC",
+          "register_root": "MTC"
+        },
+        {
+          "address": 1073770496,
+          "name": "PMU",
+          "register_root": "PMU"
+        },
+        {
+          "address": 1073971200,
+          "name": "PRPU",
+          "register_root": "PRPU"
+        },
+        {
+          "address": 1224741888,
+          "name": "QSPI",
+          "register_root": "QSPI"
+        },
+        {
+          "address": 1224752128,
+          "name": "RCTL",
+          "register_root": "RCTL"
+        },
+        {
+          "address": 1073752064,
+          "name": "RTC",
+          "register_root": "RTC"
+        },
+        {
+          "address": 1073766400,
+          "name": "SENT",
+          "register_root": "SENT"
+        },
+        {
+          "address": 1073819648,
+          "name": "SPI0",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073838080,
+          "name": "SPI1",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073800192,
+          "name": "SPI2",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073801216,
+          "name": "SPI3",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073824768,
+          "name": "SPI4",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073825792,
+          "name": "SPI5",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1224739840,
+          "name": "SRAM",
+          "register_root": "SRAM"
+        },
+        {
+          "address": 1073893376,
+          "name": "STCM",
+          "register_root": "STCM"
+        },
+        {
+          "address": 1073807360,
+          "name": "SYSCFG",
+          "register_root": "SYSCFG"
+        },
+        {
+          "address": 1224753152,
+          "name": "TCM",
+          "register_root": "TCM"
+        },
+        {
+          "address": 1073818624,
+          "name": "TIMER0",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073830912,
+          "name": "TIMER1",
+          "register_root": "TIMER1"
+        },
+        {
+          "address": 1073827840,
+          "name": "TIMER19",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073742848,
+          "name": "TIMER2",
+          "register_root": "TIMER1"
+        },
+        {
+          "address": 1073741824,
+          "name": "TIMER20",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073831936,
+          "name": "TIMER5",
+          "register_root": "TIMER5"
+        },
+        {
+          "address": 1073746944,
+          "name": "TIMER6",
+          "register_root": "TIMER5"
+        },
+        {
+          "address": 1073745920,
+          "name": "TIMER60",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073795072,
+          "name": "TIMER61",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073832960,
+          "name": "TIMER62",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073796096,
+          "name": "TIMER63",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073820672,
+          "name": "TIMER7",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073815552,
+          "name": "TRIGSEL",
+          "register_root": "TRIGSEL"
+        },
+        {
+          "address": 1073753088,
+          "name": "WWDGT0",
+          "register_root": "WWDGT0"
+        }
       ],
       "peripherals": 92,
       "rcu_gates": [
@@ -3402,7 +5854,8 @@
       ],
       "fields": 23065,
       "generated": {
-        "chiptool_revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678",
+        "cache_key": "g2-n4-a1a3c6fd1f484142-030394157b9d",
+        "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
         "normalization_version": 4,
         "normalized_svd_sha256": "a13aa3069cfbdffc18066f710c6a8a30c18d760b8ec34ca589427ef53b58f6a8",
         "outputs": {
@@ -3411,13 +5864,911 @@
             "size": 9385
           },
           "lib.rs": {
-            "sha256": "e91edb52c906f5bd215f1d08855466cdc3ede647f899b6ff0c2ed66abb6aa9ce",
-            "size": 12185843
+            "sha256": "64deec7db26873753f75197aa2401fcf8b69dd4aaabc1066627378016f285d88",
+            "size": 11646975
           }
         },
-        "schema_version": 1,
+        "schema_version": 2,
         "svd_sha256": "a1a3c6fd1f4841425f1f28c36f3ddaf26e8bcac3e8a671171673b670d6677c16"
       },
+      "interrupt_vectors": [
+        {
+          "name": "WWDGT0",
+          "value": 0
+        },
+        {
+          "name": "LVD_HVD_FROM_EXTI_Line16",
+          "value": 1
+        },
+        {
+          "name": "RTC_ALARM_FROM_EXTI_Line17",
+          "value": 2
+        },
+        {
+          "name": "RTC_GLOBAL",
+          "value": 3
+        },
+        {
+          "name": "FMC_GLOBAL",
+          "value": 4
+        },
+        {
+          "name": "RCU_CK_READY",
+          "value": 5
+        },
+        {
+          "name": "EXTI_Line0",
+          "value": 6
+        },
+        {
+          "name": "EXTI_Line1",
+          "value": 7
+        },
+        {
+          "name": "EXTI_Line2",
+          "value": 8
+        },
+        {
+          "name": "EXTI_Line3",
+          "value": 9
+        },
+        {
+          "name": "EXTI_Line4",
+          "value": 10
+        },
+        {
+          "name": "DMA0_Channel0",
+          "value": 11
+        },
+        {
+          "name": "DMA0_Channel1",
+          "value": 12
+        },
+        {
+          "name": "DMA0_Channel2",
+          "value": 13
+        },
+        {
+          "name": "DMA0_Channel3",
+          "value": 14
+        },
+        {
+          "name": "DMA0_Channel4",
+          "value": 15
+        },
+        {
+          "name": "DMA0_Channel5",
+          "value": 16
+        },
+        {
+          "name": "DMA0_Channel6",
+          "value": 17
+        },
+        {
+          "name": "ADC0",
+          "value": 18
+        },
+        {
+          "name": "CAN0_MSG_BUF",
+          "value": 19
+        },
+        {
+          "name": "CAN0",
+          "value": 20
+        },
+        {
+          "name": "CPU_TO_CPU_INT0",
+          "value": 21
+        },
+        {
+          "name": "CPU_TO_CPU_INT1",
+          "value": 22
+        },
+        {
+          "name": "CPU_TO_CPU_INT2",
+          "value": 23
+        },
+        {
+          "name": "CPU_TO_CPU_INT3",
+          "value": 24
+        },
+        {
+          "name": "CAN0_WAKEUP_FROM_EXTI_Line18",
+          "value": 25
+        },
+        {
+          "name": "TIMER0_BRK_UP_TRG_CM_DEC",
+          "value": 26
+        },
+        {
+          "name": "TIMER2_UP_TRG_CM_DEC",
+          "value": 27
+        },
+        {
+          "name": "TIMER1_UP_TRG_CM_DEC",
+          "value": 28
+        },
+        {
+          "name": "TIMER19_BRK_UP_TRG_CM_DEC",
+          "value": 29
+        },
+        {
+          "name": "JTAG_INT_TO_HOST",
+          "value": 30
+        },
+        {
+          "name": "I2C0_EV",
+          "value": 31
+        },
+        {
+          "name": "I2C0_ER",
+          "value": 32
+        },
+        {
+          "name": "I2C1_EV",
+          "value": 33
+        },
+        {
+          "name": "I2C1_ER",
+          "value": 34
+        },
+        {
+          "name": "SPI0",
+          "value": 35
+        },
+        {
+          "name": "SPI1",
+          "value": 36
+        },
+        {
+          "name": "USART0",
+          "value": 37
+        },
+        {
+          "name": "USART1",
+          "value": 38
+        },
+        {
+          "name": "USART2",
+          "value": 39
+        },
+        {
+          "name": "EXTI_Line15_10",
+          "value": 40
+        },
+        {
+          "name": "EXTI_Line9_5",
+          "value": 41
+        },
+        {
+          "name": "Tamper",
+          "value": 42
+        },
+        {
+          "name": "TIMER20_BRK_UP_TRG_CM_DEC",
+          "value": 43
+        },
+        {
+          "name": "EXTI_Line101_42",
+          "value": 44
+        },
+        {
+          "name": "TIMER7_BRK_UP_TRG_CM_DEC",
+          "value": 45
+        },
+        {
+          "name": "PLL_LOL_DST_RESET",
+          "value": 46
+        },
+        {
+          "name": "DMAMUX",
+          "value": 47
+        },
+        {
+          "name": "CPU_FPU_OR_WRITE_ABORT",
+          "value": 48
+        },
+        {
+          "name": "EXTI_FROM_EXTI_Line26",
+          "value": 49
+        },
+        {
+          "name": "EXTI_FROM_EXTI_Line27",
+          "value": 50
+        },
+        {
+          "name": "FMU_INIT_TIMEOUT",
+          "value": 51
+        },
+        {
+          "name": "ADC1",
+          "value": 52
+        },
+        {
+          "name": "ADC2",
+          "value": 53
+        },
+        {
+          "name": "DAC0",
+          "value": 54
+        },
+        {
+          "name": "STCM_ILLEGAL_TRG",
+          "value": 55
+        },
+        {
+          "name": "DMA1_Channel0",
+          "value": 56
+        },
+        {
+          "name": "DMA2_Channel1",
+          "value": 57
+        },
+        {
+          "name": "DMA1_Channel2",
+          "value": 58
+        },
+        {
+          "name": "DMA1_Channel3",
+          "value": 59
+        },
+        {
+          "name": "DMA1_Channel4",
+          "value": 60
+        },
+        {
+          "name": "WWDGT1",
+          "value": 61
+        },
+        {
+          "name": "CAN1_WAKEUP_FROM_EXTI_Line19",
+          "value": 62
+        },
+        {
+          "name": "CAN1_MSG_BUF",
+          "value": 63
+        },
+        {
+          "name": "CAN1",
+          "value": 64
+        },
+        {
+          "name": "CTI_INT0",
+          "value": 65
+        },
+        {
+          "name": "CTI_INT1",
+          "value": 66
+        },
+        {
+          "name": "CAN0_ECCERR",
+          "value": 67
+        },
+        {
+          "name": "CAN1_ECCERR",
+          "value": 68
+        },
+        {
+          "name": "CAN2_ECCERR",
+          "value": 69
+        },
+        {
+          "name": "MFCOM",
+          "value": 70
+        },
+        {
+          "name": "CMP0",
+          "value": 71
+        },
+        {
+          "name": "CMP1",
+          "value": 72
+        },
+        {
+          "name": "BUS",
+          "value": 73
+        },
+        {
+          "name": "SENT",
+          "value": 74
+        },
+        {
+          "name": "HWSEM",
+          "value": 75
+        },
+        {
+          "name": "CAN3_ECCERR",
+          "value": 76
+        },
+        {
+          "name": "CAN4_ECCERR",
+          "value": 77
+        },
+        {
+          "name": "DAC1",
+          "value": 78
+        },
+        {
+          "name": "HSM_CM_INT0",
+          "value": 79
+        },
+        {
+          "name": "HSM_CM_INT1",
+          "value": 80
+        },
+        {
+          "name": "FMU_CATION_STATE",
+          "value": 81
+        },
+        {
+          "name": "RCTL",
+          "value": 82
+        },
+        {
+          "name": "IOC",
+          "value": 83
+        },
+        {
+          "name": "SPI2",
+          "value": 84
+        },
+        {
+          "name": "SPI3",
+          "value": 85
+        },
+        {
+          "name": "SPI4",
+          "value": 86
+        },
+        {
+          "name": "SPI5",
+          "value": 87
+        },
+        {
+          "name": "SPI6",
+          "value": 88
+        },
+        {
+          "name": "SPI7",
+          "value": 89
+        },
+        {
+          "name": "QSPI",
+          "value": 90
+        },
+        {
+          "name": "USART3",
+          "value": 91
+        },
+        {
+          "name": "USART4",
+          "value": 92
+        },
+        {
+          "name": "USART5",
+          "value": 93
+        },
+        {
+          "name": "CAN2_WAKEUP_FROM_EXTI_Line20",
+          "value": 94
+        },
+        {
+          "name": "CAN3_WAKEUP_FROM_EXTI_Line21",
+          "value": 95
+        },
+        {
+          "name": "CAN4_WAKEUP_FROM_EXTI_Line22",
+          "value": 96
+        },
+        {
+          "name": "CAN5_WAKEUP_FROM_EXTI_Line23",
+          "value": 97
+        },
+        {
+          "name": "CAN6_WAKEUP_FROM_EXTI_Line24",
+          "value": 98
+        },
+        {
+          "name": "CAN7_WAKEUP_FROM_EXTI_Line25",
+          "value": 99
+        },
+        {
+          "name": "CAN2_MSG_BUF",
+          "value": 100
+        },
+        {
+          "name": "CAN2",
+          "value": 101
+        },
+        {
+          "name": "CAN3_MSG_BUF",
+          "value": 102
+        },
+        {
+          "name": "CAN3",
+          "value": 103
+        },
+        {
+          "name": "CAN4_MSG_BUF",
+          "value": 104
+        },
+        {
+          "name": "CAN4",
+          "value": 105
+        },
+        {
+          "name": "CAN5_MSG_BUF",
+          "value": 106
+        },
+        {
+          "name": "CAN5",
+          "value": 107
+        },
+        {
+          "name": "CAN6_MSG_BUF",
+          "value": 108
+        },
+        {
+          "name": "CAN6",
+          "value": 109
+        },
+        {
+          "name": "CAN7_MSG_BUF",
+          "value": 110
+        },
+        {
+          "name": "CAN7",
+          "value": 111
+        },
+        {
+          "name": "TIMER19_CC_CH0_MCH0",
+          "value": 112
+        },
+        {
+          "name": "TIMER19_CC_CH1_MCH1",
+          "value": 113
+        },
+        {
+          "name": "TIMER19_CC_CH2_MCH2",
+          "value": 114
+        },
+        {
+          "name": "TIMER19_CC_CH3_MCH3",
+          "value": 115
+        },
+        {
+          "name": "TIMER20_CC_CH0_MCH0",
+          "value": 116
+        },
+        {
+          "name": "TIMER20_CC_CH1_MCH1",
+          "value": 117
+        },
+        {
+          "name": "TIMER20_CC_CH2_MCH2",
+          "value": 118
+        },
+        {
+          "name": "TIMER20_CC_CH3_MCH3",
+          "value": 119
+        },
+        {
+          "name": "TIMER60_CC_CH0_MCH0",
+          "value": 120
+        },
+        {
+          "name": "TIMER60_CC_CH1_MCH1",
+          "value": 121
+        },
+        {
+          "name": "TIMER60_CC_CH2_MCH2",
+          "value": 122
+        },
+        {
+          "name": "TIMER60_CC_CH3_MCH3",
+          "value": 123
+        },
+        {
+          "name": "TIMER61_CC_CH0_MCH0",
+          "value": 124
+        },
+        {
+          "name": "TIMER61_CC_CH1_MCH1",
+          "value": 125
+        },
+        {
+          "name": "TIMER61_CC_CH2_MCH2",
+          "value": 126
+        },
+        {
+          "name": "TIMER61_CC_CH3_MCH3",
+          "value": 127
+        },
+        {
+          "name": "TIMER62_CC_CH0_MCH0",
+          "value": 128
+        },
+        {
+          "name": "TIMER62_CC_CH1_MCH1",
+          "value": 129
+        },
+        {
+          "name": "TIMER62_CC_CH2_MCH2",
+          "value": 130
+        },
+        {
+          "name": "TIMER62_CC_CH3_MCH3",
+          "value": 131
+        },
+        {
+          "name": "TIMER63_CC_CH0_MCH0",
+          "value": 132
+        },
+        {
+          "name": "TIMER64_CC_CH1_MCH1",
+          "value": 133
+        },
+        {
+          "name": "TIMER65_CC_CH2_MCH2",
+          "value": 134
+        },
+        {
+          "name": "TIMER66_CC_CH3_MCH3",
+          "value": 135
+        },
+        {
+          "name": "DMA0_Channel7",
+          "value": 136
+        },
+        {
+          "name": "DMA0_Channel8",
+          "value": 137
+        },
+        {
+          "name": "DMA0_Channel9",
+          "value": 138
+        },
+        {
+          "name": "DMA0_Channel10",
+          "value": 139
+        },
+        {
+          "name": "DMA0_Channel11",
+          "value": 140
+        },
+        {
+          "name": "DMA0_Channel12",
+          "value": 141
+        },
+        {
+          "name": "DMA0_Channel13",
+          "value": 142
+        },
+        {
+          "name": "DMA0_Channel14",
+          "value": 143
+        },
+        {
+          "name": "DMA0_Channel15",
+          "value": 144
+        },
+        {
+          "name": "DMA1_Channel5",
+          "value": 145
+        },
+        {
+          "name": "DMA2_Channel6",
+          "value": 146
+        },
+        {
+          "name": "DMA1_Channel7",
+          "value": 147
+        },
+        {
+          "name": "DMA1_Channel8",
+          "value": 148
+        },
+        {
+          "name": "DMA1_Channel9",
+          "value": 149
+        },
+        {
+          "name": "DMA1_Channel10",
+          "value": 150
+        },
+        {
+          "name": "DMA2_Channel11",
+          "value": 151
+        },
+        {
+          "name": "DMA1_Channel12",
+          "value": 152
+        },
+        {
+          "name": "DMA1_Channel13",
+          "value": 153
+        },
+        {
+          "name": "DMA1_Channel14",
+          "value": 154
+        },
+        {
+          "name": "DMA1_Channel15",
+          "value": 155
+        },
+        {
+          "name": "MCMUA_RX_FULL",
+          "value": 156
+        },
+        {
+          "name": "MCMUA_TX_EMPTY",
+          "value": 157
+        },
+        {
+          "name": "MCMUA_GENERAL_PURPOSE",
+          "value": 158
+        },
+        {
+          "name": "MCMUB_RX_FULL",
+          "value": 159
+        },
+        {
+          "name": "MCMUB_TX_EMPTY",
+          "value": 160
+        },
+        {
+          "name": "MCMUB_GENERAL_PURPOSE",
+          "value": 161
+        },
+        {
+          "name": "LIN0",
+          "value": 162
+        },
+        {
+          "name": "LIN1",
+          "value": 163
+        },
+        {
+          "name": "LIN2",
+          "value": 164
+        },
+        {
+          "name": "LIN3",
+          "value": 165
+        },
+        {
+          "name": "LIN4",
+          "value": 166
+        },
+        {
+          "name": "LIN5",
+          "value": 167
+        },
+        {
+          "name": "LIN6",
+          "value": 168
+        },
+        {
+          "name": "LIN7",
+          "value": 169
+        },
+        {
+          "name": "LIN8",
+          "value": 170
+        },
+        {
+          "name": "LIN9",
+          "value": 171
+        },
+        {
+          "name": "LIN10",
+          "value": 172
+        },
+        {
+          "name": "LIN11",
+          "value": 173
+        },
+        {
+          "name": "TIMER0_CC_CH0_MCH0",
+          "value": 174
+        },
+        {
+          "name": "TIMER0_CC_CH1_MCH1",
+          "value": 175
+        },
+        {
+          "name": "TIMER0_CC_CH2_MCH2",
+          "value": 176
+        },
+        {
+          "name": "TIMER0_CC_CH3_MCH3",
+          "value": 177
+        },
+        {
+          "name": "TIMER7_CC_CH0_MCH0",
+          "value": 178
+        },
+        {
+          "name": "TIMER7_CC_CH1_MCH1",
+          "value": 179
+        },
+        {
+          "name": "TIMER7_CC_CH2_MCH2",
+          "value": 180
+        },
+        {
+          "name": "TIMER7_CC_CH3_MCH3",
+          "value": 181
+        },
+        {
+          "name": "TIMER1_CC_CH0",
+          "value": 182
+        },
+        {
+          "name": "TIMER1_CC_CH1",
+          "value": 183
+        },
+        {
+          "name": "TIMER1_CC_CH2",
+          "value": 184
+        },
+        {
+          "name": "TIMER1_CC_CH3",
+          "value": 185
+        },
+        {
+          "name": "TIMER2_CC_CH0",
+          "value": 186
+        },
+        {
+          "name": "TIMER2_CC_CH1",
+          "value": 187
+        },
+        {
+          "name": "TIMER2_CC_CH2",
+          "value": 188
+        },
+        {
+          "name": "TIMER2_CC_CH3",
+          "value": 189
+        },
+        {
+          "name": "FWDGT_RST_FROM_EXTI_Line40",
+          "value": 190
+        },
+        {
+          "name": "ENET_GLOBAL_INT",
+          "value": 191
+        },
+        {
+          "name": "ENET_WKUP_LPI_INT",
+          "value": 192
+        },
+        {
+          "name": "ENET_TX0_TX1_INT",
+          "value": 193
+        },
+        {
+          "name": "ENET_RX0_RX1_INT",
+          "value": 194
+        },
+        {
+          "name": "ENET_SAFE_COR_UNCOR_INT",
+          "value": 195
+        },
+        {
+          "name": "RCU_CK_FAIL",
+          "value": 196
+        },
+        {
+          "name": "CAN5_ECCERR",
+          "value": 197
+        },
+        {
+          "name": "LIN0_WAKEUP_FROM_EXTI_Line28",
+          "value": 198
+        },
+        {
+          "name": "LIN1_WAKEUP_FROM_EXTI_Line29",
+          "value": 199
+        },
+        {
+          "name": "LI2_WAKEUP_FROM_EXTI_Line30",
+          "value": 200
+        },
+        {
+          "name": "LIN3_WAKEUP_FROM_EXTI_Line31",
+          "value": 201
+        },
+        {
+          "name": "LIN4_WAKEUP_FROM_EXTI_Line32",
+          "value": 202
+        },
+        {
+          "name": "LIN5_WAKEUP_FROM_EXTI_Line33",
+          "value": 203
+        },
+        {
+          "name": "LIN6_WAKEUP_FROM_EXTI_Line34",
+          "value": 204
+        },
+        {
+          "name": "LIN7_WAKEUP_FROM_EXTI_Line35",
+          "value": 205
+        },
+        {
+          "name": "LIN8_WAKEUP_FROM_EXTI_Line36",
+          "value": 206
+        },
+        {
+          "name": "LIN9_WAKEUP_FROM_EXTI_Line37",
+          "value": 207
+        },
+        {
+          "name": "LIN10_WAKEUP_FROM_EXTI_Line38",
+          "value": 208
+        },
+        {
+          "name": "LIN11_WAKEUP_FROM_EXTI_Line39",
+          "value": 209
+        },
+        {
+          "name": "TIMER60_BRK_UP_TRG_CM_DEC",
+          "value": 210
+        },
+        {
+          "name": "TIMER61_BRK_UP_TRG_CM_DEC",
+          "value": 211
+        },
+        {
+          "name": "TIMER62_BRK_UP_TRG_CM_DEC",
+          "value": 212
+        },
+        {
+          "name": "TIMER63_BRK_UP_TRG_CM_DEC",
+          "value": 213
+        },
+        {
+          "name": "TIMER5_CH0_UP",
+          "value": 214
+        },
+        {
+          "name": "TIMER5_CH1_UP",
+          "value": 215
+        },
+        {
+          "name": "TIMER5_CH2_UP",
+          "value": 216
+        },
+        {
+          "name": "TIMER5_CH3_UP",
+          "value": 217
+        },
+        {
+          "name": "TIMER6_CH0_UP",
+          "value": 218
+        },
+        {
+          "name": "TIMER6_CH1_UP",
+          "value": 219
+        },
+        {
+          "name": "TIMER6_CH2_UP",
+          "value": 220
+        },
+        {
+          "name": "TIMER6_CH3_UP",
+          "value": 221
+        },
+        {
+          "name": "CAN6_ECCERR",
+          "value": 238
+        },
+        {
+          "name": "CAN7_ECCERR",
+          "value": 239
+        }
+      ],
       "interrupts": 224,
       "normalizations": [
         "identifier-whitespace:1"
@@ -3539,6 +6890,578 @@
         "USART5",
         "WWDGT0",
         "WWDGT1"
+      ],
+      "peripheral_register_roots": [
+        {
+          "address": 1073803264,
+          "name": "ADC0",
+          "register_root": "ADC0"
+        },
+        {
+          "address": 1073805312,
+          "name": "ADC1",
+          "register_root": "ADC0"
+        },
+        {
+          "address": 1073816576,
+          "name": "ADC2",
+          "register_root": "ADC0"
+        },
+        {
+          "address": 1073769472,
+          "name": "BKP",
+          "register_root": "BKP"
+        },
+        {
+          "address": 1224773632,
+          "name": "BUSIM",
+          "register_root": "BUSIM"
+        },
+        {
+          "address": 1073840128,
+          "name": "CAN0",
+          "register_root": "CAN0"
+        },
+        {
+          "address": 1073844224,
+          "name": "CAN1",
+          "register_root": "CAN0"
+        },
+        {
+          "address": 1073848320,
+          "name": "CAN2",
+          "register_root": "CAN0"
+        },
+        {
+          "address": 1073852416,
+          "name": "CAN3",
+          "register_root": "CAN3"
+        },
+        {
+          "address": 1073856512,
+          "name": "CAN4",
+          "register_root": "CAN3"
+        },
+        {
+          "address": 1073860608,
+          "name": "CAN5",
+          "register_root": "CAN3"
+        },
+        {
+          "address": 1073864704,
+          "name": "CAN6",
+          "register_root": "CAN6"
+        },
+        {
+          "address": 1073868800,
+          "name": "CAN7",
+          "register_root": "CAN6"
+        },
+        {
+          "address": 1224740864,
+          "name": "CCTL",
+          "register_root": "CCTL"
+        },
+        {
+          "address": 1073751040,
+          "name": "CLTCFG",
+          "register_root": "CLTCFG"
+        },
+        {
+          "address": 1073839104,
+          "name": "CMP0",
+          "register_root": "CMP0"
+        },
+        {
+          "address": 1073835008,
+          "name": "CMP1",
+          "register_root": "CMP1"
+        },
+        {
+          "address": 1224742912,
+          "name": "CPDM",
+          "register_root": "CPDM"
+        },
+        {
+          "address": 1224749056,
+          "name": "CRC",
+          "register_root": "CRC"
+        },
+        {
+          "address": 1073771520,
+          "name": "DAC0",
+          "register_root": "DAC0"
+        },
+        {
+          "address": 1073794048,
+          "name": "DAC1",
+          "register_root": "DAC0"
+        },
+        {
+          "address": 3759017984,
+          "name": "DBG",
+          "register_root": "DBG"
+        },
+        {
+          "address": 1224736768,
+          "name": "DMA0",
+          "register_root": "DMA0"
+        },
+        {
+          "address": 1224737792,
+          "name": "DMA1",
+          "register_root": "DMA0"
+        },
+        {
+          "address": 1224738816,
+          "name": "DMAMUX",
+          "register_root": "DMAMUX"
+        },
+        {
+          "address": 1073786880,
+          "name": "ENET_DMA",
+          "register_root": "ENET_DMA"
+        },
+        {
+          "address": 1073782784,
+          "name": "ENET_MAC",
+          "register_root": "ENET_MAC"
+        },
+        {
+          "address": 1073784576,
+          "name": "ENET_MMC",
+          "register_root": "ENET_MMC"
+        },
+        {
+          "address": 1073785856,
+          "name": "ENET_MTL",
+          "register_root": "ENET_MTL"
+        },
+        {
+          "address": 1073808384,
+          "name": "EXTI",
+          "register_root": "EXTI"
+        },
+        {
+          "address": 1224777728,
+          "name": "EXTMPU",
+          "register_root": "EXTMPU"
+        },
+        {
+          "address": 1224744960,
+          "name": "FMC",
+          "register_root": "FMC"
+        },
+        {
+          "address": 1073886208,
+          "name": "FMU",
+          "register_root": "FMU"
+        },
+        {
+          "address": 1073754112,
+          "name": "FWDGT0",
+          "register_root": "FWDGT0"
+        },
+        {
+          "address": 1073799168,
+          "name": "FWDGT1",
+          "register_root": "FWDGT0"
+        },
+        {
+          "address": 1076167680,
+          "name": "GD_AP",
+          "register_root": "GD_AP"
+        },
+        {
+          "address": 1207959552,
+          "name": "GPIOA",
+          "register_root": "GPIOA"
+        },
+        {
+          "address": 1207960576,
+          "name": "GPIOB",
+          "register_root": "GPIOB"
+        },
+        {
+          "address": 1207961600,
+          "name": "GPIOC",
+          "register_root": "GPIOC"
+        },
+        {
+          "address": 1207962624,
+          "name": "GPIOD",
+          "register_root": "GPIOD"
+        },
+        {
+          "address": 1207963648,
+          "name": "GPIOE",
+          "register_root": "GPIOE"
+        },
+        {
+          "address": 1207964672,
+          "name": "GPIOF",
+          "register_root": "GPIOF"
+        },
+        {
+          "address": 1207965696,
+          "name": "GPIOG",
+          "register_root": "GPIOG"
+        },
+        {
+          "address": 1207966720,
+          "name": "GPIOH",
+          "register_root": "GPIOH"
+        },
+        {
+          "address": 1207967744,
+          "name": "GPIOI",
+          "register_root": "GPIOI"
+        },
+        {
+          "address": 1207968768,
+          "name": "GPIOJ",
+          "register_root": "GPIOJ"
+        },
+        {
+          "address": 1207969792,
+          "name": "GPIOK",
+          "register_root": "GPIOK"
+        },
+        {
+          "address": 1207970816,
+          "name": "GPIOL",
+          "register_root": "GPIOL"
+        },
+        {
+          "address": 1207971840,
+          "name": "GPIOM",
+          "register_root": "GPIOM"
+        },
+        {
+          "address": 1207972864,
+          "name": "GPION",
+          "register_root": "GPION"
+        },
+        {
+          "address": 1224772608,
+          "name": "HSMIF",
+          "register_root": "HSMIF"
+        },
+        {
+          "address": 1224771584,
+          "name": "HWSEM",
+          "register_root": "HWSEM"
+        },
+        {
+          "address": 1073763328,
+          "name": "I2C0",
+          "register_root": "I2C0"
+        },
+        {
+          "address": 1073764352,
+          "name": "I2C1",
+          "register_root": "I2C0"
+        },
+        {
+          "address": 1224774656,
+          "name": "IMICU_BM1",
+          "register_root": "IMICU_BM1"
+        },
+        {
+          "address": 1224775680,
+          "name": "IMICU_BM2",
+          "register_root": "IMICU_BM1"
+        },
+        {
+          "address": 1073888256,
+          "name": "IOC",
+          "register_root": "IOC"
+        },
+        {
+          "address": 1073887232,
+          "name": "IRM",
+          "register_root": "IRM"
+        },
+        {
+          "address": 1073802240,
+          "name": "JDC",
+          "register_root": "JDC"
+        },
+        {
+          "address": 1073809408,
+          "name": "LIN0",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073810432,
+          "name": "LIN1",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073780736,
+          "name": "LIN10",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073781760,
+          "name": "LIN11",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073811456,
+          "name": "LIN2",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073812480,
+          "name": "LIN3",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073813504,
+          "name": "LIN4",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073814528,
+          "name": "LIN5",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073776640,
+          "name": "LIN6",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073777664,
+          "name": "LIN7",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073778688,
+          "name": "LIN8",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1073779712,
+          "name": "LIN9",
+          "register_root": "LIN0"
+        },
+        {
+          "address": 1224769536,
+          "name": "MCMUA",
+          "register_root": "MCMUA"
+        },
+        {
+          "address": 1224770560,
+          "name": "MCMUB",
+          "register_root": "MCMUB"
+        },
+        {
+          "address": 1224750080,
+          "name": "MFCOM",
+          "register_root": "MFCOM"
+        },
+        {
+          "address": 1073890304,
+          "name": "MTC",
+          "register_root": "MTC"
+        },
+        {
+          "address": 1073770496,
+          "name": "PMU",
+          "register_root": "PMU"
+        },
+        {
+          "address": 1073971200,
+          "name": "PRPU",
+          "register_root": "PRPU"
+        },
+        {
+          "address": 1224741888,
+          "name": "QSPI",
+          "register_root": "QSPI"
+        },
+        {
+          "address": 1224752128,
+          "name": "RCTL",
+          "register_root": "RCTL"
+        },
+        {
+          "address": 1073752064,
+          "name": "RTC",
+          "register_root": "RTC"
+        },
+        {
+          "address": 1073766400,
+          "name": "SENT",
+          "register_root": "SENT"
+        },
+        {
+          "address": 1073819648,
+          "name": "SPI0",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073838080,
+          "name": "SPI1",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073800192,
+          "name": "SPI2",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073801216,
+          "name": "SPI3",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073824768,
+          "name": "SPI4",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073825792,
+          "name": "SPI5",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073756160,
+          "name": "SPI6",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1073757184,
+          "name": "SPI7",
+          "register_root": "SPI0"
+        },
+        {
+          "address": 1224739840,
+          "name": "SRAM",
+          "register_root": "SRAM"
+        },
+        {
+          "address": 1073893376,
+          "name": "STCM",
+          "register_root": "STCM"
+        },
+        {
+          "address": 1073807360,
+          "name": "SYSCFG",
+          "register_root": "SYSCFG"
+        },
+        {
+          "address": 1224753152,
+          "name": "TCM",
+          "register_root": "TCM"
+        },
+        {
+          "address": 1073818624,
+          "name": "TIMER0",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073830912,
+          "name": "TIMER1",
+          "register_root": "TIMER1"
+        },
+        {
+          "address": 1073827840,
+          "name": "TIMER19",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073742848,
+          "name": "TIMER2",
+          "register_root": "TIMER1"
+        },
+        {
+          "address": 1073741824,
+          "name": "TIMER20",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073831936,
+          "name": "TIMER5",
+          "register_root": "TIMER5"
+        },
+        {
+          "address": 1073746944,
+          "name": "TIMER6",
+          "register_root": "TIMER5"
+        },
+        {
+          "address": 1073745920,
+          "name": "TIMER60",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073795072,
+          "name": "TIMER61",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073832960,
+          "name": "TIMER62",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073796096,
+          "name": "TIMER63",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073820672,
+          "name": "TIMER7",
+          "register_root": "TIMER0"
+        },
+        {
+          "address": 1073815552,
+          "name": "TRIGSEL",
+          "register_root": "TRIGSEL"
+        },
+        {
+          "address": 1073821696,
+          "name": "USART0",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073822720,
+          "name": "USART1",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073823744,
+          "name": "USART2",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073759232,
+          "name": "USART3",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073760256,
+          "name": "USART4",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073836032,
+          "name": "USART5",
+          "register_root": "USART0"
+        },
+        {
+          "address": 1073753088,
+          "name": "WWDGT0",
+          "register_root": "WWDGT0"
+        },
+        {
+          "address": 1073798144,
+          "name": "WWDGT1",
+          "register_root": "WWDGT0"
+        }
       ],
       "peripherals": 114,
       "rcu_gates": [

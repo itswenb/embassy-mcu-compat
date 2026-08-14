@@ -18,6 +18,7 @@ import gigadevice_sources as common
 
 
 NORMALIZATION_VERSION = 4
+GENERATION_VERSION = 2
 
 
 def _tag(element: ET.Element) -> str:
@@ -134,6 +135,7 @@ def svd_stats(path: Path) -> dict[str, object]:
     if not name or not peripherals:
         raise ValueError(f"SVD 缺少 device name 或 peripheral：{path}")
     peripheral_names = []
+    peripheral_register_roots = []
     rcu_gates = []
     for peripheral in peripherals:
         peripheral_name = _child_text(peripheral, "name")
@@ -141,10 +143,17 @@ def svd_stats(path: Path) -> dict[str, object]:
         if not peripheral_name or address is None:
             raise ValueError(f"SVD peripheral 缺少 name/baseAddress：{path}")
         try:
-            int(address, 0)
+            numeric_address = int(address, 0)
         except ValueError as error:
             raise ValueError(f"SVD baseAddress 非法：{path} {address!r}") from error
         peripheral_names.append(peripheral_name)
+        peripheral_register_roots.append(
+            {
+                "address": numeric_address,
+                "name": peripheral_name,
+                "register_root": peripheral.attrib.get("derivedFrom", peripheral_name),
+            }
+        )
         if peripheral_name != "RCU" and _child_text(peripheral, "groupName") != "RCU":
             continue
         for register in (item for item in peripheral.iter() if _tag(item) == "register"):
@@ -178,19 +187,32 @@ def svd_stats(path: Path) -> dict[str, object]:
 
     interrupts = [element for element in root.iter() if _tag(element) == "interrupt"]
     interrupt_values = []
+    interrupt_vectors = {}
     for interrupt in interrupts:
+        interrupt_name = _child_text(interrupt, "name")
         value = _child_text(interrupt, "value")
-        if value is None:
-            raise ValueError(f"SVD interrupt 缺少 value：{path}")
+        if interrupt_name is None or value is None:
+            raise ValueError(f"SVD interrupt 缺少 name/value：{path}")
         try:
-            interrupt_values.append(int(value, 0))
+            numeric_value = int(value, 0)
         except ValueError as error:
             raise ValueError(f"SVD interrupt value 非法：{path} {value!r}") from error
+        interrupt_values.append(numeric_value)
+        previous = interrupt_vectors.setdefault(interrupt_name, numeric_value)
+        if previous != numeric_value:
+            raise ValueError(f"SVD interrupt 名称对应多个编号：{path} {interrupt_name}")
     return {
         "device_name": name,
         "peripherals": len(peripherals),
         "peripheral_names": sorted(peripheral_names),
+        "peripheral_register_roots": sorted(
+            peripheral_register_roots, key=lambda row: str(row["name"])
+        ),
         "interrupts": len(interrupts),
+        "interrupt_vectors": [
+            {"name": name, "value": value}
+            for name, value in sorted(interrupt_vectors.items(), key=lambda row: (row[1], row[0]))
+        ],
         "unique_interrupt_values": len(set(interrupt_values)),
         "registers": sum(_tag(element) == "register" for element in root.iter()),
         "fields": sum(_tag(element) == "field" for element in root.iter()),
@@ -249,7 +271,9 @@ def _verify_cache(
         return None
     data = json.loads(marker.read_text(encoding="utf-8"))
     if (
-        data.get("svd_sha256") != svd_sha256
+        data.get("schema_version") != GENERATION_VERSION
+        or data.get("cache_key") != path.name
+        or data.get("svd_sha256") != svd_sha256
         or data.get("normalized_svd_sha256") != normalized_sha256
         or data.get("chiptool_revision") != revision
         or data.get("normalization_version") != NORMALIZATION_VERSION
@@ -271,17 +295,21 @@ def _generate(
     revision: str,
     cache_dir: Path,
 ) -> tuple[str, dict[str, object]]:
-    output = cache_dir / f"n{NORMALIZATION_VERSION}-{svd_sha256[:16]}-{revision[:12]}"
+    output = cache_dir / (
+        f"g{GENERATION_VERSION}-n{NORMALIZATION_VERSION}-"
+        f"{svd_sha256[:16]}-{revision[:12]}"
+    )
     cached = _verify_cache(output, svd_sha256, normalized_sha256, revision)
     if cached is not None:
         return "cached", cached
-    if output.exists():
-        raise ValueError(f"chiptool 缓存存在但校验失败，请人工检查后删除：{output}")
     cache_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix=".chiptool-", dir=cache_dir) as directory:
-        temporary = Path(directory)
+        workspace = Path(directory)
+        temporary = workspace / "candidate"
+        temporary.mkdir()
         result = subprocess.run(
-            [str(binary), "generate", "--svd", str(svd), "--no-defmt", "--output", str(temporary)],
+            [str(binary), "generate", "--svd", str(svd.resolve()), "--no-defmt"],
+            cwd=temporary,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
@@ -301,7 +329,8 @@ def _generate(
                 "size": path.stat().st_size,
             }
         marker = {
-            "schema_version": 1,
+            "schema_version": GENERATION_VERSION,
+            "cache_key": output.name,
             "svd_sha256": svd_sha256,
             "normalized_svd_sha256": normalized_sha256,
             "normalization_version": NORMALIZATION_VERSION,
@@ -312,7 +341,17 @@ def _generate(
             temporary / "source.json",
             json.dumps(marker, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         )
-        temporary.rename(output)
+        stale = workspace / "stale"
+        if output.exists() or output.is_symlink():
+            if output.is_symlink() or not output.is_dir():
+                raise ValueError(f"chiptool 缓存不是安全目录：{output}")
+            output.rename(stale)
+        try:
+            temporary.rename(output)
+        except BaseException:
+            if stale.exists() and not output.exists():
+                stale.rename(output)
+            raise
     return "generated", marker
 
 
@@ -361,7 +400,13 @@ def audit(args: argparse.Namespace) -> dict[str, object]:
     entries = resources["svd_files"]
     if not isinstance(entries, list):
         raise ValueError("Pack 资源报告缺少 svd_files")
-    binary, revision = _build_chiptool(args.chiptool_root, args.target_dir)
+    if args.chiptool is None:
+        binary, revision = _build_chiptool(args.chiptool_root, args.target_dir)
+    else:
+        binary = args.chiptool
+        if not binary.is_file():
+            raise ValueError(f"指定的 chiptool 不存在：{binary}")
+        revision = _git(args.chiptool_root, "rev-parse", "HEAD")
     results = []
     for entry in entries:
         assert isinstance(entry, dict)
@@ -422,6 +467,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--chiptool-root", type=Path, default=repo_root / ".cache/research/repos/chiptool"
     )
+    parser.add_argument("--chiptool", type=Path)
     parser.add_argument(
         "--target-dir", type=Path, default=repo_root / ".cache/tools/chiptool-target"
     )

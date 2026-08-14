@@ -44,6 +44,8 @@ fn main() -> Result<()> {
             &args.cache_dir,
             &args.compat_dir,
             args.projection_manifest.as_deref(),
+            args.native_data.as_deref(),
+            args.projection_data.as_deref(),
             args.include_test,
         ),
     }

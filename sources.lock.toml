@@ -23,9 +23,9 @@ cpackget = "2.2.1"
 
 [upstream]
 embassy = "98d847be57f3ea022ce05fe9b95ab3639a1e0a93"
-stm32_data = "87c539515764df442bc50b6235bad891950ba3c4"
-stm32_data_generated = "12ec4cd38c7825c1ff8592de1bdefaae445bb3a6"
-chiptool = "be1bff3e9e1b27b090e69bd9ac753c66fdcce678"
+stm32_data = "c05b9691035f8978090af617e20869b7302b069b"
+stm32_data_generated = "0ff67d4ac661d8817efbb196ab089e70ea7fb01d"
+chiptool = "030394157b9dd30c48c0e592a52149f501e3c3d4"
 stm32_metapac_version = "21.0.0"
 
 [[packs]]

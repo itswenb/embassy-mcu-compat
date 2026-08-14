@@ -22,6 +22,8 @@ class SyncGeneratedRepositoryTests(unittest.TestCase):
         pipeline = PIPELINE.read_text(encoding="utf-8")
 
         self.assertIn('required_upstream=(embassy stm32-data stm32-data-generated chiptool)', pipeline)
+        self.assertIn('cargo build --quiet --bin m32-chiptool-ir-json', pipeline)
+        self.assertIn('python3 scripts/extract_gigadevice_svd_ir.py', pipeline)
         self.assertIn('sync_args+=(--include-target-db)', pipeline)
         self.assertLess(
             pipeline.index("required_upstream="),
@@ -43,16 +45,39 @@ class SyncGeneratedRepositoryTests(unittest.TestCase):
         )
         self.assertIn('if [[ -d .cache/generated/mcu-metapac-publication-v1 ]]', workflow)
 
-    def test_发布补丁显式包含示例兼容映射(self):
+    def test_发布补丁使用真实投影与原生数据(self):
         pipeline = PIPELINE.read_text(encoding="utf-8")
         generate = (
             "cargo run --quiet --bin mcu-compat-gen -- generate \\\n"
             '    --official-generated "$official_generated" \\\n'
-            '    --include-test \\\n'
+            '    --projection-manifest "$projection_manifest" \\\n'
+            '    --native-data .cache/generated/gigadevice-stm32-data-v1 \\\n'
+            '    --projection-data .cache/generated/gigadevice-embassy-registers-v1 \\\n'
             '    --output "$patch_workspace/output"'
         )
 
+        self.assertIn(
+            'python3 scripts/generate_gigadevice_embassy_projection.py \\\n'
+            '    --manifest "$projection_manifest"',
+            pipeline,
+        )
         self.assertIn(generate, pipeline)
+        self.assertIn(
+            'python3 scripts/check_gigadevice_embassy_projection.py \\\n'
+            '    --publication "$patch_workspace/output"',
+            pipeline,
+        )
+
+    def test_定时任务安装全部Embassy投影目标(self):
+        workflow = WORKFLOW.read_text(encoding="utf-8")
+
+        for target in (
+            "thumbv7em-none-eabihf",
+            "thumbv7m-none-eabi",
+            "thumbv8m.base-none-eabi",
+            "thumbv8m.main-none-eabihf",
+        ):
+            self.assertIn(f"--target {target}", workflow)
 
     def test_定时任务在提交前同步generated发布树(self):
         workflow = WORKFLOW.read_text(encoding="utf-8")

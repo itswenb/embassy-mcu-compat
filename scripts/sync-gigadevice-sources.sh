@@ -113,6 +113,8 @@ python3 scripts/normalize_gigadevice_pins.py
 python3 scripts/index_gigadevice_pack_resources.py
 python3 scripts/normalize_gigadevice_memory.py
 python3 scripts/audit_gigadevice_svds.py
+cargo build --quiet --bin m32-chiptool-ir-json
+python3 scripts/extract_gigadevice_svd_ir.py
 python3 scripts/compile_gigadevice_pacs.py
 python3 scripts/audit_gigadevice_svds.py \
     --resources reports/gigadevice-iar-a7.json \
@@ -150,6 +152,9 @@ python3 scripts/generate_gigadevice_firmware_pacs.py \
     --variants reports/gigadevice-merged-firmware-variants.json
 python3 scripts/analyze_gigadevice_stm32_register_compat.py
 python3 scripts/generate_gigadevice_stm32_data.py
+projection_manifest=".cache/generated/gigadevice-embassy-projections-v1.json"
+python3 scripts/generate_gigadevice_embassy_projection.py \
+    --manifest "$projection_manifest"
 cargo run --quiet --bin m32-metapac-gen -- \
     --data-dir .cache/generated/gigadevice-stm32-data-v1 \
     --output .cache/generated/gigadevice-metapac-v1 \
@@ -177,8 +182,12 @@ patch_workspace="$(mktemp -d "$repo_root/.cache/generated/.stm32-patch.XXXXXX")"
 trap 'rm -rf "$patch_workspace"' EXIT
 cargo run --quiet --bin mcu-compat-gen -- generate \
     --official-generated "$official_generated" \
-    --include-test \
+    --projection-manifest "$projection_manifest" \
+    --native-data .cache/generated/gigadevice-stm32-data-v1 \
+    --projection-data .cache/generated/gigadevice-embassy-registers-v1 \
     --output "$patch_workspace/output"
+python3 scripts/check_gigadevice_embassy_projection.py \
+    --publication "$patch_workspace/output"
 mkdir -p .cache/generated/stm32-metapac-patch-v1
 rsync -a --delete "$patch_workspace/output/" .cache/generated/stm32-metapac-patch-v1/
 
@@ -193,6 +202,8 @@ cp reports/gigadevice-metapac-compile.json \
 cp reports/gigadevice-model-universe.json \
     .cache/generated/mcu-metapac-publication-v1/release/
 cp reports/gigadevice-iar-pac-compile.json \
+    .cache/generated/mcu-metapac-publication-v1/release/
+cp reports/gigadevice-embassy-compile.json \
     .cache/generated/mcu-metapac-publication-v1/release/
 python3 scripts/plan_gigadevice_update.py \
     --output "$update_plan" \

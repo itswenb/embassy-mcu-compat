@@ -182,27 +182,65 @@ def _st_item_offsets(item: dict[str, object]) -> list[int]:
 def st_block_signature(
     registers: dict[str, object], block: str
 ) -> tuple[tuple[int, int, tuple[tuple[tuple[int, int], ...], ...]], ...]:
-    value = registers.get(f"block/{block}")
-    if not isinstance(value, dict) or not isinstance(value.get("items"), list):
-        raise ValueError(f"STM32 register IR 缺少 block/{block}")
     signature = []
-    for item in value["items"]:
-        if not isinstance(item, dict) or "block" in item:
-            raise ValueError(f"STM32 block/{block} 含未展开的子块")
-        fieldset_name = item.get("fieldset")
-        if fieldset_name is None:
-            fields = []
-            bit_size = int(item.get("bit_size", 32))
-        else:
-            fieldset = registers.get(f"fieldset/{fieldset_name}")
-            if not isinstance(fieldset, dict) or not isinstance(fieldset.get("fields"), list):
-                raise ValueError(f"STM32 register IR 缺少 fieldset/{fieldset_name}")
-            fields = fieldset["fields"]
-            bit_size = int(fieldset.get("bit_size", item.get("bit_size", 32)))
-        ranges = _field_ranges(fields)
-        signature.extend(
-            (offset, bit_size, ranges) for offset in _st_item_offsets(item)
+
+    def resolve(
+        prefix: str, name: str, collection: str, stack: tuple[str, ...] = ()
+    ) -> dict[str, object]:
+        key = f"{prefix}/{name}"
+        if key in stack:
+            raise ValueError(f"STM32 register IR 继承循环：{' -> '.join((*stack, key))}")
+        value = registers.get(key)
+        if not isinstance(value, dict) or not isinstance(value.get(collection), list):
+            raise ValueError(f"STM32 register IR 缺少 {key}")
+        parent_name = value.get("extends")
+        resolved = (
+            resolve(prefix, str(parent_name), collection, (*stack, key))
+            if parent_name is not None
+            else {}
         )
+        inherited = {
+            str(item["name"]): item
+            for item in resolved.get(collection, [])
+            if isinstance(item, dict) and "name" in item
+        }
+        inherited.update(
+            {
+                str(item["name"]): item
+                for item in value[collection]
+                if isinstance(item, dict) and "name" in item
+            }
+        )
+        return {**resolved, **value, collection: list(inherited.values())}
+
+    def visit(name: str, bases: list[int], stack: tuple[str, ...]) -> None:
+        if name in stack:
+            raise ValueError(f"STM32 register IR 子块循环：{' -> '.join((*stack, name))}")
+        value = resolve("block", name, "items")
+        for item in value["items"]:
+            if not isinstance(item, dict):
+                raise ValueError(f"STM32 block/{name} 包含无效条目")
+            offsets = [
+                base + offset
+                for base in bases
+                for offset in _st_item_offsets(item)
+            ]
+            child = item.get("block")
+            if child is not None:
+                visit(str(child), offsets, (*stack, name))
+                continue
+            fieldset_name = item.get("fieldset")
+            if fieldset_name is None:
+                fields = []
+                bit_size = int(item.get("bit_size", 32))
+            else:
+                fieldset = resolve("fieldset", str(fieldset_name), "fields")
+                fields = fieldset["fields"]
+                bit_size = int(fieldset.get("bit_size", item.get("bit_size", 32)))
+            ranges = _field_ranges(fields)
+            signature.extend((offset, bit_size, ranges) for offset in offsets)
+
+    visit(block, [0], ())
     return tuple(sorted(signature))
 
 
@@ -251,6 +289,8 @@ def _stm32_index(
                 "version": version,
                 "block": block,
                 "path": path.name,
+                "registers": len(signature),
+                "fields": sum(len(row[2]) for row in signature),
             }
             index[signature].append(metadata)
             by_kind[kind].append((metadata, data))

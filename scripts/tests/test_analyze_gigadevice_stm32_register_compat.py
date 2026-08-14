@@ -99,6 +99,92 @@ class RegisterCompatTests(unittest.TestCase):
             MODULE.st_block_signature(registers, "DMA"),
         )
 
+    def test_STM32子块数组递归展开后比较(self):
+        registers = {
+            "block/DMA": {
+                "items": [
+                    {
+                        "name": "CH",
+                        "array": {"len": 2, "stride": 20},
+                        "byte_offset": 8,
+                        "block": "CH",
+                    }
+                ]
+            },
+            "block/CH": {
+                "items": [
+                    {"name": "CR", "byte_offset": 0, "fieldset": "CR"},
+                    {"name": "COUNT", "byte_offset": 4},
+                ]
+            },
+            "fieldset/CR": {
+                "fields": [{"name": "EN", "bit_offset": 0, "bit_size": 1}]
+            },
+        }
+
+        self.assertEqual(
+            MODULE.st_block_signature(registers, "DMA"),
+            (
+                (8, 32, (((0, 0),),)),
+                (12, 32, ()),
+                (28, 32, (((0, 0),),)),
+                (32, 32, ()),
+            ),
+        )
+
+    def test_STM32子块继承保留父块寄存器(self):
+        registers = {
+            "block/TIM_BASE": {
+                "items": [
+                    {"name": "CR", "byte_offset": 0, "fieldset": "CR"}
+                ]
+            },
+            "block/TIM_GP": {
+                "extends": "TIM_BASE",
+                "items": [{"name": "COUNT", "byte_offset": 4}],
+            },
+            "fieldset/CR": {
+                "fields": [{"name": "EN", "bit_offset": 0, "bit_size": 1}]
+            },
+        }
+
+        self.assertEqual(
+            MODULE.st_block_signature(registers, "TIM_GP"),
+            ((0, 32, (((0, 0),),)), (4, 32, ())),
+        )
+
+    def test_STM32继承按名称覆盖寄存器并合并位域(self):
+        registers = {
+            "block/TIM_BASE": {
+                "items": [
+                    {"name": "COUNT", "byte_offset": 0, "bit_size": 16},
+                    {"name": "CTL", "byte_offset": 4, "fieldset": "CTL_BASE"},
+                ]
+            },
+            "block/TIM_GP": {
+                "extends": "TIM_BASE",
+                "items": [
+                    {"name": "COUNT", "byte_offset": 0},
+                    {"name": "CTL", "byte_offset": 4, "fieldset": "CTL_GP"},
+                ],
+            },
+            "fieldset/CTL_BASE": {
+                "fields": [{"name": "EN", "bit_offset": 0, "bit_size": 1}]
+            },
+            "fieldset/CTL_GP": {
+                "extends": "CTL_BASE",
+                "fields": [{"name": "MODE", "bit_offset": 4, "bit_size": 2}],
+            },
+        }
+
+        self.assertEqual(
+            MODULE.st_block_signature(registers, "TIM_GP"),
+            (
+                (0, 32, ()),
+                (4, 32, (((0, 0),), ((4, 5),))),
+            ),
+        )
+
     def test_STM32非连续位域保持所有位段(self):
         registers = {
             "block/TIM": {

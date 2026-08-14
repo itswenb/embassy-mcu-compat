@@ -39,7 +39,13 @@ jobs:
 
       - name: 安装固定 Rust 工具链
         run: |
-          rustup toolchain install nightly-2025-12-11 --profile minimal --component rust-src --component rustfmt --component clippy --target riscv32imac-unknown-none-elf --target riscv32imafc-unknown-none-elf
+          rustup toolchain install nightly-2025-12-11 --profile minimal --component rust-src --component rustfmt --component clippy \
+            --target riscv32imac-unknown-none-elf \
+            --target riscv32imafc-unknown-none-elf \
+            --target thumbv7em-none-eabihf \
+            --target thumbv7m-none-eabi \
+            --target thumbv8m.base-none-eabi \
+            --target thumbv8m.main-none-eabihf
           rustup default nightly-2025-12-11
 
       - name: 安装来源处理工具

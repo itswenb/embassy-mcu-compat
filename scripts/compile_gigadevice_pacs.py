@@ -58,21 +58,16 @@ def _find_generated(cache: Path, source: dict[str, object]) -> tuple[Path, dict[
     sha256 = str(source["sha256"])
     expected_marker = source["generated"]
     assert isinstance(expected_marker, dict)
-    matches = []
-    for marker in cache.glob(f"n*-{sha256[:16]}-*/source.json"):
-        data = json.loads(marker.read_text(encoding="utf-8"))
-        if (
-            data.get("svd_sha256") == sha256
-            and data.get("normalized_svd_sha256")
-            == expected_marker.get("normalized_svd_sha256")
-            and data.get("normalization_version")
-            == expected_marker.get("normalization_version")
-            and data.get("chiptool_revision") == expected_marker.get("chiptool_revision")
-        ):
-            matches.append((marker.parent, data))
-    if len(matches) != 1:
-        raise ValueError(f"SVD 必须唯一对应 chiptool 输出：{sha256}，实际 {len(matches)} 个")
-    root, marker = matches[0]
+    cache_key = str(expected_marker.get("cache_key", ""))
+    if not cache_key or Path(cache_key).name != cache_key:
+        raise ValueError(f"SVD 审计缺少安全 cache_key：{sha256}")
+    root = cache / cache_key
+    marker_path = root / "source.json"
+    if not marker_path.is_file():
+        raise ValueError(f"SVD 缺少审计指定的 chiptool 输出：{root}")
+    marker = json.loads(marker_path.read_text(encoding="utf-8"))
+    if marker != expected_marker:
+        raise ValueError(f"SVD chiptool 输出标记与审计报告不一致：{root}")
     lib = root / "lib.rs"
     expected = marker["outputs"]["lib.rs"]["sha256"]
     if not lib.is_file() or common._sha256(lib) != expected:

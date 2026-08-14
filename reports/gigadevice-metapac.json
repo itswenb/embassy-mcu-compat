@@ -1,8 +1,8 @@
 {
   "chips": 632,
-  "data_tree_sha256": "eea9156bd8d13cd85892ec830f4613b08282a057bbf37dc156ea680170b26628",
-  "output_tree_sha256": "89f92eb313ce9de08c87b92f945a16076fcc0b568f419692419e3b5a6208f04f",
-  "register_files": 545,
+  "data_tree_sha256": "c5e4f442f8be4ce6e3a34c61aaa33dd3efa650694abc23954a75913d365a6def",
+  "output_tree_sha256": "ea0f4a97cf17a8a63107aae10d16026c896f0aa2ce6658c344adc509fe34ef9b",
+  "register_files": 976,
   "riscv_chips": 18,
   "riscv_devices": [
     "GD32VF103C4",
