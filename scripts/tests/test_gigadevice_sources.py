@@ -94,6 +94,25 @@ class ArchiveTests(unittest.TestCase):
             with self.subTest(member=member), self.assertRaises(ValueError):
                 MODULE.validate_archive_members([member])
 
+    def test_解析7zip技术清单并拒绝链接(self):
+        listing = """
+Path = archive.7z
+Type = 7z
+
+----------
+Path = root
+Folder = +
+
+Path = root/file.h
+Folder = -
+"""
+        self.assertEqual(MODULE.parse_7zip_members(listing), ["root", "root/file.h"])
+
+        with self.assertRaises(ValueError):
+            MODULE.parse_7zip_members(
+                "Path = link\nFolder = -\nSymbolic Link = ../outside\n"
+            )
+
     def test_从供应商文本中提取唯一SHA256(self):
         digest = "3a9989bea29e6ea5c78e436a9f26d8ef4ea86b28e4c0c9913b1801f9238fb49e"
 

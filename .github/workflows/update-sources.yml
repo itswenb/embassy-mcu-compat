@@ -45,7 +45,7 @@ jobs:
       - name: 安装来源处理工具
         run: |
           sudo apt-get update
-          sudo apt-get install --yes libarchive-tools libdigest-sha-perl poppler-utils
+          sudo apt-get install --yes 7zip libarchive-tools libdigest-sha-perl poppler-utils
 
       - name: 恢复项目内来源缓存
         uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
