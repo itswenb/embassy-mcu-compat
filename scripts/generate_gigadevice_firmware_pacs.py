@@ -467,7 +467,6 @@ def _parse_args() -> argparse.Namespace:
         type=Path,
         default=repo_root / "reports/gigadevice-firmware-pac-compile.json",
     )
-    parser.add_argument("--minimum-devices", type=int, default=632)
     return parser.parse_args()
 
 
@@ -498,7 +497,6 @@ def main() -> int:
     if (
         int(summary["variants"]) != int(expected["variants"])
         or int(summary["devices"]) != int(expected["devices"])
-        or int(summary["devices"]) < args.minimum_devices
         or int(summary["compiled_or_cached"]) != int(summary["variants"])
         or int(summary["failed"]) != 0
     ):

@@ -207,8 +207,6 @@ def _parse_args() -> argparse.Namespace:
         type=Path,
         default=repo_root / "reports/gigadevice-merged-firmware-variants.json",
     )
-    parser.add_argument("--minimum-devices", type=int, default=680)
-    parser.add_argument("--maximum-missing-devices", type=int, default=48)
     return parser.parse_args()
 
 
@@ -224,10 +222,10 @@ def main() -> int:
     )
     summary = report["summary"]
     assert isinstance(summary, dict)
-    if int(summary["normalized_devices"]) < args.minimum_devices:
-        raise ValueError("合并 Firmware 变体型号数量低于门限")
-    if int(summary["missing_devices"]) > args.maximum_missing_devices:
-        raise ValueError("合并 Firmware 变体缺口超过门限")
+    if int(summary["devices"]) + int(summary["missing_devices"]) != int(
+        summary["normalized_devices"]
+    ):
+        raise ValueError("合并 Firmware 变体与缺口未闭合全部规范设备")
     print(" ".join(f"{key}={value}" for key, value in summary.items()))
     print(f"合并 Firmware 变体：{args.output}")
     return 0

@@ -271,11 +271,11 @@ def main() -> int:
         type=Path,
         default=root / "reports/gigadevice-stm32-data.json",
     )
-    parser.add_argument("--minimum-devices", type=int, default=632)
     args = parser.parse_args()
+    variants = json.loads(args.variants.read_text(encoding="utf-8"))
     staging = build_staging(
         json.loads(args.models.read_text(encoding="utf-8")),
-        json.loads(args.variants.read_text(encoding="utf-8")),
+        variants,
         json.loads(args.memory.read_text(encoding="utf-8")),
     )
     manifest = {
@@ -292,8 +292,9 @@ def main() -> int:
             for configuration in chip["memory"]
         ),
     }
-    if manifest["chips"] < args.minimum_devices:
-        raise ValueError("生成的 GD32 Chip 数低于门限")
+    expected_chips = int(variants["summary"]["devices"])
+    if manifest["chips"] != expected_chips:
+        raise ValueError("生成的 GD32 Chip 数未与 Firmware 变体闭合")
     _write_staging(args.output, staging, manifest)
     report = {
         **manifest,

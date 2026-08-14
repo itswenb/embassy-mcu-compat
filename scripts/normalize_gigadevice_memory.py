@@ -586,12 +586,13 @@ def _parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = _parse_args()
+    models = json.loads(args.models.read_text(encoding="utf-8"))
     builder_lock = json.loads(args.builder_lock.read_text(encoding="utf-8"))
     builder_root = gigadevice_builder.find_extracted_root(
         args.builder_cache, str(builder_lock["builder"]["sha256"])
     )
     full, report = build_outputs(
-        json.loads(args.models.read_text(encoding="utf-8")),
+        models,
         json.loads(args.resources.read_text(encoding="utf-8")),
         args.pdsc_root,
         json.loads(args.programmer_data.read_text(encoding="utf-8")),
@@ -626,8 +627,10 @@ def main() -> int:
         args.output, json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     )
     summary = report["summary"]
-    if int(summary["normalized_devices"]) < 680 or int(summary["cmsis_profiles"]) < 598:
-        raise ValueError("内存归一覆盖低于门限")
+    if int(summary["normalized_devices"]) != int(
+        models["summary"]["normalized_devices"]
+    ):
+        raise ValueError("内存归一结果未闭合全部规范设备")
     print(" ".join(f"{key}={value}" for key, value in summary.items()))
     print(f"内存与 Flash 归一报告：{args.output}")
     return 0

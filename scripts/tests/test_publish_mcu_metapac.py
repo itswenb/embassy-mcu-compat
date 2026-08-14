@@ -23,7 +23,20 @@ def native_manifest(chips: int) -> str:
     )
 
 
+def write_all_chips(native: Path, chips: int) -> None:
+    (native / "src").mkdir(exist_ok=True)
+    rows = "".join(f'    "GD32TEST{index:03d}",\n' for index in range(chips))
+    (native / "src/all_chips.rs").write_text(
+        f"pub static ALL_CHIPS: &[&str] = &[\n{rows}];\n", encoding="utf-8"
+    )
+
+
 def write_compile_report(native: Path, path: Path, *, failed: int = 0) -> None:
+    chips = int(
+        json.loads(
+            (native / ".m32-metapac-generation.json").read_text(encoding="utf-8")
+        )["chips"]
+    )
     path.write_text(
         json.dumps(
             {
@@ -34,11 +47,11 @@ def write_compile_report(native: Path, path: Path, *, failed: int = 0) -> None:
                     ),
                 },
                 "summary": {
-                    "devices": 680,
+                    "devices": chips,
                     "failed": failed,
-                    "features_compiled_for_exact_target": 680,
+                    "features_compiled_for_exact_target": chips,
                     "features_missing_exact_target": 0,
-                    "features_validated": 680,
+                    "features_validated": chips,
                 },
             }
         )
@@ -63,11 +76,12 @@ class PublishMcuMetapacTests(unittest.TestCase):
             (patch / "generation.json").write_text("{}\n", encoding="utf-8")
             (patch / "README.md").write_text("# stm32-metapac\n", encoding="utf-8")
             (patch / "src/lib.rs").write_text("#![no_std]\n", encoding="utf-8")
-            (native / "Cargo.toml").write_text(native_manifest(680), encoding="utf-8")
+            (native / "Cargo.toml").write_text(native_manifest(3), encoding="utf-8")
             (native / ".m32-metapac-generation.json").write_text(
-                '{"chips":680}\n', encoding="utf-8"
+                '{"chips":3,"riscv_devices":["GD32TEST002"]}\n', encoding="utf-8"
             )
             (native / "src/lib.rs").write_text("#![no_std]\n", encoding="utf-8")
+            write_all_chips(native, 3)
             (native / "target").mkdir()
             (native / "target/ignored").write_text("x", encoding="utf-8")
             compile_report = root / "compile.json"
@@ -89,10 +103,24 @@ class PublishMcuMetapacTests(unittest.TestCase):
             self.assertIn('name = "mcu-metapac"', native_manifest_text)
             self.assertFalse((output / "mcu-metapac/target").exists())
             self.assertIn(
-                "680 个原生 MCU",
+                "3 个原生 MCU",
                 (output / "mcu-metapac/README.md").read_text(encoding="utf-8"),
             )
-            self.assertEqual(report["native_chips"], 680)
+            compat = (output / "src/compat.rs").read_text(encoding="utf-8")
+            self.assertEqual(
+                compat,
+                'include!("../mcu-metapac/src/all_chips.rs");\n'
+                'include!("../mcu-metapac/src/riscv_chips.rs");\n',
+            )
+            self.assertEqual(
+                (output / "mcu-metapac/src/riscv_chips.rs").read_text(
+                    encoding="utf-8"
+                ),
+                'pub static RISCV_CHIPS: &[&str] = &[\n    "gd32test002",\n];\n',
+            )
+            self.assertEqual(report["native_chips"], 3)
+            self.assertEqual(report["embassy_compatible_chips"], 2)
+            self.assertEqual(report["riscv_chips"], 1)
             self.assertTrue((output / "release/gigadevice-metapac-compile.json").is_file())
 
     def test_缺少生成标记时拒绝发布(self):
@@ -125,10 +153,11 @@ class PublishMcuMetapacTests(unittest.TestCase):
             )
             (patch / "generation.json").write_text("{}\n", encoding="utf-8")
             (patch / "README.md").write_text("# stm32-metapac\n", encoding="utf-8")
-            (native / "Cargo.toml").write_text(native_manifest(680), encoding="utf-8")
+            (native / "Cargo.toml").write_text(native_manifest(3), encoding="utf-8")
             (native / ".m32-metapac-generation.json").write_text(
-                '{"chips":680}\n', encoding="utf-8"
+                '{"chips":3}\n', encoding="utf-8"
             )
+            write_all_chips(native, 3)
             compile_report = root / "compile.json"
             write_compile_report(native, compile_report)
 
@@ -155,7 +184,7 @@ class PublishMcuMetapacTests(unittest.TestCase):
 
             self.assertTrue((output / "mcu-metapac/README.md").is_file())
 
-    def test_拒绝发布少于680个或清单不一致的GD32(self):
+    def test_拒绝feature与生成清单数量不一致(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             patch = root / "patch"
@@ -167,10 +196,11 @@ class PublishMcuMetapacTests(unittest.TestCase):
             )
             (patch / "generation.json").write_text("{}\n", encoding="utf-8")
             (patch / "README.md").write_text("# stm32-metapac\n", encoding="utf-8")
-            (native / "Cargo.toml").write_text(native_manifest(679), encoding="utf-8")
+            (native / "Cargo.toml").write_text(native_manifest(2), encoding="utf-8")
             (native / ".m32-metapac-generation.json").write_text(
-                '{"chips":680}\n', encoding="utf-8"
+                '{"chips":3}\n', encoding="utf-8"
             )
+            write_all_chips(native, 3)
 
             with self.assertRaisesRegex(ValueError, "feature 数量"):
                 MODULE.build_publication(
@@ -192,10 +222,11 @@ class PublishMcuMetapacTests(unittest.TestCase):
             )
             (patch / "generation.json").write_text("{}\n", encoding="utf-8")
             (patch / "README.md").write_text("# stm32-metapac\n", encoding="utf-8")
-            (native / "Cargo.toml").write_text(native_manifest(680), encoding="utf-8")
+            (native / "Cargo.toml").write_text(native_manifest(3), encoding="utf-8")
             (native / ".m32-metapac-generation.json").write_text(
-                '{"chips":680}\n', encoding="utf-8"
+                '{"chips":3}\n', encoding="utf-8"
             )
+            write_all_chips(native, 3)
             compile_report = root / "compile.json"
             write_compile_report(native, compile_report, failed=1)
 

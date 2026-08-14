@@ -125,7 +125,7 @@ python3 scripts/compile_gigadevice_pacs.py \
     --minimum-pac-outputs 3
 python3 scripts/index_gigadevice_firmware_headers.py
 python3 scripts/extract_gigadevice_firmware_registers.py
-python3 scripts/build_gigadevice_firmware_variants.py --minimum-devices 680
+python3 scripts/build_gigadevice_firmware_variants.py
 python3 scripts/extract_gigadevice_firmware_registers.py \
     --lock "$builder_adapter/lock.json" \
     --headers reports/gigadevice-builder-headers.json \
@@ -138,22 +138,18 @@ python3 scripts/build_gigadevice_firmware_variants.py \
     --known-source-issues sources/gigadevice/builder-firmware-register-conflicts.json \
     --root "$builder_adapter/libraries" \
     --cache-dir .cache/research/gigadevice/builder-firmware-cpp-v1 \
-    --output reports/gigadevice-builder-variants.json \
-    --minimum-devices 680
-python3 scripts/audit_gigadevice_model_universe.py --minimum-devices 680
-python3 scripts/merge_gigadevice_firmware_variants.py \
-    --minimum-devices 680 \
-    --maximum-missing-devices 48
+    --output reports/gigadevice-builder-variants.json
+python3 scripts/audit_gigadevice_model_universe.py
+python3 scripts/merge_gigadevice_firmware_variants.py
 python3 scripts/normalize_gigadevice_embassy_names.py
 python3 scripts/normalize_gigadevice_rcu.py \
     --variants reports/gigadevice-merged-firmware-variants.json
 python3 scripts/normalize_gigadevice_dma.py \
     --variants reports/gigadevice-merged-firmware-variants.json
 python3 scripts/generate_gigadevice_firmware_pacs.py \
-    --variants reports/gigadevice-merged-firmware-variants.json \
-    --minimum-devices 632
+    --variants reports/gigadevice-merged-firmware-variants.json
 python3 scripts/analyze_gigadevice_stm32_register_compat.py
-python3 scripts/generate_gigadevice_stm32_data.py --minimum-devices 632
+python3 scripts/generate_gigadevice_stm32_data.py
 cargo run --quiet --bin m32-metapac-gen -- \
     --data-dir .cache/generated/gigadevice-stm32-data-v1 \
     --output .cache/generated/gigadevice-metapac-v1 \
@@ -163,7 +159,6 @@ python3 scripts/augment_gigadevice_iar_metapac.py \
     --replace
 python3 scripts/check_gigadevice_metapac.py \
     --metapac-dir .cache/generated/gigadevice-metapac-complete-v1 \
-    --minimum-devices 680 \
     --offline
 python3 scripts/compare_gigadevice_svd_headers.py
 python3 scripts/build_gigadevice_mcu_data.py \

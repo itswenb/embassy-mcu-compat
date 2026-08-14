@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import sys
 import tempfile
@@ -15,8 +16,6 @@ import gigadevice_sources as common
 
 
 IGNORED = shutil.ignore_patterns(".git", "target", "Cargo.lock")
-MINIMUM_GD32_CHIPS = 680
-
 NATIVE_README = """# mcu-metapac
 
 这是由 `embassy-mcu-compat` 确定性生成的厂商无关 MCU 外设访问包。
@@ -27,7 +26,27 @@ NATIVE_README = """# mcu-metapac
 本包提供 PAC 与 metadata，不代表所有型号已经通过 `embassy-stm32` 兼容门或硬件验证。
 """
 
-ROOT_NOTICE = """## 原生 GD32 PAC
+ROOT_NOTICE = """## Embassy STM32 零修改兼容入口
+
+根 `stm32-metapac` 包允许未修改的 `embassy-stm32` 使用 {compatible_chips} 个 Cortex-M
+GD32 真实型号。应用选择一个合适的 STM32 feature，并通过环境变量选择真实芯片：
+
+```toml
+[dependencies]
+embassy-stm32 = {{ version = "...", features = ["stm32f303cb"] }}
+
+[patch."https://github.com/embassy-rs/stm32-data-generated"]
+stm32-metapac = {{ git = "https://github.com/itswenb/embassy-mcu-compat-generated", rev = "<固定提交>" }}
+```
+
+```toml
+[env]
+EMBASSY_MCU_COMPAT_CHIP = "gd32f303cb"
+```
+
+真实型号与 STM32 feature 不做固定映射；使用者负责选择架构及外设拓扑相近的 feature。
+
+## 原生 GD32 PAC
 
 本仓库还发布 workspace 包 [`mcu-metapac`](mcu-metapac/README.md)，当前包含 {chips}
 个由真实厂商数据生成并通过编译门的 GD32 feature。依赖时选择一个真实型号：
@@ -73,6 +92,22 @@ def _add_workspace(manifest: Path) -> None:
     )
 
 
+def _write_chip_bridge(path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        'include!("../mcu-metapac/src/all_chips.rs");\n'
+        'include!("../mcu-metapac/src/riscv_chips.rs");\n',
+        encoding="utf-8",
+    )
+
+
+def _write_riscv_chips(path: Path, chips: set[str]) -> None:
+    lines = ["pub static RISCV_CHIPS: &[&str] = &["]
+    lines.extend(f"    {json.dumps(chip)}," for chip in sorted(chips))
+    lines.extend(["];", ""])
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def build_publication(
     patch: Path,
     native: Path,
@@ -95,17 +130,31 @@ def build_publication(
     native_generation = json.loads(native_marker.read_text(encoding="utf-8"))
     chips = int(native_generation["chips"])
     manifest_data = tomllib.loads((native / "Cargo.toml").read_text(encoding="utf-8"))
-    feature_count = sum(
-        name.startswith("gd32") for name in manifest_data.get("features", {})
+    features = sorted(
+        name for name in manifest_data.get("features", {}) if name.startswith("gd32")
     )
+    feature_count = len(features)
     if feature_count != chips:
         raise ValueError(
             f"GD32 feature 数量与生成标记不一致：{feature_count} != {chips}"
         )
-    if chips < MINIMUM_GD32_CHIPS:
-        raise ValueError(
-            f"GD32 feature 少于全量基线：{chips} < {MINIMUM_GD32_CHIPS}"
+    if chips <= 0:
+        raise ValueError("原生生成标记不包含芯片")
+    all_chips_source = (native / "src/all_chips.rs").read_text(encoding="utf-8")
+    all_chips = {
+        name.lower()
+        for name in re.findall(
+            r'^\s*"([A-Za-z0-9-]+)",\s*$', all_chips_source, re.MULTILINE
         )
+    }
+    if all_chips != set(features):
+        raise ValueError("ALL_CHIPS 与 Cargo feature 集合不一致")
+    riscv = {
+        str(device).lower() for device in native_generation.get("riscv_devices", [])
+    }
+    if missing := riscv - set(features):
+        raise ValueError(f"RISC-V 型号不在原生 feature 中：{', '.join(sorted(missing))}")
+    compatible_features = [feature for feature in features if feature not in riscv]
     compile_data = json.loads(compile_report.read_text(encoding="utf-8"))
     summary = compile_data.get("summary", {})
     if (
@@ -131,11 +180,13 @@ def build_publication(
         shutil.copytree(native, native_output, ignore=IGNORED)
         _add_workspace(temporary / "Cargo.toml")
         _replace_package_name(native_output / "Cargo.toml")
+        _write_riscv_chips(native_output / "src/riscv_chips.rs", riscv)
+        _write_chip_bridge(temporary / "src/compat.rs")
         root_readme = temporary / "README.md"
         root_readme.write_text(
             root_readme.read_text(encoding="utf-8").rstrip()
             + "\n\n"
-            + ROOT_NOTICE.format(chips=chips),
+            + ROOT_NOTICE.format(chips=chips, compatible_chips=len(compatible_features)),
             encoding="utf-8",
         )
         (native_output / "README.md").write_text(
@@ -147,6 +198,8 @@ def build_publication(
         report = {
             "schema_version": 1,
             "native_chips": chips,
+            "embassy_compatible_chips": len(compatible_features),
+            "riscv_chips": len(riscv),
             "patch_tree_sha256": common.tree_sha256(patch),
             "native_tree_sha256": common.tree_sha256(native),
             "compile_report_sha256": common._sha256(compile_report),

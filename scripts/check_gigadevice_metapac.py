@@ -286,7 +286,6 @@ def _args() -> argparse.Namespace:
         type=Path,
         default=root / ".cache/tools/gigadevice-feature-metapac-target",
     )
-    parser.add_argument("--minimum-devices", type=int, default=632)
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--force", action="store_true")
     return parser.parse_args()
@@ -313,8 +312,9 @@ def main() -> int:
         args.metapac_dir, relative_root
     )
     exact_feature_targets, missing_feature_targets = exact_targets(model_report, devices)
-    if len(devices) < args.minimum_devices or int(manifest["chips"]) != len(devices):
-        raise ValueError("metapac 芯片数未达到门限或与生成标记不一致")
+    expected_devices = int(model_report["summary"]["normalized_devices"])
+    if int(manifest["chips"]) != len(devices) or len(devices) != expected_devices:
+        raise ValueError("metapac 芯片数未与生成标记和型号清单闭合")
     features = cargo.get("features")
     if not isinstance(features, dict) or any(device not in features for device in devices):
         raise ValueError("metapac Cargo feature 未覆盖全部芯片")

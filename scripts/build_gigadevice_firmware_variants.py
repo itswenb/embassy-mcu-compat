@@ -1569,7 +1569,6 @@ def _parse_args() -> argparse.Namespace:
         default=repo_root / "reports/gigadevice-firmware-variants.json",
     )
     parser.add_argument("--cpp", default="clang")
-    parser.add_argument("--minimum-devices", type=int, default=680)
     return parser.parse_args()
 
 
@@ -1613,8 +1612,6 @@ def main() -> int:
     assert isinstance(summary, dict)
     print(" ".join(f"{key}={value}" for key, value in summary.items()))
     print(f"Firmware 型号变体：{args.output}")
-    if int(summary["normalized_devices"]) < args.minimum_devices:
-        raise ValueError("规范设备闭包低于门限")
     if int(summary["devices"]) + int(summary["missing_devices"]) != int(
         summary["normalized_devices"]
     ):

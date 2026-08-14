@@ -376,24 +376,23 @@ fn merge_private_chips(generated: &Path, publication: &Path, mappings: &[Mapping
 fn write_compat_table(publication: &Path, mappings: &[Mapping]) -> Result<()> {
     let mut entries: Vec<_> = mappings
         .iter()
-        .map(|mapping| (&mapping.chip, &mapping.alias))
+        .map(|mapping| mapping.chip.to_ascii_uppercase())
         .collect();
     entries.sort();
 
-    let mut contents = String::from("const COMPATIBLE_CHIPS: &[(&str, &str)] = &[");
+    let mut contents = String::from("pub static ALL_CHIPS: &[&str] = &[");
     if entries.is_empty() {
         contents.push_str("];\n");
     } else {
         contents.push('\n');
-        for (chip, alias) in entries {
-            contents.push_str("    (");
-            contents.push_str(&serde_json::to_string(chip).context("编码兼容芯片名失败")?);
-            contents.push_str(", ");
-            contents.push_str(&serde_json::to_string(alias).context("编码兼容 alias 失败")?);
-            contents.push_str("),\n");
+        for chip in entries {
+            contents.push_str("    ");
+            contents.push_str(&serde_json::to_string(&chip).context("编码兼容芯片名失败")?);
+            contents.push_str(",\n");
         }
         contents.push_str("];\n");
     }
+    contents.push_str("pub static RISCV_CHIPS: &[&str] = &[];\n");
     fs::write(publication.join("src/compat.rs"), contents).context("写入静态兼容芯片表失败")
 }
 

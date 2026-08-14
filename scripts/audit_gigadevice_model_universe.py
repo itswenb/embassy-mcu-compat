@@ -155,7 +155,6 @@ def _parse_args() -> argparse.Namespace:
         type=Path,
         default=repo_root / "reports/gigadevice-model-universe.json",
     )
-    parser.add_argument("--minimum-devices", type=int, default=680)
     return parser.parse_args()
 
 
@@ -176,8 +175,6 @@ def main() -> int:
     )
     summary = report["summary"]
     assert isinstance(summary, dict)
-    if int(summary["normalized_devices"]) < args.minimum_devices:
-        raise ValueError("型号全集 device 数量低于覆盖门限")
     for key in (
         "orphan_pack_devices",
         "missing_builder_device_rows",

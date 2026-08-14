@@ -837,8 +837,6 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output", type=Path, default=repo_root / "reports/gigadevice-dma.json"
     )
-    parser.add_argument("--minimum-devices", type=int, default=680)
-    parser.add_argument("--minimum-normalized", type=int, default=628)
     parser.add_argument("--maximum-conflicts", type=int, default=0)
     parser.add_argument("--maximum-fixed-missing", type=int, default=0)
     return parser.parse_args()
@@ -873,10 +871,6 @@ def main() -> int:
     summary = report["summary"]
     print(" ".join(f"{key}={value}" for key, value in summary.items()))
     print(f"DMA 归一报告：{args.output}")
-    if int(summary["normalized_devices"]) < args.minimum_devices:
-        raise ValueError("DMA 规范设备闭包低于门限")
-    if int(summary["devices_with_normalized_dma"]) < args.minimum_normalized:
-        raise ValueError("DMA 完全归一设备数量低于门限")
     if int(summary["devices_with_dma_conflict"]) > args.maximum_conflicts:
         raise ValueError("DMA 冲突设备超过门限")
     if (

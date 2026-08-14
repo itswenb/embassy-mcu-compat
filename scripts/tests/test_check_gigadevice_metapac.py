@@ -18,7 +18,7 @@ SPEC.loader.exec_module(MODULE)
 
 class MetapacCheckTests(unittest.TestCase):
     def test_仅复用与当前输入和工具链完全一致的成功报告(self):
-        summary = {"devices": 680, "failed": 0}
+        summary = {"devices": 3, "failed": 0}
         provenance = {"cargo_toml_sha256": "a" * 64}
         report = {
             "rustc": "release=1.94.0-nightly",

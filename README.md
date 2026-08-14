@@ -2,7 +2,7 @@
 
 本仓库为 Embassy 构建厂商无关的 MCU 数据与兼容生成链，GigaDevice 是第一个接入厂商。官方 `embassy-stm32`、`stm32-data` 和 `stm32-data-generated` 始终保持零修改。
 
-当前已建立 GD32 官方来源的可重复同步和缺口闭包：680 个规范型号均有寄存器来源并生成原生 PAC，其中 48 个 A7xx 型号来自 IAR 官方 Arm 设备支持包中的 3 份 SVD。尚未声明任何 GD32 型号达到 Embassy 生产支持；仓库中的 `GD32F103C8 -> STM32F103C8` 仅是 Cargo patch 端到端测试。
+当前已建立 GD32 官方来源的可重复同步和缺口闭包：680 个规范型号均有寄存器来源并生成原生 PAC，其中 48 个 A7xx 型号来自 IAR 官方 Arm 设备支持包中的 3 份 SVD。生成仓库中的 Cortex-M 型号可通过真实型号选择协议接入未修改的 `embassy-stm32`；这不代表所有 HAL 驱动已经通过实机验证。
 
 ## 当前覆盖证据
 
@@ -107,16 +107,23 @@ mcu-metapac = { git = "https://github.com/itswenb/embassy-mcu-compat-generated",
 
 这条路径提供原生寄存器 PAC 和 metadata，不通过相似 STM32 型号伪装，也不宣称对应型号已通过 `embassy-stm32` 驱动或硬件测试。
 
-## 测试用 Cargo patch
+## Embassy STM32 零修改 Cargo patch
 
-生成仓库根包继续用于验证原生 STM32 路径与 test-only GD32F103C8 选择逻辑：
+应用继续为 `embassy-stm32` 选择一个架构与外设拓扑合适的 STM32 feature，并用环境变量指定真实 GD32 型号：
 
 ```toml
 [dependencies]
-embassy-stm32 = { version = "...", features = ["stm32f103c8"] }
+embassy-stm32 = { version = "...", features = ["stm32f303cb"] }
 
 [patch."https://github.com/embassy-rs/stm32-data-generated"]
 stm32-metapac = { git = "https://github.com/itswenb/embassy-mcu-compat-generated", rev = "<固定提交>" }
 ```
 
-真实 GD32 生产映射只有在寄存器、中断、内存、RCC、Flash、pins、DMA、Embassy cfg、许可证、目标编译和硬件验证全部通过后才会进入生成仓库。
+项目的 `.cargo/config.toml`：
+
+```toml
+[env]
+EMBASSY_MCU_COMPAT_CHIP = "gd32f303cb"
+```
+
+真实型号不绑定某个 STM32 feature。根包直接读取同一生成仓库 `mcu-metapac/src/all_chips.rs` 的芯片全集，不维护第二份 `COMPATIBLE_CHIPS`；RISC-V 型号会被明确拒绝并改走原生 `mcu-metapac` 路径。

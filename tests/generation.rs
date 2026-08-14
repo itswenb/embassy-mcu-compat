@@ -297,7 +297,7 @@ fn native_generation_has_no_test_chip_or_feature() {
     assert!(!output.join("src/chips/gd32f103c8").exists());
     assert_eq!(
         fs::read_to_string(output.join("src/compat.rs")).unwrap(),
-        "const COMPATIBLE_CHIPS: &[(&str, &str)] = &[];\n"
+        "pub static ALL_CHIPS: &[&str] = &[];\npub static RISCV_CHIPS: &[&str] = &[];\n"
     );
     let cargo = fs::read_to_string(output.join("Cargo.toml")).unwrap();
     assert!(!cargo.contains("gd32f103c8"));
@@ -425,20 +425,23 @@ fn source_lock_hash_drift_fails_before_publication() {
 }
 
 #[test]
-fn cargo_reports_unknown_chip_and_alias_mismatch() {
+fn cargo_reports_unknown_chip_and_accepts_any_stm32_feature() {
     let unknown = build_script_failure("unknown32", "stm32f103c8");
     assert!(unknown.contains("EMBASSY_MCU_COMPAT_CHIP"), "{unknown}");
     assert!(unknown.contains("unknown32"), "{unknown}");
     assert!(unknown.contains("gd32f103c8"), "{unknown}");
 
-    let mismatch = build_script_failure("gd32f103c8", "stm32f103cb");
-    assert!(mismatch.contains("EMBASSY_MCU_COMPAT_CHIP"), "{mismatch}");
-    assert!(mismatch.contains("gd32f103c8"), "{mismatch}");
-    assert!(mismatch.contains("stm32f103c8"), "{mismatch}");
-    assert!(mismatch.contains("stm32f103cb"), "{mismatch}");
+    let (success, stderr) = build_script_result("gd32f103c8", "stm32f103cb");
+    assert!(success, "已知真实型号不应绑定 STM32 feature：{stderr}");
 }
 
 fn build_script_failure(chip: &str, feature: &str) -> String {
+    let (success, stderr) = build_script_result(chip, feature);
+    assert!(!success, "错误路径意外编译成功");
+    stderr
+}
+
+fn build_script_result(chip: &str, feature: &str) -> (bool, String) {
     let temp = tempfile::tempdir().unwrap();
     fs::create_dir_all(temp.path().join("src")).unwrap();
     fs::copy(
@@ -474,8 +477,10 @@ fn build_script_failure(chip: &str, feature: &str) -> String {
         .current_dir(temp.path())
         .output()
         .unwrap();
-    assert!(!output.status.success(), "错误路径意外编译成功");
-    String::from_utf8(output.stderr).unwrap()
+    (
+        output.status.success(),
+        String::from_utf8(output.stderr).unwrap(),
+    )
 }
 
 fn file_tree(root: &Path) -> BTreeMap<String, Vec<u8>> {
