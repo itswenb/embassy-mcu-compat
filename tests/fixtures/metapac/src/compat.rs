@@ -1,4 +1,3 @@
-pub static ALL_CHIPS: &[&str] = &[
-    "GD32F103C8",
+pub static COMPATIBLE_CHIPS: &[(&str, &str)] = &[
+    ("gd32f103c8", "stm32f103c8"),
 ];
-pub static RISCV_CHIPS: &[&str] = &[];

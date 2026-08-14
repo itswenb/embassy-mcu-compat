@@ -90,6 +90,9 @@ pub struct GenerateArgs {
     /// 兼容映射目录。
     #[arg(long, default_value = "compat")]
     pub compat_dir: PathBuf,
+    /// 由规范化 GD 事实生成的 Embassy 投影清单。
+    #[arg(long)]
+    pub projection_manifest: Option<PathBuf>,
     /// 仅用于端到端测试时包含 test 映射。
     #[arg(long)]
     pub include_test: bool,

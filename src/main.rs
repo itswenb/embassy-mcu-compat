@@ -43,6 +43,7 @@ fn main() -> Result<()> {
             &args.lock,
             &args.cache_dir,
             &args.compat_dir,
+            args.projection_manifest.as_deref(),
             args.include_test,
         ),
     }

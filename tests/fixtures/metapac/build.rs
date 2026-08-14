@@ -41,45 +41,33 @@ fn chip_core_name(variables: impl IntoIterator<Item = String>) -> Result<String,
         })
 }
 
-fn select_chip(alias: &str, requested: Option<&str>) -> Result<String, String> {
+fn select_chip(profile: &str, requested: Option<&str>) -> Result<String, String> {
     let Some(requested) = requested else {
-        return Ok(alias.to_owned());
+        return Ok(profile.to_owned());
     };
-    if RISCV_CHIPS
+    let Some((chip, expected_profile)) = COMPATIBLE_CHIPS
         .iter()
-        .any(|chip| chip.eq_ignore_ascii_case(requested))
-    {
+        .find(|(chip, _)| chip.eq_ignore_ascii_case(requested))
+    else {
+        let available = COMPATIBLE_CHIPS
+            .iter()
+            .map(|(chip, _)| *chip)
+            .collect::<Vec<_>>()
+            .join(", ");
         return Err(format!(
-            "{COMPAT_ENV}={requested} 是 RISC-V 型号，不能通过 embassy-stm32 使用"
+            "未知 {COMPAT_ENV}={requested}；可用真实型号：{available}"
+        ));
+    };
+    if !expected_profile.eq_ignore_ascii_case(profile) {
+        return Err(format!(
+            "{COMPAT_ENV}={requested} 要求 STM32 profile {expected_profile}，当前启用 {profile}"
         ));
     }
-    if ALL_CHIPS
-        .iter()
-        .any(|chip| chip.eq_ignore_ascii_case(requested))
-    {
-        return Ok(requested.to_ascii_lowercase());
-    }
-    let available = ALL_CHIPS
-        .iter()
-        .filter(|chip| {
-            !RISCV_CHIPS
-                .iter()
-                .any(|riscv| riscv.eq_ignore_ascii_case(chip))
-        })
-        .map(|chip| chip.to_ascii_lowercase())
-        .collect::<Vec<_>>()
-        .join(", ");
-    Err(format!(
-        "未知 {COMPAT_ENV}={requested}；可用真实型号：{available}"
-    ))
+    Ok(chip.to_ascii_lowercase())
 }
 
-fn chip_path(chip: &str, native: bool) -> String {
-    if native {
-        format!("../mcu-metapac/src/chips/{chip}")
-    } else {
-        format!("chips/{chip}")
-    }
+fn chip_path(chip: &str) -> String {
+    format!("chips/{chip}")
 }
 
 fn rerun_directive() -> String {
@@ -103,7 +91,7 @@ fn main() {
         Err(env::VarError::NotUnicode(_)) => panic!("{COMPAT_ENV} 不是 UTF-8"),
     };
     let chip = select_chip(&alias, requested.as_deref()).unwrap_or_else(|error| panic!("{error}"));
-    let chip_path = chip_path(&chip, requested.is_some());
+    let chip_path = chip_path(&chip);
 
     #[cfg(feature = "rt")]
     println!(
@@ -142,20 +130,15 @@ mod tests {
     }
 
     #[test]
-    fn real_chip_is_not_bound_to_stm32_feature() {
-        assert_eq!(
-            select_chip("stm32f103cb", Some("gd32f103c8")).unwrap(),
-            "gd32f103c8"
-        );
+    fn wrong_profile_is_rejected() {
+        let error = select_chip("stm32f103cb", Some("gd32f103c8")).unwrap_err();
+        assert!(error.contains("stm32f103c8"));
     }
 
     #[test]
-    fn native_chip_uses_nested_generated_tree() {
-        assert_eq!(
-            chip_path("gd32f303cb", true),
-            "../mcu-metapac/src/chips/gd32f303cb"
-        );
-        assert_eq!(chip_path("stm32f303cb", false), "chips/stm32f303cb");
+    fn native_and_compatible_chips_use_the_root_tree() {
+        assert_eq!(chip_path("gd32f303cb"), "chips/gd32f303cb");
+        assert_eq!(chip_path("stm32f303cb"), "chips/stm32f303cb");
     }
 
     #[test]

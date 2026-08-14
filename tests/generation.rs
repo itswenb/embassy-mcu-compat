@@ -118,6 +118,7 @@ fn request<'a>(
             Sha256::digest(source_lock.to_toml().unwrap().as_bytes())
         ),
         include_test: true,
+        projection_manifest: None,
     }
 }
 
@@ -249,8 +250,12 @@ fn generated_build_script_matches_the_tested_contract() {
         fs::read("tests/fixtures/metapac/build.rs").unwrap()
     );
     assert_eq!(
-        fs::read(output.join("src/compat.rs")).unwrap(),
-        fs::read("tests/fixtures/metapac/src/compat.rs").unwrap()
+        fs::read_to_string(output.join("src/compat.rs")).unwrap(),
+        concat!(
+            "pub static COMPATIBLE_CHIPS: &[(&str, &str)] = &[\n",
+            "    (\"gd32f103c8\", \"stm32f103c8\"),\n",
+            "];\n",
+        )
     );
 
     let executable = target.path().join("build-script-tests");
@@ -267,6 +272,44 @@ fn generated_build_script_matches_the_tested_contract() {
         target.path(),
     );
     run(executable.to_str().unwrap(), &[], target.path());
+}
+
+#[test]
+fn projection_manifest_generates_real_chip_and_records_its_hash() {
+    let (official, lock) = official_fixture();
+    let target = tempfile::tempdir().unwrap();
+    let output = target.path().join("generated");
+    let manifest_path = target.path().join("projection.json");
+    let mapping = mapping();
+    fs::write(
+        &manifest_path,
+        serde_json::to_vec_pretty(&json!({
+            "schema_version": 1,
+            "projections": [{
+                "chip": mapping.chip,
+                "profile": mapping.alias,
+                "rust_target": mapping.rust_target,
+                "status": "projected",
+                "patch": mapping.patch,
+                "source_hashes": {"models_sha256": "0".repeat(64)},
+            }],
+        }))
+        .unwrap(),
+    )
+    .unwrap();
+    let mut request = request(official.path(), &output, &[], &lock);
+    request.include_test = false;
+    request.projection_manifest = Some(&manifest_path);
+
+    generate_repository(request).unwrap();
+
+    assert!(output.join("src/chips/gd32f103c8/pac.rs").is_file());
+    let generated: serde_json::Value =
+        serde_json::from_slice(&fs::read(output.join("generation.json")).unwrap()).unwrap();
+    assert_eq!(
+        generated["projection_manifest_sha256"],
+        mcu_compat_gen::hash::sha256_file(&manifest_path).unwrap()
+    );
 }
 
 #[test]
@@ -297,7 +340,7 @@ fn native_generation_has_no_test_chip_or_feature() {
     assert!(!output.join("src/chips/gd32f103c8").exists());
     assert_eq!(
         fs::read_to_string(output.join("src/compat.rs")).unwrap(),
-        "pub static ALL_CHIPS: &[&str] = &[];\npub static RISCV_CHIPS: &[&str] = &[];\n"
+        "pub static COMPATIBLE_CHIPS: &[(&str, &str)] = &[];\n"
     );
     let cargo = fs::read_to_string(output.join("Cargo.toml")).unwrap();
     assert!(!cargo.contains("gd32f103c8"));
@@ -332,9 +375,9 @@ fn generation_manifest_records_locked_inputs_and_real_chips() {
     assert_eq!(manifest["target_db"]["revision"], lock.target_db.revision);
     assert_eq!(manifest["include_test"], true);
     assert_eq!(manifest["chips"][0]["chip"], "gd32f103c8");
-    assert_eq!(manifest["chips"][0]["alias"], "stm32f103c8");
+    assert_eq!(manifest["chips"][0]["profile"], "stm32f103c8");
     assert_eq!(
-        manifest["chips"][0]["mapping_sha256"]
+        manifest["chips"][0]["projection_sha256"]
             .as_str()
             .unwrap()
             .len(),
@@ -425,14 +468,17 @@ fn source_lock_hash_drift_fails_before_publication() {
 }
 
 #[test]
-fn cargo_reports_unknown_chip_and_accepts_any_stm32_feature() {
+fn cargo_reports_unknown_chip_and_rejects_wrong_stm32_feature() {
     let unknown = build_script_failure("unknown32", "stm32f103c8");
     assert!(unknown.contains("EMBASSY_MCU_COMPAT_CHIP"), "{unknown}");
     assert!(unknown.contains("unknown32"), "{unknown}");
     assert!(unknown.contains("gd32f103c8"), "{unknown}");
 
-    let (success, stderr) = build_script_result("gd32f103c8", "stm32f103cb");
-    assert!(success, "已知真实型号不应绑定 STM32 feature：{stderr}");
+    let wrong = build_script_failure("gd32f103c8", "stm32f103cb");
+    assert!(wrong.contains("stm32f103c8"), "{wrong}");
+
+    let (success, stderr) = build_script_result("gd32f103c8", "stm32f103c8");
+    assert!(success, "匹配的 STM32 profile 应成功：{stderr}");
 }
 
 fn build_script_failure(chip: &str, feature: &str) -> String {

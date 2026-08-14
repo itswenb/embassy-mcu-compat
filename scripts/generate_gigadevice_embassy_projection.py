@@ -380,38 +380,58 @@ def build_projection_facts(
         for row in (compatibility or {}).get("layouts", [])
         if isinstance(row, dict) and "id" in row
     }
-    peripheral_registers = {}
+    register_records = []
     for instance in variant.get("instances", []):
         if not isinstance(instance, dict):
             continue
         peripheral = _map_peripheral(str(instance["name"]))
         template = profile_peripherals.get(peripheral or "")
         layout = compatible_layouts.get(str(instance.get("layout", "")))
-        if template is None or layout is None or not isinstance(template.get("registers"), dict):
+        if template is None or not isinstance(template.get("registers"), dict):
             continue
+        template_registers = template["registers"]
         candidates = [
             candidate
             for key in ("exact_candidates", "subset_candidates")
-            for candidate in layout.get(key, [])
+            for candidate in (layout or {}).get(key, [])
             if isinstance(candidate, dict)
+            and candidate.get("kind") == template_registers.get("kind")
         ]
         if not candidates:
-            continue
-        template_registers = template["registers"]
-        selected = next(
+            candidates = [template_registers]
+        register_records.append(
+            (peripheral, template_registers, candidates)
+        )
+
+    versions_by_kind: dict[str, list[set[str]]] = {}
+    preferred_versions: dict[str, list[str]] = {}
+    for _, template, candidates in register_records:
+        kind = str(template["kind"])
+        versions_by_kind.setdefault(kind, []).append(
+            {str(candidate["version"]) for candidate in candidates}
+        )
+        preferred_versions.setdefault(kind, []).append(str(template["version"]))
+    selected_versions = {}
+    for kind, choices in versions_by_kind.items():
+        common = set.intersection(*choices)
+        if not common:
+            raise ValueError(f"{kind} 外设没有芯片内共同兼容版本")
+        selected_versions[kind] = min(
+            common,
+            key=lambda version: (-preferred_versions[kind].count(version), version),
+        )
+
+    peripheral_registers = {}
+    for peripheral, template, candidates in register_records:
+        selected = min(
             (
                 candidate
                 for candidate in candidates
-                if all(
-                    candidate.get(key) == template_registers.get(key)
-                    for key in ("kind", "version", "block")
-                )
+                if candidate["version"] == selected_versions[str(template["kind"])]
             ),
-            min(
-                candidates,
-                key=lambda candidate: tuple(
-                    str(candidate.get(key, "")) for key in ("kind", "version", "block")
-                ),
+            key=lambda candidate: (
+                candidate.get("block") != template.get("block"),
+                str(candidate.get("block", "")),
             ),
         )
         peripheral_registers[peripheral] = {

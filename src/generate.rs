@@ -1,10 +1,11 @@
-use std::collections::BTreeSet;
+use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
 use std::panic::{AssertUnwindSafe, catch_unwind};
 use std::path::{Component, Path};
 use std::process::Command;
 
 use anyhow::{Context, Result, bail};
+use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use sha2::{Digest, Sha256};
 use stm32_data_serde::Chip;
@@ -21,6 +22,34 @@ const COMPAT_BUILD_RS: &str = include_str!("../tests/fixtures/metapac/build.rs")
 const GENERATED_REPOSITORY: &str = "https://github.com/itswenb/embassy-mcu-compat-generated";
 const GENERATED_DESCRIPTION: &str = "支持厂商兼容 MCU 的 STM32 外设访问包。";
 
+#[derive(Debug, Clone)]
+struct Projection {
+    chip: String,
+    profile: String,
+    rust_target: String,
+    source_device: String,
+    patch: Value,
+    input_sha256: String,
+}
+
+#[derive(Debug, Deserialize)]
+struct ProjectionManifest {
+    schema_version: u32,
+    projections: Vec<ManifestProjection>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+struct ManifestProjection {
+    chip: String,
+    profile: Option<String>,
+    rust_target: Option<String>,
+    status: String,
+    #[serde(default)]
+    patch: Value,
+    #[serde(default)]
+    source_hashes: BTreeMap<String, String>,
+}
+
 pub struct GenerateRequest<'a> {
     pub official_generated: &'a Path,
     pub output: &'a Path,
@@ -28,6 +57,7 @@ pub struct GenerateRequest<'a> {
     pub source_lock: &'a SourceLock,
     pub source_lock_sha256: String,
     pub include_test: bool,
+    pub projection_manifest: Option<&'a Path>,
 }
 
 pub fn run_generate(
@@ -36,22 +66,30 @@ pub fn run_generate(
     lock_path: &Path,
     cache_dir: &Path,
     compat_dir: &Path,
+    projection_manifest: Option<&Path>,
     include_test: bool,
 ) -> Result<()> {
     let lock = SourceLock::read(lock_path)?;
     let source_lock_sha256 = sha256_file(lock_path)?;
-    verify_sources(&lock, cache_dir)?;
+    if projection_manifest.is_none() {
+        verify_sources(&lock, cache_dir)?;
+    }
     let project_root = lock_path
         .parent()
         .filter(|parent| !parent.as_os_str().is_empty())
         .unwrap_or_else(|| Path::new("."));
     let pack_root = cache_dir.join("cmsis");
-    let mappings = load_mappings(compat_dir, &lock, &[project_root, &pack_root])?;
-    let selected: Vec<_> = mappings
-        .into_values()
-        .filter(|mapping| mapping.ready() || (include_test && mapping.mapping.scope == Scope::Test))
-        .map(|mapping| mapping.mapping)
-        .collect();
+    let selected = if projection_manifest.is_none() {
+        load_mappings(compat_dir, &lock, &[project_root, &pack_root])?
+            .into_values()
+            .filter(|mapping| {
+                mapping.ready() || (include_test && mapping.mapping.scope == Scope::Test)
+            })
+            .map(|mapping| mapping.mapping)
+            .collect()
+    } else {
+        Vec::new()
+    };
     generate_repository(GenerateRequest {
         official_generated,
         output,
@@ -59,6 +97,7 @@ pub fn run_generate(
         source_lock: &lock,
         source_lock_sha256,
         include_test,
+        projection_manifest,
     })
 }
 
@@ -77,6 +116,13 @@ pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
         request.official_generated,
         &request.source_lock.upstream.stm32_data_generated,
     )?;
+    if request.projection_manifest.is_some() && !request.mappings.is_empty() {
+        bail!("投影 manifest 与旧兼容映射不能同时生成");
+    }
+    let projections = match request.projection_manifest {
+        Some(path) => load_projection_manifest(path)?,
+        None => projections_from_mappings(request.mappings)?,
+    };
 
     let parent = request
         .output
@@ -96,7 +142,7 @@ pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
     let chip_names = prepare_staging_data(
         &request.official_generated.join("data"),
         &data_dir,
-        request.mappings,
+        &projections,
     )?;
     if !chip_names.is_empty() {
         run_generator(&data_dir, &generated_dir, chip_names)?;
@@ -111,14 +157,14 @@ pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
         &request.official_generated.join("stm32-metapac"),
         &publication_dir,
     )?;
-    if !request.mappings.is_empty() {
-        merge_private_chips(&generated_dir, &publication_dir, request.mappings)?;
+    if !projections.is_empty() {
+        merge_private_chips(&generated_dir, &publication_dir, &projections)?;
     }
-    write_compat_table(&publication_dir, request.mappings)?;
+    write_compat_table(&publication_dir, &projections)?;
     fs::write(publication_dir.join("build.rs"), COMPAT_BUILD_RS)
         .context("写入兼容 build.rs 失败")?;
     rewrite_package_manifest(&publication_dir.join("Cargo.toml"))?;
-    write_generation_manifest(&publication_dir, &request)?;
+    write_generation_manifest(&publication_dir, &request, &projections)?;
     publish(&publication_dir, request.output)
 }
 
@@ -131,10 +177,100 @@ fn verify_source_lock_hash(lock: &SourceLock, actual: &str) -> Result<()> {
     Ok(())
 }
 
-pub fn prepare_staging_data(
+fn projections_from_mappings(mappings: &[Mapping]) -> Result<Vec<Projection>> {
+    mappings
+        .iter()
+        .map(|mapping| {
+            let bytes = serde_json::to_vec(mapping)
+                .with_context(|| format!("编码映射 {} 失败", mapping.chip))?;
+            Ok(Projection {
+                chip: mapping.chip.clone(),
+                profile: mapping.alias.clone(),
+                rust_target: mapping.rust_target.clone(),
+                source_device: mapping.source.device.clone(),
+                patch: mapping.patch.clone(),
+                input_sha256: format!("{:x}", Sha256::digest(bytes)),
+            })
+        })
+        .collect()
+}
+
+fn load_projection_manifest(path: &Path) -> Result<Vec<Projection>> {
+    let bytes = fs::read(path)
+        .with_context(|| format!("读取 Embassy 投影 manifest {} 失败", path.display()))?;
+    let manifest: ProjectionManifest = serde_json::from_slice(&bytes)
+        .with_context(|| format!("解析 Embassy 投影 manifest {} 失败", path.display()))?;
+    if manifest.schema_version != 1 {
+        bail!(
+            "不支持的 Embassy 投影 manifest schema：{}",
+            manifest.schema_version
+        );
+    }
+
+    let mut seen = BTreeSet::new();
+    let mut projections = Vec::new();
+    for row in manifest.projections {
+        if !seen.insert(row.chip.clone()) {
+            bail!("Embassy 投影 manifest 包含重复型号：{}", row.chip);
+        }
+        if row.status == "blocked" {
+            continue;
+        }
+        if row.status != "projected" {
+            bail!("Embassy 投影 {} 包含未知状态：{}", row.chip, row.status);
+        }
+        if !is_canonical_name(&row.chip) {
+            bail!("Embassy 投影真实型号不是规范小写名称：{}", row.chip);
+        }
+        let profile = row
+            .profile
+            .as_deref()
+            .filter(|profile| profile.starts_with("stm32") && is_canonical_name(profile))
+            .ok_or_else(|| anyhow::anyhow!("Embassy 投影 {} 缺少规范 STM32 profile", row.chip))?;
+        let rust_target = row
+            .rust_target
+            .as_deref()
+            .filter(|target| !target.is_empty())
+            .ok_or_else(|| anyhow::anyhow!("Embassy 投影 {} 缺少 Rust target", row.chip))?;
+        if !row.patch.is_object() {
+            bail!("Embassy 投影 {} 的 patch 不是对象", row.chip);
+        }
+        if row.source_hashes.is_empty()
+            || row.source_hashes.values().any(|hash| {
+                hash.len() != 64
+                    || !hash
+                        .bytes()
+                        .all(|byte| byte.is_ascii_hexdigit() && !byte.is_ascii_uppercase())
+            })
+        {
+            bail!("Embassy 投影 {} 的来源哈希无效", row.chip);
+        }
+        let encoded = serde_json::to_vec(&row)
+            .with_context(|| format!("编码 Embassy 投影 {} 失败", row.chip))?;
+        projections.push(Projection {
+            chip: row.chip.clone(),
+            profile: profile.to_owned(),
+            rust_target: rust_target.to_owned(),
+            source_device: row.chip.to_ascii_uppercase(),
+            patch: row.patch,
+            input_sha256: format!("{:x}", Sha256::digest(encoded)),
+        });
+    }
+    projections.sort_by(|left, right| left.chip.cmp(&right.chip));
+    Ok(projections)
+}
+
+fn is_canonical_name(value: &str) -> bool {
+    !value.is_empty()
+        && value
+            .bytes()
+            .all(|byte| byte.is_ascii_lowercase() || byte.is_ascii_digit() || byte == b'-')
+}
+
+fn prepare_staging_data(
     official_data: &Path,
     staging_data: &Path,
-    mappings: &[Mapping],
+    projections: &[Projection],
 ) -> Result<Vec<String>> {
     fs::create_dir_all(staging_data.join("chips"))
         .with_context(|| format!("创建 staging chips 目录 {} 失败", staging_data.display()))?;
@@ -148,26 +284,26 @@ pub fn prepare_staging_data(
     let mut chip_names = Vec::new();
     let mut seen_chips = BTreeSet::new();
     let mut registers = BTreeSet::new();
-    for mapping in mappings {
-        if !seen_chips.insert(mapping.chip.as_str()) {
-            bail!("生成请求包含重复真实型号：{}", mapping.chip);
+    for projection in projections {
+        if !seen_chips.insert(projection.chip.as_str()) {
+            bail!("生成请求包含重复真实型号：{}", projection.chip);
         }
-        validate_component(&mapping.source.device, "真实型号")?;
-        let alias = mapping.alias.to_ascii_uppercase();
+        validate_component(&projection.source_device, "真实型号")?;
+        let alias = projection.profile.to_ascii_uppercase();
         validate_component(&alias, "alias")?;
         let source = official_data.join("chips").join(format!("{alias}.json"));
         let bytes = fs::read(&source)
             .with_context(|| format!("读取官方 alias Chip {} 失败", source.display()))?;
         let mut value: Value = serde_json::from_slice(&bytes)
             .with_context(|| format!("解析官方 alias Chip {} 失败", source.display()))?;
-        apply_merge_patch(&mut value, &mapping.patch);
+        apply_merge_patch(&mut value, &projection.patch);
         let mut chip: Chip = serde_json::from_value(value)
-            .with_context(|| format!("映射 {} patch 后无法解析为 Chip", mapping.chip))?;
-        chip.name.clone_from(&mapping.source.device);
+            .with_context(|| format!("投影 {} patch 后无法解析为 Chip", projection.chip))?;
+        chip.name.clone_from(&projection.source_device);
         if chip.cores.len() != 1 {
             bail!(
                 "映射 {} patch 后包含 {} 个 core；当前只支持单核兼容生成",
-                mapping.chip,
+                projection.chip,
                 chip.cores.len()
             );
         }
@@ -183,16 +319,16 @@ pub fn prepare_staging_data(
         }
 
         let mut encoded = serde_json::to_vec_pretty(&chip)
-            .with_context(|| format!("编码真实 Chip {} 失败", mapping.chip))?;
+            .with_context(|| format!("编码真实 Chip {} 失败", projection.chip))?;
         encoded.push(b'\n');
         fs::write(
             staging_data
                 .join("chips")
-                .join(format!("{}.json", mapping.source.device)),
+                .join(format!("{}.json", projection.source_device)),
             encoded,
         )
-        .with_context(|| format!("写入真实 Chip {} 失败", mapping.chip))?;
-        chip_names.push(mapping.source.device.clone());
+        .with_context(|| format!("写入真实 Chip {} 失败", projection.chip))?;
+        chip_names.push(projection.source_device.clone());
     }
 
     for (kind, version) in registers {
@@ -337,17 +473,21 @@ fn verify_shared_modules(generated: &Path, official_metapac: &Path) -> Result<()
     Ok(())
 }
 
-fn merge_private_chips(generated: &Path, publication: &Path, mappings: &[Mapping]) -> Result<()> {
+fn merge_private_chips(
+    generated: &Path,
+    publication: &Path,
+    projections: &[Projection],
+) -> Result<()> {
     let mut copied_dedup = BTreeSet::new();
-    for mapping in mappings {
-        let source = generated.join("src/chips").join(&mapping.chip);
-        let destination = publication.join("src/chips").join(&mapping.chip);
+    for projection in projections {
+        let source = generated.join("src/chips").join(&projection.chip);
+        let destination = publication.join("src/chips").join(&projection.chip);
         fs::create_dir_all(&destination)
             .with_context(|| format!("创建真实芯片目录 {} 失败", destination.display()))?;
         for filename in ["pac.rs", "device.x"] {
             let path = source.join(filename);
             if !path.is_file() {
-                bail!("生成器没有生成 {} 的 {filename}", mapping.chip);
+                bail!("生成器没有生成 {} 的 {filename}", projection.chip);
             }
             fs::copy(&path, destination.join(filename))
                 .with_context(|| format!("复制 {} 失败", path.display()))?;
@@ -358,7 +498,7 @@ fn merge_private_chips(generated: &Path, publication: &Path, mappings: &[Mapping
             .with_context(|| format!("读取 {} 失败", metadata_path.display()))?;
         let (dedup, rewritten) = rewrite_metadata_include(&metadata)?;
         fs::write(destination.join("metadata.rs"), rewritten)
-            .with_context(|| format!("写入 {} metadata 失败", mapping.chip))?;
+            .with_context(|| format!("写入 {} metadata 失败", projection.chip))?;
         if copied_dedup.insert(dedup.clone()) {
             let source = generated.join("src/chips").join(&dedup);
             let destination = publication.join("src/chips").join(dedup.replacen(
@@ -373,26 +513,25 @@ fn merge_private_chips(generated: &Path, publication: &Path, mappings: &[Mapping
     Ok(())
 }
 
-fn write_compat_table(publication: &Path, mappings: &[Mapping]) -> Result<()> {
-    let mut entries: Vec<_> = mappings
+fn write_compat_table(publication: &Path, projections: &[Projection]) -> Result<()> {
+    let mut entries: Vec<_> = projections
         .iter()
-        .map(|mapping| mapping.chip.to_ascii_uppercase())
+        .map(|projection| (&projection.chip, &projection.profile))
         .collect();
     entries.sort();
 
-    let mut contents = String::from("pub static ALL_CHIPS: &[&str] = &[");
+    let mut contents = String::from("pub static COMPATIBLE_CHIPS: &[(&str, &str)] = &[");
     if entries.is_empty() {
         contents.push_str("];\n");
     } else {
         contents.push('\n');
-        for chip in entries {
-            contents.push_str("    ");
-            contents.push_str(&serde_json::to_string(&chip).context("编码兼容芯片名失败")?);
-            contents.push_str(",\n");
+        for (chip, profile) in entries {
+            let chip = serde_json::to_string(chip).context("编码兼容芯片名失败")?;
+            let profile = serde_json::to_string(profile).context("编码 profile 名失败")?;
+            contents.push_str(&format!("    ({chip}, {profile}),\n"));
         }
         contents.push_str("];\n");
     }
-    contents.push_str("pub static RISCV_CHIPS: &[&str] = &[];\n");
     fs::write(publication.join("src/compat.rs"), contents).context("写入静态兼容芯片表失败")
 }
 
@@ -417,18 +556,22 @@ fn rewrite_package_manifest(path: &Path) -> Result<()> {
     fs::write(path, contents).with_context(|| format!("写入生成包清单 {} 失败", path.display()))
 }
 
-fn write_generation_manifest(publication: &Path, request: &GenerateRequest<'_>) -> Result<()> {
+fn write_generation_manifest(
+    publication: &Path,
+    request: &GenerateRequest<'_>,
+    projections: &[Projection],
+) -> Result<()> {
     let mut chips = Vec::new();
-    for mapping in request.mappings {
-        let bytes = serde_json::to_vec(mapping)
-            .with_context(|| format!("编码映射 {} 失败", mapping.chip))?;
+    for projection in projections {
         chips.push(serde_json::json!({
-            "chip": mapping.chip,
-            "alias": mapping.alias,
-            "mapping_sha256": format!("{:x}", Sha256::digest(bytes)),
+            "chip": projection.chip,
+            "profile": projection.profile,
+            "rust_target": projection.rust_target,
+            "projection_sha256": projection.input_sha256,
         }));
     }
     chips.sort_by(|left, right| left["chip"].as_str().cmp(&right["chip"].as_str()));
+    let projection_manifest_sha256 = request.projection_manifest.map(sha256_file).transpose()?;
 
     let manifest = serde_json::json!({
         "schema": 1,
@@ -439,6 +582,7 @@ fn write_generation_manifest(publication: &Path, request: &GenerateRequest<'_>) 
         "upstream": &request.source_lock.upstream,
         "packs": &request.source_lock.packs,
         "include_test": request.include_test,
+        "projection_manifest_sha256": projection_manifest_sha256,
         "chips": chips,
     });
     let mut contents = serde_json::to_vec_pretty(&manifest).context("编码生成清单失败")?;

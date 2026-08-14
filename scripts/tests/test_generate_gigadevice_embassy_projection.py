@@ -466,6 +466,82 @@ class GenerateGigadeviceEmbassyProjectionTests(unittest.TestCase):
             {"kind": "timer", "version": "v1", "block": "TIM_GP32"},
         )
 
+    def test_同一芯片同类外设选择共同寄存器版本(self):
+        profile = candidate(
+            "STM32F303CB", ["RCC", "GPIOA", "FLASH", "EXTI", "TIM1", "TIM5"]
+        )
+        peripherals = {
+            peripheral["name"]: peripheral
+            for peripheral in profile["cores"][0]["peripherals"]
+        }
+        peripherals["TIM1"]["registers"] = {
+            "kind": "timer", "version": "v1", "block": "TIM_ADV"
+        }
+        peripherals["TIM5"]["registers"] = {
+            "kind": "timer", "version": "l0", "block": "TIM_GP32"
+        }
+        facts = MODULE.build_projection_facts(
+            profile,
+            variant(),
+            {"memory": [{"name": "IROM1", "kind": "flash", "address": 1, "size": 2}]},
+            {"status": "normalized", "pins": []},
+            {"status": "normalized", "dma_channels": [], "dma_requests": []},
+            {
+                "layouts": [
+                    {
+                        "id": "layout-TIMER0",
+                        "exact_candidates": [],
+                        "subset_candidates": [
+                            {"kind": "timer", "version": "v1", "block": "TIM_ADV"}
+                        ],
+                    },
+                    {
+                        "id": "layout-TIMER4",
+                        "exact_candidates": [],
+                        "subset_candidates": [
+                            {"kind": "timer", "version": "l0", "block": "TIM_GP32"},
+                            {"kind": "timer", "version": "v1", "block": "TIM_GP32"},
+                        ],
+                    },
+                ]
+            },
+        )
+
+        self.assertEqual(
+            {row["version"] for row in facts["peripheral_registers"].values()},
+            {"v1"},
+        )
+
+    def test_未验证同类实例没有共同版本时阻塞(self):
+        profile = candidate(
+            "STM32A508VE", ["RCC", "GPIOA", "FLASH", "EXTI", "TIM1", "TIM5"]
+        )
+        for peripheral in profile["cores"][0]["peripherals"]:
+            if peripheral["name"] in {"TIM1", "TIM5"}:
+                peripheral["registers"] = {
+                    "kind": "timer", "version": "v4", "block": peripheral["name"]
+                }
+
+        with self.assertRaisesRegex(ValueError, "没有芯片内共同兼容版本"):
+            MODULE.build_projection_facts(
+                profile,
+                variant(),
+                {"memory": [{"name": "IROM1", "kind": "flash", "address": 1, "size": 2}]},
+                {"status": "normalized", "pins": []},
+                {"status": "normalized", "dma_channels": [], "dma_requests": []},
+                {
+                    "layouts": [
+                        {
+                            "id": "layout-TIMER0",
+                            "exact_candidates": [],
+                            "subset_candidates": [
+                                {"kind": "timer", "version": "v1", "block": "TIM_ADV"}
+                            ],
+                        }
+                    ]
+                },
+            )
+
     def test_manifest动态汇总并能重建投影(self):
         profile = candidate(
             "STM32F103RG", ["RCC", "GPIOA", "FLASH", "EXTI", "TIM1", "TIM5"]
