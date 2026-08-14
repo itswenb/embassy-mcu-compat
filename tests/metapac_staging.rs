@@ -61,7 +61,7 @@ fn 官方生成器消费真实staging目录() {
     assert_eq!(report["output_tree_sha256"].as_str().unwrap().len(), 64);
 
     let check = Command::new("cargo")
-        .args(["check", "--offline", "--manifest-path"])
+        .args(["check", "--manifest-path"])
         .arg(output.join("Cargo.toml"))
         .args(["--features", "pac,metadata,gd32testarm"])
         .env("CARGO_TARGET_DIR", temp.path().join("target"))

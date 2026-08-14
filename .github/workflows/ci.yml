@@ -26,5 +26,5 @@ jobs:
       - name: 运行 Clippy
         run: cargo clippy --all-targets -- -D warnings
 
-      - name: 运行离线 fixture 测试
+      - name: 运行 fixture 测试
         run: cargo test --all-targets
