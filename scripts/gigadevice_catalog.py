@@ -274,7 +274,15 @@ def incremental_catalog_documents(
         discovered,
         compare_fields=("version", "document_id", "published", "available_path_types"),
     )
-    changed = plan["added"] or plan["updated"]
+    locked_documents = current_record.get("documents", {}) if isinstance(current_record, dict) else {}
+    cache_complete = bool(locked_documents) and all(
+        isinstance(document, dict)
+        and common.cache_file_available(
+            cache_dir, str(document["filename"]), int(document["size"])
+        )
+        for document in locked_documents.values()
+    )
+    changed = plan["added"] or plan["updated"] or not cache_complete
     materialized = []
     if changed:
         documents = [materialize(source, path_type, cache_dir) for path_type in source.path_types]

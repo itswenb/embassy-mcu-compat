@@ -124,7 +124,11 @@ def incremental_tool_record(
         discovered,
         compare_fields=("version", "document_id", "published", "box_id"),
     )
-    changed = plan["added"] or plan["updated"]
+    changed = (
+        plan["added"]
+        or plan["updated"]
+        or not common.cache_record_available(cache_dir, current[0] if current else None)
+    )
     materialized = []
     if changed:
         record = builder.materialize(source, cache_dir, adopt)

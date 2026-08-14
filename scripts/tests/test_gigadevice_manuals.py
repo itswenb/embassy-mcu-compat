@@ -156,6 +156,7 @@ class ManualTests(unittest.TestCase):
             root = Path(directory)
             manifest = root / "manuals.lock.json"
             MODULE.write_manifest(manifest, [record])
+            (root / record.filename).write_bytes(b"x" * record.size)
 
             with mock.patch.object(
                 MODULE, "materialize", side_effect=AssertionError("不应物化未变化手册")

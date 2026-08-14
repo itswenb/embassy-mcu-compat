@@ -8,7 +8,6 @@ import hashlib
 import json
 import os
 import re
-import shutil
 import subprocess
 import sys
 import tempfile
@@ -323,6 +322,29 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def cache_file_available(cache_dir: Path, filename: str, size: int) -> bool:
+    path = cache_dir / filename
+    return path.is_file() and path.stat().st_size == size
+
+
+def cache_record_available(cache_dir: Path, record: dict[str, object] | None) -> bool:
+    return bool(
+        record
+        and cache_file_available(
+            cache_dir, str(record["filename"]), int(record["size"])
+        )
+    )
+
+
+def missing_cached_names(
+    cache_dir: Path, records: list[dict[str, object]], names: list[str]
+) -> set[str]:
+    locked = {str(record["name"]): record for record in records}
+    return {
+        name for name in names if not cache_record_available(cache_dir, locked.get(name))
+    }
+
+
 def tree_sha256(root: Path) -> str:
     digest = hashlib.sha256()
     for path in sorted(root.rglob("*"), key=lambda item: item.as_posix()):
@@ -421,51 +443,7 @@ def _archive_members(path: Path) -> list[str]:
     return members
 
 
-def parse_7zip_members(listing: str) -> list[str]:
-    members: list[str] = []
-    for block in re.split(r"\n\s*\n", listing):
-        fields = {
-            key.strip(): value.strip()
-            for line in block.splitlines()
-            if " = " in line
-            for key, _, value in [line.partition(" = ")]
-        }
-        if "Folder" not in fields:
-            continue
-        if "Symbolic Link" in fields or "Hard Link" in fields:
-            raise ValueError(f"归档包含链接：{fields.get('Path', '<未知>')!r}")
-        member = fields.get("Path")
-        if not member:
-            raise ValueError("7zip 清单成员缺少路径")
-        members.append(member)
-    validate_archive_members(members)
-    return members
-
-
-def _sevenzip() -> str | None:
-    return shutil.which("7z")
-
-
-def _verify_archive(path: Path) -> str:
-    sevenzip = _sevenzip() if path.suffix.lower() == ".7z" else None
-    if sevenzip is not None:
-        listing = subprocess.run(
-            [sevenzip, "l", "-slt", "--", str(path)],
-            check=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-        )
-        parse_7zip_members(listing.stdout)
-        subprocess.run(
-            [sevenzip, "t", "--", str(path)],
-            check=True,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.PIPE,
-            text=True,
-        )
-        return sevenzip
-
+def _verify_archive(path: Path) -> None:
     _archive_members(path)
     listing = subprocess.run(
         ["bsdtar", "-tvf", str(path)],
@@ -477,27 +455,20 @@ def _verify_archive(path: Path) -> str:
     unsupported = [line for line in listing.stdout.splitlines() if line and line[0] not in {"-", "d"}]
     if unsupported:
         raise ValueError(f"归档包含链接或特殊文件：{unsupported[0]!r}")
-    return "bsdtar"
 
 
 def _extract_archive(archive: Path, output: Path) -> None:
-    tool = _verify_archive(archive)
+    _verify_archive(archive)
     output.mkdir(parents=True)
-    command = (
-        [tool, "x", "-y", f"-o{output}", "--", str(archive)]
-        if tool != "bsdtar"
-        else [tool, "-xf", str(archive), "-C", str(output), "--no-same-owner"]
-    )
     subprocess.run(
-        command,
+        ["bsdtar", "-xf", str(archive), "-C", str(output), "--no-same-owner"],
         check=True,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.PIPE,
         text=True,
     )
-    for path in output.rglob("*"):
-        if path.is_symlink() or not (path.is_file() or path.is_dir()):
-            raise ValueError(f"解包结果包含链接或特殊文件：{archive.name}")
+    if any(path.is_symlink() for path in output.rglob("*")):
+        raise ValueError(f"解包结果包含符号链接：{archive.name}")
 
 
 def select_payload_archive(outer: Path, inner_archives: list[Path]) -> Path:
@@ -622,10 +593,11 @@ def incremental_firmware_records(
     discovered = [source._asdict() for source in sources]
     plan = plan_source_updates(current, discovered)
     changed = set(plan["added"]) | set(plan["updated"])
+    missing = missing_cached_names(cache_dir, current, [source.name for source in sources])
     materialized = [
         _firmware_record_data(materialize(source, cache_dir))
         for source in sources
-        if source.name in changed
+        if source.name in changed | missing
     ]
     merged, merged_history = merge_source_updates(current, materialized, plan, history)
     return [_firmware_record_from_data(record) for record in merged], merged_history, plan

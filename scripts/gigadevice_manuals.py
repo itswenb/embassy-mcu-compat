@@ -347,10 +347,13 @@ def incremental_manual_records(
         compare_fields=("version", "document_id", "published", "available_path_types"),
     )
     changed = set(plan["added"]) | set(plan["updated"])
+    missing = common.missing_cached_names(
+        cache_dir, current, [source.name for source in sources]
+    )
     materialized = [
         _manual_record_data(materialize(source, cache_dir, kind))
         for source in sources
-        if source.name in changed
+        if source.name in changed | missing
     ]
     merged, merged_history = common.merge_source_updates(
         current, materialized, plan, history

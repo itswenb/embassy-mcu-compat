@@ -164,7 +164,11 @@ def incremental_builder_record(
         raise ValueError("Builder 历史记录格式无效")
     discovered = [{"name": "GD32 Embedded Builder", **source._asdict()}]
     plan = common.plan_source_updates(current, discovered)
-    changed = plan["added"] or plan["updated"]
+    changed = (
+        plan["added"]
+        or plan["updated"]
+        or not common.cache_record_available(cache_dir, current[0] if current else None)
+    )
     materialized = [_builder_record_data(materialize(source, cache_dir, adopt))] if changed else []
     merged, merged_history = common.merge_source_updates(
         current, materialized, plan, history

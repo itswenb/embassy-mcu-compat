@@ -228,7 +228,9 @@ def incremental_record(
         locked = data.get("iar")
         if isinstance(locked, dict):
             current = _record_from_data(locked)
-            if current == source:
+            if current == source and common.cache_file_available(
+                cache_dir, current.name, current.size
+            ):
                 return current, False
     materialize(source, cache_dir)
     return source, True

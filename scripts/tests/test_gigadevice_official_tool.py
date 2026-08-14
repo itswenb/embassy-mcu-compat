@@ -52,6 +52,7 @@ class OfficialToolTests(unittest.TestCase):
             root = Path(directory)
             manifest = root / "programmer.lock.json"
             MODULE.write_manifest(manifest, source, record)
+            (root / record.filename).write_bytes(b"x" * record.size)
             self.assertEqual(
                 json.loads(manifest.read_text(encoding="utf-8"))["tool"]["document_id"],
                 123,

@@ -64,9 +64,9 @@ class IarSourceTests(unittest.TestCase):
             MODULE.write_manifest(manifest, source)
 
             with mock.patch.object(
-                MODULE,
-                "materialize",
-                side_effect=AssertionError("不应重复下载"),
+                MODULE.common, "cache_file_available", return_value=True
+            ), mock.patch.object(
+                MODULE, "materialize", side_effect=AssertionError("不应重复下载")
             ):
                 record, changed = MODULE.incremental_record(source, manifest, root)
 

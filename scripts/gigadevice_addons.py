@@ -244,10 +244,13 @@ def incremental_addon_records(
         raise ValueError("AddOn 锁文件格式无效")
     plan = common.plan_source_updates(current, [source._asdict() for source in sources])
     changed = set(plan["added"]) | set(plan["updated"])
+    missing = common.missing_cached_names(
+        cache_dir, current, [source.name for source in sources]
+    )
     materialized = [
         _addon_record_data(materialize(source, cache_dir, adopt_dir))
         for source in sources
-        if source.name in changed
+        if source.name in changed | missing
     ]
     merged, merged_history = common.merge_source_updates(
         current, materialized, plan, history

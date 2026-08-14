@@ -68,6 +68,8 @@ class CatalogTests(unittest.TestCase):
             root = Path(directory)
             manifest = root / "catalog.lock.json"
             MODULE.write_manifest(manifest, source, documents)
+            for document in documents:
+                (root / document.filename).write_bytes(b"x" * document.size)
 
             with mock.patch.object(
                 MODULE, "materialize", side_effect=AssertionError("不应物化未变化选型指南")

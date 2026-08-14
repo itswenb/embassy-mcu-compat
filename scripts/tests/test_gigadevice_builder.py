@@ -66,6 +66,7 @@ class BuilderTests(unittest.TestCase):
             root = Path(directory)
             manifest = root / "builder.lock.json"
             MODULE.write_manifest(manifest, record)
+            (root / "builder.7z").write_bytes(b"x" * 123)
 
             with mock.patch.object(
                 MODULE, "materialize", side_effect=AssertionError("不应物化未变化 Builder")

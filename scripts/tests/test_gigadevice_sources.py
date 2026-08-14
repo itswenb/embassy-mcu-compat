@@ -94,25 +94,6 @@ class ArchiveTests(unittest.TestCase):
             with self.subTest(member=member), self.assertRaises(ValueError):
                 MODULE.validate_archive_members([member])
 
-    def test_解析7zip技术清单并拒绝链接(self):
-        listing = """
-Path = archive.7z
-Type = 7z
-
-----------
-Path = root
-Folder = +
-
-Path = root/file.h
-Folder = -
-"""
-        self.assertEqual(MODULE.parse_7zip_members(listing), ["root", "root/file.h"])
-
-        with self.assertRaises(ValueError):
-            MODULE.parse_7zip_members(
-                "Path = link\nFolder = -\nSymbolic Link = ../outside\n"
-            )
-
     def test_从供应商文本中提取唯一SHA256(self):
         digest = "3a9989bea29e6ea5c78e436a9f26d8ef4ea86b28e4c0c9913b1801f9238fb49e"
 
@@ -165,7 +146,7 @@ class ManifestTests(unittest.TestCase):
         self.assertNotIn("generated_at", data)
         self.assertEqual(data["firmware"][0]["document_id"], 397)
 
-    def test_未变化来源直接复用锁且不访问归档(self):
+    def test_未变化且缓存完整时直接复用锁(self):
         source = MODULE.parse_firmware_page(PAGE)[0][0]
         record = MODULE.FirmwareRecord(
             source,
@@ -178,6 +159,7 @@ class ManifestTests(unittest.TestCase):
             root = Path(directory)
             manifest = root / "firmware.lock.json"
             MODULE.write_manifest(manifest, [record])
+            (root / "source.7z").write_bytes(b"x" * 123)
 
             with mock.patch.object(
                 MODULE, "materialize", side_effect=AssertionError("不应物化未变化来源")
@@ -189,6 +171,25 @@ class ManifestTests(unittest.TestCase):
         self.assertEqual(records[0].sha256, "a" * 64)
         self.assertEqual(history, [])
         self.assertEqual(plan["unchanged"], [source.name])
+
+    def test_未变化但缓存缺失时重新物化(self):
+        source = MODULE.parse_firmware_page(PAGE)[0][0]
+        record = MODULE.FirmwareRecord(
+            source,
+            "https://www.gd32mcu.com/data/documents/toolSoftware/source.7z",
+            "source.7z",
+            123,
+            "a" * 64,
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = root / "firmware.lock.json"
+            MODULE.write_manifest(manifest, [record])
+            with mock.patch.object(MODULE, "materialize", return_value=record) as materialize:
+                records, _, _ = MODULE.incremental_firmware_records([source], manifest, root)
+
+        materialize.assert_called_once_with(source, root)
+        self.assertEqual(records, [record])
 
 
 class SourceUpdateTests(unittest.TestCase):
