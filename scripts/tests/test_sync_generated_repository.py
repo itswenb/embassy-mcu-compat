@@ -10,6 +10,14 @@ WORKFLOW = Path(__file__).parents[2] / ".github/workflows/update-sources.yml"
 
 
 class SyncGeneratedRepositoryTests(unittest.TestCase):
+    def test_定时任务使用generated专用部署密钥(self):
+        workflow = WORKFLOW.read_text(encoding="utf-8")
+
+        self.assertIn(
+            "ssh-key: ${{ secrets.GENERATED_REPO_SSH_KEY }}", workflow
+        )
+        self.assertNotIn("GENERATED_REPO_TOKEN", workflow)
+
     def test_发布补丁显式包含示例兼容映射(self):
         pipeline = PIPELINE.read_text(encoding="utf-8")
         generate = (

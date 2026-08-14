@@ -33,9 +33,9 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: itswenb/embassy-mcu-compat-generated
-          token: ${{ secrets.GENERATED_REPO_TOKEN }}
+          ssh-key: ${{ secrets.GENERATED_REPO_SSH_KEY }}
           path: .cache/generated-repository
-          persist-credentials: false
+          persist-credentials: true
 
       - name: 安装固定 Rust 工具链
         run: |
@@ -119,8 +119,6 @@ jobs:
           trap - EXIT
 
       - name: 提交 generated 变化
-        env:
-          GENERATED_REPO_TOKEN: ${{ secrets.GENERATED_REPO_TOKEN }}
         shell: bash
         run: |
           set -euo pipefail
@@ -134,11 +132,4 @@ jobs:
           git -C "${generated_repo}" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git -C "${generated_repo}" add -A
           git -C "${generated_repo}" commit -m "生成：同步 GD32 全型号 PAC 与 metadata"
-
-          auth_header="$(printf 'x-access-token:%s' "${GENERATED_REPO_TOKEN}" | base64 -w 0)"
-          trap 'git -C "${GENERATED_REPOSITORY_DIR}" config --local --unset-all http.https://github.com/.extraheader || true' EXIT
-          git -C "${generated_repo}" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ${auth_header}"
-          unset auth_header
           git -C "${generated_repo}" push origin "HEAD:${{ github.event.repository.default_branch }}"
-          git -C "${generated_repo}" config --local --unset-all http.https://github.com/.extraheader
-          trap - EXIT
