@@ -22,9 +22,11 @@ class EmbassyNamesTests(unittest.TestCase):
             "USART0": ("USART1", "indexed"),
             "UART3": ("UART4", "indexed"),
             "DMA0": ("DMA1", "indexed"),
+            "I2C0": ("I2C1", "indexed"),
             "RCU": ("RCC", "semantic"),
             "FMC": ("FLASH", "semantic"),
             "EXMC": ("FMC", "semantic"),
+            "DMAMUX": ("DMAMUX1", "semantic"),
             "GPIOA": ("GPIOA", "identity"),
         }
 

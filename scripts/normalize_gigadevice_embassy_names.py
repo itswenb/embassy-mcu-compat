@@ -30,6 +30,7 @@ SEMANTIC_NAMES = {
     "CTC": "CRS",
     "DBG": "DBGMCU",
     "DCI": "DCMI",
+    "DMAMUX": "DMAMUX1",
     "ENET": "ETH",
     "EXMC": "FMC",
     "FMC": "FLASH",
@@ -59,12 +60,10 @@ IDENTITY_NAMES = {
 def embassy_instance_name(native: str) -> tuple[str, str] | None:
     if native in SEMANTIC_NAMES:
         return SEMANTIC_NAMES[native], "semantic"
-    match = re.fullmatch(r"([A-Z]+)(\d+)", native)
-    if match is not None and match.group(1) in INDEXED_PREFIXES:
-        return (
-            f"{INDEXED_PREFIXES[match.group(1)]}{int(match.group(2)) + 1}",
-            "indexed",
-        )
+    for prefix, embassy_prefix in INDEXED_PREFIXES.items():
+        match = re.fullmatch(rf"{re.escape(prefix)}(\d+)", native)
+        if match is not None:
+            return f"{embassy_prefix}{int(match.group(1)) + 1}", "indexed"
     if native in IDENTITY_NAMES or re.fullmatch(r"GPIO[A-Z]", native):
         return native, "identity"
     return None
