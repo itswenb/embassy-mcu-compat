@@ -62,6 +62,23 @@ if [[ "$action" == "materialize" ]]; then
     python3 scripts/gigadevice_manuals.py --kind datasheet --download
 fi
 
+required_upstream=(embassy stm32-data stm32-data-generated chiptool)
+sync_upstream=0
+for repository in "${required_upstream[@]}"; do
+    if [[ ! -d ".cache/research/repos/$repository/.git" ]]; then
+        sync_upstream=1
+        break
+    fi
+done
+sync_args=()
+if [[ $# -eq 0 && ! -d "$target_db_repo/.git" ]]; then
+    sync_upstream=1
+    sync_args+=(--include-target-db)
+fi
+if [[ "$sync_upstream" == "1" ]]; then
+    python3 scripts/sync_upstream_research.py "${sync_args[@]}"
+fi
+
 if [[ ! -d "$target_db_repo" ]]; then
     echo "派生所需目标数据库缓存不存在：$target_db_repo" >&2
     exit 1

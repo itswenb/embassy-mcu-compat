@@ -18,6 +18,16 @@ class SyncGeneratedRepositoryTests(unittest.TestCase):
         )
         self.assertNotIn("GENERATED_REPO_TOKEN", workflow)
 
+    def test_派生前自动恢复缺失的上游仓库(self):
+        pipeline = PIPELINE.read_text(encoding="utf-8")
+
+        self.assertIn('required_upstream=(embassy stm32-data stm32-data-generated chiptool)', pipeline)
+        self.assertIn('sync_args+=(--include-target-db)', pipeline)
+        self.assertLess(
+            pipeline.index("required_upstream="),
+            pipeline.index('if [[ ! -d "$target_db_repo" ]]'),
+        )
+
     def test_发布补丁显式包含示例兼容映射(self):
         pipeline = PIPELINE.read_text(encoding="utf-8")
         generate = (
