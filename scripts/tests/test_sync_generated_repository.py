@@ -28,6 +28,21 @@ class SyncGeneratedRepositoryTests(unittest.TestCase):
             pipeline.index('if [[ ! -d "$target_db_repo" ]]'),
         )
 
+    def test_缓存缺失时物化而noop时跳过发布同步(self):
+        pipeline = PIPELINE.read_text(encoding="utf-8")
+        workflow = WORKFLOW.read_text(encoding="utf-8")
+
+        self.assertIn(
+            'source_cache_marker=".cache/research/gigadevice/source-cache-ready-v1"',
+            pipeline,
+        )
+        self.assertIn('! -f "$source_cache_marker"', pipeline)
+        self.assertLess(
+            pipeline.index('touch "$source_cache_marker"'),
+            pipeline.index('if [[ "$action" == "noop" ]]'),
+        )
+        self.assertIn('if [[ -d .cache/generated/mcu-metapac-publication-v1 ]]', workflow)
+
     def test_发布补丁显式包含示例兼容映射(self):
         pipeline = PIPELINE.read_text(encoding="utf-8")
         generate = (

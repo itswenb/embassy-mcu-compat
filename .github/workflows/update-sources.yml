@@ -81,6 +81,7 @@ jobs:
             .cache/research/gigadevice/firmware-svd-v1
             .cache/research/gigadevice/chiptool-firmware-v1
             .cache/research/gigadevice/firmware-pac-compile-v1
+            .cache/research/gigadevice/source-cache-ready-v1
           key: gd32-sources-v1-${{ runner.os }}-${{ hashFiles('sources/gigadevice/*.lock.json') }}
           restore-keys: |
             gd32-sources-v1-${{ runner.os }}-
@@ -92,7 +93,12 @@ jobs:
         run: scripts/check-rust.sh
 
       - name: 同步 generated 发布树
-        run: scripts/sync-generated-repository.sh .cache/generated/mcu-metapac-publication-v1 "${GENERATED_REPOSITORY_DIR}"
+        run: |
+          if [[ -d .cache/generated/mcu-metapac-publication-v1 ]]; then
+            scripts/sync-generated-repository.sh .cache/generated/mcu-metapac-publication-v1 "${GENERATED_REPOSITORY_DIR}"
+          else
+            echo "来源与流水线均无变化，无需同步 generated 发布树。"
+          fi
 
       - name: 提交来源变化
         env:

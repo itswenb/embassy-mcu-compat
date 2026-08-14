@@ -20,12 +20,9 @@ cd "$repo_root"
 update_plan=".cache/research/gigadevice/update-plan.json"
 python3 scripts/plan_gigadevice_update.py --output "$update_plan"
 action="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1], encoding="utf-8"))["action"])' "$update_plan")"
-if [[ "$action" == "noop" ]]; then
-    echo "官网来源与派生流水线均无变化，跳过下载、生成和编译。"
-    exit 0
-fi
+source_cache_marker=".cache/research/gigadevice/source-cache-ready-v1"
 
-if [[ "$action" == "materialize" ]]; then
+if [[ "$action" == "materialize" || ! -f "$source_cache_marker" ]]; then
     for variable in \
         GIGADEVICE_ACCEPT_SLA_GD0001 \
         GIGADEVICE_ACCEPT_SLA_GD0003 \
@@ -60,6 +57,12 @@ if [[ "$action" == "materialize" ]]; then
     python3 scripts/gigadevice_products.py
     python3 scripts/gigadevice_manuals.py --download
     python3 scripts/gigadevice_manuals.py --kind datasheet --download
+    touch "$source_cache_marker"
+fi
+
+if [[ "$action" == "noop" ]]; then
+    echo "官网来源与派生流水线均无变化，跳过生成和编译。"
+    exit 0
 fi
 
 required_upstream=(embassy stm32-data stm32-data-generated chiptool)
