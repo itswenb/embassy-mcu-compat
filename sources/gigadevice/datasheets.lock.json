@@ -1,0 +1,956 @@
+{
+  "datasheets": [
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 624,
+      "filename": "624-1-GD32A103xx%20Datasheet_Rev1.2.pdf",
+      "name": "GD32A103xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "814a8a7834c890a14e203662ff06f39c3fcd7e72887dc36ab5e1d86026217855",
+      "size": 2173206,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32A103xx%20Datasheet_Rev1.2.pdf",
+      "version": "1.2"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 531,
+      "filename": "531-1-GD32A490xx%20Datasheet_Rev1.2.pdf",
+      "name": "GD32A490xx Datasheet",
+      "published": "2025-02-10",
+      "selected_path_type": 1,
+      "sha256": "02db9ec7abf17212e4903897839f4753f696968c0e2d23cc45d35d2b419e8505",
+      "size": 3468478,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32A490xx%20Datasheet_Rev1.2.pdf",
+      "version": "1.2"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 443,
+      "filename": "443-1-GD32A503xx_Datasheet_Rev2.0.pdf",
+      "name": "GD32A503xx Datasheet",
+      "published": "2024-11-12",
+      "selected_path_type": 1,
+      "sha256": "87697cdc4a937de070b5dc41744641e9bf0d6646914ff6c852000a929fe92d9f",
+      "size": 2707897,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32A503xx_Datasheet_Rev2.0.pdf",
+      "version": "2.0"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 630,
+      "filename": "630-1-GD32A508xx_Datasheet_Rev1.3.pdf",
+      "name": "GD32A508xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "1f2ac476b93c78eca08bd649d813d15122b0e5783376687619cd2cdf1362a922",
+      "size": 1856685,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32A508xx_Datasheet_Rev1.3.pdf",
+      "version": "1.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 555,
+      "filename": "555-1-GD32A513xx_Datasheet_Rev1.4.pdf",
+      "name": "GD32A513xx Datasheet",
+      "published": "2024-11-12",
+      "selected_path_type": 1,
+      "sha256": "8620ed50d54444c9462e296cf4a6d513fe6526b0ec2beaf6397c31018438f30b",
+      "size": 2693138,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32A513xx_Datasheet_Rev1.4.pdf",
+      "version": "1.4"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 275,
+      "filename": "275-1-GD32C103xx%20Datasheet_Rev2.0.pdf",
+      "name": "GD32C103xx Datasheet",
+      "published": "2026-02-04",
+      "selected_path_type": 1,
+      "sha256": "bd4df4decb53d015efead52624ef47b8be5725504769b0187440bc4510a61609",
+      "size": 2217189,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32C103xx%20Datasheet_Rev2.0.pdf",
+      "version": "2.0"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 380,
+      "filename": "380-1-GD32C113xx%20Datasheet_Rev1.6.pdf",
+      "name": "GD32C113xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "f746e237e3a1e57d45cb99b9d47a96025df6ccb1461dd4e755020aeda43bcb06",
+      "size": 1978196,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32C113xx%20Datasheet_Rev1.6.pdf",
+      "version": "1.6"
+    },
+    {
+      "available_path_types": [
+        1,
+        2
+      ],
+      "document_id": 698,
+      "filename": "698-1-GD32C231xx_Datasheet_Rev1.7.pdf",
+      "name": "GD32C231xx Datasheet",
+      "published": "2026-06-16",
+      "selected_path_type": 1,
+      "sha256": "eeaa5c19a9894379341b5d7eb79bc3b196bd5cd332df8792255e0c5ec8c16131",
+      "size": 2519843,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32C231xx_Datasheet_Rev1.7.pdf",
+      "version": "1.7"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 235,
+      "filename": "235-1-GD32E103xx%20Datasheet_Rev2.1.pdf",
+      "name": "GD32E103xx Datasheet",
+      "published": "2026-06-09",
+      "selected_path_type": 1,
+      "sha256": "8d94da1362004f0c1e7222dfbbe613b8a8cf04cc8bdffb4dcdad0e8326976a37",
+      "size": 1337711,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E103xx%20Datasheet_Rev2.1.pdf",
+      "version": "2.1"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 379,
+      "filename": "379-1-GD32E113xx%20Datasheet_Rev1.5.pdf",
+      "name": "GD32E113xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "b846751c51fed4d21d30e1a35803fc3aad2e8add81821e834fee05cf41120a2e",
+      "size": 1986732,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E113xx%20Datasheet_Rev1.5.pdf",
+      "version": "1.5"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 202,
+      "filename": "202-1-GD32E230xx%20Datasheet_Rev3.1.pdf",
+      "name": "GD32E230xx Datasheet",
+      "published": "2026-03-02",
+      "selected_path_type": 1,
+      "sha256": "aa564218bdad841f82027ae85559d66301004c204001109e9b646c86f0d172c2",
+      "size": 1415675,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E230xx%20Datasheet_Rev3.1.pdf",
+      "version": "3.1"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 569,
+      "filename": "569-1-GD32E231xx%20Datasheet_Rev1.6.pdf",
+      "name": "GD32E231xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "5a4e87b3972b4ec3db4a109b54b5ebc7679db5d91a23e5965fa8594f0d77b058",
+      "size": 998225,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E231xx%20Datasheet_Rev1.6.pdf",
+      "version": "1.6"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 553,
+      "filename": "553-1-GD32E235xx%20Datasheet_Rev2.2.pdf",
+      "name": "GD32E235xx Datasheet",
+      "published": "2026-01-07",
+      "selected_path_type": 1,
+      "sha256": "ac2e0effac16831a5d96b0a76c1147ee5a60b947202d08c45ff24f1162f62dfa",
+      "size": 1353513,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E235xx%20Datasheet_Rev2.2.pdf",
+      "version": "2.2"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 496,
+      "filename": "496-1-GD32E502xx_Datasheet_Rev1.5.pdf",
+      "name": "GD32E502xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "053550e4931bc825db3ee286254e4edb48fd524ff7a53bf62ffa3d3036dff878",
+      "size": 2099220,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E502xx_Datasheet_Rev1.5.pdf",
+      "version": "1.5"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 250,
+      "filename": "250-1-GD32E503xx_Datasheet_Rev2.5.pdf",
+      "name": "GD32E503xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "4e4f81de3e9aa93ec43055bfc102f81e5573df72e5f657cff2150b87edb1d432",
+      "size": 1959877,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E503xx_Datasheet_Rev2.5.pdf",
+      "version": "2.5"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 251,
+      "filename": "251-1-GD32E505xx_Datasheet_Rev2.3.pdf",
+      "name": "GD32E505xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "09f353edd7b0dc46ee949a886579bb0f2c79e325dfa3343196c121118f3e1452",
+      "size": 1921613,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E505xx_Datasheet_Rev2.3.pdf",
+      "version": "2.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 252,
+      "filename": "252-1-GD32E507xx_Datasheet_Rev2.1.pdf",
+      "name": "GD32E507xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "d6dcb0e0ec38ee973d3ddd5172ee1cbe57b7ef501aabbdff78ed0d30682074f6",
+      "size": 1906312,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E507xx_Datasheet_Rev2.1.pdf",
+      "version": "2.1"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 281,
+      "filename": "281-1-GD32E508xx_Datasheet_Rev1.8.pdf",
+      "name": "GD32E508xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "cf4abdbb1660956e9d4bb3b713c285df4f32941853a9d08c22331cfabd5220b9",
+      "size": 1901326,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E508xx_Datasheet_Rev1.8.pdf",
+      "version": "1.8"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 599,
+      "filename": "599-1-GD32E513xx_Datasheet_Rev1.6.pdf",
+      "name": "GD32E513xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "71d1f139e77bc597e099655f5e439cff2102a0e71c98726402577ec0c2924220",
+      "size": 1839753,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E513xx_Datasheet_Rev1.6.pdf",
+      "version": "1.6"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 600,
+      "filename": "600-1-GD32E517xx_Datasheet_Rev1.4.pdf",
+      "name": "GD32E517xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "ec95930c68f4542d1743dca31b4ad5ff3c269cf4ccaf1e17fc2d0c8d01f1a175",
+      "size": 1880624,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E517xx_Datasheet_Rev1.4.pdf",
+      "version": "1.4"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 601,
+      "filename": "601-1-GD32E518xx_Datasheet_Rev1.3.pdf",
+      "name": "GD32E518xx Datasheet",
+      "published": "2026-01-27",
+      "selected_path_type": 1,
+      "sha256": "45f96307b5aa4ac92833c7acdbffa03d4d67781b3c3dbefd334173223aa66fa0",
+      "size": 1974801,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32E518xx_Datasheet_Rev1.3.pdf",
+      "version": "1.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 236,
+      "filename": "236-1-GD32F101xx%20Datasheet_Rev3.3.pdf",
+      "name": "GD32F101xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "8d5f60d5b5f8c33a4be60ca1aa9e9b9cce47ee8737a217d5521cb58ac4f84903",
+      "size": 1928829,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F101xx%20Datasheet_Rev3.3.pdf",
+      "version": "3.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 237,
+      "filename": "237-1-GD32F103xx%20Datasheet_Rev3.3.pdf",
+      "name": "GD32F103xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "5f50b2250d9c814634e86f10c727a8a029c12d0a852d9abf1416c40a94503c96",
+      "size": 1752831,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F103xx%20Datasheet_Rev3.3.pdf",
+      "version": "3.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 238,
+      "filename": "238-1-GD32F105xx%20Datasheet_Rev2.3.pdf",
+      "name": "GD32F105xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "89c764f9d642f5a157bcdcdd041653c20278f647e245516639eb8719438bcb2c",
+      "size": 1597952,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F105xx%20Datasheet_Rev2.3.pdf",
+      "version": "2.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 239,
+      "filename": "239-1-GD32F107xx%20Datasheet_Rev2.3.pdf",
+      "name": "GD32F107xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "4b79bd8cd963d52636df49dc6b4d86fb48dfd684eb12c847bc75cec6ab49acd2",
+      "size": 1897270,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F107xx%20Datasheet_Rev2.3.pdf",
+      "version": "2.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 231,
+      "filename": "231-1-GD32F130xx%20Datasheet%20Rev4.3.pdf",
+      "name": "GD32F130xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "237fa10d8ab044fb92a6cecbc97df9c60f89fdec77ed07f6edebdea2c5e0b3d3",
+      "size": 2557024,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F130xx%20Datasheet%20Rev4.3.pdf",
+      "version": "4.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 156,
+      "filename": "156-1-GD32F150xx%20Datasheet%20Rev4.0.pdf",
+      "name": "GD32F150xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "07a0aafaf83c47141ffc6370dac320a9fc70ae6d5e0865c65d91836cfdd15cfc",
+      "size": 2297394,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F150xx%20Datasheet%20Rev4.0.pdf",
+      "version": "4.0"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 190,
+      "filename": "190-1-GD32F205xx_Datasheet_Rev3.0.pdf",
+      "name": "GD32F205xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "9ca82c8567d01c6900aa836feb7001f24463cebb89618e619a389cea9fe8d7b8",
+      "size": 1163097,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F205xx_Datasheet_Rev3.0.pdf",
+      "version": "3.0"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 192,
+      "filename": "192-1-GD32F207xx_Datasheet_Rev3.0.pdf",
+      "name": "GD32F207xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "68e13fff22e7e9e7c61610f9754bdab09a5eae5f2e515e62e9fb83562df976c6",
+      "size": 1299985,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F207xx_Datasheet_Rev3.0.pdf",
+      "version": "3.0"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 544,
+      "filename": "544-1-GD32F303xB%20Datasheet_Rev1.1.pdf",
+      "name": "GD32F303xB Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "a485cbdce30f6e52f787537220230324421cbfd4864fc74f2d852830bf602e74",
+      "size": 3028442,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F303xB%20Datasheet_Rev1.1.pdf",
+      "version": "1.1"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 240,
+      "filename": "240-1-GD32F303xx%20Datasheet_Rev3.3.pdf",
+      "name": "GD32F303xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "ca6f4036e52e7429e70a01346e6c5aa42b95dd5aa17a393ea84599de626cadd3",
+      "size": 3301897,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F303xx%20Datasheet_Rev3.3.pdf",
+      "version": "3.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 241,
+      "filename": "241-1-GD32F305xx%20Datasheet_Rev3.1.pdf",
+      "name": "GD32F305xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "75bffb8c552798f3bf8b28f6f8f14432f1965bd9008e8e26944486bab0bf28c6",
+      "size": 2912652,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F305xx%20Datasheet_Rev3.1.pdf",
+      "version": "3.1"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 242,
+      "filename": "242-1-GD32F307xx%20Datasheet_Rev3.1.pdf",
+      "name": "GD32F307xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "f33f12f137ec74bcfb3649a273bf315872544ddaf3ac5c0484929b75d7f02e91",
+      "size": 2794086,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F307xx%20Datasheet_Rev3.1.pdf",
+      "version": "3.1"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 308,
+      "filename": "308-1-GD32F310xx%20Datasheet%20Rev2.2.pdf",
+      "name": "GD32F310xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "55b1ac2ad9e3d72a1963a6f64fae2b3568748864a0784f71b966bac4ae84df90",
+      "size": 2794984,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F310xx%20Datasheet%20Rev2.2.pdf",
+      "version": "2.2"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 134,
+      "filename": "134-1-GD32F330xx%20Datasheet%20Rev3.4.pdf",
+      "name": "GD32F330xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+      "size": 2882177,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F330xx%20Datasheet%20Rev3.4.pdf",
+      "version": "3.4"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 133,
+      "filename": "133-1-GD32F350xx%20Datasheet%20Rev3.3.pdf",
+      "name": "GD32F350xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "928a751b1171b901fb1d9242e265e9419b864b642ce4ee4eee72c23364cca280",
+      "size": 2828930,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F350xx%20Datasheet%20Rev3.3.pdf",
+      "version": "3.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 243,
+      "filename": "243-1-GD32F403xx%20Datasheet_Rev3.3.pdf",
+      "name": "GD32F403xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "244fd6598ecba2d2e1e62b26df715d2184476ba62ac07bb0b85791c24d442155",
+      "size": 3560394,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F403xx%20Datasheet_Rev3.3.pdf",
+      "version": "3.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 108,
+      "filename": "108-1-GD32F405xx_Datasheet_Rev2.8.pdf",
+      "name": "GD32F405xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "ca6d4c4f2cdc95d3e64a96a9cb61c6243817385cb9f9128d9aa37fceeacda4e8",
+      "size": 3460031,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F405xx_Datasheet_Rev2.8.pdf",
+      "version": "2.8"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 110,
+      "filename": "110-1-GD32F407xx_Datasheet_Rev3.0.pdf",
+      "name": "GD32F407xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "f77e32e1c3e79670776e84a640185996d65102d6304a046deae21136b4efb2ed",
+      "size": 4348937,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F407xx_Datasheet_Rev3.0.pdf",
+      "version": "3.0"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 350,
+      "filename": "350-1-GD32F425xx_Datasheet_Rev1.8.pdf",
+      "name": "GD32F425xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "b370da7b4ba62e0de2e442123ba9859b748764c58f080788a3dbbc1ffcc0b8cc",
+      "size": 3503645,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F425xx_Datasheet_Rev1.8.pdf",
+      "version": "1.8"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 351,
+      "filename": "351-1-GD32F427xx_Datasheet_Rev1.9.pdf",
+      "name": "GD32F427xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "c0d64ec0c92cd3636bec706e1389019ccb436fb40a8d5c1626fb64edc7c553ee",
+      "size": 4352349,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F427xx_Datasheet_Rev1.9.pdf",
+      "version": "1.9"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 100,
+      "filename": "100-1-GD32F450xx_Datasheet_Rev2.9.pdf",
+      "name": "GD32F450xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "2ba61a82215f3e0c822a734516ddcc7eb5c1406dbace62f8dfb400c776fc9b12",
+      "size": 3850945,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F450xx_Datasheet_Rev2.9.pdf",
+      "version": "2.9"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 352,
+      "filename": "352-1-GD32F470xx_Datasheet_Rev2.2.pdf",
+      "name": "GD32F470xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "19b76c644705999f5062cc780009ade9bd662fc7db4d122029fd8efcf8b73888",
+      "size": 4049822,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F470xx_Datasheet_Rev2.2.pdf",
+      "version": "2.2"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 148,
+      "filename": "148-1-GD32F502xx_Datasheet_Rev0.9RC6.pdf",
+      "name": "GD32F502xx Datasheet",
+      "published": "2026-04-02",
+      "selected_path_type": 1,
+      "sha256": "d852918b81d619f0560ed8deddbdb31a77840946d4d591bcf962e5202b9c0008",
+      "size": 2941844,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F502xx_Datasheet_Rev0.9RC6.pdf",
+      "version": "0.9RC6"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 743,
+      "filename": "743-1-GD32F503xx_Datasheet_Rev0.9RC6.pdf",
+      "name": "GD32F503xx Datasheet",
+      "published": "2026-04-02",
+      "selected_path_type": 1,
+      "sha256": "3b002573be086e84149c213b0957478190fda61f9b6b8919e7aad75cea27d4de",
+      "size": 3291128,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F503xx_Datasheet_Rev0.9RC6.pdf",
+      "version": "0.9RC6"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 744,
+      "filename": "744-1-GD32F505xx_Datasheet_Rev0.9RC5.pdf",
+      "name": "GD32F505xx Datasheet",
+      "published": "2026-04-02",
+      "selected_path_type": 1,
+      "sha256": "26e07a1bdb5180a4b99abadb8ae3825949eb25581aa4adbc1a15383aea90f523",
+      "size": 3052021,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F505xx_Datasheet_Rev0.9RC5.pdf",
+      "version": "0.9RC5"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 557,
+      "filename": "557-1-GD32F527xx%20Datasheet_Rev1.8.pdf",
+      "name": "GD32F527xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "c8bfe81e73f611f3c725f4af8e2232f6bfa3589c34f8953f5693f263519e24c8",
+      "size": 2642077,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F527xx%20Datasheet_Rev1.8.pdf",
+      "version": "1.8"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 312,
+      "filename": "312-1-GD32F5HCxx%20Datasheet_Rev1.0.pdf",
+      "name": "GD32F5HCxx Datasheet",
+      "published": "2026-04-21",
+      "selected_path_type": 1,
+      "sha256": "235d7501405376218e5eb70f8fbfd20be7ad3ccb12259285dbe9b859c545a786",
+      "size": 2834280,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F5HCxx%20Datasheet_Rev1.0.pdf",
+      "version": "1.0"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 656,
+      "filename": "656-1-GD32G553xx_Datasheet_Rev2.0.pdf",
+      "name": "GD32G553xx Datasheet",
+      "published": "2026-03-25",
+      "selected_path_type": 1,
+      "sha256": "6c6e2fd6af9a20e634622616859dda94014c527687994b6805f58f0bd4a626eb",
+      "size": 3878462,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32G553xx_Datasheet_Rev2.0.pdf",
+      "version": "2.0"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 473,
+      "filename": "473-1-GD32H737xx%20Datasheet_Rev2.0.pdf",
+      "name": "GD32H737xx Datasheet",
+      "published": "2026-07-17",
+      "selected_path_type": 1,
+      "sha256": "dea45b6a19b330510236e36b530a3e427050efea3a807d2eef33165cc527f025",
+      "size": 1990165,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32H737xx%20Datasheet_Rev2.0.pdf",
+      "version": "2.0"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 474,
+      "filename": "474-1-GD32H757xx%20Datasheet_Rev2.1.pdf",
+      "name": "GD32H757xx Datasheet",
+      "published": "2026-07-17",
+      "selected_path_type": 1,
+      "sha256": "84fdb6748a7f89cb56dffb7d81106b5356e0d3b3ff72c61b51d0e3c28bf5e97c",
+      "size": 1736052,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32H757xx%20Datasheet_Rev2.1.pdf",
+      "version": "2.1"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 475,
+      "filename": "475-1-GD32H759xx%20Datasheet_Rev2.3.pdf",
+      "name": "GD32H759xx Datasheet",
+      "published": "2026-07-17",
+      "selected_path_type": 1,
+      "sha256": "12995cf8ac78b6e3528754b8b15577308117f4e55b37b487af79672435591daf",
+      "size": 1733815,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32H759xx%20Datasheet_Rev2.3.pdf",
+      "version": "2.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 652,
+      "filename": "652-1-GD32H75Exx_Datasheet_Rev1.5.pdf",
+      "name": "GD32H75Exx Datasheet",
+      "published": "2026-05-19",
+      "selected_path_type": 1,
+      "sha256": "49afeac55dd07920e3d70ace0bf18a8ef5a5fb5f124793ef265ada91874ce014",
+      "size": 3596081,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32H75Exx_Datasheet_Rev1.5.pdf",
+      "version": "1.5"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 289,
+      "filename": "289-1-GD32L233xx_Datasheet_Rev2.4.pdf",
+      "name": "GD32L233xx Datasheet",
+      "published": "2026-07-27",
+      "selected_path_type": 1,
+      "sha256": "58d9c55e71ed6e313dec92b214011057059df15aa28a2acdcd605e230e7f36e2",
+      "size": 2382404,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32L233xx_Datasheet_Rev2.4.pdf",
+      "version": "2.4"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 581,
+      "filename": "581-1-GD32L235xx_Datasheet_Rev2.2.pdf",
+      "name": "GD32L235xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "903ed4f7febeb32f19134898261d14443d8f9005f1fc1615b19309d613e520e9",
+      "size": 2799127,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32L235xx_Datasheet_Rev2.2.pdf",
+      "version": "2.2"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 767,
+      "filename": "767-1-GD32M531xx%20Datasheet_Rev1.2.pdf",
+      "name": "GD32M531xx Datasheet",
+      "published": "2026-06-23",
+      "selected_path_type": 1,
+      "sha256": "e8bdc91a796faeee3376985701ef1b0d4ce79ef7799cf1c67bb026226dcbc62b",
+      "size": 1346090,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32M531xx%20Datasheet_Rev1.2.pdf",
+      "version": "1.2"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 287,
+      "filename": "287-1-GD32VF103_Datasheet_Rev2.3.pdf",
+      "name": "GD32VF103 Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "974d9ebf07ac22524bc50d31b0c57ffff3c53d5e7c6fe3ecb352eebebe429a86",
+      "size": 1961459,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32VF103_Datasheet_Rev2.3.pdf",
+      "version": "2.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 221,
+      "filename": "221-1-GD32VF103_Datasheet_Rev1.7.pdf",
+      "name": "GD32VF103xx Datasheet",
+      "published": "2023-01-03",
+      "selected_path_type": 1,
+      "sha256": "d3cc2541cefa3a0d0bc75eb60214eff19897477a0f76e51a7f9efcc3f9a60c61",
+      "size": 2358981,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32VF103_Datasheet_Rev1.7.pdf",
+      "version": "1.7"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 678,
+      "filename": "678-1-GD32VW553-MD1%20datasheet%20Rev1.1%2020250225.pdf",
+      "name": "GD32VW553-MD1 Datasheet",
+      "published": "2025-02-25",
+      "selected_path_type": 1,
+      "sha256": "ccb69c83fb673f6880c5542343d325179f66cb5047cdbf8e1f56494d6e2abf60",
+      "size": 984044,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32VW553-MD1%20datasheet%20Rev1.1%2020250225.pdf",
+      "version": "1.1"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 676,
+      "filename": "676-1-GD32VW553-MINI%20Datasheet%20Rev1.3.pdf",
+      "name": "GD32VW553-MINI Datasheet",
+      "published": "2025-06-16",
+      "selected_path_type": 1,
+      "sha256": "8eb851f0c1697a9f5510d55f668dddee93d86f2af230435cf3b4b909470befac",
+      "size": 1433644,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32VW553-MINI%20Datasheet%20Rev1.3.pdf",
+      "version": "1.3"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 677,
+      "filename": "677-1-GD32VW553-UNIFI%20Datasheet%20Rev1.2.pdf",
+      "name": "GD32VW553-UNIFI Datasheet",
+      "published": "2025-06-16",
+      "selected_path_type": 1,
+      "sha256": "70c341b5771fe06de9cf9b40d11a30ba5d116943d65508c612542862e03a2f71",
+      "size": 1022265,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32VW553-UNIFI%20Datasheet%20Rev1.2.pdf",
+      "version": "1.2"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 521,
+      "filename": "521-1-GD32VW553xx%20Datasheet_Rev1.6.pdf",
+      "name": "GD32VW553xx Datasheet",
+      "published": "2026-06-09",
+      "selected_path_type": 1,
+      "sha256": "76eb013a7aaf9cede1eef5f277856234ebacaf603de0d6f9da3a3ce6609b0b62",
+      "size": 1646764,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32VW553xx%20Datasheet_Rev1.6.pdf",
+      "version": "1.6"
+    },
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 279,
+      "filename": "279-1-GD32W515xx%20Datasheet_Rev1.9.pdf",
+      "name": "GD32W515xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "36c079f51262c1140f671e806b9a74583275efcff7592d04c15ab760962bc45f",
+      "size": 1969816,
+      "status": "active",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32W515xx%20Datasheet_Rev1.9.pdf",
+      "version": "1.9"
+    }
+  ],
+  "document_kind": "数据手册",
+  "redistribution": "原始 PDF 仅作来源缓存；公开仓库只提交哈希、定位信息和事实型派生数据。",
+  "schema_version": 1,
+  "source_pages": [
+    "https://www.gd32mcu.com/cn/download/5"
+  ]
+}

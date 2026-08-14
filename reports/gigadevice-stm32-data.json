@@ -1,0 +1,12 @@
+{
+  "chips": 632,
+  "chips_with_memory": 610,
+  "memory_regions": 1508,
+  "memory_sha256": "a1748c231f25411a6a1f766737831c228f45042d5a673c9e4fd2e7744955b035",
+  "models_sha256": "8181922b6aef25903330d6e3c7c1544650dd60108fd18aa535903468ffe9f550",
+  "output": ".cache/generated/gigadevice-stm32-data-v1",
+  "output_tree_sha256": "58b669c5f3431596518ba89f153180919ee6531343fb3f0f40f5075e0432368c",
+  "register_files": 545,
+  "schema_version": 1,
+  "variants_sha256": "0b091312471229dd053dbb9fb84f3599ac1edd8e67443e836fe5e5c1cba1eee4"
+}

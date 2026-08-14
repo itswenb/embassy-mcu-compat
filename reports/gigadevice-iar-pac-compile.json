@@ -1,0 +1,56 @@
+{
+  "pacs": [
+    {
+      "chiptool_revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678",
+      "details": {
+        "key": "cfa925867b53a4a72a658ebfb2f4c25002041790536cbf4c4eed423ad3716e4c",
+        "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
+        "schema_version": 1,
+        "source_sha256": "e91edb52c906f5bd215f1d08855466cdc3ede647f899b6ff0c2ed66abb6aa9ce",
+        "stub_version": 1,
+        "success": true
+      },
+      "path": "cxarm-9.70.4/arm/config/debugger/GD/GD32A714x.svd",
+      "source_pack_name": "IAR Arm Device Support",
+      "status": "cached",
+      "svd_sha256": "a8fd14f05cc899b284765b58544ce59f3b33fed2b69329db6fe04eb67f970d15"
+    },
+    {
+      "chiptool_revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678",
+      "details": {
+        "key": "86d282e60d345deac4c9d55eb82f35021414707046089d0da16f72602cc488af",
+        "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
+        "schema_version": 1,
+        "source_sha256": "b6292cf278fbf0f3fe2c855d85c93a5118d51030010f295f61178107d6fc5c0d",
+        "stub_version": 1,
+        "success": true
+      },
+      "path": "cxarm-9.70.4/arm/config/debugger/GD/GD32A71x.svd",
+      "source_pack_name": "IAR Arm Device Support",
+      "status": "cached",
+      "svd_sha256": "26fca717b9fe0438d8d8060d94dbefa125869c469193029242e82817babde923"
+    },
+    {
+      "chiptool_revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678",
+      "details": {
+        "key": "cfa925867b53a4a72a658ebfb2f4c25002041790536cbf4c4eed423ad3716e4c",
+        "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
+        "schema_version": 1,
+        "source_sha256": "e91edb52c906f5bd215f1d08855466cdc3ede647f899b6ff0c2ed66abb6aa9ce",
+        "stub_version": 1,
+        "success": true
+      },
+      "path": "cxarm-9.70.4/arm/config/debugger/GD/GD32A72_A74x.svd",
+      "source_pack_name": "IAR Arm Device Support",
+      "status": "cached",
+      "svd_sha256": "a1a3c6fd1f4841425f1f28c36f3ddaf26e8bcac3e8a671171673b670d6677c16"
+    }
+  ],
+  "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
+  "schema_version": 1,
+  "summary": {
+    "compiled_or_cached": 3,
+    "failed": 0,
+    "pac_outputs": 3
+  }
+}

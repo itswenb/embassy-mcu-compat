@@ -1,0 +1,10 @@
+{
+  "products": 44,
+  "redistribution": "原始网页仅作来源缓存；仓库只提交哈希和事实型产品索引。",
+  "schema_version": 1,
+  "source": {
+    "sha256": "b5cdd81a2c9faad959a89145fc011a0efd9357c155d9958f7087536cea6c28a5",
+    "size": 1362566,
+    "url": "https://www.gigadevice.com/product/mcu/automotive-mcus/gd32a7xx-series"
+  }
+}

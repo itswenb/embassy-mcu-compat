@@ -1,0 +1,20 @@
+{
+  "generator": {
+    "repository": "https://github.com/itswenb/cmsis-rust-target-db",
+    "revision": "947e8a96d462801e827ed76408c8d8457326f6a1"
+  },
+  "input": {
+    "filename": "devices.jsonl",
+    "sha256": "a632f42467b3e98c6e4f1c98905ec216ff13afda25543e5a63b5d92b8b116a80"
+  },
+  "outputs": {
+    "devices_sha256": "ceefd32ee9ad2e7a93601f3f3eb3f76861d2fafc5f6ec6e034a5d814cf6d0ed7",
+    "metadata_sha256": "8a666fb786a7fea0b5f1b1a0761da77fd21ebc379a7f5b7f8b2e42850a54766c"
+  },
+  "schema_version": 1,
+  "summary": {
+    "pack_count": 29,
+    "record_count": 598,
+    "unique_device_count": 598
+  }
+}

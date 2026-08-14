@@ -1,0 +1,20 @@
+{
+  "builder": {
+    "agreement_url": "https://www.gd32mcu.com/download/agree/box_id/15/document_id/552/path_type/1",
+    "document_id": 552,
+    "filename": "GD32EB_v1.5.11_Rel(1).7z",
+    "name": "GD32 Embedded Builder",
+    "published": "2026-07-24",
+    "sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+    "size": 1174271328,
+    "status": "active",
+    "url": "https://www.gd32mcu.com/data/documents/toolSoftware/GD32EB_v1.5.11_Rel(1).7z",
+    "version": "1.5.11_Rel_r41150"
+  },
+  "license": {
+    "agreement": "SLA-GD0003-version1.1",
+    "redistribution": "Builder 原始归档与 XML 仅作本地来源和交叉验证，不随生成仓库发布。"
+  },
+  "schema_version": 1,
+  "source_page": "https://www.gd32mcu.com/cn/download/7?kw=Embedded%20Builder"
+}

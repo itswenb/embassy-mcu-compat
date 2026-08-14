@@ -1,0 +1,7 @@
+{
+  "compile_report_sha256": "9b3d6514f3e8947ea8090faaf2fc5253cbc66f742f61916bd741304e895c59cb",
+  "native_chips": 680,
+  "native_tree_sha256": "fe40023ea71e0140d9118fee4caaeb9c67f4e47ad5f960022bc59cdd09552869",
+  "patch_tree_sha256": "4f3018cbd24472daa79e81c72bccf1e58c8613af88000779732472fea00eb071",
+  "schema_version": 1
+}

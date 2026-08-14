@@ -16,10 +16,12 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     env:
-      CMSIS_TOOLBOX_VERSION: "2.14.1"
-      CMSIS_TOOLBOX_SHA256: "c83735c0c1dfd95b2865e908c7adb8cd5d4fd7ec61da96990072d9e77b3e3e25"
+      GIGADEVICE_ACCEPT_SLA_GD0001: "1"
+      GIGADEVICE_ACCEPT_SLA_GD0003: "1"
+      GIGADEVICE_ACCEPT_SLA_GD0006: "1"
+      GENERATED_REPOSITORY_DIR: ${{ github.workspace }}/.cache/generated-repository
 
     steps:
       - name: 检出仓库
@@ -27,51 +29,70 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: 检出 generated 仓库
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: itswenb/embassy-mcu-compat-generated
+          token: ${{ secrets.GENERATED_REPO_TOKEN }}
+          path: .cache/generated-repository
+          persist-credentials: false
+
       - name: 安装固定 Rust 工具链
         run: |
-          rustup toolchain install nightly-2025-12-11 --profile minimal
+          rustup toolchain install nightly-2025-12-11 --profile minimal --component rust-src --component rustfmt --component clippy --target riscv32imac-unknown-none-elf --target riscv32imafc-unknown-none-elf
           rustup default nightly-2025-12-11
 
-      - name: 安装固定 CMSIS-Toolbox
-        shell: bash
+      - name: 安装来源处理工具
         run: |
-          set -euo pipefail
-          mkdir -p "${RUNNER_TEMP}/cmsis-toolbox"
-          curl --fail --location --silent --show-error \
-            --output "${RUNNER_TEMP}/cmsis-toolbox.tar.gz" \
-            "https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases/download/${CMSIS_TOOLBOX_VERSION}/cmsis-toolbox-linux-amd64.tar.gz"
-          printf '%s  %s\n' \
-            "${CMSIS_TOOLBOX_SHA256}" \
-            "${RUNNER_TEMP}/cmsis-toolbox.tar.gz" \
-            | sha256sum -c -
-          tar -xzf "${RUNNER_TEMP}/cmsis-toolbox.tar.gz" \
-            -C "${RUNNER_TEMP}/cmsis-toolbox" \
-            --strip-components=1
-          chmod -R +x "${RUNNER_TEMP}/cmsis-toolbox/bin"
-          echo "${RUNNER_TEMP}/cmsis-toolbox/bin" >> "$GITHUB_PATH"
+          sudo apt-get update
+          sudo apt-get install --yes libarchive-tools libdigest-sha-perl poppler-utils
 
-      - name: 锁定目标数据库最新 commit
-        shell: bash
-        run: |
-          set -euo pipefail
-          revision="$(git ls-remote https://github.com/itswenb/cmsis-rust-target-db.git HEAD | awk 'NR == 1 { print $1 }')"
-          [[ "${revision}" =~ ^[0-9a-f]{40}$ ]]
-          echo "TARGET_DB_REVISION=${revision}" >> "$GITHUB_ENV"
+      - name: 恢复项目内来源缓存
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            .cache/research/gigadevice/official-firmware
+            .cache/research/gigadevice/firmware-sources-v1
+            .cache/research/gigadevice/addons
+            .cache/research/gigadevice/addon-packs-v1
+            .cache/research/gigadevice/catalog
+            .cache/research/gigadevice/manuals
+            .cache/research/gigadevice/manual-text-v1
+            .cache/research/gigadevice/manual-dma-tsv-v1
+            .cache/research/gigadevice/datasheets
+            .cache/research/gigadevice/datasheet-text-v1
+            .cache/research/gigadevice/tools/*.7z
+            .cache/research/gigadevice/builder-resources
+            .cache/research/gigadevice/builder-firmware-v1
+            .cache/research/gigadevice/builder-firmware-adapter-v1
+            .cache/research/gigadevice/builder-firmware-cpp-v1
+            .cache/research/gigadevice/programmer-v1
+            .cache/research/gigadevice/iar
+            .cache/research/gigadevice/iar-device-support-v1
+            .cache/research/repos
+            .cache/tools/cmsis-rust-target-db-target
+            .cache/tools/chiptool-target
+            .cache/tools/gigadevice-metapac-validation-target
+            .cache/tools/gigadevice-feature-metapac-target
+            .cache/research/gigadevice/normalized-svd-v4
+            .cache/research/gigadevice/chiptool-svd-v1
+            .cache/research/gigadevice/pac-compile-v1
+            .cache/research/gigadevice/firmware-cpp-v1
+            .cache/research/gigadevice/firmware-svd-v1
+            .cache/research/gigadevice/chiptool-firmware-v1
+            .cache/research/gigadevice/firmware-pac-compile-v1
+          key: gd32-sources-v1-${{ runner.os }}-${{ hashFiles('sources/gigadevice/*.lock.json') }}
+          restore-keys: |
+            gd32-sources-v1-${{ runner.os }}-
 
-      - name: 更新并校验全部来源
-        shell: bash
-        run: |
-          set -euo pipefail
-          cargo run --locked --release -- sources update \
-            --target-db-revision "${TARGET_DB_REVISION}" \
-            --cache-dir .cache/sources
-          cargo run --locked --release -- audit \
-            --update-derived \
-            --cache-dir .cache/sources
-          cargo run --locked --release -- audit \
-            --frozen \
-            --cache-dir .cache/sources
-          cargo test --locked --all-targets
+      - name: 同步、锁定并验证全部来源
+        run: scripts/sync-gigadevice-sources.sh
+
+      - name: 验证 Rust 原型未回退
+        run: scripts/check-rust.sh
+
+      - name: 同步 generated 发布树
+        run: scripts/sync-generated-repository.sh .cache/generated/mcu-metapac-publication-v1 "${GENERATED_REPOSITORY_DIR}"
 
       - name: 提交来源变化
         env:
@@ -79,15 +100,15 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [[ -z "$(git status --porcelain -- sources.lock.toml reports/inventory.json Cargo.lock)" ]]; then
+          if [[ -z "$(git status --porcelain -- sources/gigadevice reports)" ]]; then
             echo "来源数据没有变化。"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sources.lock.toml reports/inventory.json Cargo.lock
-          git commit -m "数据：同步 MCU 来源快照"
+          git add -- sources/gigadevice reports
+          git commit -m "数据：同步 GD32 全量来源快照"
 
           auth_header="$(printf 'x-access-token:%s' "${GITHUB_TOKEN}" | base64 -w 0)"
           trap 'git config --local --unset-all http.https://github.com/.extraheader || true' EXIT
@@ -95,4 +116,29 @@ jobs:
           unset auth_header
           git push origin "HEAD:${{ github.event.repository.default_branch }}"
           git config --local --unset-all http.https://github.com/.extraheader
+          trap - EXIT
+
+      - name: 提交 generated 变化
+        env:
+          GENERATED_REPO_TOKEN: ${{ secrets.GENERATED_REPO_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          generated_repo="${GENERATED_REPOSITORY_DIR}"
+          if [[ -z "$(git -C "${generated_repo}" status --porcelain)" ]]; then
+            echo "generated 内容没有变化。"
+            exit 0
+          fi
+
+          git -C "${generated_repo}" config user.name "github-actions[bot]"
+          git -C "${generated_repo}" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "${generated_repo}" add -A
+          git -C "${generated_repo}" commit -m "生成：同步 GD32 全型号 PAC 与 metadata"
+
+          auth_header="$(printf 'x-access-token:%s' "${GENERATED_REPO_TOKEN}" | base64 -w 0)"
+          trap 'git -C "${GENERATED_REPOSITORY_DIR}" config --local --unset-all http.https://github.com/.extraheader || true' EXIT
+          git -C "${generated_repo}" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ${auth_header}"
+          unset auth_header
+          git -C "${generated_repo}" push origin "HEAD:${{ github.event.repository.default_branch }}"
+          git -C "${generated_repo}" config --local --unset-all http.https://github.com/.extraheader
           trap - EXIT

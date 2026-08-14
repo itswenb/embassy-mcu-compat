@@ -1,0 +1,6983 @@
+{
+  "layouts": [
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 37,
+      "id": "adc-03b2fd91171cc6e6",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 241,
+      "id": "adc-2e242f52d5ff0cdd",
+      "registers": 50,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 44,
+      "id": "adc-35fc0029a020a2c6",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 39,
+      "id": "adc-3e4f2cd4cad12185",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 69,
+      "id": "adc-446b646237da2328",
+      "registers": 37,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 44,
+      "id": "adc-4e1ce4e3d56778ee",
+      "registers": 21,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 41,
+      "id": "adc-517245d27c60cd4c",
+      "registers": 21,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 69,
+      "id": "adc-7aed6f316ca548d2",
+      "registers": 36,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 42,
+      "id": "adc-939a909559e57216",
+      "registers": 21,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 44,
+      "id": "adc-9be754dced5819d9",
+      "registers": 21,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 50,
+      "id": "adc-a6e20c2c5d8751ef",
+      "registers": 27,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 44,
+      "id": "adc-a905059905f85d59",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 43,
+      "id": "adc-ae7321a4e9781553",
+      "registers": 21,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 49,
+      "id": "adc-aec32a72d82ca4f2",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 44,
+      "id": "adc-c334f3cc5f99f4ce",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 52,
+      "id": "adc-cee083bded66996f",
+      "registers": 24,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 48,
+      "id": "adc-dc7967834d0db8c3",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 44,
+      "id": "adc-de26f7734ac85ca8",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 43,
+      "id": "adc-e30ea0866854ace3",
+      "registers": 21,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 55,
+      "id": "adc-ebf8409227339791",
+      "registers": 26,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 46,
+      "id": "adc-f7ecbfdbfeebafd3",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC",
+      "exact_candidates": [],
+      "fields": 65,
+      "id": "adc-fefa8a8082a0b8fa",
+      "registers": 35,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC0",
+      "exact_candidates": [],
+      "fields": 34,
+      "id": "adc0-1210ae242b1752ad",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC0",
+      "exact_candidates": [],
+      "fields": 26,
+      "id": "adc0-293f972393629cc7",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC0",
+      "exact_candidates": [],
+      "fields": 9,
+      "id": "adc0-7b93ae04a165ca56",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC0",
+      "exact_candidates": [],
+      "fields": 29,
+      "id": "adc0-7ce7e972389a8c2e",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ADC_BASE",
+      "exact_candidates": [],
+      "fields": 27,
+      "id": "adc_base-c6505c263c58ac88",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 82,
+      "id": "afio-019d556b7eaab191",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 90,
+      "id": "afio-16e5c907425a23e0",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 84,
+      "id": "afio-3260312d9ac90f4c",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 134,
+      "id": "afio-47ec3ad5e502626d",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 28,
+      "id": "afio-7b383f0d83c13c96",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 82,
+      "id": "afio-8618a486f57bf277",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "afio-98893e2a0e8d5c47",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 19,
+      "id": "afio-a27eefcd7474b189",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 30,
+      "id": "afio-a2acf8df21155094",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 26,
+      "id": "afio-b02f8e2fd0c41a5b",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "afio-cc1ea8ba6ddf0b01",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "afio-cfb569a7a2bce923",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 92,
+      "id": "afio-d8f4232dd06d3962",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 92,
+      "id": "afio-e664a444f4f4c413",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 24,
+      "id": "afio-e8de1fbd05391882",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AFIO",
+      "exact_candidates": [],
+      "fields": 24,
+      "id": "afio-f2fe16656a701bf5",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "AXIIM",
+      "exact_candidates": [],
+      "fields": 28,
+      "id": "axiim-afbe6630e9b1a03a",
+      "registers": 40,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "BKP",
+      "exact_candidates": [],
+      "fields": 14,
+      "id": "bkp-33ccb7c2ebd1c8f9",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "BKP",
+      "exact_candidates": [],
+      "fields": 22,
+      "id": "bkp-6d5289c824f100a8",
+      "registers": 48,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "BKP",
+      "exact_candidates": [],
+      "fields": 11,
+      "id": "bkp-7944b1bcbf75e1c9",
+      "registers": 47,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "BKP",
+      "exact_candidates": [],
+      "fields": 13,
+      "id": "bkp-ddaa24e5ede1cb9a",
+      "registers": 47,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 288,
+      "id": "can-22e45210817a2bc7",
+      "registers": 75,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 108,
+      "id": "can-486a8ac4b3b1dab5",
+      "registers": 99,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 108,
+      "id": "can-52a0fbbad74da69d",
+      "registers": 99,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 110,
+      "id": "can-60cfeb9518600bc3",
+      "registers": 99,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 131,
+      "id": "can-8ce81596e4430686",
+      "registers": 40,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 107,
+      "id": "can-a4e40015d145fece",
+      "registers": 99,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 287,
+      "id": "can-a7cd778108c22a69",
+      "registers": 75,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 287,
+      "id": "can-b651ca4d56352d40",
+      "registers": 75,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 130,
+      "id": "can-c1d18d756fc223eb",
+      "registers": 103,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 108,
+      "id": "can-cb57dfc5f7bf1922",
+      "registers": 99,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN",
+      "exact_candidates": [],
+      "fields": 287,
+      "id": "can-f6d1de491d44599c",
+      "registers": 75,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAN0",
+      "exact_candidates": [],
+      "fields": 2,
+      "id": "can0-9590032f9334bf45",
+      "registers": 63,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAU",
+      "exact_candidates": [],
+      "fields": 22,
+      "id": "cau-0732936f24f6ceef",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAU",
+      "exact_candidates": [],
+      "fields": 23,
+      "id": "cau-56df9f9b3a0efb31",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAU",
+      "exact_candidates": [],
+      "fields": 21,
+      "id": "cau-90d317ec1cd9f65b",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAU",
+      "exact_candidates": [],
+      "fields": 22,
+      "id": "cau-95f6f36aad33047f",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAU",
+      "exact_candidates": [],
+      "fields": 21,
+      "id": "cau-c12c326c63038dcc",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAU",
+      "exact_candidates": [],
+      "fields": 21,
+      "id": "cau-f29b21d61b11ebaf",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CAU",
+      "exact_candidates": [],
+      "fields": 25,
+      "id": "cau-fd3db2fb0e09ff3b",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CEC",
+      "exact_candidates": [
+        {
+          "block": "CEC",
+          "kind": "cec",
+          "path": "cec_v2.json",
+          "version": "v2"
+        }
+      ],
+      "fields": 40,
+      "id": "cec-fd93ba0d7285f2a1",
+      "registers": 6,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "CEC",
+          "kind": "cec",
+          "path": "cec_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "CFMU",
+      "exact_candidates": [],
+      "fields": 21,
+      "id": "cfmu-50e649be4dd840bf",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CLA",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "cla-a852113c95fec482",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "cmp-13366a934df1d530",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 35,
+      "id": "cmp-4263a684e105216d",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 11,
+      "id": "cmp-471d770e743d87a7",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 14,
+      "id": "cmp-70d4db57965b815d",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 12,
+      "id": "cmp-73832aeba92a6b3d",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 17,
+      "id": "cmp-9ee5ac9c45c8f814",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "cmp-a4fd773685f83f60",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "cmp-d1466266cb3be3a6",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 18,
+      "id": "cmp-e12ecc50799cc9f4",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CMP",
+      "exact_candidates": [],
+      "fields": 9,
+      "id": "cmp-f9aa087576c27501",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CPDM",
+      "exact_candidates": [],
+      "fields": 6,
+      "id": "cpdm-37c60c1697463fbe",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CPDM",
+      "exact_candidates": [],
+      "fields": 6,
+      "id": "cpdm-49df1052829c2e7e",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CPTIMER",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "cptimer-ee6db8d9ff777cfc",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CPTIMERW",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "cptimerw-3395205e608661ee",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "CRC",
+      "exact_candidates": [],
+      "fields": 3,
+      "id": "crc-3d3f27408fe05aba",
+      "registers": 3,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "CRC",
+          "kind": "crc",
+          "path": "crc_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "CRC",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "crc-491c92d0c04d2104",
+      "registers": 5,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "CRC",
+          "kind": "crc",
+          "path": "crc_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "CRC",
+      "exact_candidates": [],
+      "fields": 6,
+      "id": "crc-a48611ed10ed6ece",
+      "registers": 4,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "CRC",
+          "kind": "crc",
+          "path": "crc_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "CRC",
+      "exact_candidates": [],
+      "fields": 9,
+      "id": "crc-ba78252337c22637",
+      "registers": 5,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "CRC",
+          "kind": "crc",
+          "path": "crc_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "CTC",
+      "exact_candidates": [
+        {
+          "block": "CRS",
+          "kind": "crs",
+          "path": "crs_v1.json",
+          "version": "v1"
+        }
+      ],
+      "fields": 26,
+      "id": "ctc-6d9ce461ff3ab0bf",
+      "registers": 4,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "CRS",
+          "kind": "crs",
+          "path": "crs_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "CTC",
+      "exact_candidates": [],
+      "fields": 26,
+      "id": "ctc-99079953695ba81c",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 11,
+      "id": "dac-110d224a3cc413ac",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 9,
+      "id": "dac-17bb59ad202cac5a",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 40,
+      "id": "dac-2c324d904bbd2aea",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 12,
+      "id": "dac-32e8d5013ccd5069",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 46,
+      "id": "dac-4a2b738ca73e7b01",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 20,
+      "id": "dac-4a56ea3607c7dffe",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 22,
+      "id": "dac-4ad47e296fe49f22",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 36,
+      "id": "dac-523caf1ae7b73a74",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 18,
+      "id": "dac-5512643390b2ce06",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 12,
+      "id": "dac-79dc5606d414ae4e",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DAC",
+      "exact_candidates": [],
+      "fields": 42,
+      "id": "dac-b803d6dd6048d8af",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 25,
+      "id": "dbg-08136db4c447d74b",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 25,
+      "id": "dbg-0adf7764668c0b3c",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 28,
+      "id": "dbg-0c729a76e99d8c3b",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 22,
+      "id": "dbg-170bd90d1f4fcd02",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 16,
+      "id": "dbg-1b652252e3222462",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 16,
+      "id": "dbg-2bf2258f594a008a",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 25,
+      "id": "dbg-2dfdb89c3e75d6e4",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 20,
+      "id": "dbg-2f4b1e55d6dd4d75",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 15,
+      "id": "dbg-3e654614740dd726",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 18,
+      "id": "dbg-3f036c14727350b1",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 17,
+      "id": "dbg-4cf9fb404372c5c1",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 15,
+      "id": "dbg-4e46e6a043625337",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 24,
+      "id": "dbg-4f448e499b1e0109",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "dbg-546af4b0e5f8b1c6",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 27,
+      "id": "dbg-694d2e2523952f3f",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 18,
+      "id": "dbg-6afd90ea60ad01b8",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 36,
+      "id": "dbg-7653be21f27ce731",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 27,
+      "id": "dbg-78785c4431e8463b",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 17,
+      "id": "dbg-8cc9fb0ba0bde216",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 23,
+      "id": "dbg-8d4c80402f8beafa",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 18,
+      "id": "dbg-95ed60387992b2c3",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 19,
+      "id": "dbg-9afe2c9277a9fb25",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 18,
+      "id": "dbg-bc5f12bf47dbbef5",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 13,
+      "id": "dbg-c0a1e7bf9e850c5b",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 21,
+      "id": "dbg-c321d162fc512768",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 19,
+      "id": "dbg-d3014d6f6d8fc477",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 38,
+      "id": "dbg-de2c04898be10803",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 27,
+      "id": "dbg-e84f01a0f192469d",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 29,
+      "id": "dbg-e900170ae738193c",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 18,
+      "id": "dbg-f45f7f71af96dc2e",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 18,
+      "id": "dbg-f6b954dfa9f40340",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DBG",
+      "exact_candidates": [],
+      "fields": 17,
+      "id": "dbg-fa101b7889c8b215",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DCI",
+      "exact_candidates": [],
+      "fields": 46,
+      "id": "dci-6728f4f7fcae3103",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DCI",
+      "exact_candidates": [],
+      "fields": 66,
+      "id": "dci-d3cb6fbe542465bc",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 16,
+      "id": "dma-03e0926903c31687",
+      "registers": 69,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "dma-0d635cd02af8cece",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma-1cf53887dac21e74",
+      "registers": 58,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "dma-203b2e8acafe9ffd",
+      "registers": 30,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma-354063307ef7ca23",
+      "registers": 58,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "dma-35e38e2e380fd533",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "dma-a3a4fde0247eb6f2",
+      "registers": 30,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "dma-e208530b3bef3254",
+      "registers": 34,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 4,
+      "id": "dma-eced416ef95d6d8d",
+      "registers": 30,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma-f3ee856fb4c7884f",
+      "registers": 58,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA1",
+      "exact_candidates": [],
+      "fields": 1,
+      "id": "dma1-9c19bbe456ce5aef",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXCNT_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxcnt_base-50b58da38d73b00d",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXCNT_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxcnt_base-65c5fd058bc6899d",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXCNT_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxcnt_base-d390cdb4161766a5",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXCTL_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxctl_base-49e16ead5662d7e0",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXCTL_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxctl_base-70e585cfbe90506f",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXCTL_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxctl_base-9fc231aed8dbd0df",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXMADDR_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxmaddr_base-0f5bcd0c860d2576",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXMADDR_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxmaddr_base-53fbca930543ae72",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXMADDR_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxmaddr_base-5e865b4b3776eb94",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXPADDR_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxpaddr_base-24a2473761e6da77",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXPADDR_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxpaddr_base-a8e95eb74baf29c2",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMA_CHXPADDR_BASE",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "dma_chxpaddr_base-c13afd4263ca448b",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX",
+      "exact_candidates": [],
+      "fields": 14,
+      "id": "dmamux-3017f39e46c18dfa",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX",
+      "exact_candidates": [],
+      "fields": 48,
+      "id": "dmamux-489b88ceb0134698",
+      "registers": 28,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX",
+      "exact_candidates": [],
+      "fields": 32,
+      "id": "dmamux-4c40dca9e56913b1",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX",
+      "exact_candidates": [],
+      "fields": 32,
+      "id": "dmamux-cd4c69ea5ffe2be8",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX",
+      "exact_candidates": [],
+      "fields": 36,
+      "id": "dmamux-d5ba02be7d79c552",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX",
+      "exact_candidates": [],
+      "fields": 22,
+      "id": "dmamux-ed8f04890620c3f9",
+      "registers": 15,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RG_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 5,
+      "id": "dmamux_rg_chxcfg_base-1b4097c09645617c",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RG_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 5,
+      "id": "dmamux_rg_chxcfg_base-9545884017dd5dda",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RG_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 5,
+      "id": "dmamux_rg_chxcfg_base-d84fcfa6a38e53a1",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RM_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "dmamux_rm_chxcfg_base-2ebc8a755aed0f37",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RM_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "dmamux_rm_chxcfg_base-3c55816928f6e91e",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RM_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "dmamux_rm_chxcfg_base-6e526246062e11b0",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RM_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "dmamux_rm_chxcfg_base-7797637ef3927624",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RM_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "dmamux_rm_chxcfg_base-8958741576020c8c",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RM_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "dmamux_rm_chxcfg_base-bc255481d073c329",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RM_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "dmamux_rm_chxcfg_base-bf2fe5191ddb1cf9",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DMAMUX_RM_CHXCFG_BASE",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "dmamux_rm_chxcfg_base-f37c083c648a5233",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "DSI",
+      "exact_candidates": [],
+      "fields": 251,
+      "id": "dsi-764416031679e0f9",
+      "registers": 60,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EDIM_AFMT",
+      "exact_candidates": [],
+      "fields": 28,
+      "id": "edim_afmt-c755000c8e82769b",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EDIM_BISS",
+      "exact_candidates": [],
+      "fields": 76,
+      "id": "edim_biss-1ab60e081f82a84d",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EDIM_ENDAT",
+      "exact_candidates": [],
+      "fields": 85,
+      "id": "edim_endat-15ceb0e55d0ff002",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EDIM_HDSL",
+      "exact_candidates": [],
+      "fields": 137,
+      "id": "edim_hdsl-8f02a454dc42a12b",
+      "registers": 84,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EDIM_TFMT",
+      "exact_candidates": [],
+      "fields": 44,
+      "id": "edim_tfmt-3eab625689af749a",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EDOUT",
+      "exact_candidates": [],
+      "fields": 9,
+      "id": "edout-6974cab791a22e4b",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EFUSE",
+      "exact_candidates": [],
+      "fields": 39,
+      "id": "efuse-09e8713f8b9c29db",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EFUSE",
+      "exact_candidates": [],
+      "fields": 38,
+      "id": "efuse-38e700cd439bc555",
+      "registers": 67,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EFUSE",
+      "exact_candidates": [],
+      "fields": 29,
+      "id": "efuse-4f36246cab905bfc",
+      "registers": 38,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EFUSE",
+      "exact_candidates": [],
+      "fields": 40,
+      "id": "efuse-6fc9cb11f5c2f3e6",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EFUSE",
+      "exact_candidates": [],
+      "fields": 37,
+      "id": "efuse-ac53a8add23eb23d",
+      "registers": 55,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EFUSE",
+      "exact_candidates": [],
+      "fields": 39,
+      "id": "efuse-f9100cc27e047630",
+      "registers": 70,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ENET",
+      "exact_candidates": [],
+      "fields": 215,
+      "id": "enet-38297eab13db0d0b",
+      "registers": 58,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ENET",
+      "exact_candidates": [],
+      "fields": 211,
+      "id": "enet-4408cf6f5d3e037d",
+      "registers": 58,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ENET",
+      "exact_candidates": [],
+      "fields": 182,
+      "id": "enet-b43a4ee45d697924",
+      "registers": 54,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ENET",
+      "exact_candidates": [],
+      "fields": 210,
+      "id": "enet-ba6af7a71f9f4703",
+      "registers": 58,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ESC",
+      "exact_candidates": [],
+      "fields": 13,
+      "id": "esc-d79277859e9cac44",
+      "registers": 121,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EVIC",
+      "exact_candidates": [],
+      "fields": 12,
+      "id": "evic-5169c252b7247f9d",
+      "registers": 40,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 55,
+      "id": "exmc-1c05e84de0252c1d",
+      "registers": 35,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 82,
+      "id": "exmc-2e387b8aa4aaef6c",
+      "registers": 30,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 79,
+      "id": "exmc-5c77da73c6b77c1a",
+      "registers": 30,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 32,
+      "id": "exmc-6ac29ae046143679",
+      "registers": 21,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "FSMC",
+          "kind": "fsmc",
+          "path": "fsmc_v1x0.json",
+          "version": "v1x0"
+        }
+      ]
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 96,
+      "id": "exmc-6b188277807a2a33",
+      "registers": 50,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 55,
+      "id": "exmc-6eb28b9f8a4f7951",
+      "registers": 35,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "FSMC",
+          "kind": "fsmc",
+          "path": "fsmc_v1x0.json",
+          "version": "v1x0"
+        },
+        {
+          "block": "FSMC",
+          "kind": "fsmc",
+          "path": "fsmc_v1x3.json",
+          "version": "v1x3"
+        }
+      ]
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 98,
+      "id": "exmc-7164c8e0b6699425",
+      "registers": 55,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "FSMC",
+          "kind": "fsmc",
+          "path": "fsmc_v1x0.json",
+          "version": "v1x0"
+        },
+        {
+          "block": "FSMC",
+          "kind": "fsmc",
+          "path": "fsmc_v1x3.json",
+          "version": "v1x3"
+        },
+        {
+          "block": "FSMC",
+          "kind": "fsmc",
+          "path": "fsmc_v2x3.json",
+          "version": "v2x3"
+        }
+      ]
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 13,
+      "id": "exmc-9f914e53fb606e4d",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 27,
+      "id": "exmc-e31be54c30e7fbac",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 97,
+      "id": "exmc-ec740ad5b2939994",
+      "registers": 50,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "FSMC",
+          "kind": "fsmc",
+          "path": "fsmc_v1x0.json",
+          "version": "v1x0"
+        },
+        {
+          "block": "FSMC",
+          "kind": "fsmc",
+          "path": "fsmc_v1x3.json",
+          "version": "v1x3"
+        },
+        {
+          "block": "FSMC",
+          "kind": "fsmc",
+          "path": "fsmc_v2x3.json",
+          "version": "v2x3"
+        }
+      ]
+    },
+    {
+      "block": "EXMC",
+      "exact_candidates": [],
+      "fields": 38,
+      "id": "exmc-f139886bc3052153",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 228,
+      "id": "exti-049f65349e299652",
+      "registers": 18,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "CPU",
+          "kind": "exti",
+          "path": "exti_w.json",
+          "version": "w"
+        }
+      ]
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 168,
+      "id": "exti-13fbcd6895b1857c",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 172,
+      "id": "exti-2655b0859753640e",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 150,
+      "id": "exti-29f744de511095ed",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 233,
+      "id": "exti-42cdb8628c9089e4",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 138,
+      "id": "exti-43b21b0c30b12e70",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 136,
+      "id": "exti-59df8d27f48c500a",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 144,
+      "id": "exti-7b9b36c7d8b540fe",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 234,
+      "id": "exti-8937c1c8e2654e82",
+      "registers": 18,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "CPU",
+          "kind": "exti",
+          "path": "exti_w.json",
+          "version": "w"
+        }
+      ]
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 156,
+      "id": "exti-9d7fc1709752fcb9",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 132,
+      "id": "exti-9fc5df8728d10080",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 120,
+      "id": "exti-a39263ea75f52ae4",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 150,
+      "id": "exti-a48fbf2ee62044a1",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 184,
+      "id": "exti-b9f9062fcf74a070",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 233,
+      "id": "exti-ce8cbfaf443fcc49",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 144,
+      "id": "exti-d7fe0966edd54074",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "EXTI",
+      "exact_candidates": [],
+      "fields": 114,
+      "id": "exti-f95225bb3f6120b7",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FAC",
+      "exact_candidates": [],
+      "fields": 32,
+      "id": "fac-70f604b5c6f83969",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FFT",
+      "exact_candidates": [],
+      "fields": 17,
+      "id": "fft-c371781621ec11ce",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 30,
+      "id": "fmc-09ec738441eb8d34",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 25,
+      "id": "fmc-145007098964ffec",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 71,
+      "id": "fmc-21870ef005d67dec",
+      "registers": 29,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 33,
+      "id": "fmc-229649d774202011",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 32,
+      "id": "fmc-30d3804fb5843cd3",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 70,
+      "id": "fmc-333a97817ea73a44",
+      "registers": 29,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 88,
+      "id": "fmc-45f616aa3a6e7894",
+      "registers": 28,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 49,
+      "id": "fmc-523fbb53c80918c8",
+      "registers": 36,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 36,
+      "id": "fmc-54bf11b7aaabc154",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 50,
+      "id": "fmc-5edddd6f9191a4c5",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 39,
+      "id": "fmc-5f63b031cafd5cbd",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 52,
+      "id": "fmc-71a20e5fc981828e",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 79,
+      "id": "fmc-84e2d00995de69e1",
+      "registers": 19,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 29,
+      "id": "fmc-95e51906d67df0e9",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 59,
+      "id": "fmc-9998b0350fd394d8",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 77,
+      "id": "fmc-a8e84049c4106354",
+      "registers": 30,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 27,
+      "id": "fmc-b0f6c6c8602dd93d",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 35,
+      "id": "fmc-cdfbdbb86c584210",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 66,
+      "id": "fmc-cf889ee9f0b62556",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 23,
+      "id": "fmc-dc407917f60285db",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 70,
+      "id": "fmc-e61e6de3df00b8d0",
+      "registers": 18,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "fmc-e69bcfc6421ef4f0",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 81,
+      "id": "fmc-ee4535d397760139",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FMC",
+      "exact_candidates": [],
+      "fields": 38,
+      "id": "fmc-f841e586b6862431",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "FWDGT",
+      "exact_candidates": [],
+      "fields": 6,
+      "id": "fwdgt-1662463582817c9b",
+      "registers": 4,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "IWDG",
+          "kind": "iwdg",
+          "path": "iwdg_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "FWDGT",
+      "exact_candidates": [
+        {
+          "block": "IWDG",
+          "kind": "iwdg",
+          "path": "iwdg_v1.json",
+          "version": "v1"
+        }
+      ],
+      "fields": 5,
+      "id": "fwdgt-77bb718d66319e78",
+      "registers": 4,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "IWDG",
+          "kind": "iwdg",
+          "path": "iwdg_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "FWDGT",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "fwdgt-9caf08798ff7e8d0",
+      "registers": 6,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "IWDG",
+          "kind": "iwdg",
+          "path": "iwdg_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "IWDG",
+          "kind": "iwdg",
+          "path": "iwdg_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "FWDGT",
+      "exact_candidates": [
+        {
+          "block": "IWDG",
+          "kind": "iwdg",
+          "path": "iwdg_v2.json",
+          "version": "v2"
+        }
+      ],
+      "fields": 7,
+      "id": "fwdgt-c7bc9588279333ce",
+      "registers": 5,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "IWDG",
+          "kind": "iwdg",
+          "path": "iwdg_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "IWDG",
+          "kind": "iwdg",
+          "path": "iwdg_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "FWDGT",
+      "exact_candidates": [],
+      "fields": 5,
+      "id": "fwdgt-d0ad6e6f4646014a",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 129,
+      "id": "gpio-114d812616f471dc",
+      "registers": 8,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 211,
+      "id": "gpio-2c42bb3312e8c0a9",
+      "registers": 14,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2_l478.json",
+          "version": "v2_l478"
+        }
+      ]
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 193,
+      "id": "gpio-45754e8dadb6218a",
+      "registers": 12,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2_l478.json",
+          "version": "v2_l478"
+        }
+      ]
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 193,
+      "id": "gpio-5d0b827ea6cf59e8",
+      "registers": 13,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2_l478.json",
+          "version": "v2_l478"
+        }
+      ]
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 129,
+      "id": "gpio-9495ea818ecf93c1",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 227,
+      "id": "gpio-9a89eec9f564d151",
+      "registers": 15,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2_l478.json",
+          "version": "v2_l478"
+        }
+      ]
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 177,
+      "id": "gpio-b9f950386f2257bb",
+      "registers": 11,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 129,
+      "id": "gpio-c14eca7d8416b78a",
+      "registers": 7,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 193,
+      "id": "gpio-d3b44485f7691b46",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 209,
+      "id": "gpio-e395012616a2b3aa",
+      "registers": 13,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "GPIO",
+          "kind": "gpio",
+          "path": "gpio_v2_l478.json",
+          "version": "v2_l478"
+        }
+      ]
+    },
+    {
+      "block": "GPIO",
+      "exact_candidates": [],
+      "fields": 192,
+      "id": "gpio-e6fca7d99423c135",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "GPION",
+      "exact_candidates": [],
+      "fields": 3,
+      "id": "gpion-ff502c14fc51de68",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "GPSI",
+      "exact_candidates": [],
+      "fields": 19,
+      "id": "gpsi-8a02f8c0aafa5b08",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "GPTIMER",
+      "exact_candidates": [],
+      "fields": 277,
+      "id": "gptimer-95f98022089f9860",
+      "registers": 38,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "GTOC",
+      "exact_candidates": [],
+      "fields": 22,
+      "id": "gtoc-78b2467f2df07967",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "HAU",
+      "exact_candidates": [],
+      "fields": 15,
+      "id": "hau-6f90c01382d14b69",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "HAU",
+      "exact_candidates": [],
+      "fields": 19,
+      "id": "hau-7c50811eab046777",
+      "registers": 14,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "HASH",
+          "kind": "hash",
+          "path": "hash_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "HAU",
+      "exact_candidates": [],
+      "fields": 19,
+      "id": "hau-9223b7daef068878",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "HAU",
+      "exact_candidates": [],
+      "fields": 19,
+      "id": "hau-b97c00c832360b4f",
+      "registers": 14,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "HASH",
+          "kind": "hash",
+          "path": "hash_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "HPDF",
+      "exact_candidates": [],
+      "fields": 69,
+      "id": "hpdf-c666e7e5ad380498",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "HPDF",
+      "exact_candidates": [],
+      "fields": 70,
+      "id": "hpdf-dafb56e7e8a87330",
+      "registers": 21,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "HPDF",
+      "exact_candidates": [],
+      "fields": 87,
+      "id": "hpdf-fe1368b3e38ab485",
+      "registers": 26,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "HRTIMER",
+      "exact_candidates": [],
+      "fields": 1032,
+      "id": "hrtimer-c74454027f225a0d",
+      "registers": 89,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "HWSEM",
+      "exact_candidates": [],
+      "fields": 137,
+      "id": "hwsem-7ea96c46245ad2bd",
+      "registers": 72,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "HSEM",
+          "kind": "hsem",
+          "path": "hsem_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "HSEM",
+          "kind": "hsem",
+          "path": "hsem_v4.json",
+          "version": "v4"
+        }
+      ]
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 53,
+      "id": "i2c-1522fa4f1089b1d4",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 79,
+      "id": "i2c-157576b1fb9b6f0b",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 67,
+      "id": "i2c-2414824a40390b4d",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 147,
+      "id": "i2c-2acc0e94f6140331",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 79,
+      "id": "i2c-4e73acde98eb8da0",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 80,
+      "id": "i2c-59ded4aa74a30440",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 81,
+      "id": "i2c-642b76e5cf579403",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 54,
+      "id": "i2c-734aaed5d106d755",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 66,
+      "id": "i2c-7bdbe2ea5e8efe0a",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 68,
+      "id": "i2c-7d47e9dc80f793d3",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 79,
+      "id": "i2c-8ede78f7814a64cc",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 54,
+      "id": "i2c-d2b8dbf2eb58da43",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 67,
+      "id": "i2c-e15a3570819c12e6",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 78,
+      "id": "i2c-ecd631a5d7940d5b",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 54,
+      "id": "i2c-efbefc4486e7927a",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C",
+      "exact_candidates": [],
+      "fields": 53,
+      "id": "i2c-fe81b9f648989677",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2C2",
+      "exact_candidates": [],
+      "fields": 78,
+      "id": "i2c2-566026acff304618",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "I2S",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "i2s-32f828a081aad848",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "ICACHE",
+      "exact_candidates": [],
+      "fields": 17,
+      "id": "icache-04a9739a9a2c9e6e",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "ICACHE",
+          "kind": "icache",
+          "path": "icache_v1_0crr.json",
+          "version": "v1_0crr"
+        }
+      ]
+    },
+    {
+      "block": "ICACHE",
+      "exact_candidates": [],
+      "fields": 17,
+      "id": "icache-d8406f63dc14a2b9",
+      "registers": 7,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "ICACHE",
+          "kind": "icache",
+          "path": "icache_v1_0crr.json",
+          "version": "v1_0crr"
+        }
+      ]
+    },
+    {
+      "block": "IPA",
+      "exact_candidates": [],
+      "fields": 90,
+      "id": "ipa-61f09f1e119e6d99",
+      "registers": 26,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "IPA",
+      "exact_candidates": [],
+      "fields": 72,
+      "id": "ipa-d2e9ee2585a286f3",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "IPA",
+      "exact_candidates": [],
+      "fields": 89,
+      "id": "ipa-df0675bda1b202b4",
+      "registers": 26,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "IREF",
+      "exact_candidates": [],
+      "fields": 5,
+      "id": "iref-4b25e655e8011a61",
+      "registers": 1,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "LPDTS",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "lpdts-114b697e22c07109",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "LPDTS",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "lpdts-3307f0fd2f351163",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "LPTIMER",
+      "exact_candidates": [],
+      "fields": 64,
+      "id": "lptimer-213ed3b971f14181",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "LPTIMER",
+      "exact_candidates": [],
+      "fields": 69,
+      "id": "lptimer-265af638d3403e97",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "LPTIM",
+          "kind": "lptim",
+          "path": "lptim_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "LPTIM",
+          "kind": "lptim",
+          "path": "lptim_v1a.json",
+          "version": "v1a"
+        },
+        {
+          "block": "LPTIM",
+          "kind": "lptim",
+          "path": "lptim_v1b.json",
+          "version": "v1b"
+        }
+      ]
+    },
+    {
+      "block": "LPTIMER",
+      "exact_candidates": [],
+      "fields": 64,
+      "id": "lptimer-ea2749f29ae4d4bd",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "LPTIM",
+          "kind": "lptim",
+          "path": "lptim_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "LPTIM",
+          "kind": "lptim",
+          "path": "lptim_v1a.json",
+          "version": "v1a"
+        }
+      ]
+    },
+    {
+      "block": "LPUART",
+      "exact_candidates": [],
+      "fields": 72,
+      "id": "lpuart-39bfce1617358476",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "MDIO",
+      "exact_candidates": [],
+      "fields": 42,
+      "id": "mdio-596b2b27b0a58fc0",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "MDIO",
+      "exact_candidates": [],
+      "fields": 41,
+      "id": "mdio-96495bd0e6f012ad",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "MDMA",
+      "exact_candidates": [],
+      "fields": 73,
+      "id": "mdma-7993bd096a25567b",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "MFCOM",
+      "exact_candidates": [],
+      "fields": 32,
+      "id": "mfcom-ff1dc6ee82e935ca",
+      "registers": 18,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "NVMC",
+      "exact_candidates": [],
+      "fields": 292,
+      "id": "nvmc-455ac1e28d5acb37",
+      "registers": 62,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "NVMC",
+      "exact_candidates": [],
+      "fields": 294,
+      "id": "nvmc-9a5d07efc5312d63",
+      "registers": 62,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "NVMC",
+      "exact_candidates": [],
+      "fields": 296,
+      "id": "nvmc-c60fd588ab324727",
+      "registers": 62,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-09cb4d528f36dfec",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-138fbadf2b82225e",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-16bd26c7abcbae48",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-28e8bc27057173e3",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-3a9c1d77c5b81c30",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-52d5f4ba4668f973",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-5bba9e660da92246",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-625ae31ab5d96ba6",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-6b3dc74667c8f440",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-717f236144760cfb",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-721aff1c86cb8df0",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-7707b3ae62f477e2",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-8669b02b5172e8d0",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-ad686c92b19166ad",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-d059a2a6527573a4",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-d8b8edf39ce0de4f",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-da811d1dd47d5206",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-e76485707be71a58",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OB",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "ob-ecba84d362f81cb8",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OSPI",
+      "exact_candidates": [],
+      "fields": 102,
+      "id": "ospi-71203c17ffc324d8",
+      "registers": 26,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OSPI",
+      "exact_candidates": [],
+      "fields": 73,
+      "id": "ospi-c955dec982036937",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "OSPIM",
+      "exact_candidates": [],
+      "fields": 12,
+      "id": "ospim-ad46f02a55c5eb87",
+      "registers": 4,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "OCTOSPIM",
+          "kind": "octospim",
+          "path": "octospim_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "OSPIM",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "ospim-fe245a1a22e01f5b",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "PKCAU",
+      "exact_candidates": [],
+      "fields": 13,
+      "id": "pkcau-5848bf43bcfe255a",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "PKCAU",
+      "exact_candidates": [],
+      "fields": 13,
+      "id": "pkcau-f9e1d63da758f3e6",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 39,
+      "id": "pmu-0e670ce17e5e8a56",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 39,
+      "id": "pmu-1ca38dd5e2fa3bfc",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 39,
+      "id": "pmu-1dc33268cb029121",
+      "registers": 5,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 23,
+      "id": "pmu-36bfb0844fd50f72",
+      "registers": 2,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "pmu-3925f692a922fe73",
+      "registers": 4,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 21,
+      "id": "pmu-4410be0086c73a7c",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 12,
+      "id": "pmu-58a8b7f0134cde83",
+      "registers": 2,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 30,
+      "id": "pmu-5b735bb1c6654553",
+      "registers": 4,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 64,
+      "id": "pmu-64058cb90c6162fc",
+      "registers": 6,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        },
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f2.json",
+          "version": "f2"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 84,
+      "id": "pmu-8ef89808149ae57b",
+      "registers": 12,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ],
+      "fields": 11,
+      "id": "pmu-97892901ee2a6828",
+      "registers": 2,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 17,
+      "id": "pmu-9ff5b6df351e0339",
+      "registers": 2,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 21,
+      "id": "pmu-aaa394af5aca63be",
+      "registers": 2,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 61,
+      "id": "pmu-b46b182886523580",
+      "registers": 7,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        },
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f2.json",
+          "version": "f2"
+        },
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f3.json",
+          "version": "f3"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 18,
+      "id": "pmu-bc000a45e202c5cf",
+      "registers": 2,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 37,
+      "id": "pmu-c5ab2b18246be85d",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 53,
+      "id": "pmu-d9704ed7da0b74b2",
+      "registers": 8,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        },
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f2.json",
+          "version": "f2"
+        },
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f3.json",
+          "version": "f3"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 25,
+      "id": "pmu-da3a6d7f1d01b79e",
+      "registers": 2,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 31,
+      "id": "pmu-f6fd2d81bdda58f9",
+      "registers": 3,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 21,
+      "id": "pmu-fb0fcb23358e0bb3",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 12,
+      "id": "pmu-fd5a3debf3b3f2b5",
+      "registers": 2,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        }
+      ]
+    },
+    {
+      "block": "PMU",
+      "exact_candidates": [],
+      "fields": 52,
+      "id": "pmu-fda9360e8ab0be84",
+      "registers": 7,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f1.json",
+          "version": "f1"
+        },
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f2.json",
+          "version": "f2"
+        },
+        {
+          "block": "PWR",
+          "kind": "pwr",
+          "path": "pwr_f3.json",
+          "version": "f3"
+        }
+      ]
+    },
+    {
+      "block": "POC",
+      "exact_candidates": [],
+      "fields": 130,
+      "id": "poc-c3ca8581362e80f0",
+      "registers": 59,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "QSPI",
+      "exact_candidates": [],
+      "fields": 52,
+      "id": "qspi-2134f7758888a8eb",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "QSPI",
+      "exact_candidates": [],
+      "fields": 55,
+      "id": "qspi-6bd3ed8c83ce6aa9",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "QSPI",
+      "exact_candidates": [],
+      "fields": 49,
+      "id": "qspi-9ca258b7b5a9b868",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "QSPI",
+      "exact_candidates": [],
+      "fields": 73,
+      "id": "qspi-b6e42f6df61df4d0",
+      "registers": 29,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "QSPI",
+      "exact_candidates": [],
+      "fields": 51,
+      "id": "qspi-c9dde5ae1dfb825f",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RAMECCMU",
+      "exact_candidates": [],
+      "fields": 9,
+      "id": "rameccmu-8cae911fc03a48de",
+      "registers": 31,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RAMECCMU0",
+      "exact_candidates": [],
+      "fields": 11,
+      "id": "rameccmu0-5ad7d731430ba09d",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 566,
+      "id": "rcu-0591d20f3d033602",
+      "registers": 54,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 204,
+      "id": "rcu-095991784006be63",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 144,
+      "id": "rcu-0b3fa95ba128f063",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 159,
+      "id": "rcu-0df69c970c033964",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 180,
+      "id": "rcu-1508da9be5597163",
+      "registers": 18,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 215,
+      "id": "rcu-162113ac5360390a",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 293,
+      "id": "rcu-1692fdfa8f601eb6",
+      "registers": 32,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 158,
+      "id": "rcu-1b817abeaa124378",
+      "registers": 15,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 145,
+      "id": "rcu-34019fddf2d6dfb6",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 168,
+      "id": "rcu-345af9abf1521d1d",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 273,
+      "id": "rcu-39366d98460af72f",
+      "registers": 32,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 301,
+      "id": "rcu-3ec51a72beadd578",
+      "registers": 34,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 143,
+      "id": "rcu-5361e5465f0b39e9",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 179,
+      "id": "rcu-54e566ce47dab5f2",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 146,
+      "id": "rcu-5a71bf8bbda89d5a",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 506,
+      "id": "rcu-5a7552dc8734914f",
+      "registers": 50,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 304,
+      "id": "rcu-5baf8138d14b4b8f",
+      "registers": 34,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 321,
+      "id": "rcu-5c7c9b49faad145f",
+      "registers": 33,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "RCC",
+          "kind": "rcc",
+          "path": "rcc_f2.json",
+          "version": "f2"
+        }
+      ]
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 134,
+      "id": "rcu-62b100119b52ab0c",
+      "registers": 19,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 170,
+      "id": "rcu-674d3e1cd22311e2",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 187,
+      "id": "rcu-8160eaaffc668125",
+      "registers": 19,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 284,
+      "id": "rcu-8f196476f3b69ac8",
+      "registers": 26,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 213,
+      "id": "rcu-97a76383e2997177",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 147,
+      "id": "rcu-a227b3a6fcbfc661",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 180,
+      "id": "rcu-aca274cf7e587e2f",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 133,
+      "id": "rcu-b1e53c68a6dbfaad",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 179,
+      "id": "rcu-beaa94da63307b06",
+      "registers": 19,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 143,
+      "id": "rcu-c6ee4fe0cc06b8cc",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 142,
+      "id": "rcu-c784a10597c6de71",
+      "registers": 15,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 118,
+      "id": "rcu-cca4dd318430555b",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 166,
+      "id": "rcu-e3131045a5d09667",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 155,
+      "id": "rcu-e5f64fe8247f068a",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 192,
+      "id": "rcu-ea1ff47fc4d4d03f",
+      "registers": 18,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 153,
+      "id": "rcu-ef30bff7510cc9f8",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 436,
+      "id": "rcu-f6d9ab1d07a1e04f",
+      "registers": 50,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 226,
+      "id": "rcu-fbbf33315ea544f8",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RCU",
+      "exact_candidates": [],
+      "fields": 143,
+      "id": "rcu-ffcd57c84e927ca8",
+      "registers": 15,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RDCM",
+      "exact_candidates": [],
+      "fields": 134,
+      "id": "rdcm-e04ef53555c51f97",
+      "registers": 41,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RSPDIF",
+      "exact_candidates": [],
+      "fields": 55,
+      "id": "rspdif-22daf900e142b695",
+      "registers": 12,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPDIFRX",
+          "kind": "spdifrx",
+          "path": "spdifrx_h7.json",
+          "version": "h7"
+        },
+        {
+          "block": "SPDIFRX",
+          "kind": "spdifrx",
+          "path": "spdifrx_n6.json",
+          "version": "n6"
+        },
+        {
+          "block": "SPDIFRX",
+          "kind": "spdifrx",
+          "path": "spdifrx_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "RSPDIF",
+      "exact_candidates": [],
+      "fields": 55,
+      "id": "rspdif-94a2f9aed68238b5",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPDIFRX",
+          "kind": "spdifrx",
+          "path": "spdifrx_h7.json",
+          "version": "h7"
+        },
+        {
+          "block": "SPDIFRX",
+          "kind": "spdifrx",
+          "path": "spdifrx_n6.json",
+          "version": "n6"
+        },
+        {
+          "block": "SPDIFRX",
+          "kind": "spdifrx",
+          "path": "spdifrx_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [],
+      "fields": 101,
+      "id": "rtc-218478ea22a954cd",
+      "registers": 20,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [
+        {
+          "block": "RTC",
+          "kind": "rtc",
+          "path": "rtc_v1.json",
+          "version": "v1"
+        }
+      ],
+      "fields": 17,
+      "id": "rtc-250e9b919c00e319",
+      "registers": 10,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "RTC",
+          "kind": "rtc",
+          "path": "rtc_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [],
+      "fields": 125,
+      "id": "rtc-4f2c5d9836ce50b6",
+      "registers": 51,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [],
+      "fields": 112,
+      "id": "rtc-7c0d047d57dd94b5",
+      "registers": 39,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [],
+      "fields": 111,
+      "id": "rtc-a0051ad5d90fef32",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [],
+      "fields": 124,
+      "id": "rtc-c512cdbae55fa515",
+      "registers": 51,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [],
+      "fields": 137,
+      "id": "rtc-c5f2b32e5dc4592e",
+      "registers": 45,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [],
+      "fields": 139,
+      "id": "rtc-d5d8d4bcd00be63d",
+      "registers": 51,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [],
+      "fields": 71,
+      "id": "rtc-e6f00754ed013b3a",
+      "registers": 19,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RTC",
+      "exact_candidates": [],
+      "fields": 94,
+      "id": "rtc-ea88a5d129f2bf2b",
+      "registers": 39,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "RTDEC",
+      "exact_candidates": [],
+      "fields": 3,
+      "id": "rtdec-a2be341e8d2a4d66",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SAI",
+      "exact_candidates": [],
+      "fields": 67,
+      "id": "sai-81edec522a7d7d7b",
+      "registers": 27,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SAI",
+      "exact_candidates": [],
+      "fields": 55,
+      "id": "sai-b6e01957a3411303",
+      "registers": 25,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SDIO",
+      "exact_candidates": [],
+      "fields": 113,
+      "id": "sdio-25d0096c4b31ffc0",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SDIO",
+      "exact_candidates": [],
+      "fields": 91,
+      "id": "sdio-64bb917dba5b1038",
+      "registers": 18,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SDIO",
+      "exact_candidates": [],
+      "fields": 92,
+      "id": "sdio-a16a558860ba437e",
+      "registers": 18,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SDIO",
+      "exact_candidates": [],
+      "fields": 117,
+      "id": "sdio-bd66f984cf08e791",
+      "registers": 22,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SHRTIMER",
+      "exact_candidates": [],
+      "fields": 751,
+      "id": "shrtimer-ea23ae3882a17f16",
+      "registers": 69,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SLCD",
+      "exact_candidates": [],
+      "fields": 22,
+      "id": "slcd-edd3ff4a2439dcd1",
+      "registers": 13,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "RAM_COM",
+          "kind": "lcd",
+          "path": "lcd_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "RAM_COM",
+          "kind": "lcd",
+          "path": "lcd_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SLCD",
+      "exact_candidates": [],
+      "fields": 24,
+      "id": "slcd-f5e2d73fd7bce326",
+      "registers": 13,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "RAM_COM",
+          "kind": "lcd",
+          "path": "lcd_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "RAM_COM",
+          "kind": "lcd",
+          "path": "lcd_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 46,
+      "id": "spi-19423642ff73664b",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 48,
+      "id": "spi-1c2f4e1e8ae0f192",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 49,
+      "id": "spi-20dc9722799d37ab",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 46,
+      "id": "spi-239d22291aa95248",
+      "registers": 9,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 32,
+      "id": "spi-25816acdd5fb31e1",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 55,
+      "id": "spi-3e72f25231aa8870",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "version": "v2_i2s"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        }
+      ],
+      "fields": 43,
+      "id": "spi-59720211dee72199",
+      "registers": 9,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 35,
+      "id": "spi-59cf958b1b5ab515",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 49,
+      "id": "spi-5d70f94a3dee7b6e",
+      "registers": 19,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 47,
+      "id": "spi-84bb0d40de5a21b9",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 96,
+      "id": "spi-a2feaee7a6c97bb5",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 49,
+      "id": "spi-b006ee2bf00ff7cf",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 48,
+      "id": "spi-b2f7804eb0f81025",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 55,
+      "id": "spi-c7bc14a63287f006",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2_i2s.json",
+          "version": "v2_i2s"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 48,
+      "id": "spi-dfb3af1df8a69b65",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        },
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 41,
+      "id": "spi-ea8c377b8b1f5c86",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SPI",
+      "exact_candidates": [],
+      "fields": 44,
+      "id": "spi-f510bcbc7ec07d1f",
+      "registers": 9,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "SPI",
+          "kind": "spi",
+          "path": "spi_v1_i2s.json",
+          "version": "v1_i2s"
+        }
+      ]
+    },
+    {
+      "block": "SQPI",
+      "exact_candidates": [],
+      "fields": 15,
+      "id": "sqpi-47688f210c6fc308",
+      "registers": 5,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SVPWM",
+      "exact_candidates": [],
+      "fields": 14,
+      "id": "svpwm-8128db8b0231b8a7",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 27,
+      "id": "syscfg-0a0fd0b46350f882",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 104,
+      "id": "syscfg-1b8c7e676d5954df",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 40,
+      "id": "syscfg-1c7962aa3f69d43d",
+      "registers": 15,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 104,
+      "id": "syscfg-24aecb07d43a3cae",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 59,
+      "id": "syscfg-39dede78f6ee7d70",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 29,
+      "id": "syscfg-4d7d59e95a331e8c",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 21,
+      "id": "syscfg-51b128a87e329fa6",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 22,
+      "id": "syscfg-66a0d66127e764d2",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 56,
+      "id": "syscfg-7e057e668a3a5588",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 29,
+      "id": "syscfg-8890ad579b0335ac",
+      "registers": 7,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 60,
+      "id": "syscfg-a124fcf6ca753d10",
+      "registers": 37,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 58,
+      "id": "syscfg-ce3134563c668b33",
+      "registers": 24,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 58,
+      "id": "syscfg-cf63ae1302eb4b90",
+      "registers": 10,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 117,
+      "id": "syscfg-d19ad75d456455a9",
+      "registers": 27,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 24,
+      "id": "syscfg-d86e92d4ed1861b3",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 65,
+      "id": "syscfg-e224963c7f189438",
+      "registers": 32,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 101,
+      "id": "syscfg-ee183683b58de933",
+      "registers": 23,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 112,
+      "id": "syscfg-f52d4f12f9d464f6",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 36,
+      "id": "syscfg-f7d28bd591d5a132",
+      "registers": 15,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "SYSCFG",
+      "exact_candidates": [],
+      "fields": 70,
+      "id": "syscfg-f9c313dfff6fac05",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 267,
+      "id": "timer-07d7f7668a231972",
+      "registers": 45,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 219,
+      "id": "timer-0a6eba78c80f9222",
+      "registers": 37,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 125,
+      "id": "timer-1f39641a479c4657",
+      "registers": 22,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 99,
+      "id": "timer-3aab94f3b86ca478",
+      "registers": 20,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 145,
+      "id": "timer-4659897434819bcd",
+      "registers": 26,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 123,
+      "id": "timer-50c14f09de6e3455",
+      "registers": 22,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 133,
+      "id": "timer-5833082961971b05",
+      "registers": 22,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 248,
+      "id": "timer-5e574d75914ffa54",
+      "registers": 39,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 131,
+      "id": "timer-5e62b6e601ae8e77",
+      "registers": 22,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 127,
+      "id": "timer-7ebd44eb72e082f9",
+      "registers": 22,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 131,
+      "id": "timer-7fc294ac42589405",
+      "registers": 22,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 132,
+      "id": "timer-894282e923b0f35e",
+      "registers": 21,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 131,
+      "id": "timer-8c4a32fcbf64fbac",
+      "registers": 22,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 131,
+      "id": "timer-9000ea7171a1432b",
+      "registers": 21,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 158,
+      "id": "timer-94a0e296cd6f076b",
+      "registers": 27,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 257,
+      "id": "timer-9c3b27bca9e01ca9",
+      "registers": 43,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 132,
+      "id": "timer-a05861d696546767",
+      "registers": 22,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 125,
+      "id": "timer-a084f39ce003ea79",
+      "registers": 21,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 123,
+      "id": "timer-b17b3660c35920ed",
+      "registers": 20,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 336,
+      "id": "timer-d311b1a244fbe3ef",
+      "registers": 45,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TIMER",
+      "exact_candidates": [],
+      "fields": 306,
+      "id": "timer-eb2fc3751083ecad",
+      "registers": 48,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_l0.json",
+          "version": "l0"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v2.json",
+          "version": "v2"
+        },
+        {
+          "block": "TIM_BASIC_NO_CR2",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        },
+        {
+          "block": "TIM_GP32",
+          "kind": "timer",
+          "path": "timer_v3.json",
+          "version": "v3"
+        }
+      ]
+    },
+    {
+      "block": "TLI",
+      "exact_candidates": [],
+      "fields": 67,
+      "id": "tli-1ba8a397d34fd00d",
+      "registers": 25,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TLI",
+      "exact_candidates": [],
+      "fields": 67,
+      "id": "tli-94583ddb3c9d560d",
+      "registers": 25,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TMU",
+      "exact_candidates": [],
+      "fields": 16,
+      "id": "tmu-6e5ec85ca7b2172c",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TMU",
+      "exact_candidates": [],
+      "fields": 10,
+      "id": "tmu-810f0d96cb77f3a0",
+      "registers": 6,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TMU",
+      "exact_candidates": [],
+      "fields": 12,
+      "id": "tmu-aa9a644c2b98be44",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TMU",
+      "exact_candidates": [],
+      "fields": 13,
+      "id": "tmu-fd5b7f8d42df7912",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRIGSEL",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "trigsel-280e29a333e3e6c6",
+      "registers": 25,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRIGSEL",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "trigsel-37febbbfe311e333",
+      "registers": 46,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRIGSEL",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "trigsel-6ea5ad861c28e50a",
+      "registers": 47,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRIGSEL",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "trigsel-b37d8d4b1d88e097",
+      "registers": 51,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRIGSEL",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "trigsel-c40c929699284c62",
+      "registers": 61,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRIGSEL",
+      "exact_candidates": [],
+      "fields": 0,
+      "id": "trigsel-d16b35fad6e095bd",
+      "registers": 17,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRNG",
+      "exact_candidates": [],
+      "fields": 25,
+      "id": "trng-03d0dc9e651db108",
+      "registers": 4,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "RNG",
+          "kind": "rng",
+          "path": "rng_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "TRNG",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "trng-138727008bc4c547",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRNG",
+      "exact_candidates": [],
+      "fields": 9,
+      "id": "trng-1598e77edf924360",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRNG",
+      "exact_candidates": [],
+      "fields": 8,
+      "id": "trng-1f3ad2251864cb45",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRNG",
+      "exact_candidates": [],
+      "fields": 9,
+      "id": "trng-4a6beb42258a8e80",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRNG",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "trng-4f75162f9cfe11b7",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TRNG",
+      "exact_candidates": [],
+      "fields": 26,
+      "id": "trng-89e226cfd8410152",
+      "registers": 4,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "RNG",
+          "kind": "rng",
+          "path": "rng_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "TRNG",
+      "exact_candidates": [],
+      "fields": 24,
+      "id": "trng-b14b03562f74d080",
+      "registers": 4,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "RNG",
+          "kind": "rng",
+          "path": "rng_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "TSI",
+      "exact_candidates": [],
+      "fields": 128,
+      "id": "tsi-1f4e32debf12b229",
+      "registers": 16,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TSI",
+      "exact_candidates": [],
+      "fields": 74,
+      "id": "tsi-75cc2319f5455add",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TSI",
+      "exact_candidates": [],
+      "fields": 126,
+      "id": "tsi-faec6025b4c47909",
+      "registers": 15,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZBMPC",
+      "exact_candidates": [],
+      "fields": 59,
+      "id": "tzbmpc-373217f0868e5195",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZBMPC",
+      "exact_candidates": [],
+      "fields": 59,
+      "id": "tzbmpc-afecfd82fd71666f",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZBMPC",
+      "exact_candidates": [],
+      "fields": 59,
+      "id": "tzbmpc-f4d2e8f365811524",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZBMPC",
+      "exact_candidates": [],
+      "fields": 59,
+      "id": "tzbmpc-fe6b3775a91ce688",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZIAC",
+      "exact_candidates": [],
+      "fields": 168,
+      "id": "tziac-6b01a7ab8583a2c3",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZIAC",
+      "exact_candidates": [],
+      "fields": 154,
+      "id": "tziac-9a8b7f7ffed69b54",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZIAC",
+      "exact_candidates": [],
+      "fields": 169,
+      "id": "tziac-fcf234ef0b267e29",
+      "registers": 9,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZSPC",
+      "exact_candidates": [],
+      "fields": 66,
+      "id": "tzspc-0cc5b55e51f4d8b7",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZSPC",
+      "exact_candidates": [],
+      "fields": 77,
+      "id": "tzspc-a848039c080e9906",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "TZSPC",
+      "exact_candidates": [],
+      "fields": 76,
+      "id": "tzspc-ada29d5018894c90",
+      "registers": 14,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "UART",
+      "exact_candidates": [],
+      "fields": 48,
+      "id": "uart-aa5a7938a3c6f376",
+      "registers": 8,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 113,
+      "id": "usart-34eadeceaa2c0be8",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 62,
+      "id": "usart-464fea75f0590d1f",
+      "registers": 10,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "USART",
+          "kind": "usart",
+          "path": "usart_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 109,
+      "id": "usart-6d0b41a328b06245",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 64,
+      "id": "usart-7382b2aa16f3f565",
+      "registers": 11,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "USART",
+          "kind": "usart",
+          "path": "usart_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 108,
+      "id": "usart-7f24e6470eb079c8",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 134,
+      "id": "usart-b131c30beab3bf1d",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 99,
+      "id": "usart-c0290a8077c06c1a",
+      "registers": 11,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 130,
+      "id": "usart-c72580ead3ca1fc9",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 49,
+      "id": "usart-d2819c585b25dd9d",
+      "registers": 7,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "USART",
+          "kind": "usart",
+          "path": "usart_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 68,
+      "id": "usart-d5126b39c3531ed0",
+      "registers": 11,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "USART",
+          "kind": "usart",
+          "path": "usart_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "USART",
+          "kind": "usart",
+          "path": "usart_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 68,
+      "id": "usart-d892c3f9c0b1906a",
+      "registers": 11,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "USART",
+          "kind": "usart",
+          "path": "usart_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "USART",
+          "kind": "usart",
+          "path": "usart_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 135,
+      "id": "usart-e31b633ee881e870",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 106,
+      "id": "usart-f414f7c331b8fd11",
+      "registers": 12,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "USART",
+      "exact_candidates": [],
+      "fields": 67,
+      "id": "usart-f581e00c92b2838c",
+      "registers": 11,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "USART",
+          "kind": "usart",
+          "path": "usart_v1.json",
+          "version": "v1"
+        },
+        {
+          "block": "USART",
+          "kind": "usart",
+          "path": "usart_v2.json",
+          "version": "v2"
+        }
+      ]
+    },
+    {
+      "block": "USART5",
+      "exact_candidates": [],
+      "fields": 97,
+      "id": "usart5-8135de6a63acb7f2",
+      "registers": 13,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "VREF",
+      "exact_candidates": [
+        {
+          "block": "VREFBUF",
+          "kind": "vrefbuf",
+          "path": "vrefbuf_v2b.json",
+          "version": "v2b"
+        }
+      ],
+      "fields": 5,
+      "id": "vref-779f5a9e03d3666e",
+      "registers": 2,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "VREFBUF",
+          "kind": "vrefbuf",
+          "path": "vrefbuf_v2b.json",
+          "version": "v2b"
+        }
+      ]
+    },
+    {
+      "block": "VREF",
+      "exact_candidates": [
+        {
+          "block": "VREFBUF",
+          "kind": "vrefbuf",
+          "path": "vrefbuf_v1.json",
+          "version": "v1"
+        }
+      ],
+      "fields": 5,
+      "id": "vref-997d2775d61551d9",
+      "registers": 2,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "VREFBUF",
+          "kind": "vrefbuf",
+          "path": "vrefbuf_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "VREF",
+      "exact_candidates": [],
+      "fields": 4,
+      "id": "vref-ff7883317fe62d3c",
+      "registers": 2,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "WWDGT",
+      "exact_candidates": [
+        {
+          "block": "WWDG",
+          "kind": "wwdg",
+          "path": "wwdg_v1.json",
+          "version": "v1"
+        }
+      ],
+      "fields": 6,
+      "id": "wwdgt-30374593445b351e",
+      "registers": 3,
+      "status": "exact",
+      "subset_candidates": [
+        {
+          "block": "WWDG",
+          "kind": "wwdg",
+          "path": "wwdg_v1.json",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "block": "WWDGT",
+      "exact_candidates": [],
+      "fields": 5,
+      "id": "wwdgt-59a14ef4b2227f0d",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "WWDGT",
+      "exact_candidates": [],
+      "fields": 9,
+      "id": "wwdgt-6968988bf47760fb",
+      "registers": 3,
+      "status": "missing",
+      "subset_candidates": []
+    },
+    {
+      "block": "WWDGT",
+      "exact_candidates": [],
+      "fields": 7,
+      "id": "wwdgt-f694703eb6308b0c",
+      "registers": 3,
+      "status": "subset",
+      "subset_candidates": [
+        {
+          "block": "WWDG",
+          "kind": "wwdg",
+          "path": "wwdg_v1.json",
+          "version": "v1"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "stm32_registers": {
+      "path": ".cache/research/repos/stm32-data-generated/data/registers",
+      "tree_sha256": "565696ad4595903c00c420e6ba2562a336586a2c0b7923292bd0702df18c7d0c"
+    },
+    "variants": {
+      "path": "gigadevice-merged-firmware-variants.json",
+      "sha256": "0b091312471229dd053dbb9fb84f3599ac1edd8e67443e836fe5e5c1cba1eee4"
+    }
+  },
+  "schema_version": 1,
+  "summary": {
+    "ambiguous": 55,
+    "exact": 10,
+    "layouts": 545,
+    "missing": 444,
+    "subset": 91,
+    "unique": 46
+  }
+}

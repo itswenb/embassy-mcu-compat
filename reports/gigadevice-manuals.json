@@ -1,0 +1,466 @@
+{
+  "conversion_version": 1,
+  "manuals": [
+    {
+      "characters": 1837079,
+      "document_id": 626,
+      "name": "GD32A10x User Manual",
+      "pages": 629,
+      "pdf": {
+        "filename": "626-1-GD32A10x_User_Manual_Rev1.3.pdf",
+        "sha256": "5565587b648cabbaf71cb283032dedde1960d56b3bc3089ae7bfdb2bf6148a08"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-5565587b648cabba-6e8a52c9ff50.txt",
+      "text_sha256": "55e6104af12323a895d393f72ae76d1b9ad7875c416e6f0ed50069f5fcbcf242",
+      "version": "1.3"
+    },
+    {
+      "characters": 3214421,
+      "document_id": 532,
+      "name": "GD32A490xx User Manual",
+      "pages": 1072,
+      "pdf": {
+        "filename": "532-1-GD32A490xx_User_Manual_Rev1.5.pdf",
+        "sha256": "407c04d9ee031f413cba9de1d17435ad17e0c457974bdc4b5e7bff76d79484a5"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-407c04d9ee031f41-6e8a52c9ff50.txt",
+      "text_sha256": "4569dc3ed08cd78b64a4dbe46724cf523946c34377a4d79f18bab1bca4166896",
+      "version": "1.5"
+    },
+    {
+      "characters": 3300291,
+      "document_id": 633,
+      "name": "GD32A508xx User Manual",
+      "pages": 1113,
+      "pdf": {
+        "filename": "633-1-GD32A508xx_User_Manual_Rev1.8.pdf",
+        "sha256": "dfa64db68649b81db44e1006bcd6253be74d8cfa1caab9aed4ce2fa01a021ce7"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-dfa64db68649b81d-6e8a52c9ff50.txt",
+      "text_sha256": "af6019d0782288d990f52809e464c1794d4f2fc70747f2926b0e3e40c74aba6b",
+      "version": "1.8"
+    },
+    {
+      "characters": 1914781,
+      "document_id": 402,
+      "name": "GD32A50x User Manual",
+      "pages": 655,
+      "pdf": {
+        "filename": "402-1-GD32A50x_User_Manual_Rev1.8.pdf",
+        "sha256": "bdb7886ac46437f1cb197f776b1ec128ed2bf7779086df128c2e587ae897c85b"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-bdb7886ac46437f1-6e8a52c9ff50.txt",
+      "text_sha256": "d9223880557312d753f351761e69b0a9dbd0300f69a9d080f4595a467ff939fe",
+      "version": "1.8"
+    },
+    {
+      "characters": 1907853,
+      "document_id": 565,
+      "name": "GD32A513 User Manual",
+      "pages": 653,
+      "pdf": {
+        "filename": "565-1-GD32A513_User_Manual_Rev1.5.pdf",
+        "sha256": "2bd5673304d88be0cdab4e3f9a00a7756e3c7b4ebd06136c2cd0695d49c297f6"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-2bd5673304d88be0-6e8a52c9ff50.txt",
+      "text_sha256": "15a3f3a7822914eb3b74e88dca3d53e3309f36cb2e0a0677017c86d443d5c576",
+      "version": "1.5"
+    },
+    {
+      "characters": 1846562,
+      "document_id": 269,
+      "name": "GD32C10x User Manual",
+      "pages": 633,
+      "pdf": {
+        "filename": "269-1-GD32C10x_User_Manual_Rev1.9.pdf",
+        "sha256": "354271208201bff2d31d2a40750f330fdb813298e9a262dbea6869abeca6f791"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-354271208201bff2-6e8a52c9ff50.txt",
+      "text_sha256": "2cbc1442b50e9516f9533288ef05ea13e58d48944f0e271b8ac0333e540fef39",
+      "version": "1.9"
+    },
+    {
+      "characters": 1832366,
+      "document_id": 382,
+      "name": "GD32C11x User Manual",
+      "pages": 629,
+      "pdf": {
+        "filename": "382-1-GD32C11x_User_Manual_Rev1.4.pdf",
+        "sha256": "15193cd69d9b4c5ea41e517263923b1dae48a3cb8ba53af902eaa4097f7732d5"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-15193cd69d9b4c5e-6e8a52c9ff50.txt",
+      "text_sha256": "69457a192e73bcb976a701de0d9036f8c17a398765280542166981176d6c126b",
+      "version": "1.4"
+    },
+    {
+      "characters": 1621869,
+      "document_id": 699,
+      "name": "GD32C2x1 User Manual",
+      "pages": 555,
+      "pdf": {
+        "filename": "699-1-GD32C2x1_User_Manual_Rev1.2.pdf",
+        "sha256": "9c2a0585d0f6b0eaee295f21ee2dcf3586c3675c3c70deca51cb3cf0301da8e1"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-9c2a0585d0f6b0ea-6e8a52c9ff50.txt",
+      "text_sha256": "170a933a7e377b368a07222540aaf4795ce26ec1c5e609d99d07bc9039923c28",
+      "version": "1.2"
+    },
+    {
+      "characters": 1713220,
+      "document_id": 163,
+      "name": "GD32E10x User Manual",
+      "pages": 590,
+      "pdf": {
+        "filename": "163-1-GD32E10x_User_Manual_Rev2.3.pdf",
+        "sha256": "a7f43935dbaf26361f937706e419d46ac9ef4fcf86bcb89069751182dc1dc0c3"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-a7f43935dbaf2636-6e8a52c9ff50.txt",
+      "text_sha256": "a79d25211d357cea043b9cda5053f745caca8cedb985c3854506a40339facf8d",
+      "version": "2.3"
+    },
+    {
+      "characters": 1708218,
+      "document_id": 381,
+      "name": "GD32E11x User Manual",
+      "pages": 589,
+      "pdf": {
+        "filename": "381-1-GD32E11x_User_Manual_Rev1.4.pdf",
+        "sha256": "a07db4ba6323d7b85287cb3fe3a26af2b6351a08143810adef57a0a980bdad96"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-a07db4ba6323d7b8-6e8a52c9ff50.txt",
+      "text_sha256": "49def10ab963969c2080d7b3b4277e037a8d6eb7739353d79a86687eb603cfa3",
+      "version": "1.4"
+    },
+    {
+      "characters": 1540659,
+      "document_id": 212,
+      "name": "GD32E23x用户手册",
+      "pages": 542,
+      "pdf": {
+        "filename": "212-1-GD32E23x_User_Manual_Rev2.6.pdf",
+        "sha256": "137efd2b0f738f2a7d49312c9682d8aac431e0c726e0038e64a1c25c20d07a38"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-137efd2b0f738f2a-6e8a52c9ff50.txt",
+      "text_sha256": "c969f85071729aa314fbc4986b382b02d26791ccec7fadcc30200fc67d266d6e",
+      "version": "2.6"
+    },
+    {
+      "characters": 1919824,
+      "document_id": 495,
+      "name": "GD32E502xx User Manual",
+      "pages": 663,
+      "pdf": {
+        "filename": "495-1-GD32E502xx_User_Manual_Rev1.7.pdf",
+        "sha256": "f7db9ef5d45de259c5267843e1c372963fa7c78d569f384757c73d50de09352c"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-f7db9ef5d45de259-6e8a52c9ff50.txt",
+      "text_sha256": "2b75a4099683de44445096f17e961565885d5d56e1dd4d83596797ef1eb5aba2",
+      "version": "1.7"
+    },
+    {
+      "characters": 3726993,
+      "document_id": 249,
+      "name": "GD32E50x User Manual",
+      "pages": 1239,
+      "pdf": {
+        "filename": "249-1-GD32E50x_User_Manual_Rev2.2.pdf",
+        "sha256": "76c430024feafad620c2ecaddc6054c3dbda85b787d43e625a60597086a0d7c7"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-76c430024feafad6-6e8a52c9ff50.txt",
+      "text_sha256": "8db9ccf6c37f1f6019587d2f8d4a76487a72234a0f32fde8f9c71c321c7f64a5",
+      "version": "2.2"
+    },
+    {
+      "characters": 3972103,
+      "document_id": 602,
+      "name": "GD32E51x User Manual",
+      "pages": 1322,
+      "pdf": {
+        "filename": "602-1-GD32E51x_User_Manual_Rev1.6.pdf",
+        "sha256": "8aa3b187ecc1f2cf73a85c592c93ceba83eb1eb19a4823fe694bdc4f9edbcd61"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-8aa3b187ecc1f2cf-6e8a52c9ff50.txt",
+      "text_sha256": "33c99d7c7fa9727441e565da6a451c508b21dc564cac5c8b5c45c1559496f1a7",
+      "version": "1.6"
+    },
+    {
+      "characters": 2492935,
+      "document_id": 181,
+      "name": "GD32F10x User Manual",
+      "pages": 857,
+      "pdf": {
+        "filename": "181-1-GD32F10x_User_Manual_Rev2.9.pdf",
+        "sha256": "fb9e5d9877923c078c283f35098e3916370d47390a3fc7c46ce03418b2a39b1c"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-fb9e5d9877923c07-6e8a52c9ff50.txt",
+      "text_sha256": "302a5a49475d7da34a00b49b7252696ef6edf96085fb59818fdc8e4b0ffe32c0",
+      "version": "2.9"
+    },
+    {
+      "characters": 1646380,
+      "document_id": 151,
+      "name": "GD32F1x0 User Manual",
+      "pages": 575,
+      "pdf": {
+        "filename": "151-1-GD32F1x0_User_Manual_Rev4.1.pdf",
+        "sha256": "2e221f103d69f27b163709a0189cdd210c7a6f781885dcaa40642e4eedf54077"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-2e221f103d69f27b-6e8a52c9ff50.txt",
+      "text_sha256": "af94e249aa802dcfaca4f646ed274d909ac2e772ddf72f4bdf90cfde80abf0e1",
+      "version": "4.1"
+    },
+    {
+      "characters": 2733831,
+      "document_id": 191,
+      "name": "GD32F20x User Manual",
+      "pages": 946,
+      "pdf": {
+        "filename": "191-1-GD32F20x_User_Manual_Rev3.3.pdf",
+        "sha256": "6f12a9689c20070acb8cf61533cdc6466ec2058329b18ebb928b858f87d46704"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-6f12a9689c20070a-6e8a52c9ff50.txt",
+      "text_sha256": "161b6f3b2b7aaf668b96265783d33c8f98bfe48c04c4a5a88f6d83bf32492846",
+      "version": "3.3"
+    },
+    {
+      "characters": 2608825,
+      "document_id": 128,
+      "name": "GD32F30x User Manual",
+      "pages": 879,
+      "pdf": {
+        "filename": "128-1-GD32F30x_User_Manual_Rev3.4.pdf",
+        "sha256": "693e0bb40800447daf52783535fd06a7abad5a76deb0b1439f7f4530344516d6"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-693e0bb40800447d-6e8a52c9ff50.txt",
+      "text_sha256": "5724fa456aa07db0f37fb89b344fe5769dbb18ec3cf4f0924d4bec4734b79004",
+      "version": "3.4"
+    },
+    {
+      "characters": 1908336,
+      "document_id": 136,
+      "name": "GD32F3x0 User Manual",
+      "pages": 676,
+      "pdf": {
+        "filename": "136-1-GD32F3x0_User_Manual_Rev3.3.pdf",
+        "sha256": "1eb9d9fc6396ce0a7760095fa092dc05bec56f0ca6bbd4d57120aac0f1d3b902"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-1eb9d9fc6396ce0a-6e8a52c9ff50.txt",
+      "text_sha256": "7f42737cd3471c83cf456801d67f69b3130638a464c51d99c85a85b60d778c1d",
+      "version": "3.3"
+    },
+    {
+      "characters": 2064738,
+      "document_id": 286,
+      "name": "GD32F403 User Manual",
+      "pages": 713,
+      "pdf": {
+        "filename": "286-1-GD32F403_User_Manual_Rev3.2.pdf",
+        "sha256": "47c904a91e54090828bc2b475cffc6d712106187e5c62b1af2bb4e2e2998a8c3"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-47c904a91e540908-6e8a52c9ff50.txt",
+      "text_sha256": "1d5513e878f07ac7b45c0cd120d4792c17c9f33616483a720700c7b800df2ad1",
+      "version": "3.2"
+    },
+    {
+      "characters": 3233921,
+      "document_id": 98,
+      "name": "GD32F4xx User Manual",
+      "pages": 1092,
+      "pdf": {
+        "filename": "98-1-GD32F4xx_User_Manual_Rev3.4.pdf",
+        "sha256": "629856c8f3a271d8d7ec58e436bc0839ab429feb2268c85b22c6ecee5e0fa29d"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-629856c8f3a271d8-6e8a52c9ff50.txt",
+      "text_sha256": "224a2e7aeaeceb99d118dd9da298a3fdf731b91373456f6b334d641cc98b955e",
+      "version": "3.4"
+    },
+    {
+      "characters": 2417435,
+      "document_id": 742,
+      "name": "GD32F50x User Manual",
+      "pages": 828,
+      "pdf": {
+        "filename": "742-1-GD32F50x_User_Manual_Rev1.4.pdf",
+        "sha256": "627259d8873d4bf0e9928d7843bcbcd2192cb8d875adb4ac8daf2608413e6405"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-627259d8873d4bf0-6e8a52c9ff50.txt",
+      "text_sha256": "b2981ffc8ab9741b55cfb12ea2ce6d3d03d5cd08208cc99de116ba726edd650b",
+      "version": "1.4"
+    },
+    {
+      "characters": 3848851,
+      "document_id": 560,
+      "name": "GD32F5xx User Manual",
+      "pages": 1284,
+      "pdf": {
+        "filename": "560-1-GD32F527xx_User_Manual_Rev1.4.pdf",
+        "sha256": "0602b3b7e03e6c544282724402b352864032edbf65f48fedfff6af9179231322"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-0602b3b7e03e6c54-6e8a52c9ff50.txt",
+      "text_sha256": "308843540d7802400812b2a7ece8257a4b819aaeee211336228ba48f2639d1c1",
+      "version": "1.4"
+    },
+    {
+      "characters": 4541344,
+      "document_id": 657,
+      "name": "GD32G553 User Manual",
+      "pages": 1529,
+      "pdf": {
+        "filename": "657-1-GD32G553_User_Manual_Rev1.3.pdf",
+        "sha256": "a62ac3bcfa7b1ac7ed739447612b1768de438f78fbbb8b18e090ef9612847398"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-a62ac3bcfa7b1ac7-6e8a52c9ff50.txt",
+      "text_sha256": "8a731db2f4f4f89902e05977f3521ffcc161fdc982197d0860793dca29f253cf",
+      "version": "1.3"
+    },
+    {
+      "characters": 5725465,
+      "document_id": 464,
+      "name": "GD32H737 757 759 User Manual",
+      "pages": 1870,
+      "pdf": {
+        "filename": "464-1-GD32H737_757_759_User_Manual_Rev1.7.pdf",
+        "sha256": "a18adef59e38187c493a7db6a10b5b39e485d984b821134b4db0d97d5287e9c8"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-a18adef59e38187c-6e8a52c9ff50.txt",
+      "text_sha256": "c8106a30a6a7224a2b6eca4bcb2aff1bf510bdb04dabd933442ab6be4f85eaf6",
+      "version": "1.7"
+    },
+    {
+      "characters": 6721691,
+      "document_id": 468,
+      "name": "GD32H73x 75x User Manual",
+      "pages": 2171,
+      "pdf": {
+        "filename": "468-1-GD32H73x_75x_User_Manual_Rev1.8.pdf",
+        "sha256": "d9750d1984b2987531b59071aad8776ee7f1fc633b25288e5b6712a7cbc3d49a"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-d9750d1984b29875-6e8a52c9ff50.txt",
+      "text_sha256": "3b0c04d0516d71f9339b51609428b194df5acf04ca5bb4148bbfb8b0d7b65cb6",
+      "version": "1.8"
+    },
+    {
+      "characters": 4902848,
+      "document_id": 653,
+      "name": "GD32H75E User Manual",
+      "pages": 1606,
+      "pdf": {
+        "filename": "653-1-GD32H75E_User_Manual_Rev1.3.pdf",
+        "sha256": "4abd35d6d805480ef96ebe840ae04fa7794b0f2413d48e7364333fac7235ce50"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-4abd35d6d805480e-6e8a52c9ff50.txt",
+      "text_sha256": "0ab3760320636f75e1c85d641efe27b69bdac70d5eab16ee29a78a0e9dc8e69d",
+      "version": "1.3"
+    },
+    {
+      "characters": 2388607,
+      "document_id": 293,
+      "name": "GD32L23x User Manual",
+      "pages": 845,
+      "pdf": {
+        "filename": "293-1-GD32L23x_User_Manual_Rev2.6.pdf",
+        "sha256": "3f1cfb0670e5c88c83dd94cbe9c8bda6bba4990df35634d64b5e9a2f4369cdfb"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-3f1cfb0670e5c88c-6e8a52c9ff50.txt",
+      "text_sha256": "40c8a97f26a1b706873f5a3f421a05fbef469c2dc3c4083a66f882fe7f878daa",
+      "version": "2.6"
+    },
+    {
+      "characters": 2534364,
+      "document_id": 42,
+      "name": "GD32M531 User Manual",
+      "pages": 873,
+      "pdf": {
+        "filename": "42-1-GD32M531_User_Manual_Rev1.0.pdf",
+        "sha256": "67cb72e5ef5e3e49175e909047b994cab002264fac50664938556dc75911426d"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-67cb72e5ef5e3e49-6e8a52c9ff50.txt",
+      "text_sha256": "8a20bfae4fd92d0cba6ce21a7789b9e8c99e1372950bb130bbfb7875c1ae59c9",
+      "version": "1.0"
+    },
+    {
+      "characters": 1497162,
+      "document_id": 222,
+      "name": "GD32VF103 User Manual",
+      "pages": 528,
+      "pdf": {
+        "filename": "222-1-GD32VF103_User_Manual_Rev1.9.pdf",
+        "sha256": "c6481cc59e62ea59502a3684dd4ba2b30fdfc659dbe8700a9b106fc6e4b78723"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-c6481cc59e62ea59-6e8a52c9ff50.txt",
+      "text_sha256": "f09dd2c87899ecb2f3119184af050211c02f7a75e35e5d275b1f5b106e4751fa",
+      "version": "1.9"
+    },
+    {
+      "characters": 1731492,
+      "document_id": 498,
+      "name": "GD32VW55x User Manual",
+      "pages": 614,
+      "pdf": {
+        "filename": "498-1-GD32VW55x_User_Manual_Rev1.6.pdf",
+        "sha256": "04fb3d1d10d65e8d509781d0db059cb5a3e8ae76fbafdc413112faa8e11ebdad"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-04fb3d1d10d65e8d-6e8a52c9ff50.txt",
+      "text_sha256": "0deb9f05ab5ff0449b0f429e72163287430256e116302b1a30bd6d5482b23cae",
+      "version": "1.6"
+    },
+    {
+      "characters": 3506568,
+      "document_id": 15,
+      "name": "GD32W51x F5HC User Manual",
+      "pages": 1196,
+      "pdf": {
+        "filename": "15-1-GD32W51x_F5HC_User_Manual_Rev2.1.pdf",
+        "sha256": "7e7493bd0ad464898562f927fc4b60ae4a0842bef86dd9618f0f18cbdeb4b1dd"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-7e7493bd0ad46489-6e8a52c9ff50.txt",
+      "text_sha256": "308661e7aaa1c901001f1f14acaea23876b09f4b592770d18221e517750f67b5",
+      "version": "2.1"
+    }
+  ],
+  "pdftotext": "pdftotext version 26.07.0",
+  "provenance": {
+    "manuals_lock": {
+      "path": "manuals.lock.json",
+      "sha256": "07b1656b31eeefe9d4f6146fd4e6a780219020bb9b545f190e7dbd681fcf8f44"
+    }
+  },
+  "schema_version": 1,
+  "summary": {
+    "characters": 88561032,
+    "manuals": 32,
+    "pages": 29966
+  }
+}

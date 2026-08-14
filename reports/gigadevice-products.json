@@ -1,0 +1,462 @@
+{
+  "products": [
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 1048576,
+      "max_speed_mhz": 160,
+      "package": "LQFP64",
+      "part_number": "GD32A711ART3TB",
+      "series": "GD32A711",
+      "sram_bytes": 131072,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a711art3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 1048576,
+      "max_speed_mhz": 160,
+      "package": "LQFP100",
+      "part_number": "GD32A711AVT3TB",
+      "series": "GD32A711",
+      "sram_bytes": 131072,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a711avt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 1048576,
+      "max_speed_mhz": 160,
+      "package": "LQFP144",
+      "part_number": "GD32A711AZT3TB",
+      "series": "GD32A711",
+      "sram_bytes": 131072,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a711azt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 1048576,
+      "max_speed_mhz": 120,
+      "package": "LQFP64",
+      "part_number": "GD32A711BRT3TB",
+      "series": "GD32A711",
+      "sram_bytes": 131072,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a711brt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 1048576,
+      "max_speed_mhz": 120,
+      "package": "LQFP100",
+      "part_number": "GD32A711BVT3TB",
+      "series": "GD32A711",
+      "sram_bytes": 131072,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a711bvt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 1048576,
+      "max_speed_mhz": 120,
+      "package": "LQFP144",
+      "part_number": "GD32A711BZT3TB",
+      "series": "GD32A711",
+      "sram_bytes": 131072,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a711bzt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 160,
+      "package": "LQFP176",
+      "part_number": "GD32A712AIT3TB",
+      "series": "GD32A712",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a712ait3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 160,
+      "package": "LQFP100",
+      "part_number": "GD32A712AVT3TB",
+      "series": "GD32A712",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a712avt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 160,
+      "package": "LQFP144",
+      "part_number": "GD32A712AZT3TB",
+      "series": "GD32A712",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a712azt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 120,
+      "package": "LQFP176",
+      "part_number": "GD32A712BIT3TB",
+      "series": "GD32A712",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a712bit3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 120,
+      "package": "LQFP100",
+      "part_number": "GD32A712BVT3TB",
+      "series": "GD32A712",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a712bvt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 120,
+      "package": "LQFP144",
+      "part_number": "GD32A712BZT3TB",
+      "series": "GD32A712",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a712bzt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "LQFP176",
+      "part_number": "GD32A714AIT3TB",
+      "series": "GD32A714",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a714ait3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "LQFP100",
+      "part_number": "GD32A714AVT3TB",
+      "series": "GD32A714",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a714avt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "BGA257",
+      "part_number": "GD32A714AXJ3TB",
+      "series": "GD32A714",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a714axj3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "LQFP144",
+      "part_number": "GD32A714AZT3TB",
+      "series": "GD32A714",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a714azt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 160,
+      "package": "LQFP176",
+      "part_number": "GD32A714BIT3TB",
+      "series": "GD32A714",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a714bit3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 160,
+      "package": "LQFP100",
+      "part_number": "GD32A714BVT3TB",
+      "series": "GD32A714",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a714bvt3tb"
+    },
+    {
+      "core": "Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 160,
+      "package": "LQFP144",
+      "part_number": "GD32A714BZT3TB",
+      "series": "GD32A714",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a714bzt3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 320,
+      "package": "LQFP176",
+      "part_number": "GD32A722AIT3TB",
+      "series": "GD32A722",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a722ait3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 320,
+      "package": "BGA257",
+      "part_number": "GD32A722AXJ3TB",
+      "series": "GD32A722",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a722axj3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 320,
+      "package": "LQFP144",
+      "part_number": "GD32A722AZT3TB",
+      "series": "GD32A722",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a722azt3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 160,
+      "package": "LQFP176",
+      "part_number": "GD32A722BIT3TB",
+      "series": "GD32A722",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a722bit3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 160,
+      "package": "BGA257",
+      "part_number": "GD32A722BXJ3TB",
+      "series": "GD32A722",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a722bxj3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 160,
+      "package": "LQFP144",
+      "part_number": "GD32A722BZT3TB",
+      "series": "GD32A722",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a722bzt3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "LQFP176",
+      "part_number": "GD32A724AIT3TB",
+      "series": "GD32A724",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a724ait3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "BGA257",
+      "part_number": "GD32A724AXJ3TB",
+      "series": "GD32A724",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a724axj3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "LQFP144",
+      "part_number": "GD32A724AZT3TB",
+      "series": "GD32A724",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a724azt3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 160,
+      "package": "LQFP176",
+      "part_number": "GD32A724BIT3TB",
+      "series": "GD32A724",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a724bit3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 160,
+      "package": "BGA257",
+      "part_number": "GD32A724BXJ3TB",
+      "series": "GD32A724",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a724bxj3tb"
+    },
+    {
+      "core": "Dual Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 160,
+      "package": "LQFP144",
+      "part_number": "GD32A724BZT3TB",
+      "series": "GD32A724",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a724bzt3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 320,
+      "package": "LQFP176",
+      "part_number": "GD32A742AIT3TB",
+      "series": "GD32A742",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a742ait3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 320,
+      "package": "LQFP100",
+      "part_number": "GD32A742AVT3TB",
+      "series": "GD32A742",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a742avt3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 320,
+      "package": "LQFP144",
+      "part_number": "GD32A742AZT3TB",
+      "series": "GD32A742",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a742azt3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 160,
+      "package": "LQFP176",
+      "part_number": "GD32A742BIT3TB",
+      "series": "GD32A742",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a742bit3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 160,
+      "package": "LQFP100",
+      "part_number": "GD32A742BVT3TB",
+      "series": "GD32A742",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a742bvt3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 2097152,
+      "max_speed_mhz": 160,
+      "package": "LQFP144",
+      "part_number": "GD32A742BZT3TB",
+      "series": "GD32A742",
+      "sram_bytes": 262144,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a742bzt3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "LQFP176",
+      "part_number": "GD32A744AIT3TB",
+      "series": "GD32A744",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a744ait3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "LQFP100",
+      "part_number": "GD32A744AVT3TB",
+      "series": "GD32A744",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a744avt3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "BGA257",
+      "part_number": "GD32A744AXJ3TB",
+      "series": "GD32A744",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a744axj3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 320,
+      "package": "LQFP144",
+      "part_number": "GD32A744AZT3TB",
+      "series": "GD32A744",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a744azt3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 160,
+      "package": "LQFP176",
+      "part_number": "GD32A744BIT3TB",
+      "series": "GD32A744",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a744bit3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 160,
+      "package": "LQFP100",
+      "part_number": "GD32A744BVT3TB",
+      "series": "GD32A744",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a744bvt3tb"
+    },
+    {
+      "core": "Lockstep Cortex®-M7",
+      "flash_bytes": 4194304,
+      "max_speed_mhz": 160,
+      "package": "LQFP144",
+      "part_number": "GD32A744BZT3TB",
+      "series": "GD32A744",
+      "sram_bytes": 524288,
+      "url": "https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32a744bzt3tb"
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "sha256": "b5cdd81a2c9faad959a89145fc011a0efd9357c155d9958f7087536cea6c28a5",
+    "size": 1362566,
+    "url": "https://www.gigadevice.com/product/mcu/automotive-mcus/gd32a7xx-series"
+  },
+  "summary": {
+    "products": 44,
+    "series": [
+      "GD32A711",
+      "GD32A712",
+      "GD32A714",
+      "GD32A722",
+      "GD32A724",
+      "GD32A742",
+      "GD32A744"
+    ]
+  }
+}

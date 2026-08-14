@@ -1,0 +1,7 @@
+{
+  "base_chips": 632,
+  "chips": 680,
+  "iar_devices": 48,
+  "output_tree_sha256": "fe40023ea71e0140d9118fee4caaeb9c67f4e47ad5f960022bc59cdd09552869",
+  "schema_version": 1
+}

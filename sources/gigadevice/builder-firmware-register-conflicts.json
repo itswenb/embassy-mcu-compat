@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "conflicts": [
+    {
+      "series": "GD32L23X",
+      "defines": [
+        "GD32L235",
+        "GD32L23x"
+      ],
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "path": "Firmware/Firmware/GD32L23x_standard_peripheral/Include/gd32l23x_rcu.h",
+      "sha256": "05967e0d8f57f5dba71d2dfbab25868f2c65c64bff1996ba0e7da5bde5c601d9",
+      "invalid_fields": [
+        {
+          "first": 25,
+          "name": "RCU_CFG2_LPUART1SEL",
+          "second": 24
+        }
+      ],
+      "resolution": "prefer-pack-svd",
+      "reason": "Builder 内置库与独立 Firmware 为同一错误头文件，采用器件 Pack SVD 的 bitOffset=24、bitWidth=2 并保留勘误"
+    }
+  ]
+}

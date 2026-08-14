@@ -1,0 +1,167 @@
+{
+  "libraries": [
+    {
+      "archive_sha256": "641a745aa3009db14fce19c814f575be3f0f120fe395db77ced321cd4e8afe0b",
+      "core_source": {
+        "path": "GD32VF103_Firmware_Library_V1.7.0/Examples/USBFS/USB_Device/audio/IAR/audio.ewp",
+        "project_files": 12,
+        "sha256": "3efab39bc7504713598dff8244c7ecb421bc0ed676bf8973d87d4ce77d90520c"
+      },
+      "document_id": 386,
+      "isa": "RV32IMAC",
+      "linker_profiles": [
+        {
+          "memory": [
+            {
+              "address": 134217728,
+              "kind": "flash",
+              "name": "flash",
+              "size": 16384
+            },
+            {
+              "address": 536870912,
+              "kind": "ram",
+              "name": "ram",
+              "size": 6144
+            }
+          ],
+          "pattern": "GD32VF103X4",
+          "source": {
+            "path": "GD32VF103_Firmware_Library_V1.7.0/Firmware/RISCV/env_Eclipse/GD32VF103x4.lds",
+            "sha256": "51b0be0fffe8a1317d79a23ffc724f774dadb2d93bb4569497a08bce6f43240d"
+          }
+        },
+        {
+          "memory": [
+            {
+              "address": 134217728,
+              "kind": "flash",
+              "name": "flash",
+              "size": 32768
+            },
+            {
+              "address": 536870912,
+              "kind": "ram",
+              "name": "ram",
+              "size": 10240
+            }
+          ],
+          "pattern": "GD32VF103X6",
+          "source": {
+            "path": "GD32VF103_Firmware_Library_V1.7.0/Firmware/RISCV/env_Eclipse/GD32VF103x6.lds",
+            "sha256": "92e0345aafeecda2d4ec2567f1dd95d0c37d67ded5e3f6e798d1c9f756804f1e"
+          }
+        },
+        {
+          "memory": [
+            {
+              "address": 134217728,
+              "kind": "flash",
+              "name": "flash",
+              "size": 65536
+            },
+            {
+              "address": 536870912,
+              "kind": "ram",
+              "name": "ram",
+              "size": 20480
+            }
+          ],
+          "pattern": "GD32VF103X8",
+          "source": {
+            "path": "GD32VF103_Firmware_Library_V1.7.0/Firmware/RISCV/env_Eclipse/GD32VF103x8.lds",
+            "sha256": "ffe84c0b366fbf513a4f6f2914937cbb44957a555dda6d42773e9ca5e86a1f3c"
+          }
+        },
+        {
+          "memory": [
+            {
+              "address": 134217728,
+              "kind": "flash",
+              "name": "flash",
+              "size": 131072
+            },
+            {
+              "address": 536870912,
+              "kind": "ram",
+              "name": "ram",
+              "size": 32768
+            }
+          ],
+          "pattern": "GD32VF103XB",
+          "source": {
+            "path": "GD32VF103_Firmware_Library_V1.7.0/Firmware/RISCV/env_Eclipse/GD32VF103xB.lds",
+            "sha256": "cded5eb7cc60b54f25f95fbccab64fea8373c69a8b7e7fb217d21b9682b9e9d8"
+          }
+        }
+      ],
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "series": "GD32VF103",
+      "tree_sha256": "f404266f5186f5077d267f85e298c53729aa39b3e9e6b82ada17622efde7945e",
+      "version": "1.7.0"
+    },
+    {
+      "archive_sha256": "58f55313c58d8865bf50e5044c7718def40239f335cf45639537f68334e7cdf9",
+      "core_source": {
+        "path": "GD32VW55x_Firmware_Library_V1.6.0/Template/IAR_project/Project.ewp",
+        "project_files": 1,
+        "sha256": "ec78bdce876e7d408e2795db131f3dbfbe2db45638466bf408a6df42ae01d280"
+      },
+      "document_id": 505,
+      "isa": "RV32IMAFC",
+      "linker_profiles": [
+        {
+          "memory": [
+            {
+              "address": 134217728,
+              "kind": "flash",
+              "name": "flash",
+              "size": 2097152
+            },
+            {
+              "address": 536870912,
+              "kind": "ram",
+              "name": "ram",
+              "size": 294912
+            }
+          ],
+          "pattern": "GD32VW553XI",
+          "source": {
+            "path": "GD32VW55x_Firmware_Library_V1.6.0/Firmware/RISCV/env_Eclipse/GD32VW553xI.lds",
+            "sha256": "abea5de7e1b9c7083eb2d8d886942b68e538720079af3dc24731d25128e33e39"
+          }
+        },
+        {
+          "memory": [
+            {
+              "address": 134217728,
+              "kind": "flash",
+              "name": "flash",
+              "size": 4194304
+            },
+            {
+              "address": 536870912,
+              "kind": "ram",
+              "name": "ram",
+              "size": 294912
+            }
+          ],
+          "pattern": "GD32VW553XM",
+          "source": {
+            "path": "GD32VW55x_Firmware_Library_V1.6.0/Firmware/RISCV/env_Eclipse/GD32VW553xM.lds",
+            "sha256": "8ca177f4052c1a58c0e3902ad75adad540b2732248b5728ecd26bd1ae4bb1e2b"
+          }
+        }
+      ],
+      "rust_target": "riscv32imafc-unknown-none-elf",
+      "series": "GD32VW55x",
+      "tree_sha256": "d88cc24f1334211189d859b09713a309c67a0805ec3c1b7ffd660cbb5592d33e",
+      "version": "1.6.0"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "libraries": 2,
+    "linker_profiles": 6
+  }
+}

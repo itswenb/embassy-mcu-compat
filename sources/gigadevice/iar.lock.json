@@ -1,0 +1,17 @@
+{
+  "iar": {
+    "name": "cxarm-device-support-additional-9.70.4.20260226111516.tar.bz2",
+    "published": "2026-03-06T12:03:28Z",
+    "release_url": "https://github.com/iarsystems/arm/releases/tag/9.70.4",
+    "sha256": "57f33246bd156b1baf569dc337120aac513c76a07e17975fb7495c4bcf615d5a",
+    "size": 68732908,
+    "status": "active",
+    "url": "https://github.com/iarsystems/arm/releases/download/9.70.4/cxarm-device-support-additional-9.70.4.20260226111516.tar.bz2",
+    "version": "9.70.4"
+  },
+  "license": {
+    "redistribution": "IAR 原始设备支持包仅在本地分析，不随生成仓库发布。"
+  },
+  "schema_version": 1,
+  "source_page": "https://github.com/iarsystems/arm/releases/tag/9.70.4"
+}

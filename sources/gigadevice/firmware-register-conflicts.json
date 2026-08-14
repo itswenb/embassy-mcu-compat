@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "conflicts": [
+    {
+      "series": "GD32L23x",
+      "defines": [
+        "GD32L235",
+        "GD32L23x"
+      ],
+      "tree_sha256": "8273bb0db1f6ca95386b391ba7031c67f1f834708870bddc636cddb415f1236a",
+      "path": "GD32L23x_Firmware_Library_V2.4.0/Firmware/GD32L23x_standard_peripheral/Include/gd32l23x_rcu.h",
+      "sha256": "05967e0d8f57f5dba71d2dfbab25868f2c65c64bff1996ba0e7da5bde5c601d9",
+      "invalid_fields": [
+        {
+          "first": 25,
+          "name": "RCU_CFG2_LPUART1SEL",
+          "second": 24
+        }
+      ],
+      "resolution": "prefer-pack-svd",
+      "reason": "官方 Firmware 将位域写为反向的 BITS(25,24)，器件专用 Pack SVD 明确给出 bitOffset=24、bitWidth=2，生成时采用 SVD 并保留勘误记录"
+    }
+  ]
+}

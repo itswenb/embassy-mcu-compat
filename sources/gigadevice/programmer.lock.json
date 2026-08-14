@@ -1,0 +1,21 @@
+{
+  "license": {
+    "agreement": "SLA-GD0003-version1.1",
+    "redistribution": "官方工具原始归档仅作本地来源验证，不随生成仓库发布。"
+  },
+  "schema_version": 1,
+  "source_page": "https://www.gd32mcu.com/cn/download/7?kw=GD32%20All-In-One%20Programmer",
+  "tool": {
+    "agreement_url": "https://www.gd32mcu.com/download/agree/box_id/8/document_id/245/path_type/1",
+    "box_id": 8,
+    "document_id": 245,
+    "filename": "GD32AllInOneProgrammer_win_V5.2.0.40390.7z",
+    "name": "GD32 All-In-One Programmer",
+    "published": "2026-06-12",
+    "sha256": "ea97f61ffd50d7254a91122993e1524a28301699d85fe4429a3c21f3aa93c4d5",
+    "size": 15356250,
+    "status": "active",
+    "url": "https://www.gd32mcu.com/data/documents/toolSoftware/GD32AllInOneProgrammer_win_V5.2.0.40390.7z",
+    "version": "5.2.0.40390"
+  }
+}

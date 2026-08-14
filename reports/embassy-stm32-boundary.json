@@ -1,0 +1,14 @@
+{
+  "cargo_feature_stm32_mentions": 2,
+  "conclusion": "仅替换 stm32-metapac metadata 不能覆盖非 Cortex-M GD32；同时，Cortex-M 型号仍需逐项验证 STM32 家族 cfg 与初始化路径。",
+  "cortex_m_source_files": 28,
+  "crate": "embassy-stm32",
+  "embassy_revision": "98d847be57f3ea022ce05fe9b95ab3639a1e0a93",
+  "metadata_only_all_architectures_possible": false,
+  "rust_source_files": 253,
+  "schema_version": 1,
+  "stm32_cfg_files": 61,
+  "stm32_cfg_lines": 804,
+  "stm32_prefix_branches": 35,
+  "unconditional_cortex_m_dependency": true
+}

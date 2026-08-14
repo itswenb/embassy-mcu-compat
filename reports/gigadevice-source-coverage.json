@@ -1,0 +1,3911 @@
+{
+  "addons": [
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 625,
+      "name": "GD32A10x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32A10x_DFP.1.4.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32A10x_DFP.pdsc"
+          ],
+          "sha256": "3deb131cd105ddb420a0b7d806dde1dbb512a2a95fc3604bb9b843c7fb031233"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.4.0"
+    },
+    {
+      "cmsis_pack_count": 5,
+      "document_id": 534,
+      "name": "GD32A490 AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32A490_DFP.1.0.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32A490_DFP.pdsc"
+          ],
+          "sha256": "49d1d0dd23b1d0989ef5399b387c12f4c2c8b8448438e62c8a49515ff9e4934b"
+        },
+        {
+          "filename": "GigaDevice.GD32A490_DFP.1.1.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32A490_DFP.pdsc"
+          ],
+          "sha256": "b5a560e67002ba316cce6ead00dc07147df98557b995b1233486296c8e203b0f"
+        },
+        {
+          "filename": "GigaDevice.GD32A490_DFP.1.2.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32A490_DFP.pdsc"
+          ],
+          "sha256": "a85c5c9aca147c928b27bd83d52b3c273fef5472d58d511ce33f04cc4c6f36b0"
+        },
+        {
+          "filename": "GigaDevice.GD32A490_DFP.1.3.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32A490_DFP.pdsc"
+          ],
+          "sha256": "6eb9f34423b469e779c42b5db2a90bef5eb4fad889b26fb0dd6484c88bd1b838"
+        },
+        {
+          "filename": "GigaDevice.GD32A490_DFP.1.4.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32A490_DFP.pdsc"
+          ],
+          "sha256": "484af47828941a7dcb9c61a511e6168f2097235d0aa9cbda7483f839ee50a4d7"
+        }
+      ],
+      "svd_file_count": 5,
+      "version": "1.4.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 673,
+      "name": "GD32A508 AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32A508_DFP.1.4.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32A508_DFP.pdsc"
+          ],
+          "sha256": "6a35b0fe76671fad1f1931afbee61af98e917a0bc8935e498a116462cf5d18e4"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.4.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 405,
+      "name": "GD32A50x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32A50x_DFP.1.6.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32A50x_DFP.pdsc"
+          ],
+          "sha256": "574a7ea6e7c84f58e67e96e0e67b5b22ca98c8adad9c187e012b63bd170a5447"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.6.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 580,
+      "name": "GD32A513 AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32A513_DFP.1.3.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32A513_DFP.pdsc"
+          ],
+          "sha256": "e7a4f90a597af9bfa537c6aaad644f426bf7fd6c9eebc14c416254fc6273a461"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.3.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 265,
+      "name": "GD32C10x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32C10x_DFP.1.5.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32C10x_DFP.pdsc"
+          ],
+          "sha256": "7e16b5dba0eea6f4ebf06e506eeb19ac30558d409a7409f6b696d8b49edffdd3"
+        }
+      ],
+      "svd_file_count": 2,
+      "version": "1.5.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 398,
+      "name": "GD32C11x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32C11x_DFP.1.5.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32C11x_DFP.pdsc"
+          ],
+          "sha256": "97b009ad727c7ae783abfe2f551b514367d1b447df026940761789072f51a124"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.5.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 702,
+      "name": "GD32C2x1 AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32C2x1_DFP.1.1.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32C2x1_DFP.pdsc"
+          ],
+          "sha256": "ba7dfe4be7ce5408bb8c06dc0173c6f9528358832695b866b43b6b21e961f989"
+        }
+      ],
+      "svd_file_count": 2,
+      "version": "1.1.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 588,
+      "name": "GD32E10x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32E10x_DFP.1.7.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32E10x_DFP.pdsc"
+          ],
+          "sha256": "e9e1ce4d3fa2ec4fe06a0bca9b7ffb758c01c7366a730579d044fb2a4b883a6e"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.7.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 399,
+      "name": "GD32E11x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32E11x_DFP.1.5.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32E11x_DFP.pdsc"
+          ],
+          "sha256": "e680ffd16bc3984463a0b3af78affacbb43e940f94a898019172ea6e13741212"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.5.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 215,
+      "name": "GD32E23x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32E23x_DFP.2.5.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32E23x_DFP.pdsc"
+          ],
+          "sha256": "ed9e6c165a1ca5314c55b88d65cad2cc3a01f126b61217da89d81f9c3e562bf3"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "2.5.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 494,
+      "name": "GD32E502 AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32E502_DFP.1.3.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32E502_DFP.pdsc"
+          ],
+          "sha256": "64404306c680f5cb644ee36aeda0bcf9dfa7c1f28ff2f7e9d244bc4b6843cc2b"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.3.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 260,
+      "name": "GD32E50x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32E50x_DFP.1.9.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32E50x_DFP.pdsc"
+          ],
+          "sha256": "34d0b1f191dc9dadf4a2e4ef7a7f1643125c909ea3142ed2ad1e77cd289c06a4"
+        }
+      ],
+      "svd_file_count": 4,
+      "version": "1.9.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 605,
+      "name": "GD32E51x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32E51x_DFP.1.5.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32E51x_DFP.pdsc"
+          ],
+          "sha256": "8323d924133181a68a8896757dd8a94daf0522dae9486f22050f90c0cb50c55f"
+        }
+      ],
+      "svd_file_count": 3,
+      "version": "1.5.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 310,
+      "name": "GD32F10x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32F10x_DFP.2.3.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F10x_DFP.pdsc"
+          ],
+          "sha256": "302312136354accfb4412bd01db366ce0d279a7eebfd926989ce624a0a1ba7d3"
+        }
+      ],
+      "svd_file_count": 4,
+      "version": "2.3.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 155,
+      "name": "GD32F1x0 AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32F1x0_DFP.3.7.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F1x0_DFP.pdsc"
+          ],
+          "sha256": "f903801509dc749851dac76a213323b25c217103280e9ce771bde959f1f822a1"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "3.7.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 311,
+      "name": "GD32F20x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32F20x_DFP.2.7.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F20x_DFP.pdsc"
+          ],
+          "sha256": "f72330bc730d0e97026b0ff7bd5e9541f876ac0f094b1ca41eb6788055834fc3"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "2.7.0"
+    },
+    {
+      "cmsis_pack_count": 8,
+      "document_id": 205,
+      "name": "GD32F30x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32F30x_DFP.2.1.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F30x_DFP.pdsc"
+          ],
+          "sha256": "5a4d3c2de1cab54c06a4c11d801b4d615b11279118844ab57669720784931c01"
+        },
+        {
+          "filename": "GigaDevice.GD32F30x_DFP.2.2.1.pack",
+          "pdsc": [
+            "GigaDevice.GD32F30x_DFP.pdsc"
+          ],
+          "sha256": "640b4867d3c6e7e799c89cb78935ec1412021e00b210e5ed73d0a030ace7f9d5"
+        },
+        {
+          "filename": "GigaDevice.GD32F30x_DFP.2.2.2.pack",
+          "pdsc": [
+            "GigaDevice.GD32F30x_DFP.pdsc"
+          ],
+          "sha256": "337fb613e3cc958c0023c18bb1301975f9806dcfa2290869fca5994966a04545"
+        },
+        {
+          "filename": "GigaDevice.GD32F30x_DFP.2.2.3.pack",
+          "pdsc": [
+            "GigaDevice.GD32F30x_DFP.pdsc"
+          ],
+          "sha256": "4c9f8562bd7832941460386a93b57185476d3d2a773188c0308e00f2d7104de1"
+        },
+        {
+          "filename": "GigaDevice.GD32F30x_DFP.2.3.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F30x_DFP.pdsc"
+          ],
+          "sha256": "a2584d38ccde553ebe9263869cc665a0f0101e53ae08d4cae76efd532d9b8c28"
+        },
+        {
+          "filename": "GigaDevice.GD32F30x_DFP.2.4.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F30x_DFP.pdsc"
+          ],
+          "sha256": "a44f515d050d67e9c95f6e21ae401df0f52a0ea30f0522bf6c902963c16e15dd"
+        },
+        {
+          "filename": "GigaDevice.GD32F30x_DFP.2.5.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F30x_DFP.pdsc"
+          ],
+          "sha256": "4ef8975b742127d71788082ef07f9a2c8c0d08e30e104c7ba04e382ae6faa23d"
+        },
+        {
+          "filename": "GigaDevice.GD32F30x_DFP.2.6.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F30x_DFP.pdsc"
+          ],
+          "sha256": "ef90301be96d0607cf3ed46742d9b08a68ad7e4b07b2259b5f9062d45feabe78"
+        }
+      ],
+      "svd_file_count": 24,
+      "version": "2.6.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 219,
+      "name": "GD32F3x0 AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32F3x0_DFP.3.4.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F3x0_DFP.pdsc"
+          ],
+          "sha256": "6ba252b786c5551d9aa28fe62cac5a5874dfc670acf526bea6efb07d87f2634b"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "3.4.0"
+    },
+    {
+      "cmsis_pack_count": 3,
+      "document_id": 123,
+      "name": "GD32F403 AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32F403_DFP.3.4.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F403_DFP.pdsc"
+          ],
+          "sha256": "1c8e071726678002514fdac73fcca373a87b9a807768970e67ffb547ae4016bd"
+        },
+        {
+          "filename": "GigaDevice.GD32F403_DFP.3.5.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F403_DFP.pdsc"
+          ],
+          "sha256": "bfa4794fa572ac254e4c9ed23d7234b4b6ee95e5c6a9cfb9e12bcbd9eced1185"
+        },
+        {
+          "filename": "GigaDevice.GD32F4xx_DFP.2.1.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F4xx_DFP.pdsc"
+          ],
+          "sha256": "cf8aadb16a18e7343b626511ab7ef500084b919b319dadc9f8b36127098c29f6"
+        }
+      ],
+      "svd_file_count": 4,
+      "version": "3.5.0"
+    },
+    {
+      "cmsis_pack_count": 6,
+      "document_id": 141,
+      "name": "GD32F4xx AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32F4xx_DFP.3.0.5.pack",
+          "pdsc": [
+            "GigaDevice.GD32F4xx_DFP.pdsc"
+          ],
+          "sha256": "89e00f0df5dc1398cd30f687e4087281c96259cde5253365a7ae1187ea3b648c"
+        },
+        {
+          "filename": "GigaDevice.GD32F4xx_DFP.3.1.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F4xx_DFP.pdsc"
+          ],
+          "sha256": "5eea587165fb8765f74bc24d602ad94c504c8319d7e52f23c95c8ee44f0b5731"
+        },
+        {
+          "filename": "GigaDevice.GD32F4xx_DFP.3.3.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F4xx_DFP.pdsc"
+          ],
+          "sha256": "e9cf2cf99d66587ba24529a8dd548a5b41f7d655d4bf2dd7a984f887de80e35f"
+        },
+        {
+          "filename": "GigaDevice.GD32F4xx_DFP.3.3.1.pack",
+          "pdsc": [
+            "GigaDevice.GD32F4xx_DFP.pdsc"
+          ],
+          "sha256": "9a4cba1d3e61650cae1ac3b1129bd9bdd6a409995b2b662ecdd3b719517660dc"
+        },
+        {
+          "filename": "GigaDevice.GD32F4xx_DFP.3.4.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F4xx_DFP.pdsc"
+          ],
+          "sha256": "c1facbd6c940463b29ce0a1f23a0c09a37ff7a1dd498bbfe1aa4b30230a1afab"
+        },
+        {
+          "filename": "GigaDevice.GD32F4xx_DFP.3.5.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F4xx_DFP.pdsc"
+          ],
+          "sha256": "3fd23660ace4562e21d3f7a168d5d1ae7dc09fa523d8d53851bfeb61c26a31c9"
+        }
+      ],
+      "svd_file_count": 10,
+      "version": "3.5.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 745,
+      "name": "GD32F50x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32F50x_DFP.1.0.1.pack",
+          "pdsc": [
+            "GigaDevice.GD32F50x_DFP.pdsc"
+          ],
+          "sha256": "6c19afed3376cd3b6b73c389f7f255d31276a129256723dc65e0ba35dd8d2724"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.0.1"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 23,
+      "name": "GD32F5xx AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32F527_DFP.1.4.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32F527_DFP.pdsc"
+          ],
+          "sha256": "d6145694f2d3d28543eb37e03f5ab71abee443d4870ec6738999dc605898538f"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.4.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 660,
+      "name": "GD32G5x3 AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32G5x3_DFP.1.3.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32G5x3_DFP.pdsc"
+          ],
+          "sha256": "b738a0552afd89f8ee49936da45bf90fb7e15c60207598ccdaf16ed821f724a6"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.3.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 655,
+      "name": "GD32H75E AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32H75E_DFP.1.4.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32H75E_DFP.pdsc"
+          ],
+          "sha256": "4620744c20402d49c8fdd76f64b1c92f2878022bbf2febbc7f236eae2258e0bb"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.4.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 471,
+      "name": "GD32H7xx AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32H7xx_DFP.1.5.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32H7xx_DFP.pdsc"
+          ],
+          "sha256": "6df1309fa7371473bc50087d7388474720e12dcce7e0da4779978c13e9aec736"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.5.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 291,
+      "name": "GD32L23x AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32L23x_DFP.2.3.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32L23x_DFP.pdsc"
+          ],
+          "sha256": "6b78b378091286d076f4c7d08351b8d6238aee103e55f815f188b8cc97acd5bd"
+        }
+      ],
+      "svd_file_count": 2,
+      "version": "2.3.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 48,
+      "name": "GD32M53x Addon",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32M53x_DFP.1.0.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32M53x_DFP.pdsc"
+          ],
+          "sha256": "30aa72fc165ce407ed09d5b0404bd321d4ef1733adbcea26a4b29259bce61585"
+        }
+      ],
+      "svd_file_count": 1,
+      "version": "1.0.0"
+    },
+    {
+      "cmsis_pack_count": 0,
+      "document_id": 522,
+      "name": "GD32VW55x AddOn",
+      "packs": [],
+      "svd_file_count": 0,
+      "version": "1.3.0"
+    },
+    {
+      "cmsis_pack_count": 1,
+      "document_id": 82,
+      "name": "GD32W51x F5HC AddOn",
+      "packs": [
+        {
+          "filename": "GigaDevice.GD32W51x_F5HC_DFP.2.0.0.pack",
+          "pdsc": [
+            "GigaDevice.GD32W51x_F5HC_DFP.pdsc"
+          ],
+          "sha256": "3f9aa630e309404d37cf0094c385e30bb7920903fe9288af3a8503ecbce38204"
+        }
+      ],
+      "svd_file_count": 2,
+      "version": "2.0.0"
+    }
+  ],
+  "architecture_boundary": {
+    "all_gd32_via_unmodified_embassy_stm32_metadata_only": false,
+    "evidence": "GD32VF/GD32VW 属于非 Cortex-M 系列，而 embassy-stm32 的执行架构绑定 Cortex-M。",
+    "non_arm_firmware_series": [
+      "GD32VF103",
+      "GD32VW55x"
+    ]
+  },
+  "builder": {
+    "afio_groups": {
+      "GD32C211": {
+        "pin_routes": 147,
+        "xml_files": 1
+      },
+      "GD32C2x1": {
+        "pin_routes": 502,
+        "xml_files": 2
+      },
+      "GD32E23x": {
+        "pin_routes": 297,
+        "xml_files": 2
+      },
+      "GD32E50x": {
+        "pin_routes": 173,
+        "xml_files": 1
+      },
+      "GD32F30x": {
+        "pin_routes": 345,
+        "xml_files": 2
+      },
+      "GD32F3x0": {
+        "pin_routes": 484,
+        "xml_files": 3
+      },
+      "GD32F4xx": {
+        "pin_routes": 661,
+        "xml_files": 1
+      },
+      "GD32F50x": {
+        "pin_routes": 1069,
+        "xml_files": 3
+      },
+      "GD32F5xx": {
+        "pin_routes": 832,
+        "xml_files": 1
+      },
+      "GD32G5X3": {
+        "pin_routes": 1255,
+        "xml_files": 2
+      },
+      "GD32H73x_75x": {
+        "pin_routes": 3544,
+        "xml_files": 3
+      },
+      "GD32H75E": {
+        "pin_routes": 804,
+        "xml_files": 1
+      },
+      "GD32H77x": {
+        "pin_routes": 4603,
+        "xml_files": 3
+      },
+      "GD32VF103": {
+        "pin_routes": 127,
+        "xml_files": 1
+      }
+    },
+    "afio_xml_count": 26,
+    "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+    "datasheet_groups": {
+      "GD32C211": {
+        "pin_pads": 113,
+        "xml_files": 5
+      },
+      "GD32C2x1": {
+        "pin_pads": 348,
+        "xml_files": 10
+      },
+      "GD32E23x": {
+        "pin_pads": 1384,
+        "xml_files": 43
+      },
+      "GD32E50x": {
+        "pin_pads": 2252,
+        "xml_files": 23
+      },
+      "GD32F10x": {
+        "pin_pads": 576,
+        "xml_files": 4
+      },
+      "GD32F30x": {
+        "pin_pads": 3412,
+        "xml_files": 36
+      },
+      "GD32F3x0": {
+        "pin_pads": 1516,
+        "xml_files": 40
+      },
+      "GD32F4xx": {
+        "pin_pads": 683,
+        "xml_files": 4
+      },
+      "GD32F50x": {
+        "pin_pads": 1228,
+        "xml_files": 20
+      },
+      "GD32F5xx": {
+        "pin_pads": 685,
+        "xml_files": 5
+      },
+      "GD32G5X3": {
+        "pin_pads": 805,
+        "xml_files": 11
+      },
+      "GD32H73x_75x": {
+        "pin_pads": 1963,
+        "xml_files": 13
+      },
+      "GD32H75E": {
+        "pin_pads": 240,
+        "xml_files": 1
+      },
+      "GD32H77x": {
+        "pin_pads": 578,
+        "xml_files": 3
+      },
+      "GD32M53x": {
+        "pin_pads": 112,
+        "xml_files": 2
+      },
+      "GD32VF103": {
+        "pin_pads": 396,
+        "xml_files": 7
+      }
+    },
+    "datasheet_xml_count": 227,
+    "document_id": 552,
+    "version": "1.5.11_Rel_r41150"
+  },
+  "catalog_mapping": {
+    "aggregate": [
+      "GD32A103",
+      "GD32A490",
+      "GD32A503",
+      "GD32A508",
+      "GD32A513",
+      "GD32C103",
+      "GD32C113",
+      "GD32E103",
+      "GD32E113",
+      "GD32E230",
+      "GD32E235",
+      "GD32E23x",
+      "GD32E502",
+      "GD32E503",
+      "GD32E505",
+      "GD32E507",
+      "GD32E508",
+      "GD32E513",
+      "GD32E517",
+      "GD32E518",
+      "GD32E51x",
+      "GD32EPRT",
+      "GD32F101",
+      "GD32F103",
+      "GD32F105",
+      "GD32F107",
+      "GD32F10x",
+      "GD32F130",
+      "GD32F150",
+      "GD32F1x0",
+      "GD32F205",
+      "GD32F207",
+      "GD32F303",
+      "GD32F305",
+      "GD32F307",
+      "GD32F30x",
+      "GD32F310",
+      "GD32F330",
+      "GD32F350",
+      "GD32F3x0",
+      "GD32F403",
+      "GD32F405",
+      "GD32F407",
+      "GD32F425",
+      "GD32F427",
+      "GD32F450",
+      "GD32F470",
+      "GD32F527",
+      "GD32G553",
+      "GD32H737",
+      "GD32H757",
+      "GD32H759",
+      "GD32H75E",
+      "GD32L233",
+      "GD32L235",
+      "GD32L23x",
+      "GD32W515"
+    ],
+    "exact": [
+      "GD32H75EYMJ6",
+      "GD32W515PIQ6",
+      "GD32W515TGQ6",
+      "GD32W515TIQ6"
+    ],
+    "order_code": [
+      {
+        "device": "GD32A103CB",
+        "token": "GD32A103CBT7"
+      },
+      {
+        "device": "GD32A103RB",
+        "token": "GD32A103RBT7"
+      },
+      {
+        "device": "GD32A103TB",
+        "token": "GD32A103TBU7"
+      },
+      {
+        "device": "GD32A103VB",
+        "token": "GD32A103VBT7"
+      },
+      {
+        "device": "GD32A490II",
+        "token": "GD32A490IIH7"
+      },
+      {
+        "device": "GD32A490IK",
+        "token": "GD32A490IKH7"
+      },
+      {
+        "device": "GD32A490ZI",
+        "token": "GD32A490ZIT7"
+      },
+      {
+        "device": "GD32A490ZK",
+        "token": "GD32A490ZKT7"
+      },
+      {
+        "device": "GD32A503CB",
+        "token": "GD32A503CBT3"
+      },
+      {
+        "device": "GD32A503CC",
+        "token": "GD32A503CCT3"
+      },
+      {
+        "device": "GD32A503KB",
+        "token": "GD32A503KBU3"
+      },
+      {
+        "device": "GD32A503KC",
+        "token": "GD32A503KCU3"
+      },
+      {
+        "device": "GD32A503RB",
+        "token": "GD32A503RBT3"
+      },
+      {
+        "device": "GD32A503RC",
+        "token": "GD32A503RCT3"
+      },
+      {
+        "device": "GD32A503RD",
+        "token": "GD32A503RDT3"
+      },
+      {
+        "device": "GD32A503VB",
+        "token": "GD32A503VBT3"
+      },
+      {
+        "device": "GD32A503VC",
+        "token": "GD32A503VCT3"
+      },
+      {
+        "device": "GD32A503VD",
+        "token": "GD32A503VDT3"
+      },
+      {
+        "device": "GD32A508VE",
+        "token": "GD32A508VET7"
+      },
+      {
+        "device": "GD32A508ZE",
+        "token": "GD32A508ZET7"
+      },
+      {
+        "device": "GD32A513CB",
+        "token": "GD32A513CBT3"
+      },
+      {
+        "device": "GD32A513CC",
+        "token": "GD32A513CCT3"
+      },
+      {
+        "device": "GD32A513KB",
+        "token": "GD32A513KBU3"
+      },
+      {
+        "device": "GD32A513KC",
+        "token": "GD32A513KCU3"
+      },
+      {
+        "device": "GD32A513RB",
+        "token": "GD32A513RBT3"
+      },
+      {
+        "device": "GD32A513RC",
+        "token": "GD32A513RCT3"
+      },
+      {
+        "device": "GD32A513RD",
+        "token": "GD32A513RDT3"
+      },
+      {
+        "device": "GD32A513VB",
+        "token": "GD32A513VBT3"
+      },
+      {
+        "device": "GD32A513VC",
+        "token": "GD32A513VCT3"
+      },
+      {
+        "device": "GD32A513VD",
+        "token": "GD32A513VDT3"
+      },
+      {
+        "device": "GD32C103CB",
+        "token": "GD32C103CBT6"
+      },
+      {
+        "device": "GD32C103RB",
+        "token": "GD32C103RBT6"
+      },
+      {
+        "device": "GD32C103TB",
+        "token": "GD32C103TBU6"
+      },
+      {
+        "device": "GD32C103VB",
+        "token": "GD32C103VBT6"
+      },
+      {
+        "device": "GD32C113CB",
+        "token": "GD32C113CBT6"
+      },
+      {
+        "device": "GD32C113RB",
+        "token": "GD32C113RBT6"
+      },
+      {
+        "device": "GD32C113TB",
+        "token": "GD32C113TBU6"
+      },
+      {
+        "device": "GD32C113VB",
+        "token": "GD32C113VBT6"
+      },
+      {
+        "device": "GD32E103C8",
+        "token": "GD32E103C8T6"
+      },
+      {
+        "device": "GD32E103CB",
+        "token": "GD32E103CBT6"
+      },
+      {
+        "device": "GD32E103R8",
+        "token": "GD32E103R8T6"
+      },
+      {
+        "device": "GD32E103RB",
+        "token": "GD32E103RBT6"
+      },
+      {
+        "device": "GD32E103T8",
+        "token": "GD32E103T8U6"
+      },
+      {
+        "device": "GD32E103TB",
+        "token": "GD32E103TBU6"
+      },
+      {
+        "device": "GD32E103V8",
+        "token": "GD32E103V8T6"
+      },
+      {
+        "device": "GD32E103VB",
+        "token": "GD32E103VBT6"
+      },
+      {
+        "device": "GD32E113C8",
+        "token": "GD32E113C8T6"
+      },
+      {
+        "device": "GD32E113CB",
+        "token": "GD32E113CBT6"
+      },
+      {
+        "device": "GD32E113R8",
+        "token": "GD32E113R8T6"
+      },
+      {
+        "device": "GD32E113RB",
+        "token": "GD32E113RBT6"
+      },
+      {
+        "device": "GD32E113T8",
+        "token": "GD32E113T8U6"
+      },
+      {
+        "device": "GD32E113TB",
+        "token": "GD32E113TBU6"
+      },
+      {
+        "device": "GD32E113V8",
+        "token": "GD32E113V8T6"
+      },
+      {
+        "device": "GD32E113VB",
+        "token": "GD32E113VBT6"
+      },
+      {
+        "device": "GD32E230C4",
+        "token": "GD32E230C4T6"
+      },
+      {
+        "device": "GD32E230C6",
+        "token": "GD32E230C6T6"
+      },
+      {
+        "device": "GD32E230C8",
+        "token": "GD32E230C8T6"
+      },
+      {
+        "device": "GD32E230E8",
+        "token": "GD32E230E8P6TR"
+      },
+      {
+        "device": "GD32E230F4",
+        "token": "GD32E230F4P6TR"
+      },
+      {
+        "device": "GD32E230F4",
+        "token": "GD32E230F4V6TR"
+      },
+      {
+        "device": "GD32E230F6",
+        "token": "GD32E230F6P6TR"
+      },
+      {
+        "device": "GD32E230F6",
+        "token": "GD32E230F6V6TR"
+      },
+      {
+        "device": "GD32E230F8",
+        "token": "GD32E230F8P6TR"
+      },
+      {
+        "device": "GD32E230F8",
+        "token": "GD32E230F8V6TR"
+      },
+      {
+        "device": "GD32E230G4",
+        "token": "GD32E230G4U6TR"
+      },
+      {
+        "device": "GD32E230G6",
+        "token": "GD32E230G6U6TR"
+      },
+      {
+        "device": "GD32E230G8",
+        "token": "GD32E230G8U6TR"
+      },
+      {
+        "device": "GD32E230K4",
+        "token": "GD32E230K4T6"
+      },
+      {
+        "device": "GD32E230K4",
+        "token": "GD32E230K4U6"
+      },
+      {
+        "device": "GD32E230K6",
+        "token": "GD32E230K6T6"
+      },
+      {
+        "device": "GD32E230K6",
+        "token": "GD32E230K6U6"
+      },
+      {
+        "device": "GD32E230K8",
+        "token": "GD32E230K8T6"
+      },
+      {
+        "device": "GD32E230K8",
+        "token": "GD32E230K8U6"
+      },
+      {
+        "device": "GD32E235C8",
+        "token": "GD32E235C8T6"
+      },
+      {
+        "device": "GD32E235C8",
+        "token": "GD32E235C8T7"
+      },
+      {
+        "device": "GD32E235CB",
+        "token": "GD32E235CBO6"
+      },
+      {
+        "device": "GD32E235CB",
+        "token": "GD32E235CBT6"
+      },
+      {
+        "device": "GD32E235CB",
+        "token": "GD32E235CBT7"
+      },
+      {
+        "device": "GD32E235F8",
+        "token": "GD32E235F8P6TR"
+      },
+      {
+        "device": "GD32E235F8",
+        "token": "GD32E235F8V6TR"
+      },
+      {
+        "device": "GD32E235G8",
+        "token": "GD32E235G8U6TR"
+      },
+      {
+        "device": "GD32E235GB",
+        "token": "GD32E235GBU7TR"
+      },
+      {
+        "device": "GD32E235K8",
+        "token": "GD32E235K8T6"
+      },
+      {
+        "device": "GD32E235K8",
+        "token": "GD32E235K8U6"
+      },
+      {
+        "device": "GD32E235K8",
+        "token": "GD32E235K8U7"
+      },
+      {
+        "device": "GD32E235KB",
+        "token": "GD32E235KBT6"
+      },
+      {
+        "device": "GD32E235KB",
+        "token": "GD32E235KBU6"
+      },
+      {
+        "device": "GD32E502CB",
+        "token": "GD32E502CBT3"
+      },
+      {
+        "device": "GD32E502CB",
+        "token": "GD32E502CBT7"
+      },
+      {
+        "device": "GD32E502CC",
+        "token": "GD32E502CCT3"
+      },
+      {
+        "device": "GD32E502CC",
+        "token": "GD32E502CCT7"
+      },
+      {
+        "device": "GD32E502KB",
+        "token": "GD32E502KBU3"
+      },
+      {
+        "device": "GD32E502KB",
+        "token": "GD32E502KBU7"
+      },
+      {
+        "device": "GD32E502KC",
+        "token": "GD32E502KCU3"
+      },
+      {
+        "device": "GD32E502KC",
+        "token": "GD32E502KCU7"
+      },
+      {
+        "device": "GD32E502RB",
+        "token": "GD32E502RBT3"
+      },
+      {
+        "device": "GD32E502RB",
+        "token": "GD32E502RBT7"
+      },
+      {
+        "device": "GD32E502RC",
+        "token": "GD32E502RCT3"
+      },
+      {
+        "device": "GD32E502RC",
+        "token": "GD32E502RCT7"
+      },
+      {
+        "device": "GD32E502RD",
+        "token": "GD32E502RDT3"
+      },
+      {
+        "device": "GD32E502RD",
+        "token": "GD32E502RDT7"
+      },
+      {
+        "device": "GD32E502VB",
+        "token": "GD32E502VBT3"
+      },
+      {
+        "device": "GD32E502VB",
+        "token": "GD32E502VBT7"
+      },
+      {
+        "device": "GD32E502VC",
+        "token": "GD32E502VCT3"
+      },
+      {
+        "device": "GD32E502VC",
+        "token": "GD32E502VCT7"
+      },
+      {
+        "device": "GD32E502VD",
+        "token": "GD32E502VDT3"
+      },
+      {
+        "device": "GD32E502VD",
+        "token": "GD32E502VDT7"
+      },
+      {
+        "device": "GD32E503CC",
+        "token": "GD32E503CCT6"
+      },
+      {
+        "device": "GD32E503CE",
+        "token": "GD32E503CET6"
+      },
+      {
+        "device": "GD32E503RC",
+        "token": "GD32E503RCT6"
+      },
+      {
+        "device": "GD32E503RE",
+        "token": "GD32E503RET6"
+      },
+      {
+        "device": "GD32E503VC",
+        "token": "GD32E503VCT6"
+      },
+      {
+        "device": "GD32E503VE",
+        "token": "GD32E503VET6"
+      },
+      {
+        "device": "GD32E503ZC",
+        "token": "GD32E503ZCT6"
+      },
+      {
+        "device": "GD32E503ZE",
+        "token": "GD32E503ZET6"
+      },
+      {
+        "device": "GD32E505RB",
+        "token": "GD32E505RBT6"
+      },
+      {
+        "device": "GD32E505RC",
+        "token": "GD32E505RCT6"
+      },
+      {
+        "device": "GD32E505RE",
+        "token": "GD32E505RET6"
+      },
+      {
+        "device": "GD32E505VC",
+        "token": "GD32E505VCT6"
+      },
+      {
+        "device": "GD32E505VE",
+        "token": "GD32E505VET6"
+      },
+      {
+        "device": "GD32E505ZC",
+        "token": "GD32E505ZCT6"
+      },
+      {
+        "device": "GD32E505ZE",
+        "token": "GD32E505ZET6"
+      },
+      {
+        "device": "GD32E507RC",
+        "token": "GD32E507RCT6"
+      },
+      {
+        "device": "GD32E507RE",
+        "token": "GD32E507RET6"
+      },
+      {
+        "device": "GD32E507VC",
+        "token": "GD32E507VCT6"
+      },
+      {
+        "device": "GD32E507VE",
+        "token": "GD32E507VET6"
+      },
+      {
+        "device": "GD32E507ZC",
+        "token": "GD32E507ZCT6"
+      },
+      {
+        "device": "GD32E507ZE",
+        "token": "GD32E507ZET6"
+      },
+      {
+        "device": "GD32E508RE",
+        "token": "GD32E508RET6"
+      },
+      {
+        "device": "GD32E508VE",
+        "token": "GD32E508VET6"
+      },
+      {
+        "device": "GD32E508ZE",
+        "token": "GD32E508ZET6"
+      },
+      {
+        "device": "GD32E513CC",
+        "token": "GD32E513CCO6"
+      },
+      {
+        "device": "GD32E513CC",
+        "token": "GD32E513CCT6"
+      },
+      {
+        "device": "GD32E513CE",
+        "token": "GD32E513CET6"
+      },
+      {
+        "device": "GD32E513RC",
+        "token": "GD32E513RCT6"
+      },
+      {
+        "device": "GD32E513RE",
+        "token": "GD32E513RET6"
+      },
+      {
+        "device": "GD32E513VC",
+        "token": "GD32E513VCT6"
+      },
+      {
+        "device": "GD32E513VE",
+        "token": "GD32E513VET6"
+      },
+      {
+        "device": "GD32E513ZC",
+        "token": "GD32E513ZCT6"
+      },
+      {
+        "device": "GD32E513ZE",
+        "token": "GD32E513ZET6"
+      },
+      {
+        "device": "GD32E517RC",
+        "token": "GD32E517RCT6"
+      },
+      {
+        "device": "GD32E517RE",
+        "token": "GD32E517RET6"
+      },
+      {
+        "device": "GD32E517VC",
+        "token": "GD32E517VCT6"
+      },
+      {
+        "device": "GD32E517VE",
+        "token": "GD32E517VET6"
+      },
+      {
+        "device": "GD32E517ZC",
+        "token": "GD32E517ZCT6"
+      },
+      {
+        "device": "GD32E517ZE",
+        "token": "GD32E517ZET6"
+      },
+      {
+        "device": "GD32E518CE",
+        "token": "GD32E518CET6"
+      },
+      {
+        "device": "GD32E518RE",
+        "token": "GD32E518RET6"
+      },
+      {
+        "device": "GD32E518VE",
+        "token": "GD32E518VET6"
+      },
+      {
+        "device": "GD32E518ZE",
+        "token": "GD32E518ZET6"
+      },
+      {
+        "device": "GD32F101C4",
+        "token": "GD32F101C4T6"
+      },
+      {
+        "device": "GD32F101C6",
+        "token": "GD32F101C6T6"
+      },
+      {
+        "device": "GD32F101C8",
+        "token": "GD32F101C8T6"
+      },
+      {
+        "device": "GD32F101CB",
+        "token": "GD32F101CBT6"
+      },
+      {
+        "device": "GD32F101R4",
+        "token": "GD32F101R4T6"
+      },
+      {
+        "device": "GD32F101R6",
+        "token": "GD32F101R6T6"
+      },
+      {
+        "device": "GD32F101R8",
+        "token": "GD32F101R8T6"
+      },
+      {
+        "device": "GD32F101RB",
+        "token": "GD32F101RBT6"
+      },
+      {
+        "device": "GD32F101RC",
+        "token": "GD32F101RCT6"
+      },
+      {
+        "device": "GD32F101RD",
+        "token": "GD32F101RDT6"
+      },
+      {
+        "device": "GD32F101RE",
+        "token": "GD32F101RET6"
+      },
+      {
+        "device": "GD32F101RF",
+        "token": "GD32F101RFT6"
+      },
+      {
+        "device": "GD32F101RG",
+        "token": "GD32F101RGT6"
+      },
+      {
+        "device": "GD32F101RI",
+        "token": "GD32F101RIT6"
+      },
+      {
+        "device": "GD32F101RK",
+        "token": "GD32F101RKT6"
+      },
+      {
+        "device": "GD32F101T4",
+        "token": "GD32F101T4U6"
+      },
+      {
+        "device": "GD32F101T6",
+        "token": "GD32F101T6U6"
+      },
+      {
+        "device": "GD32F101T8",
+        "token": "GD32F101T8U6"
+      },
+      {
+        "device": "GD32F101TB",
+        "token": "GD32F101TBU6"
+      },
+      {
+        "device": "GD32F101V8",
+        "token": "GD32F101V8T6"
+      },
+      {
+        "device": "GD32F101VB",
+        "token": "GD32F101VBT6"
+      },
+      {
+        "device": "GD32F101VC",
+        "token": "GD32F101VCT6"
+      },
+      {
+        "device": "GD32F101VD",
+        "token": "GD32F101VDT6"
+      },
+      {
+        "device": "GD32F101VE",
+        "token": "GD32F101VET6"
+      },
+      {
+        "device": "GD32F101VF",
+        "token": "GD32F101VFT6"
+      },
+      {
+        "device": "GD32F101VG",
+        "token": "GD32F101VGT6"
+      },
+      {
+        "device": "GD32F101VI",
+        "token": "GD32F101VIT6"
+      },
+      {
+        "device": "GD32F101VK",
+        "token": "GD32F101VKT6"
+      },
+      {
+        "device": "GD32F101ZC",
+        "token": "GD32F101ZCT6"
+      },
+      {
+        "device": "GD32F101ZD",
+        "token": "GD32F101ZDT6"
+      },
+      {
+        "device": "GD32F101ZE",
+        "token": "GD32F101ZET6"
+      },
+      {
+        "device": "GD32F101ZF",
+        "token": "GD32F101ZFT6"
+      },
+      {
+        "device": "GD32F101ZG",
+        "token": "GD32F101ZGT6"
+      },
+      {
+        "device": "GD32F101ZI",
+        "token": "GD32F101ZIT6"
+      },
+      {
+        "device": "GD32F101ZK",
+        "token": "GD32F101ZKT6"
+      },
+      {
+        "device": "GD32F103C4",
+        "token": "GD32F103C4T6"
+      },
+      {
+        "device": "GD32F103C6",
+        "token": "GD32F103C6T6"
+      },
+      {
+        "device": "GD32F103C8",
+        "token": "GD32F103C8T6"
+      },
+      {
+        "device": "GD32F103CB",
+        "token": "GD32F103CBT6"
+      },
+      {
+        "device": "GD32F103R4",
+        "token": "GD32F103R4T6"
+      },
+      {
+        "device": "GD32F103R6",
+        "token": "GD32F103R6T6"
+      },
+      {
+        "device": "GD32F103R8",
+        "token": "GD32F103R8T6"
+      },
+      {
+        "device": "GD32F103RB",
+        "token": "GD32F103RBT6"
+      },
+      {
+        "device": "GD32F103RC",
+        "token": "GD32F103RCT6"
+      },
+      {
+        "device": "GD32F103RD",
+        "token": "GD32F103RDT6"
+      },
+      {
+        "device": "GD32F103RE",
+        "token": "GD32F103RET6"
+      },
+      {
+        "device": "GD32F103RF",
+        "token": "GD32F103RFT6"
+      },
+      {
+        "device": "GD32F103RG",
+        "token": "GD32F103RGT6"
+      },
+      {
+        "device": "GD32F103RI",
+        "token": "GD32F103RIT6"
+      },
+      {
+        "device": "GD32F103RK",
+        "token": "GD32F103RKT6"
+      },
+      {
+        "device": "GD32F103T4",
+        "token": "GD32F103T4U6"
+      },
+      {
+        "device": "GD32F103T6",
+        "token": "GD32F103T6U6"
+      },
+      {
+        "device": "GD32F103T8",
+        "token": "GD32F103T8U6"
+      },
+      {
+        "device": "GD32F103TB",
+        "token": "GD32F103TBU6"
+      },
+      {
+        "device": "GD32F103V8",
+        "token": "GD32F103V8T6"
+      },
+      {
+        "device": "GD32F103VB",
+        "token": "GD32F103VBT6"
+      },
+      {
+        "device": "GD32F103VC",
+        "token": "GD32F103VCT6"
+      },
+      {
+        "device": "GD32F103VD",
+        "token": "GD32F103VDT6"
+      },
+      {
+        "device": "GD32F103VE",
+        "token": "GD32F103VET6"
+      },
+      {
+        "device": "GD32F103VF",
+        "token": "GD32F103VFT6"
+      },
+      {
+        "device": "GD32F103VG",
+        "token": "GD32F103VGT6"
+      },
+      {
+        "device": "GD32F103VI",
+        "token": "GD32F103VIT6"
+      },
+      {
+        "device": "GD32F103VK",
+        "token": "GD32F103VKT6"
+      },
+      {
+        "device": "GD32F103ZC",
+        "token": "GD32F103ZCT6"
+      },
+      {
+        "device": "GD32F103ZD",
+        "token": "GD32F103ZDT6"
+      },
+      {
+        "device": "GD32F103ZE",
+        "token": "GD32F103ZET6"
+      },
+      {
+        "device": "GD32F103ZF",
+        "token": "GD32F103ZFT6"
+      },
+      {
+        "device": "GD32F103ZG",
+        "token": "GD32F103ZGT6"
+      },
+      {
+        "device": "GD32F103ZI",
+        "token": "GD32F103ZIT6"
+      },
+      {
+        "device": "GD32F103ZK",
+        "token": "GD32F103ZKT6"
+      },
+      {
+        "device": "GD32F105R8",
+        "token": "GD32F105R8T6"
+      },
+      {
+        "device": "GD32F105RB",
+        "token": "GD32F105RBT6"
+      },
+      {
+        "device": "GD32F105RC",
+        "token": "GD32F105RCT6"
+      },
+      {
+        "device": "GD32F105RD",
+        "token": "GD32F105RDT6"
+      },
+      {
+        "device": "GD32F105RE",
+        "token": "GD32F105RET6"
+      },
+      {
+        "device": "GD32F105RF",
+        "token": "GD32F105RFT6"
+      },
+      {
+        "device": "GD32F105RG",
+        "token": "GD32F105RGT6"
+      },
+      {
+        "device": "GD32F105V8",
+        "token": "GD32F105V8T6"
+      },
+      {
+        "device": "GD32F105VB",
+        "token": "GD32F105VBT6"
+      },
+      {
+        "device": "GD32F105VC",
+        "token": "GD32F105VCT6"
+      },
+      {
+        "device": "GD32F105VD",
+        "token": "GD32F105VDT6"
+      },
+      {
+        "device": "GD32F105VE",
+        "token": "GD32F105VET6"
+      },
+      {
+        "device": "GD32F105VF",
+        "token": "GD32F105VFT6"
+      },
+      {
+        "device": "GD32F105VG",
+        "token": "GD32F105VGT6"
+      },
+      {
+        "device": "GD32F105ZC",
+        "token": "GD32F105ZCT6"
+      },
+      {
+        "device": "GD32F105ZD",
+        "token": "GD32F105ZDT6"
+      },
+      {
+        "device": "GD32F105ZE",
+        "token": "GD32F105ZET6"
+      },
+      {
+        "device": "GD32F105ZF",
+        "token": "GD32F105ZFT6"
+      },
+      {
+        "device": "GD32F105ZG",
+        "token": "GD32F105ZGT6"
+      },
+      {
+        "device": "GD32F107RB",
+        "token": "GD32F107RBT6"
+      },
+      {
+        "device": "GD32F107RC",
+        "token": "GD32F107RCT6"
+      },
+      {
+        "device": "GD32F107RD",
+        "token": "GD32F107RDT6"
+      },
+      {
+        "device": "GD32F107RE",
+        "token": "GD32F107RET6"
+      },
+      {
+        "device": "GD32F107RF",
+        "token": "GD32F107RFT6"
+      },
+      {
+        "device": "GD32F107RG",
+        "token": "GD32F107RGT6"
+      },
+      {
+        "device": "GD32F107VB",
+        "token": "GD32F107VBT6"
+      },
+      {
+        "device": "GD32F107VC",
+        "token": "GD32F107VCT6"
+      },
+      {
+        "device": "GD32F107VD",
+        "token": "GD32F107VDT6"
+      },
+      {
+        "device": "GD32F107VE",
+        "token": "GD32F107VET6"
+      },
+      {
+        "device": "GD32F107VF",
+        "token": "GD32F107VFT6"
+      },
+      {
+        "device": "GD32F107VG",
+        "token": "GD32F107VGT6"
+      },
+      {
+        "device": "GD32F107ZC",
+        "token": "GD32F107ZCT6"
+      },
+      {
+        "device": "GD32F107ZD",
+        "token": "GD32F107ZDT6"
+      },
+      {
+        "device": "GD32F107ZE",
+        "token": "GD32F107ZET6"
+      },
+      {
+        "device": "GD32F107ZF",
+        "token": "GD32F107ZFT6"
+      },
+      {
+        "device": "GD32F107ZG",
+        "token": "GD32F107ZGT6"
+      },
+      {
+        "device": "GD32F130C4",
+        "token": "GD32F130C4T6"
+      },
+      {
+        "device": "GD32F130C6",
+        "token": "GD32F130C6T6"
+      },
+      {
+        "device": "GD32F130C8",
+        "token": "GD32F130C8T6"
+      },
+      {
+        "device": "GD32F130F4",
+        "token": "GD32F130F4P6TR"
+      },
+      {
+        "device": "GD32F130F6",
+        "token": "GD32F130F6P6TR"
+      },
+      {
+        "device": "GD32F130F8",
+        "token": "GD32F130F8P6TR"
+      },
+      {
+        "device": "GD32F130G4",
+        "token": "GD32F130G4U6TR"
+      },
+      {
+        "device": "GD32F130G6",
+        "token": "GD32F130G6U6TR"
+      },
+      {
+        "device": "GD32F130G8",
+        "token": "GD32F130G8U6TR"
+      },
+      {
+        "device": "GD32F130K4",
+        "token": "GD32F130K4T6"
+      },
+      {
+        "device": "GD32F130K4",
+        "token": "GD32F130K4U6"
+      },
+      {
+        "device": "GD32F130K6",
+        "token": "GD32F130K6T6"
+      },
+      {
+        "device": "GD32F130K6",
+        "token": "GD32F130K6U6"
+      },
+      {
+        "device": "GD32F130K8",
+        "token": "GD32F130K8T6"
+      },
+      {
+        "device": "GD32F130K8",
+        "token": "GD32F130K8U6"
+      },
+      {
+        "device": "GD32F130R8",
+        "token": "GD32F130R8T6"
+      },
+      {
+        "device": "GD32F150C4",
+        "token": "GD32F150C4T6"
+      },
+      {
+        "device": "GD32F150C6",
+        "token": "GD32F150C6T6"
+      },
+      {
+        "device": "GD32F150C8",
+        "token": "GD32F150C8T6"
+      },
+      {
+        "device": "GD32F150G4",
+        "token": "GD32F150G4U6TR"
+      },
+      {
+        "device": "GD32F150G6",
+        "token": "GD32F150G6U6TR"
+      },
+      {
+        "device": "GD32F150G8",
+        "token": "GD32F150G8U6TR"
+      },
+      {
+        "device": "GD32F150K4",
+        "token": "GD32F150K4U6"
+      },
+      {
+        "device": "GD32F150K6",
+        "token": "GD32F150K6U6"
+      },
+      {
+        "device": "GD32F150K8",
+        "token": "GD32F150K8U6"
+      },
+      {
+        "device": "GD32F150R4",
+        "token": "GD32F150R4T6"
+      },
+      {
+        "device": "GD32F150R6",
+        "token": "GD32F150R6T6"
+      },
+      {
+        "device": "GD32F150R8",
+        "token": "GD32F150R8T6"
+      },
+      {
+        "device": "GD32F205RC",
+        "token": "GD32F205RCT6"
+      },
+      {
+        "device": "GD32F205RE",
+        "token": "GD32F205RET6"
+      },
+      {
+        "device": "GD32F205RG",
+        "token": "GD32F205RGT6"
+      },
+      {
+        "device": "GD32F205RK",
+        "token": "GD32F205RKT6"
+      },
+      {
+        "device": "GD32F205VC",
+        "token": "GD32F205VCT6"
+      },
+      {
+        "device": "GD32F205VE",
+        "token": "GD32F205VET6"
+      },
+      {
+        "device": "GD32F205VG",
+        "token": "GD32F205VGT6"
+      },
+      {
+        "device": "GD32F205VK",
+        "token": "GD32F205VKT6"
+      },
+      {
+        "device": "GD32F205ZC",
+        "token": "GD32F205ZCT6"
+      },
+      {
+        "device": "GD32F205ZE",
+        "token": "GD32F205ZET6"
+      },
+      {
+        "device": "GD32F205ZG",
+        "token": "GD32F205ZGT6"
+      },
+      {
+        "device": "GD32F205ZK",
+        "token": "GD32F205ZKT6"
+      },
+      {
+        "device": "GD32F207IE",
+        "token": "GD32F207IET6"
+      },
+      {
+        "device": "GD32F207IG",
+        "token": "GD32F207IGT6"
+      },
+      {
+        "device": "GD32F207IK",
+        "token": "GD32F207IKT6"
+      },
+      {
+        "device": "GD32F207RC",
+        "token": "GD32F207RCT6"
+      },
+      {
+        "device": "GD32F207RE",
+        "token": "GD32F207RET6"
+      },
+      {
+        "device": "GD32F207RG",
+        "token": "GD32F207RGT6"
+      },
+      {
+        "device": "GD32F207RK",
+        "token": "GD32F207RKT6"
+      },
+      {
+        "device": "GD32F207VC",
+        "token": "GD32F207VCT6"
+      },
+      {
+        "device": "GD32F207VE",
+        "token": "GD32F207VET6"
+      },
+      {
+        "device": "GD32F207VG",
+        "token": "GD32F207VGT6"
+      },
+      {
+        "device": "GD32F207VK",
+        "token": "GD32F207VKT6"
+      },
+      {
+        "device": "GD32F207ZC",
+        "token": "GD32F207ZCT6"
+      },
+      {
+        "device": "GD32F207ZE",
+        "token": "GD32F207ZET6"
+      },
+      {
+        "device": "GD32F207ZG",
+        "token": "GD32F207ZGT6"
+      },
+      {
+        "device": "GD32F207ZK",
+        "token": "GD32F207ZKT6"
+      },
+      {
+        "device": "GD32F303CB",
+        "token": "GD32F303CBT6"
+      },
+      {
+        "device": "GD32F303CC",
+        "token": "GD32F303CCT6"
+      },
+      {
+        "device": "GD32F303CE",
+        "token": "GD32F303CET6"
+      },
+      {
+        "device": "GD32F303CG",
+        "token": "GD32F303CGT6"
+      },
+      {
+        "device": "GD32F303RB",
+        "token": "GD32F303RBT6"
+      },
+      {
+        "device": "GD32F303RC",
+        "token": "GD32F303RCT6"
+      },
+      {
+        "device": "GD32F303RE",
+        "token": "GD32F303RET6"
+      },
+      {
+        "device": "GD32F303RG",
+        "token": "GD32F303RGT6"
+      },
+      {
+        "device": "GD32F303RI",
+        "token": "GD32F303RIT6"
+      },
+      {
+        "device": "GD32F303RK",
+        "token": "GD32F303RKT6"
+      },
+      {
+        "device": "GD32F303VB",
+        "token": "GD32F303VBT6"
+      },
+      {
+        "device": "GD32F303VC",
+        "token": "GD32F303VCT6"
+      },
+      {
+        "device": "GD32F303VE",
+        "token": "GD32F303VET6"
+      },
+      {
+        "device": "GD32F303VG",
+        "token": "GD32F303VGT6"
+      },
+      {
+        "device": "GD32F303VI",
+        "token": "GD32F303VIT6"
+      },
+      {
+        "device": "GD32F303VK",
+        "token": "GD32F303VKT6"
+      },
+      {
+        "device": "GD32F303ZC",
+        "token": "GD32F303ZCT6"
+      },
+      {
+        "device": "GD32F303ZE",
+        "token": "GD32F303ZET6"
+      },
+      {
+        "device": "GD32F303ZG",
+        "token": "GD32F303ZGT6"
+      },
+      {
+        "device": "GD32F303ZI",
+        "token": "GD32F303ZIT6"
+      },
+      {
+        "device": "GD32F303ZK",
+        "token": "GD32F303ZKT6"
+      },
+      {
+        "device": "GD32F305RB",
+        "token": "GD32F305RBT6"
+      },
+      {
+        "device": "GD32F305RC",
+        "token": "GD32F305RCT6"
+      },
+      {
+        "device": "GD32F305RE",
+        "token": "GD32F305RET6"
+      },
+      {
+        "device": "GD32F305RG",
+        "token": "GD32F305RGT6"
+      },
+      {
+        "device": "GD32F305VC",
+        "token": "GD32F305VCT6"
+      },
+      {
+        "device": "GD32F305VE",
+        "token": "GD32F305VET6"
+      },
+      {
+        "device": "GD32F305VG",
+        "token": "GD32F305VGT6"
+      },
+      {
+        "device": "GD32F305ZC",
+        "token": "GD32F305ZCT6"
+      },
+      {
+        "device": "GD32F305ZE",
+        "token": "GD32F305ZET6"
+      },
+      {
+        "device": "GD32F305ZG",
+        "token": "GD32F305ZGT6"
+      },
+      {
+        "device": "GD32F307RC",
+        "token": "GD32F307RCT6"
+      },
+      {
+        "device": "GD32F307RE",
+        "token": "GD32F307RET6"
+      },
+      {
+        "device": "GD32F307RG",
+        "token": "GD32F307RGT6"
+      },
+      {
+        "device": "GD32F307VC",
+        "token": "GD32F307VCT6"
+      },
+      {
+        "device": "GD32F307VE",
+        "token": "GD32F307VET6"
+      },
+      {
+        "device": "GD32F307VG",
+        "token": "GD32F307VGT6"
+      },
+      {
+        "device": "GD32F307ZC",
+        "token": "GD32F307ZCT6"
+      },
+      {
+        "device": "GD32F307ZE",
+        "token": "GD32F307ZET6"
+      },
+      {
+        "device": "GD32F307ZG",
+        "token": "GD32F307ZGT6"
+      },
+      {
+        "device": "GD32F310C8",
+        "token": "GD32F310C8T6"
+      },
+      {
+        "device": "GD32F310CB",
+        "token": "GD32F310CBT6"
+      },
+      {
+        "device": "GD32F310F4",
+        "token": "GD32F310F4P6TR"
+      },
+      {
+        "device": "GD32F310F6",
+        "token": "GD32F310F6P6TR"
+      },
+      {
+        "device": "GD32F310F8",
+        "token": "GD32F310F8P6TR"
+      },
+      {
+        "device": "GD32F310G8",
+        "token": "GD32F310G8U6TR"
+      },
+      {
+        "device": "GD32F310K6",
+        "token": "GD32F310K6T6"
+      },
+      {
+        "device": "GD32F310K8",
+        "token": "GD32F310K8T6"
+      },
+      {
+        "device": "GD32F310K8",
+        "token": "GD32F310K8U6"
+      },
+      {
+        "device": "GD32F330C4",
+        "token": "GD32F330C4T6"
+      },
+      {
+        "device": "GD32F330C6",
+        "token": "GD32F330C6T6"
+      },
+      {
+        "device": "GD32F330C8",
+        "token": "GD32F330C8T6"
+      },
+      {
+        "device": "GD32F330CB",
+        "token": "GD32F330CBT6"
+      },
+      {
+        "device": "GD32F330F4",
+        "token": "GD32F330F4P6TR"
+      },
+      {
+        "device": "GD32F330F6",
+        "token": "GD32F330F6P6TR"
+      },
+      {
+        "device": "GD32F330F8",
+        "token": "GD32F330F8P6TR"
+      },
+      {
+        "device": "GD32F330G4",
+        "token": "GD32F330G4U6TR"
+      },
+      {
+        "device": "GD32F330G6",
+        "token": "GD32F330G6U6TR"
+      },
+      {
+        "device": "GD32F330G8",
+        "token": "GD32F330G8U6TR"
+      },
+      {
+        "device": "GD32F330K4",
+        "token": "GD32F330K4T6"
+      },
+      {
+        "device": "GD32F330K4",
+        "token": "GD32F330K4U6"
+      },
+      {
+        "device": "GD32F330K6",
+        "token": "GD32F330K6T6"
+      },
+      {
+        "device": "GD32F330K6",
+        "token": "GD32F330K6U6"
+      },
+      {
+        "device": "GD32F330K8",
+        "token": "GD32F330K8T6"
+      },
+      {
+        "device": "GD32F330K8",
+        "token": "GD32F330K8U6"
+      },
+      {
+        "device": "GD32F330R8",
+        "token": "GD32F330R8T6"
+      },
+      {
+        "device": "GD32F330RB",
+        "token": "GD32F330RBT6"
+      },
+      {
+        "device": "GD32F350C4",
+        "token": "GD32F350C4T6"
+      },
+      {
+        "device": "GD32F350C6",
+        "token": "GD32F350C6T6"
+      },
+      {
+        "device": "GD32F350C8",
+        "token": "GD32F350C8T6"
+      },
+      {
+        "device": "GD32F350CB",
+        "token": "GD32F350CBT6"
+      },
+      {
+        "device": "GD32F350G4",
+        "token": "GD32F350G4U6TR"
+      },
+      {
+        "device": "GD32F350G6",
+        "token": "GD32F350G6U6TR"
+      },
+      {
+        "device": "GD32F350G8",
+        "token": "GD32F350G8U6TR"
+      },
+      {
+        "device": "GD32F350K4",
+        "token": "GD32F350K4U6"
+      },
+      {
+        "device": "GD32F350K6",
+        "token": "GD32F350K6U6"
+      },
+      {
+        "device": "GD32F350K8",
+        "token": "GD32F350K8U6"
+      },
+      {
+        "device": "GD32F350R4",
+        "token": "GD32F350R4T6"
+      },
+      {
+        "device": "GD32F350R6",
+        "token": "GD32F350R6T6"
+      },
+      {
+        "device": "GD32F350R8",
+        "token": "GD32F350R8T6"
+      },
+      {
+        "device": "GD32F350RB",
+        "token": "GD32F350RBT6"
+      },
+      {
+        "device": "GD32F403RC",
+        "token": "GD32F403RCT6"
+      },
+      {
+        "device": "GD32F403RE",
+        "token": "GD32F403RET6"
+      },
+      {
+        "device": "GD32F403RG",
+        "token": "GD32F403RGT6"
+      },
+      {
+        "device": "GD32F403RI",
+        "token": "GD32F403RIT6"
+      },
+      {
+        "device": "GD32F403RK",
+        "token": "GD32F403RKT6"
+      },
+      {
+        "device": "GD32F403VC",
+        "token": "GD32F403VCH6"
+      },
+      {
+        "device": "GD32F403VC",
+        "token": "GD32F403VCT6"
+      },
+      {
+        "device": "GD32F403VE",
+        "token": "GD32F403VEH6"
+      },
+      {
+        "device": "GD32F403VE",
+        "token": "GD32F403VET6"
+      },
+      {
+        "device": "GD32F403VG",
+        "token": "GD32F403VGH6"
+      },
+      {
+        "device": "GD32F403VG",
+        "token": "GD32F403VGT6"
+      },
+      {
+        "device": "GD32F403VI",
+        "token": "GD32F403VIH6"
+      },
+      {
+        "device": "GD32F403VI",
+        "token": "GD32F403VIT6"
+      },
+      {
+        "device": "GD32F403VK",
+        "token": "GD32F403VKH6"
+      },
+      {
+        "device": "GD32F403VK",
+        "token": "GD32F403VKT6"
+      },
+      {
+        "device": "GD32F403ZC",
+        "token": "GD32F403ZCT6"
+      },
+      {
+        "device": "GD32F403ZE",
+        "token": "GD32F403ZET6"
+      },
+      {
+        "device": "GD32F403ZG",
+        "token": "GD32F403ZGT6"
+      },
+      {
+        "device": "GD32F403ZI",
+        "token": "GD32F403ZIT6"
+      },
+      {
+        "device": "GD32F403ZK",
+        "token": "GD32F403ZKT6"
+      },
+      {
+        "device": "GD32F405RE",
+        "token": "GD32F405RET6"
+      },
+      {
+        "device": "GD32F405RG",
+        "token": "GD32F405RGT6"
+      },
+      {
+        "device": "GD32F405RK",
+        "token": "GD32F405RKT6"
+      },
+      {
+        "device": "GD32F405VG",
+        "token": "GD32F405VGH6"
+      },
+      {
+        "device": "GD32F405VG",
+        "token": "GD32F405VGT6"
+      },
+      {
+        "device": "GD32F405VK",
+        "token": "GD32F405VKH6"
+      },
+      {
+        "device": "GD32F405VK",
+        "token": "GD32F405VKT6"
+      },
+      {
+        "device": "GD32F405ZG",
+        "token": "GD32F405ZGT6"
+      },
+      {
+        "device": "GD32F405ZK",
+        "token": "GD32F405ZKT6"
+      },
+      {
+        "device": "GD32F407IE",
+        "token": "GD32F407IEH6"
+      },
+      {
+        "device": "GD32F407IG",
+        "token": "GD32F407IGH6"
+      },
+      {
+        "device": "GD32F407IK",
+        "token": "GD32F407IKH6"
+      },
+      {
+        "device": "GD32F407RE",
+        "token": "GD32F407RET6"
+      },
+      {
+        "device": "GD32F407RG",
+        "token": "GD32F407RGT6"
+      },
+      {
+        "device": "GD32F407RK",
+        "token": "GD32F407RKT6"
+      },
+      {
+        "device": "GD32F407VE",
+        "token": "GD32F407VEH6"
+      },
+      {
+        "device": "GD32F407VE",
+        "token": "GD32F407VET6"
+      },
+      {
+        "device": "GD32F407VG",
+        "token": "GD32F407VGH6"
+      },
+      {
+        "device": "GD32F407VG",
+        "token": "GD32F407VGT6"
+      },
+      {
+        "device": "GD32F407VK",
+        "token": "GD32F407VKH6"
+      },
+      {
+        "device": "GD32F407VK",
+        "token": "GD32F407VKT6"
+      },
+      {
+        "device": "GD32F407ZE",
+        "token": "GD32F407ZET6"
+      },
+      {
+        "device": "GD32F407ZG",
+        "token": "GD32F407ZGT6"
+      },
+      {
+        "device": "GD32F407ZK",
+        "token": "GD32F407ZKT6"
+      },
+      {
+        "device": "GD32F425RE",
+        "token": "GD32F425RET6"
+      },
+      {
+        "device": "GD32F425RG",
+        "token": "GD32F425RGT6"
+      },
+      {
+        "device": "GD32F425RK",
+        "token": "GD32F425RKT6"
+      },
+      {
+        "device": "GD32F425VG",
+        "token": "GD32F425VGH6"
+      },
+      {
+        "device": "GD32F425VG",
+        "token": "GD32F425VGT6"
+      },
+      {
+        "device": "GD32F425VK",
+        "token": "GD32F425VKH6"
+      },
+      {
+        "device": "GD32F425VK",
+        "token": "GD32F425VKT6"
+      },
+      {
+        "device": "GD32F425ZG",
+        "token": "GD32F425ZGT6"
+      },
+      {
+        "device": "GD32F425ZK",
+        "token": "GD32F425ZKT6"
+      },
+      {
+        "device": "GD32F427IE",
+        "token": "GD32F427IEH6"
+      },
+      {
+        "device": "GD32F427IG",
+        "token": "GD32F427IGH6"
+      },
+      {
+        "device": "GD32F427IK",
+        "token": "GD32F427IKH6"
+      },
+      {
+        "device": "GD32F427RE",
+        "token": "GD32F427RET6"
+      },
+      {
+        "device": "GD32F427RG",
+        "token": "GD32F427RGT6"
+      },
+      {
+        "device": "GD32F427RK",
+        "token": "GD32F427RKT6"
+      },
+      {
+        "device": "GD32F427VE",
+        "token": "GD32F427VEH6"
+      },
+      {
+        "device": "GD32F427VE",
+        "token": "GD32F427VET6"
+      },
+      {
+        "device": "GD32F427VG",
+        "token": "GD32F427VGH6"
+      },
+      {
+        "device": "GD32F427VG",
+        "token": "GD32F427VGT6"
+      },
+      {
+        "device": "GD32F427VK",
+        "token": "GD32F427VKH6"
+      },
+      {
+        "device": "GD32F427VK",
+        "token": "GD32F427VKT6"
+      },
+      {
+        "device": "GD32F427ZE",
+        "token": "GD32F427ZET6"
+      },
+      {
+        "device": "GD32F427ZG",
+        "token": "GD32F427ZGT6"
+      },
+      {
+        "device": "GD32F427ZK",
+        "token": "GD32F427ZKT6"
+      },
+      {
+        "device": "GD32F450IG",
+        "token": "GD32F450IGH6"
+      },
+      {
+        "device": "GD32F450II",
+        "token": "GD32F450IIH6"
+      },
+      {
+        "device": "GD32F450IK",
+        "token": "GD32F450IKH6"
+      },
+      {
+        "device": "GD32F450VE",
+        "token": "GD32F450VET6"
+      },
+      {
+        "device": "GD32F450VG",
+        "token": "GD32F450VGT6"
+      },
+      {
+        "device": "GD32F450VI",
+        "token": "GD32F450VIT6"
+      },
+      {
+        "device": "GD32F450VK",
+        "token": "GD32F450VKT6"
+      },
+      {
+        "device": "GD32F450ZE",
+        "token": "GD32F450ZET6"
+      },
+      {
+        "device": "GD32F450ZG",
+        "token": "GD32F450ZGT6"
+      },
+      {
+        "device": "GD32F450ZI",
+        "token": "GD32F450ZIT6"
+      },
+      {
+        "device": "GD32F450ZK",
+        "token": "GD32F450ZKT6"
+      },
+      {
+        "device": "GD32F470IG",
+        "token": "GD32F470IGH6"
+      },
+      {
+        "device": "GD32F470II",
+        "token": "GD32F470IIH6"
+      },
+      {
+        "device": "GD32F470IK",
+        "token": "GD32F470IKH6"
+      },
+      {
+        "device": "GD32F470VE",
+        "token": "GD32F470VET6"
+      },
+      {
+        "device": "GD32F470VG",
+        "token": "GD32F470VGH6"
+      },
+      {
+        "device": "GD32F470VG",
+        "token": "GD32F470VGT6"
+      },
+      {
+        "device": "GD32F470VI",
+        "token": "GD32F470VIH6"
+      },
+      {
+        "device": "GD32F470VI",
+        "token": "GD32F470VIT6"
+      },
+      {
+        "device": "GD32F470VK",
+        "token": "GD32F470VKH6"
+      },
+      {
+        "device": "GD32F470VK",
+        "token": "GD32F470VKT6"
+      },
+      {
+        "device": "GD32F470ZE",
+        "token": "GD32F470ZET6"
+      },
+      {
+        "device": "GD32F470ZG",
+        "token": "GD32F470ZGT6"
+      },
+      {
+        "device": "GD32F470ZI",
+        "token": "GD32F470ZIT6"
+      },
+      {
+        "device": "GD32F470ZK",
+        "token": "GD32F470ZKT6"
+      },
+      {
+        "device": "GD32F527IM",
+        "token": "GD32F527IMK7"
+      },
+      {
+        "device": "GD32F527IM",
+        "token": "GD32F527IMT7"
+      },
+      {
+        "device": "GD32F527IS",
+        "token": "GD32F527ISK7"
+      },
+      {
+        "device": "GD32F527IS",
+        "token": "GD32F527IST7"
+      },
+      {
+        "device": "GD32F527RM",
+        "token": "GD32F527RMT7"
+      },
+      {
+        "device": "GD32F527RS",
+        "token": "GD32F527RST7"
+      },
+      {
+        "device": "GD32F527VM",
+        "token": "GD32F527VMT7"
+      },
+      {
+        "device": "GD32F527VS",
+        "token": "GD32F527VST7"
+      },
+      {
+        "device": "GD32F527ZM",
+        "token": "GD32F527ZMT7"
+      },
+      {
+        "device": "GD32F527ZS",
+        "token": "GD32F527ZST7"
+      },
+      {
+        "device": "GD32G553CE",
+        "token": "GD32G553CET7"
+      },
+      {
+        "device": "GD32G553CE",
+        "token": "GD32G553CEU7"
+      },
+      {
+        "device": "GD32G553ME",
+        "token": "GD32G553MET7"
+      },
+      {
+        "device": "GD32G553ME",
+        "token": "GD32G553MEY7TR"
+      },
+      {
+        "device": "GD32G553QE",
+        "token": "GD32G553QET7"
+      },
+      {
+        "device": "GD32G553RE",
+        "token": "GD32G553RET7"
+      },
+      {
+        "device": "GD32G553VE",
+        "token": "GD32G553VET7"
+      },
+      {
+        "device": "GD32H737IG",
+        "token": "GD32H737IGK6"
+      },
+      {
+        "device": "GD32H737IG",
+        "token": "GD32H737IGT6"
+      },
+      {
+        "device": "GD32H737II",
+        "token": "GD32H737IIK6"
+      },
+      {
+        "device": "GD32H737II",
+        "token": "GD32H737IIT6"
+      },
+      {
+        "device": "GD32H737IM",
+        "token": "GD32H737IMK6"
+      },
+      {
+        "device": "GD32H737IM",
+        "token": "GD32H737IMT6"
+      },
+      {
+        "device": "GD32H737VG",
+        "token": "GD32H737VGT6"
+      },
+      {
+        "device": "GD32H737VI",
+        "token": "GD32H737VIT6"
+      },
+      {
+        "device": "GD32H737VM",
+        "token": "GD32H737VMT6"
+      },
+      {
+        "device": "GD32H737ZG",
+        "token": "GD32H737ZGT6"
+      },
+      {
+        "device": "GD32H737ZI",
+        "token": "GD32H737ZIT6"
+      },
+      {
+        "device": "GD32H737ZM",
+        "token": "GD32H737ZMT6"
+      },
+      {
+        "device": "GD32H757VG",
+        "token": "GD32H757VGJ6"
+      },
+      {
+        "device": "GD32H757VG",
+        "token": "GD32H757VGT6"
+      },
+      {
+        "device": "GD32H757VI",
+        "token": "GD32H757VIJ6"
+      },
+      {
+        "device": "GD32H757VI",
+        "token": "GD32H757VIT6"
+      },
+      {
+        "device": "GD32H757VM",
+        "token": "GD32H757VMJ6"
+      },
+      {
+        "device": "GD32H757VM",
+        "token": "GD32H757VMT6"
+      },
+      {
+        "device": "GD32H757ZG",
+        "token": "GD32H757ZGT6"
+      },
+      {
+        "device": "GD32H757ZI",
+        "token": "GD32H757ZIT6"
+      },
+      {
+        "device": "GD32H757ZM",
+        "token": "GD32H757ZMT6"
+      },
+      {
+        "device": "GD32H759IG",
+        "token": "GD32H759IGK6"
+      },
+      {
+        "device": "GD32H759IG",
+        "token": "GD32H759IGT6"
+      },
+      {
+        "device": "GD32H759II",
+        "token": "GD32H759IIK6"
+      },
+      {
+        "device": "GD32H759II",
+        "token": "GD32H759IIT6"
+      },
+      {
+        "device": "GD32H759IM",
+        "token": "GD32H759IMK6"
+      },
+      {
+        "device": "GD32H759IM",
+        "token": "GD32H759IMT6"
+      },
+      {
+        "device": "GD32H75EYMJ6",
+        "token": "GD32H75EYMJ6B"
+      },
+      {
+        "device": "GD32L233C8",
+        "token": "GD32L233C8T6"
+      },
+      {
+        "device": "GD32L233CB",
+        "token": "GD32L233CBT6"
+      },
+      {
+        "device": "GD32L233CC",
+        "token": "GD32L233CCT6"
+      },
+      {
+        "device": "GD32L233CC",
+        "token": "GD32L233CCY6TR"
+      },
+      {
+        "device": "GD32L233K8",
+        "token": "GD32L233K8Q6"
+      },
+      {
+        "device": "GD32L233K8",
+        "token": "GD32L233K8T6"
+      },
+      {
+        "device": "GD32L233KB",
+        "token": "GD32L233KBQ6"
+      },
+      {
+        "device": "GD32L233KB",
+        "token": "GD32L233KBT6"
+      },
+      {
+        "device": "GD32L233R8",
+        "token": "GD32L233R8T6"
+      },
+      {
+        "device": "GD32L233RB",
+        "token": "GD32L233RBT6"
+      },
+      {
+        "device": "GD32L233RC",
+        "token": "GD32L233RCO6"
+      },
+      {
+        "device": "GD32L233RC",
+        "token": "GD32L233RCT6"
+      },
+      {
+        "device": "GD32L235C8",
+        "token": "GD32L235C8O6"
+      },
+      {
+        "device": "GD32L235C8",
+        "token": "GD32L235C8T6"
+      },
+      {
+        "device": "GD32L235CB",
+        "token": "GD32L235CBO6"
+      },
+      {
+        "device": "GD32L235CB",
+        "token": "GD32L235CBT6"
+      },
+      {
+        "device": "GD32L235E8",
+        "token": "GD32L235E8Y6TR"
+      },
+      {
+        "device": "GD32L235EB",
+        "token": "GD32L235EBY6TR"
+      },
+      {
+        "device": "GD32L235K8",
+        "token": "GD32L235K8Q6"
+      },
+      {
+        "device": "GD32L235K8",
+        "token": "GD32L235K8Q6P"
+      },
+      {
+        "device": "GD32L235K8",
+        "token": "GD32L235K8T6"
+      },
+      {
+        "device": "GD32L235KB",
+        "token": "GD32L235KBQ6"
+      },
+      {
+        "device": "GD32L235KB",
+        "token": "GD32L235KBQ6P"
+      },
+      {
+        "device": "GD32L235KB",
+        "token": "GD32L235KBT6"
+      },
+      {
+        "device": "GD32L235R8",
+        "token": "GD32L235R8O6"
+      },
+      {
+        "device": "GD32L235R8",
+        "token": "GD32L235R8T6"
+      },
+      {
+        "device": "GD32L235RB",
+        "token": "GD32L235RBO6"
+      },
+      {
+        "device": "GD32L235RB",
+        "token": "GD32L235RBT6"
+      }
+    ],
+    "unmatched": [
+      "GD32A711",
+      "GD32A711ART3TA",
+      "GD32A711AVT3TA",
+      "GD32A711AZT3TA",
+      "GD32A712",
+      "GD32A712AIT3TA",
+      "GD32A712AVT3TA",
+      "GD32A712AZT3TA",
+      "GD32A714",
+      "GD32A714AIT3TA",
+      "GD32A714AVT3TA",
+      "GD32A714AXJ3TA",
+      "GD32A714AZT3TA",
+      "GD32A71x",
+      "GD32A722",
+      "GD32A722AIT3TA",
+      "GD32A722AXJ3TA",
+      "GD32A722AZT3TA",
+      "GD32A724",
+      "GD32A724AIT3TA",
+      "GD32A724AXJ3TA",
+      "GD32A724AZT3TA",
+      "GD32A72x",
+      "GD32A741",
+      "GD32A741AIT3TA",
+      "GD32A741AVT3TA",
+      "GD32A741AZT3TA",
+      "GD32A742",
+      "GD32A742AIT3TA",
+      "GD32A742AVT3TA",
+      "GD32A742AZT3TA",
+      "GD32A744",
+      "GD32A744AIT3TA",
+      "GD32A744AVT3TA",
+      "GD32A744AXJ3TA",
+      "GD32A744AZT3TA",
+      "GD32A74x",
+      "GD32E232",
+      "GD32E235C4T6",
+      "GD32E235C6T6",
+      "GD32E235E8P6TR",
+      "GD32E235F4P6TR",
+      "GD32E235F4V6TR",
+      "GD32E235F6P6TR",
+      "GD32E235F6V6TR",
+      "GD32E235G4U6TR",
+      "GD32E235G6U6TR",
+      "GD32E235K4T6",
+      "GD32E235K4U6",
+      "GD32E235K6T6",
+      "GD32E235K6U6",
+      "GD32E501",
+      "GD32FFPR",
+      "GD32G553CCT7",
+      "GD32G553CCU7",
+      "GD32G553MCT7",
+      "GD32G553MCY7TR",
+      "GD32G553QCT7",
+      "GD32G553RCT7",
+      "GD32G553VCT7",
+      "GD32VF103",
+      "GD32VF103C4T6",
+      "GD32VF103C6T6",
+      "GD32VF103C8T6",
+      "GD32VF103CBT6",
+      "GD32VF103R4T6",
+      "GD32VF103R6T6",
+      "GD32VF103R8T6",
+      "GD32VF103RBT6",
+      "GD32VF103T4U6",
+      "GD32VF103T6U6",
+      "GD32VF103T8U6",
+      "GD32VF103TBU6",
+      "GD32VF103V8T6",
+      "GD32VF103VBT6",
+      "GD32VW553",
+      "GD32VW553HIQ6",
+      "GD32VW553HIQ7",
+      "GD32VW553HMQ6",
+      "GD32VW553HMQ7",
+      "GD32VW553KIQ6",
+      "GD32VW553KIQ7",
+      "GD32VW553KMQ6",
+      "GD32VW553KMQ7",
+      "GD32W515P0Q6"
+    ]
+  },
+  "cmsis": {
+    "core_counts": {
+      "Cortex-M23": 55,
+      "Cortex-M3": 158,
+      "Cortex-M33": 158,
+      "Cortex-M4": 204,
+      "Cortex-M7": 23
+    },
+    "packs": [
+      {
+        "cores": {
+          "Cortex-M4": 4
+        },
+        "devices": 4,
+        "name": "GD32A10x_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 4
+        },
+        "version": "1.4.0"
+      },
+      {
+        "cores": {
+          "Cortex-M4": 4
+        },
+        "devices": 4,
+        "name": "GD32A490_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 4
+        },
+        "version": "1.4.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 2
+        },
+        "devices": 2,
+        "name": "GD32A508_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 2
+        },
+        "version": "1.4.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 30
+        },
+        "devices": 30,
+        "name": "GD32A50x_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 30
+        },
+        "version": "1.6.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 10
+        },
+        "devices": 10,
+        "name": "GD32A513_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 10
+        },
+        "version": "1.3.0"
+      },
+      {
+        "cores": {
+          "Cortex-M4": 7
+        },
+        "devices": 7,
+        "name": "GD32C10x_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 7
+        },
+        "version": "1.5.0"
+      },
+      {
+        "cores": {
+          "Cortex-M4": 4
+        },
+        "devices": 4,
+        "name": "GD32C11x_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 4
+        },
+        "version": "1.5.0"
+      },
+      {
+        "cores": {
+          "Cortex-M23": 11
+        },
+        "devices": 11,
+        "name": "GD32C2x1_DFP",
+        "rust_targets": {
+          "thumbv8m.base-none-eabi": 11
+        },
+        "version": "1.1.0"
+      },
+      {
+        "cores": {
+          "Cortex-M4": 8
+        },
+        "devices": 8,
+        "name": "GD32E10x_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 8
+        },
+        "version": "1.7.0"
+      },
+      {
+        "cores": {
+          "Cortex-M4": 8
+        },
+        "devices": 8,
+        "name": "GD32E11x_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 8
+        },
+        "version": "1.5.0"
+      },
+      {
+        "cores": {
+          "Cortex-M23": 28
+        },
+        "devices": 28,
+        "name": "GD32E23x_DFP",
+        "rust_targets": {
+          "thumbv8m.base-none-eabi": 28
+        },
+        "version": "2.5.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 10
+        },
+        "devices": 10,
+        "name": "GD32E502_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 10
+        },
+        "version": "1.3.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 26
+        },
+        "devices": 26,
+        "name": "GD32E50x_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 26
+        },
+        "version": "1.9.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 22
+        },
+        "devices": 22,
+        "name": "GD32E51x_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 22
+        },
+        "version": "1.5.0"
+      },
+      {
+        "cores": {
+          "Cortex-M3": 106
+        },
+        "devices": 106,
+        "name": "GD32F10x_DFP",
+        "rust_targets": {
+          "thumbv7m-none-eabi": 106
+        },
+        "version": "2.3.0"
+      },
+      {
+        "cores": {
+          "Cortex-M3": 25
+        },
+        "devices": 25,
+        "name": "GD32F1x0_DFP",
+        "rust_targets": {
+          "thumbv7m-none-eabi": 25
+        },
+        "version": "3.7.0"
+      },
+      {
+        "cores": {
+          "Cortex-M3": 27
+        },
+        "devices": 27,
+        "name": "GD32F20x_DFP",
+        "rust_targets": {
+          "thumbv7m-none-eabi": 27
+        },
+        "version": "2.7.0"
+      },
+      {
+        "cores": {
+          "Cortex-M4": 40
+        },
+        "devices": 40,
+        "name": "GD32F30x_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 40
+        },
+        "version": "2.6.0"
+      },
+      {
+        "cores": {
+          "Cortex-M4": 51
+        },
+        "devices": 51,
+        "name": "GD32F3x0_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 51
+        },
+        "version": "3.4.0"
+      },
+      {
+        "cores": {
+          "Cortex-M4": 18
+        },
+        "devices": 18,
+        "name": "GD32F403_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 18
+        },
+        "version": "3.5.0"
+      },
+      {
+        "cores": {
+          "Cortex-M4": 60
+        },
+        "devices": 60,
+        "name": "GD32F4xx_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 60
+        },
+        "version": "3.5.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 31
+        },
+        "devices": 31,
+        "name": "GD32F50x_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 31
+        },
+        "version": "1.0.1"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 8
+        },
+        "devices": 8,
+        "name": "GD32F527_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 8
+        },
+        "version": "1.4.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 8
+        },
+        "devices": 8,
+        "name": "GD32G5x3_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 8
+        },
+        "version": "1.3.0"
+      },
+      {
+        "cores": {
+          "Cortex-M7": 2
+        },
+        "devices": 2,
+        "name": "GD32H75E_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 2
+        },
+        "version": "1.4.0"
+      },
+      {
+        "cores": {
+          "Cortex-M7": 21
+        },
+        "devices": 21,
+        "name": "GD32H7xx_DFP",
+        "rust_targets": {
+          "thumbv7em-none-eabihf": 21
+        },
+        "version": "1.5.0"
+      },
+      {
+        "cores": {
+          "Cortex-M23": 16
+        },
+        "devices": 16,
+        "name": "GD32L23x_DFP",
+        "rust_targets": {
+          "thumbv8m.base-none-eabi": 16
+        },
+        "version": "2.3.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 6
+        },
+        "devices": 6,
+        "name": "GD32M53x_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 6
+        },
+        "version": "1.0.0"
+      },
+      {
+        "cores": {
+          "Cortex-M33": 5
+        },
+        "devices": 5,
+        "name": "GD32W51x_F5HC_DFP",
+        "rust_targets": {
+          "thumbv8m.main-none-eabihf": 5
+        },
+        "version": "2.0.0"
+      }
+    ],
+    "record_count": 598,
+    "rust_target_counts": {
+      "thumbv7em-none-eabihf": 227,
+      "thumbv7m-none-eabi": 158,
+      "thumbv8m.base-none-eabi": 55,
+      "thumbv8m.main-none-eabihf": 158
+    },
+    "unique_device_count": 598
+  },
+  "firmware": [
+    {
+      "document_id": 622,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 118,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 118,
+      "series": "GD32A10x",
+      "source_files": 120,
+      "unidentified_license_files": 2,
+      "version": "1.4.0"
+    },
+    {
+      "document_id": 535,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 132,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 132,
+      "series": "GD32A490",
+      "source_files": 134,
+      "unidentified_license_files": 2,
+      "version": "2.0.3"
+    },
+    {
+      "document_id": 634,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 8,
+        "BSD-3-Clause": 125
+      },
+      "permissively_licensed_files": 133,
+      "series": "GD32A508",
+      "source_files": 133,
+      "unidentified_license_files": 0,
+      "version": "1.4.0"
+    },
+    {
+      "document_id": 575,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 10,
+        "BSD-3-Clause": 48
+      },
+      "permissively_licensed_files": 58,
+      "series": "GD32A50x",
+      "source_files": 58,
+      "unidentified_license_files": 0,
+      "version": "1.7.0"
+    },
+    {
+      "document_id": 545,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 10,
+        "BSD-3-Clause": 48
+      },
+      "permissively_licensed_files": 58,
+      "series": "GD32A513",
+      "source_files": 58,
+      "unidentified_license_files": 0,
+      "version": "1.5.0"
+    },
+    {
+      "document_id": 267,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 118,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 118,
+      "series": "GD32C10x",
+      "source_files": 120,
+      "unidentified_license_files": 2,
+      "version": "1.7.0"
+    },
+    {
+      "document_id": 396,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 118,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 118,
+      "series": "GD32C11x",
+      "source_files": 120,
+      "unidentified_license_files": 2,
+      "version": "1.6.0"
+    },
+    {
+      "document_id": 701,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 4,
+        "BSD-3-Clause": 43,
+        "未识别": 1
+      },
+      "permissively_licensed_files": 47,
+      "series": "GD32C2x1",
+      "source_files": 48,
+      "unidentified_license_files": 1,
+      "version": "1.3.0"
+    },
+    {
+      "document_id": 230,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 116,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 116,
+      "series": "GD32E10x",
+      "source_files": 118,
+      "unidentified_license_files": 2,
+      "version": "1.9.0"
+    },
+    {
+      "document_id": 397,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 116,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 116,
+      "series": "GD32E11x",
+      "source_files": 118,
+      "unidentified_license_files": 2,
+      "version": "1.6.0"
+    },
+    {
+      "document_id": 216,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 3,
+        "BSD-3-Clause": 42
+      },
+      "permissively_licensed_files": 45,
+      "series": "GD32E23x",
+      "source_files": 45,
+      "unidentified_license_files": 0,
+      "version": "2.5.0"
+    },
+    {
+      "document_id": 493,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 10,
+        "BSD-3-Clause": 48
+      },
+      "permissively_licensed_files": 58,
+      "series": "GD32E502",
+      "source_files": 58,
+      "unidentified_license_files": 0,
+      "version": "1.6.0"
+    },
+    {
+      "document_id": 282,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 8,
+        "BSD-3-Clause": 167
+      },
+      "permissively_licensed_files": 175,
+      "series": "GD32E50x",
+      "source_files": 175,
+      "unidentified_license_files": 0,
+      "version": "1.7.0"
+    },
+    {
+      "document_id": 607,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 8,
+        "BSD-3-Clause": 166
+      },
+      "permissively_licensed_files": 174,
+      "series": "GD32E51x",
+      "source_files": 174,
+      "unidentified_license_files": 0,
+      "version": "1.4.0"
+    },
+    {
+      "document_id": 180,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 160
+      },
+      "permissively_licensed_files": 160,
+      "series": "GD32F10x",
+      "source_files": 160,
+      "unidentified_license_files": 0,
+      "version": "2.7.0"
+    },
+    {
+      "document_id": 288,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 97
+      },
+      "permissively_licensed_files": 97,
+      "series": "GD32F1x0",
+      "source_files": 97,
+      "unidentified_license_files": 0,
+      "version": "3.8.0"
+    },
+    {
+      "document_id": 194,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 134
+      },
+      "permissively_licensed_files": 134,
+      "series": "GD32F20x",
+      "source_files": 134,
+      "unidentified_license_files": 0,
+      "version": "3.0.0"
+    },
+    {
+      "document_id": 129,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 164,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 164,
+      "series": "GD32F30x",
+      "source_files": 166,
+      "unidentified_license_files": 2,
+      "version": "3.0.3"
+    },
+    {
+      "document_id": 143,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 120,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 120,
+      "series": "GD32F3x0",
+      "source_files": 122,
+      "unidentified_license_files": 2,
+      "version": "2.6.0"
+    },
+    {
+      "document_id": 132,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 120,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 120,
+      "series": "GD32F403",
+      "source_files": 122,
+      "unidentified_license_files": 2,
+      "version": "3.0.3"
+    },
+    {
+      "document_id": 247,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "BSD-3-Clause": 132,
+        "未识别": 2
+      },
+      "permissively_licensed_files": 132,
+      "series": "GD32F4xx",
+      "source_files": 134,
+      "unidentified_license_files": 2,
+      "version": "3.3.3"
+    },
+    {
+      "document_id": 738,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 7,
+        "BSD-3-Clause": 130
+      },
+      "permissively_licensed_files": 137,
+      "series": "GD32F50x",
+      "source_files": 137,
+      "unidentified_license_files": 0,
+      "version": "1.0.4"
+    },
+    {
+      "document_id": 603,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 8,
+        "BSD-3-Clause": 141
+      },
+      "permissively_licensed_files": 149,
+      "series": "GD32F527",
+      "source_files": 149,
+      "unidentified_license_files": 0,
+      "version": "1.4.0"
+    },
+    {
+      "document_id": 561,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 3,
+        "BSD-3-Clause": 140
+      },
+      "permissively_licensed_files": 143,
+      "series": "GD32F5xx",
+      "source_files": 143,
+      "unidentified_license_files": 0,
+      "version": "1.2.0"
+    },
+    {
+      "document_id": 658,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 12,
+        "BSD-3-Clause": 76
+      },
+      "permissively_licensed_files": 88,
+      "series": "GD32G5x3",
+      "source_files": 88,
+      "unidentified_license_files": 0,
+      "version": "1.5.0"
+    },
+    {
+      "document_id": 472,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 9,
+        "BSD-3-Clause": 174
+      },
+      "permissively_licensed_files": 183,
+      "series": "GD32H73x_75x",
+      "source_files": 183,
+      "unidentified_license_files": 0,
+      "version": "1.6.0"
+    },
+    {
+      "document_id": 654,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 9,
+        "BSD-3-Clause": 160
+      },
+      "permissively_licensed_files": 169,
+      "series": "GD32H75E",
+      "source_files": 169,
+      "unidentified_license_files": 0,
+      "version": "1.3.0"
+    },
+    {
+      "document_id": 290,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 11,
+        "BSD-3-Clause": 100
+      },
+      "permissively_licensed_files": 111,
+      "series": "GD32L23x",
+      "source_files": 111,
+      "unidentified_license_files": 0,
+      "version": "2.4.0"
+    },
+    {
+      "document_id": 31,
+      "has_dmamux_request_definitions": true,
+      "licenses": {
+        "Apache-2.0": 8,
+        "BSD-3-Clause": 61
+      },
+      "permissively_licensed_files": 69,
+      "series": "GD32M53x",
+      "source_files": 69,
+      "unidentified_license_files": 0,
+      "version": "1.0.0"
+    },
+    {
+      "document_id": 386,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 12,
+        "BSD-3-Clause": 111,
+        "未识别": 12
+      },
+      "permissively_licensed_files": 123,
+      "series": "GD32VF103",
+      "source_files": 135,
+      "unidentified_license_files": 12,
+      "version": "1.7.0"
+    },
+    {
+      "document_id": 505,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 22,
+        "BSD-3-Clause": 52,
+        "未识别": 13
+      },
+      "permissively_licensed_files": 74,
+      "series": "GD32VW55x",
+      "source_files": 87,
+      "unidentified_license_files": 13,
+      "version": "1.6.0"
+    },
+    {
+      "document_id": 296,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 3,
+        "BSD-3-Clause": 134
+      },
+      "permissively_licensed_files": 137,
+      "series": "GD32W51x",
+      "source_files": 137,
+      "unidentified_license_files": 0,
+      "version": "1.4.0"
+    },
+    {
+      "document_id": 189,
+      "has_dmamux_request_definitions": false,
+      "licenses": {
+        "Apache-2.0": 10,
+        "BSD-3-Clause": 139
+      },
+      "permissively_licensed_files": 149,
+      "series": "GD32W51x_F5HC",
+      "source_files": 149,
+      "unidentified_license_files": 0,
+      "version": "2.0.0"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "addons": 30,
+    "addons_with_cmsis_pack": 29,
+    "builder_afio_xml": 26,
+    "builder_datasheet_xml": 227,
+    "cmsis_devices": 598,
+    "cmsis_svd_files": 80,
+    "firmware_libraries": 33,
+    "latest_cmsis_packs": 29,
+    "selection_guide_tokens": 704,
+    "selection_tokens_unmatched_by_cmsis": 85
+  }
+}

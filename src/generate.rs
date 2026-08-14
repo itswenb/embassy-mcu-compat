@@ -264,7 +264,7 @@ fn git_output(root: &Path, args: &[&str]) -> Result<String> {
     Ok(String::from_utf8_lossy(&output.stdout).trim().to_owned())
 }
 
-fn run_generator(data_dir: &Path, output: &Path, chips: Vec<String>) -> Result<()> {
+pub fn run_generator(data_dir: &Path, output: &Path, chips: Vec<String>) -> Result<()> {
     let result = catch_unwind(AssertUnwindSafe(|| {
         Gen::new(Options {
             chips,

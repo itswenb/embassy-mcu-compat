@@ -1,0 +1,1244 @@
+{
+  "code_generate_families": [
+    "GD32C211",
+    "GD32C2x1",
+    "GD32E23x",
+    "GD32E50x",
+    "GD32F30x",
+    "GD32F3x0",
+    "GD32F50x",
+    "GD32F527",
+    "GD32G5x3",
+    "GD32H75E",
+    "GD32H77D",
+    "GD32H77x",
+    "GD32H7xx",
+    "GD32VF103"
+  ],
+  "code_template_families": [
+    "GD32C211",
+    "GD32C2x1",
+    "GD32E23x",
+    "GD32F3x0",
+    "GD32F50x",
+    "GD32F527",
+    "GD32G5x3",
+    "GD32H75E",
+    "GD32H77D",
+    "GD32H77x",
+    "GD32H7xx"
+  ],
+  "plugins": [
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32a10x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32A10x/Include/gd32a10x.h",
+          "selectors": [
+            "GD32A10X",
+            "GD32A10X_H"
+          ],
+          "sha256": "196699b9475dd7191ab2d3861581666dd75ca205898f43fbcbdc6f60409ef630"
+        }
+      ],
+      "files": 69,
+      "id": "com.gigadevice.templatefwlib.arm.gd32a10x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32a10x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32A10X"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32A10X",
+        "GD32A10X_H"
+      ],
+      "series": "gd32a10x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32a490_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32A490/Include/gd32a490.h",
+          "selectors": [
+            "GD32A490",
+            "GD32A490_H"
+          ],
+          "sha256": "2e7bbd344bbeb0403142c81c905d6ca73ba85198b34761b6c6bd89e0db57f1c8"
+        }
+      ],
+      "files": 82,
+      "id": "com.gigadevice.templatefwlib.arm.gd32a490_1.0.0.202607240330",
+      "licenses": [],
+      "model_selectors": [
+        "GD32A490"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32A490",
+        "GD32A490_H"
+      ],
+      "series": "gd32a490"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32a508_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32A508/Include/gd32a508.h",
+          "selectors": [
+            "GD32A508",
+            "GD32A508_H"
+          ],
+          "sha256": "0e7e47f18213faf78208449fa2a4d6157812cee909c75fd4aeea3a3994eb801d"
+        }
+      ],
+      "files": 81,
+      "id": "com.gigadevice.templatefwlib.arm.gd32a508_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32a508_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32A508"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32A508",
+        "GD32A508_H"
+      ],
+      "series": "gd32a508"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32c10x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32C10x/Include/gd32c10x.h",
+          "selectors": [
+            "GD32C10X",
+            "GD32C10X_H"
+          ],
+          "sha256": "f5d0a93fc372e071cd19210ce76f5ad1772a66b5ca9495f6c8ccc5410d42f60e"
+        }
+      ],
+      "files": 69,
+      "id": "com.gigadevice.templatefwlib.arm.gd32c10x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32c10x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32C10X"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32C10X",
+        "GD32C10X_H"
+      ],
+      "series": "gd32c10x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32c11x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32C11x/Include/gd32c11x.h",
+          "selectors": [
+            "GD32C11X",
+            "GD32C11X_H"
+          ],
+          "sha256": "3a6485290f6a94b8e28393a54c3cf68d69cfdc060f539a6aeb9728491280331e"
+        }
+      ],
+      "files": 69,
+      "id": "com.gigadevice.templatefwlib.arm.gd32c11x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32c11x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32C11X"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32C11X",
+        "GD32C11X_H"
+      ],
+      "series": "gd32c11x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M23",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32c2x1_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32C2x1/Include/gd32c2x1.h",
+          "selectors": [
+            "GD32C2X1_H",
+            "GD32C2x1"
+          ],
+          "sha256": "c63539ddf837768e1ef7bd818d1e590da53287436f61bb939cd9c1823c334b14"
+        }
+      ],
+      "files": 68,
+      "id": "com.gigadevice.templatefwlib.arm.gd32c2x1_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32c2x1_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32C2x1"
+      ],
+      "rust_target": "thumbv8m.base-none-eabi",
+      "selectors": [
+        "GD32C2X1_H",
+        "GD32C2x1"
+      ],
+      "series": "gd32c2x1"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e10x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E10x/Include/gd32e10x.h",
+          "selectors": [
+            "GD32E103R_START",
+            "GD32E103V_EVAL",
+            "GD32E10X",
+            "GD32E10X_H"
+          ],
+          "sha256": "0fed996af21832ed90ff26996d187fc92fbfb29bde45e81655915e9356a36ef1"
+        }
+      ],
+      "files": 67,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e10x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e10x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32E10X"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32E103R_START",
+        "GD32E103V_EVAL",
+        "GD32E10X",
+        "GD32E10X_H"
+      ],
+      "series": "gd32e10x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e11x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E11x/Include/gd32e11x.h",
+          "selectors": [
+            "GD32E11X",
+            "GD32E11X_H"
+          ],
+          "sha256": "da395e91130010b64de617edb961f486aa4ef9516a2206d3b38d69785e8bc9ec"
+        }
+      ],
+      "files": 67,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e11x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e11x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32E11X"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32E11X",
+        "GD32E11X_H"
+      ],
+      "series": "gd32e11x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M23",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e232_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E232/Include/gd32e232.h",
+          "selectors": [
+            "GD32E232",
+            "GD32E232_H"
+          ],
+          "sha256": "63664eff4ffb5099546a7c660777138b3029f9201499e43665201ff22c09f853"
+        }
+      ],
+      "files": 66,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e232_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e232_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "model_selectors": [
+        "GD32E232"
+      ],
+      "rust_target": "thumbv8m.base-none-eabi",
+      "selectors": [
+        "GD32E232",
+        "GD32E232_H"
+      ],
+      "series": "gd32e232"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M23",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e23x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E23x/Include/gd32e23x.h",
+          "selectors": [
+            "GD32E23X_H",
+            "GD32E23x"
+          ],
+          "sha256": "97e62240d740889ca69223b23f9bc749a9f0c8527fd9d2e34e9db302b2ccbd66"
+        }
+      ],
+      "files": 62,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e23x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e23x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32E23x"
+      ],
+      "rust_target": "thumbv8m.base-none-eabi",
+      "selectors": [
+        "GD32E23X_H",
+        "GD32E23x"
+      ],
+      "series": "gd32e23x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M23",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e25x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E25x/Include/gd32e25x.h",
+          "selectors": [
+            "GD32E25X",
+            "GD32E25X_H"
+          ],
+          "sha256": "eee16c257d94ec283f0aa967e64a566af8bb34e076f484be6dff1a9de4da6b49"
+        }
+      ],
+      "files": 71,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e25x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e25x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32E25X"
+      ],
+      "rust_target": "thumbv8m.base-none-eabi",
+      "selectors": [
+        "GD32E25X",
+        "GD32E25X_H"
+      ],
+      "series": "gd32e25x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e501_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E501/Include/gd32e501.h",
+          "selectors": [
+            "GD32E501",
+            "GD32E501_H"
+          ],
+          "sha256": "2ef10128186b8a2b14178b64c5e291968f869141a88e5430769e2bbcafc3be80"
+        }
+      ],
+      "files": 69,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e501_1.0.0.202607240330",
+      "licenses": [],
+      "model_selectors": [
+        "GD32E501"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32E501",
+        "GD32E501_H"
+      ],
+      "series": "gd32e501"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e502_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E502/Include/gd32e502.h",
+          "selectors": [
+            "GD32E502",
+            "GD32E502_H"
+          ],
+          "sha256": "751684379d31c239e8c14920e076dd39fc12478d0e4a1ceaabc68a2be8b2b4ef"
+        }
+      ],
+      "files": 77,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e502_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e502_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32E502"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32E502",
+        "GD32E502_H"
+      ],
+      "series": "gd32e502"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e50x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E50x/Include/gd32e50x.h",
+          "selectors": [
+            "GD32E508",
+            "GD32E50X",
+            "GD32E50X_CL",
+            "GD32E50X_H",
+            "GD32E50X_HD",
+            "GD32EPRT"
+          ],
+          "sha256": "c7121c3bd16dcf427afbf6140abf91ff0333d12c9d9a7915780716349696e58f"
+        }
+      ],
+      "files": 87,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e50x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e50x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32E508",
+        "GD32E50X",
+        "GD32EPRT"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32E508",
+        "GD32E50X",
+        "GD32E50X_CL",
+        "GD32E50X_H",
+        "GD32E50X_HD",
+        "GD32EPRT"
+      ],
+      "series": "gd32e50x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e511_512_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E511_512/Include/gd32e511_512.h",
+          "selectors": [
+            "GD32E511_512",
+            "GD32E511_512_H"
+          ],
+          "sha256": "12edd6b2b813e67ba718da246405907fc1b2f1a0010ddb282f9efb313c9b70f7"
+        }
+      ],
+      "files": 75,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e511_512_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e511_512_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32E511_512",
+        "GD32E511_512_H"
+      ],
+      "series": "gd32e511_512"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e51x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E51x/Include/gd32e51x.h",
+          "selectors": [
+            "GD32E518",
+            "GD32E51X_CL",
+            "GD32E51X_H",
+            "GD32E51X_HD",
+            "GD32EPRTxxA"
+          ],
+          "sha256": "7dbf1496df7f2a99ec1f0caf84be4ec6386ef1266140fa2da760c8e990768407"
+        }
+      ],
+      "files": 85,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e51x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e51x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32E518",
+        "GD32EPRTxxA"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32E518",
+        "GD32E51X_CL",
+        "GD32E51X_H",
+        "GD32E51X_HD",
+        "GD32EPRTxxA"
+      ],
+      "series": "gd32e51x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e53x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32E53x/Include/gd32e53x.h",
+          "selectors": [
+            "GD32E53X",
+            "GD32E53X_H"
+          ],
+          "sha256": "b12cb64e0b0b763ddb82d526dc574def2072793388fc005f888e7879e92a2522"
+        }
+      ],
+      "files": 92,
+      "id": "com.gigadevice.templatefwlib.arm.gd32e53x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32e53x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32E53X"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32E53X",
+        "GD32E53X_H"
+      ],
+      "series": "gd32e53x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M3",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f10x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32F10x/Include/gd32f10x.h",
+          "selectors": [
+            "GD32F10X_CL",
+            "GD32F10X_H",
+            "GD32F10X_HD",
+            "GD32F10X_MD",
+            "GD32F10X_XD"
+          ],
+          "sha256": "1a2d4b21b35e2241239d84c929ff2803556d303d7e9a6e9de9705b0219903dc3"
+        }
+      ],
+      "files": 72,
+      "id": "com.gigadevice.templatefwlib.arm.gd32f10x_1.0.0.202607240330",
+      "licenses": [],
+      "model_selectors": [],
+      "rust_target": "thumbv7m-none-eabi",
+      "selectors": [
+        "GD32F10X_CL",
+        "GD32F10X_H",
+        "GD32F10X_HD",
+        "GD32F10X_MD",
+        "GD32F10X_XD"
+      ],
+      "series": "gd32f10x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M3",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f1x0_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32F1x0/Include/gd32f1x0.h",
+          "selectors": [
+            "GD32F1X0_H",
+            "GD32F1x0"
+          ],
+          "sha256": "af284e367478cd8cf9183674c9065a1513cc434980de396b0d15ea7177ef5b48"
+        }
+      ],
+      "files": 68,
+      "id": "com.gigadevice.templatefwlib.arm.gd32f1x0_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f1x0_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32F1x0"
+      ],
+      "rust_target": "thumbv7m-none-eabi",
+      "selectors": [
+        "GD32F1X0_H",
+        "GD32F1x0"
+      ],
+      "series": "gd32f1x0"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M3",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f20x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32F20x/Include/gd32f20x.h",
+          "selectors": [
+            "GD32F20X_CL",
+            "GD32F20X_H"
+          ],
+          "sha256": "7828d9c1b814a6fd4137d9307880181f77622648dd454e7308777b1b3647c6b8"
+        }
+      ],
+      "files": 83,
+      "id": "com.gigadevice.templatefwlib.arm.gd32f20x_1.0.0.202607240330",
+      "licenses": [],
+      "model_selectors": [],
+      "rust_target": "thumbv7m-none-eabi",
+      "selectors": [
+        "GD32F20X_CL",
+        "GD32F20X_H"
+      ],
+      "series": "gd32f20x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f30x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32F30x/Include/gd32f30x.h",
+          "selectors": [
+            "GD32F30X_CL",
+            "GD32F30X_H",
+            "GD32F30X_HD",
+            "GD32F30X_XD"
+          ],
+          "sha256": "e573c11e017c15140495c935196d9e396a71e5c84d6280f6111e438261e5850f"
+        }
+      ],
+      "files": 74,
+      "id": "com.gigadevice.templatefwlib.arm.gd32f30x_1.0.0.202607240330",
+      "licenses": [],
+      "model_selectors": [],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32F30X_CL",
+        "GD32F30X_H",
+        "GD32F30X_HD",
+        "GD32F30X_XD"
+      ],
+      "series": "gd32f30x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f3x0_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32F3x0/Include/gd32f3x0.h",
+          "selectors": [
+            "GD32F310",
+            "GD32F330",
+            "GD32F350",
+            "GD32F355",
+            "GD32F370",
+            "GD32F3X0_H",
+            "GD32F3x0"
+          ],
+          "sha256": "dc14904f1184e213cc3ecd8668c159103e17b585a619620ed8bf95146584347d"
+        }
+      ],
+      "files": 70,
+      "id": "com.gigadevice.templatefwlib.arm.gd32f3x0_1.0.0.202607240330",
+      "licenses": [],
+      "model_selectors": [
+        "GD32F310",
+        "GD32F330",
+        "GD32F350",
+        "GD32F355",
+        "GD32F370",
+        "GD32F3x0"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32F310",
+        "GD32F330",
+        "GD32F350",
+        "GD32F355",
+        "GD32F370",
+        "GD32F3X0_H",
+        "GD32F3x0"
+      ],
+      "series": "gd32f3x0"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f403_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32F403/Include/gd32f403.h",
+          "selectors": [
+            "GD32F403_H"
+          ],
+          "sha256": "9d8de5cf7df63a91658a792742fb21fa27d1eed8591232ef30d7dc21b5e2efd2"
+        }
+      ],
+      "files": 70,
+      "id": "com.gigadevice.templatefwlib.arm.gd32f403_1.0.0.202607240330",
+      "licenses": [],
+      "model_selectors": [],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32F403_H"
+      ],
+      "series": "gd32f403"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M4",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f4xx_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32F4xx/Include/gd32f4xx.h",
+          "selectors": [
+            "GD32F405",
+            "GD32F407",
+            "GD32F425",
+            "GD32F427",
+            "GD32F450",
+            "GD32F470",
+            "GD32F4XX_H"
+          ],
+          "sha256": "db6de53203fa053d6e789ef86908195f84b7664753bdf0aa7ca74f62025573ef"
+        }
+      ],
+      "files": 84,
+      "id": "com.gigadevice.templatefwlib.arm.gd32f4xx_1.0.0.202607240330",
+      "licenses": [],
+      "model_selectors": [
+        "GD32F405",
+        "GD32F407",
+        "GD32F425",
+        "GD32F427",
+        "GD32F450",
+        "GD32F470"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32F405",
+        "GD32F407",
+        "GD32F425",
+        "GD32F427",
+        "GD32F450",
+        "GD32F470",
+        "GD32F4XX_H"
+      ],
+      "series": "gd32f4xx"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f50x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32F50x/Include/gd32f50x.h",
+          "selectors": [
+            "GD32F50X",
+            "GD32F50X_H"
+          ],
+          "sha256": "fc5f717fe3ccea4ba1cdb14ce20231e179407fda39a2b8f34c07b2634b640124"
+        }
+      ],
+      "files": 86,
+      "id": "com.gigadevice.templatefwlib.arm.gd32f50x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f50x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32F50X"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32F50X",
+        "GD32F50X_H"
+      ],
+      "series": "gd32f50x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f527_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32F527/Include/gd32f527.h",
+          "selectors": [
+            "GD32F527",
+            "GD32F527_H"
+          ],
+          "sha256": "e17ad419604afbe67f8fda279c653adc068e8a18d4daf79ce76c799ad3d17cc4"
+        }
+      ],
+      "files": 98,
+      "id": "com.gigadevice.templatefwlib.arm.gd32f527_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32f527_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32F527"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32F527",
+        "GD32F527_H"
+      ],
+      "series": "gd32f527"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32g5x3_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32G5x3/Include/gd32g5x3.h",
+          "selectors": [
+            "GD32G533",
+            "GD32G553",
+            "GD32G5X3_H"
+          ],
+          "sha256": "1bb4eb549bbfc5dcc7cb72ffa53bc693f735ce72bf863f3aad5785b7837e2c8c"
+        }
+      ],
+      "files": 105,
+      "id": "com.gigadevice.templatefwlib.arm.gd32g5x3_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32g5x3_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32G533",
+        "GD32G553"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32G533",
+        "GD32G553",
+        "GD32G5X3_H"
+      ],
+      "series": "gd32g5x3"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M7",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32h71x_72x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32H71x_72x/Include/gd32h71x_72x.h",
+          "selectors": [
+            "GD32H71X_72X_H"
+          ],
+          "sha256": "06eba66aeea0f824affad5e9b6a2de3b8a4f6be4935aa3c9d9b84910922c9757"
+        }
+      ],
+      "files": 140,
+      "id": "com.gigadevice.templatefwlib.arm.gd32h71x_72x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32h71x_72x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "model_selectors": [],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32H71X_72X_H"
+      ],
+      "series": "gd32h71x_72x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M7",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32h73x_75x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32H73x_75x/Include/gd32h73x_75x.h",
+          "selectors": [
+            "GD32H73X_75X",
+            "GD32H73X_75X_H"
+          ],
+          "sha256": "727a22565c85f4d3dae481966b516bcb9938de1d5711fd036e9861db828a26ce"
+        }
+      ],
+      "files": 130,
+      "id": "com.gigadevice.templatefwlib.arm.gd32h73x_75x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32h73x_75x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32H73X_75X",
+        "GD32H73X_75X_H"
+      ],
+      "series": "gd32h73x_75x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M7",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32h75e_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32H75E/Include/gd32h75e.h",
+          "selectors": [
+            "GD32H75E",
+            "GD32H75E_H"
+          ],
+          "sha256": "01c27cf6f890a38ec12e7b13bb6dd1e48f889957832bad29e44e04009448e549"
+        }
+      ],
+      "files": 102,
+      "id": "com.gigadevice.templatefwlib.arm.gd32h75e_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32h75e_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32H75E"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32H75E",
+        "GD32H75E_H"
+      ],
+      "series": "gd32h75e"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M7",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32h77x_78x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32H77x_78x/Include/gd32h77x_78x.h",
+          "selectors": [
+            "GD32H779XI",
+            "GD32H779XP",
+            "GD32H779XW",
+            "GD32H77DXI",
+            "GD32H77DXP",
+            "GD32H77DXW",
+            "GD32H77EXI",
+            "GD32H77EXP",
+            "GD32H77EXW",
+            "GD32H77RXP",
+            "GD32H77X_78X_H",
+            "GD32H789XI",
+            "GD32H789XP",
+            "GD32H789XW",
+            "GD32H78DXI",
+            "GD32H78DXP",
+            "GD32H78DXW",
+            "GD32H78EXI",
+            "GD32H78EXP",
+            "GD32H78EXW",
+            "GD32H78RXP",
+            "GD32H78X_HIGH_PERFORMANCE_MODE"
+          ],
+          "sha256": "2b5f1bfbb8ccd329b38f0f7118f01e26e0fe2e35f2218ebd9ba85582dccb7bcc"
+        }
+      ],
+      "files": 153,
+      "id": "com.gigadevice.templatefwlib.arm.gd32h77x_78x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32h77x_78x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "model_selectors": [
+        "GD32H779XI",
+        "GD32H779XP",
+        "GD32H779XW",
+        "GD32H77DXI",
+        "GD32H77DXP",
+        "GD32H77DXW",
+        "GD32H77EXI",
+        "GD32H77EXP",
+        "GD32H77EXW",
+        "GD32H77RXP",
+        "GD32H789XI",
+        "GD32H789XP",
+        "GD32H789XW",
+        "GD32H78DXI",
+        "GD32H78DXP",
+        "GD32H78DXW",
+        "GD32H78EXI",
+        "GD32H78EXP",
+        "GD32H78EXW",
+        "GD32H78RXP"
+      ],
+      "rust_target": "thumbv7em-none-eabihf",
+      "selectors": [
+        "GD32H779XI",
+        "GD32H779XP",
+        "GD32H779XW",
+        "GD32H77DXI",
+        "GD32H77DXP",
+        "GD32H77DXW",
+        "GD32H77EXI",
+        "GD32H77EXP",
+        "GD32H77EXW",
+        "GD32H77RXP",
+        "GD32H77X_78X_H",
+        "GD32H789XI",
+        "GD32H789XP",
+        "GD32H789XW",
+        "GD32H78DXI",
+        "GD32H78DXP",
+        "GD32H78DXW",
+        "GD32H78EXI",
+        "GD32H78EXP",
+        "GD32H78EXW",
+        "GD32H78RXP",
+        "GD32H78X_HIGH_PERFORMANCE_MODE"
+      ],
+      "series": "gd32h77x_78x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M23",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32l23x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32L23x/Include/gd32l23x.h",
+          "selectors": [
+            "GD32L235",
+            "GD32L23X_H",
+            "GD32L23x"
+          ],
+          "sha256": "adb10c350633223424597cf462c7840fa34f5463eacb3bc476672042aeb6c214"
+        }
+      ],
+      "files": 89,
+      "id": "com.gigadevice.templatefwlib.arm.gd32l23x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32l23x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32L235",
+        "GD32L23x"
+      ],
+      "rust_target": "thumbv8m.base-none-eabi",
+      "selectors": [
+        "GD32L235",
+        "GD32L23X_H",
+        "GD32L23x"
+      ],
+      "series": "gd32l23x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32m53x_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32M53x/Include/gd32m53x.h",
+          "selectors": [
+            "GD32M53X",
+            "GD32M53X_H"
+          ],
+          "sha256": "868a3d4a4a1ccd05c18706ce983f4f1334c9991788db510c08379be674bd3e90"
+        }
+      ],
+      "files": 86,
+      "id": "com.gigadevice.templatefwlib.arm.gd32m53x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32m53x_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32M53X"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32M53X",
+        "GD32M53X_H"
+      ],
+      "series": "gd32m53x"
+    },
+    {
+      "architecture": "arm",
+      "core": "Cortex-M33",
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32w51x_f5hc_1.0.0.202607240330/Firmware/Firmware/CMSIS/GD/GD32W51x_F5HC/Include/gd32w51x_f5hc.h",
+          "selectors": [
+            "GD32F5HC",
+            "GD32W515",
+            "GD32W51x_F5HC_H"
+          ],
+          "sha256": "4ac01fea06a1bbeebd3d24dafa15a099ec1952e874804e9d5f262ec2893cd694"
+        }
+      ],
+      "files": 104,
+      "id": "com.gigadevice.templatefwlib.arm.gd32w51x_f5hc_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.arm.gd32w51x_f5hc_1.0.0.202607240330/Firmware/Firmware/CMSIS/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [
+        "GD32F5HC",
+        "GD32W515"
+      ],
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "selectors": [
+        "GD32F5HC",
+        "GD32W515",
+        "GD32W51x_F5HC_H"
+      ],
+      "series": "gd32w51x_f5hc"
+    },
+    {
+      "architecture": "riscv",
+      "core": null,
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.riscv.gd32vf103_1.0.0.202607240330/Firmware/Firmware/GD32VF103_standard_peripheral/gd32vf103.h",
+          "selectors": [
+            "GD32VF103C_START",
+            "GD32VF103R_START",
+            "GD32VF103T_START",
+            "GD32VF103V_EVAL",
+            "GD32VF103_H"
+          ],
+          "sha256": "d026c5c7c77678c7615551947559ec6d8a118b81775fd304a79f2d1cc49e670e"
+        }
+      ],
+      "files": 81,
+      "id": "com.gigadevice.templatefwlib.riscv.gd32vf103_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.riscv.gd32vf103_1.0.0.202607240330/Firmware/Firmware/GD32VF103_standard_peripheral/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        },
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.riscv.gd32vf103_1.0.0.202607240330/Firmware/Firmware/RISCV/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [],
+      "rust_target": null,
+      "selectors": [
+        "GD32VF103C_START",
+        "GD32VF103R_START",
+        "GD32VF103T_START",
+        "GD32VF103V_EVAL",
+        "GD32VF103_H"
+      ],
+      "series": "gd32vf103"
+    },
+    {
+      "architecture": "riscv",
+      "core": null,
+      "device_headers": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.riscv.gd32vw55x_1.0.0.202607240330/Firmware/Firmware/GD32VW55x_standard_peripheral/gd32vw55x.h",
+          "selectors": [
+            "GD32VW55x_H"
+          ],
+          "sha256": "d401e6edcd352799d529dbb0bb67244f4970b733105e2bd42c4c3149f6b2bb55"
+        }
+      ],
+      "files": 101,
+      "id": "com.gigadevice.templatefwlib.riscv.gd32vw55x_1.0.0.202607240330",
+      "licenses": [
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.riscv.gd32vw55x_1.0.0.202607240330/Firmware/Firmware/GD32VW55x_standard_peripheral/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        },
+        {
+          "path": "plugins/com.gigadevice.templatefwlib.riscv.gd32vw55x_1.0.0.202607240330/Firmware/Firmware/RISCV/LICENSE.TXT",
+          "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+        }
+      ],
+      "model_selectors": [],
+      "rust_target": null,
+      "selectors": [
+        "GD32VW55x_H"
+      ],
+      "series": "gd32vw55x"
+    }
+  ],
+  "plugins_without_device_headers": [],
+  "provenance": {
+    "builder_archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+    "builder_tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca"
+  },
+  "schema_version": 1,
+  "summary": {
+    "arm_plugins": 34,
+    "code_generate_families": 14,
+    "code_template_families": 11,
+    "device_headers": 36,
+    "model_selectors": 62,
+    "plugins": 36,
+    "plugins_without_device_headers": 0,
+    "riscv_plugins": 2
+  }
+}

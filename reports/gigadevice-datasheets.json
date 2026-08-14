@@ -1,0 +1,900 @@
+{
+  "conversion_version": 1,
+  "datasheets": [
+    {
+      "characters": 294566,
+      "document_id": 624,
+      "name": "GD32A103xx Datasheet",
+      "pages": 89,
+      "pdf": {
+        "filename": "624-1-GD32A103xx%20Datasheet_Rev1.2.pdf",
+        "sha256": "814a8a7834c890a14e203662ff06f39c3fcd7e72887dc36ab5e1d86026217855"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-814a8a7834c890a1-6e8a52c9ff50.txt",
+      "text_sha256": "ac46660bb30592fcc9f78c0594ef46d365484200fb9e511556283105999ea64e",
+      "version": "1.2"
+    },
+    {
+      "characters": 402309,
+      "document_id": 531,
+      "name": "GD32A490xx Datasheet",
+      "pages": 104,
+      "pdf": {
+        "filename": "531-1-GD32A490xx%20Datasheet_Rev1.2.pdf",
+        "sha256": "02db9ec7abf17212e4903897839f4753f696968c0e2d23cc45d35d2b419e8505"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-02db9ec7abf17212-6e8a52c9ff50.txt",
+      "text_sha256": "6e86ba073e32c85c91102f7c0efcc0b040b36bc6169b1a2e3f54f6272c6dcd56",
+      "version": "1.2"
+    },
+    {
+      "characters": 320000,
+      "document_id": 443,
+      "name": "GD32A503xx Datasheet",
+      "pages": 94,
+      "pdf": {
+        "filename": "443-1-GD32A503xx_Datasheet_Rev2.0.pdf",
+        "sha256": "87697cdc4a937de070b5dc41744641e9bf0d6646914ff6c852000a929fe92d9f"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-87697cdc4a937de0-6e8a52c9ff50.txt",
+      "text_sha256": "0caf242dd9c050d7450f2fdd0db8e4ab69626e6d3d6d38b5900b439de93f0881",
+      "version": "2.0"
+    },
+    {
+      "characters": 335501,
+      "document_id": 630,
+      "name": "GD32A508xx Datasheet",
+      "pages": 94,
+      "pdf": {
+        "filename": "630-1-GD32A508xx_Datasheet_Rev1.3.pdf",
+        "sha256": "1f2ac476b93c78eca08bd649d813d15122b0e5783376687619cd2cdf1362a922"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-1f2ac476b93c78ec-6e8a52c9ff50.txt",
+      "text_sha256": "1a399882fa6626966a8eee9e4c25330057cd9f940705c993eabcbd806d3a7f33",
+      "version": "1.3"
+    },
+    {
+      "characters": 315953,
+      "document_id": 555,
+      "name": "GD32A513xx Datasheet",
+      "pages": 94,
+      "pdf": {
+        "filename": "555-1-GD32A513xx_Datasheet_Rev1.4.pdf",
+        "sha256": "8620ed50d54444c9462e296cf4a6d513fe6526b0ec2beaf6397c31018438f30b"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-8620ed50d54444c9-6e8a52c9ff50.txt",
+      "text_sha256": "78d9021041c51aba4c72ae380edf056536288bb2525ff8e5a427cc216e44258b",
+      "version": "1.4"
+    },
+    {
+      "characters": 328677,
+      "document_id": 275,
+      "name": "GD32C103xx Datasheet",
+      "pages": 99,
+      "pdf": {
+        "filename": "275-1-GD32C103xx%20Datasheet_Rev2.0.pdf",
+        "sha256": "bd4df4decb53d015efead52624ef47b8be5725504769b0187440bc4510a61609"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-bd4df4decb53d015-6e8a52c9ff50.txt",
+      "text_sha256": "17cbb1864a2767b76e0e34080fc16dad5f6e76c169b683204a36d2e08bab1c60",
+      "version": "2.0"
+    },
+    {
+      "characters": 298873,
+      "document_id": 380,
+      "name": "GD32C113xx Datasheet",
+      "pages": 89,
+      "pdf": {
+        "filename": "380-1-GD32C113xx%20Datasheet_Rev1.6.pdf",
+        "sha256": "f746e237e3a1e57d45cb99b9d47a96025df6ccb1461dd4e755020aeda43bcb06"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-f746e237e3a1e57d-6e8a52c9ff50.txt",
+      "text_sha256": "0b8a9a972ffbb11ae4a25a371313d375dc01359e394fb248c9d34ad3f1303b80",
+      "version": "1.6"
+    },
+    {
+      "characters": 404749,
+      "document_id": 698,
+      "name": "GD32C231xx Datasheet",
+      "pages": 119,
+      "pdf": {
+        "filename": "698-1-GD32C231xx_Datasheet_Rev1.7.pdf",
+        "sha256": "eeaa5c19a9894379341b5d7eb79bc3b196bd5cd332df8792255e0c5ec8c16131"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-eeaa5c19a9894379-6e8a52c9ff50.txt",
+      "text_sha256": "5ff8eef73628c7f9990dfb7f02e7ebee14086ec5d8ed4f8ef113c6a6321a6e19",
+      "version": "1.7"
+    },
+    {
+      "characters": 304800,
+      "document_id": 235,
+      "name": "GD32E103xx Datasheet",
+      "pages": 90,
+      "pdf": {
+        "filename": "235-1-GD32E103xx%20Datasheet_Rev2.1.pdf",
+        "sha256": "8d94da1362004f0c1e7222dfbbe613b8a8cf04cc8bdffb4dcdad0e8326976a37"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-8d94da1362004f0c-6e8a52c9ff50.txt",
+      "text_sha256": "e3edcbdcb6c968b074e72b3df3c7ad86c9a3f9df2ca2976399383d6365b03df0",
+      "version": "2.1"
+    },
+    {
+      "characters": 298080,
+      "document_id": 379,
+      "name": "GD32E113xx Datasheet",
+      "pages": 88,
+      "pdf": {
+        "filename": "379-1-GD32E113xx%20Datasheet_Rev1.5.pdf",
+        "sha256": "b846751c51fed4d21d30e1a35803fc3aad2e8add81821e834fee05cf41120a2e"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-b846751c51fed4d2-6e8a52c9ff50.txt",
+      "text_sha256": "cc705edf2da7b292f73d27e0933f5acea3208ee2330729263b85ca3fd3b4732a",
+      "version": "1.5"
+    },
+    {
+      "characters": 325995,
+      "document_id": 202,
+      "name": "GD32E230xx Datasheet",
+      "pages": 100,
+      "pdf": {
+        "filename": "202-1-GD32E230xx%20Datasheet_Rev3.1.pdf",
+        "sha256": "aa564218bdad841f82027ae85559d66301004c204001109e9b646c86f0d172c2"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-aa564218bdad841f-6e8a52c9ff50.txt",
+      "text_sha256": "fcadb020b7a71e14b6d037f08a0017e17c7056279effa7b62009314a60041f87",
+      "version": "3.1"
+    },
+    {
+      "characters": 202576,
+      "document_id": 569,
+      "name": "GD32E231xx Datasheet",
+      "pages": 64,
+      "pdf": {
+        "filename": "569-1-GD32E231xx%20Datasheet_Rev1.6.pdf",
+        "sha256": "5a4e87b3972b4ec3db4a109b54b5ebc7679db5d91a23e5965fa8594f0d77b058"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-5a4e87b3972b4ec3-6e8a52c9ff50.txt",
+      "text_sha256": "f22fc5376ac04d3d4f4d37506f7b3eb4309c423bcedd6dc4b759b4f904f20291",
+      "version": "1.6"
+    },
+    {
+      "characters": 314636,
+      "document_id": 553,
+      "name": "GD32E235xx Datasheet",
+      "pages": 95,
+      "pdf": {
+        "filename": "553-1-GD32E235xx%20Datasheet_Rev2.2.pdf",
+        "sha256": "ac2e0effac16831a5d96b0a76c1147ee5a60b947202d08c45ff24f1162f62dfa"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-ac2e0effac16831a-6e8a52c9ff50.txt",
+      "text_sha256": "6a7a94611839402e4a354f9b1630daa13fede5d4062bf9c4aee45cb097b29a53",
+      "version": "2.2"
+    },
+    {
+      "characters": 316527,
+      "document_id": 496,
+      "name": "GD32E502xx Datasheet",
+      "pages": 93,
+      "pdf": {
+        "filename": "496-1-GD32E502xx_Datasheet_Rev1.5.pdf",
+        "sha256": "053550e4931bc825db3ee286254e4edb48fd524ff7a53bf62ffa3d3036dff878"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-053550e4931bc825-6e8a52c9ff50.txt",
+      "text_sha256": "b9aeae4dfd51570a499c809022277d7064184f606b3a852dba8b4a0cb6e591a1",
+      "version": "1.5"
+    },
+    {
+      "characters": 392930,
+      "document_id": 250,
+      "name": "GD32E503xx Datasheet",
+      "pages": 111,
+      "pdf": {
+        "filename": "250-1-GD32E503xx_Datasheet_Rev2.5.pdf",
+        "sha256": "4e4f81de3e9aa93ec43055bfc102f81e5573df72e5f657cff2150b87edb1d432"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-4e4f81de3e9aa93e-6e8a52c9ff50.txt",
+      "text_sha256": "1effe4dbc4519c031934f0ff01a2981bb29ac6eb010c179cd25d30e61591fb21",
+      "version": "2.5"
+    },
+    {
+      "characters": 370418,
+      "document_id": 251,
+      "name": "GD32E505xx Datasheet",
+      "pages": 105,
+      "pdf": {
+        "filename": "251-1-GD32E505xx_Datasheet_Rev2.3.pdf",
+        "sha256": "09f353edd7b0dc46ee949a886579bb0f2c79e325dfa3343196c121118f3e1452"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-09f353edd7b0dc46-6e8a52c9ff50.txt",
+      "text_sha256": "5d7d76812fb97388099dd1a671d25b060e1e5c1a9f9a6c4927302b14f2f1d77e",
+      "version": "2.3"
+    },
+    {
+      "characters": 372183,
+      "document_id": 252,
+      "name": "GD32E507xx Datasheet",
+      "pages": 104,
+      "pdf": {
+        "filename": "252-1-GD32E507xx_Datasheet_Rev2.1.pdf",
+        "sha256": "d6dcb0e0ec38ee973d3ddd5172ee1cbe57b7ef501aabbdff78ed0d30682074f6"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-d6dcb0e0ec38ee97-6e8a52c9ff50.txt",
+      "text_sha256": "c05d92b43e5f75311c3f3d151a37a3919307e036be9ea817ca1c1402c2cd9728",
+      "version": "2.1"
+    },
+    {
+      "characters": 369589,
+      "document_id": 281,
+      "name": "GD32E508xx Datasheet",
+      "pages": 104,
+      "pdf": {
+        "filename": "281-1-GD32E508xx_Datasheet_Rev1.8.pdf",
+        "sha256": "cf4abdbb1660956e9d4bb3b713c285df4f32941853a9d08c22331cfabd5220b9"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-cf4abdbb1660956e-6e8a52c9ff50.txt",
+      "text_sha256": "73051feb3691492eae1a0fa8a078066d96f8cd9e29fe6d7b22adc119689b89c0",
+      "version": "1.8"
+    },
+    {
+      "characters": 407913,
+      "document_id": 599,
+      "name": "GD32E513xx Datasheet",
+      "pages": 112,
+      "pdf": {
+        "filename": "599-1-GD32E513xx_Datasheet_Rev1.6.pdf",
+        "sha256": "71d1f139e77bc597e099655f5e439cff2102a0e71c98726402577ec0c2924220"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-71d1f139e77bc597-6e8a52c9ff50.txt",
+      "text_sha256": "cd9ced5a1ee866fb10adbac6082f395c6f70d7411f888fbbba5603f2ad3b5a19",
+      "version": "1.6"
+    },
+    {
+      "characters": 382139,
+      "document_id": 600,
+      "name": "GD32E517xx Datasheet",
+      "pages": 102,
+      "pdf": {
+        "filename": "600-1-GD32E517xx_Datasheet_Rev1.4.pdf",
+        "sha256": "ec95930c68f4542d1743dca31b4ad5ff3c269cf4ccaf1e17fc2d0c8d01f1a175"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-ec95930c68f4542d-6e8a52c9ff50.txt",
+      "text_sha256": "9a650f053ebec02ca4ec568dc3ffce31d299709937ba39ee9914724150de21d8",
+      "version": "1.4"
+    },
+    {
+      "characters": 401202,
+      "document_id": 601,
+      "name": "GD32E518xx Datasheet",
+      "pages": 108,
+      "pdf": {
+        "filename": "601-1-GD32E518xx_Datasheet_Rev1.3.pdf",
+        "sha256": "45f96307b5aa4ac92833c7acdbffa03d4d67781b3c3dbefd334173223aa66fa0"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-45f96307b5aa4ac9-6e8a52c9ff50.txt",
+      "text_sha256": "b51d897a7bb8b2964a5663cabbac27e7e9a2c02d845f4ad93a1053c47f467a4f",
+      "version": "1.3"
+    },
+    {
+      "characters": 324574,
+      "document_id": 236,
+      "name": "GD32F101xx Datasheet",
+      "pages": 93,
+      "pdf": {
+        "filename": "236-1-GD32F101xx%20Datasheet_Rev3.3.pdf",
+        "sha256": "8d5f60d5b5f8c33a4be60ca1aa9e9b9cce47ee8737a217d5521cb58ac4f84903"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-8d5f60d5b5f8c33a-6e8a52c9ff50.txt",
+      "text_sha256": "8ce9ed0707652eb7ca6f7f51d78fe6acb3348675f1242dc5cae9b71ec34731aa",
+      "version": "3.3"
+    },
+    {
+      "characters": 388413,
+      "document_id": 237,
+      "name": "GD32F103xx Datasheet",
+      "pages": 111,
+      "pdf": {
+        "filename": "237-1-GD32F103xx%20Datasheet_Rev3.3.pdf",
+        "sha256": "5f50b2250d9c814634e86f10c727a8a029c12d0a852d9abf1416c40a94503c96"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-5f50b2250d9c8146-6e8a52c9ff50.txt",
+      "text_sha256": "4c858313796d71a9d82f7ee163a37bdce861d043adc2b181357b72c0898c3640",
+      "version": "3.3"
+    },
+    {
+      "characters": 291813,
+      "document_id": 238,
+      "name": "GD32F105xx Datasheet",
+      "pages": 86,
+      "pdf": {
+        "filename": "238-1-GD32F105xx%20Datasheet_Rev2.3.pdf",
+        "sha256": "89c764f9d642f5a157bcdcdd041653c20278f647e245516639eb8719438bcb2c"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-89c764f9d642f5a1-6e8a52c9ff50.txt",
+      "text_sha256": "d77ce53ec8c30ef0a7345cacd2cc47f7e6116418144711ade45879d2434e0061",
+      "version": "2.3"
+    },
+    {
+      "characters": 299040,
+      "document_id": 239,
+      "name": "GD32F107xx Datasheet",
+      "pages": 87,
+      "pdf": {
+        "filename": "239-1-GD32F107xx%20Datasheet_Rev2.3.pdf",
+        "sha256": "4b79bd8cd963d52636df49dc6b4d86fb48dfd684eb12c847bc75cec6ab49acd2"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-4b79bd8cd963d526-6e8a52c9ff50.txt",
+      "text_sha256": "2199e94c091b302617eef98e64c8b8d18da440069504125d319ee545606238d7",
+      "version": "2.3"
+    },
+    {
+      "characters": 258462,
+      "document_id": 231,
+      "name": "GD32F130xx Datasheet",
+      "pages": 80,
+      "pdf": {
+        "filename": "231-1-GD32F130xx%20Datasheet%20Rev4.3.pdf",
+        "sha256": "237fa10d8ab044fb92a6cecbc97df9c60f89fdec77ed07f6edebdea2c5e0b3d3"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-237fa10d8ab044fb-6e8a52c9ff50.txt",
+      "text_sha256": "9a0b296e3007f2b7762876384086098e20fb3a71ba2c8145b37548200d20c842",
+      "version": "4.3"
+    },
+    {
+      "characters": 247673,
+      "document_id": 156,
+      "name": "GD32F150xx Datasheet",
+      "pages": 78,
+      "pdf": {
+        "filename": "156-1-GD32F150xx%20Datasheet%20Rev4.0.pdf",
+        "sha256": "07a0aafaf83c47141ffc6370dac320a9fc70ae6d5e0865c65d91836cfdd15cfc"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-07a0aafaf83c4714-6e8a52c9ff50.txt",
+      "text_sha256": "a820f5c40f750ed18119c8caa3955b9880af24d0b4b0824e2953c7e7029b74d8",
+      "version": "4.0"
+    },
+    {
+      "characters": 297194,
+      "document_id": 190,
+      "name": "GD32F205xx Datasheet",
+      "pages": 86,
+      "pdf": {
+        "filename": "190-1-GD32F205xx_Datasheet_Rev3.0.pdf",
+        "sha256": "9ca82c8567d01c6900aa836feb7001f24463cebb89618e619a389cea9fe8d7b8"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-9ca82c8567d01c69-6e8a52c9ff50.txt",
+      "text_sha256": "6489f4597eae1499cb01dee3f18d52e4296b1560c06c30114b04f1be4f3a12b1",
+      "version": "3.0"
+    },
+    {
+      "characters": 374871,
+      "document_id": 192,
+      "name": "GD32F207xx Datasheet",
+      "pages": 103,
+      "pdf": {
+        "filename": "192-1-GD32F207xx_Datasheet_Rev3.0.pdf",
+        "sha256": "68e13fff22e7e9e7c61610f9754bdab09a5eae5f2e515e62e9fb83562df976c6"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-68e13fff22e7e9e7-6e8a52c9ff50.txt",
+      "text_sha256": "392b0aa416fcf1101c39079b5299df5cdd452c3fe5b33f8c11467f6d67ce34c3",
+      "version": "3.0"
+    },
+    {
+      "characters": 287237,
+      "document_id": 544,
+      "name": "GD32F303xB Datasheet",
+      "pages": 87,
+      "pdf": {
+        "filename": "544-1-GD32F303xB%20Datasheet_Rev1.1.pdf",
+        "sha256": "a485cbdce30f6e52f787537220230324421cbfd4864fc74f2d852830bf602e74"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-a485cbdce30f6e52-6e8a52c9ff50.txt",
+      "text_sha256": "e2de810a285a560545d4d3b9354e195697f1b24a185fbbedac6a53bcb7d4a02f",
+      "version": "1.1"
+    },
+    {
+      "characters": 351048,
+      "document_id": 240,
+      "name": "GD32F303xx Datasheet",
+      "pages": 103,
+      "pdf": {
+        "filename": "240-1-GD32F303xx%20Datasheet_Rev3.3.pdf",
+        "sha256": "ca6f4036e52e7429e70a01346e6c5aa42b95dd5aa17a393ea84599de626cadd3"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-ca6f4036e52e7429-6e8a52c9ff50.txt",
+      "text_sha256": "b66065fb9196e676be27c995fa3a14420e41803339221d6656eed2b72f8c0c0c",
+      "version": "3.3"
+    },
+    {
+      "characters": 314983,
+      "document_id": 241,
+      "name": "GD32F305xx Datasheet",
+      "pages": 91,
+      "pdf": {
+        "filename": "241-1-GD32F305xx%20Datasheet_Rev3.1.pdf",
+        "sha256": "75bffb8c552798f3bf8b28f6f8f14432f1965bd9008e8e26944486bab0bf28c6"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-75bffb8c552798f3-6e8a52c9ff50.txt",
+      "text_sha256": "114d0b79210ede396d878246404f80fe37db960eb3c0b5884c1a6f61270fbaf4",
+      "version": "3.1"
+    },
+    {
+      "characters": 318534,
+      "document_id": 242,
+      "name": "GD32F307xx Datasheet",
+      "pages": 93,
+      "pdf": {
+        "filename": "242-1-GD32F307xx%20Datasheet_Rev3.1.pdf",
+        "sha256": "f33f12f137ec74bcfb3649a273bf315872544ddaf3ac5c0484929b75d7f02e91"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-f33f12f137ec74bc-6e8a52c9ff50.txt",
+      "text_sha256": "1ad982108c5c196f58d1534cdffe526f50d8f97073743fda418386ad428955ea",
+      "version": "3.1"
+    },
+    {
+      "characters": 263070,
+      "document_id": 308,
+      "name": "GD32F310xx Datasheet",
+      "pages": 82,
+      "pdf": {
+        "filename": "308-1-GD32F310xx%20Datasheet%20Rev2.2.pdf",
+        "sha256": "55b1ac2ad9e3d72a1963a6f64fae2b3568748864a0784f71b966bac4ae84df90"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-55b1ac2ad9e3d72a-6e8a52c9ff50.txt",
+      "text_sha256": "2502edf779bb0f71ddc7e292e8ad6a32f3cdb5004c379affafcb983ed204288e",
+      "version": "2.2"
+    },
+    {
+      "characters": 290415,
+      "document_id": 134,
+      "name": "GD32F330xx Datasheet",
+      "pages": 88,
+      "pdf": {
+        "filename": "134-1-GD32F330xx%20Datasheet%20Rev3.4.pdf",
+        "sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-dd9481c77d9756d7-6e8a52c9ff50.txt",
+      "text_sha256": "97c7a63c97e67799fba74a9c11156defd272187c8dbca6838d50bda489b24026",
+      "version": "3.4"
+    },
+    {
+      "characters": 296120,
+      "document_id": 133,
+      "name": "GD32F350xx Datasheet",
+      "pages": 87,
+      "pdf": {
+        "filename": "133-1-GD32F350xx%20Datasheet%20Rev3.3.pdf",
+        "sha256": "928a751b1171b901fb1d9242e265e9419b864b642ce4ee4eee72c23364cca280"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-928a751b1171b901-6e8a52c9ff50.txt",
+      "text_sha256": "38755100b16aba61dd9bd0be684641ce477bcdeb6c81ac7bf3732674f3c23c9f",
+      "version": "3.3"
+    },
+    {
+      "characters": 379288,
+      "document_id": 243,
+      "name": "GD32F403xx Datasheet",
+      "pages": 110,
+      "pdf": {
+        "filename": "243-1-GD32F403xx%20Datasheet_Rev3.3.pdf",
+        "sha256": "244fd6598ecba2d2e1e62b26df715d2184476ba62ac07bb0b85791c24d442155"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-244fd6598ecba2d2-6e8a52c9ff50.txt",
+      "text_sha256": "3c6b4457b6eb48a39dcf638ce68f91a53abfe3ea472281955e6541464b53c97b",
+      "version": "3.3"
+    },
+    {
+      "characters": 406898,
+      "document_id": 108,
+      "name": "GD32F405xx Datasheet",
+      "pages": 112,
+      "pdf": {
+        "filename": "108-1-GD32F405xx_Datasheet_Rev2.8.pdf",
+        "sha256": "ca6d4c4f2cdc95d3e64a96a9cb61c6243817385cb9f9128d9aa37fceeacda4e8"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-ca6d4c4f2cdc95d3-6e8a52c9ff50.txt",
+      "text_sha256": "e73a006c7fb1eeb424dae5ffe2e4a3e0fd70529cd21d35c53406dbc0bd4c51c7",
+      "version": "2.8"
+    },
+    {
+      "characters": 510611,
+      "document_id": 110,
+      "name": "GD32F407xx Datasheet",
+      "pages": 137,
+      "pdf": {
+        "filename": "110-1-GD32F407xx_Datasheet_Rev3.0.pdf",
+        "sha256": "f77e32e1c3e79670776e84a640185996d65102d6304a046deae21136b4efb2ed"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-f77e32e1c3e79670-6e8a52c9ff50.txt",
+      "text_sha256": "3d880b01e67e76c1e772714ac63f7c977ac67376c83f69d8eb4a2ecf66856fcc",
+      "version": "3.0"
+    },
+    {
+      "characters": 401427,
+      "document_id": 350,
+      "name": "GD32F425xx Datasheet",
+      "pages": 109,
+      "pdf": {
+        "filename": "350-1-GD32F425xx_Datasheet_Rev1.8.pdf",
+        "sha256": "b370da7b4ba62e0de2e442123ba9859b748764c58f080788a3dbbc1ffcc0b8cc"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-b370da7b4ba62e0d-6e8a52c9ff50.txt",
+      "text_sha256": "dcd6bdf8ad3742946b317aac83a756d0b1c54bacae871c5be2d19361928b99af",
+      "version": "1.8"
+    },
+    {
+      "characters": 505484,
+      "document_id": 351,
+      "name": "GD32F427xx Datasheet",
+      "pages": 136,
+      "pdf": {
+        "filename": "351-1-GD32F427xx_Datasheet_Rev1.9.pdf",
+        "sha256": "c0d64ec0c92cd3636bec706e1389019ccb436fb40a8d5c1626fb64edc7c553ee"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-c0d64ec0c92cd363-6e8a52c9ff50.txt",
+      "text_sha256": "024aaef329d5cdee62963c88171dc80e393bf59090196ee7ffd02285b522063d",
+      "version": "1.9"
+    },
+    {
+      "characters": 446969,
+      "document_id": 100,
+      "name": "GD32F450xx Datasheet",
+      "pages": 116,
+      "pdf": {
+        "filename": "100-1-GD32F450xx_Datasheet_Rev2.9.pdf",
+        "sha256": "2ba61a82215f3e0c822a734516ddcc7eb5c1406dbace62f8dfb400c776fc9b12"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-2ba61a82215f3e0c-6e8a52c9ff50.txt",
+      "text_sha256": "c1d5a40b3ef0ff9956a21552aabd1c516f20f0c70884e5d22a7d815638496164",
+      "version": "2.9"
+    },
+    {
+      "characters": 492864,
+      "document_id": 352,
+      "name": "GD32F470xx Datasheet",
+      "pages": 125,
+      "pdf": {
+        "filename": "352-1-GD32F470xx_Datasheet_Rev2.2.pdf",
+        "sha256": "19b76c644705999f5062cc780009ade9bd662fc7db4d122029fd8efcf8b73888"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-19b76c644705999f-6e8a52c9ff50.txt",
+      "text_sha256": "65a89e76566c0b57f10dc882b257d7b6f78694996218b3437c538719449277c9",
+      "version": "2.2"
+    },
+    {
+      "characters": 459098,
+      "document_id": 148,
+      "name": "GD32F502xx Datasheet",
+      "pages": 137,
+      "pdf": {
+        "filename": "148-1-GD32F502xx_Datasheet_Rev0.9RC6.pdf",
+        "sha256": "d852918b81d619f0560ed8deddbdb31a77840946d4d591bcf962e5202b9c0008"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-d852918b81d619f0-6e8a52c9ff50.txt",
+      "text_sha256": "ea59285fb5fb6f8d65a764596f9ab12954cd224264ad14d8769bab6b4dad0d87",
+      "version": "0.9RC6"
+    },
+    {
+      "characters": 512386,
+      "document_id": 743,
+      "name": "GD32F503xx Datasheet",
+      "pages": 147,
+      "pdf": {
+        "filename": "743-1-GD32F503xx_Datasheet_Rev0.9RC6.pdf",
+        "sha256": "3b002573be086e84149c213b0957478190fda61f9b6b8919e7aad75cea27d4de"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-3b002573be086e84-6e8a52c9ff50.txt",
+      "text_sha256": "0fa129400d340289b839ac28e190a5407872b4a9cec792691cbd3c1bb3cb5f5b",
+      "version": "0.9RC6"
+    },
+    {
+      "characters": 465064,
+      "document_id": 744,
+      "name": "GD32F505xx Datasheet",
+      "pages": 138,
+      "pdf": {
+        "filename": "744-1-GD32F505xx_Datasheet_Rev0.9RC5.pdf",
+        "sha256": "26e07a1bdb5180a4b99abadb8ae3825949eb25581aa4adbc1a15383aea90f523"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-26e07a1bdb5180a4-6e8a52c9ff50.txt",
+      "text_sha256": "a80b9859180f5fd3f850b253042c54a50ebb4aadc94f31ae26bc1a9546467494",
+      "version": "0.9RC5"
+    },
+    {
+      "characters": 593274,
+      "document_id": 557,
+      "name": "GD32F527xx Datasheet",
+      "pages": 153,
+      "pdf": {
+        "filename": "557-1-GD32F527xx%20Datasheet_Rev1.8.pdf",
+        "sha256": "c8bfe81e73f611f3c725f4af8e2232f6bfa3589c34f8953f5693f263519e24c8"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-c8bfe81e73f611f3-6e8a52c9ff50.txt",
+      "text_sha256": "fd6b612d349d446e9187df4c7ea53328d44b240c6b3913f01e3cd98fc08ea09e",
+      "version": "1.8"
+    },
+    {
+      "characters": 338541,
+      "document_id": 312,
+      "name": "GD32F5HCxx Datasheet",
+      "pages": 96,
+      "pdf": {
+        "filename": "312-1-GD32F5HCxx%20Datasheet_Rev1.0.pdf",
+        "sha256": "235d7501405376218e5eb70f8fbfd20be7ad3ccb12259285dbe9b859c545a786"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-235d750140537621-6e8a52c9ff50.txt",
+      "text_sha256": "59a0fba1ebd1fac5392a24687f90c2c34230d4ada0ea897016bc489ffe59c9ee",
+      "version": "1.0"
+    },
+    {
+      "characters": 701958,
+      "document_id": 656,
+      "name": "GD32G553xx Datasheet",
+      "pages": 178,
+      "pdf": {
+        "filename": "656-1-GD32G553xx_Datasheet_Rev2.0.pdf",
+        "sha256": "6c6e2fd6af9a20e634622616859dda94014c527687994b6805f58f0bd4a626eb"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-6c6e2fd6af9a20e6-6e8a52c9ff50.txt",
+      "text_sha256": "7ffcadbaa92bde6ae4fd6c9da3e3bd93e7968e8805646457647fcca91a66dca3",
+      "version": "2.0"
+    },
+    {
+      "characters": 778773,
+      "document_id": 473,
+      "name": "GD32H737xx Datasheet",
+      "pages": 180,
+      "pdf": {
+        "filename": "473-1-GD32H737xx%20Datasheet_Rev2.0.pdf",
+        "sha256": "dea45b6a19b330510236e36b530a3e427050efea3a807d2eef33165cc527f025"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-dea45b6a19b33051-6e8a52c9ff50.txt",
+      "text_sha256": "9a4e3396cf8a3029f123cd241bc4b5c11617add37c1de7c2eff814a2c5550773",
+      "version": "2.0"
+    },
+    {
+      "characters": 639430,
+      "document_id": 474,
+      "name": "GD32H757xx Datasheet",
+      "pages": 153,
+      "pdf": {
+        "filename": "474-1-GD32H757xx%20Datasheet_Rev2.1.pdf",
+        "sha256": "84fdb6748a7f89cb56dffb7d81106b5356e0d3b3ff72c61b51d0e3c28bf5e97c"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-84fdb6748a7f89cb-6e8a52c9ff50.txt",
+      "text_sha256": "c76c6256447fbc8d3a1a4b040dc00cd9b6b903702a5394adc94aa9df50f620d0",
+      "version": "2.1"
+    },
+    {
+      "characters": 659244,
+      "document_id": 475,
+      "name": "GD32H759xx Datasheet",
+      "pages": 150,
+      "pdf": {
+        "filename": "475-1-GD32H759xx%20Datasheet_Rev2.3.pdf",
+        "sha256": "12995cf8ac78b6e3528754b8b15577308117f4e55b37b487af79672435591daf"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-12995cf8ac78b6e3-6e8a52c9ff50.txt",
+      "text_sha256": "439eadffc05d639f4561a0d5d80342e7359701508e28121344970f90b96d6af7",
+      "version": "2.3"
+    },
+    {
+      "characters": 557082,
+      "document_id": 652,
+      "name": "GD32H75Exx Datasheet",
+      "pages": 138,
+      "pdf": {
+        "filename": "652-1-GD32H75Exx_Datasheet_Rev1.5.pdf",
+        "sha256": "49afeac55dd07920e3d70ace0bf18a8ef5a5fb5f124793ef265ada91874ce014"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-49afeac55dd07920-6e8a52c9ff50.txt",
+      "text_sha256": "7bb7e50934046382cf9dd65ed5fec8fd3b2d73403120f123646e78e61265ffd1",
+      "version": "1.5"
+    },
+    {
+      "characters": 416739,
+      "document_id": 289,
+      "name": "GD32L233xx Datasheet",
+      "pages": 118,
+      "pdf": {
+        "filename": "289-1-GD32L233xx_Datasheet_Rev2.4.pdf",
+        "sha256": "58d9c55e71ed6e313dec92b214011057059df15aa28a2acdcd605e230e7f36e2"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-58d9c55e71ed6e31-6e8a52c9ff50.txt",
+      "text_sha256": "a6a0bfd05b1c437493127e3961765b31ee5e6eeae779d87bef9616a49b641040",
+      "version": "2.4"
+    },
+    {
+      "characters": 481716,
+      "document_id": 581,
+      "name": "GD32L235xx Datasheet",
+      "pages": 129,
+      "pdf": {
+        "filename": "581-1-GD32L235xx_Datasheet_Rev2.2.pdf",
+        "sha256": "903ed4f7febeb32f19134898261d14443d8f9005f1fc1615b19309d613e520e9"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-903ed4f7febeb32f-6e8a52c9ff50.txt",
+      "text_sha256": "2664af7cb1da604b45ae6672713f13647f1b60e9417379e1885836f0593d4eaa",
+      "version": "2.2"
+    },
+    {
+      "characters": 347212,
+      "document_id": 767,
+      "name": "GD32M531xx Datasheet",
+      "pages": 107,
+      "pdf": {
+        "filename": "767-1-GD32M531xx%20Datasheet_Rev1.2.pdf",
+        "sha256": "e8bdc91a796faeee3376985701ef1b0d4ce79ef7799cf1c67bb026226dcbc62b"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-e8bdc91a796faeee-6e8a52c9ff50.txt",
+      "text_sha256": "1a4f7ffe987027749f99714fdad172ac2ee8cef9339c16463ad615c26baae7a0",
+      "version": "1.2"
+    },
+    {
+      "characters": 274378,
+      "document_id": 287,
+      "name": "GD32VF103 Datasheet",
+      "pages": 87,
+      "pdf": {
+        "filename": "287-1-GD32VF103_Datasheet_Rev2.3.pdf",
+        "sha256": "974d9ebf07ac22524bc50d31b0c57ffff3c53d5e7c6fe3ecb352eebebe429a86"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-974d9ebf07ac2252-6e8a52c9ff50.txt",
+      "text_sha256": "940d937d5eeadb5010849f50db4515b8925ba71e93f2ce0b17fbfecedbf7aac0",
+      "version": "2.3"
+    },
+    {
+      "characters": 269010,
+      "document_id": 221,
+      "name": "GD32VF103xx Datasheet",
+      "pages": 87,
+      "pdf": {
+        "filename": "221-1-GD32VF103_Datasheet_Rev1.7.pdf",
+        "sha256": "d3cc2541cefa3a0d0bc75eb60214eff19897477a0f76e51a7f9efcc3f9a60c61"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-d3cc2541cefa3a0d-6e8a52c9ff50.txt",
+      "text_sha256": "367e8d46b1ca9a62aa6673d00a9879352826fa3202c8ec3f14c874b63231d8e2",
+      "version": "1.7"
+    },
+    {
+      "characters": 39657,
+      "document_id": 678,
+      "name": "GD32VW553-MD1 Datasheet",
+      "pages": 26,
+      "pdf": {
+        "filename": "678-1-GD32VW553-MD1%20datasheet%20Rev1.1%2020250225.pdf",
+        "sha256": "ccb69c83fb673f6880c5542343d325179f66cb5047cdbf8e1f56494d6e2abf60"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-ccb69c83fb673f68-6e8a52c9ff50.txt",
+      "text_sha256": "e279addbb9e75deeabf941d99c91fcbb36f72fac27349f0b3816ff00ee3b584d",
+      "version": "1.1"
+    },
+    {
+      "characters": 40603,
+      "document_id": 676,
+      "name": "GD32VW553-MINI Datasheet",
+      "pages": 28,
+      "pdf": {
+        "filename": "676-1-GD32VW553-MINI%20Datasheet%20Rev1.3.pdf",
+        "sha256": "8eb851f0c1697a9f5510d55f668dddee93d86f2af230435cf3b4b909470befac"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-8eb851f0c1697a9f-6e8a52c9ff50.txt",
+      "text_sha256": "9630380e24ee93cf6b12e5612d6035d152c909f1ff827aeeb971941527b506f6",
+      "version": "1.3"
+    },
+    {
+      "characters": 38135,
+      "document_id": 677,
+      "name": "GD32VW553-UNIFI Datasheet",
+      "pages": 25,
+      "pdf": {
+        "filename": "677-1-GD32VW553-UNIFI%20Datasheet%20Rev1.2.pdf",
+        "sha256": "70c341b5771fe06de9cf9b40d11a30ba5d116943d65508c612542862e03a2f71"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-70c341b5771fe06d-6e8a52c9ff50.txt",
+      "text_sha256": "27678f8930f25146dc57e9862deeb3ec0e9255fc116dac3aa2dac5d0dd9f5bc2",
+      "version": "1.2"
+    },
+    {
+      "characters": 263752,
+      "document_id": 521,
+      "name": "GD32VW553xx Datasheet",
+      "pages": 76,
+      "pdf": {
+        "filename": "521-1-GD32VW553xx%20Datasheet_Rev1.6.pdf",
+        "sha256": "76eb013a7aaf9cede1eef5f277856234ebacaf603de0d6f9da3a3ce6609b0b62"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-76eb013a7aaf9ced-6e8a52c9ff50.txt",
+      "text_sha256": "bcc81829818b3e4ea5872d5f88fbb3f3af63e289a93bdbf050e3765fd097d555",
+      "version": "1.6"
+    },
+    {
+      "characters": 315221,
+      "document_id": 279,
+      "name": "GD32W515xx Datasheet",
+      "pages": 86,
+      "pdf": {
+        "filename": "279-1-GD32W515xx%20Datasheet_Rev1.9.pdf",
+        "sha256": "36c079f51262c1140f671e806b9a74583275efcff7592d04c15ab760962bc45f"
+      },
+      "selected_path_type": 1,
+      "text_cache": "v1-36c079f51262c114-6e8a52c9ff50.txt",
+      "text_sha256": "9ff8a78b90471c33f37dfe0c8890ebeb3e2521f8b9c490e3c6f54e50dd6ff8ec",
+      "version": "1.9"
+    }
+  ],
+  "pdftotext": "pdftotext version 26.07.0",
+  "provenance": {
+    "datasheets_lock": {
+      "path": "datasheets.lock.json",
+      "sha256": "06070b6f7ed70014733a249abcce68185932c9b9f62dcd848c59a44e213b4206"
+    }
+  },
+  "schema_version": 1,
+  "summary": {
+    "characters": 23097877,
+    "datasheets": 63,
+    "pages": 6497
+  }
+}

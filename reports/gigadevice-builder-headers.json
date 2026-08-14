@@ -1,0 +1,437 @@
+{
+  "libraries": [
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32A10x/Include/gd32a10x.h",
+          "sha256": "196699b9475dd7191ab2d3861581666dd75ca205898f43fbcbdc6f60409ef630"
+        }
+      ],
+      "series": "GD32A10X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32A490/Include/gd32a490.h",
+          "sha256": "2e7bbd344bbeb0403142c81c905d6ca73ba85198b34761b6c6bd89e0db57f1c8"
+        }
+      ],
+      "series": "GD32A490",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32A508/Include/gd32a508.h",
+          "sha256": "0e7e47f18213faf78208449fa2a4d6157812cee909c75fd4aeea3a3994eb801d"
+        }
+      ],
+      "series": "GD32A508",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32C10x/Include/gd32c10x.h",
+          "sha256": "f5d0a93fc372e071cd19210ce76f5ad1772a66b5ca9495f6c8ccc5410d42f60e"
+        }
+      ],
+      "series": "GD32C10X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32C11x/Include/gd32c11x.h",
+          "sha256": "3a6485290f6a94b8e28393a54c3cf68d69cfdc060f539a6aeb9728491280331e"
+        }
+      ],
+      "series": "GD32C11X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32C2x1/Include/gd32c2x1.h",
+          "sha256": "c63539ddf837768e1ef7bd818d1e590da53287436f61bb939cd9c1823c334b14"
+        }
+      ],
+      "series": "GD32C2X1",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E10x/Include/gd32e10x.h",
+          "sha256": "0fed996af21832ed90ff26996d187fc92fbfb29bde45e81655915e9356a36ef1"
+        }
+      ],
+      "series": "GD32E10X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E11x/Include/gd32e11x.h",
+          "sha256": "da395e91130010b64de617edb961f486aa4ef9516a2206d3b38d69785e8bc9ec"
+        }
+      ],
+      "series": "GD32E11X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E232/Include/gd32e232.h",
+          "sha256": "63664eff4ffb5099546a7c660777138b3029f9201499e43665201ff22c09f853"
+        }
+      ],
+      "series": "GD32E232",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E23x/Include/gd32e23x.h",
+          "sha256": "97e62240d740889ca69223b23f9bc749a9f0c8527fd9d2e34e9db302b2ccbd66"
+        }
+      ],
+      "series": "GD32E23X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E25x/Include/gd32e25x.h",
+          "sha256": "eee16c257d94ec283f0aa967e64a566af8bb34e076f484be6dff1a9de4da6b49"
+        }
+      ],
+      "series": "GD32E25X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E501/Include/gd32e501.h",
+          "sha256": "2ef10128186b8a2b14178b64c5e291968f869141a88e5430769e2bbcafc3be80"
+        }
+      ],
+      "series": "GD32E501",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E502/Include/gd32e502.h",
+          "sha256": "751684379d31c239e8c14920e076dd39fc12478d0e4a1ceaabc68a2be8b2b4ef"
+        }
+      ],
+      "series": "GD32E502",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E50x/Include/gd32e50x.h",
+          "sha256": "c7121c3bd16dcf427afbf6140abf91ff0333d12c9d9a7915780716349696e58f"
+        }
+      ],
+      "series": "GD32E50X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E511_512/Include/gd32e511_512.h",
+          "sha256": "12edd6b2b813e67ba718da246405907fc1b2f1a0010ddb282f9efb313c9b70f7"
+        }
+      ],
+      "series": "GD32E511_512",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E51x/Include/gd32e51x.h",
+          "sha256": "7dbf1496df7f2a99ec1f0caf84be4ec6386ef1266140fa2da760c8e990768407"
+        }
+      ],
+      "series": "GD32E51X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32E53x/Include/gd32e53x.h",
+          "sha256": "b12cb64e0b0b763ddb82d526dc574def2072793388fc005f888e7879e92a2522"
+        }
+      ],
+      "series": "GD32E53X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32F10x/Include/gd32f10x.h",
+          "sha256": "1a2d4b21b35e2241239d84c929ff2803556d303d7e9a6e9de9705b0219903dc3"
+        }
+      ],
+      "series": "GD32F10X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32F1x0/Include/gd32f1x0.h",
+          "sha256": "af284e367478cd8cf9183674c9065a1513cc434980de396b0d15ea7177ef5b48"
+        }
+      ],
+      "series": "GD32F1X0",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32F20x/Include/gd32f20x.h",
+          "sha256": "7828d9c1b814a6fd4137d9307880181f77622648dd454e7308777b1b3647c6b8"
+        }
+      ],
+      "series": "GD32F20X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32F30x/Include/gd32f30x.h",
+          "sha256": "e573c11e017c15140495c935196d9e396a71e5c84d6280f6111e438261e5850f"
+        }
+      ],
+      "series": "GD32F30X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32F3x0/Include/gd32f3x0.h",
+          "sha256": "dc14904f1184e213cc3ecd8668c159103e17b585a619620ed8bf95146584347d"
+        }
+      ],
+      "series": "GD32F3X0",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32F403/Include/gd32f403.h",
+          "sha256": "9d8de5cf7df63a91658a792742fb21fa27d1eed8591232ef30d7dc21b5e2efd2"
+        }
+      ],
+      "series": "GD32F403",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32F4xx/Include/gd32f4xx.h",
+          "sha256": "db6de53203fa053d6e789ef86908195f84b7664753bdf0aa7ca74f62025573ef"
+        }
+      ],
+      "series": "GD32F4XX",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32F50x/Include/gd32f50x.h",
+          "sha256": "fc5f717fe3ccea4ba1cdb14ce20231e179407fda39a2b8f34c07b2634b640124"
+        }
+      ],
+      "series": "GD32F50X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32F527/Include/gd32f527.h",
+          "sha256": "e17ad419604afbe67f8fda279c653adc068e8a18d4daf79ce76c799ad3d17cc4"
+        }
+      ],
+      "series": "GD32F527",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32G5x3/Include/gd32g5x3.h",
+          "sha256": "1bb4eb549bbfc5dcc7cb72ffa53bc693f735ce72bf863f3aad5785b7837e2c8c"
+        }
+      ],
+      "series": "GD32G5X3",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32H71x_72x/Include/gd32h71x_72x.h",
+          "sha256": "06eba66aeea0f824affad5e9b6a2de3b8a4f6be4935aa3c9d9b84910922c9757"
+        }
+      ],
+      "series": "GD32H71X_72X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32H73x_75x/Include/gd32h73x_75x.h",
+          "sha256": "727a22565c85f4d3dae481966b516bcb9938de1d5711fd036e9861db828a26ce"
+        }
+      ],
+      "series": "GD32H73X_75X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32H75E/Include/gd32h75e.h",
+          "sha256": "01c27cf6f890a38ec12e7b13bb6dd1e48f889957832bad29e44e04009448e549"
+        }
+      ],
+      "series": "GD32H75E",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32H77x_78x/Include/gd32h77x_78x.h",
+          "sha256": "2b5f1bfbb8ccd329b38f0f7118f01e26e0fe2e35f2218ebd9ba85582dccb7bcc"
+        }
+      ],
+      "series": "GD32H77X_78X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32L23x/Include/gd32l23x.h",
+          "sha256": "adb10c350633223424597cf462c7840fa34f5463eacb3bc476672042aeb6c214"
+        }
+      ],
+      "series": "GD32L23X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32M53x/Include/gd32m53x.h",
+          "sha256": "868a3d4a4a1ccd05c18706ce983f4f1334c9991788db510c08379be674bd3e90"
+        }
+      ],
+      "series": "GD32M53X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/CMSIS/GD/GD32W51x_F5HC/Include/gd32w51x_f5hc.h",
+          "sha256": "4ac01fea06a1bbeebd3d24dafa15a099ec1952e874804e9d5f262ec2893cd694"
+        }
+      ],
+      "series": "GD32W51X_F5HC",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/GD32VF103_standard_peripheral/gd32vf103.h",
+          "sha256": "d026c5c7c77678c7615551947559ec6d8a118b81775fd304a79f2d1cc49e670e"
+        }
+      ],
+      "series": "GD32VF103",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    },
+    {
+      "archive_sha256": "3544675cb47eaee7c33750e105a2543c0b766f516aefa82ec3347c005324209c",
+      "device_headers": [
+        {
+          "path": "Firmware/Firmware/GD32VW55x_standard_peripheral/gd32vw55x.h",
+          "sha256": "d401e6edcd352799d529dbb0bb67244f4970b733105e2bd42c4c3149f6b2bb55"
+        }
+      ],
+      "series": "GD32VW55X",
+      "tree_sha256": "49af5ae60acd6c907f88fd9a2ec0ef636f1f42744cafcf73858efd21bed6beca",
+      "version": "1.0.0"
+    }
+  ],
+  "schema_version": 1
+}

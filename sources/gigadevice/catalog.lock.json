@@ -1,0 +1,30 @@
+{
+  "catalog": {
+    "available_path_types": [
+      1,
+      2
+    ],
+    "document_id": 206,
+    "documents": {
+      "en": {
+        "filename": "2025_GD32_MCU_Selection_Guide_en.pdf",
+        "sha256": "f794be84af667a233e6dc427e899f55554f147a088eea45e00650d75af31e31b",
+        "size": 901850,
+        "url": "https://www.gd32mcu.com/data/documents/otherDocument/2025_GD32+MCU+Selection+Guide_en.pdf"
+      },
+      "zh": {
+        "filename": "2025_GD32_MCU_Selection_Guide_cn.pdf",
+        "sha256": "cdeacdaf9b9efca6ba2bd1ee3ea489051bbea23d106bc4f433f015665e4960c8",
+        "size": 1329687,
+        "url": "https://www.gd32mcu.com/data/documents/otherDocument/2025+GD32+MCU+Selection+Guide_cn.pdf"
+      }
+    },
+    "name": "GD32 MCU Selection Guide",
+    "published": "2025-10-17",
+    "status": "active",
+    "version": "2025"
+  },
+  "redistribution": "原始 PDF 仅作来源缓存；仓库只保存哈希与事实型型号索引。",
+  "schema_version": 1,
+  "source_page": "https://www.gd32mcu.com/cn/download/9?kw=Selection"
+}

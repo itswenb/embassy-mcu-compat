@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "mappings": [
+    {
+      "device": "GD32H77DIX",
+      "series": "GD32H77X_78X",
+      "selector": "GD32H77DXI",
+      "device_header_sha256": "2b5f1bfbb8ccd329b38f0f7118f01e26e0fe2e35f2218ebd9ba85582dccb7bcc",
+      "matrix_paths": [
+        "GD32H77x/GD32H77D/GD32H77DIxK7.xml"
+      ],
+      "resolution": "型号编码后两位按固件条件宏顺序重排"
+    },
+    {
+      "device": "GD32H77EIX",
+      "series": "GD32H77X_78X",
+      "selector": "GD32H77EXI",
+      "device_header_sha256": "2b5f1bfbb8ccd329b38f0f7118f01e26e0fe2e35f2218ebd9ba85582dccb7bcc",
+      "matrix_paths": [
+        "GD32H77x/GD32H77E/GD32H77EIxK7.xml",
+        "GD32H77x/GD32H77E/GD32H77EIxT7.xml"
+      ],
+      "resolution": "型号编码后两位按固件条件宏顺序重排"
+    }
+  ]
+}

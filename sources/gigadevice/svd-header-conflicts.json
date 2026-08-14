@@ -1,0 +1,53 @@
+{
+  "conflicts": [
+    {
+      "firmware_header_sha256": "0e7e47f18213faf78208449fa2a4d6157812cee909c75fd4aeea3a3994eb801d",
+      "missing_svd_interrupts": [
+        {
+          "name": "ADC2",
+          "value": 47
+        }
+      ],
+      "reason": "器件专用 Pack SVD 声明 ADC2=47；它比系列 Firmware 头文件更具体，生成时采用 SVD 条目并保留差异。",
+      "resolution": "prefer-pack-svd",
+      "svd_sha256": "d93992134699f1c071f85882908a2709ac87ed6d961bd055e859b83a0ce2a402"
+    },
+    {
+      "firmware_header_sha256": "778d2c3d3b8f10c794478aa8fea233fd3ca5bfdc6c06782382cbf5590fa2bb7d",
+      "missing_svd_interrupts": [
+        {
+          "name": "RTC_WAKE",
+          "value": 2
+        }
+      ],
+      "reason": "GD32C221 器件专用 SVD 声明 RTC_WAKE=2；它比系列 Firmware 头文件更具体，生成时采用 SVD 条目并保留差异。",
+      "resolution": "prefer-pack-svd",
+      "svd_sha256": "53b5b4ffc7f8b7de51cb2de7dd421895953f2fa78150574eee1e4877c2f8eb36"
+    },
+    {
+      "firmware_header_sha256": "778d2c3d3b8f10c794478aa8fea233fd3ca5bfdc6c06782382cbf5590fa2bb7d",
+      "missing_svd_interrupts": [
+        {
+          "name": "RTC_WAKE",
+          "value": 2
+        }
+      ],
+      "reason": "GD32C231 器件专用 SVD 声明 RTC_WAKE=2；它比系列 Firmware 头文件更具体，生成时采用 SVD 条目并保留差异。",
+      "resolution": "prefer-pack-svd",
+      "svd_sha256": "f9f620f207e20bf5d18f7fbe904f123e6abc39243e96524af9322e06640fbfaa"
+    },
+    {
+      "firmware_header_sha256": "868a3d4a4a1ccd05c18706ce983f4f1334c9991788db510c08379be674bd3e90",
+      "missing_svd_interrupts": [
+        {
+          "name": "EVIC",
+          "value": 78
+        }
+      ],
+      "reason": "Pack SVD 声明 EVIC=78 且同一 SVD 提供 EVIC 外设，生成时采用 SVD 条目并保留系列 Firmware 差异。",
+      "resolution": "prefer-pack-svd",
+      "svd_sha256": "1dcb0ddfe0b48153edef49c03b1f6485ba6131bd30e99ac32d42da486ba9c311"
+    }
+  ],
+  "schema_version": 1
+}

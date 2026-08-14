@@ -1,0 +1,5339 @@
+{
+  "chiptool": {
+    "repository": "https://github.com/embassy-rs/chiptool",
+    "revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678"
+  },
+  "schema_version": 1,
+  "summary": {
+    "failed": 0,
+    "fields": 60228,
+    "generated_or_cached": 3,
+    "interrupts": 577,
+    "peripherals": 320,
+    "registers": 8207,
+    "svd_files": 3
+  },
+  "svds": [
+    {
+      "device_name": "GD32A714x",
+      "devices": [
+        "GD32A714AI",
+        "GD32A714AV",
+        "GD32A714AX",
+        "GD32A714AZ",
+        "GD32A714BI",
+        "GD32A714BV",
+        "GD32A714BZ"
+      ],
+      "fields": 23065,
+      "generated": {
+        "chiptool_revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678",
+        "normalization_version": 4,
+        "normalized_svd_sha256": "c84d266e69a0fa80c3c82e7ce42b5c89b42dd0feb9e50a0c3d26b9748aae0ae0",
+        "outputs": {
+          "device.x": {
+            "sha256": "f26d5e170761f022746cdb70bd7f0a34ec1381f2ee52d82638463393175c067c",
+            "size": 9385
+          },
+          "lib.rs": {
+            "sha256": "e91edb52c906f5bd215f1d08855466cdc3ede647f899b6ff0c2ed66abb6aa9ce",
+            "size": 12185843
+          }
+        },
+        "schema_version": 1,
+        "svd_sha256": "a8fd14f05cc899b284765b58544ce59f3b33fed2b69329db6fe04eb67f970d15"
+      },
+      "interrupts": 224,
+      "normalizations": [
+        "identifier-whitespace:1"
+      ],
+      "normalized_sha256": "c84d266e69a0fa80c3c82e7ce42b5c89b42dd0feb9e50a0c3d26b9748aae0ae0",
+      "path": "cxarm-9.70.4/arm/config/debugger/GD/GD32A714x.svd",
+      "peripheral_names": [
+        "ADC0",
+        "ADC1",
+        "ADC2",
+        "BKP",
+        "BUSIM",
+        "CAN0",
+        "CAN1",
+        "CAN2",
+        "CAN3",
+        "CAN4",
+        "CAN5",
+        "CAN6",
+        "CAN7",
+        "CCTL",
+        "CLTCFG",
+        "CMP0",
+        "CMP1",
+        "CPDM",
+        "CRC",
+        "DAC0",
+        "DAC1",
+        "DBG",
+        "DMA0",
+        "DMA1",
+        "DMAMUX",
+        "ENET_DMA",
+        "ENET_MAC",
+        "ENET_MMC",
+        "ENET_MTL",
+        "EXTI",
+        "EXTMPU",
+        "FMC",
+        "FMU",
+        "FWDGT0",
+        "FWDGT1",
+        "GD_AP",
+        "GPIOA",
+        "GPIOB",
+        "GPIOC",
+        "GPIOD",
+        "GPIOE",
+        "GPIOF",
+        "GPIOG",
+        "GPIOH",
+        "GPIOI",
+        "GPIOJ",
+        "GPIOK",
+        "GPIOL",
+        "GPIOM",
+        "GPION",
+        "HSMIF",
+        "HWSEM",
+        "I2C0",
+        "I2C1",
+        "IMICU_BM1",
+        "IMICU_BM2",
+        "IOC",
+        "IRM",
+        "JDC",
+        "LIN0",
+        "LIN1",
+        "LIN10",
+        "LIN11",
+        "LIN2",
+        "LIN3",
+        "LIN4",
+        "LIN5",
+        "LIN6",
+        "LIN7",
+        "LIN8",
+        "LIN9",
+        "MCMUA",
+        "MCMUB",
+        "MFCOM",
+        "MTC",
+        "PMU",
+        "PRPU",
+        "QSPI",
+        "RCTL",
+        "RTC",
+        "SENT",
+        "SPI0",
+        "SPI1",
+        "SPI2",
+        "SPI3",
+        "SPI4",
+        "SPI5",
+        "SPI6",
+        "SPI7",
+        "SRAM",
+        "STCM",
+        "SYSCFG",
+        "TCM",
+        "TIMER0",
+        "TIMER1",
+        "TIMER19",
+        "TIMER2",
+        "TIMER20",
+        "TIMER5",
+        "TIMER6",
+        "TIMER60",
+        "TIMER61",
+        "TIMER62",
+        "TIMER63",
+        "TIMER7",
+        "TRIGSEL",
+        "USART0",
+        "USART1",
+        "USART2",
+        "USART3",
+        "USART4",
+        "USART5",
+        "WWDGT0",
+        "WWDGT1"
+      ],
+      "peripherals": 114,
+      "rcu_gates": [
+        {
+          "bit": 16,
+          "field": "HXTALEN",
+          "kind": "enable",
+          "name": "HXTAL",
+          "register": "CTL",
+          "register_offset": 0
+        },
+        {
+          "bit": 19,
+          "field": "CKMEN",
+          "kind": "enable",
+          "name": "CKM",
+          "register": "CTL",
+          "register_offset": 0
+        },
+        {
+          "bit": 24,
+          "field": "PLLEN",
+          "kind": "enable",
+          "name": "PLL",
+          "register": "CTL",
+          "register_offset": 0
+        },
+        {
+          "bit": 2,
+          "field": "OBSTDBY_RPAEN",
+          "kind": "enable",
+          "name": "OBSTDBY_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 3,
+          "field": "FMU_RPAEN",
+          "kind": "enable",
+          "name": "FMU_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 4,
+          "field": "ST_FINISH_RPAEN",
+          "kind": "enable",
+          "name": "ST_FINISH_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 6,
+          "field": "FWDGT0_RPAEN",
+          "kind": "enable",
+          "name": "FWDGT0_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 7,
+          "field": "FWDGT1_RPAEN",
+          "kind": "enable",
+          "name": "FWDGT1_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 9,
+          "field": "SWRPAEN",
+          "kind": "enable",
+          "name": "SWRPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 10,
+          "field": "WWDGT0_RPAEN",
+          "kind": "enable",
+          "name": "WWDGT0_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 11,
+          "field": "WWDGT1_RPAEN",
+          "kind": "enable",
+          "name": "WWDGT1_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 20,
+          "field": "HSM_APP_RPAEN",
+          "kind": "enable",
+          "name": "HSM_APP_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 29,
+          "field": "DBG_RPAEN",
+          "kind": "enable",
+          "name": "DBG_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 30,
+          "field": "OBL_RPAEN",
+          "kind": "enable",
+          "name": "OBL_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 0,
+          "field": "PAEN",
+          "kind": "enable",
+          "name": "PA",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 1,
+          "field": "PBEN",
+          "kind": "enable",
+          "name": "PB",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 2,
+          "field": "PCEN",
+          "kind": "enable",
+          "name": "PC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 3,
+          "field": "PDEN",
+          "kind": "enable",
+          "name": "PD",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 4,
+          "field": "PEEN",
+          "kind": "enable",
+          "name": "PE",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 5,
+          "field": "PFEN",
+          "kind": "enable",
+          "name": "PF",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 6,
+          "field": "PGEN",
+          "kind": "enable",
+          "name": "PG",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 7,
+          "field": "PHEN",
+          "kind": "enable",
+          "name": "PH",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 8,
+          "field": "PIEN",
+          "kind": "enable",
+          "name": "PI",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 9,
+          "field": "PJEN",
+          "kind": "enable",
+          "name": "PJ",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 10,
+          "field": "PKEN",
+          "kind": "enable",
+          "name": "PK",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 11,
+          "field": "PLEN",
+          "kind": "enable",
+          "name": "PL",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 12,
+          "field": "PMEN",
+          "kind": "enable",
+          "name": "PM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 13,
+          "field": "PNEN",
+          "kind": "enable",
+          "name": "PN",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 14,
+          "field": "DMA0EN",
+          "kind": "enable",
+          "name": "DMA0",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 15,
+          "field": "DMA1EN",
+          "kind": "enable",
+          "name": "DMA1",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 16,
+          "field": "DMAMUXEN",
+          "kind": "enable",
+          "name": "DMAMUX",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 18,
+          "field": "QSPIEN",
+          "kind": "enable",
+          "name": "QSPI",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 20,
+          "field": "CRCEN",
+          "kind": "enable",
+          "name": "CRC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 21,
+          "field": "MFCOMEN",
+          "kind": "enable",
+          "name": "MFCOM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 22,
+          "field": "MCMUAEN",
+          "kind": "enable",
+          "name": "MCMUA",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 23,
+          "field": "MCMUBEN",
+          "kind": "enable",
+          "name": "MCMUB",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 24,
+          "field": "HWSEMEN",
+          "kind": "enable",
+          "name": "HWSEM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 25,
+          "field": "HSMIFEN",
+          "kind": "enable",
+          "name": "HSMIF",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 27,
+          "field": "FMUEN",
+          "kind": "enable",
+          "name": "FMU",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 28,
+          "field": "IRMEN",
+          "kind": "enable",
+          "name": "IRM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 29,
+          "field": "IOCEN",
+          "kind": "enable",
+          "name": "IOC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 30,
+          "field": "STCMEN",
+          "kind": "enable",
+          "name": "STCM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 31,
+          "field": "MTCEN",
+          "kind": "enable",
+          "name": "MTC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 0,
+          "field": "SYSCFGEN",
+          "kind": "enable",
+          "name": "SYSCFG",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 1,
+          "field": "LIN0EN",
+          "kind": "enable",
+          "name": "LIN0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 2,
+          "field": "LIN1EN",
+          "kind": "enable",
+          "name": "LIN1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 3,
+          "field": "LIN2EN",
+          "kind": "enable",
+          "name": "LIN2",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 4,
+          "field": "LIN3EN",
+          "kind": "enable",
+          "name": "LIN3",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 5,
+          "field": "LIN4EN",
+          "kind": "enable",
+          "name": "LIN4",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 6,
+          "field": "LIN5EN",
+          "kind": "enable",
+          "name": "LIN5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 7,
+          "field": "TRIGSELEN",
+          "kind": "enable",
+          "name": "TRIGSEL",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 8,
+          "field": "ADC0EN",
+          "kind": "enable",
+          "name": "ADC0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 9,
+          "field": "ADC1EN",
+          "kind": "enable",
+          "name": "ADC1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 10,
+          "field": "TIMER0EN",
+          "kind": "enable",
+          "name": "TIMER0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 11,
+          "field": "SPI0EN",
+          "kind": "enable",
+          "name": "SPI0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 12,
+          "field": "TIMER7EN",
+          "kind": "enable",
+          "name": "TIMER7",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 13,
+          "field": "USART0EN",
+          "kind": "enable",
+          "name": "USART0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 14,
+          "field": "USART1EN",
+          "kind": "enable",
+          "name": "USART1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 15,
+          "field": "USART2EN",
+          "kind": "enable",
+          "name": "USART2",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 16,
+          "field": "SPI4EN",
+          "kind": "enable",
+          "name": "SPI4",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 17,
+          "field": "SPI5EN",
+          "kind": "enable",
+          "name": "SPI5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 18,
+          "field": "ADC2EN",
+          "kind": "enable",
+          "name": "ADC2",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 19,
+          "field": "TIMER19EN",
+          "kind": "enable",
+          "name": "TIMER19",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 20,
+          "field": "TIMER1EN",
+          "kind": "enable",
+          "name": "TIMER1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 21,
+          "field": "TIMER5EN",
+          "kind": "enable",
+          "name": "TIMER5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 22,
+          "field": "TIMER62EN",
+          "kind": "enable",
+          "name": "TIMER62",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 23,
+          "field": "CMP1EN",
+          "kind": "enable",
+          "name": "CMP1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 24,
+          "field": "USART5EN",
+          "kind": "enable",
+          "name": "USART5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 25,
+          "field": "SPI1EN",
+          "kind": "enable",
+          "name": "SPI1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 26,
+          "field": "CMP0EN",
+          "kind": "enable",
+          "name": "CMP0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 0,
+          "field": "TIMER20EN",
+          "kind": "enable",
+          "name": "TIMER20",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 1,
+          "field": "TIMER2EN",
+          "kind": "enable",
+          "name": "TIMER2",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 2,
+          "field": "TIMER60EN",
+          "kind": "enable",
+          "name": "TIMER60",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 3,
+          "field": "TIMER6EN",
+          "kind": "enable",
+          "name": "TIMER6",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 4,
+          "field": "WWDGT0EN",
+          "kind": "enable",
+          "name": "WWDGT0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 5,
+          "field": "FWDGT0EN",
+          "kind": "enable",
+          "name": "FWDGT0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 6,
+          "field": "SPI6EN",
+          "kind": "enable",
+          "name": "SPI6",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 7,
+          "field": "SPI7EN",
+          "kind": "enable",
+          "name": "SPI7",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 8,
+          "field": "USART3EN",
+          "kind": "enable",
+          "name": "USART3",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 9,
+          "field": "USART4EN",
+          "kind": "enable",
+          "name": "USART4",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 10,
+          "field": "I2C0EN",
+          "kind": "enable",
+          "name": "I2C0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 11,
+          "field": "I2C1EN",
+          "kind": "enable",
+          "name": "I2C1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 12,
+          "field": "BKPEN",
+          "kind": "enable",
+          "name": "BKP",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 13,
+          "field": "PMUEN",
+          "kind": "enable",
+          "name": "PMU",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 14,
+          "field": "DAC0EN",
+          "kind": "enable",
+          "name": "DAC0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 15,
+          "field": "ENETEN",
+          "kind": "enable",
+          "name": "ENET",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 16,
+          "field": "TIMER61EN",
+          "kind": "enable",
+          "name": "TIMER61",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 17,
+          "field": "TIMER63EN",
+          "kind": "enable",
+          "name": "TIMER63",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 18,
+          "field": "SENTEN",
+          "kind": "enable",
+          "name": "SENT",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 19,
+          "field": "LIN6EN",
+          "kind": "enable",
+          "name": "LIN6",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 20,
+          "field": "LIN7EN",
+          "kind": "enable",
+          "name": "LIN7",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 21,
+          "field": "LIN8EN",
+          "kind": "enable",
+          "name": "LIN8",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 22,
+          "field": "LIN9EN",
+          "kind": "enable",
+          "name": "LIN9",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 23,
+          "field": "LIN10EN",
+          "kind": "enable",
+          "name": "LIN10",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 24,
+          "field": "LIN11EN",
+          "kind": "enable",
+          "name": "LIN11",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 25,
+          "field": "DAC1EN",
+          "kind": "enable",
+          "name": "DAC1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 26,
+          "field": "WWDGT1EN",
+          "kind": "enable",
+          "name": "WWDGT1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 27,
+          "field": "FWDGT1EN",
+          "kind": "enable",
+          "name": "FWDGT1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 28,
+          "field": "SPI2EN",
+          "kind": "enable",
+          "name": "SPI2",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 29,
+          "field": "SPI3EN",
+          "kind": "enable",
+          "name": "SPI3",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 30,
+          "field": "CLTCFGEN",
+          "kind": "enable",
+          "name": "CLTCFG",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 0,
+          "field": "ERPAETEN",
+          "kind": "enable",
+          "name": "ERPAET",
+          "register": "ERPACFG",
+          "register_offset": 32
+        },
+        {
+          "bit": 0,
+          "field": "LXTALEN",
+          "kind": "enable",
+          "name": "LXTAL",
+          "register": "BDCTL",
+          "register_offset": 32
+        },
+        {
+          "bit": 15,
+          "field": "RTCEN",
+          "kind": "enable",
+          "name": "RTC",
+          "register": "BDCTL",
+          "register_offset": 32
+        },
+        {
+          "bit": 0,
+          "field": "CAN0EN",
+          "kind": "enable",
+          "name": "CAN0",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 1,
+          "field": "CAN1EN",
+          "kind": "enable",
+          "name": "CAN1",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 2,
+          "field": "CAN2EN",
+          "kind": "enable",
+          "name": "CAN2",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 3,
+          "field": "CAN3EN",
+          "kind": "enable",
+          "name": "CAN3",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 4,
+          "field": "CAN4EN",
+          "kind": "enable",
+          "name": "CAN4",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 5,
+          "field": "CAN5EN",
+          "kind": "enable",
+          "name": "CAN5",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 6,
+          "field": "CAN6EN",
+          "kind": "enable",
+          "name": "CAN6",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 7,
+          "field": "CAN7EN",
+          "kind": "enable",
+          "name": "CAN7",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 0,
+          "field": "CM7_0_EN",
+          "kind": "enable",
+          "name": "CM7_0_",
+          "register": "AHBEN_ADD",
+          "register_offset": 40
+        },
+        {
+          "bit": 0,
+          "field": "SUBSRTOEN",
+          "kind": "enable",
+          "name": "SUBSRTO",
+          "register": "SUBSRTO",
+          "register_offset": 40
+        },
+        {
+          "bit": 1,
+          "field": "CM7_1_EN",
+          "kind": "enable",
+          "name": "CM7_1_",
+          "register": "AHBEN_ADD",
+          "register_offset": 40
+        },
+        {
+          "bit": 0,
+          "field": "CKD0_FDEN",
+          "kind": "enable",
+          "name": "CKD0_FD",
+          "register": "CKDCTL",
+          "register_offset": 60
+        },
+        {
+          "bit": 8,
+          "field": "CKD1_FDEN",
+          "kind": "enable",
+          "name": "CKD1_FD",
+          "register": "CKDCTL",
+          "register_offset": 60
+        },
+        {
+          "bit": 16,
+          "field": "CKD2_FDEN",
+          "kind": "enable",
+          "name": "CKD2_FD",
+          "register": "CKDCTL",
+          "register_offset": 60
+        },
+        {
+          "bit": 0,
+          "field": "TMR_RCU_SUBSERSTATEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SUBSERSTAT",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 2,
+          "field": "TMR_RCU_SUBSRCTLEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SUBSRCTL",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 4,
+          "field": "TMR_RCU_SUBSRPACTLEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SUBSRPACTL",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 6,
+          "field": "TMR_RCU_SYSMRUTHEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SYSMRUTH",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 8,
+          "field": "TMR_RCU_ERPACFGEN",
+          "kind": "enable",
+          "name": "TMR_RCU_ERPACFG",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 10,
+          "field": "TMR_AHBRSTEN",
+          "kind": "enable",
+          "name": "TMR_AHBRST",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 12,
+          "field": "TMR_APBRSTEN",
+          "kind": "enable",
+          "name": "TMR_APBRST",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 16,
+          "field": "TMR_PORWDG1EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG1",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 18,
+          "field": "TMR_PORWDG2EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG2",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 20,
+          "field": "TMR_PORWDG3EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG3",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 22,
+          "field": "TMR_PORWDG4EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG4",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 15,
+          "field": "PLLFRAEN",
+          "kind": "enable",
+          "name": "PLLFRA",
+          "register": "PLLFRA",
+          "register_offset": 152
+        },
+        {
+          "bit": 0,
+          "field": "PARST",
+          "kind": "reset",
+          "name": "PA",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 1,
+          "field": "PBRST",
+          "kind": "reset",
+          "name": "PB",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 2,
+          "field": "PCRST",
+          "kind": "reset",
+          "name": "PC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 3,
+          "field": "PDRST",
+          "kind": "reset",
+          "name": "PD",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 4,
+          "field": "PERST",
+          "kind": "reset",
+          "name": "PE",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 5,
+          "field": "PFRST",
+          "kind": "reset",
+          "name": "PF",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 6,
+          "field": "PGRST",
+          "kind": "reset",
+          "name": "PG",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 7,
+          "field": "PHRST",
+          "kind": "reset",
+          "name": "PH",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 8,
+          "field": "PIRST",
+          "kind": "reset",
+          "name": "PI",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 9,
+          "field": "PJRST",
+          "kind": "reset",
+          "name": "PJ",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 10,
+          "field": "PKRST",
+          "kind": "reset",
+          "name": "PK",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 11,
+          "field": "PLRST",
+          "kind": "reset",
+          "name": "PL",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 12,
+          "field": "PMRST",
+          "kind": "reset",
+          "name": "PM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 13,
+          "field": "PNRST",
+          "kind": "reset",
+          "name": "PN",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 14,
+          "field": "DMA0RST",
+          "kind": "reset",
+          "name": "DMA0",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 15,
+          "field": "DMA1RST",
+          "kind": "reset",
+          "name": "DMA1",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 16,
+          "field": "DMAMUXRST",
+          "kind": "reset",
+          "name": "DMAMUX",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 18,
+          "field": "QSPIRST",
+          "kind": "reset",
+          "name": "QSPI",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 20,
+          "field": "CRCRST",
+          "kind": "reset",
+          "name": "CRC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 21,
+          "field": "MFCOMRST",
+          "kind": "reset",
+          "name": "MFCOM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 22,
+          "field": "MCMUARST",
+          "kind": "reset",
+          "name": "MCMUA",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 23,
+          "field": "MCMUBRST",
+          "kind": "reset",
+          "name": "MCMUB",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 24,
+          "field": "HWSEMRST",
+          "kind": "reset",
+          "name": "HWSEM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 25,
+          "field": "HSMIFRST",
+          "kind": "reset",
+          "name": "HSMIF",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 28,
+          "field": "IRMRST",
+          "kind": "reset",
+          "name": "IRM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 29,
+          "field": "IOCRST",
+          "kind": "reset",
+          "name": "IOC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 30,
+          "field": "STCMRST",
+          "kind": "reset",
+          "name": "STCM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 31,
+          "field": "MTCRST",
+          "kind": "reset",
+          "name": "MTC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 0,
+          "field": "TIMER20RST",
+          "kind": "reset",
+          "name": "TIMER20",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 1,
+          "field": "TIMER2RST",
+          "kind": "reset",
+          "name": "TIMER2",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 2,
+          "field": "TIMER60RST",
+          "kind": "reset",
+          "name": "TIMER60",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 3,
+          "field": "TIMER6RST",
+          "kind": "reset",
+          "name": "TIMER6",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 4,
+          "field": "WWDGT0RST",
+          "kind": "reset",
+          "name": "WWDGT0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 5,
+          "field": "FWDGT0RST",
+          "kind": "reset",
+          "name": "FWDGT0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 6,
+          "field": "SPI6RST",
+          "kind": "reset",
+          "name": "SPI6",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 7,
+          "field": "SPI7RST",
+          "kind": "reset",
+          "name": "SPI7",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 8,
+          "field": "USART3RST",
+          "kind": "reset",
+          "name": "USART3",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 9,
+          "field": "USART4RST",
+          "kind": "reset",
+          "name": "USART4",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 10,
+          "field": "I2C0RST",
+          "kind": "reset",
+          "name": "I2C0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 11,
+          "field": "I2C1RST",
+          "kind": "reset",
+          "name": "I2C1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 12,
+          "field": "BKPRST",
+          "kind": "reset",
+          "name": "BKP",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 14,
+          "field": "DAC0RST",
+          "kind": "reset",
+          "name": "DAC0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 15,
+          "field": "ENETRST",
+          "kind": "reset",
+          "name": "ENET",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 16,
+          "field": "TIMER61RST",
+          "kind": "reset",
+          "name": "TIMER61",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 17,
+          "field": "TIMER63RST",
+          "kind": "reset",
+          "name": "TIMER63",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 18,
+          "field": "SENTRST",
+          "kind": "reset",
+          "name": "SENT",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 19,
+          "field": "LIN6RST",
+          "kind": "reset",
+          "name": "LIN6",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 20,
+          "field": "LIN7RST",
+          "kind": "reset",
+          "name": "LIN7",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 21,
+          "field": "LIN8RST",
+          "kind": "reset",
+          "name": "LIN8",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 22,
+          "field": "LIN9RST",
+          "kind": "reset",
+          "name": "LIN9",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 23,
+          "field": "LIN10RST",
+          "kind": "reset",
+          "name": "LIN10",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 24,
+          "field": "LIN11RST",
+          "kind": "reset",
+          "name": "LIN11",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 25,
+          "field": "DAC1RST",
+          "kind": "reset",
+          "name": "DAC1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 26,
+          "field": "WWDGT1RST",
+          "kind": "reset",
+          "name": "WWDGT1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 27,
+          "field": "FWDGT1RST",
+          "kind": "reset",
+          "name": "FWDGT1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 28,
+          "field": "SPI2RST",
+          "kind": "reset",
+          "name": "SPI2",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 29,
+          "field": "SPI3RST",
+          "kind": "reset",
+          "name": "SPI3",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 30,
+          "field": "CLTCFGRST",
+          "kind": "reset",
+          "name": "CLTCFG",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 0,
+          "field": "CFGRST",
+          "kind": "reset",
+          "name": "CFG",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 1,
+          "field": "LIN0RST",
+          "kind": "reset",
+          "name": "LIN0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 2,
+          "field": "LIN1RST",
+          "kind": "reset",
+          "name": "LIN1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 3,
+          "field": "LIN2RST",
+          "kind": "reset",
+          "name": "LIN2",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 4,
+          "field": "LIN3RST",
+          "kind": "reset",
+          "name": "LIN3",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 5,
+          "field": "LIN4RST",
+          "kind": "reset",
+          "name": "LIN4",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 6,
+          "field": "LIN5RST",
+          "kind": "reset",
+          "name": "LIN5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 8,
+          "field": "ADC0RST",
+          "kind": "reset",
+          "name": "ADC0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 9,
+          "field": "ADC1RST",
+          "kind": "reset",
+          "name": "ADC1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 10,
+          "field": "TIMER0RST",
+          "kind": "reset",
+          "name": "TIMER0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 11,
+          "field": "SPI0RST",
+          "kind": "reset",
+          "name": "SPI0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 12,
+          "field": "TIMER7RST",
+          "kind": "reset",
+          "name": "TIMER7",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 13,
+          "field": "USART0RST",
+          "kind": "reset",
+          "name": "USART0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 14,
+          "field": "USART1RST",
+          "kind": "reset",
+          "name": "USART1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 15,
+          "field": "USART2RST",
+          "kind": "reset",
+          "name": "USART2",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 16,
+          "field": "SPI4RST",
+          "kind": "reset",
+          "name": "SPI4",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 17,
+          "field": "SPI5RST",
+          "kind": "reset",
+          "name": "SPI5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 19,
+          "field": "TIMER19RST",
+          "kind": "reset",
+          "name": "TIMER19",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 20,
+          "field": "TIMER1RST",
+          "kind": "reset",
+          "name": "TIMER1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 21,
+          "field": "TIMER5RST",
+          "kind": "reset",
+          "name": "TIMER5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 22,
+          "field": "TIMER62RST",
+          "kind": "reset",
+          "name": "TIMER62",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 23,
+          "field": "CMP1RST",
+          "kind": "reset",
+          "name": "CMP1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 24,
+          "field": "USART5RST",
+          "kind": "reset",
+          "name": "USART5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 25,
+          "field": "SPI1RST",
+          "kind": "reset",
+          "name": "SPI1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 26,
+          "field": "CMP0RST",
+          "kind": "reset",
+          "name": "CMP0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 0,
+          "field": "CAN0RST",
+          "kind": "reset",
+          "name": "CAN0",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 1,
+          "field": "CAN1RST",
+          "kind": "reset",
+          "name": "CAN1",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 2,
+          "field": "CAN2RST",
+          "kind": "reset",
+          "name": "CAN2",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 3,
+          "field": "CAN3RST",
+          "kind": "reset",
+          "name": "CAN3",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 4,
+          "field": "CAN4RST",
+          "kind": "reset",
+          "name": "CAN4",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 5,
+          "field": "CAN5RST",
+          "kind": "reset",
+          "name": "CAN5",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 6,
+          "field": "CAN6RST",
+          "kind": "reset",
+          "name": "CAN6",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 7,
+          "field": "CAN7RST",
+          "kind": "reset",
+          "name": "CAN7",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 11,
+          "field": "TMR_AHBRST",
+          "kind": "reset",
+          "name": "TMR_AHB",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 13,
+          "field": "TMR_APBRST",
+          "kind": "reset",
+          "name": "TMR_APB",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        }
+      ],
+      "registers": 3018,
+      "sha256": "a8fd14f05cc899b284765b58544ce59f3b33fed2b69329db6fe04eb67f970d15",
+      "size": 7848302,
+      "source_pack_name": "IAR Arm Device Support",
+      "source_pack_version": "9.70.4",
+      "status": "cached",
+      "unique_interrupt_values": 224
+    },
+    {
+      "device_name": "GD32A71x",
+      "devices": [
+        "GD32A711AR",
+        "GD32A711AV",
+        "GD32A711AZ",
+        "GD32A711BR",
+        "GD32A711BV",
+        "GD32A711BZ",
+        "GD32A711CV",
+        "GD32A712AI",
+        "GD32A712AV",
+        "GD32A712AZ",
+        "GD32A712BI",
+        "GD32A712BV",
+        "GD32A712BZ"
+      ],
+      "fields": 14098,
+      "generated": {
+        "chiptool_revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678",
+        "normalization_version": 4,
+        "normalized_svd_sha256": "26fca717b9fe0438d8d8060d94dbefa125869c469193029242e82817babde923",
+        "outputs": {
+          "device.x": {
+            "sha256": "316dcce694d4db87ee4dfd588a3a6f8dae1f43d946c48929bd4a631e40bdacc1",
+            "size": 5385
+          },
+          "lib.rs": {
+            "sha256": "b6292cf278fbf0f3fe2c855d85c93a5118d51030010f295f61178107d6fc5c0d",
+            "size": 7304324
+          }
+        },
+        "schema_version": 1,
+        "svd_sha256": "26fca717b9fe0438d8d8060d94dbefa125869c469193029242e82817babde923"
+      },
+      "interrupts": 129,
+      "normalizations": [],
+      "normalized_sha256": "26fca717b9fe0438d8d8060d94dbefa125869c469193029242e82817babde923",
+      "path": "cxarm-9.70.4/arm/config/debugger/GD/GD32A71x.svd",
+      "peripheral_names": [
+        "ADC0",
+        "ADC1",
+        "BKP",
+        "BUSIM",
+        "CAN0_SYSCFG",
+        "CAN1_SYSCFG",
+        "CAN2_SYSCFG",
+        "CCTL",
+        "CLTCFG",
+        "CMP0",
+        "CMP1",
+        "CPDM",
+        "CRC",
+        "DAC0",
+        "DAC1",
+        "DBG",
+        "DMA0",
+        "DMA1",
+        "DMAMUX",
+        "DTM_CAN0",
+        "DTM_CAN1",
+        "DTM_CAN2",
+        "DTM_CAN3",
+        "DTM_CAN4",
+        "DTM_CAN5",
+        "DTM_CAN6",
+        "DTM_CAN7",
+        "EXTI",
+        "EXTMPU",
+        "FMC",
+        "FMU",
+        "FWDGT0",
+        "GD_AP",
+        "GPIOA",
+        "GPIOB",
+        "GPIOC",
+        "GPIOD",
+        "GPIOE",
+        "GPIOF",
+        "GPIOG",
+        "GPIOH",
+        "GPIOI",
+        "GPIOJ",
+        "GPIOK",
+        "GPIOL",
+        "GPIOM",
+        "GPION",
+        "HSMIF",
+        "HWSEM",
+        "I2C0",
+        "I2C1",
+        "IMICU_BM1",
+        "IMICU_BM2",
+        "IRM",
+        "JDC",
+        "LINFlexD0",
+        "LINFlexD1",
+        "LINFlexD2",
+        "LINFlexD3",
+        "LINFlexD4",
+        "LINFlexD5",
+        "MTC",
+        "PMU",
+        "PRPU",
+        "QSPI",
+        "RCTL",
+        "RTC",
+        "SENT",
+        "SPI0",
+        "SPI1",
+        "SPI2",
+        "SPI3",
+        "SPI4",
+        "SPI5",
+        "SRAM",
+        "STCM",
+        "SYSCFG",
+        "TCM",
+        "TIMER0",
+        "TIMER1",
+        "TIMER19",
+        "TIMER2",
+        "TIMER20",
+        "TIMER5",
+        "TIMER6",
+        "TIMER60",
+        "TIMER61",
+        "TIMER62",
+        "TIMER63",
+        "TIMER7",
+        "TRIGSEL",
+        "WWDGT0"
+      ],
+      "peripherals": 92,
+      "rcu_gates": [
+        {
+          "bit": 16,
+          "field": "HXTALEN",
+          "kind": "enable",
+          "name": "HXTAL",
+          "register": "CTL",
+          "register_offset": 0
+        },
+        {
+          "bit": 19,
+          "field": "CKMEN",
+          "kind": "enable",
+          "name": "CKM",
+          "register": "CTL",
+          "register_offset": 0
+        },
+        {
+          "bit": 24,
+          "field": "PLLEN",
+          "kind": "enable",
+          "name": "PLL",
+          "register": "CTL",
+          "register_offset": 0
+        },
+        {
+          "bit": 4,
+          "field": "ST_FINISH_RPAEN",
+          "kind": "enable",
+          "name": "ST_FINISH_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 0,
+          "field": "PAEN",
+          "kind": "enable",
+          "name": "PA",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 1,
+          "field": "PBEN",
+          "kind": "enable",
+          "name": "PB",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 2,
+          "field": "PCEN",
+          "kind": "enable",
+          "name": "PC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 3,
+          "field": "PDEN",
+          "kind": "enable",
+          "name": "PD",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 4,
+          "field": "PEEN",
+          "kind": "enable",
+          "name": "PE",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 5,
+          "field": "PFEN",
+          "kind": "enable",
+          "name": "PF",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 6,
+          "field": "PGEN",
+          "kind": "enable",
+          "name": "PG",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 7,
+          "field": "PHEN",
+          "kind": "enable",
+          "name": "PH",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 8,
+          "field": "PIEN",
+          "kind": "enable",
+          "name": "PI",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 9,
+          "field": "PJEN",
+          "kind": "enable",
+          "name": "PJ",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 10,
+          "field": "PKEN",
+          "kind": "enable",
+          "name": "PK",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 11,
+          "field": "PLEN",
+          "kind": "enable",
+          "name": "PL",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 12,
+          "field": "PMEN",
+          "kind": "enable",
+          "name": "PM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 13,
+          "field": "PNEN",
+          "kind": "enable",
+          "name": "PN",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 14,
+          "field": "DMA0EN",
+          "kind": "enable",
+          "name": "DMA0",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 15,
+          "field": "DMA1EN",
+          "kind": "enable",
+          "name": "DMA1",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 16,
+          "field": "DMAMUXEN",
+          "kind": "enable",
+          "name": "DMAMUX",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 18,
+          "field": "QSPIEN",
+          "kind": "enable",
+          "name": "QSPI",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 20,
+          "field": "CRCEN",
+          "kind": "enable",
+          "name": "CRC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 25,
+          "field": "HSMIFEN",
+          "kind": "enable",
+          "name": "HSMIF",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 27,
+          "field": "FMUEN",
+          "kind": "enable",
+          "name": "FMU",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 28,
+          "field": "IRMEN",
+          "kind": "enable",
+          "name": "IRM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 30,
+          "field": "STCMEN",
+          "kind": "enable",
+          "name": "STCM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 31,
+          "field": "MTCEN",
+          "kind": "enable",
+          "name": "MTC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 0,
+          "field": "SYSCFGEN",
+          "kind": "enable",
+          "name": "SYSCFG",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 1,
+          "field": "LINFLEXD0EN",
+          "kind": "enable",
+          "name": "LINFLEXD0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 2,
+          "field": "LINFLEXD1EN",
+          "kind": "enable",
+          "name": "LINFLEXD1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 3,
+          "field": "LINFLEXD2EN",
+          "kind": "enable",
+          "name": "LINFLEXD2",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 4,
+          "field": "LINFLEXD3EN",
+          "kind": "enable",
+          "name": "LINFLEXD3",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 5,
+          "field": "LINFLEXD4EN",
+          "kind": "enable",
+          "name": "LINFLEXD4",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 6,
+          "field": "LINFLEXD5EN",
+          "kind": "enable",
+          "name": "LINFLEXD5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 7,
+          "field": "TRIGSELEN",
+          "kind": "enable",
+          "name": "TRIGSEL",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 8,
+          "field": "ADC0EN",
+          "kind": "enable",
+          "name": "ADC0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 9,
+          "field": "ADC1EN",
+          "kind": "enable",
+          "name": "ADC1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 10,
+          "field": "TIMER0EN",
+          "kind": "enable",
+          "name": "TIMER0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 11,
+          "field": "SPI0EN",
+          "kind": "enable",
+          "name": "SPI0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 12,
+          "field": "TIMER7EN",
+          "kind": "enable",
+          "name": "TIMER7",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 16,
+          "field": "SPI4EN",
+          "kind": "enable",
+          "name": "SPI4",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 17,
+          "field": "SPI5EN",
+          "kind": "enable",
+          "name": "SPI5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 19,
+          "field": "TIMER19EN",
+          "kind": "enable",
+          "name": "TIMER19",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 20,
+          "field": "TIMER1EN",
+          "kind": "enable",
+          "name": "TIMER1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 21,
+          "field": "TIMER5EN",
+          "kind": "enable",
+          "name": "TIMER5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 22,
+          "field": "TIMER62EN",
+          "kind": "enable",
+          "name": "TIMER62",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 23,
+          "field": "CMP1EN",
+          "kind": "enable",
+          "name": "CMP1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 25,
+          "field": "SPI1EN",
+          "kind": "enable",
+          "name": "SPI1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 26,
+          "field": "CMP0EN",
+          "kind": "enable",
+          "name": "CMP0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 0,
+          "field": "TIMER20EN",
+          "kind": "enable",
+          "name": "TIMER20",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 1,
+          "field": "TIMER2EN",
+          "kind": "enable",
+          "name": "TIMER2",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 2,
+          "field": "TIMER60EN",
+          "kind": "enable",
+          "name": "TIMER60",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 3,
+          "field": "TIMER6EN",
+          "kind": "enable",
+          "name": "TIMER6",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 4,
+          "field": "WWDGT0EN",
+          "kind": "enable",
+          "name": "WWDGT0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 5,
+          "field": "FWDGT0EN",
+          "kind": "enable",
+          "name": "FWDGT0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 10,
+          "field": "I2C0EN",
+          "kind": "enable",
+          "name": "I2C0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 11,
+          "field": "I2C1EN",
+          "kind": "enable",
+          "name": "I2C1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 12,
+          "field": "BKPEN",
+          "kind": "enable",
+          "name": "BKP",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 13,
+          "field": "PMUEN",
+          "kind": "enable",
+          "name": "PMU",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 14,
+          "field": "DAC0EN",
+          "kind": "enable",
+          "name": "DAC0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 16,
+          "field": "TIMER61EN",
+          "kind": "enable",
+          "name": "TIMER61",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 17,
+          "field": "TIMER63EN",
+          "kind": "enable",
+          "name": "TIMER63",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 25,
+          "field": "DAC1EN",
+          "kind": "enable",
+          "name": "DAC1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 28,
+          "field": "SPI2EN",
+          "kind": "enable",
+          "name": "SPI2",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 29,
+          "field": "SPI3EN",
+          "kind": "enable",
+          "name": "SPI3",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 30,
+          "field": "CLTCFGEN",
+          "kind": "enable",
+          "name": "CLTCFG",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 0,
+          "field": "ERPAETEN",
+          "kind": "enable",
+          "name": "ERPAET",
+          "register": "ERPACFG",
+          "register_offset": 32
+        },
+        {
+          "bit": 0,
+          "field": "LXTALEN",
+          "kind": "enable",
+          "name": "LXTAL",
+          "register": "BDCTL",
+          "register_offset": 32
+        },
+        {
+          "bit": 15,
+          "field": "RTCEN",
+          "kind": "enable",
+          "name": "RTC",
+          "register": "BDCTL",
+          "register_offset": 32
+        },
+        {
+          "bit": 0,
+          "field": "DTM_CAN0EN",
+          "kind": "enable",
+          "name": "DTM_CAN0",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 1,
+          "field": "DTM_CAN1EN",
+          "kind": "enable",
+          "name": "DTM_CAN1",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 2,
+          "field": "DTM_CAN2EN",
+          "kind": "enable",
+          "name": "DTM_CAN2",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 3,
+          "field": "DTM_CAN3EN",
+          "kind": "enable",
+          "name": "DTM_CAN3",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 4,
+          "field": "DTM_CAN4EN",
+          "kind": "enable",
+          "name": "DTM_CAN4",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 5,
+          "field": "DTM_CAN5EN",
+          "kind": "enable",
+          "name": "DTM_CAN5",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 6,
+          "field": "DTM_CAN6EN",
+          "kind": "enable",
+          "name": "DTM_CAN6",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 7,
+          "field": "DTM_CAN7EN",
+          "kind": "enable",
+          "name": "DTM_CAN7",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 0,
+          "field": "CM7_0_EN",
+          "kind": "enable",
+          "name": "CM7_0_",
+          "register": "AHBEN_ADD",
+          "register_offset": 40
+        },
+        {
+          "bit": 0,
+          "field": "SUBSRTOEN",
+          "kind": "enable",
+          "name": "SUBSRTO",
+          "register": "SUBSRTO",
+          "register_offset": 40
+        },
+        {
+          "bit": 0,
+          "field": "CKD0_FDEN",
+          "kind": "enable",
+          "name": "CKD0_FD",
+          "register": "CKDCTL",
+          "register_offset": 60
+        },
+        {
+          "bit": 8,
+          "field": "CKD1_FDEN",
+          "kind": "enable",
+          "name": "CKD1_FD",
+          "register": "CKDCTL",
+          "register_offset": 60
+        },
+        {
+          "bit": 0,
+          "field": "TMR_RCU_SUBSERSTATEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SUBSERSTAT",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 2,
+          "field": "TMR_RCU_SUBSRCTLEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SUBSRCTL",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 4,
+          "field": "TMR_RCU_SUBSRPACTLEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SUBSRPACTL",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 6,
+          "field": "TMR_RCU_SYSMRUTHEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SYSMRUTH",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 8,
+          "field": "TMR_RCU_ERPACFGEN",
+          "kind": "enable",
+          "name": "TMR_RCU_ERPACFG",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 10,
+          "field": "TMR_AHBRSTEN",
+          "kind": "enable",
+          "name": "TMR_AHBRST",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 12,
+          "field": "TMR_APBRSTEN",
+          "kind": "enable",
+          "name": "TMR_APBRST",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 16,
+          "field": "TMR_PORWDG1EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG1",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 18,
+          "field": "TMR_PORWDG2EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG2",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 20,
+          "field": "TMR_PORWDG3EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG3",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 22,
+          "field": "TMR_PORWDG4EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG4",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 15,
+          "field": "PLLFRAEN",
+          "kind": "enable",
+          "name": "PLLFRA",
+          "register": "PLLFRA",
+          "register_offset": 152
+        },
+        {
+          "bit": 0,
+          "field": "PARST",
+          "kind": "reset",
+          "name": "PA",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 1,
+          "field": "PBRST",
+          "kind": "reset",
+          "name": "PB",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 2,
+          "field": "PCRST",
+          "kind": "reset",
+          "name": "PC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 3,
+          "field": "PDRST",
+          "kind": "reset",
+          "name": "PD",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 4,
+          "field": "PERST",
+          "kind": "reset",
+          "name": "PE",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 5,
+          "field": "PFRST",
+          "kind": "reset",
+          "name": "PF",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 6,
+          "field": "PGRST",
+          "kind": "reset",
+          "name": "PG",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 7,
+          "field": "PHRST",
+          "kind": "reset",
+          "name": "PH",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 8,
+          "field": "PIRST",
+          "kind": "reset",
+          "name": "PI",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 9,
+          "field": "PJRST",
+          "kind": "reset",
+          "name": "PJ",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 10,
+          "field": "PKRST",
+          "kind": "reset",
+          "name": "PK",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 11,
+          "field": "PLRST",
+          "kind": "reset",
+          "name": "PL",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 12,
+          "field": "PMRST",
+          "kind": "reset",
+          "name": "PM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 13,
+          "field": "PNRST",
+          "kind": "reset",
+          "name": "PN",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 14,
+          "field": "DMA0RST",
+          "kind": "reset",
+          "name": "DMA0",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 15,
+          "field": "DMA1RST",
+          "kind": "reset",
+          "name": "DMA1",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 16,
+          "field": "DMAMUXRST",
+          "kind": "reset",
+          "name": "DMAMUX",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 18,
+          "field": "QSPIRST",
+          "kind": "reset",
+          "name": "QSPI",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 20,
+          "field": "CRCRST",
+          "kind": "reset",
+          "name": "CRC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 25,
+          "field": "HSMIFRST",
+          "kind": "reset",
+          "name": "HSMIF",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 28,
+          "field": "IRMRST",
+          "kind": "reset",
+          "name": "IRM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 30,
+          "field": "STCMRST",
+          "kind": "reset",
+          "name": "STCM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 31,
+          "field": "MTCRST",
+          "kind": "reset",
+          "name": "MTC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 0,
+          "field": "TIMER20RST",
+          "kind": "reset",
+          "name": "TIMER20",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 1,
+          "field": "TIMER2RST",
+          "kind": "reset",
+          "name": "TIMER2",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 2,
+          "field": "TIMER60RST",
+          "kind": "reset",
+          "name": "TIMER60",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 3,
+          "field": "TIMER6RST",
+          "kind": "reset",
+          "name": "TIMER6",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 4,
+          "field": "WWDGT0RST",
+          "kind": "reset",
+          "name": "WWDGT0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 5,
+          "field": "FWDGT0RST",
+          "kind": "reset",
+          "name": "FWDGT0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 10,
+          "field": "I2C0RST",
+          "kind": "reset",
+          "name": "I2C0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 11,
+          "field": "I2C1RST",
+          "kind": "reset",
+          "name": "I2C1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 12,
+          "field": "BKPRST",
+          "kind": "reset",
+          "name": "BKP",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 14,
+          "field": "DAC0RST",
+          "kind": "reset",
+          "name": "DAC0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 16,
+          "field": "TIMER61RST",
+          "kind": "reset",
+          "name": "TIMER61",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 17,
+          "field": "TIMER63RST",
+          "kind": "reset",
+          "name": "TIMER63",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 25,
+          "field": "DAC1RST",
+          "kind": "reset",
+          "name": "DAC1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 28,
+          "field": "SPI2RST",
+          "kind": "reset",
+          "name": "SPI2",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 29,
+          "field": "SPI3RST",
+          "kind": "reset",
+          "name": "SPI3",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 0,
+          "field": "SYSCFGRST",
+          "kind": "reset",
+          "name": "SYSCFG",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 1,
+          "field": "LINFLEXD0RST",
+          "kind": "reset",
+          "name": "LINFLEXD0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 2,
+          "field": "LINFLEXD1RST",
+          "kind": "reset",
+          "name": "LINFLEXD1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 3,
+          "field": "LINFLEXD2RST",
+          "kind": "reset",
+          "name": "LINFLEXD2",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 4,
+          "field": "LINFLEXD3RST",
+          "kind": "reset",
+          "name": "LINFLEXD3",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 5,
+          "field": "LINFLEXD4RST",
+          "kind": "reset",
+          "name": "LINFLEXD4",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 6,
+          "field": "LINFLEXD5RST",
+          "kind": "reset",
+          "name": "LINFLEXD5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 8,
+          "field": "ADC0RST",
+          "kind": "reset",
+          "name": "ADC0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 9,
+          "field": "ADC1RST",
+          "kind": "reset",
+          "name": "ADC1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 10,
+          "field": "TIMER0RST",
+          "kind": "reset",
+          "name": "TIMER0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 11,
+          "field": "SPI0RST",
+          "kind": "reset",
+          "name": "SPI0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 12,
+          "field": "TIMER7RST",
+          "kind": "reset",
+          "name": "TIMER7",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 16,
+          "field": "SPI4RST",
+          "kind": "reset",
+          "name": "SPI4",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 17,
+          "field": "SPI5RST",
+          "kind": "reset",
+          "name": "SPI5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 19,
+          "field": "TIMER19RST",
+          "kind": "reset",
+          "name": "TIMER19",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 20,
+          "field": "TIMER1RST",
+          "kind": "reset",
+          "name": "TIMER1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 21,
+          "field": "TIMER5RST",
+          "kind": "reset",
+          "name": "TIMER5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 22,
+          "field": "TIMER62RST",
+          "kind": "reset",
+          "name": "TIMER62",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 23,
+          "field": "CMP1RST",
+          "kind": "reset",
+          "name": "CMP1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 25,
+          "field": "SPI1RST",
+          "kind": "reset",
+          "name": "SPI1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 26,
+          "field": "CMP0RST",
+          "kind": "reset",
+          "name": "CMP0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 8,
+          "field": "CAN0RST",
+          "kind": "reset",
+          "name": "CAN0",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 9,
+          "field": "CAN1RST",
+          "kind": "reset",
+          "name": "CAN1",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 10,
+          "field": "CAN2RST",
+          "kind": "reset",
+          "name": "CAN2",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 11,
+          "field": "TMR_AHBRST",
+          "kind": "reset",
+          "name": "TMR_AHB",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 13,
+          "field": "TMR_APBRST",
+          "kind": "reset",
+          "name": "TMR_APB",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        }
+      ],
+      "registers": 2171,
+      "sha256": "26fca717b9fe0438d8d8060d94dbefa125869c469193029242e82817babde923",
+      "size": 4675368,
+      "source_pack_name": "IAR Arm Device Support",
+      "source_pack_version": "9.70.4",
+      "status": "cached",
+      "unique_interrupt_values": 129
+    },
+    {
+      "device_name": "GD32A72_A74x",
+      "devices": [
+        "GD32A722AI",
+        "GD32A722AX",
+        "GD32A722AZ",
+        "GD32A722BI",
+        "GD32A722BX",
+        "GD32A722BZ",
+        "GD32A724AI",
+        "GD32A724AX",
+        "GD32A724AZ",
+        "GD32A724BI",
+        "GD32A724BX",
+        "GD32A724BZ",
+        "GD32A741AI",
+        "GD32A741AV",
+        "GD32A741AZ",
+        "GD32A742AI",
+        "GD32A742AV",
+        "GD32A742AZ",
+        "GD32A742BI",
+        "GD32A742BV",
+        "GD32A742BZ",
+        "GD32A744AI",
+        "GD32A744AV",
+        "GD32A744AX",
+        "GD32A744AZ",
+        "GD32A744BI",
+        "GD32A744BV",
+        "GD32A744BZ"
+      ],
+      "fields": 23065,
+      "generated": {
+        "chiptool_revision": "be1bff3e9e1b27b090e69bd9ac753c66fdcce678",
+        "normalization_version": 4,
+        "normalized_svd_sha256": "a13aa3069cfbdffc18066f710c6a8a30c18d760b8ec34ca589427ef53b58f6a8",
+        "outputs": {
+          "device.x": {
+            "sha256": "f26d5e170761f022746cdb70bd7f0a34ec1381f2ee52d82638463393175c067c",
+            "size": 9385
+          },
+          "lib.rs": {
+            "sha256": "e91edb52c906f5bd215f1d08855466cdc3ede647f899b6ff0c2ed66abb6aa9ce",
+            "size": 12185843
+          }
+        },
+        "schema_version": 1,
+        "svd_sha256": "a1a3c6fd1f4841425f1f28c36f3ddaf26e8bcac3e8a671171673b670d6677c16"
+      },
+      "interrupts": 224,
+      "normalizations": [
+        "identifier-whitespace:1"
+      ],
+      "normalized_sha256": "a13aa3069cfbdffc18066f710c6a8a30c18d760b8ec34ca589427ef53b58f6a8",
+      "path": "cxarm-9.70.4/arm/config/debugger/GD/GD32A72_A74x.svd",
+      "peripheral_names": [
+        "ADC0",
+        "ADC1",
+        "ADC2",
+        "BKP",
+        "BUSIM",
+        "CAN0",
+        "CAN1",
+        "CAN2",
+        "CAN3",
+        "CAN4",
+        "CAN5",
+        "CAN6",
+        "CAN7",
+        "CCTL",
+        "CLTCFG",
+        "CMP0",
+        "CMP1",
+        "CPDM",
+        "CRC",
+        "DAC0",
+        "DAC1",
+        "DBG",
+        "DMA0",
+        "DMA1",
+        "DMAMUX",
+        "ENET_DMA",
+        "ENET_MAC",
+        "ENET_MMC",
+        "ENET_MTL",
+        "EXTI",
+        "EXTMPU",
+        "FMC",
+        "FMU",
+        "FWDGT0",
+        "FWDGT1",
+        "GD_AP",
+        "GPIOA",
+        "GPIOB",
+        "GPIOC",
+        "GPIOD",
+        "GPIOE",
+        "GPIOF",
+        "GPIOG",
+        "GPIOH",
+        "GPIOI",
+        "GPIOJ",
+        "GPIOK",
+        "GPIOL",
+        "GPIOM",
+        "GPION",
+        "HSMIF",
+        "HWSEM",
+        "I2C0",
+        "I2C1",
+        "IMICU_BM1",
+        "IMICU_BM2",
+        "IOC",
+        "IRM",
+        "JDC",
+        "LIN0",
+        "LIN1",
+        "LIN10",
+        "LIN11",
+        "LIN2",
+        "LIN3",
+        "LIN4",
+        "LIN5",
+        "LIN6",
+        "LIN7",
+        "LIN8",
+        "LIN9",
+        "MCMUA",
+        "MCMUB",
+        "MFCOM",
+        "MTC",
+        "PMU",
+        "PRPU",
+        "QSPI",
+        "RCTL",
+        "RTC",
+        "SENT",
+        "SPI0",
+        "SPI1",
+        "SPI2",
+        "SPI3",
+        "SPI4",
+        "SPI5",
+        "SPI6",
+        "SPI7",
+        "SRAM",
+        "STCM",
+        "SYSCFG",
+        "TCM",
+        "TIMER0",
+        "TIMER1",
+        "TIMER19",
+        "TIMER2",
+        "TIMER20",
+        "TIMER5",
+        "TIMER6",
+        "TIMER60",
+        "TIMER61",
+        "TIMER62",
+        "TIMER63",
+        "TIMER7",
+        "TRIGSEL",
+        "USART0",
+        "USART1",
+        "USART2",
+        "USART3",
+        "USART4",
+        "USART5",
+        "WWDGT0",
+        "WWDGT1"
+      ],
+      "peripherals": 114,
+      "rcu_gates": [
+        {
+          "bit": 16,
+          "field": "HXTALEN",
+          "kind": "enable",
+          "name": "HXTAL",
+          "register": "CTL",
+          "register_offset": 0
+        },
+        {
+          "bit": 19,
+          "field": "CKMEN",
+          "kind": "enable",
+          "name": "CKM",
+          "register": "CTL",
+          "register_offset": 0
+        },
+        {
+          "bit": 24,
+          "field": "PLLEN",
+          "kind": "enable",
+          "name": "PLL",
+          "register": "CTL",
+          "register_offset": 0
+        },
+        {
+          "bit": 2,
+          "field": "OBSTDBY_RPAEN",
+          "kind": "enable",
+          "name": "OBSTDBY_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 3,
+          "field": "FMU_RPAEN",
+          "kind": "enable",
+          "name": "FMU_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 4,
+          "field": "ST_FINISH_RPAEN",
+          "kind": "enable",
+          "name": "ST_FINISH_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 6,
+          "field": "FWDGT0_RPAEN",
+          "kind": "enable",
+          "name": "FWDGT0_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 7,
+          "field": "FWDGT1_RPAEN",
+          "kind": "enable",
+          "name": "FWDGT1_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 9,
+          "field": "SWRPAEN",
+          "kind": "enable",
+          "name": "SWRPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 10,
+          "field": "WWDGT0_RPAEN",
+          "kind": "enable",
+          "name": "WWDGT0_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 11,
+          "field": "WWDGT1_RPAEN",
+          "kind": "enable",
+          "name": "WWDGT1_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 20,
+          "field": "HSM_APP_RPAEN",
+          "kind": "enable",
+          "name": "HSM_APP_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 29,
+          "field": "DBG_RPAEN",
+          "kind": "enable",
+          "name": "DBG_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 30,
+          "field": "OBL_RPAEN",
+          "kind": "enable",
+          "name": "OBL_RPA",
+          "register": "SUBSRPACTL",
+          "register_offset": 16
+        },
+        {
+          "bit": 0,
+          "field": "PAEN",
+          "kind": "enable",
+          "name": "PA",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 1,
+          "field": "PBEN",
+          "kind": "enable",
+          "name": "PB",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 2,
+          "field": "PCEN",
+          "kind": "enable",
+          "name": "PC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 3,
+          "field": "PDEN",
+          "kind": "enable",
+          "name": "PD",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 4,
+          "field": "PEEN",
+          "kind": "enable",
+          "name": "PE",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 5,
+          "field": "PFEN",
+          "kind": "enable",
+          "name": "PF",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 6,
+          "field": "PGEN",
+          "kind": "enable",
+          "name": "PG",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 7,
+          "field": "PHEN",
+          "kind": "enable",
+          "name": "PH",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 8,
+          "field": "PIEN",
+          "kind": "enable",
+          "name": "PI",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 9,
+          "field": "PJEN",
+          "kind": "enable",
+          "name": "PJ",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 10,
+          "field": "PKEN",
+          "kind": "enable",
+          "name": "PK",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 11,
+          "field": "PLEN",
+          "kind": "enable",
+          "name": "PL",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 12,
+          "field": "PMEN",
+          "kind": "enable",
+          "name": "PM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 13,
+          "field": "PNEN",
+          "kind": "enable",
+          "name": "PN",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 14,
+          "field": "DMA0EN",
+          "kind": "enable",
+          "name": "DMA0",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 15,
+          "field": "DMA1EN",
+          "kind": "enable",
+          "name": "DMA1",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 16,
+          "field": "DMAMUXEN",
+          "kind": "enable",
+          "name": "DMAMUX",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 18,
+          "field": "QSPIEN",
+          "kind": "enable",
+          "name": "QSPI",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 20,
+          "field": "CRCEN",
+          "kind": "enable",
+          "name": "CRC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 21,
+          "field": "MFCOMEN",
+          "kind": "enable",
+          "name": "MFCOM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 22,
+          "field": "MCMUAEN",
+          "kind": "enable",
+          "name": "MCMUA",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 23,
+          "field": "MCMUBEN",
+          "kind": "enable",
+          "name": "MCMUB",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 24,
+          "field": "HWSEMEN",
+          "kind": "enable",
+          "name": "HWSEM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 25,
+          "field": "HSMIFEN",
+          "kind": "enable",
+          "name": "HSMIF",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 27,
+          "field": "FMUEN",
+          "kind": "enable",
+          "name": "FMU",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 28,
+          "field": "IRMEN",
+          "kind": "enable",
+          "name": "IRM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 29,
+          "field": "IOCEN",
+          "kind": "enable",
+          "name": "IOC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 30,
+          "field": "STCMEN",
+          "kind": "enable",
+          "name": "STCM",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 31,
+          "field": "MTCEN",
+          "kind": "enable",
+          "name": "MTC",
+          "register": "AHBEN",
+          "register_offset": 20
+        },
+        {
+          "bit": 0,
+          "field": "SYSCFGEN",
+          "kind": "enable",
+          "name": "SYSCFG",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 1,
+          "field": "LIN0EN",
+          "kind": "enable",
+          "name": "LIN0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 2,
+          "field": "LIN1EN",
+          "kind": "enable",
+          "name": "LIN1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 3,
+          "field": "LIN2EN",
+          "kind": "enable",
+          "name": "LIN2",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 4,
+          "field": "LIN3EN",
+          "kind": "enable",
+          "name": "LIN3",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 5,
+          "field": "LIN4EN",
+          "kind": "enable",
+          "name": "LIN4",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 6,
+          "field": "LIN5EN",
+          "kind": "enable",
+          "name": "LIN5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 7,
+          "field": "TRIGSELEN",
+          "kind": "enable",
+          "name": "TRIGSEL",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 8,
+          "field": "ADC0EN",
+          "kind": "enable",
+          "name": "ADC0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 9,
+          "field": "ADC1EN",
+          "kind": "enable",
+          "name": "ADC1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 10,
+          "field": "TIMER0EN",
+          "kind": "enable",
+          "name": "TIMER0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 11,
+          "field": "SPI0EN",
+          "kind": "enable",
+          "name": "SPI0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 12,
+          "field": "TIMER7EN",
+          "kind": "enable",
+          "name": "TIMER7",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 13,
+          "field": "USART0EN",
+          "kind": "enable",
+          "name": "USART0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 14,
+          "field": "USART1EN",
+          "kind": "enable",
+          "name": "USART1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 15,
+          "field": "USART2EN",
+          "kind": "enable",
+          "name": "USART2",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 16,
+          "field": "SPI4EN",
+          "kind": "enable",
+          "name": "SPI4",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 17,
+          "field": "SPI5EN",
+          "kind": "enable",
+          "name": "SPI5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 18,
+          "field": "ADC2EN",
+          "kind": "enable",
+          "name": "ADC2",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 19,
+          "field": "TIMER19EN",
+          "kind": "enable",
+          "name": "TIMER19",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 20,
+          "field": "TIMER1EN",
+          "kind": "enable",
+          "name": "TIMER1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 21,
+          "field": "TIMER5EN",
+          "kind": "enable",
+          "name": "TIMER5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 22,
+          "field": "TIMER62EN",
+          "kind": "enable",
+          "name": "TIMER62",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 23,
+          "field": "CMP1EN",
+          "kind": "enable",
+          "name": "CMP1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 24,
+          "field": "USART5EN",
+          "kind": "enable",
+          "name": "USART5",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 25,
+          "field": "SPI1EN",
+          "kind": "enable",
+          "name": "SPI1",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 26,
+          "field": "CMP0EN",
+          "kind": "enable",
+          "name": "CMP0",
+          "register": "APB2EN",
+          "register_offset": 24
+        },
+        {
+          "bit": 0,
+          "field": "TIMER20EN",
+          "kind": "enable",
+          "name": "TIMER20",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 1,
+          "field": "TIMER2EN",
+          "kind": "enable",
+          "name": "TIMER2",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 2,
+          "field": "TIMER60EN",
+          "kind": "enable",
+          "name": "TIMER60",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 3,
+          "field": "TIMER6EN",
+          "kind": "enable",
+          "name": "TIMER6",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 4,
+          "field": "WWDGT0EN",
+          "kind": "enable",
+          "name": "WWDGT0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 5,
+          "field": "FWDGT0EN",
+          "kind": "enable",
+          "name": "FWDGT0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 6,
+          "field": "SPI6EN",
+          "kind": "enable",
+          "name": "SPI6",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 7,
+          "field": "SPI7EN",
+          "kind": "enable",
+          "name": "SPI7",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 8,
+          "field": "USART3EN",
+          "kind": "enable",
+          "name": "USART3",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 9,
+          "field": "USART4EN",
+          "kind": "enable",
+          "name": "USART4",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 10,
+          "field": "I2C0EN",
+          "kind": "enable",
+          "name": "I2C0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 11,
+          "field": "I2C1EN",
+          "kind": "enable",
+          "name": "I2C1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 12,
+          "field": "BKPEN",
+          "kind": "enable",
+          "name": "BKP",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 13,
+          "field": "PMUEN",
+          "kind": "enable",
+          "name": "PMU",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 14,
+          "field": "DAC0EN",
+          "kind": "enable",
+          "name": "DAC0",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 15,
+          "field": "ENETEN",
+          "kind": "enable",
+          "name": "ENET",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 16,
+          "field": "TIMER61EN",
+          "kind": "enable",
+          "name": "TIMER61",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 17,
+          "field": "TIMER63EN",
+          "kind": "enable",
+          "name": "TIMER63",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 18,
+          "field": "SENTEN",
+          "kind": "enable",
+          "name": "SENT",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 19,
+          "field": "LIN6EN",
+          "kind": "enable",
+          "name": "LIN6",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 20,
+          "field": "LIN7EN",
+          "kind": "enable",
+          "name": "LIN7",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 21,
+          "field": "LIN8EN",
+          "kind": "enable",
+          "name": "LIN8",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 22,
+          "field": "LIN9EN",
+          "kind": "enable",
+          "name": "LIN9",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 23,
+          "field": "LIN10EN",
+          "kind": "enable",
+          "name": "LIN10",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 24,
+          "field": "LIN11EN",
+          "kind": "enable",
+          "name": "LIN11",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 25,
+          "field": "DAC1EN",
+          "kind": "enable",
+          "name": "DAC1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 26,
+          "field": "WWDGT1EN",
+          "kind": "enable",
+          "name": "WWDGT1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 27,
+          "field": "FWDGT1EN",
+          "kind": "enable",
+          "name": "FWDGT1",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 28,
+          "field": "SPI2EN",
+          "kind": "enable",
+          "name": "SPI2",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 29,
+          "field": "SPI3EN",
+          "kind": "enable",
+          "name": "SPI3",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 30,
+          "field": "CLTCFGEN",
+          "kind": "enable",
+          "name": "CLTCFG",
+          "register": "APB1EN",
+          "register_offset": 28
+        },
+        {
+          "bit": 0,
+          "field": "ERPAETEN",
+          "kind": "enable",
+          "name": "ERPAET",
+          "register": "ERPACFG",
+          "register_offset": 32
+        },
+        {
+          "bit": 0,
+          "field": "LXTALEN",
+          "kind": "enable",
+          "name": "LXTAL",
+          "register": "BDCTL",
+          "register_offset": 32
+        },
+        {
+          "bit": 15,
+          "field": "RTCEN",
+          "kind": "enable",
+          "name": "RTC",
+          "register": "BDCTL",
+          "register_offset": 32
+        },
+        {
+          "bit": 0,
+          "field": "CAN0EN",
+          "kind": "enable",
+          "name": "CAN0",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 1,
+          "field": "CAN1EN",
+          "kind": "enable",
+          "name": "CAN1",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 2,
+          "field": "CAN2EN",
+          "kind": "enable",
+          "name": "CAN2",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 3,
+          "field": "CAN3EN",
+          "kind": "enable",
+          "name": "CAN3",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 4,
+          "field": "CAN4EN",
+          "kind": "enable",
+          "name": "CAN4",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 5,
+          "field": "CAN5EN",
+          "kind": "enable",
+          "name": "CAN5",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 6,
+          "field": "CAN6EN",
+          "kind": "enable",
+          "name": "CAN6",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 7,
+          "field": "CAN7EN",
+          "kind": "enable",
+          "name": "CAN7",
+          "register": "APB2EN_ADD",
+          "register_offset": 36
+        },
+        {
+          "bit": 0,
+          "field": "CM7_0_EN",
+          "kind": "enable",
+          "name": "CM7_0_",
+          "register": "AHBEN_ADD",
+          "register_offset": 40
+        },
+        {
+          "bit": 0,
+          "field": "SUBSRTOEN",
+          "kind": "enable",
+          "name": "SUBSRTO",
+          "register": "SUBSRTO",
+          "register_offset": 40
+        },
+        {
+          "bit": 1,
+          "field": "CM7_1_EN",
+          "kind": "enable",
+          "name": "CM7_1_",
+          "register": "AHBEN_ADD",
+          "register_offset": 40
+        },
+        {
+          "bit": 0,
+          "field": "CKD0_FDEN",
+          "kind": "enable",
+          "name": "CKD0_FD",
+          "register": "CKDCTL",
+          "register_offset": 60
+        },
+        {
+          "bit": 8,
+          "field": "CKD1_FDEN",
+          "kind": "enable",
+          "name": "CKD1_FD",
+          "register": "CKDCTL",
+          "register_offset": 60
+        },
+        {
+          "bit": 16,
+          "field": "CKD2_FDEN",
+          "kind": "enable",
+          "name": "CKD2_FD",
+          "register": "CKDCTL",
+          "register_offset": 60
+        },
+        {
+          "bit": 0,
+          "field": "TMR_RCU_SUBSERSTATEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SUBSERSTAT",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 2,
+          "field": "TMR_RCU_SUBSRCTLEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SUBSRCTL",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 4,
+          "field": "TMR_RCU_SUBSRPACTLEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SUBSRPACTL",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 6,
+          "field": "TMR_RCU_SYSMRUTHEN",
+          "kind": "enable",
+          "name": "TMR_RCU_SYSMRUTH",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 8,
+          "field": "TMR_RCU_ERPACFGEN",
+          "kind": "enable",
+          "name": "TMR_RCU_ERPACFG",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 10,
+          "field": "TMR_AHBRSTEN",
+          "kind": "enable",
+          "name": "TMR_AHBRST",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 12,
+          "field": "TMR_APBRSTEN",
+          "kind": "enable",
+          "name": "TMR_APBRST",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 16,
+          "field": "TMR_PORWDG1EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG1",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 18,
+          "field": "TMR_PORWDG2EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG2",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 20,
+          "field": "TMR_PORWDG3EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG3",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 22,
+          "field": "TMR_PORWDG4EN",
+          "kind": "enable",
+          "name": "TMR_PORWDG4",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 15,
+          "field": "PLLFRAEN",
+          "kind": "enable",
+          "name": "PLLFRA",
+          "register": "PLLFRA",
+          "register_offset": 152
+        },
+        {
+          "bit": 0,
+          "field": "PARST",
+          "kind": "reset",
+          "name": "PA",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 1,
+          "field": "PBRST",
+          "kind": "reset",
+          "name": "PB",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 2,
+          "field": "PCRST",
+          "kind": "reset",
+          "name": "PC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 3,
+          "field": "PDRST",
+          "kind": "reset",
+          "name": "PD",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 4,
+          "field": "PERST",
+          "kind": "reset",
+          "name": "PE",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 5,
+          "field": "PFRST",
+          "kind": "reset",
+          "name": "PF",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 6,
+          "field": "PGRST",
+          "kind": "reset",
+          "name": "PG",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 7,
+          "field": "PHRST",
+          "kind": "reset",
+          "name": "PH",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 8,
+          "field": "PIRST",
+          "kind": "reset",
+          "name": "PI",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 9,
+          "field": "PJRST",
+          "kind": "reset",
+          "name": "PJ",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 10,
+          "field": "PKRST",
+          "kind": "reset",
+          "name": "PK",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 11,
+          "field": "PLRST",
+          "kind": "reset",
+          "name": "PL",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 12,
+          "field": "PMRST",
+          "kind": "reset",
+          "name": "PM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 13,
+          "field": "PNRST",
+          "kind": "reset",
+          "name": "PN",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 14,
+          "field": "DMA0RST",
+          "kind": "reset",
+          "name": "DMA0",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 15,
+          "field": "DMA1RST",
+          "kind": "reset",
+          "name": "DMA1",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 16,
+          "field": "DMAMUXRST",
+          "kind": "reset",
+          "name": "DMAMUX",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 18,
+          "field": "QSPIRST",
+          "kind": "reset",
+          "name": "QSPI",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 20,
+          "field": "CRCRST",
+          "kind": "reset",
+          "name": "CRC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 21,
+          "field": "MFCOMRST",
+          "kind": "reset",
+          "name": "MFCOM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 22,
+          "field": "MCMUARST",
+          "kind": "reset",
+          "name": "MCMUA",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 23,
+          "field": "MCMUBRST",
+          "kind": "reset",
+          "name": "MCMUB",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 24,
+          "field": "HWSEMRST",
+          "kind": "reset",
+          "name": "HWSEM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 25,
+          "field": "HSMIFRST",
+          "kind": "reset",
+          "name": "HSMIF",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 28,
+          "field": "IRMRST",
+          "kind": "reset",
+          "name": "IRM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 29,
+          "field": "IOCRST",
+          "kind": "reset",
+          "name": "IOC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 30,
+          "field": "STCMRST",
+          "kind": "reset",
+          "name": "STCM",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 31,
+          "field": "MTCRST",
+          "kind": "reset",
+          "name": "MTC",
+          "register": "AHBRST",
+          "register_offset": 48
+        },
+        {
+          "bit": 0,
+          "field": "TIMER20RST",
+          "kind": "reset",
+          "name": "TIMER20",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 1,
+          "field": "TIMER2RST",
+          "kind": "reset",
+          "name": "TIMER2",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 2,
+          "field": "TIMER60RST",
+          "kind": "reset",
+          "name": "TIMER60",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 3,
+          "field": "TIMER6RST",
+          "kind": "reset",
+          "name": "TIMER6",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 4,
+          "field": "WWDGT0RST",
+          "kind": "reset",
+          "name": "WWDGT0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 5,
+          "field": "FWDGT0RST",
+          "kind": "reset",
+          "name": "FWDGT0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 6,
+          "field": "SPI6RST",
+          "kind": "reset",
+          "name": "SPI6",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 7,
+          "field": "SPI7RST",
+          "kind": "reset",
+          "name": "SPI7",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 8,
+          "field": "USART3RST",
+          "kind": "reset",
+          "name": "USART3",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 9,
+          "field": "USART4RST",
+          "kind": "reset",
+          "name": "USART4",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 10,
+          "field": "I2C0RST",
+          "kind": "reset",
+          "name": "I2C0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 11,
+          "field": "I2C1RST",
+          "kind": "reset",
+          "name": "I2C1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 12,
+          "field": "BKPRST",
+          "kind": "reset",
+          "name": "BKP",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 14,
+          "field": "DAC0RST",
+          "kind": "reset",
+          "name": "DAC0",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 15,
+          "field": "ENETRST",
+          "kind": "reset",
+          "name": "ENET",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 16,
+          "field": "TIMER61RST",
+          "kind": "reset",
+          "name": "TIMER61",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 17,
+          "field": "TIMER63RST",
+          "kind": "reset",
+          "name": "TIMER63",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 18,
+          "field": "SENTRST",
+          "kind": "reset",
+          "name": "SENT",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 19,
+          "field": "LIN6RST",
+          "kind": "reset",
+          "name": "LIN6",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 20,
+          "field": "LIN7RST",
+          "kind": "reset",
+          "name": "LIN7",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 21,
+          "field": "LIN8RST",
+          "kind": "reset",
+          "name": "LIN8",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 22,
+          "field": "LIN9RST",
+          "kind": "reset",
+          "name": "LIN9",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 23,
+          "field": "LIN10RST",
+          "kind": "reset",
+          "name": "LIN10",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 24,
+          "field": "LIN11RST",
+          "kind": "reset",
+          "name": "LIN11",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 25,
+          "field": "DAC1RST",
+          "kind": "reset",
+          "name": "DAC1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 26,
+          "field": "WWDGT1RST",
+          "kind": "reset",
+          "name": "WWDGT1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 27,
+          "field": "FWDGT1RST",
+          "kind": "reset",
+          "name": "FWDGT1",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 28,
+          "field": "SPI2RST",
+          "kind": "reset",
+          "name": "SPI2",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 29,
+          "field": "SPI3RST",
+          "kind": "reset",
+          "name": "SPI3",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 30,
+          "field": "CLTCFGRST",
+          "kind": "reset",
+          "name": "CLTCFG",
+          "register": "APB1RST",
+          "register_offset": 52
+        },
+        {
+          "bit": 0,
+          "field": "CFGRST",
+          "kind": "reset",
+          "name": "CFG",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 1,
+          "field": "LIN0RST",
+          "kind": "reset",
+          "name": "LIN0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 2,
+          "field": "LIN1RST",
+          "kind": "reset",
+          "name": "LIN1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 3,
+          "field": "LIN2RST",
+          "kind": "reset",
+          "name": "LIN2",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 4,
+          "field": "LIN3RST",
+          "kind": "reset",
+          "name": "LIN3",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 5,
+          "field": "LIN4RST",
+          "kind": "reset",
+          "name": "LIN4",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 6,
+          "field": "LIN5RST",
+          "kind": "reset",
+          "name": "LIN5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 8,
+          "field": "ADC0RST",
+          "kind": "reset",
+          "name": "ADC0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 9,
+          "field": "ADC1RST",
+          "kind": "reset",
+          "name": "ADC1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 10,
+          "field": "TIMER0RST",
+          "kind": "reset",
+          "name": "TIMER0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 11,
+          "field": "SPI0RST",
+          "kind": "reset",
+          "name": "SPI0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 12,
+          "field": "TIMER7RST",
+          "kind": "reset",
+          "name": "TIMER7",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 13,
+          "field": "USART0RST",
+          "kind": "reset",
+          "name": "USART0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 14,
+          "field": "USART1RST",
+          "kind": "reset",
+          "name": "USART1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 15,
+          "field": "USART2RST",
+          "kind": "reset",
+          "name": "USART2",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 16,
+          "field": "SPI4RST",
+          "kind": "reset",
+          "name": "SPI4",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 17,
+          "field": "SPI5RST",
+          "kind": "reset",
+          "name": "SPI5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 19,
+          "field": "TIMER19RST",
+          "kind": "reset",
+          "name": "TIMER19",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 20,
+          "field": "TIMER1RST",
+          "kind": "reset",
+          "name": "TIMER1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 21,
+          "field": "TIMER5RST",
+          "kind": "reset",
+          "name": "TIMER5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 22,
+          "field": "TIMER62RST",
+          "kind": "reset",
+          "name": "TIMER62",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 23,
+          "field": "CMP1RST",
+          "kind": "reset",
+          "name": "CMP1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 24,
+          "field": "USART5RST",
+          "kind": "reset",
+          "name": "USART5",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 25,
+          "field": "SPI1RST",
+          "kind": "reset",
+          "name": "SPI1",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 26,
+          "field": "CMP0RST",
+          "kind": "reset",
+          "name": "CMP0",
+          "register": "APB2RST",
+          "register_offset": 56
+        },
+        {
+          "bit": 0,
+          "field": "CAN0RST",
+          "kind": "reset",
+          "name": "CAN0",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 1,
+          "field": "CAN1RST",
+          "kind": "reset",
+          "name": "CAN1",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 2,
+          "field": "CAN2RST",
+          "kind": "reset",
+          "name": "CAN2",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 3,
+          "field": "CAN3RST",
+          "kind": "reset",
+          "name": "CAN3",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 4,
+          "field": "CAN4RST",
+          "kind": "reset",
+          "name": "CAN4",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 5,
+          "field": "CAN5RST",
+          "kind": "reset",
+          "name": "CAN5",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 6,
+          "field": "CAN6RST",
+          "kind": "reset",
+          "name": "CAN6",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 7,
+          "field": "CAN7RST",
+          "kind": "reset",
+          "name": "CAN7",
+          "register": "APB2RST_ADD",
+          "register_offset": 60
+        },
+        {
+          "bit": 11,
+          "field": "TMR_AHBRST",
+          "kind": "reset",
+          "name": "TMR_AHB",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        },
+        {
+          "bit": 13,
+          "field": "TMR_APBRST",
+          "kind": "reset",
+          "name": "TMR_APB",
+          "register": "TMRERRSTAT",
+          "register_offset": 80
+        }
+      ],
+      "registers": 3018,
+      "sha256": "a1a3c6fd1f4841425f1f28c36f3ddaf26e8bcac3e8a671171673b670d6677c16",
+      "size": 7848311,
+      "source_pack_name": "IAR Arm Device Support",
+      "source_pack_version": "9.70.4",
+      "status": "cached",
+      "unique_interrupt_values": 224
+    }
+  ]
+}

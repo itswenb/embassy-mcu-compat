@@ -1,0 +1,25 @@
+{
+  "missing_exact_target": [],
+  "provenance": {
+    "cargo_toml_sha256": "74d2aa920a6312854f9b24ba4a1557035b7289047f6f5bcf793efa8a4f91f03c",
+    "generation_marker_sha256": "ad2d1fc926227abfc78da0e35ca13914954db4db66064f366bb8bf2ef882c132",
+    "models_sha256": "8181922b6aef25903330d6e3c7c1544650dd60108fd18aa535903468ffe9f550",
+    "validation_source_sha256": "b89a9a4cd6574676a44a783146da6e05362469e199b4c32c0085d5c3d1c4bcb2"
+  },
+  "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
+  "schema_version": 1,
+  "summary": {
+    "devices": 680,
+    "failed": 0,
+    "features_compiled_for_exact_target": 680,
+    "features_missing_exact_target": 0,
+    "features_validated": 680,
+    "metadata_groups": 180,
+    "metadata_groups_compiled": 180,
+    "metadata_wrappers_validated": 680,
+    "pac_groups": 54,
+    "pac_groups_compiled": 54,
+    "riscv_features_compiled_for_exact_target": 18,
+    "riscv_pacs_validated": 18
+  }
+}
