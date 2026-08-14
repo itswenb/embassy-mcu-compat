@@ -162,6 +162,7 @@ patch_workspace="$(mktemp -d "$repo_root/.cache/generated/.stm32-patch.XXXXXX")"
 trap 'rm -rf "$patch_workspace"' EXIT
 cargo run --quiet --bin mcu-compat-gen -- generate \
     --official-generated "$official_generated" \
+    --include-test \
     --output "$patch_workspace/output"
 mkdir -p .cache/generated/stm32-metapac-patch-v1
 rsync -a --delete "$patch_workspace/output/" .cache/generated/stm32-metapac-patch-v1/

@@ -5,10 +5,22 @@ from pathlib import Path
 
 
 SCRIPT = Path(__file__).parents[1] / "sync-generated-repository.sh"
+PIPELINE = Path(__file__).parents[1] / "sync-gigadevice-sources.sh"
 WORKFLOW = Path(__file__).parents[2] / ".github/workflows/update-sources.yml"
 
 
 class SyncGeneratedRepositoryTests(unittest.TestCase):
+    def test_发布补丁显式包含示例兼容映射(self):
+        pipeline = PIPELINE.read_text(encoding="utf-8")
+        generate = (
+            "cargo run --quiet --bin mcu-compat-gen -- generate \\\n"
+            '    --official-generated "$official_generated" \\\n'
+            '    --include-test \\\n'
+            '    --output "$patch_workspace/output"'
+        )
+
+        self.assertIn(generate, pipeline)
+
     def test_定时任务在提交前同步generated发布树(self):
         workflow = WORKFLOW.read_text(encoding="utf-8")
         sync = (
