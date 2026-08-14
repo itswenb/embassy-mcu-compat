@@ -73,15 +73,32 @@ class PublishMcuMetapacTests(unittest.TestCase):
                 '[package]\nname = "stm32-metapac"\nversion = "1.0.0"\n',
                 encoding="utf-8",
             )
-            (patch / "generation.json").write_text("{}\n", encoding="utf-8")
+            patch_generation = {
+                "chips": [
+                    {"chip": "gd32test000", "profile": "stm32f103c8"},
+                    {"chip": "gd32test001", "profile": "stm32f103cb"},
+                ]
+            }
+            (patch / "generation.json").write_text(
+                json.dumps(patch_generation) + "\n", encoding="utf-8"
+            )
             (patch / "README.md").write_text("# stm32-metapac\n", encoding="utf-8")
             (patch / "src/lib.rs").write_text("#![no_std]\n", encoding="utf-8")
-            (native / "Cargo.toml").write_text(native_manifest(3), encoding="utf-8")
+            patch_compat = (
+                'pub static COMPATIBLE_CHIPS: &[(&str, &str)] = &[\n'
+                '    ("gd32test000", "stm32f103c8"),\n'
+                '    ("gd32test001", "stm32f103cb"),\n'
+                '];\n'
+            )
+            (patch / "src/compat.rs").write_text(patch_compat, encoding="utf-8")
+            for chip in ("gd32test000", "gd32test001"):
+                (patch / "src/chips" / chip).mkdir(parents=True)
+            (native / "Cargo.toml").write_text(native_manifest(4), encoding="utf-8")
             (native / ".m32-metapac-generation.json").write_text(
-                '{"chips":3,"riscv_devices":["GD32TEST002"]}\n', encoding="utf-8"
+                '{"chips":4,"riscv_devices":["GD32TEST003"]}\n', encoding="utf-8"
             )
             (native / "src/lib.rs").write_text("#![no_std]\n", encoding="utf-8")
-            write_all_chips(native, 3)
+            write_all_chips(native, 4)
             (native / "target").mkdir()
             (native / "target/ignored").write_text("x", encoding="utf-8")
             compile_report = root / "compile.json"
@@ -103,22 +120,18 @@ class PublishMcuMetapacTests(unittest.TestCase):
             self.assertIn('name = "mcu-metapac"', native_manifest_text)
             self.assertFalse((output / "mcu-metapac/target").exists())
             self.assertIn(
-                "3 个原生 MCU",
+                "4 个原生 MCU",
                 (output / "mcu-metapac/README.md").read_text(encoding="utf-8"),
             )
             compat = (output / "src/compat.rs").read_text(encoding="utf-8")
-            self.assertEqual(
-                compat,
-                'include!("../mcu-metapac/src/all_chips.rs");\n'
-                'include!("../mcu-metapac/src/riscv_chips.rs");\n',
-            )
+            self.assertEqual(compat, patch_compat)
             self.assertEqual(
                 (output / "mcu-metapac/src/riscv_chips.rs").read_text(
                     encoding="utf-8"
                 ),
-                'pub static RISCV_CHIPS: &[&str] = &[\n    "gd32test002",\n];\n',
+                'pub static RISCV_CHIPS: &[&str] = &[\n    "gd32test003",\n];\n',
             )
-            self.assertEqual(report["native_chips"], 3)
+            self.assertEqual(report["native_chips"], 4)
             self.assertEqual(report["embassy_compatible_chips"], 2)
             self.assertEqual(report["riscv_chips"], 1)
             self.assertTrue((output / "release/gigadevice-metapac-compile.json").is_file())
@@ -151,8 +164,13 @@ class PublishMcuMetapacTests(unittest.TestCase):
             (patch / "Cargo.toml").write_text(
                 '[package]\nname = "stm32-metapac"\n', encoding="utf-8"
             )
-            (patch / "generation.json").write_text("{}\n", encoding="utf-8")
+            (patch / "generation.json").write_text('{"chips":[]}\n', encoding="utf-8")
             (patch / "README.md").write_text("# stm32-metapac\n", encoding="utf-8")
+            (patch / "src").mkdir()
+            (patch / "src/compat.rs").write_text(
+                "pub static COMPATIBLE_CHIPS: &[(&str, &str)] = &[];\n",
+                encoding="utf-8",
+            )
             (native / "Cargo.toml").write_text(native_manifest(3), encoding="utf-8")
             (native / ".m32-metapac-generation.json").write_text(
                 '{"chips":3}\n', encoding="utf-8"
@@ -194,8 +212,13 @@ class PublishMcuMetapacTests(unittest.TestCase):
             (patch / "Cargo.toml").write_text(
                 '[package]\nname = "stm32-metapac"\n', encoding="utf-8"
             )
-            (patch / "generation.json").write_text("{}\n", encoding="utf-8")
+            (patch / "generation.json").write_text('{"chips":[]}\n', encoding="utf-8")
             (patch / "README.md").write_text("# stm32-metapac\n", encoding="utf-8")
+            (patch / "src").mkdir()
+            (patch / "src/compat.rs").write_text(
+                "pub static COMPATIBLE_CHIPS: &[(&str, &str)] = &[];\n",
+                encoding="utf-8",
+            )
             (native / "Cargo.toml").write_text(native_manifest(2), encoding="utf-8")
             (native / ".m32-metapac-generation.json").write_text(
                 '{"chips":3}\n', encoding="utf-8"
@@ -220,8 +243,13 @@ class PublishMcuMetapacTests(unittest.TestCase):
             (patch / "Cargo.toml").write_text(
                 '[package]\nname = "stm32-metapac"\n', encoding="utf-8"
             )
-            (patch / "generation.json").write_text("{}\n", encoding="utf-8")
+            (patch / "generation.json").write_text('{"chips":[]}\n', encoding="utf-8")
             (patch / "README.md").write_text("# stm32-metapac\n", encoding="utf-8")
+            (patch / "src").mkdir()
+            (patch / "src/compat.rs").write_text(
+                "pub static COMPATIBLE_CHIPS: &[(&str, &str)] = &[];\n",
+                encoding="utf-8",
+            )
             (native / "Cargo.toml").write_text(native_manifest(3), encoding="utf-8")
             (native / ".m32-metapac-generation.json").write_text(
                 '{"chips":3}\n', encoding="utf-8"

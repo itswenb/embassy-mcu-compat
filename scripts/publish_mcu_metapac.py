@@ -29,7 +29,7 @@ NATIVE_README = """# mcu-metapac
 ROOT_NOTICE = """## Embassy STM32 零修改兼容入口
 
 根 `stm32-metapac` 包允许未修改的 `embassy-stm32` 使用 {compatible_chips} 个 Cortex-M
-GD32 真实型号。应用选择一个合适的 STM32 feature，并通过环境变量选择真实芯片：
+GD32 真实型号。STM32 feature 必须使用生成矩阵给出的唯一 profile，并通过环境变量选择真实芯片：
 
 ```toml
 [dependencies]
@@ -44,7 +44,7 @@ stm32-metapac = {{ git = "https://github.com/itswenb/embassy-mcu-compat-generate
 EMBASSY_MCU_COMPAT_CHIP = "gd32f303cb"
 ```
 
-真实型号与 STM32 feature 不做固定映射；使用者负责选择架构及外设拓扑相近的 feature。
+错误的 STM32 feature 会在编译期报告该真实型号要求的 profile。
 
 ## 原生 GD32 PAC
 
@@ -92,20 +92,35 @@ def _add_workspace(manifest: Path) -> None:
     )
 
 
-def _write_chip_bridge(path: Path) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        'include!("../mcu-metapac/src/all_chips.rs");\n'
-        'include!("../mcu-metapac/src/riscv_chips.rs");\n',
-        encoding="utf-8",
-    )
-
-
 def _write_riscv_chips(path: Path, chips: set[str]) -> None:
     lines = ["pub static RISCV_CHIPS: &[&str] = &["]
     lines.extend(f"    {json.dumps(chip)}," for chip in sorted(chips))
     lines.extend(["];", ""])
     path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def _patch_projections(patch: Path, generation: dict[str, object]) -> dict[str, str]:
+    rows = generation.get("chips")
+    if not isinstance(rows, list):
+        raise ValueError("兼容 patch 生成清单缺少 chips")
+    projections = {}
+    for row in rows:
+        if not isinstance(row, dict) or not isinstance(row.get("chip"), str) or not isinstance(row.get("profile"), str):
+            raise ValueError("兼容 patch 生成清单包含无效投影")
+        chip = str(row["chip"])
+        if chip in projections:
+            raise ValueError(f"兼容 patch 生成清单包含重复型号：{chip}")
+        if not (patch / "src/chips" / chip).is_dir():
+            raise ValueError(f"兼容 patch 缺少投影目录：{chip}")
+        projections[chip] = str(row["profile"])
+
+    compat = (patch / "src/compat.rs").read_text(encoding="utf-8")
+    pairs = dict(
+        re.findall(r'^\s*\("([a-z0-9-]+)",\s*"(stm32[a-z0-9-]+)"\),\s*$', compat, re.MULTILINE)
+    )
+    if pairs != projections:
+        raise ValueError("COMPATIBLE_CHIPS 与 patch 生成清单不一致")
+    return projections
 
 
 def build_publication(
@@ -128,6 +143,8 @@ def build_publication(
     ):
         raise ValueError(f"旧输出缺少完整发布标记，拒绝替换：{output}")
     native_generation = json.loads(native_marker.read_text(encoding="utf-8"))
+    patch_generation = json.loads(patch_marker.read_text(encoding="utf-8"))
+    projections = _patch_projections(patch, patch_generation)
     chips = int(native_generation["chips"])
     manifest_data = tomllib.loads((native / "Cargo.toml").read_text(encoding="utf-8"))
     features = sorted(
@@ -154,7 +171,6 @@ def build_publication(
     }
     if missing := riscv - set(features):
         raise ValueError(f"RISC-V 型号不在原生 feature 中：{', '.join(sorted(missing))}")
-    compatible_features = [feature for feature in features if feature not in riscv]
     compile_data = json.loads(compile_report.read_text(encoding="utf-8"))
     summary = compile_data.get("summary", {})
     if (
@@ -181,12 +197,11 @@ def build_publication(
         _add_workspace(temporary / "Cargo.toml")
         _replace_package_name(native_output / "Cargo.toml")
         _write_riscv_chips(native_output / "src/riscv_chips.rs", riscv)
-        _write_chip_bridge(temporary / "src/compat.rs")
         root_readme = temporary / "README.md"
         root_readme.write_text(
             root_readme.read_text(encoding="utf-8").rstrip()
             + "\n\n"
-            + ROOT_NOTICE.format(chips=chips, compatible_chips=len(compatible_features)),
+            + ROOT_NOTICE.format(chips=chips, compatible_chips=len(projections)),
             encoding="utf-8",
         )
         (native_output / "README.md").write_text(
@@ -198,7 +213,7 @@ def build_publication(
         report = {
             "schema_version": 1,
             "native_chips": chips,
-            "embassy_compatible_chips": len(compatible_features),
+            "embassy_compatible_chips": len(projections),
             "riscv_chips": len(riscv),
             "patch_tree_sha256": common.tree_sha256(patch),
             "native_tree_sha256": common.tree_sha256(native),
