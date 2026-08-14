@@ -10,12 +10,12 @@ if [[ "${1:-}" == "--phase" ]]; then
     phase="$2"
     shift 2
 fi
-if [[ "$phase" != "all" && "$phase" != "prepare" && "$phase" != "derive" && "$phase" != "publish" ]]; then
+if [[ "$phase" != "all" && "$phase" != "prepare" && "$phase" != "normalize" && "$phase" != "derive" && "$phase" != "publish" ]]; then
     echo "未知同步阶段：$phase" >&2
     exit 2
 fi
 if [[ $# -gt 1 ]]; then
-    echo "用法：$0 [--phase prepare|derive|publish] [cmsis-rust-target-db 仓库]" >&2
+    echo "用法：$0 [--phase prepare|normalize|derive|publish] [cmsis-rust-target-db 仓库]" >&2
     exit 2
 fi
 
@@ -110,13 +110,18 @@ if [[ ! -d "$target_db_repo" ]]; then
 fi
 target_db_repo="$(cd "$target_db_repo" && pwd)"
 
+builder_sha="$(python3 -c 'import json; print(json.load(open("sources/gigadevice/builder.lock.json", encoding="utf-8"))["builder"]["sha256"][:12])')"
+builder_adapter=".cache/research/gigadevice/builder-firmware-adapter-v1/$builder_sha"
+iar_sha="$(python3 -c 'import json; print(json.load(open("sources/gigadevice/iar.lock.json", encoding="utf-8"))["iar"]["sha256"][:12])')"
+iar_root=".cache/research/gigadevice/iar-device-support-v1/$iar_sha"
+
+if [[ "$phase" != "derive" ]]; then
+
 python3 scripts/scan_gigadevice_programmer.py
 python3 scripts/index_gigadevice_programmer.py
 
 python3 scripts/index_gigadevice_builder_firmware.py
 python3 scripts/adapt_gigadevice_builder_firmware.py
-builder_sha="$(python3 -c 'import json; print(json.load(open("sources/gigadevice/builder.lock.json", encoding="utf-8"))["builder"]["sha256"][:12])')"
-builder_adapter=".cache/research/gigadevice/builder-firmware-adapter-v1/$builder_sha"
 
 python3 scripts/extract_gigadevice_manual_text.py
 python3 scripts/extract_gigadevice_manual_text.py --kind datasheet
@@ -126,8 +131,6 @@ python3 scripts/index_gigadevice_riscv.py
 
 scripts/generate-gigadevice-target-db.sh "$target_db_repo"
 python3 scripts/normalize_gigadevice_models.py
-iar_sha="$(python3 -c 'import json; print(json.load(open("sources/gigadevice/iar.lock.json", encoding="utf-8"))["iar"]["sha256"][:12])')"
-iar_root=".cache/research/gigadevice/iar-device-support-v1/$iar_sha"
 python3 scripts/gigadevice_iar.py --locked
 python3 scripts/analyze_gigadevice_builder_models.py
 python3 scripts/normalize_gigadevice_builder_pins.py
@@ -147,6 +150,14 @@ python3 scripts/compile_gigadevice_pacs.py \
     --audit reports/gigadevice-iar-svd-audit.json \
     --output reports/gigadevice-iar-pac-compile.json \
     --minimum-pac-outputs 3
+
+fi
+
+if [[ "$phase" == "normalize" ]]; then
+    echo "来源归一阶段完成。"
+    exit 0
+fi
+
 python3 scripts/index_gigadevice_firmware_headers.py
 python3 scripts/extract_gigadevice_firmware_registers.py
 python3 scripts/build_gigadevice_firmware_variants.py

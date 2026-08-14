@@ -48,7 +48,7 @@ jobs:
       - name: 更新并锁定来源
         run: scripts/sync-gigadevice-sources.sh --phase prepare
 
-  derive:
+  normalize:
     needs: prepare
     runs-on: ubuntu-latest
     timeout-minutes: 60
@@ -78,7 +78,48 @@ jobs:
           sudo apt-get update
           sudo apt-get install --yes libarchive-tools libdigest-sha-perl poppler-utils
 
-      - name: 恢复来源并保存派生状态
+      - name: 恢复来源并保存归一状态
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            .cache/research
+            .cache/tools
+            .cache/generated
+            sources/gigadevice
+            reports
+          key: gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-normalize
+          restore-keys: |
+            gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-prepare
+
+      - name: 归一并验证 SVD 数据
+        run: scripts/sync-gigadevice-sources.sh --phase normalize
+
+  derive:
+    needs: normalize
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GIGADEVICE_ACCEPT_SLA_GD0001: "1"
+      GIGADEVICE_ACCEPT_SLA_GD0003: "1"
+      GIGADEVICE_ACCEPT_SLA_GD0006: "1"
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: 安装固定 Rust 工具链
+        run: |
+          rustup toolchain install nightly-2025-12-11 --profile minimal --component rust-src --component rustfmt --component clippy \
+            --target riscv32imac-unknown-none-elf \
+            --target riscv32imafc-unknown-none-elf \
+            --target thumbv7em-none-eabihf \
+            --target thumbv7m-none-eabi \
+            --target thumbv8m.base-none-eabi \
+            --target thumbv8m.main-none-eabihf
+          rustup default nightly-2025-12-11
+
+      - name: 恢复归一状态并保存派生状态
         uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
           path: |
@@ -89,7 +130,7 @@ jobs:
             reports
           key: gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-derive
           restore-keys: |
-            gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-prepare
+            gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-normalize
 
       - name: 派生并验证原生数据
         run: scripts/sync-gigadevice-sources.sh --phase derive
