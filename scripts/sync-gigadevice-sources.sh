@@ -1,8 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+phase="all"
+if [[ "${1:-}" == "--phase" ]]; then
+    if [[ $# -lt 2 ]]; then
+        echo "--phase 缺少阶段名" >&2
+        exit 2
+    fi
+    phase="$2"
+    shift 2
+fi
+if [[ "$phase" != "all" && "$phase" != "prepare" && "$phase" != "derive" && "$phase" != "publish" ]]; then
+    echo "未知同步阶段：$phase" >&2
+    exit 2
+fi
 if [[ $# -gt 1 ]]; then
-    echo "用法：$0 [cmsis-rust-target-db 仓库]" >&2
+    echo "用法：$0 [--phase prepare|derive|publish] [cmsis-rust-target-db 仓库]" >&2
     exit 2
 fi
 
@@ -64,6 +77,15 @@ if [[ "$action" == "noop" ]]; then
     echo "官网来源与派生流水线均无变化，跳过生成和编译。"
     exit 0
 fi
+
+if [[ "$phase" == "prepare" ]]; then
+    echo "来源准备阶段完成。"
+    exit 0
+fi
+
+projection_manifest=".cache/generated/gigadevice-embassy-projections-v1.json"
+
+if [[ "$phase" != "publish" ]]; then
 
 required_upstream=(embassy stm32-data stm32-data-generated chiptool)
 sync_upstream=0
@@ -152,7 +174,6 @@ python3 scripts/generate_gigadevice_firmware_pacs.py \
     --variants reports/gigadevice-merged-firmware-variants.json
 python3 scripts/analyze_gigadevice_stm32_register_compat.py
 python3 scripts/generate_gigadevice_stm32_data.py
-projection_manifest=".cache/generated/gigadevice-embassy-projections-v1.json"
 python3 scripts/generate_gigadevice_embassy_projection.py \
     --manifest "$projection_manifest"
 cargo run --quiet --bin m32-metapac-gen -- \
@@ -165,6 +186,14 @@ python3 scripts/augment_gigadevice_iar_metapac.py \
 python3 scripts/check_gigadevice_metapac.py \
     --metapac-dir .cache/generated/gigadevice-metapac-complete-v1 \
     --offline
+
+fi
+
+if [[ "$phase" == "derive" ]]; then
+    echo "数据派生阶段完成。"
+    exit 0
+fi
+
 python3 scripts/compare_gigadevice_svd_headers.py
 python3 scripts/build_gigadevice_mcu_data.py \
     --variants reports/gigadevice-merged-firmware-variants.json

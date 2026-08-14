@@ -14,7 +14,88 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GIGADEVICE_ACCEPT_SLA_GD0001: "1"
+      GIGADEVICE_ACCEPT_SLA_GD0003: "1"
+      GIGADEVICE_ACCEPT_SLA_GD0006: "1"
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: 安装来源处理工具
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes libarchive-tools libdigest-sha-perl poppler-utils
+
+      - name: 恢复并保存来源状态
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            .cache/research
+            .cache/tools
+            sources/gigadevice
+            reports
+          key: gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-prepare
+          restore-keys: |
+            gd32-pipeline-v2-${{ runner.os }}-
+            gd32-sources-v1-${{ runner.os }}-
+
+      - name: 更新并锁定来源
+        run: scripts/sync-gigadevice-sources.sh --phase prepare
+
+  derive:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GIGADEVICE_ACCEPT_SLA_GD0001: "1"
+      GIGADEVICE_ACCEPT_SLA_GD0003: "1"
+      GIGADEVICE_ACCEPT_SLA_GD0006: "1"
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: 安装固定 Rust 工具链
+        run: |
+          rustup toolchain install nightly-2025-12-11 --profile minimal --component rust-src --component rustfmt --component clippy \
+            --target riscv32imac-unknown-none-elf \
+            --target riscv32imafc-unknown-none-elf \
+            --target thumbv7em-none-eabihf \
+            --target thumbv7m-none-eabi \
+            --target thumbv8m.base-none-eabi \
+            --target thumbv8m.main-none-eabihf
+          rustup default nightly-2025-12-11
+
+      - name: 安装来源处理工具
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes libarchive-tools libdigest-sha-perl poppler-utils
+
+      - name: 恢复来源并保存派生状态
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            .cache/research
+            .cache/tools
+            .cache/generated
+            sources/gigadevice
+            reports
+          key: gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-derive
+          restore-keys: |
+            gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-prepare
+
+      - name: 派生并验证原生数据
+        run: scripts/sync-gigadevice-sources.sh --phase derive
+
   update:
+    needs: derive
     runs-on: ubuntu-latest
     timeout-minutes: 240
     env:
@@ -53,47 +134,19 @@ jobs:
           sudo apt-get update
           sudo apt-get install --yes libarchive-tools libdigest-sha-perl poppler-utils
 
-      - name: 恢复项目内来源缓存
+      - name: 恢复派生状态
         uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
           path: |
-            .cache/research/gigadevice/official-firmware
-            .cache/research/gigadevice/firmware-sources-v1
-            .cache/research/gigadevice/addons
-            .cache/research/gigadevice/addon-packs-v1
-            .cache/research/gigadevice/catalog
-            .cache/research/gigadevice/manuals
-            .cache/research/gigadevice/manual-text-v1
-            .cache/research/gigadevice/manual-dma-tsv-v1
-            .cache/research/gigadevice/datasheets
-            .cache/research/gigadevice/datasheet-text-v1
-            .cache/research/gigadevice/tools/*.7z
-            .cache/research/gigadevice/builder-resources
-            .cache/research/gigadevice/builder-firmware-v1
-            .cache/research/gigadevice/builder-firmware-adapter-v1
-            .cache/research/gigadevice/builder-firmware-cpp-v1
-            .cache/research/gigadevice/programmer-v1
-            .cache/research/gigadevice/iar
-            .cache/research/gigadevice/iar-device-support-v1
-            .cache/research/repos
-            .cache/tools/cmsis-rust-target-db-target
-            .cache/tools/chiptool-target
-            .cache/tools/gigadevice-metapac-validation-target
-            .cache/tools/gigadevice-feature-metapac-target
-            .cache/research/gigadevice/normalized-svd-v4
-            .cache/research/gigadevice/chiptool-svd-v1
-            .cache/research/gigadevice/pac-compile-v1
-            .cache/research/gigadevice/firmware-cpp-v1
-            .cache/research/gigadevice/firmware-svd-v1
-            .cache/research/gigadevice/chiptool-firmware-v1
-            .cache/research/gigadevice/firmware-pac-compile-v1
-            .cache/research/gigadevice/source-cache-ready-v1
-          key: gd32-sources-v1-${{ runner.os }}-${{ hashFiles('sources/gigadevice/*.lock.json') }}
-          restore-keys: |
-            gd32-sources-v1-${{ runner.os }}-
+            .cache/research
+            .cache/tools
+            .cache/generated
+            sources/gigadevice
+            reports
+          key: gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-derive
 
-      - name: 同步、锁定并验证全部来源
-        run: scripts/sync-gigadevice-sources.sh
+      - name: 构造 Embassy 投影并发布
+        run: scripts/sync-gigadevice-sources.sh --phase publish
 
       - name: 验证 Rust 原型未回退
         run: scripts/check-rust.sh
