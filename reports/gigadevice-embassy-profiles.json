@@ -1,0 +1,5456 @@
+{
+  "profiles": [
+    {
+      "chip": "gd32a103cb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a10x-907943c87ab57363"
+    },
+    {
+      "chip": "gd32a103rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a10x-907943c87ab57363"
+    },
+    {
+      "chip": "gd32a103tb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a10x-907943c87ab57363"
+    },
+    {
+      "chip": "gd32a103vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a10x-907943c87ab57363"
+    },
+    {
+      "chip": "gd32a490ii",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a490-2d51ca3021f603d4"
+    },
+    {
+      "chip": "gd32a490ik",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a490-2d51ca3021f603d4"
+    },
+    {
+      "chip": "gd32a490zi",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a490-2d51ca3021f603d4"
+    },
+    {
+      "chip": "gd32a490zk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a490-2d51ca3021f603d4"
+    },
+    {
+      "chip": "gd32a503cb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a503cc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a503kb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a503kc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a503rb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a503rc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a503rd",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a503vb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a503vc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a503vd",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a50x-83537fc94d184624"
+    },
+    {
+      "chip": "gd32a508ve",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a508-557189b84b9420b8"
+    },
+    {
+      "chip": "gd32a508ze",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a508-557189b84b9420b8"
+    },
+    {
+      "chip": "gd32a513cb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a513cc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a513kb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a513kc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a513rb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a513rc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a513rd",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a513vb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a513vc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a513vd",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32a513-fa4f9aa725315203"
+    },
+    {
+      "chip": "gd32a711ar",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a711av",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a711az",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a711br",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a711bv",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a711bz",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a711cv",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a712ai",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a712av",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a712az",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a712bi",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a712bv",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a712bz",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a714ai",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a714av",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a714ax",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a714az",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a714bi",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a714bv",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a714bz",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a722ai",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a722ax",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a722az",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a722bi",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a722bx",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a722bz",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a724ai",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a724ax",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a724az",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a724bi",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a724bx",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a724bz",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a741ai",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a741av",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a741az",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a742ai",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a742av",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a742az",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a742bi",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a742bv",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a742bz",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a744ai",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a744av",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a744ax",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a744az",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a744bi",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a744bv",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32a744bz",
+      "profile": null,
+      "reasons": "没有规范化硬件变体",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "blocked",
+      "variant": null
+    },
+    {
+      "chip": "gd32c103cb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c10x-b558ada58817a9d3"
+    },
+    {
+      "chip": "gd32c103cbxxa",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c10x-b558ada58817a9d3"
+    },
+    {
+      "chip": "gd32c103rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c10x-b558ada58817a9d3"
+    },
+    {
+      "chip": "gd32c103rbxxa",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c10x-b558ada58817a9d3"
+    },
+    {
+      "chip": "gd32c103tb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c10x-b558ada58817a9d3"
+    },
+    {
+      "chip": "gd32c103tbxxa",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c10x-b558ada58817a9d3"
+    },
+    {
+      "chip": "gd32c103vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c10x-b558ada58817a9d3"
+    },
+    {
+      "chip": "gd32c113cb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c11x-b5180c5a82f17601"
+    },
+    {
+      "chip": "gd32c113rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c11x-b5180c5a82f17601"
+    },
+    {
+      "chip": "gd32c113tb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c11x-b5180c5a82f17601"
+    },
+    {
+      "chip": "gd32c113vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32c11x-b5180c5a82f17601"
+    },
+    {
+      "chip": "gd32c211ex",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "builder-gd32c2x1-bdbc52a504879f50"
+    },
+    {
+      "chip": "gd32c211fx",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "builder-gd32c2x1-bdbc52a504879f50"
+    },
+    {
+      "chip": "gd32c211jx",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "builder-gd32c2x1-bdbc52a504879f50"
+    },
+    {
+      "chip": "gd32c221c8",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c221f8",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c221k8",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c231c6",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c231c8",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c231f6",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c231f8",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c231g6",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c231g8",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c231k6",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32c231k8",
+      "profile": "stm32c091cb",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32c2x1-9fca38625c0dfe47"
+    },
+    {
+      "chip": "gd32e103c8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e10x-7c4d6ab3df402e0e"
+    },
+    {
+      "chip": "gd32e103cb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e10x-7c4d6ab3df402e0e"
+    },
+    {
+      "chip": "gd32e103r8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e10x-7c4d6ab3df402e0e"
+    },
+    {
+      "chip": "gd32e103rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e10x-7c4d6ab3df402e0e"
+    },
+    {
+      "chip": "gd32e103t8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e10x-7c4d6ab3df402e0e"
+    },
+    {
+      "chip": "gd32e103tb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e10x-7c4d6ab3df402e0e"
+    },
+    {
+      "chip": "gd32e103v8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e10x-7c4d6ab3df402e0e"
+    },
+    {
+      "chip": "gd32e103vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e10x-7c4d6ab3df402e0e"
+    },
+    {
+      "chip": "gd32e113c8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e11x-81af8e8a954da3ea"
+    },
+    {
+      "chip": "gd32e113cb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e11x-81af8e8a954da3ea"
+    },
+    {
+      "chip": "gd32e113r8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e11x-81af8e8a954da3ea"
+    },
+    {
+      "chip": "gd32e113rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e11x-81af8e8a954da3ea"
+    },
+    {
+      "chip": "gd32e113t8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e11x-81af8e8a954da3ea"
+    },
+    {
+      "chip": "gd32e113tb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e11x-81af8e8a954da3ea"
+    },
+    {
+      "chip": "gd32e113v8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e11x-81af8e8a954da3ea"
+    },
+    {
+      "chip": "gd32e113vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e11x-81af8e8a954da3ea"
+    },
+    {
+      "chip": "gd32e225cb",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e225f8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e225gb",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e225kb",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230c4",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230c6",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230c8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230e8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230f4",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230f6",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230f8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230g4",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230g6",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230g8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230k4",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230k6",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e230k8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e231c4",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "builder-gd32e23x-90e08b840f781588"
+    },
+    {
+      "chip": "gd32e231c6",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "builder-gd32e23x-90e08b840f781588"
+    },
+    {
+      "chip": "gd32e231c8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "builder-gd32e23x-90e08b840f781588"
+    },
+    {
+      "chip": "gd32e231k8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e231t8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e235c4",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-0915cda678d7edf0"
+    },
+    {
+      "chip": "gd32e235c6",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-0915cda678d7edf0"
+    },
+    {
+      "chip": "gd32e235c8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e235cb",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e235e8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-0915cda678d7edf0"
+    },
+    {
+      "chip": "gd32e235eb",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e235f4",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-0915cda678d7edf0"
+    },
+    {
+      "chip": "gd32e235f6",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-0915cda678d7edf0"
+    },
+    {
+      "chip": "gd32e235f8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e235fb",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e235g4",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-0915cda678d7edf0"
+    },
+    {
+      "chip": "gd32e235g6",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-0915cda678d7edf0"
+    },
+    {
+      "chip": "gd32e235g8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e235gb",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e235k4",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-0915cda678d7edf0"
+    },
+    {
+      "chip": "gd32e235k6",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-0915cda678d7edf0"
+    },
+    {
+      "chip": "gd32e235k8",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e235kb",
+      "profile": "stm32f030c8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32e23x-c953e0404c8a5c35"
+    },
+    {
+      "chip": "gd32e502cb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e502cc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e502kb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e502kc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e502rb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e502rc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e502rd",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e502vb",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e502vc",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e502vd",
+      "profile": "stm32f398ve",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e502-4fa578cf6d69bd49"
+    },
+    {
+      "chip": "gd32e503cc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-2674a2dae9dce1dd"
+    },
+    {
+      "chip": "gd32e503ce",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-2674a2dae9dce1dd"
+    },
+    {
+      "chip": "gd32e503rc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-2674a2dae9dce1dd"
+    },
+    {
+      "chip": "gd32e503re",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-2674a2dae9dce1dd"
+    },
+    {
+      "chip": "gd32e503vc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-2674a2dae9dce1dd"
+    },
+    {
+      "chip": "gd32e503ve",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-2674a2dae9dce1dd"
+    },
+    {
+      "chip": "gd32e503zc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-2674a2dae9dce1dd"
+    },
+    {
+      "chip": "gd32e503ze",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-2674a2dae9dce1dd"
+    },
+    {
+      "chip": "gd32e505rb",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e505rc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e505re",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e505vc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e505ve",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e505zc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e505ze",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e507rc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e507re",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e507vc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e507ve",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e507zc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e507ze",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-f094cda2feabab00"
+    },
+    {
+      "chip": "gd32e508re",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-061ce77fd05b9901"
+    },
+    {
+      "chip": "gd32e508ve",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-061ce77fd05b9901"
+    },
+    {
+      "chip": "gd32e508ze",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-061ce77fd05b9901"
+    },
+    {
+      "chip": "gd32e513cc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-3e61d4e742a530af"
+    },
+    {
+      "chip": "gd32e513ce",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-3e61d4e742a530af"
+    },
+    {
+      "chip": "gd32e513rc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-3e61d4e742a530af"
+    },
+    {
+      "chip": "gd32e513re",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-3e61d4e742a530af"
+    },
+    {
+      "chip": "gd32e513vc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-3e61d4e742a530af"
+    },
+    {
+      "chip": "gd32e513ve",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-3e61d4e742a530af"
+    },
+    {
+      "chip": "gd32e513zc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-3e61d4e742a530af"
+    },
+    {
+      "chip": "gd32e513ze",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-3e61d4e742a530af"
+    },
+    {
+      "chip": "gd32e515ce",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-2fb17994e9b5138f"
+    },
+    {
+      "chip": "gd32e515re",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-2fb17994e9b5138f"
+    },
+    {
+      "chip": "gd32e517rc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-2fb17994e9b5138f"
+    },
+    {
+      "chip": "gd32e517re",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-2fb17994e9b5138f"
+    },
+    {
+      "chip": "gd32e517vc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-2fb17994e9b5138f"
+    },
+    {
+      "chip": "gd32e517ve",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-2fb17994e9b5138f"
+    },
+    {
+      "chip": "gd32e517zc",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-2fb17994e9b5138f"
+    },
+    {
+      "chip": "gd32e517ze",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-2fb17994e9b5138f"
+    },
+    {
+      "chip": "gd32e518ce",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-fc4bf7dd9b6b55b4"
+    },
+    {
+      "chip": "gd32e518re",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-fc4bf7dd9b6b55b4"
+    },
+    {
+      "chip": "gd32e518ve",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-fc4bf7dd9b6b55b4"
+    },
+    {
+      "chip": "gd32e518ze",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-fc4bf7dd9b6b55b4"
+    },
+    {
+      "chip": "gd32eprtrd",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-c26961d33287ac30"
+    },
+    {
+      "chip": "gd32eprtre",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-c5e2c5c9fd806b0d"
+    },
+    {
+      "chip": "gd32eprtvd",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e50x-c26961d33287ac30"
+    },
+    {
+      "chip": "gd32eprtve",
+      "profile": "stm32f427vg",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32e51x-c5e2c5c9fd806b0d"
+    },
+    {
+      "chip": "gd32f101c4",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101c6",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101c8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101cb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101r4",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101r6",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101r8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101rc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f101rd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f101re",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f101rf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101rg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101ri",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101rk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101t4",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101t6",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101t8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101tb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101v8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f101vc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f101vd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f101ve",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f101vf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101vg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101vi",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101vk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101zc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f101zd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f101ze",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f101zf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101zg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101zi",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f101zk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103c4",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103c6",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103c8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103cb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103r4",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103r6",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103r8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103rc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f103rd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f103re",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f103rf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103rg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103ri",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103rk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103t4",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103t6",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103t8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103tb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103v8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-103a9f7017997ba7"
+    },
+    {
+      "chip": "gd32f103vc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f103vd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f103ve",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f103vf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103vg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103vi",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103vk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103zc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f103zd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f103ze",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-d5d81272f8baf74b"
+    },
+    {
+      "chip": "gd32f103zf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103zg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103zi",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f103zk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-6450958031b588bd"
+    },
+    {
+      "chip": "gd32f105r8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105rc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105rd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105re",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105rf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105rg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105v8",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105vc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105vd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105ve",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105vf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105vg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105zc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105zd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105ze",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105zf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f105zg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107rc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107rd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107re",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107rf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107rg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107vc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107vd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107ve",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107vf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107vg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107zc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107zd",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107ze",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107zf",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f107zg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f10x-e6007e82605b8ec7"
+    },
+    {
+      "chip": "gd32f130c4",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130c6",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130c8",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130f4",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130f6",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130f8",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130g4",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130g6",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130g8",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130k4",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130k6",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130k8",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f130r8",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150c4",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150c6",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150c8",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150g4",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150g6",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150g8",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150k4",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150k6",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150k8",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150r4",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150r6",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f150r8",
+      "profile": "stm32g0b1cb",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f1x0-c0dc1602acfa3f8c"
+    },
+    {
+      "chip": "gd32f205rc",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205re",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205rg",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205rk",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205vc",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205ve",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205vg",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205vk",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205zc",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205ze",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205zg",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f205zk",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207ie",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207ig",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207ik",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207rc",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207re",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207rg",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207rk",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207vc",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207ve",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207vg",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207vk",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207zc",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207ze",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207zg",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f207zk",
+      "profile": "stm32f429ve",
+      "reasons": "",
+      "rust_target": "thumbv7m-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32f20x-a039d6368444cc0d"
+    },
+    {
+      "chip": "gd32f303cb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303cc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303ce",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303cg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f303rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303rc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303re",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303rg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f303ri",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f303rk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f303vb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303vc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303ve",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303vg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f303vi",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f303vk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f303zc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303ze",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-1c4a0bd258b04cef"
+    },
+    {
+      "chip": "gd32f303zg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f303zi",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f303zk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-876e544ea226ab3d"
+    },
+    {
+      "chip": "gd32f305rb",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f305rc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f305re",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f305rg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f305vc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f305ve",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f305vg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f305zc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f305ze",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f305zg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f307rc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f307re",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f307rg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f307vc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f307ve",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f307vg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f307zc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f307ze",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f307zg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f30x-64b5328624a6471b"
+    },
+    {
+      "chip": "gd32f310c8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-19cf52686a3845af"
+    },
+    {
+      "chip": "gd32f310cb",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-19cf52686a3845af"
+    },
+    {
+      "chip": "gd32f310f4",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-19cf52686a3845af"
+    },
+    {
+      "chip": "gd32f310f6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-19cf52686a3845af"
+    },
+    {
+      "chip": "gd32f310f8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-19cf52686a3845af"
+    },
+    {
+      "chip": "gd32f310g8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-19cf52686a3845af"
+    },
+    {
+      "chip": "gd32f310k6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-19cf52686a3845af"
+    },
+    {
+      "chip": "gd32f310k8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-19cf52686a3845af"
+    },
+    {
+      "chip": "gd32f330c4",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330c6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330c8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330cb",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330f4",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330f6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330f8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330g4",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330g6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330g8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330k4",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330k6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330k8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330r8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f330rb",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a37ddc79efa7a84c"
+    },
+    {
+      "chip": "gd32f350c4",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350c6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350c8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350cb",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350g4",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350g6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350g8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350k4",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350k6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350k8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350r4",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350r6",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350r8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f350rb",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-a2e09a6cb3d9f504"
+    },
+    {
+      "chip": "gd32f355c8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-772de2268744a991"
+    },
+    {
+      "chip": "gd32f355cb",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-772de2268744a991"
+    },
+    {
+      "chip": "gd32f355f8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-772de2268744a991"
+    },
+    {
+      "chip": "gd32f355g8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-772de2268744a991"
+    },
+    {
+      "chip": "gd32f355k8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-772de2268744a991"
+    },
+    {
+      "chip": "gd32f355r8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-772de2268744a991"
+    },
+    {
+      "chip": "gd32f355rb",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-772de2268744a991"
+    },
+    {
+      "chip": "gd32f370c8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-17e00dc0d0a77ddb"
+    },
+    {
+      "chip": "gd32f370cb",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-17e00dc0d0a77ddb"
+    },
+    {
+      "chip": "gd32f370f8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-17e00dc0d0a77ddb"
+    },
+    {
+      "chip": "gd32f370g8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-17e00dc0d0a77ddb"
+    },
+    {
+      "chip": "gd32f370k8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-17e00dc0d0a77ddb"
+    },
+    {
+      "chip": "gd32f370r8",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-17e00dc0d0a77ddb"
+    },
+    {
+      "chip": "gd32f370rb",
+      "profile": "stm32f071c8",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f3x0-17e00dc0d0a77ddb"
+    },
+    {
+      "chip": "gd32f403cc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403ce",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403cg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403rc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403re",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403rg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403ri",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403rk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403vc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403ve",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403vg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403vi",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403vk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403zc",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403ze",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403zg",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403zi",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f403zk",
+      "profile": "stm32f103rf",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f403-6aeef1feeabd24d3"
+    },
+    {
+      "chip": "gd32f405re",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3fdac4182157894b"
+    },
+    {
+      "chip": "gd32f405rg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3fdac4182157894b"
+    },
+    {
+      "chip": "gd32f405rk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3fdac4182157894b"
+    },
+    {
+      "chip": "gd32f405vg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3fdac4182157894b"
+    },
+    {
+      "chip": "gd32f405vk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3fdac4182157894b"
+    },
+    {
+      "chip": "gd32f405zg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3fdac4182157894b"
+    },
+    {
+      "chip": "gd32f405zk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3fdac4182157894b"
+    },
+    {
+      "chip": "gd32f407ie",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407ig",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407ik",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407re",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407rg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407rk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407ve",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407vg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407vk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407ze",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407zg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f407zk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3b23f1b15be7f443"
+    },
+    {
+      "chip": "gd32f425re",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3a3ccc27173ae4c8"
+    },
+    {
+      "chip": "gd32f425rg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3a3ccc27173ae4c8"
+    },
+    {
+      "chip": "gd32f425rk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3a3ccc27173ae4c8"
+    },
+    {
+      "chip": "gd32f425vg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3a3ccc27173ae4c8"
+    },
+    {
+      "chip": "gd32f425vk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3a3ccc27173ae4c8"
+    },
+    {
+      "chip": "gd32f425zg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3a3ccc27173ae4c8"
+    },
+    {
+      "chip": "gd32f425zk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-3a3ccc27173ae4c8"
+    },
+    {
+      "chip": "gd32f427ie",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427ig",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427ik",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427re",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427rg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427rk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427ve",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427vg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427vk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427ze",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427zg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f427zk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-1ea0611b93a0cf0f"
+    },
+    {
+      "chip": "gd32f450ig",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450ii",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450ik",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450ve",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450vg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450vi",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450vk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450ze",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450zg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450zi",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f450zk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-356dc8d9f6aa43fd"
+    },
+    {
+      "chip": "gd32f470ig",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470ii",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470ik",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470ve",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470vg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470vi",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470vk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470ze",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470zg",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470zi",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f470zk",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f4xx-89e0673ea507fc82"
+    },
+    {
+      "chip": "gd32f502cb",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502cc",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502ce",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502cg",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502kb",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502kc",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502ke",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502rb",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502rc",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502re",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502rg",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502vc",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502ve",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f502vg",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503cc",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503ce",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503cg",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503kc",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503ke",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503rc",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503re",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503rg",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503vc",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503ve",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f503vg",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f505ce",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f505cg",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f505re",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f505rg",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f505ve",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f505vg",
+      "profile": "stm32l496ae",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f50x-90e7622a1acbe796"
+    },
+    {
+      "chip": "gd32f527im",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f527-856854d4a316bbc9"
+    },
+    {
+      "chip": "gd32f527is",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f527-856854d4a316bbc9"
+    },
+    {
+      "chip": "gd32f527rm",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f527-856854d4a316bbc9"
+    },
+    {
+      "chip": "gd32f527rs",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f527-856854d4a316bbc9"
+    },
+    {
+      "chip": "gd32f527vm",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f527-856854d4a316bbc9"
+    },
+    {
+      "chip": "gd32f527vs",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f527-856854d4a316bbc9"
+    },
+    {
+      "chip": "gd32f527zm",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f527-856854d4a316bbc9"
+    },
+    {
+      "chip": "gd32f527zs",
+      "profile": "stm32f429be",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32f527-856854d4a316bbc9"
+    },
+    {
+      "chip": "gd32f5hcpi",
+      "profile": "stm32l496re",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32w51x_f5hc-509ca1360fc7ec49"
+    },
+    {
+      "chip": "gd32f5hcri",
+      "profile": "stm32l496re",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32w51x_f5hc-509ca1360fc7ec49"
+    },
+    {
+      "chip": "gd32g533cc",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-c4e9a0466e9b9468"
+    },
+    {
+      "chip": "gd32g533mc",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-c4e9a0466e9b9468"
+    },
+    {
+      "chip": "gd32g533rc",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-c4e9a0466e9b9468"
+    },
+    {
+      "chip": "gd32g553cc",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-0c9ccf5664a28570"
+    },
+    {
+      "chip": "gd32g553ce",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-1d3fc3f8b1a0dfdf"
+    },
+    {
+      "chip": "gd32g553mc",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-0c9ccf5664a28570"
+    },
+    {
+      "chip": "gd32g553me",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-1d3fc3f8b1a0dfdf"
+    },
+    {
+      "chip": "gd32g553qc",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-0c9ccf5664a28570"
+    },
+    {
+      "chip": "gd32g553qe",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-1d3fc3f8b1a0dfdf"
+    },
+    {
+      "chip": "gd32g553rc",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-0c9ccf5664a28570"
+    },
+    {
+      "chip": "gd32g553re",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-1d3fc3f8b1a0dfdf"
+    },
+    {
+      "chip": "gd32g553vc",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-0c9ccf5664a28570"
+    },
+    {
+      "chip": "gd32g553ve",
+      "profile": "stm32g473pb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32g5x3-1d3fc3f8b1a0dfdf"
+    },
+    {
+      "chip": "gd32h737ig",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-6bcd71b033199264"
+    },
+    {
+      "chip": "gd32h737ii",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-6bcd71b033199264"
+    },
+    {
+      "chip": "gd32h737im",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-6bcd71b033199264"
+    },
+    {
+      "chip": "gd32h737vg",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-a4463541f23456f9"
+    },
+    {
+      "chip": "gd32h737vi",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-a4463541f23456f9"
+    },
+    {
+      "chip": "gd32h737vm",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-a4463541f23456f9"
+    },
+    {
+      "chip": "gd32h737zg",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-1d52fd401947dd49"
+    },
+    {
+      "chip": "gd32h737zi",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-1d52fd401947dd49"
+    },
+    {
+      "chip": "gd32h737zm",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-1d52fd401947dd49"
+    },
+    {
+      "chip": "gd32h757vg",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-a4463541f23456f9"
+    },
+    {
+      "chip": "gd32h757vi",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-a4463541f23456f9"
+    },
+    {
+      "chip": "gd32h757vm",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-a4463541f23456f9"
+    },
+    {
+      "chip": "gd32h757zg",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-1d52fd401947dd49"
+    },
+    {
+      "chip": "gd32h757zi",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-1d52fd401947dd49"
+    },
+    {
+      "chip": "gd32h757zm",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-1d52fd401947dd49"
+    },
+    {
+      "chip": "gd32h759ig",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-6bcd71b033199264"
+    },
+    {
+      "chip": "gd32h759ii",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-6bcd71b033199264"
+    },
+    {
+      "chip": "gd32h759im",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-6bcd71b033199264"
+    },
+    {
+      "chip": "gd32h75eym",
+      "profile": "stm32h723ze",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h75e-4e71fdc8bcdd6a06"
+    },
+    {
+      "chip": "gd32h767im",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-6bcd71b033199264"
+    },
+    {
+      "chip": "gd32h767vm",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-a4463541f23456f9"
+    },
+    {
+      "chip": "gd32h767zm",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32h73x_75x-1d52fd401947dd49"
+    },
+    {
+      "chip": "gd32h779ii",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-7bb1fb116d138ff2"
+    },
+    {
+      "chip": "gd32h779ip",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-381a423598791457"
+    },
+    {
+      "chip": "gd32h779iw",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-9f97459b249815f0"
+    },
+    {
+      "chip": "gd32h779vi",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-7bb1fb116d138ff2"
+    },
+    {
+      "chip": "gd32h779vp",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-381a423598791457"
+    },
+    {
+      "chip": "gd32h779vw",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-9f97459b249815f0"
+    },
+    {
+      "chip": "gd32h779zi",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-7bb1fb116d138ff2"
+    },
+    {
+      "chip": "gd32h779zp",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-381a423598791457"
+    },
+    {
+      "chip": "gd32h779zw",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-9f97459b249815f0"
+    },
+    {
+      "chip": "gd32h77dii",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-f86c378207388878"
+    },
+    {
+      "chip": "gd32h77dip",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-6c1d46513f6abc94"
+    },
+    {
+      "chip": "gd32h77diw",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-9003a8e258adf4cb"
+    },
+    {
+      "chip": "gd32h77eii",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-c9b28116ba029322"
+    },
+    {
+      "chip": "gd32h77eip",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-f78085a127acb7d1"
+    },
+    {
+      "chip": "gd32h77eiw",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-495e4338ce0dee24"
+    },
+    {
+      "chip": "gd32h77rap",
+      "profile": "stm32h743ag",
+      "reasons": "",
+      "rust_target": "thumbv7em-none-eabihf",
+      "status": "projected",
+      "variant": "builder-gd32h77x_78x-a4bc7a85427afb59"
+    },
+    {
+      "chip": "gd32l233c8",
+      "profile": "stm32h7r7z8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-65e55e656ff6701c"
+    },
+    {
+      "chip": "gd32l233cb",
+      "profile": "stm32h7r7z8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-65e55e656ff6701c"
+    },
+    {
+      "chip": "gd32l233cc",
+      "profile": "stm32h7r7z8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-65e55e656ff6701c"
+    },
+    {
+      "chip": "gd32l233k8",
+      "profile": "stm32h7r7z8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-65e55e656ff6701c"
+    },
+    {
+      "chip": "gd32l233kb",
+      "profile": "stm32h7r7z8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-65e55e656ff6701c"
+    },
+    {
+      "chip": "gd32l233r8",
+      "profile": "stm32h7r7z8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-65e55e656ff6701c"
+    },
+    {
+      "chip": "gd32l233rb",
+      "profile": "stm32h7r7z8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-65e55e656ff6701c"
+    },
+    {
+      "chip": "gd32l233rc",
+      "profile": "stm32h7r7z8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-65e55e656ff6701c"
+    },
+    {
+      "chip": "gd32l235c8",
+      "profile": "stm32h7r3a8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-bf5651194e05387e"
+    },
+    {
+      "chip": "gd32l235cb",
+      "profile": "stm32h7r3a8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-bf5651194e05387e"
+    },
+    {
+      "chip": "gd32l235e8",
+      "profile": "stm32h7r3a8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-bf5651194e05387e"
+    },
+    {
+      "chip": "gd32l235eb",
+      "profile": "stm32h7r3a8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-bf5651194e05387e"
+    },
+    {
+      "chip": "gd32l235k8",
+      "profile": "stm32h7r3a8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-bf5651194e05387e"
+    },
+    {
+      "chip": "gd32l235kb",
+      "profile": "stm32h7r3a8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-bf5651194e05387e"
+    },
+    {
+      "chip": "gd32l235r8",
+      "profile": "stm32h7r3a8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-bf5651194e05387e"
+    },
+    {
+      "chip": "gd32l235rb",
+      "profile": "stm32h7r3a8",
+      "reasons": "",
+      "rust_target": "thumbv8m.base-none-eabi",
+      "status": "projected",
+      "variant": "official-gd32l23x-bf5651194e05387e"
+    },
+    {
+      "chip": "gd32m531cb",
+      "profile": "stm32f205rb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32m53x-909322aa5922c43c"
+    },
+    {
+      "chip": "gd32m531cc",
+      "profile": "stm32f205rb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32m53x-909322aa5922c43c"
+    },
+    {
+      "chip": "gd32m531cz",
+      "profile": "stm32f205rb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32m53x-909322aa5922c43c"
+    },
+    {
+      "chip": "gd32m531rb",
+      "profile": "stm32f205rb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32m53x-909322aa5922c43c"
+    },
+    {
+      "chip": "gd32m531rc",
+      "profile": "stm32f205rb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32m53x-909322aa5922c43c"
+    },
+    {
+      "chip": "gd32m531rz",
+      "profile": "stm32f205rb",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32m53x-909322aa5922c43c"
+    },
+    {
+      "chip": "gd32vf103c4",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103c6",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103c8",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103cb",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103r4",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103r6",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103r8",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103rb",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103t4",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103t6",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103t8",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103tb",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103v8",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vf103vb",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imac-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vf103-a5ba9740b44dbe75"
+    },
+    {
+      "chip": "gd32vw553hi",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imafc-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vw55x-e3b4d5331ca91b8e"
+    },
+    {
+      "chip": "gd32vw553hm",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imafc-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vw55x-e3b4d5331ca91b8e"
+    },
+    {
+      "chip": "gd32vw553ki",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imafc-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vw55x-e3b4d5331ca91b8e"
+    },
+    {
+      "chip": "gd32vw553km",
+      "profile": null,
+      "reasons": "RISC-V 不适用",
+      "rust_target": "riscv32imafc-unknown-none-elf",
+      "status": "blocked",
+      "variant": "official-gd32vw55x-e3b4d5331ca91b8e"
+    },
+    {
+      "chip": "gd32w515p0",
+      "profile": "stm32l496re",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32w51x-fb998bf8987af655"
+    },
+    {
+      "chip": "gd32w515pi",
+      "profile": "stm32l496re",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32w51x_f5hc-ee709a84a57702cd"
+    },
+    {
+      "chip": "gd32w515tg",
+      "profile": "stm32l496re",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32w51x_f5hc-ee709a84a57702cd"
+    },
+    {
+      "chip": "gd32w515ti",
+      "profile": "stm32l496re",
+      "reasons": "",
+      "rust_target": "thumbv8m.main-none-eabihf",
+      "status": "projected",
+      "variant": "official-gd32w51x_f5hc-ee709a84a57702cd"
+    }
+  ],
+  "provenance": {
+    "models_sha256": "8181922b6aef25903330d6e3c7c1544650dd60108fd18aa535903468ffe9f550",
+    "official_chips_tree_sha256": "86120ed40928eb85ab4aa1c118707f378f3ecba2d1e9ddb83dc7a1ac99b22904",
+    "register_compat_sha256": "8388b18649a67962accd353c277426f1247926a1f07508f4ea132036676657cb",
+    "variants_sha256": "0b091312471229dd053dbb9fb84f3599ac1edd8e67443e836fe5e5c1cba1eee4"
+  },
+  "schema_version": 1,
+  "summary": {
+    "blocked": 66,
+    "devices": 680,
+    "projected": 614
+  }
+}
