@@ -67,6 +67,11 @@ class SyncGeneratedRepositoryTests(unittest.TestCase):
             '    --publication "$patch_workspace/output"',
             pipeline,
         )
+        self.assertIn(
+            'python3 scripts/check_gigadevice_examples.py \\\n'
+            '    --publication "$patch_workspace/output"',
+            pipeline,
+        )
 
     def test_定时任务安装全部Embassy投影目标(self):
         workflow = WORKFLOW.read_text(encoding="utf-8")

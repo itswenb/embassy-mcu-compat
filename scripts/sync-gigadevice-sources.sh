@@ -227,6 +227,8 @@ cargo run --quiet --bin mcu-compat-gen -- generate \
     --output "$patch_workspace/output"
 python3 scripts/check_gigadevice_embassy_projection.py \
     --publication "$patch_workspace/output"
+python3 scripts/check_gigadevice_examples.py \
+    --publication "$patch_workspace/output"
 mkdir -p .cache/generated/stm32-metapac-patch-v1
 rsync -a --delete "$patch_workspace/output/" .cache/generated/stm32-metapac-patch-v1/
 
