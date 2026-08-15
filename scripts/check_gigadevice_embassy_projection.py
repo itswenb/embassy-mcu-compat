@@ -19,6 +19,13 @@ EMBASSY_VERSION = "0.6.0"
 EMBASSY_STM32_DATA_REVISION = "c05b9691035f8978090af617e20869b7302b069b"
 EMBASSY_STM32_DATA_GENERATED_REVISION = "0ff67d4ac661d8817efbb196ab089e70ea7fb01d"
 REGRESSION_CHIP = "gd32f303cb"
+REGRESSION_FEATURES = (
+    "time-driver-tim5",
+    "exti",
+    "rt",
+    "unstable-pac",
+    "unchecked-overclocking",
+)
 
 
 def _toml_string(value: str | Path) -> str:
@@ -30,7 +37,10 @@ def validation_cargo_toml(
 ) -> str:
     profiles = sorted({str(row["profile"]) for row in projections})
     features = [
-        'time-driver-tim5 = ["embassy-stm32/time-driver-tim5"]',
+        *[
+            f'{feature} = ["embassy-stm32/{feature}"]'
+            for feature in REGRESSION_FEATURES
+        ],
         *[
             f'{profile} = ["embassy-stm32/{profile}"]'
             for profile in profiles
@@ -250,7 +260,7 @@ def main() -> int:
 
     checks = []
     for index, projection in enumerate(ordered, 1):
-        extra = ("time-driver-tim5",) if projection is regression else ()
+        extra = REGRESSION_FEATURES if projection is regression else ()
         spec = compile_spec(
             projection, args.work_dir, args.target_dir, args.offline, extra
         )
@@ -294,7 +304,7 @@ def main() -> int:
             "projections": len(projections),
             "compiled": len(checks) - len(failed),
             "failed": len(failed),
-            "tim5_regressions": 1,
+            "real_project_regressions": 1,
         },
         "checks": checks,
     }

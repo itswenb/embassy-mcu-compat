@@ -516,8 +516,11 @@ fn merge_private_chips(
                 "compat_metadata_",
                 1,
             ));
-            fs::copy(&source, &destination)
-                .with_context(|| format!("复制 metadata 去重文件 {} 失败", source.display()))?;
+            let metadata = fs::read_to_string(&source)
+                .with_context(|| format!("读取 metadata 去重文件 {} 失败", source.display()))?;
+            fs::write(&destination, rewrite_compat_abi_versions(&metadata)).with_context(|| {
+                format!("写入 metadata 去重文件 {} 失败", destination.display())
+            })?;
         }
     }
     Ok(())
@@ -647,6 +650,35 @@ fn rewrite_metadata_include(contents: &str) -> Result<(String, String)> {
     Ok((dedup, rewritten))
 }
 
+fn rewrite_compat_abi_versions(contents: &str) -> String {
+    contents
+        .split_inclusive('\n')
+        .map(|line| {
+            let Some(start) = line.find("version: \"") else {
+                return line.to_owned();
+            };
+            let value_start = start + "version: \"".len();
+            let Some(value_end) = line[value_start..].find('"').map(|end| value_start + end) else {
+                return line.to_owned();
+            };
+            let value = &line[value_start..value_end];
+            let Some((abi, hash)) = value.rsplit_once("_gd") else {
+                return line.to_owned();
+            };
+            if abi.is_empty()
+                || !abi
+                    .bytes()
+                    .all(|byte| byte.is_ascii_lowercase() || byte.is_ascii_digit() || byte == b'_')
+                || hash.len() != 12
+                || !hash.bytes().all(|byte| byte.is_ascii_hexdigit())
+            {
+                return line.to_owned();
+            }
+            format!("{}{abi}{}", &line[..value_start], &line[value_end..])
+        })
+        .collect()
+}
+
 fn files_with_extension(root: &Path, extension: &str) -> Result<Vec<std::path::PathBuf>> {
     let mut files = Vec::new();
     for entry in WalkDir::new(root).follow_links(false) {
@@ -723,7 +755,25 @@ fn validate_component(value: &str, label: &str) -> Result<()> {
 mod tests {
     use std::fs;
 
-    use super::{format_rust_tree, merge_shared_peripherals, register_source};
+    use super::{
+        format_rust_tree, merge_shared_peripherals, register_source, rewrite_compat_abi_versions,
+    };
+
+    #[test]
+    fn compatibility_abi_version_only_rewrites_metadata_field() {
+        let metadata = concat!(
+            "        version: \"v1_gd0123456789ab\",\n",
+            "#[path = \"../registers/usart_v1_gd0123456789ab.rs\"]\n",
+        );
+
+        assert_eq!(
+            rewrite_compat_abi_versions(metadata),
+            concat!(
+                "        version: \"v1\",\n",
+                "#[path = \"../registers/usart_v1_gd0123456789ab.rs\"]\n",
+            )
+        );
+    }
 
     #[test]
     fn formatting_matches_the_upstream_width_contract() {

@@ -38,7 +38,7 @@ class EmbassyProjectionCheckTests(unittest.TestCase):
             work,
             target,
             offline=True,
-            extra_features=("time-driver-tim5",),
+            extra_features=MODULE.REGRESSION_FEATURES,
         )
 
         self.assertIn('embassy-stm32 = { version = "=0.6.0"', cargo_toml)
@@ -49,6 +49,7 @@ class EmbassyProjectionCheckTests(unittest.TestCase):
         self.assertIn(
             'stm32f103rf = ["embassy-stm32/stm32f103rf"]', cargo_toml
         )
+        self.assertIn('exti = ["embassy-stm32/exti"]', cargo_toml)
         self.assertEqual(spec["environment"]["EMBASSY_MCU_COMPAT_CHIP"], "gd32f303cb")
         self.assertEqual(spec["environment"]["CARGO_TARGET_DIR"], str(target))
         self.assertEqual(
@@ -64,7 +65,7 @@ class EmbassyProjectionCheckTests(unittest.TestCase):
                 "thumbv7em-none-eabihf",
                 "--no-default-features",
                 "--features",
-                "stm32f103rf,time-driver-tim5",
+                "stm32f103rf,time-driver-tim5,exti,rt,unstable-pac,unchecked-overclocking",
             ],
         )
 

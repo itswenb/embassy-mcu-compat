@@ -136,6 +136,159 @@ class GenerateGigadeviceEmbassyProjectionTests(unittest.TestCase):
             [("DMAREQ_ID", 6), ("EGE", 1), ("NBREQ", 5)],
         )
 
+    def test_EXTI兼容视图映射STM32命名并保留真实中断线数(self):
+        names = ["INTEN", "EVEN", "RTEN", "FTEN", "SWIEV", "PD"]
+        native = {
+            "block/EXTI": {
+                "items": [
+                    {"name": name, "byte_offset": index * 4, "fieldset": name}
+                    for index, name in enumerate(names)
+                ]
+                + [{"name": "EXTRA", "byte_offset": 24}],
+            },
+            **{
+                f"fieldset/{name}": {
+                    "fields": [
+                        {"name": f"{name}{line}", "bit_offset": line, "bit_size": 1}
+                        for line in range(20)
+                    ]
+                }
+                for name in names
+            },
+        }
+
+        reference, registers = MODULE._project_exti_registers(native, "EXTI")
+
+        self.assertEqual(reference["kind"], "exti")
+        self.assertEqual(reference["block"], "EXTI")
+        items = registers["block/EXTI"]["items"]
+        self.assertEqual(
+            [item["name"] for item in items],
+            ["IMR", "EMR", "RTSR", "FTSR", "SWIER", "PR", "EXTRA"],
+        )
+        self.assertTrue(all(item["array"] == {"len": 1, "stride": 32} for item in items[:6]))
+        self.assertEqual(
+            registers["fieldset/LINES"]["fields"][0]["array"],
+            {"len": 20, "stride": 1},
+        )
+
+    def test_USARTv1兼容视图使用STM32接口并保留真实偏移(self):
+        native = {
+            "block/USART0": {
+                "items": [
+                    {"name": name, "byte_offset": offset, "fieldset": name}
+                    for name, offset in {
+                        "STAT0": 0,
+                        "DATA": 4,
+                        "BAUD": 8,
+                        "CTL0": 12,
+                        "CTL1": 16,
+                        "CTL2": 20,
+                        "GP": 28,
+                        "CTL3": 128,
+                    }.items()
+                ]
+            },
+            "fieldset/CTL3": {"fields": []},
+        }
+        official = {
+            "block/UART": {"items": []},
+            "block/USART": {
+                "extends": "UART",
+                "items": [
+                    {"name": "GTPR", "byte_offset": 24, "fieldset": "GTPR"}
+                ],
+            },
+            "fieldset/GTPR": {"fields": []},
+        }
+
+        uart = copy.deepcopy(native)
+        uart["block/UART3"] = uart.pop("block/USART0")
+        uart["block/UART3"]["items"] = [
+            item for item in uart["block/UART3"]["items"] if item["name"] != "CTL3"
+        ]
+        usart_key = ("gdusart", "v1", "USART0")
+        uart_key = ("gduart", "v1", "UART3")
+        reference, registers, blocks = MODULE._project_usart_v1_registers(
+            {usart_key: native, uart_key: uart}, official
+        )
+
+        self.assertEqual(reference["kind"], "usart")
+        self.assertRegex(reference["version"], r"^v1_gd[0-9a-f]{12}$")
+        self.assertEqual(blocks, {usart_key: "USART", uart_key: "UART"})
+        items = registers["block/USART"]["items"]
+        self.assertEqual(
+            [(item["name"], item["byte_offset"]) for item in items],
+            [("CTL3", 128)],
+        )
+        self.assertEqual(registers["block/UART"]["items"][-1]["byte_offset"], 28)
+        self.assertIn("fieldset/CTL3", registers)
+
+    def test_I2Cv1兼容视图保留真实字段宽度并移除不存在的FLTR(self):
+        native = {
+            "block/I2C0": {
+                "items": [
+                    {"name": name, "byte_offset": offset, "fieldset": name}
+                    for name, offset in {
+                        "CTL0": 0,
+                        "CTL1": 4,
+                        "SADDR0": 8,
+                        "SADDR1": 12,
+                        "DATA": 16,
+                        "STAT0": 20,
+                        "STAT1": 24,
+                        "CKCFG": 28,
+                        "RT": 32,
+                        "FMPCFG": 144,
+                    }.items()
+                ]
+            },
+            "fieldset/CTL1": {
+                "fields": [{"name": "I2CCLK", "bit_offset": 0, "bit_size": 7}]
+            },
+            "fieldset/RT": {
+                "fields": [{"name": "RISETIME", "bit_offset": 0, "bit_size": 7}]
+            },
+            "fieldset/FMPCFG": {"fields": []},
+        }
+        official = {
+            "block/I2C": {
+                "items": [
+                    {"name": name, "byte_offset": offset, "fieldset": name}
+                    for name, offset in {
+                        "CR1": 0,
+                        "CR2": 4,
+                        "OAR1": 8,
+                        "OAR2": 12,
+                        "DR": 16,
+                        "SR1": 20,
+                        "SR2": 24,
+                        "CCR": 28,
+                        "TRISE": 32,
+                        "FLTR": 36,
+                    }.items()
+                ]
+            },
+            "fieldset/CR2": {
+                "fields": [{"name": "FREQ", "bit_offset": 0, "bit_size": 6}]
+            },
+            "fieldset/TRISE": {
+                "fields": [{"name": "TRISE", "bit_offset": 0, "bit_size": 6}]
+            },
+        }
+
+        reference, registers = MODULE._project_i2c_v1_registers(
+            native, "I2C0", official
+        )
+
+        self.assertRegex(reference["version"], r"^v1_gd[0-9a-f]{12}$")
+        self.assertEqual(
+            [item["name"] for item in registers["block/I2C"]["items"]],
+            ["CR1", "CR2", "OAR1", "OAR2", "DR", "SR1", "SR2", "CCR", "TRISE", "FMPCFG"],
+        )
+        self.assertEqual(registers["fieldset/CR2"]["fields"][0]["bit_size"], 7)
+        self.assertEqual(registers["fieldset/TRISE"]["fields"][0]["bit_size"], 7)
+
     def test_外设拓扑优先选择包含TIM5的profile(self):
         model = {
             "id": "GD32F303CB",
@@ -390,6 +543,29 @@ class GenerateGigadeviceEmbassyProjectionTests(unittest.TestCase):
         self.assertEqual(projected["memory"], memory)
         self.assertEqual(projected["name"], "GD32F303CB")
         self.assertEqual(unsupported, [])
+
+    def test_投影从GD32F30x官方设备包补入真实UID地址(self):
+        profile = candidate("STM32F103RC", ["RCC", "UID"])
+        native = native_chip([{"name": "RCU", "address": 0x40021000}])
+
+        projected, _ = MODULE.project_chip(
+            profile,
+            {
+                "id": "GD32F303CB",
+                "core": "Cortex-M4",
+                "source_packs": [{"name": "GD32F30x_DFP"}],
+            },
+            variant(),
+            {"memory": [[{"name": "SRAM", "kind": "ram", "address": 1, "size": 1}]]},
+            native_chip=native,
+        )
+
+        uid = next(
+            peripheral
+            for peripheral in projected["cores"][0]["peripherals"]
+            if peripheral["name"] == "UID"
+        )
+        self.assertEqual(uid["address"], 0x1FFFF7E8)
 
     def test_投影外设拓扑与原生芯片一一对应(self):
         profile = candidate(
@@ -850,6 +1026,28 @@ class GenerateGigadeviceEmbassyProjectionTests(unittest.TestCase):
                 {"ADC1_2"},
             ),
             [{"signal": "GLOBAL", "interrupt": "ADC1_2"}],
+        )
+
+    def test_EXTI组合中断绑定到每条Embassy信号(self):
+        bindings = [
+            {"signal": f"EXTI{line}", "interrupt": "EXTI9_5"}
+            for line in range(5, 10)
+        ]
+
+        self.assertEqual(
+            MODULE._project_interrupt_bindings("EXTI", bindings, {"EXTI5_9"}),
+            [
+                {"signal": f"EXTI{line}", "interrupt": "EXTI5_9"}
+                for line in range(5, 10)
+            ],
+        )
+
+    def test_EXTI组合中断名称使用STM32公开ABI顺序(self):
+        self.assertEqual(
+            MODULE._normalized_interrupt_name("EXTI5_9", []), "EXTI9_5"
+        )
+        self.assertEqual(
+            MODULE._normalized_interrupt_name("EXTI10_15", []), "EXTI15_10"
         )
 
     def test_GD32定时器引脚信号归一为Embassy命名(self):

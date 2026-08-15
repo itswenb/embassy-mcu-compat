@@ -23,7 +23,8 @@ from analyze_gigadevice_stm32_register_compat import st_block_signature
 REQUIRED_SYSTEM_PERIPHERALS = {"EXTI", "FLASH", "RCC"}
 ROUTING_PERIPHERALS = {"AFIO", "SYSCFG"}
 EMBASSY_DMA_KINDS = {"dma", "bdma", "gpdma", "lpdma", "mdma"}
-SYSTEM_COMPAT_PERIPHERALS = {"RCC", "FLASH", "AFIO", "SYSCFG", "PWR"}
+SYSTEM_COMPAT_PERIPHERALS = {"RCC", "FLASH", "AFIO", "SYSCFG", "PWR", "UID"}
+UID_ADDRESSES = {"GD32F30x_DFP": 0x1FFFF7E8}
 CORE_PROFILE_COMPATIBILITY = {
     "cm0": {"cm0"},
     "cm0p": {"cm0", "cm0p"},
@@ -120,6 +121,241 @@ def _project_dmamux_registers(
         json.dumps(registers, sort_keys=True, separators=(",", ":")).encode()
     ).hexdigest()[:12]
     return {"kind": "dmamux", "version": f"gd{digest}", "block": "DMAMUX"}, registers
+
+
+def _project_exti_registers(
+    native: dict[str, object], block: str
+) -> tuple[dict[str, str], dict[str, object]]:
+    source = native.get(f"block/{block}")
+    if not isinstance(source, dict) or not isinstance(source.get("items"), list):
+        raise ValueError(f"EXTI SVD IR 缺少 block/{block}")
+    names = {
+        "INTEN": ("IMR", 0),
+        "EVEN": ("EMR", 4),
+        "RTEN": ("RTSR", 8),
+        "FTEN": ("FTSR", 12),
+        "SWIEV": ("SWIER", 16),
+        "PD": ("PR", 20),
+    }
+    items = []
+    line_sets = []
+    found = set()
+    for item in source["items"]:
+        if not isinstance(item, dict):
+            raise ValueError("EXTI block 包含无效寄存器")
+        mapping = names.get(str(item.get("name", "")))
+        if mapping is None:
+            items.append(copy.deepcopy(item))
+            continue
+        target, expected_offset = mapping
+        if int(item.get("byte_offset", -1)) != expected_offset:
+            raise ValueError(f"EXTI {item.get('name')} 偏移不兼容")
+        fieldset = native.get(f"fieldset/{item.get('fieldset')}")
+        if not isinstance(fieldset, dict) or not isinstance(fieldset.get("fields"), list):
+            raise ValueError(f"EXTI {item.get('name')} 缺少 fieldset")
+        bits = {
+            int(field["bit_offset"])
+            for field in fieldset["fields"]
+            if isinstance(field, dict)
+            and int(field.get("bit_size", 0)) == 1
+            and isinstance(field.get("bit_offset"), int)
+        }
+        line_sets.append(bits)
+        mapped = copy.deepcopy(item)
+        mapped.update(
+            {
+                "name": target,
+                "array": {"len": 1, "stride": 32},
+                "fieldset": "LINES",
+            }
+        )
+        items.append(mapped)
+        found.add(str(item["name"]))
+    if found != set(names):
+        raise ValueError("EXTI 缺少 Embassy 所需的六个基础寄存器")
+    common_lines = set.intersection(*line_sets)
+    line_count = 0
+    while line_count in common_lines:
+        line_count += 1
+    if line_count < 16:
+        raise ValueError("EXTI GPIO 中断线不足 16 条")
+
+    registers = copy.deepcopy(native)
+    projected_block = copy.deepcopy(source)
+    projected_block["items"] = items
+    registers[f"block/{block}"] = projected_block
+    registers["fieldset/LINES"] = {
+        "fields": [
+            {
+                "name": "LINE",
+                "description": "EXTI line",
+                "bit_offset": 0,
+                "bit_size": 1,
+                "array": {"len": line_count, "stride": 1},
+            }
+        ]
+    }
+    digest = hashlib.sha256(
+        json.dumps(registers, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()[:12]
+    return {"kind": "exti", "version": f"gd{digest}", "block": block}, registers
+
+
+def _project_usart_v1_registers(
+    sources: dict[tuple[str, str, str], dict[str, object]],
+    official: dict[str, object],
+) -> tuple[dict[str, str], dict[str, object], dict[tuple[str, str, str], str]]:
+    expected = {
+        "STAT0": 0,
+        "DATA": 4,
+        "BAUD": 8,
+        "CTL0": 12,
+        "CTL1": 16,
+        "CTL2": 20,
+        "GP": 28,
+    }
+    registers = copy.deepcopy(official)
+    uart = registers.get("block/UART")
+    usart = registers.get("block/USART")
+    if not all(
+        isinstance(block, dict) and isinstance(block.get("items"), list)
+        for block in (uart, usart)
+    ):
+        raise ValueError("STM32 USART v1 模板缺少 UART/USART block")
+    assert isinstance(uart, dict) and isinstance(usart, dict)
+    gtpr = next(
+        (
+            copy.deepcopy(item)
+            for item in usart["items"]
+            if isinstance(item, dict) and item.get("name") == "GTPR"
+        ),
+        None,
+    )
+    if gtpr is None:
+        raise ValueError("STM32 USART v1 模板缺少 GTPR")
+    gtpr["byte_offset"] = 28
+    uart["items"].append(gtpr)
+    usart["items"] = [
+        item
+        for item in usart["items"]
+        if not isinstance(item, dict) or item.get("name") != "GTPR"
+    ]
+
+    blocks = {}
+    extras = {}
+    for key, native in sources.items():
+        source = native.get(f"block/{key[2]}")
+        if not isinstance(source, dict) or not isinstance(source.get("items"), list):
+            raise ValueError(f"USART SVD IR 缺少 block/{key[2]}")
+        offsets = {
+            str(item.get("name")): int(item.get("byte_offset", -1))
+            for item in source["items"]
+            if isinstance(item, dict)
+        }
+        if any(offsets.get(name) != offset for name, offset in expected.items()):
+            raise ValueError("USART v1 基础寄存器布局不兼容")
+        source_extras = [
+            copy.deepcopy(item)
+            for item in source["items"]
+            if isinstance(item, dict)
+            and int(item.get("byte_offset", -1)) not in expected.values()
+        ]
+        blocks[key] = "USART" if source_extras else "UART"
+        for item in source_extras:
+            extras[(str(item.get("name")), int(item.get("byte_offset", -1)))] = item
+        for name, value in native.items():
+            if name not in registers:
+                registers[name] = copy.deepcopy(value)
+    usart["items"].extend(extras[key] for key in sorted(extras))
+    digest = hashlib.sha256(
+        json.dumps(registers, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()[:12]
+    return {"kind": "usart", "version": f"v1_gd{digest}"}, registers, blocks
+
+
+def _project_i2c_v1_registers(
+    native: dict[str, object], block: str, official: dict[str, object]
+) -> tuple[dict[str, str], dict[str, object]]:
+    names = {
+        "CTL0": ("CR1", 0),
+        "CTL1": ("CR2", 4),
+        "SADDR0": ("OAR1", 8),
+        "SADDR1": ("OAR2", 12),
+        "DATA": ("DR", 16),
+        "STAT0": ("SR1", 20),
+        "STAT1": ("SR2", 24),
+        "CKCFG": ("CCR", 28),
+        "RT": ("TRISE", 32),
+    }
+    source = native.get(f"block/{block}")
+    template = official.get("block/I2C")
+    if not all(
+        isinstance(value, dict) and isinstance(value.get("items"), list)
+        for value in (source, template)
+    ):
+        raise ValueError("I2C v1 缺少原生或 STM32 block")
+    assert isinstance(source, dict) and isinstance(template, dict)
+    source_items = {
+        str(item.get("name")): item
+        for item in source["items"]
+        if isinstance(item, dict)
+    }
+    if any(
+        name not in source_items
+        or int(source_items[name].get("byte_offset", -1)) != offset
+        for name, (_, offset) in names.items()
+    ):
+        raise ValueError("I2C v1 基础寄存器布局不兼容")
+
+    registers = copy.deepcopy(official)
+    projected = copy.deepcopy(template)
+    projected["items"] = [
+        copy.deepcopy(item)
+        for item in template["items"]
+        if isinstance(item, dict) and item.get("name") != "FLTR"
+    ]
+    for item in source["items"]:
+        if not isinstance(item, dict) or str(item.get("name")) in names:
+            continue
+        projected["items"].append(copy.deepcopy(item))
+        fieldset = item.get("fieldset")
+        if fieldset is not None and f"fieldset/{fieldset}" in native:
+            registers[f"fieldset/{fieldset}"] = copy.deepcopy(
+                native[f"fieldset/{fieldset}"]
+            )
+    registers["block/I2C"] = projected
+
+    widths = {
+        ("CR2", "FREQ"): ("CTL1", "I2CCLK"),
+        ("TRISE", "TRISE"): ("RT", "RISETIME"),
+    }
+    for (target_set, target_field), (source_set, source_field) in widths.items():
+        native_fields = native.get(f"fieldset/{source_set}", {}).get("fields", [])
+        width = next(
+            (
+                int(field["bit_size"])
+                for field in native_fields
+                if isinstance(field, dict) and field.get("name") == source_field
+            ),
+            None,
+        )
+        target_fields = registers.get(f"fieldset/{target_set}", {}).get("fields", [])
+        target = next(
+            (
+                field
+                for field in target_fields
+                if isinstance(field, dict) and field.get("name") == target_field
+            ),
+            None,
+        )
+        if width is None or target is None:
+            raise ValueError("I2C v1 时钟字段布局不兼容")
+        target["bit_size"] = width
+
+    digest = hashlib.sha256(
+        json.dumps(registers, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()[:12]
+    return {"kind": "i2c", "version": f"v1_gd{digest}", "block": "I2C"}, registers
 
 
 def _classify_timer_block(registers: dict[str, object], block: str) -> str:
@@ -450,9 +686,21 @@ def project_chip(
             native_core.get("peripherals"), list
         ):
             raise ValueError("原生 GD32 chip 缺少外设")
-        source_peripherals = native_core["peripherals"]
+        source_peripherals = list(native_core["peripherals"])
     else:
-        source_peripherals = variant.get("instances", [])
+        source_peripherals = list(variant.get("instances", []))
+    uid_addresses = {
+        UID_ADDRESSES[str(source["name"])]
+        for source in model.get("source_packs", [])
+        if isinstance(source, dict) and str(source.get("name")) in UID_ADDRESSES
+    }
+    if len(uid_addresses) > 1:
+        raise ValueError("同一芯片匹配到多个 UID 地址")
+    if "UID" in by_name and uid_addresses and not any(
+        isinstance(peripheral, dict) and str(peripheral.get("name")) == "UID"
+        for peripheral in source_peripherals
+    ):
+        source_peripherals.append({"name": "UID", "address": uid_addresses.pop()})
     expected_names = {
         (embassy_instance_name(str(instance["name"])) or (str(instance["name"]), ""))[0]
         for instance in source_peripherals
@@ -787,6 +1035,10 @@ def _normalized_interrupt_name(
         else name
     )
     normalized = normalized.upper()
+    normalized = {
+        "EXTI5_9": "EXTI9_5",
+        "EXTI10_15": "EXTI15_10",
+    }.get(normalized, normalized)
     normalized = re.sub(
         r"\b([A-Z]+)(\d+)_\1(\d+)\b",
         lambda match: f"{match.group(1)}{match.group(2)}_{match.group(3)}",
@@ -831,6 +1083,16 @@ def _project_interrupt_bindings(
     for binding in bindings:
         signal = str(binding["signal"]).upper()
         expected = str(binding["interrupt"]).upper()
+        exti_interrupt = None
+        if peripheral == "EXTI" and (line_match := re.fullmatch(r"EXTI(\d+)", signal)):
+            line = int(line_match.group(1))
+            for name in sorted(actual_names):
+                range_match = re.fullmatch(r"EXTI(\d+)_(\d+)", name)
+                if range_match is not None:
+                    first, last = map(int, range_match.groups())
+                    if min(first, last) <= line <= max(first, last):
+                        exti_interrupt = name
+                        break
         exact = (
             f"{peripheral.upper()}_CHANNEL{int(signal.removeprefix('CH'))}"
             if peripheral.startswith("DMA") and re.fullmatch(r"CH\d+", signal)
@@ -845,7 +1107,13 @@ def _project_interrupt_bindings(
         interrupt = (
             exact
             if exact in actual_names
-            else expected if expected in actual_names else candidates[0] if len(candidates) == 1 else None
+            else expected
+            if expected in actual_names
+            else exti_interrupt
+            if exti_interrupt is not None
+            else candidates[0]
+            if len(candidates) == 1
+            else None
         )
         if interrupt is not None:
             projected.append({"signal": signal, "interrupt": interrupt})
@@ -979,6 +1247,35 @@ def build_projection_facts(
     peripheral_registers = {}
     generated_registers = {}
     if native_registers is not None and official_registers is not None:
+        usart_sources = {}
+        usart_official = None
+        for instance in native_instances:
+            if not isinstance(instance, dict) or not isinstance(
+                instance.get("registers"), dict
+            ):
+                continue
+            peripheral = _map_peripheral(str(instance["name"]))
+            template = profile_peripherals.get(peripheral or "")
+            template_registers = template.get("registers") if isinstance(template, dict) else None
+            if not isinstance(template_registers, dict) or (
+                template_registers.get("kind"), template_registers.get("version")
+            ) != ("usart", "v1"):
+                continue
+            source = instance["registers"]
+            key = (str(source["kind"]), str(source["version"]), str(source["block"]))
+            native = native_registers.get(f"{key[0]}_{key[1]}")
+            usart_official = official_registers.get("usart_v1")
+            if native is not None and usart_official is not None:
+                usart_sources[key] = native
+        try:
+            usart_reference, usart_registers, usart_blocks = (
+                _project_usart_v1_registers(usart_sources, usart_official)
+                if usart_sources and usart_official is not None
+                else (None, None, {})
+            )
+        except ValueError:
+            usart_reference, usart_registers, usart_blocks = None, None, {}
+
         for instance in native_instances:
             if not isinstance(instance, dict):
                 continue
@@ -1006,11 +1303,42 @@ def build_projection_facts(
                 str(template_registers["block"]),
                 register_signatures,
             ):
-                if template_registers.get("kind") != "dmamux":
+                if (
+                    template_registers.get("kind") == "usart"
+                    and template_registers.get("version") == "v1"
+                ):
+                    key = (
+                        str(source["kind"]),
+                        str(source["version"]),
+                        str(source["block"]),
+                    )
+                    if usart_reference is None or usart_registers is None or key not in usart_blocks:
+                        continue
+                    selected = {**usart_reference, "block": usart_blocks[key]}
+                    registers = usart_registers
+                elif template_registers.get("kind") == "exti":
+                    try:
+                        selected, registers = _project_exti_registers(
+                            native, str(source["block"])
+                        )
+                    except ValueError:
+                        continue
+                elif (
+                    template_registers.get("kind") == "i2c"
+                    and template_registers.get("version") == "v1"
+                ):
+                    try:
+                        selected, registers = _project_i2c_v1_registers(
+                            native, str(source["block"]), official
+                        )
+                    except ValueError:
+                        continue
+                elif template_registers.get("kind") == "dmamux":
+                    selected, registers = _project_dmamux_registers(
+                        native, str(source["block"])
+                    )
+                else:
                     continue
-                selected, registers = _project_dmamux_registers(
-                    native, str(source["block"])
-                )
                 generated_registers[
                     f"{selected['kind']}_{selected['version']}.json"
                 ] = registers
