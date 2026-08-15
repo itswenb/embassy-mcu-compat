@@ -155,7 +155,7 @@
         },
         {
           "kind": "heading",
-          "line": 15,
+          "line": 19,
           "page": 182,
           "text": "Trig select DMA request"
         },
@@ -197,9 +197,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 207,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -1239,13 +1239,13 @@
           "title": "Table 10-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-5565587b648cabba-6e8a52c9ff50.txt",
-      "text_sha256": "55e6104af12323a895d393f72ae76d1b9ad7875c416e6f0ed50069f5fcbcf242",
+      "text_cache": "v1-5565587b648cabba-743d181fb041.txt",
+      "text_sha256": "0f6f8cabe63e00d9b50377e6c62e8de8f16a1d053414ac8b4aa1d0d50df2e552",
       "tsv": {
-        "cache": "v1-5565587b648cabba-6e8a52c9ff50-165-167.tsv",
+        "cache": "v1-5565587b648cabba-743d181fb041-165-167.tsv",
         "first_page": 165,
         "last_page": 167,
-        "sha256": "3b6e68bc0edca926c5bb8348510dab3caf549174d4d11b87a56b32dfa5d6aff2"
+        "sha256": "8f3d692790d7d8c1d7ab8bc0a4328e51c0d492271d7a49fd60d1145e6b891710"
       }
     },
     {
@@ -1475,9 +1475,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 305,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -2033,49 +2033,49 @@
         },
         {
           "kind": "heading",
-          "line": 33,
+          "line": 32,
           "page": 996,
           "text": "DMA Requests and Scheduler"
         },
         {
           "kind": "heading",
-          "line": 37,
+          "line": 36,
           "page": 996,
           "text": "empty, USBHS will generate DMA request. There is a DMA scheduler in USBHS responsible"
         },
         {
           "kind": "heading",
-          "line": 38,
+          "line": 37,
           "page": 996,
           "text": "for responding to theses DMA requests."
         },
         {
           "kind": "heading",
-          "line": 40,
+          "line": 39,
           "page": 996,
           "text": "There may be several requests simultaneously and the DMA scheduler arbitrates among"
         },
         {
           "kind": "heading",
-          "line": 41,
+          "line": 40,
           "page": 996,
           "text": "these requests. These requests are sorted into 3 kinds: Rx FIFO DMA request, periodic"
         },
         {
           "kind": "heading",
-          "line": 42,
+          "line": 41,
           "page": 996,
           "text": "transfer DMA requests and non-periodic transfer DMA requests. Rx FIFO DMA request takes"
         },
         {
           "kind": "heading",
-          "line": 43,
+          "line": 42,
           "page": 996,
           "text": "the highest priority, and periodic transfer DMA requests take the medium priority, and non-"
         },
         {
           "kind": "heading",
-          "line": 44,
+          "line": 43,
           "page": 996,
           "text": "periodic transfer DMA requests take the lowest priority when arbitration. DMA scheduler"
         },
@@ -3244,13 +3244,13 @@
           "title": "Table 10-3. Peripheral requests to DMA1"
         }
       ],
-      "text_cache": "v1-407c04d9ee031f41-6e8a52c9ff50.txt",
-      "text_sha256": "4569dc3ed08cd78b64a4dbe46724cf523946c34377a4d79f18bab1bca4166896",
+      "text_cache": "v1-407c04d9ee031f41-743d181fb041.txt",
+      "text_sha256": "1384f81ab82e7657c52f177b3a9fdae906d2936c392deaba012f957dbde8f677",
       "tsv": {
-        "cache": "v1-407c04d9ee031f41-6e8a52c9ff50-200-201.tsv",
+        "cache": "v1-407c04d9ee031f41-743d181fb041-200-201.tsv",
         "first_page": 200,
         "last_page": 201,
-        "sha256": "5362ce8fa5ec7ac6efc55726a139b1e4138eb3190e9dec2e14583d7ab186dace"
+        "sha256": "e28b52c36c9bc99bba1c965da17f6e522b59f886d2b971e2c914a14df6729691"
       }
     },
     {
@@ -3456,7 +3456,7 @@
         },
         {
           "kind": "heading",
-          "line": 10,
+          "line": 11,
           "page": 262,
           "text": "DMA requestx"
         },
@@ -3900,7 +3900,7 @@
         },
         {
           "kind": "heading",
-          "line": 25,
+          "line": 27,
           "page": 464,
           "text": "DMA request"
         },
@@ -4350,61 +4350,61 @@
         },
         {
           "kind": "heading",
-          "line": 21,
+          "line": 20,
           "page": 1027,
           "text": "DMA Requests and Scheduler"
         },
         {
           "kind": "heading",
-          "line": 25,
+          "line": 24,
           "page": 1027,
           "text": "empty, USBHS will generate DMA request. There is a DMA scheduler in USBHS responsible"
         },
         {
           "kind": "heading",
-          "line": 26,
+          "line": 25,
           "page": 1027,
           "text": "for responding to theses DMA requests."
         },
         {
           "kind": "heading",
-          "line": 28,
+          "line": 27,
           "page": 1027,
           "text": "There may be several requests simultaneously and the DMA scheduler arbitrates among"
         },
         {
           "kind": "heading",
-          "line": 29,
+          "line": 28,
           "page": 1027,
           "text": "these requests. These requests are sorted into 3 kinds: Rx FIFO DMA request, periodic"
         },
         {
           "kind": "heading",
-          "line": 30,
+          "line": 29,
           "page": 1027,
           "text": "transfer DMA requests and non-periodic transfer DMA requests. Rx FIFO DMA request takes"
         },
         {
           "kind": "heading",
-          "line": 31,
+          "line": 30,
           "page": 1027,
           "text": "the highest priority, and periodic transfer DMA requests take the medium priority, and non-"
         },
         {
           "kind": "heading",
-          "line": 32,
+          "line": 31,
           "page": 1027,
           "text": "periodic transfer DMA requests take the lowest priority when arbitration. DMA scheduler"
         },
         {
           "kind": "heading",
-          "line": 43,
+          "line": 42,
           "page": 1027,
           "text": "In host or device mode, once Rx FIFO DMA request gets arbitration, DMA engine begins to"
         },
         {
           "kind": "heading",
-          "line": 51,
+          "line": 50,
           "page": 1027,
           "text": "When a periodic or non-periodic IN channel DMA request gets arbitration, DMA writes IN"
         },
@@ -5090,13 +5090,13 @@
           "title": "Table 11-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-dfa64db68649b81d-6e8a52c9ff50.txt",
-      "text_sha256": "af6019d0782288d990f52809e464c1794d4f2fc70747f2926b0e3e40c74aba6b",
+      "text_cache": "v1-dfa64db68649b81d-743d181fb041.txt",
+      "text_sha256": "0dd7fe95b46af803a429268b8117c92fd7a551ac8448640e37e340ab3fb07bb4",
       "tsv": {
-        "cache": "v1-dfa64db68649b81d-6e8a52c9ff50-214-217.tsv",
+        "cache": "v1-dfa64db68649b81d-743d181fb041-214-217.tsv",
         "first_page": 214,
         "last_page": 217,
-        "sha256": "ce05dd3946f125192082d663e28fd8ec1043f3006d33679e7ec3814b51729ff6"
+        "sha256": "bdf13c36469735fb0ab696bdd51506e77ab7d963fb0c854de2bfa09c322c18a6"
       }
     },
     {
@@ -5188,7 +5188,7 @@
         },
         {
           "kind": "heading",
-          "line": 34,
+          "line": 36,
           "page": 192,
           "text": "Mode DMA request setting"
         },
@@ -5926,7 +5926,7 @@
         },
         {
           "kind": "heading",
-          "line": 39,
+          "line": 36,
           "page": 279,
           "text": "DMA requestx"
         },
@@ -6178,7 +6178,7 @@
         },
         {
           "kind": "heading",
-          "line": 51,
+          "line": 50,
           "page": 413,
           "text": "generated if CHxIE = 1. And the DMA request will be asserted, if CHxDEN=1."
         },
@@ -6469,8 +6469,8 @@
         }
       ],
       "tables": [],
-      "text_cache": "v1-bdb7886ac46437f1-6e8a52c9ff50.txt",
-      "text_sha256": "d9223880557312d753f351761e69b0a9dbd0300f69a9d080f4595a467ff939fe"
+      "text_cache": "v1-bdb7886ac46437f1-743d181fb041.txt",
+      "text_sha256": "06114a2b75a78de373409b1d495c27add86b313e46ba897891a52dd3184679df"
     },
     {
       "issues": [],
@@ -6561,7 +6561,7 @@
         },
         {
           "kind": "heading",
-          "line": 34,
+          "line": 36,
           "page": 191,
           "text": "Mode DMA request setting"
         },
@@ -7299,7 +7299,7 @@
         },
         {
           "kind": "heading",
-          "line": 39,
+          "line": 36,
           "page": 278,
           "text": "DMA requestx"
         },
@@ -7551,7 +7551,7 @@
         },
         {
           "kind": "heading",
-          "line": 51,
+          "line": 50,
           "page": 412,
           "text": "generated if CHxIE = 1. And the DMA request will be asserted, if CHxDEN=1."
         },
@@ -7842,8 +7842,8 @@
         }
       ],
       "tables": [],
-      "text_cache": "v1-2bd5673304d88be0-6e8a52c9ff50.txt",
-      "text_sha256": "15a3f3a7822914eb3b74e88dca3d53e3309f36cb2e0a0677017c86d443d5c576"
+      "text_cache": "v1-2bd5673304d88be0-743d181fb041.txt",
+      "text_sha256": "26b1c240b9f8060842c362709c0abf90ccedc8216f0ec48b60b6d77ec0713c6c"
     },
     {
       "issues": [],
@@ -8000,7 +8000,7 @@
         },
         {
           "kind": "heading",
-          "line": 15,
+          "line": 19,
           "page": 185,
           "text": "Trig select DMA request"
         },
@@ -8042,9 +8042,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 210,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -9084,13 +9084,13 @@
           "title": "Table 10-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-354271208201bff2-6e8a52c9ff50.txt",
-      "text_sha256": "2cbc1442b50e9516f9533288ef05ea13e58d48944f0e271b8ac0333e540fef39",
+      "text_cache": "v1-354271208201bff2-743d181fb041.txt",
+      "text_sha256": "2d249ef3553696662dbee6887915ff8202cec26ab3b517a46531c135a4121991",
       "tsv": {
-        "cache": "v1-354271208201bff2-6e8a52c9ff50-167-170.tsv",
+        "cache": "v1-354271208201bff2-743d181fb041-167-170.tsv",
         "first_page": 167,
         "last_page": 170,
-        "sha256": "c8a379fc77e854c9fc761b61fa9d2003643316995f851ceeb528cbf0b5d19dd0"
+        "sha256": "9545be38506a0e3f9127128f1094e322621b7ba80e7b6a570c9218be3b683f02"
       }
     },
     {
@@ -9248,7 +9248,7 @@
         },
         {
           "kind": "heading",
-          "line": 15,
+          "line": 19,
           "page": 182,
           "text": "Trig select DMA request"
         },
@@ -9290,9 +9290,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 207,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -10332,13 +10332,13 @@
           "title": "Table 10-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-15193cd69d9b4c5e-6e8a52c9ff50.txt",
-      "text_sha256": "69457a192e73bcb976a701de0d9036f8c17a398765280542166981176d6c126b",
+      "text_cache": "v1-15193cd69d9b4c5e-743d181fb041.txt",
+      "text_sha256": "0f19b2f0c9cf8e4c200ce8c8b6dbfc15f7c5f8c3587e4bd2d97fccd3c102c882",
       "tsv": {
-        "cache": "v1-15193cd69d9b4c5e-6e8a52c9ff50-165-167.tsv",
+        "cache": "v1-15193cd69d9b4c5e-743d181fb041-165-167.tsv",
         "first_page": 165,
         "last_page": 167,
-        "sha256": "48b851a3ba9ac0954a93fe74ccdb8b40c240bf53d397b248863813379487943a"
+        "sha256": "c7550fcc56858247f396b744101bb69fb0baaca2d292f86cbca3d34fb0264868"
       }
     },
     {
@@ -11042,7 +11042,7 @@
         },
         {
           "kind": "heading",
-          "line": 21,
+          "line": 19,
           "page": 186,
           "text": "DMA request"
         },
@@ -11602,8 +11602,8 @@
       "name": "GD32C2x1 User Manual",
       "table_candidates": [],
       "tables": [],
-      "text_cache": "v1-9c2a0585d0f6b0ea-6e8a52c9ff50.txt",
-      "text_sha256": "170a933a7e377b368a07222540aaf4795ce26ec1c5e609d99d07bc9039923c28"
+      "text_cache": "v1-9c2a0585d0f6b0ea-743d181fb041.txt",
+      "text_sha256": "d6d375bcc196814900ec4fbf2550e4d9628336e021e28472a677930f52bec34a"
     },
     {
       "issues": [],
@@ -11760,7 +11760,7 @@
         },
         {
           "kind": "heading",
-          "line": 15,
+          "line": 19,
           "page": 179,
           "text": "Trig select DMA request"
         },
@@ -11802,9 +11802,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 204,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -12844,13 +12844,13 @@
           "title": "Table 10-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-a7f43935dbaf2636-6e8a52c9ff50.txt",
-      "text_sha256": "a79d25211d357cea043b9cda5053f745caca8cedb985c3854506a40339facf8d",
+      "text_cache": "v1-a7f43935dbaf2636-743d181fb041.txt",
+      "text_sha256": "3072c5f7452017c346cffeaa872ef3ddee0bc292b68902176b7dca9a05bab11e",
       "tsv": {
-        "cache": "v1-a7f43935dbaf2636-6e8a52c9ff50-162-164.tsv",
+        "cache": "v1-a7f43935dbaf2636-743d181fb041-162-164.tsv",
         "first_page": 162,
         "last_page": 164,
-        "sha256": "0b0bb97b41ae73ba53cadfff854843e25bef74c5ba3917c66d3da720461d8db4"
+        "sha256": "ba6d9e6d33f6081c3994ca78e932ca7b17c08fa65e47033710b3513fc93b0adc"
       }
     },
     {
@@ -13008,7 +13008,7 @@
         },
         {
           "kind": "heading",
-          "line": 15,
+          "line": 19,
           "page": 179,
           "text": "Trig select DMA request"
         },
@@ -13050,9 +13050,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 204,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -14092,13 +14092,13 @@
           "title": "Table 10-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-a07db4ba6323d7b8-6e8a52c9ff50.txt",
-      "text_sha256": "49def10ab963969c2080d7b3b4277e037a8d6eb7739353d79a86687eb603cfa3",
+      "text_cache": "v1-a07db4ba6323d7b8-743d181fb041.txt",
+      "text_sha256": "6f7a6a4c952beedb09b79e0db8587e5d7cb875c6aef89f1bc2f34e9dd283e693",
       "tsv": {
-        "cache": "v1-a07db4ba6323d7b8-6e8a52c9ff50-162-164.tsv",
+        "cache": "v1-a07db4ba6323d7b8-743d181fb041-162-164.tsv",
         "first_page": 162,
         "last_page": 164,
-        "sha256": "0311e438ada5a99aa4a6a886d0274e33eb87323c87356e5ef46063c1b5529785"
+        "sha256": "93cd00fb77a55ae4d6b1127c3d2b0b22bd057663e25ac22d5adc18b48f4d0b41"
       }
     },
     {
@@ -14304,7 +14304,7 @@
         },
         {
           "kind": "heading",
-          "line": 22,
+          "line": 17,
           "page": 155,
           "text": "Trig select DMA request"
         },
@@ -15427,13 +15427,13 @@
           "title": "Table 8-3. DMA requests for each channel"
         }
       ],
-      "text_cache": "v1-137efd2b0f738f2a-6e8a52c9ff50.txt",
-      "text_sha256": "c969f85071729aa314fbc4986b382b02d26791ccec7fadcc30200fc67d266d6e",
+      "text_cache": "v1-137efd2b0f738f2a-743d181fb041.txt",
+      "text_sha256": "bc83d7a620e8453cc803b1d5516db2332b71995f659a00bce6aa1506d81707a6",
       "tsv": {
-        "cache": "v1-137efd2b0f738f2a-6e8a52c9ff50-139-140.tsv",
+        "cache": "v1-137efd2b0f738f2a-743d181fb041-139-140.tsv",
         "first_page": 139,
         "last_page": 140,
-        "sha256": "6c66724a55e1a0de998f07b1a9d233c1353c64b7434fa75cebccff18685168be"
+        "sha256": "d96092edf942b1d3595f789b1821f1a200a789a6700cd30fbb973ad474e17289"
       }
     },
     {
@@ -15525,7 +15525,7 @@
         },
         {
           "kind": "heading",
-          "line": 34,
+          "line": 36,
           "page": 192,
           "text": "Mode DMA request setting"
         },
@@ -16263,7 +16263,7 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 281,
           "text": "DMA requestx"
         },
@@ -16806,8 +16806,8 @@
         }
       ],
       "tables": [],
-      "text_cache": "v1-f7db9ef5d45de259-6e8a52c9ff50.txt",
-      "text_sha256": "2b75a4099683de44445096f17e961565885d5d56e1dd4d83596797ef1eb5aba2"
+      "text_cache": "v1-f7db9ef5d45de259-743d181fb041.txt",
+      "text_sha256": "0b2326a94967741f57e30e3991492e3311899be5858da9d050c6c459ffd7dabf"
     },
     {
       "issues": [],
@@ -17012,7 +17012,7 @@
         },
         {
           "kind": "heading",
-          "line": 10,
+          "line": 11,
           "page": 307,
           "text": "DMA requestx"
         },
@@ -17456,7 +17456,7 @@
         },
         {
           "kind": "heading",
-          "line": 27,
+          "line": 29,
           "page": 506,
           "text": "DMA request"
         },
@@ -17924,55 +17924,55 @@
         },
         {
           "kind": "heading",
-          "line": 23,
+          "line": 22,
           "page": 1150,
           "text": "DMA Requests and Scheduler"
         },
         {
           "kind": "heading",
-          "line": 27,
+          "line": 26,
           "page": 1150,
           "text": "empty, USBHS will generate DMA request. There is a DMA scheduler in USBHS responsible"
         },
         {
           "kind": "heading",
-          "line": 28,
+          "line": 27,
           "page": 1150,
           "text": "for responding to theses DMA requests."
         },
         {
           "kind": "heading",
-          "line": 30,
+          "line": 29,
           "page": 1150,
           "text": "There may be several requests simultaneously and the DMA scheduler arbitrates among"
         },
         {
           "kind": "heading",
-          "line": 31,
+          "line": 30,
           "page": 1150,
           "text": "these requests. These requests are sorted into 3 kinds: Rx FIFO DMA request, periodic"
         },
         {
           "kind": "heading",
-          "line": 32,
+          "line": 31,
           "page": 1150,
           "text": "transfer DMA requests and non-periodic transfer DMA requests. Rx FIFO DMA request takes"
         },
         {
           "kind": "heading",
-          "line": 33,
+          "line": 32,
           "page": 1150,
           "text": "the highest priority, and periodic transfer DMA requests take the medium priority, and non-"
         },
         {
           "kind": "heading",
-          "line": 34,
+          "line": 33,
           "page": 1150,
           "text": "periodic transfer DMA requests take the lowest priority when arbitration. DMA scheduler"
         },
         {
           "kind": "heading",
-          "line": 45,
+          "line": 44,
           "page": 1150,
           "text": "In host or device mode, once Rx FIFO DMA request gets arbitration, DMA engine begins to"
         },
@@ -18680,13 +18680,13 @@
           "title": "Table 11-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-76c430024feafad6-6e8a52c9ff50.txt",
-      "text_sha256": "8db9ccf6c37f1f6019587d2f8d4a76487a72234a0f32fde8f9c71c321c7f64a5",
+      "text_cache": "v1-76c430024feafad6-743d181fb041.txt",
+      "text_sha256": "e1de3c4f7e280824fb5e84c0e86a21b4e029a6ad81bb4431fa806c358a682014",
       "tsv": {
-        "cache": "v1-76c430024feafad6-6e8a52c9ff50-258-261.tsv",
+        "cache": "v1-76c430024feafad6-743d181fb041-258-261.tsv",
         "first_page": 258,
         "last_page": 261,
-        "sha256": "32de912b96937059acedd388a1d9e414c8bd364bdc96f8d1cd903090ee4c931d"
+        "sha256": "4e46d61dfffc40493a038a4f5bd232991a537da39b29289ff035f2aed075a080"
       }
     },
     {
@@ -18892,7 +18892,7 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 320,
           "text": "DMA requestx"
         },
@@ -19594,7 +19594,7 @@
         },
         {
           "kind": "heading",
-          "line": 27,
+          "line": 29,
           "page": 592,
           "text": "DMA request"
         },
@@ -20062,55 +20062,55 @@
         },
         {
           "kind": "heading",
-          "line": 24,
+          "line": 23,
           "page": 1236,
           "text": "DMA Requests and Scheduler"
         },
         {
           "kind": "heading",
-          "line": 28,
+          "line": 27,
           "page": 1236,
           "text": "empty, USBHS will generate DMA request. There is a DMA scheduler in USBHS responsible"
         },
         {
           "kind": "heading",
-          "line": 29,
+          "line": 28,
           "page": 1236,
           "text": "for responding to theses DMA requests."
         },
         {
           "kind": "heading",
-          "line": 31,
+          "line": 30,
           "page": 1236,
           "text": "There may be several requests simultaneously and the DMA scheduler arbitrates among"
         },
         {
           "kind": "heading",
-          "line": 32,
+          "line": 31,
           "page": 1236,
           "text": "these requests. These requests are sorted into 3 kinds: Rx FIFO DMA request, periodic"
         },
         {
           "kind": "heading",
-          "line": 33,
+          "line": 32,
           "page": 1236,
           "text": "transfer DMA requests and non-periodic transfer DMA requests. Rx FIFO DMA request takes"
         },
         {
           "kind": "heading",
-          "line": 34,
+          "line": 33,
           "page": 1236,
           "text": "the highest priority, and periodic transfer DMA requests take the medium priority, and non-"
         },
         {
           "kind": "heading",
-          "line": 35,
+          "line": 34,
           "page": 1236,
           "text": "periodic transfer DMA requests take the lowest priority when arbitration. DMA scheduler"
         },
         {
           "kind": "heading",
-          "line": 46,
+          "line": 45,
           "page": 1236,
           "text": "In host or device mode, once Rx FIFO DMA request gets arbitration, DMA engine begins to"
         },
@@ -20890,13 +20890,13 @@
           "title": "Table 11-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-8aa3b187ecc1f2cf-6e8a52c9ff50.txt",
-      "text_sha256": "33c99d7c7fa9727441e565da6a451c508b21dc564cac5c8b5c45c1559496f1a7",
+      "text_cache": "v1-8aa3b187ecc1f2cf-743d181fb041.txt",
+      "text_sha256": "5db6dc93d45b34ff2029e6461b774b24ec1325a0388ba8f072e734d7f60ef052",
       "tsv": {
-        "cache": "v1-8aa3b187ecc1f2cf-6e8a52c9ff50-272-274.tsv",
+        "cache": "v1-8aa3b187ecc1f2cf-743d181fb041-272-274.tsv",
         "first_page": 272,
         "last_page": 274,
-        "sha256": "b46daabe9ea8da580eebd88171ad23ef4dc3463e8767621dfbfc10c17903ec34"
+        "sha256": "236825d8d294b64afab94ea25c520c8cf46e270562e3048cea69227c06c23cd9"
       }
     },
     {
@@ -21054,7 +21054,7 @@
         },
         {
           "kind": "heading",
-          "line": 36,
+          "line": 40,
           "page": 213,
           "text": "DMA request"
         },
@@ -21096,9 +21096,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 235,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -21474,7 +21474,7 @@
         },
         {
           "kind": "heading",
-          "line": 61,
+          "line": 57,
           "page": 403,
           "text": "Step3: Interrupt/DMA-request enables configuration by CHxIE"
         },
@@ -22214,13 +22214,13 @@
           "title": "Table 9-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-fb9e5d9877923c07-6e8a52c9ff50.txt",
-      "text_sha256": "302a5a49475d7da34a00b49b7252696ef6edf96085fb59818fdc8e4b0ffe32c0",
+      "text_cache": "v1-fb9e5d9877923c07-743d181fb041.txt",
+      "text_sha256": "3aed75167104e963a6f3ec88dea9be56cf85028e6af1cace72a6c0d65959c7d0",
       "tsv": {
-        "cache": "v1-fb9e5d9877923c07-6e8a52c9ff50-196-199.tsv",
+        "cache": "v1-fb9e5d9877923c07-743d181fb041-196-199.tsv",
         "first_page": 196,
         "last_page": 199,
-        "sha256": "b3a4c2d56b94c8734de3879e18d74e636c648edebb12a5966d4275e5c81f1be5"
+        "sha256": "463277ad80e0673aa2c8ae55eb5c60cf63779bc1e0ce935f91e6f5dcc2e7651e"
       }
     },
     {
@@ -22432,7 +22432,7 @@
         },
         {
           "kind": "heading",
-          "line": 22,
+          "line": 18,
           "page": 155,
           "text": "Trig select DMA request"
         },
@@ -22474,7 +22474,7 @@
         },
         {
           "kind": "heading",
-          "line": 30,
+          "line": 26,
           "page": 172,
           "text": "DMA requestx"
         },
@@ -23641,10 +23641,10 @@
           "title": "Table 8-3. DMA requests for each channel"
         }
       ],
-      "text_cache": "v1-2e221f103d69f27b-6e8a52c9ff50.txt",
-      "text_sha256": "af94e249aa802dcfaca4f646ed274d909ac2e772ddf72f4bdf90cfde80abf0e1",
+      "text_cache": "v1-2e221f103d69f27b-743d181fb041.txt",
+      "text_sha256": "6ee30e1431ede5cfc6ecc9676e999dad7ef010279bf70c0b6d9a4e14f1468bd2",
       "tsv": {
-        "cache": "v1-2e221f103d69f27b-6e8a52c9ff50-140-140.tsv",
+        "cache": "v1-2e221f103d69f27b-743d181fb041-140-140.tsv",
         "first_page": 140,
         "last_page": 140,
         "sha256": "2ddc0797367bfb9e6d19086ac61bec27e537538d8ec22179b2063b3de0cdf253"
@@ -23847,9 +23847,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 285,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -25068,13 +25068,13 @@
           "title": "Table 12-5. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-6f12a9689c20070a-6e8a52c9ff50.txt",
-      "text_sha256": "161b6f3b2b7aaf668b96265783d33c8f98bfe48c04c4a5a88f6d83bf32492846",
+      "text_cache": "v1-6f12a9689c20070a-743d181fb041.txt",
+      "text_sha256": "ed1f96546aa738d1ef985444f1905f0c172cd31acf7048332f9fc1a835a11548",
       "tsv": {
-        "cache": "v1-6f12a9689c20070a-6e8a52c9ff50-240-243.tsv",
+        "cache": "v1-6f12a9689c20070a-743d181fb041-240-243.tsv",
         "first_page": 240,
         "last_page": 243,
-        "sha256": "a5d5d161a81bba8a5020078d09f2ca78dde6139efacf825ee2f83683c0e4cd42"
+        "sha256": "75f8f1bb924cd0612ddb048594c3e4742f64e82a981413f548423fa549c2cb5e"
       }
     },
     {
@@ -25232,7 +25232,7 @@
         },
         {
           "kind": "heading",
-          "line": 15,
+          "line": 19,
           "page": 237,
           "text": "Trig select DMA request"
         },
@@ -25274,9 +25274,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 262,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -26362,13 +26362,13 @@
           "title": "Table 10-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-693e0bb40800447d-6e8a52c9ff50.txt",
-      "text_sha256": "5724fa456aa07db0f37fb89b344fe5769dbb18ec3cf4f0924d4bec4734b79004",
+      "text_cache": "v1-693e0bb40800447d-743d181fb041.txt",
+      "text_sha256": "724d55c19c81e82af389563f85d587a68dfe39bb2a66d168a3157b6291f6ee66",
       "tsv": {
-        "cache": "v1-693e0bb40800447d-6e8a52c9ff50-219-222.tsv",
+        "cache": "v1-693e0bb40800447d-743d181fb041-219-222.tsv",
         "first_page": 219,
         "last_page": 222,
-        "sha256": "861f3682de04772a8073491ffc03d5cd9696b22a251a1d3a7f19b2fb4205d808"
+        "sha256": "d5bcc845928e15ae06bdfa2481652bee6f21a902753e762cf297fa7d627b1827"
       }
     },
     {
@@ -26580,7 +26580,7 @@
         },
         {
           "kind": "heading",
-          "line": 22,
+          "line": 18,
           "page": 175,
           "text": "Trig select DMA request"
         },
@@ -26622,9 +26622,9 @@
         },
         {
           "kind": "heading",
-          "line": 38,
+          "line": 35,
           "page": 197,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -27783,10 +27783,10 @@
           "title": "Table 9-3. DMA requests for each channel"
         }
       ],
-      "text_cache": "v1-1eb9d9fc6396ce0a-6e8a52c9ff50.txt",
-      "text_sha256": "7f42737cd3471c83cf456801d67f69b3130638a464c51d99c85a85b60d778c1d",
+      "text_cache": "v1-1eb9d9fc6396ce0a-743d181fb041.txt",
+      "text_sha256": "f5ba24c5cf625273a99c3931ee7a84db618ba0e022a9051ab00658f6aa08bd0c",
       "tsv": {
-        "cache": "v1-1eb9d9fc6396ce0a-6e8a52c9ff50-160-160.tsv",
+        "cache": "v1-1eb9d9fc6396ce0a-743d181fb041-160-160.tsv",
         "first_page": 160,
         "last_page": 160,
         "sha256": "d8a8ba6b003d250807d6f1a696c0bc6071df92d1bff3d0982fdeb1363f019590"
@@ -27947,7 +27947,7 @@
         },
         {
           "kind": "heading",
-          "line": 15,
+          "line": 19,
           "page": 196,
           "text": "Trig select DMA request"
         },
@@ -27989,9 +27989,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 221,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -29083,13 +29083,13 @@
           "title": "Table 10-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-47c904a91e540908-6e8a52c9ff50.txt",
-      "text_sha256": "1d5513e878f07ac7b45c0cd120d4792c17c9f33616483a720700c7b800df2ad1",
+      "text_cache": "v1-47c904a91e540908-743d181fb041.txt",
+      "text_sha256": "a6bf9ac32c09266ebfcd83087aeff2343155406c1b0ca5219d5196fb69fa273a",
       "tsv": {
-        "cache": "v1-47c904a91e540908-6e8a52c9ff50-178-181.tsv",
+        "cache": "v1-47c904a91e540908-743d181fb041-178-181.tsv",
         "first_page": 178,
         "last_page": 181,
-        "sha256": "e7621154994d7d8a05256766a7ac922ec20896559cfa44bcc70947b67dccc28b"
+        "sha256": "e659c1b94cb1683459caecaab2af0aaf7be39330564fa5ecb4bb073ad793db90"
       }
     },
     {
@@ -29205,7 +29205,7 @@
         },
         {
           "kind": "table",
-          "line": 28,
+          "line": 31,
           "page": 203,
           "text": "Table 10-3. Peripheral requests to DMA1"
         },
@@ -29319,9 +29319,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 308,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -29980,7 +29980,7 @@
         },
         {
           "kind": "table",
-          "line": 28,
+          "line": 31,
           "page": 203,
           "text": "Table 10-3. Peripheral requests to DMA1"
         }
@@ -31088,10 +31088,10 @@
           "title": "Table 10-3. Peripheral requests to DMA1"
         }
       ],
-      "text_cache": "v1-629856c8f3a271d8-6e8a52c9ff50.txt",
-      "text_sha256": "224a2e7aeaeceb99d118dd9da298a3fdf731b91373456f6b334d641cc98b955e",
+      "text_cache": "v1-629856c8f3a271d8-743d181fb041.txt",
+      "text_sha256": "eabb68eeac1950c17aa166d1d0e0874ccfbab83e994a465c398f85cfe881d795",
       "tsv": {
-        "cache": "v1-629856c8f3a271d8-6e8a52c9ff50-203-203.tsv",
+        "cache": "v1-629856c8f3a271d8-743d181fb041-203-203.tsv",
         "first_page": 203,
         "last_page": 203,
         "sha256": "81f856d57c7ce6ca2a61aefbfdd6f6ab7be14a8725bd7c11ee3723bcc1db48b7"
@@ -32344,7 +32344,7 @@
         },
         {
           "kind": "heading",
-          "line": 14,
+          "line": 22,
           "page": 528,
           "text": "Trig select Trig select DMA request"
         },
@@ -32410,7 +32410,7 @@
         },
         {
           "kind": "heading",
-          "line": 13,
+          "line": 14,
           "page": 565,
           "text": "DMA requestx"
         },
@@ -32544,8 +32544,8 @@
       "name": "GD32F50x User Manual",
       "table_candidates": [],
       "tables": [],
-      "text_cache": "v1-627259d8873d4bf0-6e8a52c9ff50.txt",
-      "text_sha256": "b2981ffc8ab9741b55cfb12ea2ce6d3d03d5cd08208cc99de116ba726edd650b"
+      "text_cache": "v1-627259d8873d4bf0-743d181fb041.txt",
+      "text_sha256": "e615fb903cd60436979dbef914a95516d5e3c724ea364e9a75093de0e72cf9ee"
     },
     {
       "issues": [],
@@ -32792,9 +32792,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 416,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -34756,13 +34756,13 @@
           "title": "Table 14-3. Peripheral requests to DMA1"
         }
       ],
-      "text_cache": "v1-0602b3b7e03e6c54-6e8a52c9ff50.txt",
-      "text_sha256": "308843540d7802400812b2a7ece8257a4b819aaeee211336228ba48f2639d1c1",
+      "text_cache": "v1-0602b3b7e03e6c54-743d181fb041.txt",
+      "text_sha256": "330035a417ab8d88b0a370b6774aaeb77f3516c68d4f929cb8c2da6495659ba1",
       "tsv": {
-        "cache": "v1-0602b3b7e03e6c54-6e8a52c9ff50-310-311.tsv",
+        "cache": "v1-0602b3b7e03e6c54-743d181fb041-310-311.tsv",
         "first_page": 310,
         "last_page": 311,
-        "sha256": "4b4b9688b60f24c0e5b7ed676f9dc57801ce4495f3664cc5d08a06f5070445a0"
+        "sha256": "b5860dba9d9afaa8d3641c09a99e89bae872b6788cc8011331f9baaeca717eb7"
       }
     },
     {
@@ -35664,7 +35664,7 @@
         },
         {
           "kind": "heading",
-          "line": 16,
+          "line": 20,
           "page": 465,
           "text": "DMA requestx"
         },
@@ -36372,7 +36372,7 @@
         },
         {
           "kind": "heading",
-          "line": 21,
+          "line": 23,
           "page": 939,
           "text": "DMA request"
         },
@@ -36903,8 +36903,8 @@
         }
       ],
       "tables": [],
-      "text_cache": "v1-a62ac3bcfa7b1ac7-6e8a52c9ff50.txt",
-      "text_sha256": "8a731db2f4f4f89902e05977f3521ffcc161fdc982197d0860793dca29f253cf"
+      "text_cache": "v1-a62ac3bcfa7b1ac7-743d181fb041.txt",
+      "text_sha256": "a2437a3f068b25635fa2e0676529cc5c99dcdd25214194f13c82ee147e4d0635"
     },
     {
       "issues": [],
@@ -37895,7 +37895,7 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 622,
           "text": "DMA requestx"
         },
@@ -38159,7 +38159,7 @@
         },
         {
           "kind": "heading",
-          "line": 59,
+          "line": 54,
           "page": 810,
           "text": "Step3: Interrupt/DMA-request enables configuration by CHxIE/CHxDEN."
         },
@@ -38927,55 +38927,55 @@
         },
         {
           "kind": "heading",
-          "line": 25,
+          "line": 23,
           "page": 1780,
           "text": "DMA Requests and Scheduler"
         },
         {
           "kind": "heading",
-          "line": 29,
+          "line": 27,
           "page": 1780,
           "text": "empty, USBHS will generate DMA request. There is a DMA scheduler in USBHS responsible"
         },
         {
           "kind": "heading",
-          "line": 30,
+          "line": 28,
           "page": 1780,
           "text": "for responding to theses DMA requests."
         },
         {
           "kind": "heading",
-          "line": 32,
+          "line": 30,
           "page": 1780,
           "text": "There may be several requests simultaneously and the DMA scheduler arbitrates among"
         },
         {
           "kind": "heading",
-          "line": 33,
+          "line": 31,
           "page": 1780,
           "text": "these requests. These requests are sorted into 3 kinds: Rx FIFO DMA request, periodic"
         },
         {
           "kind": "heading",
-          "line": 34,
+          "line": 32,
           "page": 1780,
           "text": "transfer DMA requests and non-periodic transfer DMA requests. Rx FIFO DMA request takes"
         },
         {
           "kind": "heading",
-          "line": 35,
+          "line": 33,
           "page": 1780,
           "text": "the highest priority, and periodic transfer DMA requests take the medium priority, and non-"
         },
         {
           "kind": "heading",
-          "line": 36,
+          "line": 34,
           "page": 1780,
           "text": "periodic transfer DMA requests take the lowest priority when arbitration. DMA scheduler"
         },
         {
           "kind": "heading",
-          "line": 47,
+          "line": 45,
           "page": 1780,
           "text": "In host or device mode, once Rx FIFO DMA request gets arbitration, DMA engine begins to"
         },
@@ -39026,8 +39026,8 @@
         }
       ],
       "tables": [],
-      "text_cache": "v1-a18adef59e38187c-6e8a52c9ff50.txt",
-      "text_sha256": "c8106a30a6a7224a2b6eca4bcb2aff1bf510bdb04dabd933442ab6be4f85eaf6"
+      "text_cache": "v1-a18adef59e38187c-743d181fb041.txt",
+      "text_sha256": "2a47053ede29380ec7b3419fe088d5d78a4f54e672a00d3cef701501134a331a"
     },
     {
       "issues": [],
@@ -40018,7 +40018,7 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 721,
           "text": "DMA requestx"
         },
@@ -40282,7 +40282,7 @@
         },
         {
           "kind": "heading",
-          "line": 59,
+          "line": 54,
           "page": 909,
           "text": "Step3: Interrupt/DMA-request enables configuration by CHxIE/CHxDEN."
         },
@@ -41050,55 +41050,55 @@
         },
         {
           "kind": "heading",
-          "line": 25,
+          "line": 23,
           "page": 1877,
           "text": "DMA Requests and Scheduler"
         },
         {
           "kind": "heading",
-          "line": 29,
+          "line": 27,
           "page": 1877,
           "text": "empty, USBHS will generate DMA request. There is a DMA scheduler in USBHS responsible"
         },
         {
           "kind": "heading",
-          "line": 30,
+          "line": 28,
           "page": 1877,
           "text": "for responding to theses DMA requests."
         },
         {
           "kind": "heading",
-          "line": 32,
+          "line": 30,
           "page": 1877,
           "text": "There may be several requests simultaneously and the DMA scheduler arbitrates among"
         },
         {
           "kind": "heading",
-          "line": 33,
+          "line": 31,
           "page": 1877,
           "text": "these requests. These requests are sorted into 3 kinds: Rx FIFO DMA request, periodic"
         },
         {
           "kind": "heading",
-          "line": 34,
+          "line": 32,
           "page": 1877,
           "text": "transfer DMA requests and non-periodic transfer DMA requests. Rx FIFO DMA request takes"
         },
         {
           "kind": "heading",
-          "line": 35,
+          "line": 33,
           "page": 1877,
           "text": "the highest priority, and periodic transfer DMA requests take the medium priority, and non-"
         },
         {
           "kind": "heading",
-          "line": 36,
+          "line": 34,
           "page": 1877,
           "text": "periodic transfer DMA requests take the lowest priority when arbitration. DMA scheduler"
         },
         {
           "kind": "heading",
-          "line": 47,
+          "line": 45,
           "page": 1877,
           "text": "In host or device mode, once Rx FIFO DMA request gets arbitration, DMA engine begins to"
         },
@@ -41149,8 +41149,8 @@
         }
       ],
       "tables": [],
-      "text_cache": "v1-d9750d1984b29875-6e8a52c9ff50.txt",
-      "text_sha256": "3b0c04d0516d71f9339b51609428b194df5acf04ca5bb4148bbfb8b0d7b65cb6"
+      "text_cache": "v1-d9750d1984b29875-743d181fb041.txt",
+      "text_sha256": "dfc96f1f73337a6387deeb098599fecbb27d729c6bdbfed39c9d22581c42bdb3"
     },
     {
       "issues": [],
@@ -41379,19 +41379,19 @@
         },
         {
           "kind": "heading",
-          "line": 70,
+          "line": 78,
           "page": 433,
           "text": "14.4.4. DMA request mapping"
         },
         {
           "kind": "heading",
-          "line": 71,
+          "line": 79,
           "page": 433,
           "text": "The DMA requests of a channel are coming from the AHB/APB peripherals through the"
         },
         {
           "kind": "heading",
-          "line": 72,
+          "line": 80,
           "page": 433,
           "text": "corresponding channel output of DMAMUX request multiplexer, refers to Table 16-2."
         },
@@ -42117,7 +42117,7 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 548,
           "text": "DMA requestx"
         },
@@ -42381,7 +42381,7 @@
         },
         {
           "kind": "heading",
-          "line": 59,
+          "line": 54,
           "page": 735,
           "text": "Step3: Interrupt/DMA-request enables configuration by CHxIE/CHxDEN."
         },
@@ -43128,8 +43128,8 @@
         }
       ],
       "tables": [],
-      "text_cache": "v1-4abd35d6d805480e-6e8a52c9ff50.txt",
-      "text_sha256": "0ab3760320636f75e1c85d641efe27b69bdac70d5eab16ee29a78a0e9dc8e69d"
+      "text_cache": "v1-4abd35d6d805480e-743d181fb041.txt",
+      "text_sha256": "59aaede77678e1d582fe70b40b584fd301853cdf049f2a2b69e0b16ce6020661"
     },
     {
       "issues": [],
@@ -43850,7 +43850,7 @@
         },
         {
           "kind": "heading",
-          "line": 20,
+          "line": 18,
           "page": 301,
           "text": "DMA request"
         },
@@ -43910,9 +43910,9 @@
         },
         {
           "kind": "heading",
-          "line": 36,
+          "line": 33,
           "page": 327,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -44102,7 +44102,7 @@
         },
         {
           "kind": "heading",
-          "line": 95,
+          "line": 101,
           "page": 444,
           "text": "TIMER_DMA_request TIMERx_CH0"
         },
@@ -44548,8 +44548,8 @@
       "name": "GD32L23x User Manual",
       "table_candidates": [],
       "tables": [],
-      "text_cache": "v1-3f1cfb0670e5c88c-6e8a52c9ff50.txt",
-      "text_sha256": "40c8a97f26a1b706873f5a3f421a05fbef469c2dc3c4083a66f882fe7f878daa"
+      "text_cache": "v1-3f1cfb0670e5c88c-743d181fb041.txt",
+      "text_sha256": "25245086add7b76c7ba090537d8654055b4045da113c4371406b5b4d21eb699a"
     },
     {
       "issues": [],
@@ -46130,8 +46130,8 @@
       "name": "GD32M531 User Manual",
       "table_candidates": [],
       "tables": [],
-      "text_cache": "v1-67cb72e5ef5e3e49-6e8a52c9ff50.txt",
-      "text_sha256": "8a20bfae4fd92d0cba6ce21a7789b9e8c99e1372950bb130bbfb7875c1ae59c9"
+      "text_cache": "v1-67cb72e5ef5e3e49-743d181fb041.txt",
+      "text_sha256": "d36f5da43aa3dc307e1903fdc15034f5ee8658b5bd6a38ea52cd9a555a6214df"
     },
     {
       "issues": [],
@@ -46324,9 +46324,9 @@
         },
         {
           "kind": "heading",
-          "line": 11,
+          "line": 12,
           "page": 180,
-          "text": "EXTI_9 DMA requestx"
+          "text": "DMA requestx"
         },
         {
           "kind": "heading",
@@ -47256,13 +47256,13 @@
           "title": "Table 9-4. DMA1 requests for each channel"
         }
       ],
-      "text_cache": "v1-c6481cc59e62ea59-6e8a52c9ff50.txt",
-      "text_sha256": "f09dd2c87899ecb2f3119184af050211c02f7a75e35e5d275b1f5b106e4751fa",
+      "text_cache": "v1-c6481cc59e62ea59-743d181fb041.txt",
+      "text_sha256": "cf98b9dda83cecf847d2446fbfb29254331f06875fbcf704f89ed41f026383a2",
       "tsv": {
-        "cache": "v1-c6481cc59e62ea59-6e8a52c9ff50-140-142.tsv",
+        "cache": "v1-c6481cc59e62ea59-743d181fb041-140-142.tsv",
         "first_page": 140,
         "last_page": 142,
-        "sha256": "9af4f700ced7b50bd8cdcd5640fcefa3bf566d16a7c7e74e622ddeea1d93db91"
+        "sha256": "edb2c33eaac0ce477c41b117fedd831f2b9ae6003c5a48b0bee12ce6e82fb1b8"
       }
     },
     {
@@ -47402,7 +47402,7 @@
         },
         {
           "kind": "heading",
-          "line": 15,
+          "line": 18,
           "page": 207,
           "text": "Trig select DMA request"
         },
@@ -48610,10 +48610,10 @@
           "title": "Table 10-2. Peripheral requests to DMA"
         }
       ],
-      "text_cache": "v1-04fb3d1d10d65e8d-6e8a52c9ff50.txt",
-      "text_sha256": "0deb9f05ab5ff0449b0f429e72163287430256e116302b1a30bd6d5482b23cae",
+      "text_cache": "v1-04fb3d1d10d65e8d-743d181fb041.txt",
+      "text_sha256": "abb49f907a8e3977af7559a7f76424cb032545052957818f9bd561d8c0870f94",
       "tsv": {
-        "cache": "v1-04fb3d1d10d65e8d-6e8a52c9ff50-173-173.tsv",
+        "cache": "v1-04fb3d1d10d65e8d-743d181fb041-173-173.tsv",
         "first_page": 173,
         "last_page": 173,
         "sha256": "4242fe7d8aad43afbdd54abbb09ff21b9ea685a50579205bb3fa7b08e5029c08"
@@ -48756,7 +48756,7 @@
         },
         {
           "kind": "table",
-          "line": 59,
+          "line": 62,
           "page": 424,
           "text": "Table 14-4. Peripheral requests to DMA1 (Only for GD32F5HCxx)"
         },
@@ -48816,7 +48816,7 @@
         },
         {
           "kind": "heading",
-          "line": 14,
+          "line": 19,
           "page": 459,
           "text": "Trig select DMA request"
         },
@@ -48864,7 +48864,7 @@
         },
         {
           "kind": "heading",
-          "line": 26,
+          "line": 32,
           "page": 481,
           "text": "Trigger select Trigger select DMA request"
         },
@@ -49266,7 +49266,7 @@
         },
         {
           "kind": "heading",
-          "line": 57,
+          "line": 52,
           "page": 700,
           "text": "And the DMA request will be assert, if CHxDEN =1."
         },
@@ -49579,7 +49579,7 @@
         },
         {
           "kind": "table",
-          "line": 59,
+          "line": 62,
           "page": 424,
           "text": "Table 14-4. Peripheral requests to DMA1 (Only for GD32F5HCxx)"
         },
@@ -51154,13 +51154,13 @@
           "title": "Table 14-5. Peripheral requests to DMA1 (Only for GD32W515xx)"
         }
       ],
-      "text_cache": "v1-7e7493bd0ad46489-6e8a52c9ff50.txt",
-      "text_sha256": "308661e7aaa1c901001f1f14acaea23876b09f4b592770d18221e517750f67b5",
+      "text_cache": "v1-7e7493bd0ad46489-743d181fb041.txt",
+      "text_sha256": "4cae1259082a0695dfc099dd1c72eb044cbafe39b3cc903603574cb6b86ad305",
       "tsv": {
-        "cache": "v1-7e7493bd0ad46489-6e8a52c9ff50-423-426.tsv",
+        "cache": "v1-7e7493bd0ad46489-743d181fb041-423-426.tsv",
         "first_page": 423,
         "last_page": 426,
-        "sha256": "fe3a4787e230f44c2602eda19672035cc16e163bcc0abda81bb1736d956dbb7d"
+        "sha256": "e95237ad27443331b4f8d372cbc0dcce785f8ef78644101162d07855fea1eda3"
       }
     }
   ],
@@ -51171,9 +51171,9 @@
     },
     "manual_report": {
       "path": "gigadevice-manuals.json",
-      "sha256": "48d91acbf7832344865021d7d79a8aa9a813aaf23027e8d3343491233f2867d5"
+      "sha256": "07bcd3e8d47e6b6be288cdeb858491ee0c8e7e4dd724acdd2182e18192b9aab2"
     },
-    "pdftotext": "pdftotext version 26.07.0"
+    "pdftotext": "pdftotext version 24.02.0"
   },
   "schema_version": 1,
   "summary": {

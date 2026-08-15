@@ -9612,7 +9612,7 @@
     },
     "programmer_data": {
       "path": "gigadevice-programmer-data.json",
-      "sha256": "af7b7f403cbe8c25700c7b08692c531eedef578209bd69360f695f9f36d2833b"
+      "sha256": "a397c0f6cbe3dee0de07d522c5640e1199e0b70e0f6d243174eb53ee90485b15"
     },
     "resources": {
       "path": "gigadevice-pack-resources.json",

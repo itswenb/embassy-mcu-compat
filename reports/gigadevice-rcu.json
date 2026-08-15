@@ -9470,7 +9470,7 @@
     },
     "iar_svds": {
       "path": "gigadevice-iar-svd-audit.json",
-      "sha256": "ea23ee3ec410ffdcecfba5c2c8e278de22ad60bb8fbeb0813cbb32090db1e7ce"
+      "sha256": "0118a955ac298711b0775efb9afd0540c5661bbc8367314aec126d0372be898b"
     },
     "models": {
       "path": "gigadevice-models.json",
@@ -9486,7 +9486,7 @@
     },
     "svds": {
       "path": "gigadevice-svd-audit.json",
-      "sha256": "05e87673c0ab8408b76f3013ab32772450492c1a99a2a6fd6a8d34f3e9bff03d"
+      "sha256": "b11df6c2ac5c97272657f060a20f26edd25949971ef6705fce2c60afb5e739d1"
     }
   },
   "schema_version": 1,

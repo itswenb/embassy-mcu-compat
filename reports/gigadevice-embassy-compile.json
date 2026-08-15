@@ -3149,9 +3149,9 @@
     "cargo_toml_sha256": "3994ab96ddbd9efe80e1b66c0faa6c0555d091f20337b00ce1322739c827ec46",
     "checker_sha256": "544531d58dc910045e394639d4d25765c7d9e4c8d22bf81e6c47bc261502fc18",
     "compat_sha256": "d1218575c43929bcb4111d1cfd3ad9863ab317633e925088cadff404b4820103",
-    "generation_sha256": "c8514f58196d0c7ee3ebc3ca4d4217b14f438c0a8eaec825ac2b02eba639ec2c"
+    "generation_sha256": "d838e5e097125a446d599272d65277f2871b055f30108457f81a6a47b9d2455c"
   },
-  "rustc": "rustc 1.94.0-nightly (f52090008 2025-12-10)\nbinary: rustc\ncommit-hash: f5209000832c9d3bc29c91f4daef4ca9f28dc797\ncommit-date: 2025-12-10\nhost: aarch64-apple-darwin\nrelease: 1.94.0-nightly\nLLVM version: 21.1.5",
+  "rustc": "rustc 1.94.0-nightly (f52090008 2025-12-10)\nbinary: rustc\ncommit-hash: f5209000832c9d3bc29c91f4daef4ca9f28dc797\ncommit-date: 2025-12-10\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.0-nightly\nLLVM version: 21.1.5",
   "schema_version": 1,
   "summary": {
     "compiled": 349,

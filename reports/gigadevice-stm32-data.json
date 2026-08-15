@@ -6,12 +6,12 @@
   "memory_sha256": "a1748c231f25411a6a1f766737831c228f45042d5a673c9e4fd2e7744955b035",
   "models_sha256": "8181922b6aef25903330d6e3c7c1544650dd60108fd18aa535903468ffe9f550",
   "output": ".cache/generated/gigadevice-stm32-data-v1",
-  "output_tree_sha256": "42be0d9fb540a0cc35b4ca35b0a682bfb9e26d2eca98094b0d826c2b181a2254",
+  "output_tree_sha256": "db7cdaa370f348acf2823adc016d8d5dd1dcea20d147c69a480246bb57b4ce9a",
   "register_files": 1324,
   "resources_sha256": "26c76bdee8c353d96588b6f95b2c1037b29e8bec7c0ca5e21a54ce3d4dee9d2f",
   "schema_version": 2,
   "svd_chips": 577,
-  "svd_ir_sha256": "283298556456f0dbc4a9de5487bc1a885f34aeb38667cec78f2eaea5ad288cd5",
-  "svd_ir_tree_sha256": "351ca7b1d053e79b52ddb2b80b0c8ce2967c33d0c6f6e73c4157a9d42e8d2320",
+  "svd_ir_sha256": "bb46ca9a8128fa11c90573987ea624d66b3d27f4079820a19d6645e8cc841a96",
+  "svd_ir_tree_sha256": "ccbaefee3561a6ccea5e7cc59242b0b5b1ceb85c9a6ac79739c0788bb644f893",
   "variants_sha256": "0b091312471229dd053dbb9fb84f3599ac1edd8e67443e836fe5e5c1cba1eee4"
 }

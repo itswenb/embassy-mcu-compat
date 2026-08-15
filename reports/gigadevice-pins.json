@@ -11475,11 +11475,11 @@
           "package": "LQFP48",
           "page_end": 25,
           "page_start": 22,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-6"
         }
       ],
-      "functions": 516,
+      "functions": 510,
       "gpio_pins": 58,
       "id": "GD32F330C4",
       "matrix_paths": [
@@ -11504,11 +11504,11 @@
           "package": "LQFP48",
           "page_end": 25,
           "page_start": 22,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-6"
         }
       ],
-      "functions": 510,
+      "functions": 504,
       "gpio_pins": 58,
       "id": "GD32F330C6",
       "matrix_paths": [
@@ -11533,11 +11533,11 @@
           "package": "LQFP48",
           "page_end": 25,
           "page_start": 22,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-6"
         }
       ],
-      "functions": 536,
+      "functions": 529,
       "gpio_pins": 58,
       "id": "GD32F330C8",
       "matrix_paths": [
@@ -11562,11 +11562,11 @@
           "package": "LQFP48",
           "page_end": 25,
           "page_start": 22,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-6"
         }
       ],
-      "functions": 536,
+      "functions": 529,
       "gpio_pins": 58,
       "id": "GD32F330CB",
       "matrix_paths": [
@@ -11648,7 +11648,7 @@
           "package": "QFN28",
           "page_end": 32,
           "page_start": 30,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-9"
         }
       ],
@@ -11677,7 +11677,7 @@
           "package": "QFN28",
           "page_end": 32,
           "page_start": 30,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-9"
         }
       ],
@@ -11706,7 +11706,7 @@
           "package": "QFN28",
           "page_end": 32,
           "page_start": 30,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-9"
         }
       ],
@@ -11735,7 +11735,7 @@
           "package": "LQFP32",
           "page_end": 28,
           "page_start": 26,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-7"
         },
         {
@@ -11744,7 +11744,7 @@
           "package": "QFN32",
           "page_end": 30,
           "page_start": 28,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-8"
         }
       ],
@@ -11775,7 +11775,7 @@
           "package": "LQFP32",
           "page_end": 28,
           "page_start": 26,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-7"
         },
         {
@@ -11784,7 +11784,7 @@
           "package": "QFN32",
           "page_end": 30,
           "page_start": 28,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-8"
         }
       ],
@@ -11815,7 +11815,7 @@
           "package": "LQFP32",
           "page_end": 28,
           "page_start": 26,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-7"
         },
         {
@@ -11824,7 +11824,7 @@
           "package": "QFN32",
           "page_end": 30,
           "page_start": 28,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-8"
         }
       ],
@@ -11855,7 +11855,7 @@
           "package": "LQFP64",
           "page_end": 22,
           "page_start": 19,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-5"
         }
       ],
@@ -11884,7 +11884,7 @@
           "package": "LQFP64",
           "page_end": 22,
           "page_start": 19,
-          "pdf_sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+          "pdf_sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
           "table": "2-5"
         }
       ],
@@ -19412,7 +19412,7 @@
     },
     "datasheet_pins": {
       "path": "gigadevice-datasheet-pins.json",
-      "sha256": "8380327f4b9b6f1bdb6eb70c39f1d92c1a09d350775a43581f7745496f519655"
+      "sha256": "ca4ce8bfcf72527b45b2e8f4ca9d11de15622a8a39d68f7437381268722d876a"
     },
     "models": {
       "path": "gigadevice-models.json",
@@ -19420,7 +19420,7 @@
     },
     "normalized_data": {
       "path": "gigadevice-pins.json",
-      "sha256": "fd9c5148a2992e0790d93df5961fba629cf8acad926f96ea84975f8f81044d1f"
+      "sha256": "631e56f1d85422aeab7f427545b0a323d84713e2e52ae1e873f8ccde3383dc9e"
     }
   },
   "schema_version": 1,

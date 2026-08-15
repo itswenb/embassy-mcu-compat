@@ -443,8 +443,8 @@
   ],
   "schema_version": 1,
   "source": {
-    "sha256": "b5cdd81a2c9faad959a89145fc011a0efd9357c155d9958f7087536cea6c28a5",
-    "size": 1362566,
+    "sha256": "e7d253b6194d28fac6f87417ccbd4e586b0f78a3eec16e05896611f283d2de9d",
+    "size": 1363015,
     "url": "https://www.gigadevice.com/product/mcu/automotive-mcus/gd32a7xx-series"
   },
   "summary": {

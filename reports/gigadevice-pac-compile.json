@@ -3,115 +3,115 @@
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "1bf04a53e299593f299392969266407c346c59721bca3a21f34bd25c642fc877",
+        "key": "e56d64eb590e2f72f685751394bfcdb13fe677605fe351b56eb3ddc3d7d91ac9",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "26e4c20b406224e77c973ddb6d5b99fcad2d9de584156440c4a185314bf2a488",
+        "source_sha256": "456c985f2e04aa717e0d2c1b370296ff9b16ffe32843db4f94bab9056355072c",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32A10x.svd",
       "source_pack_name": "GD32A10x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "c738ba2ba7d56df30f66fe1757f428247ca7e76ce3b5c79aa90c25e2d32018ef"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "77ddfcacf18204313da205f09c299f8c6b437dc35e6561889dd159d2fc38dc59",
+        "key": "c9e1d4b21846fd8ab9611e8c794c32d2d0e30b98c4f9446ff6a28a88355a3233",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "2a3ed19e260d242435735819439cf4bb7079ff9e6a72f59673423a59e059247c",
+        "source_sha256": "644cfb9f1daeb9975e01ac20dccbe59feae27c3779997e48e1e47543998dd687",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32A490.svd",
       "source_pack_name": "GD32A490_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "caf23d7e04a35513aaf03495427c44ce57674be0d36a817b87d17e6dd72506e5"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "4055243cb8b64ae594b3a35ef169fd18349032a618132432ef0ea46378bf7dbc",
+        "key": "a77caac2a517f685f8181710ba6051708ac70cbb7b2a76f40362518f2301380f",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "62a398b5e2f829b56e152c36a898cc620dcd98efd507f483d2c010be86ad49b4",
+        "source_sha256": "c4c81b5cfef94f8990f77ea20cb54cb488135f8242a95efb9523fb56eb22c2a6",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32A508.svd",
       "source_pack_name": "GD32A508_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "d93992134699f1c071f85882908a2709ac87ed6d961bd055e859b83a0ce2a402"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "270746b25e57fbcb41ea6a3136c3b9872875d7c678e6f4a45dad3f6550bbe109",
+        "key": "b3d7dfad1f07bf02fe40fd2a2a5eac5caf828fe6c641b48e485d28ee92a9be40",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "a50b73ae30347d38e3ef8ba50abd7bcc50979b9167c12c461c2c0ea2db479958",
+        "source_sha256": "e05a7d3f29d21a9186f7dd4f9383053c17bfc7ecb494f5d554b428306001d5ef",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32A503.svd",
       "source_pack_name": "GD32A50x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "2f10feeaa3931ca0ddd266e265cd979fbea8bfcc21dbf9bba9891eae6fde28b6"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "e464159f0d513820b5fe9714467eb2ac34f6d0d67c30ce488d45234e11625d77",
+        "key": "0ffd4699076651c980e708a175933c635e39a01a661e4175daa2fdd1ccd23aea",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "209f3812872983e4a1bdcf7e8e8cdceb2f57ff520283a7ef45fb8c84781a43e9",
+        "source_sha256": "5bfd122f12a4a7a26377817790da55ac6146b711b0259005a7103dadcc0d9a95",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32A513.svd",
       "source_pack_name": "GD32A513_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "6c822e21a440afc6ebab2c2371f6f4891152ef7daece06513ae260c990c4dc77"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "74743111a39d6d56c661581f83236310d98e8a5ac05f071019db1a3535f6f67b",
+        "key": "baa46ff1803a7fa5bd8c2d2a22687d4fbcab289e3d9444424fe6cfc61fe76953",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "4a01feea0081102da50ab6ec3947b3d5febf9d9bd7f5a52a3018199e4632c826",
+        "source_sha256": "28fbbf7bd802bad520f0d686e97a261a6bb265c4f56b30c9abe3fe4f03345b86",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32C10x.svd",
       "source_pack_name": "GD32C10x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "f4924abee5ee5034a592f0e205ee1336ed72b6e7cd2805475ac1d3639dec0c41"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "68625cd19c7e53509f732e416a5fcd09ed1dacb1f1bbc291f13d50784687700e",
+        "key": "42585d44905395468cdcf1412f5ec81b423327fd3abb463b9aaec09b12baca6b",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "7a9211bc1a72acd01d7405b502e50cbb73adfc704e8e3c2c60420911c39fd4cd",
+        "source_sha256": "4bf08e808e18be782349b30086f017aac24b3da39b3c34c6ec4dc0f1fabc96db",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32C10xxxA.svd",
       "source_pack_name": "GD32C10x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "0eba2cbfb2b0a4ebf6f498b35833afd09302e8d9d2a75f4251739b174beae46c"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "1bf04a53e299593f299392969266407c346c59721bca3a21f34bd25c642fc877",
+        "key": "e56d64eb590e2f72f685751394bfcdb13fe677605fe351b56eb3ddc3d7d91ac9",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "26e4c20b406224e77c973ddb6d5b99fcad2d9de584156440c4a185314bf2a488",
+        "source_sha256": "456c985f2e04aa717e0d2c1b370296ff9b16ffe32843db4f94bab9056355072c",
         "stub_version": 1,
         "success": true
       },
@@ -123,25 +123,25 @@
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "507341667f5fc23d8d0b300631d33109a871e5c43873ab934bbff7fefdf7db0e",
+        "key": "c347359ec360e96d35b7c9d553c786ce63600246ab9ed1207ea56ba5c8c3e174",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "752b60feadebbc6b89efad2efc6d9c406107a0941af8874045be9102ed22f991",
+        "source_sha256": "686253399253f4b59c6fc7e966e5d81993deb6e4717c53e2c6d6fc8bf457e215",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32C221.svd",
       "source_pack_name": "GD32C2x1_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "53b5b4ffc7f8b7de51cb2de7dd421895953f2fa78150574eee1e4877c2f8eb36"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "507341667f5fc23d8d0b300631d33109a871e5c43873ab934bbff7fefdf7db0e",
+        "key": "c347359ec360e96d35b7c9d553c786ce63600246ab9ed1207ea56ba5c8c3e174",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "752b60feadebbc6b89efad2efc6d9c406107a0941af8874045be9102ed22f991",
+        "source_sha256": "686253399253f4b59c6fc7e966e5d81993deb6e4717c53e2c6d6fc8bf457e215",
         "stub_version": 1,
         "success": true
       },
@@ -153,25 +153,25 @@
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "a286c6b1683b0da31c36fdae74d1d2644dcc8c8c70af5cd11d622e609ed8863b",
+        "key": "ddb66bd5a9715dba12923a40a23e0eb6e04c8e212502607fcbad89e9e5f6c298",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "ce991ad3cf6057cde9e02cd1a59ed959afa53fd9b10336d745fec83c90687beb",
+        "source_sha256": "130e412c5437e44a3ff9ea4dfff9c28b644b5dbe7a5b04217be495f64e0eaa8e",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32E10x.svd",
       "source_pack_name": "GD32E10x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "bc107eaf60552a4072fc9dcadd1e46a795332815e451afe9386e3fbdd4e2c12f"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "a286c6b1683b0da31c36fdae74d1d2644dcc8c8c70af5cd11d622e609ed8863b",
+        "key": "ddb66bd5a9715dba12923a40a23e0eb6e04c8e212502607fcbad89e9e5f6c298",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "ce991ad3cf6057cde9e02cd1a59ed959afa53fd9b10336d745fec83c90687beb",
+        "source_sha256": "130e412c5437e44a3ff9ea4dfff9c28b644b5dbe7a5b04217be495f64e0eaa8e",
         "stub_version": 1,
         "success": true
       },
@@ -183,25 +183,25 @@
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "6395981d02d06e2b5465c0bb420caff21da0675df700289d03e1bf31368e5216",
+        "key": "01a6252ddb7e3ea6e06d085746b5e75a0a0d238bbbd1f1d274a0a2453273b08b",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "757e6b754e331875c5894471609756667eb68db636f31f55f87c11f2a6ef2d07",
+        "source_sha256": "4aa055132a89458fe4464e6a901b8b2f42ea3a594211082529ff90899882a3a4",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32E23x.svd",
       "source_pack_name": "GD32E23x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "3a5622febdf34cc23593ee5ccdac211fc78208ba879ca2c2210701f857ae1792"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "e464159f0d513820b5fe9714467eb2ac34f6d0d67c30ce488d45234e11625d77",
+        "key": "0ffd4699076651c980e708a175933c635e39a01a661e4175daa2fdd1ccd23aea",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "209f3812872983e4a1bdcf7e8e8cdceb2f57ff520283a7ef45fb8c84781a43e9",
+        "source_sha256": "5bfd122f12a4a7a26377817790da55ac6146b711b0259005a7103dadcc0d9a95",
         "stub_version": 1,
         "success": true
       },
@@ -213,10 +213,10 @@
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "4055243cb8b64ae594b3a35ef169fd18349032a618132432ef0ea46378bf7dbc",
+        "key": "a77caac2a517f685f8181710ba6051708ac70cbb7b2a76f40362518f2301380f",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "62a398b5e2f829b56e152c36a898cc620dcd98efd507f483d2c010be86ad49b4",
+        "source_sha256": "c4c81b5cfef94f8990f77ea20cb54cb488135f8242a95efb9523fb56eb22c2a6",
         "stub_version": 1,
         "success": true
       },
@@ -228,421 +228,421 @@
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "a6e220d813807892150bb8cfcb9cbadd0fda8448f5d2ab8789d1abf994587ef8",
+        "key": "e7474ba747cd1c6eeb803f4451a57c74f3c6356978da7d25c0bf8335f1663de3",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "faaca206c2d1ea544af133ae06c41b196e06fb0047f1d4b2453f126e8eedb00d",
+        "source_sha256": "5b6c738964a9b83d02b4f2739eeec612ab9009c14df6a858196cd90982ed2182",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32E50x_CL.svd",
       "source_pack_name": "GD32E50x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "e558ce5037f240b1be878f52dc7061c9aae5156fa4ee03a70ddcf5fe585c3419"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "2fd15122709c7a16c077df26daffa577fe4313c645d66cff0827c94c0a83c8f4",
+        "key": "8c453df5cdaaebe1ee87ea75889c6908667ded30cd4a5c69795a0634ee92dbc1",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "af6651c4dbe04e1369ad3d361b9f660fedef7a552fb65c5d9caec598ea370be7",
+        "source_sha256": "930970152d422ec4b83818acf2a7dda7c4b006426a62abcea41b2579561f8fcc",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32E50x_HD.svd",
       "source_pack_name": "GD32E50x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "e607c51d20fa3244fb9d41e90880b3f2264087345d856f633fb6ab0701c0deb8"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "6110ca9106b5b01e04041787b04807f1fb086cb2f360fa2da5bb1e862cfc4771",
+        "key": "b16a3269df02b1f0059ae7f1fae4cb885908a71086e29e34ba234348747a5d0e",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "3f7987888660eb5380212216351abc152bf8cb1e1663c732a6cacdd49fab8b8b",
+        "source_sha256": "03d6622415dbf951506e34715705173ed348944e1cfb35d2bf3d93542f5b54e3",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32EPRT.svd",
       "source_pack_name": "GD32E50x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "b51b588e7dcc66d6a6250eb72cab1fd9460817fa9e6e43a940de2574317d7d6f"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "684fe8bf10f0e7087b00c3d448f451033911d7103b19feaba27931e2a9ad56aa",
+        "key": "b451273cc6b8b790b31cc62d154e58df2d9006b92f8913126a0a0589dab7aed7",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "4356091c55991ad3c0de628a928ea9d02c480d5bce50dcdee73b4081f0a9aef2",
+        "source_sha256": "3e0f47d067f70c75e6e80e786c204e8309c3d589ecde2677f68c0cdb18efdd8b",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32E51x_CL.svd",
       "source_pack_name": "GD32E51x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "8bd44c7a2f11342ec3d5aa42a312951bc417a1890bef01ea82e677dc761895d8"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "b1640699a755b61106d28e8f8f2dab6c7a614a188b85c5f9777477eec59911fb",
+        "key": "843891a5ece6657fb0058e7f6741849197e67ae9a4a7de883b7550d8277bdae9",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "b942262f502b4d1415ce5da937c07f0c0ec34b27edf5b73974cfeacb07c01c73",
+        "source_sha256": "67919a9491aa41db5b0d590f57030a231e967f243c53e5fbb1e7e272d9b976c9",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32E51x_HD.svd",
       "source_pack_name": "GD32E51x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "939fef27953d219c913546c9d0adadf3ecd2fef9aecbf9b8ac55ca75c082fcbb"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "0063fc376dacb213ab5743e53e5e0be0cb4d0f1066e5cac07fa5c05141ed2278",
+        "key": "392f02f032ff9332762b1055298d66908352e2b40ff70cddb147a70d226cd485",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "bf40b6f7a429af487115e49330676f8897ed70d056cd3b012b011278eddbb374",
+        "source_sha256": "2a6d0946fb433a955989f380714f6949a4455bb1c57e14669136595a5c33248d",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32EPRTxxA.svd",
       "source_pack_name": "GD32E51x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "7af3f205a69d9f92253be752ae4c72e86f4d271ff2c74fe757261bcf46a315da"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "dad5f6b937e5351215807dd980649f8c95017acf01b917fc641d15db0cc9bdfa",
+        "key": "335c0cae11df438eff41e328bb6a964b40cd9caefdaf713cbd4e0e521add15d0",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "d4719a3b57a69069e4aab3208dab55add2b3eafcadc070fe9f1953f4f086d01d",
+        "source_sha256": "d37390a42e75a496d00be5845aff9be768b03767544f38bfe1b28fb8afedef10",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F10x/GD32F10x_CL.svd",
       "source_pack_name": "GD32F10x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "d33b8d7f98a6c10807a0942bd6ff7881cd5333d6e36868a8c2581c04e335310c"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "d33420669ebd9eccf19f54cf830aad2991b6bbf47aca91ec40b909fbbdfea719",
+        "key": "4cfc6bab0d0e472761921e03845051bc6dc07edb9679ad421fa37b652d1861fd",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "1b5e27f484236c7b7c244adae62523c3bb408df1f08116ce7e002953ae626328",
+        "source_sha256": "2148b87a1a02d6c2474d0dec351a27f3d1e800b3e23667445c794f23be42c0fb",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F10x/GD32F10x_HD.svd",
       "source_pack_name": "GD32F10x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "715df4fd7dce2aef166233da80eca8006cc37b705dec00f61a8f2598b01ae43e"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "d6cd7a52f2c45921d169f193c5415244cd1cdf5d7f13dc42a2da4358c7665eb9",
+        "key": "32b40b7c648faf8264a765550b174fafa196cce584fdef51875c3d0bd02aee7c",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "205ec0c5c2fee60e4ba22ad65722411211c5e030338808ec01dc2485dc838ef9",
+        "source_sha256": "b84778fc92c1f8b1a2a98148dfbd351099a216b27593297b64cf9f4668039e33",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F10x/GD32F10x_MD.svd",
       "source_pack_name": "GD32F10x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "38c6511d1fe19186871e7cee69cf0a511366002c33b8cb6c0ed30ab0b013bb67"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "e6e9bbbe95d2dad01a0e74ddd6dd74fda2d1c0fe92f4a474646aa7e54c49eef5",
+        "key": "9c5a05313efa0094dbd04ff53dfff5251a980910f7592aa69071a3940b9f6e83",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "e03c68b72b216bcf50c19eda3165517d36b6b88309dde0941dd39a273309abeb",
+        "source_sha256": "645cec095422ca1381053031556a35299b5412c0eb01251c0264b6f32a83ac4a",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F10x/GD32F10x_XD.svd",
       "source_pack_name": "GD32F10x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "64e3f60ce962315eb820a3f9fd8acc6f7e5ea84416df9cf1b6c6f465bdcc3116"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "6647d11afdd3a073ea87fc2410e966d895709e0b44b5883761a9495b92f1a6da",
+        "key": "5890247f9afb924ceda43f15647783b91aaca093b1e88d76b9e4420215be8c22",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "9c8a8b3863474707e66ecfc7fe6335dd8f250e79fc30c83dbe73d2ee991131a1",
+        "source_sha256": "dcaf157c7611bb3146fecc9d0c2029f8379bb4fb6cd07a7c80005e1c7f706605",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F1x0.svd",
       "source_pack_name": "GD32F1x0_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "445ed762317e093357fcbe7478de78bdea53cfbe459429143288aaf2470346f2"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "b9d628b43b410972133c833d0f8c061dd26f8e4a4d785f610553ccca7d2c4bc2",
+        "key": "0f57d722f8e45b2ba5844d996cd32c2ad1eef9f1892c54e0c651add97b414965",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "a34fbe70eb124679884abac6c1d640aa356349158c9b5258e8adc01463a0a871",
+        "source_sha256": "e01e31514952a267d0b54febf83d98ac62b2ca570105e868886963e5138bb523",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F20x_CL.svd",
       "source_pack_name": "GD32F20x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "6abf0881b2faaca472eb085a7a08280a7bdef363ea697b18e5a7ad6ca5d989a3"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "eab043fad527fbb2520f8d3ccbe406a345ad58be2977db410558c43f7b2a42fc",
+        "key": "8f25772f3fe0d03d4842a017f47d7cc2a4513d0826f0be53b9319ab007639504",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "6a01f41007ef2430722f2711b5db971194c30e6eed8cde436eba33713402b04a",
+        "source_sha256": "a7d66e5a8ba72bc7ac44ea2a4c484e7bedd06d777e659ec0ebd19b63fc439087",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F30x_CL.svd",
       "source_pack_name": "GD32F30x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "64adc601aa34573698b6a88e870837ad662c6cf827a6222d3a39b12e646d7c83"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "40a370112cd092f50f18286ae991d346bea3b7edaf1050b49813885aff7876e0",
+        "key": "a8b7f5fa9fea3bb84d9b48ec919abcf358ff6c53f38f84cd524ed7e1a1cfc3c2",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "fa168331bd433ba9d64cca419702783fceb8d75fcf60577b55976b87ce5dcff4",
+        "source_sha256": "53547d127832b424d771ef30b7c2bfb158479311099864aa0128868d4e41e02d",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F30x_HD.svd",
       "source_pack_name": "GD32F30x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "168843f7f2438cc10c3722f3a37039fd6187e1cedac4e014020683bc681d6061"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "4de2f8c1906e11bcfeff156a1a5a43e0aa3c4cacfb46c7e13bba07bc2b6f391e",
+        "key": "b90856552115f4d56d33fdbf69c27efe7a7bd71514db7d4b775d60247b839754",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "4a54d22de7776d52be4386ad73bec5ae3d491598478ebe17dee5d358ed476d04",
+        "source_sha256": "5856c75feb8f1bdbc796c40ba6804fef6576d93ac2e458f6ee96969a50abb19c",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F30x_XD.svd",
       "source_pack_name": "GD32F30x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "128efe8d3b43be6d9c0f4b21132fc2c2b5b1faac9f6342bcbf20fe2b2cf60db8"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "e16b7da6a2bfc0e910478a1cc3cf265e0607ba227455720e33380b1a760e60cf",
+        "key": "e53eff23311087564301362dae1ac8103418ec825f3ed20d1df7839a640bb78c",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "7280a8a30911c426b7291d0647321dad69e568877319a25800e66e1884fe51f8",
+        "source_sha256": "319ee6ff5fada49628e3bbb661d318881058c93fe9a699b9b22c23609c4d8190",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F3x0.svd",
       "source_pack_name": "GD32F3x0_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "ea82de31b48891d22b1c47036868da89266db2d4954da025530201a91f0d7d2d"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "57173e419070086dc73270f1cebdd83cb799833252c5fdcbc4c23291cc938844",
+        "key": "e73fe2634c310c3ade163cdebfa822a42c0b41bb07e3b906baf4d385e5354ce2",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "80ea090fe666f906383d67bb0487915ba284c8b9701499018c088b1ffe677670",
+        "source_sha256": "035268e40f6f47fc70e67e038dc7754b2ffc0f5688754fc9a10a17b81c6d689f",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F403.svd",
       "source_pack_name": "GD32F403_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "6b2acdf1538c6c06c625cb1bbc52d2753605a65074692b35a3752a75caa3469d"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "b7fe0e7ced0909ed08963be46914c2ef4d79f25944a1d3235bc2e16f487cda2f",
+        "key": "e9e09e130c7ea9b4185a5c4dba21b44fa93fbfe31c810e6c9e43c95a645d7f00",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "febd079305928e48e483a779b3c68d1a618332c0b95c199ba1a35b544fe04c3e",
+        "source_sha256": "ca0a2b2fe55d999fb2b758eba8c8a9db2a758161c7505077e719a429c558e5c3",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F4xx.svd",
       "source_pack_name": "GD32F4xx_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "6c90270411ed49211c2b3be70d719bb55e8ed2cb588a86f39e3faa66072c81be"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "2403af0c4c8bc3af41e1ade0c805bd2592d76cc85c6aa77d81fd17b98251deb0",
+        "key": "49467a136b0278da76a87fbd77104bce7ad79d1d7434ece33b893b1e34b0755e",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "9894494028ec276b9f12f4931d7ffceb5bf0d32deb5672094ce156f47265a6cc",
+        "source_sha256": "5f709c60544d9539da56420ab0e1fdbc444cc293e4b9f93e267d42537df729ec",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F50x.svd",
       "source_pack_name": "GD32F50x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "547a57290ad0fbec92d34bb8296e758779ad1c0bf4271300b11aa575069a837b"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "c2b6f2749b082ebd75ddfb29bf310d21d6ca1767a50b57a51b4a063293ef2191",
+        "key": "abda27c59e6fc5175aad47681f482e45494be06a6bf7cff7b29fb839b07c9bf7",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "c1efcf9b1527be5a4b40d4431b34d43ac8bfc2d7fbcbcb171ba7d3a2d241c118",
+        "source_sha256": "ec6f1f2c509783bcedce51bf3d305c74b988dc3d962e4ae2c0a1ec2656238bbe",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F527.svd",
       "source_pack_name": "GD32F527_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "192219611370fb4807c26d220b95e4b95c942d9f206414c33c4ffb6bdea88b6e"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "c4663bde5dbc5c4b1dfe71e409dbb32485b44884f7d6f8770b54656046c08fb6",
+        "key": "7cbddf8002865fb5d3eeda72d3ee3913192d788298e3e28ffead6247653fc69a",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "38a07ea9f79430dc9e36ea1d7ab0701ccc1766a13817256a41018b3c886f2d94",
+        "source_sha256": "976a905ba680698163ae3a3d83471b04cd1d9734c2f07d728e4ce5b7a32fe8e5",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32G5x3.svd",
       "source_pack_name": "GD32G5x3_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "e0e551bec1831a201ac29c9de59dbd220dcccf1471cac60c849b088d0a0a021e"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "f7b3d3caf52734e59417694af296c1cd21759a8f235710e0ddd21f51f2c8c97e",
+        "key": "a45dfe09fb900140bebe326329ecef2f3cc4e19192df35770b8c6c532dcf218e",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "aa323388dd8dc86d3703373ead73ec1af162caa09db01a42597e1f35911bbf0c",
+        "source_sha256": "d75dddd1aa350e0dc5f6159dcc1d87cb206cf377636667c8a59e0c9e0dbd7e4d",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32H75E.svd",
       "source_pack_name": "GD32H75E_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "d2befce9360eaa4ecc9ea8baf8573cb6055936c7ff776fbdc93eff79e2846cab"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "c578dc9ad418e4fb254ea210d3b04d51989a526e936ae2471f73aae89b235542",
+        "key": "5c380b4fcbeeadfb880052dff1a10b91c55a601175352c5922ac3c2e1c7b9320",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "90c1f8ffda703b261d25703dbf7e0d4146fe935d749cff8d73bed1ebc7e329e1",
+        "source_sha256": "71eb934e6a2ce7c33d0a4ccbe48506e65a45882b69b4e9b9cf418192d7dd73d4",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32H7xx.svd",
       "source_pack_name": "GD32H7xx_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "e9ebbd921e2d8478d9fe919d0c1164097db9cf0dd64d6ed8f1ddeed563f2efd0"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "cddd6bdb9669d6c9879a4533b196bfb726b9d14ef902bb663c1d956cace9ffdb",
+        "key": "7ab7819ce8a0a3aaf1eb566b41fa5f914baf9cfa09347840e19fd75f36d5706c",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "a2c34f978c142e3d555d4fe3953d51301e80e4835bce6659b5c75895c2c9c3be",
+        "source_sha256": "eb58d8dbd78043a91973a2c72946ef9f1f009a5d54f1336337c22ee648b12eb0",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32L233x.svd",
       "source_pack_name": "GD32L23x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "e0fc16ec78d2fc501f33bc91136d36145956efe143ef056b57133b5cd1042ee3"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "b237899ce756f41999e8a6e6cc52825e83e5aa39429789430153d727fb110ee2",
+        "key": "c91f165f0e65568b43cea6ca92918a1b51108d18b305a3e7a7f03c39478cea96",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "27955cf8079ea2f2d480b248d95c75f453177a948e917d3ab99d8981c8f0caf6",
+        "source_sha256": "70374e1a7a479f2999a59cafbe21dae16421d4e71f6d4f33dcc50b1e8545921a",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32L235x.svd",
       "source_pack_name": "GD32L23x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "605200908b65634e735b3e179bbb7a96a324db6db5a2981cd5e87d0528516961"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "af99d83a476f318058eda2c20e3ad527545d7b779fda689162b9684880ac0d09",
+        "key": "d22ee2027a9dec3258d29299d6ab105b5bb41660d3f2875f19235c667b0667a1",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "8cfc93ee3c661c4d39aabef67d5fe746b9aa6821adae6e09c644bdd4fac1effa",
+        "source_sha256": "16a0e7303e94a0728f1579b634f9957b096f1ad65d66711be2cf3aebc4555e71",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32M53x.svd",
       "source_pack_name": "GD32M53x_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "1dcb0ddfe0b48153edef49c03b1f6485ba6131bd30e99ac32d42da486ba9c311"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "b476169c2bd8d1fdd52edf97a9c3a9832ee63e7fd730812016435a8782174fff",
+        "key": "5460e0f6d8b2f957edfb914a4f60ddb8dafb48427f2ade8cb5ce09a713ae2aa9",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "70289810f5495ab0d4d7cf85efd1fc3c4b97c03c57238d4228af5d96eb70ef08",
+        "source_sha256": "b939a45bcdce7dba7867582e191c15fcfbbf437501fc713600a5b0f5f8a1d88e",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32F5HC.svd",
       "source_pack_name": "GD32W51x_F5HC_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "6f348cfef861de91c9d652edb949a8fb1b38df75c22e3899607af4ae576a1399"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "7e1abf86e5a82124183665d94c27dc32d92a5b312d423d5ab4d6520fcc60a5b4",
+        "key": "eb84e8517390eec757e0d0a230a630843225fbda30732988dc3710246efff596",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "b71cb93af05de29cf43ef7c4cb68ae460761d104013223ae8ea0cf85db5af293",
+        "source_sha256": "bd5b040a8d5c7c5691a6968e1ab4242602db6e1a8118d24bbf0aaeb9f27e60a5",
         "stub_version": 1,
         "success": true
       },
       "path": "SVD/GD32W515.svd",
       "source_pack_name": "GD32W51x_F5HC_DFP",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "84587b678bfaccb6c6462282c02e61ef4a5e60e0877e33d403e24f2558c15268"
     }
   ],

@@ -9772,7 +9772,7 @@
     "archive_sha256": "ea97f61ffd50d7254a91122993e1524a28301699d85fe4429a3c21f3aa93c4d5",
     "scan": {
       "path": "gigadevice-programmer.json",
-      "sha256": "ad7ee6eb59f22b56924c15130785604788d96cc334ed9312bf0edcc22754fd25"
+      "sha256": "ef792f47233d3ece9e82b2d8fdc0717e9a21a14b2ef3179be246b3daa11caca8"
     }
   },
   "schema_version": 1,

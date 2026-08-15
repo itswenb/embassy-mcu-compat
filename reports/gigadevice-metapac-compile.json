@@ -2,9 +2,9 @@
   "missing_exact_target": [],
   "provenance": {
     "cargo_toml_sha256": "7b4209b9b4123f6c650a724c67ecc59b2132fc11d210232850fde4a5b857b440",
-    "generation_marker_sha256": "2710dd8950c1b301a76b9d7d6c8eaf6568c174ab184faa7f344c83ac95d8a83b",
+    "generation_marker_sha256": "4c3a5980129e9abc6aa9c03292d5c426036470fbed19019e43812d72f5c7c0c4",
     "models_sha256": "8181922b6aef25903330d6e3c7c1544650dd60108fd18aa535903468ffe9f550",
-    "validation_source_sha256": "5f22dab3d8c2943787e7df228d7bc50a438846c85ecbd7b9fa48591dcac7139a"
+    "validation_source_sha256": "f89363204d236c4379db137615baf4b1a560089a1c527ca64bb641beb9c13c60"
   },
   "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
   "schema_version": 1,

@@ -516,15 +516,15 @@
         1
       ],
       "document_id": 134,
-      "filename": "134-1-GD32F330xx%20Datasheet%20Rev3.4.pdf",
+      "filename": "134-1-GD32F330xx%20Datasheet%20Rev3.5.pdf",
       "name": "GD32F330xx Datasheet",
-      "published": "2026-04-15",
+      "published": "2026-08-14",
       "selected_path_type": 1,
-      "sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
-      "size": 2882177,
+      "sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
+      "size": 1997785,
       "status": "active",
-      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F330xx%20Datasheet%20Rev3.4.pdf",
-      "version": "3.4"
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F330xx%20Datasheet%20Rev3.5.pdf",
+      "version": "3.5"
     },
     {
       "available_path_types": [
@@ -948,6 +948,23 @@
     }
   ],
   "document_kind": "数据手册",
+  "history": [
+    {
+      "available_path_types": [
+        1
+      ],
+      "document_id": 134,
+      "filename": "134-1-GD32F330xx%20Datasheet%20Rev3.4.pdf",
+      "name": "GD32F330xx Datasheet",
+      "published": "2026-04-15",
+      "selected_path_type": 1,
+      "sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+      "size": 2882177,
+      "status": "superseded",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F330xx%20Datasheet%20Rev3.4.pdf",
+      "version": "3.4"
+    }
+  ],
   "redistribution": "原始 PDF 仅作来源缓存；公开仓库只提交哈希、定位信息和事实型派生数据。",
   "schema_version": 1,
   "source_pages": [

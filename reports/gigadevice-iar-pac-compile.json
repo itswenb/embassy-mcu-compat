@@ -3,40 +3,40 @@
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "f5f9a45600a6954e50df6aaac5273b9338224755c0c7b8ea54f8aef947952e20",
+        "key": "71e4ebe69c38f6546865046ff7c8d11fedb4bfeeb1af002393961a999846f059",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "64deec7db26873753f75197aa2401fcf8b69dd4aaabc1066627378016f285d88",
+        "source_sha256": "e3ba3c24f78fa26a38bdba91ee7ca06c52f38d91c37705b6dbfa6ee26e954d85",
         "stub_version": 1,
         "success": true
       },
       "path": "cxarm-9.70.4/arm/config/debugger/GD/GD32A714x.svd",
       "source_pack_name": "IAR Arm Device Support",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "a8fd14f05cc899b284765b58544ce59f3b33fed2b69329db6fe04eb67f970d15"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "60f3ba5bdcbb40afaf602867130b8597df809634601fd4ba24c5c44e59d16331",
+        "key": "0330a2f3d68c409e646539a6573e7208c63aea91b04b23e91f20cdd512fe9590",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "61d25dc5a805e73ea85ab6b2184f678d65dcd64346c53c04e88304cfa1ccada0",
+        "source_sha256": "9ebbbe492cb4198ae0b31a0de29af225acb3c039f5b916c1b2f8c2fb0283e96b",
         "stub_version": 1,
         "success": true
       },
       "path": "cxarm-9.70.4/arm/config/debugger/GD/GD32A71x.svd",
       "source_pack_name": "IAR Arm Device Support",
-      "status": "cached",
+      "status": "compiled",
       "svd_sha256": "26fca717b9fe0438d8d8060d94dbefa125869c469193029242e82817babde923"
     },
     {
       "chiptool_revision": "030394157b9dd30c48c0e592a52149f501e3c3d4",
       "details": {
-        "key": "f5f9a45600a6954e50df6aaac5273b9338224755c0c7b8ea54f8aef947952e20",
+        "key": "71e4ebe69c38f6546865046ff7c8d11fedb4bfeeb1af002393961a999846f059",
         "rustc": "release=1.94.0-nightly;commit-hash=f5209000832c9d3bc29c91f4daef4ca9f28dc797",
         "schema_version": 1,
-        "source_sha256": "64deec7db26873753f75197aa2401fcf8b69dd4aaabc1066627378016f285d88",
+        "source_sha256": "e3ba3c24f78fa26a38bdba91ee7ca06c52f38d91c37705b6dbfa6ee26e954d85",
         "stub_version": 1,
         "success": true
       },

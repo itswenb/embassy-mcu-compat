@@ -1,61 +1,61 @@
 {
   "generated": [
     {
-      "input_source_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+      "input_source_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
       "kind": "file",
       "path": "Cargo.toml",
-      "sha256": "3cb034d94c506db7153d09c88c5a3c41f59e43c01cfcbfc9ace5c0232330a80d"
+      "sha256": "d039e58574806b6d53f07a9a0de1aa158865841cac2fbcca730eb7a01d7021df"
     },
     {
-      "input_source_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+      "input_source_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
       "kind": "file",
       "path": "README.md",
-      "sha256": "4797d5fc1cdf3fb700849c87634d199604f9513cf2518f965a2e8336a4b54b9f"
+      "sha256": "9a767d86a66715dfadf356fd3f37ec646367c7186ccf82090493028a92c52f00"
     },
     {
-      "input_source_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+      "input_source_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
       "kind": "file",
       "path": "build.rs",
-      "sha256": "119e986eef49a0bab572f92b64ba289dcac5d2245ed7a14e6e9d11aea7b98e3c"
+      "sha256": "30ac928aa838618a786c26a5df10af7ce574e36353ebd5f88e56025011823c6f"
     },
     {
-      "input_source_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+      "input_source_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
       "kind": "file",
       "path": "generation.json",
-      "sha256": "4fdf044cccf5d91e106475d0c0aa295494004c8c8aa139fa47333e37a904377c"
+      "sha256": "d838e5e097125a446d599272d65277f2871b055f30108457f81a6a47b9d2455c"
     },
     {
-      "input_source_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+      "input_source_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
       "kind": "file",
       "path": "gigadevice-sync-success.json",
-      "sha256": "a42550f020a25d790b5417fc2bd0f1067c9d5f9d0c5f99425ec227ff34b8ab28"
+      "sha256": "08748aec0429e87a06e89c77f07e9a975fef74324274d64940a85f6fbe4b2ebd"
     },
     {
-      "file_count": 3191,
-      "input_source_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+      "file_count": 4049,
+      "input_source_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
       "kind": "tree",
       "path": "mcu-metapac",
-      "sha256": "6343e917943ae33b1bf026e0274bf365f00150d2a315775c36864e6d992149e6"
+      "sha256": "21d04a673e41d740bf6f2d5bb117c9dd4df6b7fdc2d1fc61f5a6626589f91da5"
     },
     {
-      "input_source_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+      "input_source_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
       "kind": "file",
       "path": "mcu-metapac-generation.json",
-      "sha256": "907832cc5935b0e36aa4ac5fc1fc3b3e519d004fe1a221ee92eaa994b731687d"
+      "sha256": "6c459dabd7a69e631c02d4e39ca144f43b02ac112b4fcacb1bc9d2eaefa0f6eb"
     },
     {
-      "file_count": 3,
-      "input_source_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+      "file_count": 4,
+      "input_source_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
       "kind": "tree",
       "path": "release",
-      "sha256": "4cda68d8e7b59bc3f82f15da1bfa9fe81a63862a57ac7f0c12b70d60202fbb55"
+      "sha256": "a725183786caf66f36ef109cdb2d3b83bfb8597a1796caac937af545327787dc"
     },
     {
-      "file_count": 6851,
-      "input_source_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+      "file_count": 7976,
+      "input_source_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
       "kind": "tree",
       "path": "src",
-      "sha256": "a58f996f7de85f75c804a229dc145505a7a9470e2a8588f1b03b0bfe0b837500"
+      "sha256": "e00439a2b561070244e4987292c3a2c1c1e827ae821b2046a2c9c53575b05b37"
     }
   ],
   "locks": [
@@ -73,7 +73,7 @@
     },
     {
       "path": "sources/gigadevice/datasheets.lock.json",
-      "sha256": "06070b6f7ed70014733a249abcce68185932c9b9f62dcd848c59a44e213b4206"
+      "sha256": "47c5fc2c8fc022fd68f7e000aa92cb217746aa5a3b86d2284e01b835144778fd"
     },
     {
       "path": "sources/gigadevice/firmware.lock.json",
@@ -89,7 +89,7 @@
     },
     {
       "path": "sources/gigadevice/products.lock.json",
-      "sha256": "22baa98a9a43997400f3ce3dd437198a95c70497ca71c4f3bf24f339a5ee8fdc"
+      "sha256": "b4cf6bd72aadfcd52377e312f71658799143900ded61c121652c0a905ba6c953"
     },
     {
       "path": "sources/gigadevice/programmer.lock.json",
@@ -1024,17 +1024,17 @@
     },
     {
       "document_id": 134,
-      "filename": "134-1-GD32F330xx%20Datasheet%20Rev3.4.pdf",
+      "filename": "134-1-GD32F330xx%20Datasheet%20Rev3.5.pdf",
       "historical": false,
       "lock_path": "sources/gigadevice/datasheets.lock.json",
       "name": "GD32F330xx Datasheet",
-      "published": "2026-04-15",
-      "sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
-      "size": 2882177,
+      "published": "2026-08-14",
+      "sha256": "0b54548338d7432d6295fd391afdc0d122989182651c7575c5f0a8ab1f975c90",
+      "size": 1997785,
       "source_type": "datasheets",
       "status": "active",
-      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F330xx%20Datasheet%20Rev3.4.pdf",
-      "version": "3.4"
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F330xx%20Datasheet%20Rev3.5.pdf",
+      "version": "3.5"
     },
     {
       "document_id": 133,
@@ -1427,6 +1427,20 @@
       "status": "active",
       "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32W515xx%20Datasheet_Rev1.9.pdf",
       "version": "1.9"
+    },
+    {
+      "document_id": 134,
+      "filename": "134-1-GD32F330xx%20Datasheet%20Rev3.4.pdf",
+      "historical": true,
+      "lock_path": "sources/gigadevice/datasheets.lock.json",
+      "name": "GD32F330xx Datasheet",
+      "published": "2026-04-15",
+      "sha256": "dd9481c77d9756d79722197581beb18f0c3e286c7c76cc0a65f81733cdef9670",
+      "size": 2882177,
+      "source_type": "datasheets",
+      "status": "superseded",
+      "url": "https://www.gd32mcu.com/data/documents/datasheet/GD32F330xx%20Datasheet%20Rev3.4.pdf",
+      "version": "3.4"
     },
     {
       "document_id": 622,
@@ -2354,8 +2368,8 @@
       "historical": false,
       "lock_path": "sources/gigadevice/products.lock.json",
       "name": "products",
-      "sha256": "b5cdd81a2c9faad959a89145fc011a0efd9357c155d9958f7087536cea6c28a5",
-      "size": 1362566,
+      "sha256": "e7d253b6194d28fac6f87417ccbd4e586b0f78a3eec16e05896611f283d2de9d",
+      "size": 1363015,
       "source_type": "products",
       "status": "active",
       "url": "https://www.gigadevice.com/product/mcu/automotive-mcus/gd32a7xx-series"
@@ -2387,10 +2401,11 @@
   "summary": {
     "generated_count": 9,
     "lock_count": 10,
-    "source_count": 164,
-    "source_lock_digest": "faf7e7b570e9a3b153fe09d8bee12f3085bc18d0cf9ad028d07f9d79ef40cee4",
+    "source_count": 165,
+    "source_lock_digest": "122ca0ad6e6fc081cb3148dbd06572b97dc8c4237edab693cb7828f0ccf0c5c4",
     "sources_by_status": {
-      "active": 164
+      "active": 164,
+      "superseded": 1
     }
   }
 }

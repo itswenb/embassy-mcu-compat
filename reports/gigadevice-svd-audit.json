@@ -28,7 +28,7 @@
             "size": 2323
           },
           "lib.rs": {
-            "sha256": "26e4c20b406224e77c973ddb6d5b99fcad2d9de584156440c4a185314bf2a488",
+            "sha256": "456c985f2e04aa717e0d2c1b370296ff9b16ffe32843db4f94bab9056355072c",
             "size": 1963550
           }
         },
@@ -1404,7 +1404,7 @@
       "source_pack_name": "GD32A10x_DFP",
       "source_pack_version": "1.4.0",
       "source_pdsc_path": "GD32A10x_Addon_V1.4.0/unpacked/GigaDevice.GD32A10x_DFP.1.4.0/GigaDevice.GD32A10x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 62
     },
     {
@@ -1421,7 +1421,7 @@
             "size": 3206
           },
           "lib.rs": {
-            "sha256": "2a3ed19e260d242435735819439cf4bb7079ff9e6a72f59673423a59e059247c",
+            "sha256": "644cfb9f1daeb9975e01ac20dccbe59feae27c3779997e48e1e47543998dd687",
             "size": 3194235
           }
         },
@@ -4001,7 +4001,7 @@
       "source_pack_name": "GD32A490_DFP",
       "source_pack_version": "1.4.0",
       "source_pdsc_path": "GD32A490_AddOn_V1.4.0/unpacked/GigaDevice.GD32A490_DFP.1.4.0/GigaDevice.GD32A490_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 87
     },
     {
@@ -4018,7 +4018,7 @@
             "size": 3068
           },
           "lib.rs": {
-            "sha256": "62a398b5e2f829b56e152c36a898cc620dcd98efd507f483d2c010be86ad49b4",
+            "sha256": "c4c81b5cfef94f8990f77ea20cb54cb488135f8242a95efb9523fb56eb22c2a6",
             "size": 5115990
           }
         },
@@ -5818,7 +5818,7 @@
       "source_pack_name": "GD32A508_DFP",
       "source_pack_version": "1.4.0",
       "source_pdsc_path": "GD32A508_AddOn_v1.4.0/unpacked/GigaDevice.GD32A508_DFP.1.4.0/GigaDevice.GD32A508_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 82
     },
     {
@@ -5835,7 +5835,7 @@
             "size": 2343
           },
           "lib.rs": {
-            "sha256": "a50b73ae30347d38e3ef8ba50abd7bcc50979b9167c12c461c2c0ea2db479958",
+            "sha256": "e05a7d3f29d21a9186f7dd4f9383053c17bfc7ecb494f5d554b428306001d5ef",
             "size": 1531690
           }
         },
@@ -7079,7 +7079,7 @@
       "source_pack_name": "GD32A50x_DFP",
       "source_pack_version": "1.6.0",
       "source_pdsc_path": "GD32A50x_AddOn_V1.6.0/unpacked/GigaDevice.GD32A50x_DFP.1.6.0/GigaDevice.GD32A50x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 64
     },
     {
@@ -7096,7 +7096,7 @@
             "size": 2343
           },
           "lib.rs": {
-            "sha256": "209f3812872983e4a1bdcf7e8e8cdceb2f57ff520283a7ef45fb8c84781a43e9",
+            "sha256": "5bfd122f12a4a7a26377817790da55ac6146b711b0259005a7103dadcc0d9a95",
             "size": 1530360
           }
         },
@@ -8340,7 +8340,7 @@
       "source_pack_name": "GD32A513_DFP",
       "source_pack_version": "1.3.0",
       "source_pdsc_path": "GD32A513_AddOn_V1.3.0/unpacked/GigaDevice.GD32A513_DFP.1.3.0/GigaDevice.GD32A513_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 64
     },
     {
@@ -8357,7 +8357,7 @@
             "size": 2323
           },
           "lib.rs": {
-            "sha256": "4a01feea0081102da50ab6ec3947b3d5febf9d9bd7f5a52a3018199e4632c826",
+            "sha256": "28fbbf7bd802bad520f0d686e97a261a6bb265c4f56b30c9abe3fe4f03345b86",
             "size": 2021143
           }
         },
@@ -9733,7 +9733,7 @@
       "source_pack_name": "GD32C10x_DFP",
       "source_pack_version": "1.5.0",
       "source_pdsc_path": "GD32C10x_Addon_V1.5.0/unpacked/GigaDevice.GD32C10x_DFP.1.5.0/GigaDevice.GD32C10x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 62
     },
     {
@@ -9750,7 +9750,7 @@
             "size": 2323
           },
           "lib.rs": {
-            "sha256": "7a9211bc1a72acd01d7405b502e50cbb73adfc704e8e3c2c60420911c39fd4cd",
+            "sha256": "4bf08e808e18be782349b30086f017aac24b3da39b3c34c6ec4dc0f1fabc96db",
             "size": 2028413
           }
         },
@@ -11126,7 +11126,7 @@
       "source_pack_name": "GD32C10x_DFP",
       "source_pack_version": "1.5.0",
       "source_pdsc_path": "GD32C10x_Addon_V1.5.0/unpacked/GigaDevice.GD32C10x_DFP.1.5.0/GigaDevice.GD32C10x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 62
     },
     {
@@ -11143,7 +11143,7 @@
             "size": 2323
           },
           "lib.rs": {
-            "sha256": "26e4c20b406224e77c973ddb6d5b99fcad2d9de584156440c4a185314bf2a488",
+            "sha256": "456c985f2e04aa717e0d2c1b370296ff9b16ffe32843db4f94bab9056355072c",
             "size": 1963550
           }
         },
@@ -12519,7 +12519,7 @@
       "source_pack_name": "GD32C11x_DFP",
       "source_pack_version": "1.5.0",
       "source_pdsc_path": "GD32C11x_Addon_V1.5.0/unpacked/GigaDevice.GD32C11x_DFP.1.5.0/GigaDevice.GD32C11x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 62
     },
     {
@@ -12536,7 +12536,7 @@
             "size": 1324
           },
           "lib.rs": {
-            "sha256": "752b60feadebbc6b89efad2efc6d9c406107a0941af8874045be9102ed22f991",
+            "sha256": "686253399253f4b59c6fc7e966e5d81993deb6e4717c53e2c6d6fc8bf457e215",
             "size": 1063192
           }
         },
@@ -13624,7 +13624,7 @@
       "source_pack_name": "GD32C2x1_DFP",
       "source_pack_version": "1.1.0",
       "source_pdsc_path": "GD32C2x1_AddOn_V1.1.0/unpacked/GigaDevice.GD32C2x1_DFP.1.1.0/GigaDevice.GD32C2x1_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 37
     },
     {
@@ -13641,7 +13641,7 @@
             "size": 1324
           },
           "lib.rs": {
-            "sha256": "752b60feadebbc6b89efad2efc6d9c406107a0941af8874045be9102ed22f991",
+            "sha256": "686253399253f4b59c6fc7e966e5d81993deb6e4717c53e2c6d6fc8bf457e215",
             "size": 1063192
           }
         },
@@ -14729,7 +14729,7 @@
       "source_pack_name": "GD32C2x1_DFP",
       "source_pack_version": "1.1.0",
       "source_pdsc_path": "GD32C2x1_AddOn_V1.1.0/unpacked/GigaDevice.GD32C2x1_DFP.1.1.0/GigaDevice.GD32C2x1_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 37
     },
     {
@@ -14746,7 +14746,7 @@
             "size": 2035
           },
           "lib.rs": {
-            "sha256": "ce991ad3cf6057cde9e02cd1a59ed959afa53fd9b10336d745fec83c90687beb",
+            "sha256": "130e412c5437e44a3ff9ea4dfff9c28b644b5dbe7a5b04217be495f64e0eaa8e",
             "size": 1185226
           }
         },
@@ -16078,7 +16078,7 @@
       "source_pack_name": "GD32E10x_DFP",
       "source_pack_version": "1.7.0",
       "source_pdsc_path": "GD32E10x_Addon_V1.7.0/unpacked/GigaDevice.GD32E10x_DFP.1.7.0/GigaDevice.GD32E10x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 54
     },
     {
@@ -16095,7 +16095,7 @@
             "size": 2035
           },
           "lib.rs": {
-            "sha256": "ce991ad3cf6057cde9e02cd1a59ed959afa53fd9b10336d745fec83c90687beb",
+            "sha256": "130e412c5437e44a3ff9ea4dfff9c28b644b5dbe7a5b04217be495f64e0eaa8e",
             "size": 1185226
           }
         },
@@ -17427,7 +17427,7 @@
       "source_pack_name": "GD32E11x_DFP",
       "source_pack_version": "1.5.0",
       "source_pdsc_path": "GD32E11x_Addon_V1.5.0/unpacked/GigaDevice.GD32E11x_DFP.1.5.0/GigaDevice.GD32E11x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 54
     },
     {
@@ -17444,7 +17444,7 @@
             "size": 988
           },
           "lib.rs": {
-            "sha256": "757e6b754e331875c5894471609756667eb68db636f31f55f87c11f2a6ef2d07",
+            "sha256": "4aa055132a89458fe4464e6a901b8b2f42ea3a594211082529ff90899882a3a4",
             "size": 1123337
           }
         },
@@ -18216,7 +18216,7 @@
       "source_pack_name": "GD32E23x_DFP",
       "source_pack_version": "2.5.0",
       "source_pdsc_path": "GD32E23x_AddOn_V2.5.0/unpacked/GigaDevice.GD32E23x_DFP.2.5.0/GigaDevice.GD32E23x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 28
     },
     {
@@ -18233,7 +18233,7 @@
             "size": 2343
           },
           "lib.rs": {
-            "sha256": "209f3812872983e4a1bdcf7e8e8cdceb2f57ff520283a7ef45fb8c84781a43e9",
+            "sha256": "5bfd122f12a4a7a26377817790da55ac6146b711b0259005a7103dadcc0d9a95",
             "size": 1530360
           }
         },
@@ -19477,7 +19477,7 @@
       "source_pack_name": "GD32E502_DFP",
       "source_pack_version": "1.3.0",
       "source_pdsc_path": "GD32E502_AddOn_V1.3.0/unpacked/GigaDevice.GD32E502_DFP.1.3.0/GigaDevice.GD32E502_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 64
     },
     {
@@ -19494,7 +19494,7 @@
             "size": 3068
           },
           "lib.rs": {
-            "sha256": "62a398b5e2f829b56e152c36a898cc620dcd98efd507f483d2c010be86ad49b4",
+            "sha256": "c4c81b5cfef94f8990f77ea20cb54cb488135f8242a95efb9523fb56eb22c2a6",
             "size": 5115990
           }
         },
@@ -21293,7 +21293,7 @@
       "source_pack_name": "GD32E50x_DFP",
       "source_pack_version": "1.9.0",
       "source_pdsc_path": "GD32E50x_AddOn_v1.9.0/unpacked/GigaDevice.GD32E50x_DFP.1.9.0/GigaDevice.GD32E50x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 82
     },
     {
@@ -21310,7 +21310,7 @@
             "size": 3084
           },
           "lib.rs": {
-            "sha256": "faaca206c2d1ea544af133ae06c41b196e06fb0047f1d4b2453f126e8eedb00d",
+            "sha256": "5b6c738964a9b83d02b4f2739eeec612ab9009c14df6a858196cd90982ed2182",
             "size": 5076470
           }
         },
@@ -23109,7 +23109,7 @@
       "source_pack_name": "GD32E50x_DFP",
       "source_pack_version": "1.9.0",
       "source_pdsc_path": "GD32E50x_AddOn_v1.9.0/unpacked/GigaDevice.GD32E50x_DFP.1.9.0/GigaDevice.GD32E50x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 82
     },
     {
@@ -23126,7 +23126,7 @@
             "size": 2838
           },
           "lib.rs": {
-            "sha256": "af6651c4dbe04e1369ad3d361b9f660fedef7a552fb65c5d9caec598ea370be7",
+            "sha256": "930970152d422ec4b83818acf2a7dda7c4b006426a62abcea41b2579561f8fcc",
             "size": 4078760
           }
         },
@@ -24725,7 +24725,7 @@
       "source_pack_name": "GD32E50x_DFP",
       "source_pack_version": "1.9.0",
       "source_pdsc_path": "GD32E50x_AddOn_v1.9.0/unpacked/GigaDevice.GD32E50x_DFP.1.9.0/GigaDevice.GD32E50x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 75
     },
     {
@@ -24742,7 +24742,7 @@
             "size": 2308
           },
           "lib.rs": {
-            "sha256": "3f7987888660eb5380212216351abc152bf8cb1e1663c732a6cacdd49fab8b8b",
+            "sha256": "03d6622415dbf951506e34715705173ed348944e1cfb35d2bf3d93542f5b54e3",
             "size": 2150258
           }
         },
@@ -26124,7 +26124,7 @@
       "source_pack_name": "GD32E50x_DFP",
       "source_pack_version": "1.9.0",
       "source_pdsc_path": "GD32E50x_AddOn_v1.9.0/unpacked/GigaDevice.GD32E50x_DFP.1.9.0/GigaDevice.GD32E50x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 63
     },
     {
@@ -26141,7 +26141,7 @@
             "size": 3140
           },
           "lib.rs": {
-            "sha256": "4356091c55991ad3c0de628a928ea9d02c480d5bce50dcdee73b4081f0a9aef2",
+            "sha256": "3e0f47d067f70c75e6e80e786c204e8309c3d589ecde2677f68c0cdb18efdd8b",
             "size": 5229550
           }
         },
@@ -28046,7 +28046,7 @@
       "source_pack_name": "GD32E51x_DFP",
       "source_pack_version": "1.5.0",
       "source_pdsc_path": "GD32E51x_AddOn_v1.5.0/unpacked/GigaDevice.GD32E51x_DFP.1.5.0/GigaDevice.GD32E51x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 83
     },
     {
@@ -28063,7 +28063,7 @@
             "size": 2893
           },
           "lib.rs": {
-            "sha256": "b942262f502b4d1415ce5da937c07f0c0ec34b27edf5b73974cfeacb07c01c73",
+            "sha256": "67919a9491aa41db5b0d590f57030a231e967f243c53e5fbb1e7e272d9b976c9",
             "size": 4201186
           }
         },
@@ -29798,7 +29798,7 @@
       "source_pack_name": "GD32E51x_DFP",
       "source_pack_version": "1.5.0",
       "source_pdsc_path": "GD32E51x_AddOn_v1.5.0/unpacked/GigaDevice.GD32E51x_DFP.1.5.0/GigaDevice.GD32E51x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 76
     },
     {
@@ -29815,7 +29815,7 @@
             "size": 2682
           },
           "lib.rs": {
-            "sha256": "bf40b6f7a429af487115e49330676f8897ed70d056cd3b012b011278eddbb374",
+            "sha256": "2a6d0946fb433a955989f380714f6949a4455bb1c57e14669136595a5c33248d",
             "size": 3478301
           }
         },
@@ -31348,7 +31348,7 @@
       "source_pack_name": "GD32E51x_DFP",
       "source_pack_version": "1.5.0",
       "source_pdsc_path": "GD32E51x_AddOn_v1.5.0/unpacked/GigaDevice.GD32E51x_DFP.1.5.0/GigaDevice.GD32E51x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 70
     },
     {
@@ -31365,7 +31365,7 @@
             "size": 2381
           },
           "lib.rs": {
-            "sha256": "d4719a3b57a69069e4aab3208dab55add2b3eafcadc070fe9f1953f4f086d01d",
+            "sha256": "d37390a42e75a496d00be5845aff9be768b03767544f38bfe1b28fb8afedef10",
             "size": 2107435
           }
         },
@@ -32698,7 +32698,7 @@
       "source_pack_name": "GD32F10x_DFP",
       "source_pack_version": "2.3.0",
       "source_pdsc_path": "GD32F10x_AddOn_V2.3.0/unpacked/GigaDevice.GD32F10x_DFP.2.3.0/GigaDevice.GD32F10x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 65
     },
     {
@@ -32715,7 +32715,7 @@
             "size": 2175
           },
           "lib.rs": {
-            "sha256": "1b5e27f484236c7b7c244adae62523c3bb408df1f08116ce7e002953ae626328",
+            "sha256": "2148b87a1a02d6c2474d0dec351a27f3d1e800b3e23667445c794f23be42c0fb",
             "size": 1809703
           }
         },
@@ -34038,7 +34038,7 @@
       "source_pack_name": "GD32F10x_DFP",
       "source_pack_version": "2.3.0",
       "source_pdsc_path": "GD32F10x_AddOn_V2.3.0/unpacked/GigaDevice.GD32F10x_DFP.2.3.0/GigaDevice.GD32F10x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 59
     },
     {
@@ -34055,7 +34055,7 @@
             "size": 1586
           },
           "lib.rs": {
-            "sha256": "205ec0c5c2fee60e4ba22ad65722411211c5e030338808ec01dc2485dc838ef9",
+            "sha256": "b84778fc92c1f8b1a2a98148dfbd351099a216b27593297b64cf9f4668039e33",
             "size": 1662798
           }
         },
@@ -35254,7 +35254,7 @@
       "source_pack_name": "GD32F10x_DFP",
       "source_pack_version": "2.3.0",
       "source_pdsc_path": "GD32F10x_AddOn_V2.3.0/unpacked/GigaDevice.GD32F10x_DFP.2.3.0/GigaDevice.GD32F10x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 43
     },
     {
@@ -35271,7 +35271,7 @@
             "size": 2221
           },
           "lib.rs": {
-            "sha256": "e03c68b72b216bcf50c19eda3165517d36b6b88309dde0941dd39a273309abeb",
+            "sha256": "645cec095422ca1381053031556a35299b5412c0eb01251c0264b6f32a83ac4a",
             "size": 1857098
           }
         },
@@ -36630,7 +36630,7 @@
       "source_pack_name": "GD32F10x_DFP",
       "source_pack_version": "2.3.0",
       "source_pdsc_path": "GD32F10x_AddOn_V2.3.0/unpacked/GigaDevice.GD32F10x_DFP.2.3.0/GigaDevice.GD32F10x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 59
     },
     {
@@ -36647,7 +36647,7 @@
             "size": 1339
           },
           "lib.rs": {
-            "sha256": "9c8a8b3863474707e66ecfc7fe6335dd8f250e79fc30c83dbe73d2ee991131a1",
+            "sha256": "dcaf157c7611bb3146fecc9d0c2029f8379bb4fb6cd07a7c80005e1c7f706605",
             "size": 1310636
           }
         },
@@ -37627,7 +37627,7 @@
       "source_pack_name": "GD32F1x0_DFP",
       "source_pack_version": "3.7.0",
       "source_pdsc_path": "GD32F1x0_AddOn_v3.7.0/unpacked/GigaDevice.GD32F1x0_DFP.3.7.0/GigaDevice.GD32F1x0_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 38
     },
     {
@@ -37644,7 +37644,7 @@
             "size": 2824
           },
           "lib.rs": {
-            "sha256": "a34fbe70eb124679884abac6c1d640aa356349158c9b5258e8adc01463a0a871",
+            "sha256": "e01e31514952a267d0b54febf83d98ac62b2ca570105e868886963e5138bb523",
             "size": 2394020
           }
         },
@@ -39434,7 +39434,7 @@
       "source_pack_name": "GD32F20x_DFP",
       "source_pack_version": "2.7.0",
       "source_pdsc_path": "GD32F20x_AddOn_V2.7.0/unpacked/GigaDevice.GD32F20x_DFP.2.7.0/GigaDevice.GD32F20x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 77
     },
     {
@@ -39451,7 +39451,7 @@
             "size": 2453
           },
           "lib.rs": {
-            "sha256": "6a01f41007ef2430722f2711b5db971194c30e6eed8cde436eba33713402b04a",
+            "sha256": "a7d66e5a8ba72bc7ac44ea2a4c484e7bedd06d777e659ec0ebd19b63fc439087",
             "size": 2164900
           }
         },
@@ -40973,7 +40973,7 @@
       "source_pack_name": "GD32F30x_DFP",
       "source_pack_version": "2.6.0",
       "source_pdsc_path": "GD32F30x_Addon_V2.6.0/unpacked/GigaDevice.GD32F30x_DFP.2.6.0/GigaDevice.GD32F30x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 66
     },
     {
@@ -40990,7 +40990,7 @@
             "size": 2215
           },
           "lib.rs": {
-            "sha256": "fa168331bd433ba9d64cca419702783fceb8d75fcf60577b55976b87ce5dcff4",
+            "sha256": "53547d127832b424d771ef30b7c2bfb158479311099864aa0128868d4e41e02d",
             "size": 1852049
           }
         },
@@ -42380,7 +42380,7 @@
       "source_pack_name": "GD32F30x_DFP",
       "source_pack_version": "2.6.0",
       "source_pdsc_path": "GD32F30x_Addon_V2.6.0/unpacked/GigaDevice.GD32F30x_DFP.2.6.0/GigaDevice.GD32F30x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 59
     },
     {
@@ -42397,7 +42397,7 @@
             "size": 2215
           },
           "lib.rs": {
-            "sha256": "4a54d22de7776d52be4386ad73bec5ae3d491598478ebe17dee5d358ed476d04",
+            "sha256": "5856c75feb8f1bdbc796c40ba6804fef6576d93ac2e458f6ee96969a50abb19c",
             "size": 1852060
           }
         },
@@ -43787,7 +43787,7 @@
       "source_pack_name": "GD32F30x_DFP",
       "source_pack_version": "2.6.0",
       "source_pdsc_path": "GD32F30x_Addon_V2.6.0/unpacked/GigaDevice.GD32F30x_DFP.2.6.0/GigaDevice.GD32F30x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 59
     },
     {
@@ -43804,7 +43804,7 @@
             "size": 1201
           },
           "lib.rs": {
-            "sha256": "7280a8a30911c426b7291d0647321dad69e568877319a25800e66e1884fe51f8",
+            "sha256": "319ee6ff5fada49628e3bbb661d318881058c93fe9a699b9b22c23609c4d8190",
             "size": 1583792
           }
         },
@@ -44774,7 +44774,7 @@
       "source_pack_name": "GD32F3x0_DFP",
       "source_pack_version": "3.4.0",
       "source_pdsc_path": "GD32F3x0_Addon_V3.4.0/unpacked/GigaDevice.GD32F3x0_DFP.3.4.0/GigaDevice.GD32F3x0_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 34
     },
     {
@@ -44791,7 +44791,7 @@
             "size": 2348
           },
           "lib.rs": {
-            "sha256": "80ea090fe666f906383d67bb0487915ba284c8b9701499018c088b1ffe677670",
+            "sha256": "035268e40f6f47fc70e67e038dc7754b2ffc0f5688754fc9a10a17b81c6d689f",
             "size": 2085249
           }
         },
@@ -46209,7 +46209,7 @@
       "source_pack_name": "GD32F403_DFP",
       "source_pack_version": "3.5.0",
       "source_pdsc_path": "GD32F403_Addon_V3.5.0/unpacked/GigaDevice.GD32F403_DFP.3.5.0/GigaDevice.GD32F403_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 63
     },
     {
@@ -46226,7 +46226,7 @@
             "size": 3237
           },
           "lib.rs": {
-            "sha256": "febd079305928e48e483a779b3c68d1a618332c0b95c199ba1a35b544fe04c3e",
+            "sha256": "ca0a2b2fe55d999fb2b758eba8c8a9db2a758161c7505077e719a429c558e5c3",
             "size": 3196809
           }
         },
@@ -48810,7 +48810,7 @@
       "source_pack_name": "GD32F4xx_DFP",
       "source_pack_version": "3.5.0",
       "source_pdsc_path": "GD32F4xx_AddOn_V3.5.0/unpacked/GigaDevice.GD32F4xx_DFP.3.5.0/GigaDevice.GD32F4xx_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 88
     },
     {
@@ -48827,7 +48827,7 @@
             "size": 2894
           },
           "lib.rs": {
-            "sha256": "9894494028ec276b9f12f4931d7ffceb5bf0d32deb5672094ce156f47265a6cc",
+            "sha256": "5f709c60544d9539da56420ab0e1fdbc444cc293e4b9f93e267d42537df729ec",
             "size": 2225987
           }
         },
@@ -50417,7 +50417,7 @@
       "source_pack_name": "GD32F50x_DFP",
       "source_pack_version": "1.0.1",
       "source_pdsc_path": "GD32F50x_AddOn_V1.0.1/unpacked/GigaDevice.GD32F50x_DFP.1.0.1/GigaDevice.GD32F50x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 79
     },
     {
@@ -50434,7 +50434,7 @@
             "size": 3715
           },
           "lib.rs": {
-            "sha256": "c1efcf9b1527be5a4b40d4431b34d43ac8bfc2d7fbcbcb171ba7d3a2d241c118",
+            "sha256": "ec6f1f2c509783bcedce51bf3d305c74b988dc3d962e4ae2c0a1ec2656238bbe",
             "size": 3437031
           }
         },
@@ -53274,7 +53274,7 @@
       "source_pack_name": "GD32F527_DFP",
       "source_pack_version": "1.4.0",
       "source_pdsc_path": "GD32F527_AddOn_V1.4.0/unpacked/GigaDevice.GD32F527_DFP.1.4.0/GigaDevice.GD32F527_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 102
     },
     {
@@ -53291,7 +53291,7 @@
             "size": 4793
           },
           "lib.rs": {
-            "sha256": "38a07ea9f79430dc9e36ea1d7ab0701ccc1766a13817256a41018b3c886f2d94",
+            "sha256": "976a905ba680698163ae3a3d83471b04cd1d9734c2f07d728e4ce5b7a32fe8e5",
             "size": 5233363
           }
         },
@@ -55993,7 +55993,7 @@
       "source_pack_name": "GD32G5x3_DFP",
       "source_pack_version": "1.3.0",
       "source_pdsc_path": "GD32G5x3_AddOn_V1.3.0/unpacked/GigaDevice.GD32G5x3_DFP.1.3.0/GigaDevice.GD32G5x3_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 125
     },
     {
@@ -56010,7 +56010,7 @@
             "size": 5189
           },
           "lib.rs": {
-            "sha256": "aa323388dd8dc86d3703373ead73ec1af162caa09db01a42597e1f35911bbf0c",
+            "sha256": "d75dddd1aa350e0dc5f6159dcc1d87cb206cf377636667c8a59e0c9e0dbd7e4d",
             "size": 4919280
           }
         },
@@ -59382,7 +59382,7 @@
       "source_pack_name": "GD32H75E_DFP",
       "source_pack_version": "1.4.0",
       "source_pdsc_path": "GD32H75E_AddOn_V1.4.0/unpacked/GigaDevice.GD32H75E_DFP.1.4.0/GigaDevice.GD32H75E_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 139
     },
     {
@@ -59399,7 +59399,7 @@
             "size": 5994
           },
           "lib.rs": {
-            "sha256": "90c1f8ffda703b261d25703dbf7e0d4146fe935d749cff8d73bed1ebc7e329e1",
+            "sha256": "71eb934e6a2ce7c33d0a4ccbe48506e65a45882b69b4e9b9cf418192d7dd73d4",
             "size": 5941588
           }
         },
@@ -63647,7 +63647,7 @@
       "source_pack_name": "GD32H7xx_DFP",
       "source_pack_version": "1.5.0",
       "source_pdsc_path": "GD32H7xx_AddOn_V1.5.0/unpacked/GigaDevice.GD32H7xx_DFP.1.5.0/GigaDevice.GD32H7xx_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 162
     },
     {
@@ -63664,7 +63664,7 @@
             "size": 2054
           },
           "lib.rs": {
-            "sha256": "a2c34f978c142e3d555d4fe3953d51301e80e4835bce6659b5c75895c2c9c3be",
+            "sha256": "eb58d8dbd78043a91973a2c72946ef9f1f009a5d54f1336337c22ee648b12eb0",
             "size": 1573371
           }
         },
@@ -64850,7 +64850,7 @@
       "source_pack_name": "GD32L23x_DFP",
       "source_pack_version": "2.3.0",
       "source_pdsc_path": "GD32L23x_AddOn_V2.3.0/unpacked/GigaDevice.GD32L23x_DFP.2.3.0/GigaDevice.GD32L23x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 58
     },
     {
@@ -64867,7 +64867,7 @@
             "size": 2389
           },
           "lib.rs": {
-            "sha256": "27955cf8079ea2f2d480b248d95c75f453177a948e917d3ab99d8981c8f0caf6",
+            "sha256": "70374e1a7a479f2999a59cafbe21dae16421d4e71f6d4f33dcc50b1e8545921a",
             "size": 2464450
           }
         },
@@ -66221,7 +66221,7 @@
       "source_pack_name": "GD32L23x_DFP",
       "source_pack_version": "2.3.0",
       "source_pdsc_path": "GD32L23x_AddOn_V2.3.0/unpacked/GigaDevice.GD32L23x_DFP.2.3.0/GigaDevice.GD32L23x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 67
     },
     {
@@ -66238,7 +66238,7 @@
             "size": 2641
           },
           "lib.rs": {
-            "sha256": "8cfc93ee3c661c4d39aabef67d5fe746b9aa6821adae6e09c644bdd4fac1effa",
+            "sha256": "16a0e7303e94a0728f1579b634f9957b096f1ad65d66711be2cf3aebc4555e71",
             "size": 2416036
           }
         },
@@ -67566,7 +67566,7 @@
       "source_pack_name": "GD32M53x_DFP",
       "source_pack_version": "1.0.0",
       "source_pdsc_path": "GD32M53x_AddOn_V1.0.0/unpacked/GigaDevice.GD32M53x_DFP.1.0.0/GigaDevice.GD32M53x_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 72
     },
     {
@@ -67583,7 +67583,7 @@
             "size": 2602
           },
           "lib.rs": {
-            "sha256": "70289810f5495ab0d4d7cf85efd1fc3c4b97c03c57238d4228af5d96eb70ef08",
+            "sha256": "b939a45bcdce7dba7867582e191c15fcfbbf437501fc713600a5b0f5f8a1d88e",
             "size": 3035384
           }
         },
@@ -69517,7 +69517,7 @@
       "source_pack_name": "GD32W51x_F5HC_DFP",
       "source_pack_version": "2.0.0",
       "source_pdsc_path": "GD32W51x_F5HC_AddOn_V2.0.0/unpacked/GigaDevice.GD32W51x_F5HC_DFP.2.0.0/GigaDevice.GD32W51x_F5HC_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 71
     },
     {
@@ -69534,7 +69534,7 @@
             "size": 2494
           },
           "lib.rs": {
-            "sha256": "b71cb93af05de29cf43ef7c4cb68ae460761d104013223ae8ea0cf85db5af293",
+            "sha256": "bd5b040a8d5c7c5691a6968e1ab4242602db6e1a8118d24bbf0aaeb9f27e60a5",
             "size": 3318531
           }
         },
@@ -71600,7 +71600,7 @@
       "source_pack_name": "GD32W51x_F5HC_DFP",
       "source_pack_version": "2.0.0",
       "source_pdsc_path": "GD32W51x_F5HC_AddOn_V2.0.0/unpacked/GigaDevice.GD32W51x_F5HC_DFP.2.0.0/GigaDevice.GD32W51x_F5HC_DFP.pdsc",
-      "status": "cached",
+      "status": "generated",
       "unique_interrupt_values": 68
     }
   ]

@@ -44428,7 +44428,7 @@
         "pac": "compiled",
         "pins": {
           "afio_routes": 146,
-          "functions": 516,
+          "functions": 510,
           "gpio_pins": 58,
           "packages": [
             "LQFP48"
@@ -44522,7 +44522,7 @@
         "pac": "compiled",
         "pins": {
           "afio_routes": 146,
-          "functions": 510,
+          "functions": 504,
           "gpio_pins": 58,
           "packages": [
             "LQFP48"
@@ -44616,7 +44616,7 @@
         "pac": "compiled",
         "pins": {
           "afio_routes": 146,
-          "functions": 536,
+          "functions": 529,
           "gpio_pins": 58,
           "packages": [
             "LQFP48"
@@ -44710,7 +44710,7 @@
         "pac": "compiled",
         "pins": {
           "afio_routes": 146,
-          "functions": 536,
+          "functions": 529,
           "gpio_pins": 58,
           "packages": [
             "LQFP48"
@@ -67850,7 +67850,7 @@
     },
     "dma": {
       "path": "gigadevice-dma.json",
-      "sha256": "c8644df3e665955d3c433bf1caabbd78ceb702a232eb058c3aac07f2c67088d0"
+      "sha256": "2f95c3084104b0f1e946fe958cf20057a09f7b4aafaf3e81f6f540cdb015d253"
     },
     "firmware": {
       "path": "gigadevice-firmware-headers.json",
@@ -67858,7 +67858,7 @@
     },
     "firmware_pacs": {
       "path": "gigadevice-firmware-pac-compile.json",
-      "sha256": "30e8ac58b79338d51fbd4042f0140ebc1dfe7e8018699bf6624704cce28741ab"
+      "sha256": "2c3eb4c59190d54cb6db870779e3d2356b27a19458bb588a627ed035e8bfbeca"
     },
     "iar": {
       "path": "gigadevice-iar-a7.json",
@@ -67866,11 +67866,11 @@
     },
     "iar_pacs": {
       "path": "gigadevice-iar-pac-compile.json",
-      "sha256": "5f58b000b523646c68b2a668b99c5fef44a55217bc681236e0cbc5c36a2ab5f2"
+      "sha256": "0b0535f56263997d806f8537cd987800774425ca4c016688a72d8ad18d679d04"
     },
     "memory": {
       "path": "gigadevice-memory.json",
-      "sha256": "3f39d9a5679ac3ef3764ac466b5f6071d028c76ea0f9769492537c40508b27cd"
+      "sha256": "e020a6cf79f7b1b0bfcc67e0cffc2c33a1f981f1069faab7694341c86a526745"
     },
     "models": {
       "path": "gigadevice-models.json",
@@ -67878,15 +67878,15 @@
     },
     "pacs": {
       "path": "gigadevice-pac-compile.json",
-      "sha256": "9ad9729189b6cf76db597fdb0b1e664bba3d49764018f8d41c3267ffb5f79460"
+      "sha256": "b5c905ad5e65cb36265f36631555d297635d96e4a8a235159e1a30f573466974"
     },
     "pins": {
       "path": "gigadevice-pins.json",
-      "sha256": "ba032f44e6bdebe6a5c8fd687e2616adb401d01a8f2aafe3426edbb94e22ab2b"
+      "sha256": "2fb8e1041b230cd081687f09d5e8af84ccf27e6cde58f55b34ec55e35cb31a54"
     },
     "rcu": {
       "path": "gigadevice-rcu.json",
-      "sha256": "1cea5b144c89db3d4a9fadf40ebc7c69a498ecb43965b1591133bcadab0d70a2"
+      "sha256": "96ef5ee04395ba63b50d6cceeb26a25a5b025b701bc68df241c27a005819ce73"
     },
     "registers": {
       "path": "gigadevice-firmware-registers.json",

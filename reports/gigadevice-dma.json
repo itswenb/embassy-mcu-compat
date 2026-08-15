@@ -10936,7 +10936,7 @@
     },
     "manual_dma": {
       "path": "gigadevice-manual-dma.json",
-      "sha256": "e271c12c0e0da9cd05d180a8cd2fb2908e800adf414824b3373cf9b10923eda4"
+      "sha256": "0e8415a7aeea2ca144cf1c5a65c9c3ab087b986d757c107c5414bd38866c701e"
     },
     "rcu": {
       "path": "gigadevice-rcu.json",

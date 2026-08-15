@@ -9,14 +9,20 @@
   "source": {
     "archive_sha256": "ea97f61ffd50d7254a91122993e1524a28301699d85fe4429a3c21f3aa93c4d5",
     "name": "GD32 All-In-One Programmer",
-    "nested_archives": [],
+    "nested_archives": [
+      {
+        "extracted": true,
+        "path": "GD32AllInOneProgrammer_win_V5.2.0.40390/GD32 All In One Programmer/GD32AllInOneProgrammer.exe"
+      }
+    ],
     "published": "2026-06-12",
-    "tree_sha256": "d3d4a665dcb7a5c40637f7c564b91debb2ff6cb026ddc7d2a0cc58b8aa6d8c29",
+    "tree_sha256": "003d462d34a1f7fe78971980dd9b7c47ade8fd8123a13f6b7bf315ceb672e60e",
     "version": "5.2.0.40390"
   },
   "summary": {
     "a7_files": [
       "GD32AllInOneProgrammer_win_V5.2.0.40390/GD32 All In One Programmer/GD32AllInOneProgrammer.exe",
+      "GD32AllInOneProgrammer_win_V5.2.0.40390/GD32 All In One Programmer/GD32AllInOneProgrammer.exe.unpacked/.rdata",
       "GD32AllInOneProgrammer_win_V5.2.0.40390/GD32 All In One Programmer/GD_MCU_DLL.dll"
     ],
     "a7_tokens": [
@@ -63,9 +69,10 @@
       "GD32A744AXJ3TA",
       "GD32A744AZT3TA"
     ],
-    "files": 122,
+    "files": 130,
     "h77_files": [
       "GD32AllInOneProgrammer_win_V5.2.0.40390/GD32 All In One Programmer/GD32AllInOneProgrammer.exe",
+      "GD32AllInOneProgrammer_win_V5.2.0.40390/GD32 All In One Programmer/GD32AllInOneProgrammer.exe.unpacked/.rdata",
       "GD32AllInOneProgrammer_win_V5.2.0.40390/GD32 All In One Programmer/GD32MCUFlashXML/GD32H77x.xml",
       "GD32AllInOneProgrammer_win_V5.2.0.40390/GD32 All In One Programmer/GD_MCU_DLL.dll",
       "GD32AllInOneProgrammer_win_V5.2.0.40390/GD32 All In One Programmer/OptionBytesXML/GD32H77x.xml"

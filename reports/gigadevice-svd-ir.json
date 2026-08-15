@@ -2,13 +2,13 @@
   "provenance": {
     "audit": {
       "path": "gigadevice-svd-audit.json",
-      "sha256": "05e87673c0ab8408b76f3013ab32772450492c1a99a2a6fd6a8d34f3e9bff03d"
+      "sha256": "b11df6c2ac5c97272657f060a20f26edd25949971ef6705fce2c60afb5e739d1"
     }
   },
   "schema_version": 1,
   "summary": {
-    "cached": 43,
-    "generated": 0,
+    "cached": 0,
+    "generated": 43,
     "json_files": 1927,
     "svds": 43
   },
@@ -538,7 +538,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "c738ba2ba7d56df30f66fe1757f428247ca7e76ce3b5c79aa90c25e2d32018ef",
       "yaml_files": 33
     },
@@ -1312,7 +1312,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "caf23d7e04a35513aaf03495427c44ce57674be0d36a817b87d17e6dd72506e5",
       "yaml_files": 50
     },
@@ -2026,7 +2026,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "d93992134699f1c071f85882908a2709ac87ed6d961bd055e859b83a0ce2a402",
       "yaml_files": 75
     },
@@ -2508,7 +2508,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "2f10feeaa3931ca0ddd266e265cd979fbea8bfcc21dbf9bba9891eae6fde28b6",
       "yaml_files": 33
     },
@@ -2990,7 +2990,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "6c822e21a440afc6ebab2c2371f6f4891152ef7daece06513ae260c990c4dc77",
       "yaml_files": 33
     },
@@ -3519,7 +3519,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "f4924abee5ee5034a592f0e205ee1336ed72b6e7cd2805475ac1d3639dec0c41",
       "yaml_files": 34
     },
@@ -4048,7 +4048,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "0eba2cbfb2b0a4ebf6f498b35833afd09302e8d9d2a75f4251739b174beae46c",
       "yaml_files": 34
     },
@@ -4577,7 +4577,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "ace93769fec705e620a48e94207a7751d1fcbc375a6d2c27906d103155021506",
       "yaml_files": 33
     },
@@ -4896,7 +4896,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "53b5b4ffc7f8b7de51cb2de7dd421895953f2fa78150574eee1e4877c2f8eb36",
       "yaml_files": 26
     },
@@ -5215,7 +5215,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "f9f620f207e20bf5d18f7fbe904f123e6abc39243e96524af9322e06640fbfaa",
       "yaml_files": 26
     },
@@ -5702,7 +5702,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "bc107eaf60552a4072fc9dcadd1e46a795332815e451afe9386e3fbdd4e2c12f",
       "yaml_files": 32
     },
@@ -6189,7 +6189,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "d12139da9c97f7fbd3687f053589f2bdd9b730e76836f2cbc4871e66b989bfb1",
       "yaml_files": 32
     },
@@ -6467,7 +6467,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "3a5622febdf34cc23593ee5ccdac211fc78208ba879ca2c2210701f857ae1792",
       "yaml_files": 28
     },
@@ -6949,7 +6949,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "4bef3c0359fd8047a68aea878b3fe2cdec70a2c14187fdfb140e88cb12ede0f3",
       "yaml_files": 33
     },
@@ -7663,7 +7663,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "11e80835ed924b775e2da6f3bd2612e59ece5bd572158c41b23d3964b87f2179",
       "yaml_files": 75
     },
@@ -8377,7 +8377,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "e558ce5037f240b1be878f52dc7061c9aae5156fa4ee03a70ddcf5fe585c3419",
       "yaml_files": 75
     },
@@ -9013,7 +9013,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "e607c51d20fa3244fb9d41e90880b3f2264087345d856f633fb6ab0701c0deb8",
       "yaml_files": 65
     },
@@ -9546,7 +9546,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "b51b588e7dcc66d6a6250eb72cab1fd9460817fa9e6e43a940de2574317d7d6f",
       "yaml_files": 54
     },
@@ -10289,7 +10289,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "8bd44c7a2f11342ec3d5aa42a312951bc417a1890bef01ea82e677dc761895d8",
       "yaml_files": 79
     },
@@ -10959,7 +10959,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "939fef27953d219c913546c9d0adadf3ecd2fef9aecbf9b8ac55ca75c082fcbb",
       "yaml_files": 70
     },
@@ -11610,7 +11610,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "7af3f205a69d9f92253be752ae4c72e86f4d271ff2c74fe757261bcf46a315da",
       "yaml_files": 71
     },
@@ -12151,7 +12151,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "d33b8d7f98a6c10807a0942bd6ff7881cd5333d6e36868a8c2581c04e335310c",
       "yaml_files": 36
     },
@@ -12633,7 +12633,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "715df4fd7dce2aef166233da80eca8006cc37b705dec00f61a8f2598b01ae43e",
       "yaml_files": 29
     },
@@ -13001,7 +13001,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "38c6511d1fe19186871e7cee69cf0a511366002c33b8cb6c0ed30ab0b013bb67",
       "yaml_files": 25
     },
@@ -13513,7 +13513,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "64e3f60ce962315eb820a3f9fd8acc6f7e5ea84416df9cf1b6c6f465bdcc3116",
       "yaml_files": 31
     },
@@ -13871,7 +13871,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "445ed762317e093357fcbe7478de78bdea53cfbe459429143288aaf2470346f2",
       "yaml_files": 33
     },
@@ -14550,7 +14550,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "6abf0881b2faaca472eb085a7a08280a7bdef363ea697b18e5a7ad6ca5d989a3",
       "yaml_files": 42
     },
@@ -15135,7 +15135,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "64adc601aa34573698b6a88e870837ad662c6cf827a6222d3a39b12e646d7c83",
       "yaml_files": 38
     },
@@ -15652,7 +15652,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "168843f7f2438cc10c3722f3a37039fd6187e1cedac4e014020683bc681d6061",
       "yaml_files": 31
     },
@@ -16169,7 +16169,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "128efe8d3b43be6d9c0f4b21132fc2c2b5b1faac9f6342bcbf20fe2b2cf60db8",
       "yaml_files": 31
     },
@@ -16521,7 +16521,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "ea82de31b48891d22b1c47036868da89266db2d4954da025530201a91f0d7d2d",
       "yaml_files": 36
     },
@@ -17064,7 +17064,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "6b2acdf1538c6c06c625cb1bbc52d2753605a65074692b35a3752a75caa3469d",
       "yaml_files": 34
     },
@@ -17842,7 +17842,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "6c90270411ed49211c2b3be70d719bb55e8ed2cb588a86f39e3faa66072c81be",
       "yaml_files": 50
     },
@@ -18454,7 +18454,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "547a57290ad0fbec92d34bb8296e758779ad1c0bf4271300b11aa575069a837b",
       "yaml_files": 37
     },
@@ -19318,7 +19318,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "192219611370fb4807c26d220b95e4b95c942d9f206414c33c4ffb6bdea88b6e",
       "yaml_files": 55
     },
@@ -20229,7 +20229,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "e0e551bec1831a201ac29c9de59dbd220dcccf1471cac60c849b088d0a0a021e",
       "yaml_files": 58
     },
@@ -21261,7 +21261,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "d2befce9360eaa4ecc9ea8baf8573cb6055936c7ff776fbdc93eff79e2846cab",
       "yaml_files": 62
     },
@@ -22545,7 +22545,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "e9ebbd921e2d8478d9fe919d0c1164097db9cf0dd64d6ed8f1ddeed563f2efd0",
       "yaml_files": 86
     },
@@ -23008,7 +23008,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "e0fc16ec78d2fc501f33bc91136d36145956efe143ef056b57133b5cd1042ee3",
       "yaml_files": 40
     },
@@ -23537,7 +23537,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "605200908b65634e735b3e179bbb7a96a324db6db5a2981cd5e87d0528516961",
       "yaml_files": 43
     },
@@ -24066,7 +24066,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "1dcb0ddfe0b48153edef49c03b1f6485ba6131bd30e99ac32d42da486ba9c311",
       "yaml_files": 33
     },
@@ -24881,7 +24881,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "6f348cfef861de91c9d652edb949a8fb1b38df75c22e3899607af4ae576a1399",
       "yaml_files": 52
     },
@@ -25704,7 +25704,7 @@
           "register_root": "WWDGT"
         }
       ],
-      "status": "cached",
+      "status": "generated",
       "svd_sha256": "84587b678bfaccb6c6462282c02e61ef4a5e60e0877e33d403e24f2558c15268",
       "yaml_files": 54
     }
