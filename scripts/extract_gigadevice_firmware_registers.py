@@ -93,7 +93,7 @@ def typed_enum_candidates(text: str) -> dict[str, list[tuple[str, int]]]:
             if not re.search(r"(?:MAX|INVALID|COUNT|NUMBER|END|ALL)$", name):
                 values.append(previous)
         unique = sorted(set(values))
-        if valid and len(unique) > 1 and unique == list(range(unique[-1] + 1)):
+        if valid and len(unique) > 1 and unique == list(range(len(unique))):
             enum_ends.setdefault(match.group("type"), set()).add(unique[-1])
     enum_values = {
         enum_type: next(iter(ends))

@@ -2,6 +2,7 @@ import importlib.util
 import sys
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 SCRIPTS_DIR = Path(__file__).parents[1]
@@ -44,6 +45,20 @@ hpdf_filter_enum hpdf_filter_get(uint32_t hpdf, hpdf_filter_enum filtery);
             MODULE.typed_enum_candidates(source),
             {"filtery": [("hpdf_filter_enum", 1)]},
         )
+
+    def test_稀疏大枚举不按最大值分配连续范围(self):
+        source = """
+typedef enum { FMC_READY = 0, FMC_TIMEOUT = 0x7FFFFFFF } fmc_state_enum;
+void fmc_wait(fmc_state_enum state);
+"""
+        original_range = range
+
+        def bounded_range(*args):
+            self.assertLessEqual(args[-1], 2)
+            return original_range(*args)
+
+        with mock.patch.object(MODULE, "range", bounded_range, create=True):
+            self.assertEqual(MODULE.typed_enum_candidates(source), {})
 
     def test_索引官方常量和枚举成员的编号组(self):
         source = """
