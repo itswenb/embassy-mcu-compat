@@ -195,8 +195,7 @@ python3 scripts/augment_gigadevice_iar_metapac.py \
     --source-root "$iar_root" \
     --replace
 python3 scripts/check_gigadevice_metapac.py \
-    --metapac-dir .cache/generated/gigadevice-metapac-complete-v1 \
-    --offline
+    --metapac-dir .cache/generated/gigadevice-metapac-complete-v1
 
 fi
 

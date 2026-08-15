@@ -68,7 +68,34 @@ def strip_embedded_common(source: str) -> str:
     marker = "pub mod common {"
     if source.count(marker) != 1:
         raise ValueError("chiptool PAC 必须包含唯一内置 common 模块")
-    return source[: source.index(marker)].rstrip()
+    start = source.index(marker)
+    opening = source.index("{", start)
+    depth = 0
+    quoted = False
+    escaped = False
+    for cursor in range(opening, len(source)):
+        character = source[cursor]
+        if quoted:
+            if escaped:
+                escaped = False
+            elif character == "\\":
+                escaped = True
+            elif character == '"':
+                quoted = False
+            continue
+        if character == '"':
+            quoted = True
+        elif character == "{":
+            depth += 1
+        elif character == "}":
+            depth -= 1
+            if depth == 0:
+                return (
+                    source[:start].rstrip()
+                    + "\n"
+                    + source[cursor + 1 :].lstrip()
+                ).strip()
+    raise ValueError("chiptool PAC 内置 common 模块未闭合")
 
 
 def _rust_string(value: str) -> str:

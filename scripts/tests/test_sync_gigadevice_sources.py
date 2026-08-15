@@ -20,6 +20,11 @@ class SyncGigadeviceSourcesTests(unittest.TestCase):
         self.assertEqual(result.returncode, 2)
         self.assertIn("未知同步阶段", result.stderr)
 
+    def test_全新runner允许下载metapac验证依赖(self) -> None:
+        script = SCRIPT.read_text(encoding="utf-8")
+
+        self.assertNotIn("--offline", script)
+
 
 if __name__ == "__main__":
     unittest.main()

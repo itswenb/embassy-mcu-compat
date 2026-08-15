@@ -20,12 +20,16 @@ class AugmentIarMetapacTests(unittest.TestCase):
         self.assertEqual(MODULE.strip_inner_attributes(source), "pub enum Interrupt {}")
         self.assertEqual(MODULE.strip_inner_attributes("pub mod gpio {}"), "pub mod gpio {}")
 
-    def test_移除chiptool尾部内置common模块(self):
-        source = "pub mod gpio { pub fn get() {} } pub mod common { pub struct RW; }"
+    def test_只移除chiptool内置common并保留后续外设模块(self):
+        source = (
+            "pub mod gpio { pub fn get() {} } "
+            'pub mod common { pub const DOC: &str = "}"; pub struct Reg<T> { value: T } } '
+            "pub mod tcm { pub struct Tcm; }"
+        )
 
         self.assertEqual(
             MODULE.strip_embedded_common(source),
-            "pub mod gpio { pub fn get() {} }",
+            "pub mod gpio { pub fn get() {} }\npub mod tcm { pub struct Tcm; }",
         )
 
 
