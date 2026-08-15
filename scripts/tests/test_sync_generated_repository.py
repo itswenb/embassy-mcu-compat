@@ -79,6 +79,11 @@ class SyncGeneratedRepositoryTests(unittest.TestCase):
         ):
             self.assertIn(f"--target {target}", workflow)
 
+    def test_归一结果跨阶段传递(self):
+        workflow = WORKFLOW.read_text(encoding="utf-8")
+
+        self.assertEqual(workflow.count("            .cache/normalized\n"), 3)
+
     def test_定时任务在提交前同步generated发布树(self):
         workflow = WORKFLOW.read_text(encoding="utf-8")
         sync = (

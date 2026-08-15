@@ -85,6 +85,7 @@ jobs:
             .cache/research
             .cache/tools
             .cache/generated
+            .cache/normalized
             sources/gigadevice
             reports
           key: gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-normalize
@@ -126,6 +127,7 @@ jobs:
             .cache/research
             .cache/tools
             .cache/generated
+            .cache/normalized
             sources/gigadevice
             reports
           key: gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-derive
@@ -182,6 +184,7 @@ jobs:
             .cache/research
             .cache/tools
             .cache/generated
+            .cache/normalized
             sources/gigadevice
             reports
           key: gd32-pipeline-v2-${{ runner.os }}-${{ github.run_id }}-derive
