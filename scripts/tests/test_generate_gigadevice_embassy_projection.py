@@ -1576,6 +1576,7 @@ class GenerateGigadeviceEmbassyProjectionTests(unittest.TestCase):
             )
             output = root / "profiles.json"
             manifest = root / "manifest.json"
+            registers_output = root / "registers-output"
             argv = [
                 str(MODULE_PATH),
                 "--models", str(root / "models.json"),
@@ -1589,6 +1590,7 @@ class GenerateGigadeviceEmbassyProjectionTests(unittest.TestCase):
                 "--rcu", str(root / "rcu.json"),
                 "--output", str(output),
                 "--manifest", str(manifest),
+                "--registers-output", str(registers_output),
             ]
 
             with patch.object(sys, "argv", argv):
@@ -1596,6 +1598,7 @@ class GenerateGigadeviceEmbassyProjectionTests(unittest.TestCase):
 
             self.assertEqual(json.loads(output.read_text())["summary"]["projected"], 1)
             self.assertEqual(json.loads(manifest.read_text())["summary"]["projected"], 1)
+            self.assertTrue((registers_output / ".m32-embassy-registers.json").is_file())
 
 
 if __name__ == "__main__":
