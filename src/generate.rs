@@ -170,6 +170,7 @@ pub fn generate_repository(request: GenerateRequest<'_>) -> Result<()> {
         merge_private_chips(&generated_dir, &publication_dir, &projections)?;
     }
     write_compat_table(&publication_dir, &projections)?;
+    trim_rust_tree(&publication_dir.join("src"))?;
     fs::write(publication_dir.join("build.rs"), COMPAT_BUILD_RS)
         .context("写入兼容 build.rs 失败")?;
     rewrite_package_manifest(&publication_dir.join("Cargo.toml"))?;
@@ -479,15 +480,21 @@ fn format_rust_tree(root: &Path) -> Result<()> {
                 String::from_utf8_lossy(&output.stderr)
             );
         }
-        let formatted = fs::read_to_string(&path)
+    }
+    trim_rust_tree(root)
+}
+
+fn trim_rust_tree(root: &Path) -> Result<()> {
+    for path in files_with_extension(root, "rs")? {
+        let contents = fs::read_to_string(&path)
             .with_context(|| format!("读取格式化结果 {} 失败", path.display()))?;
-        let normalized = formatted
+        let normalized = contents
             .lines()
             .map(str::trim_end)
             .collect::<Vec<_>>()
             .join("\n")
             + "\n";
-        if normalized != formatted {
+        if normalized != contents {
             fs::write(&path, normalized)
                 .with_context(|| format!("清理 {} 行尾空白失败", path.display()))?;
         }
