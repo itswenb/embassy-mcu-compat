@@ -22,6 +22,10 @@ LINKER_MEMORY_RE = re.compile(
     r"(0x[0-9A-Fa-f]+)\s*,\s*LENGTH\s*=\s*(\d+)\s*([KM]?)\s*$",
     re.MULTILINE,
 )
+FMC_PROGRAM_RE = re.compile(
+    r"\bfmc_(byte|halfword|word|double_?word|quad_?word|four_?word)_program\s*\(",
+    re.IGNORECASE,
+)
 
 
 def parse_linker_ram(text: str) -> list[dict[str, object]]:
@@ -46,6 +50,223 @@ def _wildcard_matches(pattern: str, part: str) -> bool:
         expected.casefold() == "x" or expected.upper() == actual.upper()
         for expected, actual in zip(pattern, part, strict=True)
     )
+
+
+def program_sizes_from_text(text: str) -> list[int]:
+    sizes = {
+        "byte": 1,
+        "halfword": 2,
+        "word": 4,
+        "doubleword": 8,
+        "quadword": 16,
+        "fourword": 16,
+    }
+    return sorted(
+        {
+            sizes[match.replace("_", "").casefold()]
+            for match in FMC_PROGRAM_RE.findall(text)
+        }
+    )
+
+
+def _pack_program_sizes(pdsc_root: Path, resource: dict[str, object]) -> list[int]:
+    pdsc = PurePosixPath(str(resource["source_pdsc"]["path"]))
+    root = pdsc_root.joinpath(*pdsc.parent.parts)
+    declarations = set()
+    for path in sorted(root.rglob("*fmc*.h")):
+        sizes = program_sizes_from_text(path.read_text(encoding="utf-8", errors="ignore"))
+        if sizes:
+            declarations.add(tuple(sizes))
+    if len(declarations) > 1:
+        raise ValueError(f"官方 Pack 的 Flash 写入粒度互相冲突：{resource['source_pack_name']}")
+    return list(next(iter(declarations), ()))
+
+
+def _programmer_geometries(
+    models: dict[str, object], programmer: dict[str, object]
+) -> dict[str, dict[str, object]]:
+    profiles = programmer.get("flash_profiles")
+    if not isinstance(profiles, list):
+        raise ValueError("Programmer 数据缺少 flash_profiles")
+    result: dict[str, dict[str, object]] = {}
+    for model in models["devices"]:
+        assert isinstance(model, dict)
+        matches = [
+            profile
+            for profile in profiles
+            if isinstance(profile, dict)
+            and any(
+                _wildcard_matches(str(profile["pattern"]), str(part))
+                for part in model.get("part_numbers", [])
+            )
+        ]
+        if matches:
+            specificity = max(
+                sum(character.casefold() != "x" for character in str(profile["pattern"]))
+                for profile in matches
+            )
+            matches = [
+                profile
+                for profile in matches
+                if sum(
+                    character.casefold() != "x"
+                    for character in str(profile["pattern"])
+                )
+                == specificity
+            ]
+        unique = {}
+        for profile in matches:
+            pages = profile.get("pages")
+            if not isinstance(pages, list) or not pages:
+                continue
+            signature = tuple(
+                (
+                    int(page["address"]),
+                    int(page["count"]) * int(page["page_size"]),
+                    int(page["page_size"]),
+                    str(page["bank"]),
+                )
+                for page in pages
+                if isinstance(page, dict)
+            )
+            ordered = sorted(signature)
+            if any(
+                address < previous_address + previous_size
+                for (previous_address, previous_size, _, _),
+                (address, _, _, _) in zip(ordered, ordered[1:], strict=False)
+            ):
+                continue
+            unique.setdefault(signature, profile)
+        if len(unique) > 1:
+            raise ValueError(f"Programmer Flash profile 几何冲突：{model['id']}")
+        if not unique:
+            continue
+        signature, profile = next(iter(unique.items()))
+        geometry = {
+            "regions": [
+                {
+                    "address": address,
+                    "size": size,
+                    "erase_size": erase_size,
+                    "bank": bank,
+                }
+                for address, size, erase_size, bank in signature
+            ],
+            "source": profile["source"],
+        }
+        for device in map(str, model.get("cmsis_devices", [])):
+            previous = result.setdefault(device, geometry)
+            if previous["regions"] != geometry["regions"]:
+                raise ValueError(f"CMSIS 型号对应多个 Programmer Flash 几何：{device}")
+    return result
+
+
+def _merged_ranges(rows: list[dict[str, object]]) -> list[tuple[int, int]]:
+    merged: list[tuple[int, int]] = []
+    for row in sorted(rows, key=lambda item: int(item["address"])):
+        start = int(row["address"])
+        end = start + int(row["size"])
+        if merged and merged[-1][1] == start:
+            merged[-1] = (merged[-1][0], end)
+        else:
+            merged.append((start, end))
+    return merged
+
+
+def apply_flash_geometry(
+    memory: list[dict[str, object]],
+    flash: list[dict[str, object]],
+    geometry: list[dict[str, object]],
+    write_size: int,
+    source: dict[str, object] | None = None,
+) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    if write_size <= 0 or not geometry:
+        raise ValueError("Flash 写入或擦除几何无效")
+    flash_memory = [region for region in memory if region["kind"] == "flash"]
+    if _merged_ranges(flash_memory) != _merged_ranges(geometry):
+        raise ValueError("Flash 内存与擦除几何范围不闭合")
+    memory_rows = [region for region in memory if region["kind"] != "flash"]
+    flash_rows = []
+    for index, region in enumerate(sorted(geometry, key=lambda item: int(item["address"]))):
+        address = int(region["address"])
+        size = int(region["size"])
+        erase_size = int(region["erase_size"])
+        if erase_size <= 0 or size <= 0 or size % erase_size:
+            raise ValueError("Flash Bank 容量不是擦除粒度的整数倍")
+        memory_source = [
+            row
+            for row in flash_memory
+            if int(row["address"]) <= address
+            and address + size <= int(row["address"]) + int(row["size"])
+        ]
+        descriptor_source = [
+            row
+            for row in flash
+            if int(row["address"]) <= address
+            and address + size <= int(row["address"]) + int(row["size"])
+        ]
+        if len(memory_source) != 1 or len(descriptor_source) != 1:
+            raise ValueError("Flash Bank 无法唯一映射内存与 FLM")
+        bank = str(region.get("bank", index))
+        erase_value = int(descriptor_source[0]["erase_value"])
+        settings = {
+            "erase_size": erase_size,
+            "write_size": write_size,
+            "erase_value": erase_value,
+        }
+        memory_rows.append(
+            {
+                "name": f"{memory_source[0]['name']}_BANK{bank}",
+                "kind": "flash",
+                "address": address,
+                "size": size,
+                "bank": bank,
+                "settings": settings,
+            }
+        )
+        descriptor = {
+            **descriptor_source[0],
+            "address": address,
+            "size": size,
+            "erase_size": erase_size,
+            "write_size": write_size,
+            "erase_value": erase_value,
+            "bank": bank,
+            "sectors": [{"offset": 0, "size": erase_size}],
+        }
+        if source is not None:
+            descriptor["geometry_source"] = source
+            descriptor["descriptor_resolutions"] = sorted(
+                {
+                    *map(str, descriptor.get("descriptor_resolutions", [])),
+                    "programmer-page-geometry-supersedes-flm-sectors",
+                }
+            )
+        flash_rows.append(descriptor)
+    return (
+        sorted(memory_rows, key=lambda item: (int(item["address"]), str(item["name"]))),
+        flash_rows,
+    )
+
+
+def _descriptor_geometry(flash: list[dict[str, object]]) -> list[dict[str, object]]:
+    geometry = []
+    for bank, region in enumerate(sorted(flash, key=lambda item: int(item["address"]))):
+        address = int(region["address"])
+        size = int(region["size"])
+        sectors = sorted(region["sectors"], key=lambda item: int(item["offset"]))
+        for index, sector in enumerate(sectors):
+            offset = int(sector["offset"])
+            end = int(sectors[index + 1]["offset"]) if index + 1 < len(sectors) else size
+            geometry.append(
+                {
+                    "address": address + offset,
+                    "size": end - offset,
+                    "erase_size": int(sector["size"]),
+                    "bank": str(bank),
+                }
+            )
+    return geometry
 
 
 def build_programmer_profiles(
@@ -106,7 +327,24 @@ def build_programmer_profiles(
                 "source_kind": "programmer-and-builder",
                 "source": profile["source"],
                 "linker_source": linker_source,
-                "memory": [*ram, *({**region, "kind": "flash"} for region in flash)],
+                "memory": [
+                    *ram,
+                    *(
+                        {
+                            "name": region["name"],
+                            "kind": "flash",
+                            "address": region["address"],
+                            "size": region["size"],
+                            "bank": region["bank"],
+                            "settings": {
+                                "erase_size": region["erase_size"],
+                                "write_size": region["write_size"],
+                                "erase_value": region["erase_value"],
+                            },
+                        }
+                        for region in flash
+                    ),
+                ],
                 "flash": flash,
                 "flash_status": "geometry-only",
             }
@@ -359,6 +597,9 @@ def build_outputs(
     resources_by_device = {str(item["device"]): item for item in resources["devices"]}
     if len(resources_by_device) != len(resources["devices"]):
         raise ValueError("Pack 内存资源 device 重复")
+    programmer_geometries = (
+        _programmer_geometries(models, programmer) if programmer is not None else {}
+    )
     algorithms: dict[str, dict[str, object]] = {}
     profiles = []
     for device in sorted(resources_by_device):
@@ -419,6 +660,32 @@ def build_outputs(
             )
         if not memory or not flash:
             raise ValueError(f"Pack device 缺少内存或 Flash 算法：{device}")
+        programmer_geometry = programmer_geometries.get(device)
+        program_sizes = _pack_program_sizes(pdsc_root, resource)
+        if (
+            programmer_geometry is not None
+            and _merged_ranges([row for row in memory if row["kind"] == "flash"])
+            == _merged_ranges(programmer_geometry["regions"])  # type: ignore[arg-type]
+        ):
+            if not program_sizes:
+                raise ValueError(f"官方 Pack 未声明 Flash 写入粒度：{device}")
+            try:
+                memory, flash = apply_flash_geometry(
+                    memory,
+                    flash,
+                    programmer_geometry["regions"],  # type: ignore[arg-type]
+                    min(program_sizes),
+                    programmer_geometry["source"],  # type: ignore[arg-type]
+                )
+            except ValueError as error:
+                raise ValueError(f"{device}: {error}") from error
+        elif program_sizes:
+            memory, flash = apply_flash_geometry(
+                memory,
+                flash,
+                _descriptor_geometry(flash),
+                min(program_sizes),
+            )
         profiles.append(
             {
                 "device": device,
@@ -427,6 +694,7 @@ def build_outputs(
                 "source_pdsc": resource["source_pdsc"],
                 "memory": memory,
                 "flash": sorted(flash, key=lambda item: int(item["address"])),
+                "program_sizes": program_sizes,
                 "flash_status": (
                     "conflict"
                     if any(region["descriptor_conflicts"] for region in flash)

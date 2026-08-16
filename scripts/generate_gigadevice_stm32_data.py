@@ -214,14 +214,15 @@ def _memory_configurations(memory: dict[str, object]) -> dict[str, list[list[dic
                     raise ValueError(f"内存区域类型无效：{device_id}:{kind}")
                 if address < 0 or size <= 0 or address + size > 1 << 32:
                     raise ValueError(f"内存区域范围无效：{device_id}:{region['name']}")
-                regions.append(
-                    {
-                        "name": str(region["name"]),
-                        "kind": kind,
-                        "address": address,
-                        "size": size,
-                    }
-                )
+                row = {
+                    "name": str(region["name"]),
+                    "kind": kind,
+                    "address": address,
+                    "size": size,
+                }
+                if region.get("settings") is not None:
+                    row["settings"] = region["settings"]
+                regions.append(row)
             configurations.setdefault(
                 json.dumps(regions, ensure_ascii=False, sort_keys=True), regions
             )

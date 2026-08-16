@@ -1160,32 +1160,27 @@ def build_projection_facts(
     profile_cores = profile.get("cores")
     if not isinstance(profile_cores, list) or len(profile_cores) != 1:
         raise ValueError("Embassy profile 必须是单核芯片")
-    profile_memory = profile.get("memory")
-    template_regions = (
-        profile_memory[0]
-        if isinstance(profile_memory, list)
-        and profile_memory
-        and isinstance(profile_memory[0], list)
-        else []
+    flash_regions = sorted(
+        (
+            region
+            for region in regions
+            if isinstance(region, dict) and region.get("kind") == "flash"
+        ),
+        key=lambda region: int(region["address"]),
     )
-    settings_by_kind = {
-        str(region["kind"]): copy.deepcopy(region.get("settings"))
-        for region in template_regions
-        if isinstance(region, dict) and region.get("settings") is not None
-    }
-    flash_banks = {
-        address: index
-        for index, address in enumerate(
-            sorted(
-                {
-                    int(region["address"])
-                    for region in regions
-                    if isinstance(region, dict) and region.get("kind") == "flash"
-                }
-            ),
-            1,
-        )
-    }
+    flash_groups: dict[str, list[int]] = {}
+    for region in flash_regions:
+        flash_groups.setdefault(
+            str(region.get("bank", region["address"])), []
+        ).append(int(region["address"]))
+    flash_names = {}
+    for bank_index, addresses in enumerate(flash_groups.values(), 1):
+        for region_index, address in enumerate(addresses, 1):
+            flash_names[address] = (
+                f"BANK_{bank_index}"
+                if len(addresses) == 1
+                else f"BANK_{bank_index}_REGION_{region_index}"
+            )
     ram_regions = {
         address: index
         for index, address in enumerate(
@@ -1207,7 +1202,7 @@ def build_projection_facts(
         address = int(region["address"])
         row = {
             "name": (
-                f"BANK_{flash_banks[address]}"
+                flash_names[address]
                 if kind == "flash"
                 else "SRAM"
                 if kind == "ram" and ram_regions[address] == 1
@@ -1219,8 +1214,8 @@ def build_projection_facts(
             "address": address,
             "size": int(region["size"]),
         }
-        if kind in settings_by_kind:
-            row["settings"] = settings_by_kind[kind]
+        if region.get("settings") is not None:
+            row["settings"] = copy.deepcopy(region["settings"])
         memory_rows.append(row)
 
     native_cores = native_chip.get("cores") if native_chip is not None else None

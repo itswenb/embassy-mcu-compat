@@ -1318,13 +1318,37 @@ class GenerateGigadeviceEmbassyProjectionTests(unittest.TestCase):
         )
 
     def test_独立Flash基址按真实顺序生成bank名(self):
+        profile = candidate("STM32F205RB", [])
+        profile["memory"] = [
+            [
+                {
+                    "name": "BANK_1",
+                    "kind": "flash",
+                    "address": 0,
+                    "size": 1,
+                    "settings": {"erase_size": 999, "write_size": 4, "erase_value": 0},
+                }
+            ]
+        ]
         facts = MODULE.build_projection_facts(
-            candidate("STM32F205RB", []),
+            profile,
             variant(),
             {
                 "memory": [
-                    {"name": "IROM1", "kind": "flash", "address": 0x08000000, "size": 1},
-                    {"name": "IROM2", "kind": "flash", "address": 0x08800000, "size": 1},
+                    {
+                        "name": "IROM1_BANK0",
+                        "kind": "flash",
+                        "address": 0x08000000,
+                        "size": 1,
+                        "settings": {"erase_size": 2048, "write_size": 2, "erase_value": 255},
+                    },
+                    {
+                        "name": "IROM1_BANK1",
+                        "kind": "flash",
+                        "address": 0x08800000,
+                        "size": 1,
+                        "settings": {"erase_size": 4096, "write_size": 2, "erase_value": 255},
+                    },
                     {"name": "IRAM1", "kind": "ram", "address": 0x20000000, "size": 1},
                 ]
             },
@@ -1335,6 +1359,41 @@ class GenerateGigadeviceEmbassyProjectionTests(unittest.TestCase):
         self.assertEqual(
             [row["name"] for row in facts["memory"][0]],
             ["BANK_1", "BANK_2", "SRAM"],
+        )
+        self.assertEqual(
+            [row["settings"]["erase_size"] for row in facts["memory"][0][:2]],
+            [2048, 4096],
+        )
+
+    def test_同一物理Bank的不同擦除区域不伪装成多个Bank(self):
+        settings = {"write_size": 4, "erase_value": 255}
+        facts = MODULE.build_projection_facts(
+            candidate("STM32F205RB", []),
+            variant(),
+            {
+                "memory": [
+                    {
+                        "name": name,
+                        "kind": "flash",
+                        "address": address,
+                        "size": 1,
+                        "bank": bank,
+                        "settings": {**settings, "erase_size": erase_size},
+                    }
+                    for name, address, bank, erase_size in [
+                        ("A", 1, "0", 16),
+                        ("B", 2, "0", 64),
+                        ("C", 3, "1", 128),
+                    ]
+                ]
+            },
+            {"status": "normalized", "pins": []},
+            {"status": "normalized", "dma_channels": [], "dma_requests": []},
+        )
+
+        self.assertEqual(
+            [row["name"] for row in facts["memory"][0]],
+            ["BANK_1_REGION_1", "BANK_1_REGION_2", "BANK_2"],
         )
 
     def test_DMAMUX请求保留真实请求号(self):

@@ -15,6 +15,76 @@ SPEC.loader.exec_module(MODULE)
 
 
 class MemoryTests(unittest.TestCase):
+    def test_官方FMC接口提取真实最小写入粒度(self):
+        self.assertEqual(
+            MODULE.program_sizes_from_text(
+                """
+fmc_state_enum fmc_word_program(uint32_t address, uint32_t data);
+fmc_state_enum fmc_halfword_program(uint32_t address, uint16_t data);
+fmc_state_enum fmc_fourword_program(uint32_t address, uint64_t low, uint64_t high);
+"""
+            ),
+            [2, 4, 16],
+        )
+
+    def test_Programmer分段覆盖FLM并保留每个物理Bank参数(self):
+        memory, flash = MODULE.apply_flash_geometry(
+            [
+                {
+                    "name": "IROM1",
+                    "kind": "flash",
+                    "address": 0x08000000,
+                    "size": 1024 * 1024,
+                },
+                {
+                    "name": "IRAM1",
+                    "kind": "ram",
+                    "address": 0x20000000,
+                    "size": 96 * 1024,
+                },
+            ],
+            [
+                {
+                    "address": 0x08000000,
+                    "size": 1024 * 1024,
+                    "algorithm_sha256": "a" * 64,
+                    "program_page_size": 1024,
+                    "erase_value": 0xFF,
+                    "sectors": [{"offset": 0, "size": 2048}],
+                    "descriptor_conflicts": [],
+                    "descriptor_resolutions": [],
+                }
+            ],
+            [
+                {
+                    "address": 0x08000000,
+                    "size": 512 * 1024,
+                    "erase_size": 2048,
+                    "bank": "0",
+                },
+                {
+                    "address": 0x08080000,
+                    "size": 512 * 1024,
+                    "erase_size": 4096,
+                    "bank": "1",
+                },
+            ],
+            write_size=2,
+            source={"path": "GD32F303.xml", "sha256": "b" * 64},
+        )
+
+        flash_memory = [region for region in memory if region["kind"] == "flash"]
+        self.assertEqual(
+            [(region["address"], region["size"], region["settings"]) for region in flash_memory],
+            [
+                (0x08000000, 512 * 1024, {"erase_size": 2048, "write_size": 2, "erase_value": 0xFF}),
+                (0x08080000, 512 * 1024, {"erase_size": 4096, "write_size": 2, "erase_value": 0xFF}),
+            ],
+        )
+        self.assertEqual([region["bank"] for region in flash], ["0", "1"])
+        self.assertEqual([region["erase_size"] for region in flash], [2048, 4096])
+        self.assertEqual(memory[-1]["size"], 96 * 1024)
+
     def test_解析Builder链接脚本中的固定RAM区域(self):
         memory = MODULE.parse_linker_ram(
             """MEMORY
