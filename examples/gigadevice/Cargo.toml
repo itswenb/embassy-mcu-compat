@@ -9,11 +9,11 @@ embassy-stm32 = { version = "=0.6.0", default-features = false }
 
 [features]
 default = []
-gd32e230c8 = ["embassy-stm32/stm32f030c8", "embassy-stm32/exti", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking"]
-gd32f103c8 = ["embassy-stm32/stm32f103c8", "embassy-stm32/exti", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking"]
-gd32f205rc = ["embassy-stm32/stm32f103rf", "embassy-stm32/exti", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking"]
-gd32f303cb = ["embassy-stm32/stm32f103rc", "embassy-stm32/exti", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking", "embassy-stm32/time-driver-tim5"]
-gd32f407vg = ["embassy-stm32/stm32f407ie", "embassy-stm32/exti", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking"]
+gd32e230c8 = ["embassy-stm32/stm32f030c8", "embassy-stm32/exti", "embassy-stm32/memory-x", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking"]
+gd32f103c8 = ["embassy-stm32/stm32f103c8", "embassy-stm32/exti", "embassy-stm32/memory-x", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking"]
+gd32f205rc = ["embassy-stm32/stm32f103rf", "embassy-stm32/exti", "embassy-stm32/memory-x", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking"]
+gd32f303cg = ["embassy-stm32/stm32f103rf", "embassy-stm32/exti", "embassy-stm32/memory-x", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking", "embassy-stm32/time-driver-tim5"]
+gd32f407vg = ["embassy-stm32/stm32f407ie", "embassy-stm32/exti", "embassy-stm32/memory-x", "embassy-stm32/rt", "embassy-stm32/unstable-pac", "embassy-stm32/unchecked-overclocking"]
 
 [patch.crates-io]
 stm32-metapac = { path = "../../../embassy-mcu-compat-generated" }

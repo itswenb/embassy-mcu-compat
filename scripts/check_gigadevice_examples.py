@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""按 example 声明逐个编译代表性 GD32 型号。"""
+"""按 example 声明逐个编译代表性 GD32 型号并生成 memory.x。"""
 
 from __future__ import annotations
 
@@ -37,6 +37,8 @@ def load_examples(
         ]
         if profiles != [expected]:
             raise ValueError(f"{chip} 必须且只能使用 profile {projection['profile']}")
+        if "embassy-stm32/memory-x" not in dependencies:
+            raise ValueError(f"example 未为 {chip} 启用 memory-x")
         examples.append(projection)
     if not examples:
         raise ValueError("example 未声明真实型号")

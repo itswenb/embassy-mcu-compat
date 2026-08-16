@@ -17,15 +17,15 @@ SPEC.loader.exec_module(MODULE)
 class GigadeviceExampleCheckTests(unittest.TestCase):
     def test_example型号直接决定编译feature与真实目标(self):
         projection = {
-            "chip": "gd32f303cb",
-            "profile": "stm32f103rc",
+            "chip": "gd32f303cg",
+            "profile": "stm32f103rf",
             "rust_target": "thumbv7em-none-eabihf",
         }
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             manifest = root / "Cargo.toml"
             manifest.write_text(
-                '[features]\ndefault = []\ngd32f303cb = ["embassy-stm32/stm32f103rc"]\n',
+                '[features]\ndefault = []\ngd32f303cg = ["embassy-stm32/stm32f103rf", "embassy-stm32/memory-x"]\n',
                 encoding="utf-8",
             )
             examples = MODULE.load_examples(manifest, [projection])
@@ -34,10 +34,10 @@ class GigadeviceExampleCheckTests(unittest.TestCase):
             )
 
         self.assertEqual(examples, [projection])
-        self.assertIn("gd32f303cb", spec["command"])
+        self.assertIn("gd32f303cg", spec["command"])
         self.assertIn("thumbv7em-none-eabihf", spec["command"])
         self.assertEqual(
-            spec["environment"]["EMBASSY_MCU_COMPAT_CHIP"], "gd32f303cb"
+            spec["environment"]["EMBASSY_MCU_COMPAT_CHIP"], "gd32f303cg"
         )
 
 
