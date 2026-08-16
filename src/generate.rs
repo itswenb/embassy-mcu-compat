@@ -488,12 +488,11 @@ fn trim_rust_tree(root: &Path) -> Result<()> {
     for path in files_with_extension(root, "rs")? {
         let contents = fs::read_to_string(&path)
             .with_context(|| format!("读取格式化结果 {} 失败", path.display()))?;
-        let normalized = contents
-            .lines()
-            .map(str::trim_end)
-            .collect::<Vec<_>>()
-            .join("\n")
-            + "\n";
+        let mut lines = contents.lines().map(str::trim_end).collect::<Vec<_>>();
+        while lines.last().is_some_and(|line| line.is_empty()) {
+            lines.pop();
+        }
+        let normalized = lines.join("\n") + "\n";
         if normalized != contents {
             fs::write(&path, normalized)
                 .with_context(|| format!("清理 {} 行尾空白失败", path.display()))?;
@@ -814,6 +813,7 @@ mod tests {
 
         let formatted = fs::read_to_string(source).unwrap();
         assert!(formatted.lines().all(|line| line.trim_end() == line));
+        assert!(!formatted.ends_with("\n\n"));
         assert!(
             formatted.contains(
                 r#"    f.debug_struct("Crcpr").field("crcpoly", &value.crcpoly()).finish()"#
