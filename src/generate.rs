@@ -479,6 +479,18 @@ fn format_rust_tree(root: &Path) -> Result<()> {
                 String::from_utf8_lossy(&output.stderr)
             );
         }
+        let formatted = fs::read_to_string(&path)
+            .with_context(|| format!("读取格式化结果 {} 失败", path.display()))?;
+        let normalized = formatted
+            .lines()
+            .map(str::trim_end)
+            .collect::<Vec<_>>()
+            .join("\n")
+            + "\n";
+        if normalized != formatted {
+            fs::write(&path, normalized)
+                .with_context(|| format!("清理 {} 行尾空白失败", path.display()))?;
+        }
     }
     Ok(())
 }
@@ -781,16 +793,20 @@ mod tests {
         let source = temp.path().join("sample.rs");
         fs::write(
             &source,
-            r#"fn demo(value: &Value, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+            concat!(
+                r#"fn demo(value: &Value, f: &mut core::fmt::Formatter) -> core::fmt::Result {
     f.debug_struct("Crcpr").field("crcpoly", &value.crcpoly()).finish()
 }
 "#,
+                "    \n"
+            ),
         )
         .unwrap();
 
         format_rust_tree(temp.path()).unwrap();
 
         let formatted = fs::read_to_string(source).unwrap();
+        assert!(formatted.lines().all(|line| line.trim_end() == line));
         assert!(
             formatted.contains(
                 r#"    f.debug_struct("Crcpr").field("crcpoly", &value.crcpoly()).finish()"#
